@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "companies": [
   {
    "t": "TSM",
@@ -32,6 +32,24 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-21",
    "headline": "毛利率回来了，利润没回来：钱都花在了 AI 和机器人上"
+  },
+  {
+   "t": "META",
+   "n": "Meta",
+   "en": "Meta Platforms",
+   "aliases": [
+    "Facebook",
+    "FB",
+    "脸书",
+    "Instagram"
+   ],
+   "cat": "消费与平台",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-21",
+   "headline": "广告越卖越贵，现金流却被 AI 投入吃成了负数"
   }
  ]
 }
