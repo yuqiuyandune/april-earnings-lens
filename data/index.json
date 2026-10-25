@@ -1,0 +1,37 @@
+{
+ "updated": "2026-10-24",
+ "companies": [
+  {
+   "t": "TSM",
+   "n": "台积电",
+   "en": "TSMC",
+   "aliases": [
+    "Taiwan Semiconductor",
+    "2330",
+    "台積電"
+   ],
+   "cat": "代工与设备",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-15",
+   "headline": "AI 订单还在加速，市场却开始给更低的倍数"
+  },
+  {
+   "t": "TSLA",
+   "n": "特斯拉",
+   "en": "Tesla",
+   "aliases": [
+    "特斯拉汽车"
+   ],
+   "cat": "消费与平台",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-21",
+   "headline": "毛利率回来了，利润没回来：钱都花在了 AI 和机器人上"
+  }
+ ]
+}

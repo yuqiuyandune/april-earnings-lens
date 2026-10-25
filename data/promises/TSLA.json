@@ -1,0 +1,85 @@
+[
+ {
+  "id": "tsla-capex26",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 4 月（Q1'26 电话会）",
+  "text": "2026 年 capex 超过 $25B，剩余三季 FCF 为负",
+  "dueLabel": "2026 全年",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "如期为负",
+    "tone": "",
+    "note": "Q2 FCF −$1.09B，capex $5.79B。"
+   },
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "Q3 FCF +$1.53B；capex 指引降到约 $20B。"
+   }
+  ]
+ },
+ {
+  "id": "tsla-energy-gm",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（Q2'26 电话会）",
+  "text": "储能毛利率长期在 20% 出头到中段",
+  "dueLabel": "长期",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "一次性因素",
+    "tone": "warn",
+    "note": "Q3 达 33.1%，但主要来自关税退款和供应商承担的保修成本。"
+   }
+  ]
+ },
+ {
+  "id": "tsla-robotaxi-cities",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（Q2'26 Update）",
+  "text": "扩大 Robotaxi 城市，开始生产 Cybercab",
+  "dueLabel": "2026 H2",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "已兑现",
+    "tone": "good",
+    "note": "6 个城市无人运营；Cybercab 车队一个月扩大 10 倍。"
+   }
+  ]
+ },
+ {
+  "id": "tsla-dallas",
+  "made": "2026Q3",
+  "dueLabel": "2026 年 11 月",
+  "saidLabel": "",
+  "text": "Cybercab 登陆达拉斯",
+  "checks": []
+ },
+ {
+  "id": "tsla-fsd-eu",
+  "made": "2026Q3",
+  "dueLabel": "2027 Q1",
+  "saidLabel": "",
+  "text": "FSD 可能获欧盟批准",
+  "checks": []
+ },
+ {
+  "id": "tsla-robotaxi-rev",
+  "made": "2026Q3",
+  "dueLabel": "2027 Q2",
+  "saidLabel": "",
+  "text": "Robotaxi 开始明显贡献营收和利润",
+  "checks": []
+ },
+ {
+  "id": "tsla-optimus",
+  "made": "2026Q3",
+  "dueLabel": "2027 年底",
+  "saidLabel": "",
+  "text": "Optimus 开始交付外部客户",
+  "checks": []
+ }
+]

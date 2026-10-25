@@ -1,0 +1,328 @@
+<title>April's Earnings Lens · 财报日历</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column (max 820px). Season summary → sticky filters → week blocks → day rows → company cards. Same tokens as the TSLA analysis page. */
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --line:#E1E4EA; --ink:#14171C; --muted:#5D6573;
+  --accent:#2F55D4; --accent-soft:#E7ECFB;
+  --good:#1E7F55; --good-soft:#E3F3EA; --warn:#9A6A12; --warn-soft:#F7EED9; --bad:#B83A33;
+  --past:#EEF0F3;
+  --c1:#2F55D4; --c2:#6A4BC4; --c3:#0E7C86; --c4:#B5562A; --c5:#3E7D2E; --c6:#A2397A; --c7:#596273;
+  --f-display:"Noto Serif SC","Songti SC",Georgia,serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --accent-soft:#1E2742;
+  --good:#5CC995; --good-soft:#15291F; --warn:#E3B45A; --warn-soft:#2F2614; --bad:#F07C72;
+  --past:#141820;
+  --c1:#7D9BFF; --c2:#A98CFF; --c3:#4FC3CC; --c4:#F0956A; --c5:#86C96E; --c6:#E57DBE; --c7:#A3ACBB; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --accent-soft:#1E2742;
+  --good:#5CC995; --good-soft:#15291F; --warn:#E3B45A; --warn-soft:#2F2614; --bad:#F07C72;
+  --past:#141820;
+  --c1:#7D9BFF; --c2:#A98CFF; --c3:#4FC3CC; --c4:#F0956A; --c5:#86C96E; --c6:#E57DBE; --c7:#A3ACBB; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:820px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:22px}
+.brand{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);letter-spacing:.06em}
+.brand b{color:var(--ink);font-weight:700}
+.proto{border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+h1{font-family:var(--f-display);font-size:clamp(24px,5vw,32px);margin:0;line-height:1.3;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+
+.season{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.season .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.season .big{font-family:var(--f-num);font-size:24px;font-weight:600}
+.season .big span{font-size:13px;color:var(--muted);font-weight:400;font-family:var(--f-body);margin-left:6px}
+.prog{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.nextup{font-size:13.5px;color:var(--muted)}
+.nextup b{color:var(--ink)}
+
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frow{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;align-items:center}
+.frow::-webkit-scrollbar{display:none}
+.chip{flex:none;font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip i{width:8px;height:8px;border-radius:2px}
+.chip[aria-pressed="true"]{color:var(--bg);background:var(--ink);border-color:var(--ink)}
+.chip:focus-visible,.search:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.search{flex:1 1 140px;min-width:0;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
+
+.week{display:flex;flex-direction:column;gap:10px}
+.wh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.wh h2{font-family:var(--f-display);font-size:19px;margin:0}
+.wh .tag{font-size:11.5px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--accent);color:var(--bg)}
+.wh .cnt{font-size:12.5px;color:var(--muted)}
+.day{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:10px;align-items:start}
+.dl{display:flex;flex-direction:column;line-height:1.25;padding-top:8px}
+.dl b{font-family:var(--f-num);font-size:15px;font-weight:600}
+.dl span{font-size:12px;color:var(--muted)}
+.dl.today b{color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:8px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px 8px 13px;display:flex;flex-direction:column;gap:2px;line-height:1.45;text-decoration:none;color:inherit;position:relative;min-width:0}
+.card::before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:3px;border-radius:0 2px 2px 0;background:var(--cat)}
+.card .top{display:flex;align-items:baseline;gap:6px;min-width:0}
+.card .tk{font-family:var(--f-num);font-weight:600;font-size:14.5px}
+.card .nm{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.card .star{color:var(--warn);font-size:12px;margin-left:auto;flex:none}
+.card .meta{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.pill{font-size:11px;font-weight:700;padding:0 7px;border-radius:999px;white-space:nowrap}
+.s-live{background:var(--good-soft);color:var(--good)}
+.s-wip{background:var(--past);color:var(--muted);border:1px solid var(--line)}
+.s-conf{background:var(--accent-soft);color:var(--accent)}
+.s-est{background:var(--warn-soft);color:var(--warn)}
+a.card:hover{border-color:var(--good)}
+a.card .go{font-size:12px;color:var(--good);font-weight:500}
+.card.past{background:var(--past)}
+.card.past .tk{color:var(--muted)}
+.empty{color:var(--muted);font-size:14px;border:1px dashed var(--line);border-radius:10px;padding:16px;text-align:center}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);align-items:center}
+footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--accent)}
+@media (max-width:480px){.day{grid-template-columns:minmax(0,1fr)}.dl{flex-direction:row;gap:8px;align-items:baseline;padding-top:0}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+
+<div class="wrap">
+  <div class="brand"><a href="../" style="color:inherit;text-decoration:none"><b>财报日历</b></a><a href="../" style="color:var(--accent);text-decoration:none">← 财报解读</a></div>
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <h1>2026 年 Q3 财报季</h1>
+    <p class="lede">AI 产业链和重点科技公司的财报日期。点击已上线分析的公司，可直接查看财报解读。</p>
+  </header>
+
+  <div class="season">
+    <div class="row"><span class="big" id="done"></span><span class="nextup" id="nextup"></span></div>
+    <a href="#upcoming" style="font-size:13px;color:var(--accent);width:max-content">跳到接下来的财报 ↓</a>
+    <div class="prog" role="img" id="progbar"><i id="progfill"></i></div>
+    <div class="legend">
+      <span><span class="pill s-live">分析已上线</span></span>
+      <span><span class="pill s-wip">已发布 · 分析制作中</span></span>
+      <span><span class="pill s-conf">日期已确认</span></span>
+      <span><span class="pill s-est">预计日期</span></span>
+      <span><span style="color:var(--warn)">★</span> 重点关注</span>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="frow" id="cats" role="group" aria-label="按产业筛选"></div>
+    <div class="frow">
+      <button class="chip" id="f-star" aria-pressed="false" type="button"><span style="color:var(--warn)">★</span>只看重点</button>
+      <button class="chip" id="f-past" aria-pressed="true" type="button">显示已发布</button>
+      <input class="search" id="q" type="search" placeholder="搜索代码或公司名" aria-label="搜索代码或公司名">
+    </div>
+  </div>
+
+  <div id="list" style="display:flex;flex-direction:column;gap:26px"></div>
+
+  <footer>
+    <span>日期来源：Nasdaq 财报日历、公司公告、StockTitan 与 TheStreet 周历。标"预计"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。</span>
+    <span>未列入：Kratos（KTOS）尚未公布日期；SK 海力士不在 SEC 申报；OpenAI、Anthropic 未上市。</span>
+    <span>本页仅为信息整理，不构成投资建议。</span>
+  </footer>
+</div>
+
+<script>
+const CATS=[
+  {id:"chip",n:"AI 芯片",c:"--c1"},{id:"fab",n:"代工与设备",c:"--c2"},{id:"mem",n:"存储",c:"--c3"},
+  {id:"opt",n:"光通讯与网络",c:"--c3"},{id:"cloud",n:"AI 云",c:"--c1"},{id:"power",n:"电力能源",c:"--c4"},
+  {id:"big",n:"大型科技",c:"--c2"},{id:"sw",n:"软件与资安",c:"--c5"},{id:"def",n:"国防航天",c:"--c7"},
+  {id:"fin",n:"金融",c:"--c6"},{id:"med",n:"医疗",c:"--c5"},{id:"cons",n:"消费与平台",c:"--c4"}
+];
+const SITE="../";
+const LINKS={TSLA:SITE+"#TSLA",TSM:SITE+"#TSM"};
+const STAR=new Set("NVDA AMD AVGO MRVL MU MSFT GOOGL AMZN META PLTR PANW TSLA".split(" "));
+/* date | ticker | 中文名 | cat | time(b=盘前,a=盘后,n=未定) | conf(1=已确认,0=预计) */
+const RAW=`08-26|NVDA|英伟达|chip|a|1
+08-26|CRWD|CrowdStrike|sw|a|1
+08-26|CRM|Salesforce|sw|a|1
+08-26|SNPS|新思科技|chip|a|1
+08-27|MRVL|迈威尔|chip|a|1
+08-27|RBRK|Rubrik|sw|a|1
+09-01|PANW|Palo Alto|sw|a|1
+09-01|CRDO|Credo|chip|a|1
+09-01|DELL|戴尔|cloud|a|1
+09-02|AVGO|博通|chip|a|1
+09-03|ZS|Zscaler|sw|a|1
+09-09|AVAV|AeroVironment|def|a|1
+09-10|ORCL|甲骨文|cloud|a|1
+09-30|MU|美光|mem|a|1
+10-13|JPM|摩根大通|fin|b|1
+10-13|GS|高盛|fin|b|1
+10-14|MS|摩根士丹利|fin|b|1
+10-14|ASML|阿斯麦|fab|b|1
+10-15|TSM|台积电|fab|b|1
+10-20|NFLX|奈飞|cons|a|1
+10-20|SPCX|SpaceX|def|n|1
+10-20|GE|GE 航空航天|def|b|1
+10-20|RTX|雷神|def|b|1
+10-20|ISRG|直觉外科|med|a|1
+10-21|META|Meta|big|a|1
+10-21|TSLA|特斯拉|cons|a|1
+10-21|LRCX|泛林|fab|a|1
+10-21|IBM|IBM|sw|a|1
+10-21|TXN|德州仪器|chip|a|1
+10-21|SAP|SAP|sw|a|1
+10-21|NEE|新纪元能源|power|b|1
+10-22|WDC|西部数据|mem|a|1
+10-22|BE|Bloom Energy|power|a|1
+10-22|NOK|诺基亚|opt|b|1
+10-22|LMT|洛克希德马丁|def|b|1
+10-26|RMBS|Rambus|chip|a|1
+10-26|CDNS|楷登电子|chip|a|1
+10-26|CLS|天弘科技|cloud|a|1
+10-27|STX|希捷|mem|a|1
+10-27|TER|泰瑞达|fab|a|1
+10-27|GLW|康宁|opt|b|1
+10-27|HOOD|Robinhood|fin|a|1
+10-27|PYPL|PayPal|fin|b|1
+10-27|SOFI|SoFi|fin|b|1
+10-28|GOOGL|谷歌|big|a|1
+10-28|MSFT|微软|big|a|1
+10-28|GEV|GE Vernova|power|b|1
+10-28|NOW|ServiceNow|sw|a|1
+10-28|KLAC|科磊|fab|a|1
+10-28|VRT|维谛|power|b|1
+10-29|AMZN|亚马逊|big|a|1
+10-29|LLY|礼来|med|b|1
+10-29|INTC|英特尔|chip|a|1
+10-29|SNDK|闪迪|mem|a|1
+10-29|TWLO|Twilio|sw|a|1
+10-29|MPWR|芯源系统|chip|a|1
+11-02|AAPL|苹果|big|a|1
+11-02|PLTR|Palantir|sw|a|1
+11-02|GRAB|Grab|cons|a|1
+11-02|TEM|Tempus AI|med|b|1
+11-02|UUUU|Energy Fuels|power|n|0
+11-03|AMD|AMD|chip|a|1
+11-03|ETN|伊顿|power|b|1
+11-03|ALAB|Astera Labs|chip|a|1
+11-03|NVTS|纳微半导体|chip|a|1
+11-03|ANET|Arista|opt|a|1
+11-03|SMCI|超微电脑|cloud|a|1
+11-04|COHR|Coherent|opt|a|1
+11-04|FIG|Figma|sw|a|1
+11-04|CHYM|Chime|fin|a|1
+11-04|CRCL|Circle|fin|b|1
+11-04|MELI|美客多|cons|n|0
+11-04|TMDX|TransMedics|med|n|0
+11-04|RDW|Redwire|def|n|0
+11-04|ARM|Arm|chip|a|1
+11-04|QCOM|高通|chip|a|1
+11-04|APP|AppLovin|sw|a|1
+11-04|DDOG|Datadog|sw|b|1
+11-04|UBER|优步|cons|b|1
+11-05|LITE|Lumentum|opt|a|1
+11-05|NET|Cloudflare|sw|a|1
+11-05|AAOI|应用光电|opt|a|1
+11-05|MP|MP Materials|power|a|1
+11-05|SMR|NuScale|power|a|1
+11-05|EOSE|Eos Energy|power|b|1
+11-06|VST|Vistra|power|b|1
+11-09|CRWV|CoreWeave|cloud|n|0
+11-10|NBIS|Nebius|cloud|n|0
+11-12|AMAT|应用材料|fab|a|1
+11-12|ONDS|Ondas|def|n|0
+11-12|RCAT|Red Cat|def|n|0
+11-18|NVDA|英伟达|chip|a|0
+11-18|PANW|Palo Alto|sw|n|0
+11-24|ZS|Zscaler|sw|n|0
+11-24|DELL|戴尔|cloud|n|0
+12-01|CRWD|CrowdStrike|sw|n|0
+12-01|MRVL|迈威尔|chip|n|0
+12-02|CRM|Salesforce|sw|n|0
+12-02|SNOW|Snowflake|sw|n|0
+12-03|RBRK|Rubrik|sw|n|0
+12-07|CRDO|Credo|chip|n|0
+12-08|AVAV|AeroVironment|def|n|0
+12-09|ORCL|甲骨文|cloud|n|0
+12-10|AVGO|博通|chip|n|0
+12-16|MU|美光|mem|n|0`;
+const ITEMS=RAW.split("\n").map(l=>{const [d,t,n,c,tm,cf]=l.split("|");return {date:new Date(`2026-${d}T12:00:00`),key:`2026-${d}`,t,n,c,tm,conf:cf==="1"}});
+
+function todayKey(){const n=new Date();const y=n.getFullYear(),m=String(n.getMonth()+1).padStart(2,"0"),d=String(n.getDate()).padStart(2,"0");return `${y}-${m}-${d}`}
+const TODAY=todayKey();
+const SEASON="2026-10-05";
+const inSeason=it=>it.key>=SEASON;
+const isPast=it=>it.key<TODAY;
+const WD=["周日","周一","周二","周三","周四","周五","周六"];
+const TM={b:"盘前",a:"盘后",n:"时间未定"};
+const cat=id=>CATS.find(c=>c.id===id);
+function monday(dt){const d=new Date(dt);const w=(d.getDay()+6)%7;d.setDate(d.getDate()-w);return d}
+const fmt=d=>`${d.getMonth()+1}月${d.getDate()}日`;
+
+let state={cats:new Set(),star:false,past:true,q:""};
+try{const s=JSON.parse(localStorage.getItem("cal-filters")||"null");if(s){state.cats=new Set(s.cats||[]);state.star=!!s.star;state.past=s.past!==false;}}catch(e){}
+function save(){try{localStorage.setItem("cal-filters",JSON.stringify({cats:[...state.cats],star:state.star,past:state.past}))}catch(e){}}
+
+/* season summary */
+(function(){
+  const S=ITEMS.filter(inSeason), done=S.filter(isPast).length, total=S.length;
+  document.getElementById("done").innerHTML=`${done} / ${total}<span>家已发布（本季）</span>`;
+  document.getElementById("progfill").style.width=(done/total*100)+"%";
+  document.getElementById("progbar").setAttribute("aria-label",`已发布 ${done} 家，共 ${total} 家`);
+  const up=S.filter(i=>!isPast(i));
+  if(up.length){const k=up[0].key, same=up.filter(i=>i.key===k).map(i=>i.t);
+    document.getElementById("nextup").innerHTML=`下一场：<b>${fmt(up[0].date)} ${WD[up[0].date.getDay()]}</b> · ${same.join("、")}`;}
+})();
+
+/* category chips */
+const catBox=document.getElementById("cats");
+catBox.innerHTML=`<button class="chip" type="button" data-cat="" aria-pressed="false">全部</button>`+CATS.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="false"><i style="background:var(${c.c})"></i>${c.n}</button>`).join("");
+catBox.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.cat;
+  if(!id)state.cats.clear();else state.cats.has(id)?state.cats.delete(id):state.cats.add(id);save();render();});
+document.getElementById("f-star").addEventListener("click",()=>{state.star=!state.star;save();render()});
+document.getElementById("f-past").addEventListener("click",()=>{state.past=!state.past;save();render()});
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render()});
+
+function card(it){
+  const c=cat(it.c), past=isPast(it), link=LINKS[it.t];
+  let pill;
+  if(past&&link) pill=`<span class="pill s-live">分析已上线</span>`;
+  else if(past) pill=`<span class="pill s-wip">已发布 · 分析制作中</span>`;
+  else pill=it.conf?`<span class="pill s-conf">已确认</span>`:`<span class="pill s-est">预计</span>`;
+  const inner=`<div class="top"><span class="tk">${it.t}</span><span class="nm">${it.n}</span>${STAR.has(it.t)?'<span class="star" aria-label="重点关注">★</span>':''}</div>
+    <div class="meta"><span>${inSeason(it)?TM[it.tm]:(it.date.getMonth()+1)+"/"+it.date.getDate()}</span>${pill}</div>${past&&link?'<span class="go">查看财报分析 →</span>':''}`;
+  const style=`style="--cat:var(${c.c})"`;
+  const title=`${it.t} ${it.n}，${c.n}`;
+  return link? `<a class="card${past?'':''}" href="${link}" ${style} title="${title}">${inner}</a>`
+             : `<div class="card${past?' past':''}" ${style} title="${title}">${inner}</div>`;
+}
+
+function render(){
+  [...catBox.children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.cat?state.cats.has(b.dataset.cat):state.cats.size===0));
+  document.getElementById("f-star").setAttribute("aria-pressed",state.star);
+  document.getElementById("f-past").setAttribute("aria-pressed",state.past);
+  const list=ITEMS.filter(it=>(state.cats.size===0||state.cats.has(it.c))&&(!state.star||STAR.has(it.t))&&(state.past||!isPast(it))
+    &&(!state.q||it.t.toLowerCase().includes(state.q)||it.n.toLowerCase().includes(state.q)));
+  const box=document.getElementById("list");
+  if(!list.length){box.innerHTML=`<div class="empty">没有符合条件的公司。试试清除筛选或换个关键词。</div>`;return}
+  const thisMon=monday(new Date(TODAY+"T12:00:00")).getTime();
+  const weeks=new Map();
+  let html="";
+  const pre=list.filter(it=>!inSeason(it));
+  if(pre.length){
+    html+=`<section class="week"><div class="wh"><h2>8 – 9 月已发布</h2><span class="cnt">${pre.length} 家 · 财年与日历季度错开，这是它们最新一季</span></div><div class="cards">${pre.map(card).join("")}</div></section>`;
+  }
+  list.filter(inSeason).forEach(it=>{const m=monday(it.date).getTime();if(!weeks.has(m))weeks.set(m,[]);weeks.get(m).push(it)});
+  [...weeks.keys()].sort((a,b)=>a-b).forEach(m=>{
+    const items=weeks.get(m), mon=new Date(m), fri=new Date(m+4*864e5);
+    const tag=m===thisMon?'<span class="tag">本周</span>':(m===thisMon+7*864e5?'<span class="tag">下周</span>':'');
+    const past=m<thisMon;
+    const firstUp=!html.includes('id="upcoming"')&&items.some(i=>!isPast(i));
+    html+=`<section class="week" ${firstUp?'id="upcoming" style="scroll-margin-top:110px"':''}><div class="wh"><h2>${fmt(mon)} – ${fmt(fri)}</h2>${tag}<span class="cnt">${items.length} 家${past?' · 已过':''}</span></div>`;
+    const days=new Map();items.forEach(it=>{if(!days.has(it.key))days.set(it.key,[]);days.get(it.key).push(it)});
+    [...days.keys()].sort().forEach(k=>{const arr=days.get(k), d=arr[0].date;
+      arr.sort((a,b)=>(STAR.has(b.t)-STAR.has(a.t))||a.tm.localeCompare(b.tm));
+      html+=`<div class="day"><div class="dl${k===TODAY?' today':''}"><b>${d.getMonth()+1}/${d.getDate()}</b><span>${WD[d.getDay()]}${k===TODAY?' · 今天':''}</span></div><div class="cards">${arr.map(card).join("")}</div></div>`;});
+    html+=`</section>`;
+  });
+  box.innerHTML=html;
+}
+render();
+</script>

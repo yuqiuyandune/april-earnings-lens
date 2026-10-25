@@ -1,0 +1,385 @@
+<title>April's Earnings Lens</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column (max 760px). Generic renderer: index.json → company config + quarter report + promises. Views: home (search + company list) and company/quarter (hero, sticky tabs, modules). */
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --line:#E1E4EA; --ink:#14171C; --muted:#5D6573;
+  --accent:#2F55D4; --accent-soft:#E7ECFB;
+  --good:#1E7F55; --good-soft:#E3F3EA; --bad:#B83A33; --bad-soft:#F8E5E3; --warn:#9A6A12; --warn-soft:#F7EED9;
+  --bar:#C9D1E0; --c1:#2F55D4; --c2:#C08A1E; --c3:#1E7F55; --c4:#5D6573; --c5:#14171C;
+  --f-display:"Noto Serif SC","Songti SC",Georgia,serif;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --accent-soft:#1E2742;
+  --good:#5CC995; --good-soft:#15291F; --bad:#F07C72; --bad-soft:#331A18; --warn:#E3B45A; --warn-soft:#2F2614;
+  --bar:#3A4352; --c1:#7D9BFF; --c2:#E3B45A; --c3:#5CC995; --c4:#9AA3B2; --c5:#E8EAEE; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --accent-soft:#1E2742;
+  --good:#5CC995; --good-soft:#15291F; --bad:#F07C72; --bad-soft:#331A18; --warn:#E3B45A; --warn-soft:#2F2614;
+  --bar:#3A4352; --c1:#7D9BFF; --c2:#E3B45A; --c3:#5CC995; --c4:#9AA3B2; --c5:#E8EAEE; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:760px;margin:0 auto;padding-block:16px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:30px}
+a{color:var(--accent)}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-size:12.5px;color:var(--muted);letter-spacing:.05em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--ink);font-weight:700}
+.sbox{position:relative;flex:1 1 200px;min-width:0}
+.sbox input{width:100%;font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.sbox input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.sres{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--surface);border:1px solid var(--line);border-radius:10px;z-index:20;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.sres a{display:flex;gap:8px;align-items:baseline;padding:8px 12px;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line)}
+.sres a:last-child{border-bottom:0}
+.sres a:hover,.sres a.on{background:var(--accent-soft)}
+.sres .tk{font-family:var(--f-num);font-weight:600}
+.sres .sm{font-size:12.5px;color:var(--muted)}
+.sres .none{padding:10px 12px;font-size:13px;color:var(--muted)}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+
+/* home */
+.homeh h1{font-family:var(--f-display);font-size:clamp(24px,5vw,32px);margin:0 0 6px;line-height:1.3}
+.homeh p{margin:0;color:var(--muted)}
+.clist{display:flex;flex-direction:column;gap:10px}
+.crow{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px;text-decoration:none;color:inherit}
+.crow:hover{border-color:var(--accent)}
+.crow .l1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.crow .l1 .tk{font-family:var(--f-num);font-weight:600;font-size:15px}
+.crow .l1 .sm{font-size:12.5px;color:var(--muted)}
+.crow .hl{font-family:var(--f-display);font-size:16.5px;line-height:1.45}
+
+/* company hero */
+header.hero{display:flex;flex-direction:column;gap:14px}
+.ticker{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ticker .sym{font-family:var(--f-num);font-weight:600;font-size:13px;background:var(--ink);color:var(--bg);padding:2px 8px;border-radius:4px}
+.ticker .meta{font-size:13px;color:var(--muted)}
+.qs{display:flex;gap:6px;flex-wrap:wrap}
+.qs a,.qs span{font-family:var(--f-num);font-size:12.5px;padding:2px 10px;border-radius:999px;border:1px solid var(--line);text-decoration:none;color:var(--muted);background:var(--surface)}
+.qs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.qs span{opacity:.55;border-style:dashed}
+h1{font-family:var(--f-display);font-size:clamp(24px,5.4vw,34px);line-height:1.35;margin:0;text-wrap:balance;font-weight:700}
+.verdicts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:560px){.verdicts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.v{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.v .k{font-size:12px;color:var(--muted)}
+.v .val{font-family:var(--f-num);font-size:18px;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
+.v .exp{font-size:12px;color:var(--muted);font-family:var(--f-num)}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:1px 8px;border-radius:999px;width:max-content;letter-spacing:.03em;white-space:nowrap;font-family:var(--f-body)}
+.p-good{background:var(--good-soft);color:var(--good)} .p-bad{background:var(--bad-soft);color:var(--bad)} .p-warn{background:var(--warn-soft);color:var(--warn)} .p-neutral{background:var(--accent-soft);color:var(--accent)}
+.points{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px}
+.points b{font-weight:700}
+
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin:-12px 0 -8px;padding-block:8px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;border-bottom:1px solid var(--line)}
+nav.tabs a{font-size:14.5px;font-weight:500;color:var(--muted);text-decoration:none;text-align:center;border-radius:8px;padding:8px 4px;position:relative}
+nav.tabs a:hover{color:var(--ink);background:var(--surface)}
+nav.tabs a[aria-selected="true"]{color:var(--ink);font-weight:700}
+nav.tabs a[aria-selected="true"]::after{content:"";position:absolute;left:22%;right:22%;bottom:-9px;height:3px;border-radius:2px;background:var(--accent)}
+nav.tabs a:focus-visible,.crow:focus-visible,.qs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tp{display:flex;flex-direction:column;gap:32px}
+
+section{display:flex;flex-direction:column;gap:12px}
+h2{font-family:var(--f-display);font-size:21px;margin:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;line-height:1.35}
+h2 small{font-family:var(--f-body);font-size:11.5px;font-weight:500;color:var(--muted);letter-spacing:.08em}
+.take{margin:0;font-size:15.5px;max-width:62ch}
+.note{font-size:12.5px;color:var(--muted);margin:0;line-height:1.6;max-width:66ch}
+.note b{color:var(--ink)}
+.sub{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-top:4px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.panel .ph{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.panel .ph b{color:var(--ink);font-size:14px}
+
+.vp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+.vp div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.vp .k{font-size:12px;color:var(--muted)}
+.vp b{font-family:var(--f-num);font-size:17px;font-weight:600;overflow-wrap:anywhere}
+.vp .op{font-size:12px;color:var(--muted)}
+
+.bridge{display:flex;flex-direction:column;gap:8px}
+.br{display:grid;grid-template-columns:5.5em minmax(0,1fr) 4.6em;align-items:center;gap:8px;font-size:13.5px}
+.br .lane{position:relative;height:20px}
+.br .lane::before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:var(--line)}
+.br .fillbar{position:absolute;top:3px;height:14px;border-radius:3px}
+.br .amt{font-family:var(--f-num);font-weight:600;text-align:right}
+.br.total{border-top:1px solid var(--line);padding-top:8px;color:var(--muted)}
+.segs{display:flex;flex-direction:column;gap:10px}
+.seg{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:6px 18px;align-items:center}
+.seg.wc{grid-template-columns:minmax(0,1fr) minmax(0,220px)}
+@media (max-width:560px){.seg.wc{grid-template-columns:minmax(0,1fr)}}
+.seg .left{display:flex;flex-direction:column;gap:5px;min-width:0}
+.seg .name{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.seg .name i{width:10px;height:10px;border-radius:2px;flex:none}
+.seg .name .share{font-weight:400;font-size:12.5px;color:var(--muted)}
+.seg .big{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.seg .big b{font-family:var(--f-num);font-size:22px;font-weight:600;line-height:1.2}
+.seg .why{font-size:13.5px;color:var(--muted);line-height:1.6}
+.seg .why b{color:var(--ink);font-weight:500}
+svg{width:100%;height:auto;display:block}
+svg text{font-family:var(--f-num);font-size:10px;fill:var(--muted)}
+svg .lab{fill:var(--ink);font-weight:600}
+
+.stack{display:flex;flex-direction:column;gap:8px}
+.nr{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+.nbar{display:flex;height:22px;border-radius:5px;overflow:hidden;gap:1px;font-family:var(--f-num);font-size:10.5px;color:var(--bg)}
+.nbar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
+.leg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted)}
+.leg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+.drag{display:flex;flex-direction:column;gap:10px;font-size:14px}
+.drag > div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px}
+.drag .w{grid-column:1/-1;font-size:13px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.grid{grid-template-columns:minmax(0,1fr)}}
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px 10px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.chart .t{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:13.5px}
+.chart .t b{font-weight:700}
+.chart .t .u{font-size:12px;color:var(--muted);font-weight:400}
+.chart .t .now{font-family:var(--f-num);font-weight:600;font-size:16px}
+.chart .why{font-size:12.5px;color:var(--muted);line-height:1.55}
+
+.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.vt{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.vt .k{font-size:12.5px;color:var(--muted)}
+.vt b{font-family:var(--f-num);font-size:26px;font-weight:600;line-height:1.2}
+.vt .f{font-size:11.5px;color:var(--muted);font-family:var(--f-num);line-height:1.5}
+.tbl{display:flex;flex-direction:column}
+.tr{display:grid;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:baseline}
+.tr > span:not(:first-child){text-align:right;font-family:var(--f-num);font-weight:600}
+.tr.th{font-size:12px;color:var(--muted)} .tr.th > span{font-family:var(--f-body)!important;font-weight:400!important}
+.tr:last-child{border-bottom:0}
+.tr .good{color:var(--good)} .tr .bad{color:var(--bad)}
+.tr.hl{background:var(--accent-soft);margin-inline:-8px;padding-inline:8px;border-radius:6px}
+.steps{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px;font-size:13.5px;color:var(--muted)}
+.steps b{color:var(--ink);font-family:var(--f-num)}
+.sotp{display:flex;flex-direction:column;gap:12px}
+.sl{display:grid;grid-template-columns:6.5em minmax(0,1fr) 3.4em 5.2em;gap:10px;align-items:center;font-size:13.5px}
+.sl input{width:100%;accent-color:var(--accent);min-width:0}
+.sl .x{font-family:var(--f-num);font-weight:600;text-align:right}
+.sl .val{font-family:var(--f-num);color:var(--muted);text-align:right;font-size:12.5px}
+@media (max-width:420px){.sl{grid-template-columns:5.5em minmax(0,1fr) 3.2em}.sl .val{display:none}}
+.sbar{display:flex;height:22px;border-radius:6px;overflow:hidden;gap:2px;font-size:11px;color:var(--bg);font-family:var(--f-num)}
+.sbar span{display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stats div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.stats .k{font-size:12px;color:var(--muted)}
+.stats b{font-family:var(--f-num);font-size:18px;font-weight:600}
+details.calc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-size:13px;color:var(--muted)}
+details.calc summary{cursor:pointer;color:var(--ink);font-weight:500}
+details.calc ul{margin:8px 0 2px;padding-left:1.1em;display:flex;flex-direction:column;gap:4px}
+
+.ledger{display:flex;flex-direction:column;gap:8px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+.item .said{font-size:12px;color:var(--muted)}
+.item .what{font-weight:500;grid-column:1/-1}
+.item .out{grid-column:1/-1;font-size:13.5px;color:var(--muted)}
+.item .hist{grid-column:1/-1;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:6px;display:flex;flex-direction:column;gap:2px}
+.future{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:560px){.future{grid-template-columns:minmax(0,1fr)}}
+.fi{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;display:flex;flex-direction:column;gap:2px}
+.fi .when{font-family:var(--f-num);font-size:12px;color:var(--accent);font-weight:600}
+.fi .what{font-size:14px}
+.chg{display:flex;flex-direction:column;gap:8px}
+.ch{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+.ch .tp2{font-weight:500}
+.ch .ba{grid-column:1/-1;display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:2px 8px;font-size:13.5px}
+.ch .ba span:nth-child(odd){font-size:12px;color:var(--muted);padding-top:2px}
+.ch .ba span:nth-child(3){color:var(--muted)}
+.call{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.call{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{margin:0;font-size:15px}
+.card ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:16px 18px;color:var(--muted);font-size:14px;display:flex;flex-direction:column;gap:4px}
+.empty b{color:var(--ink)}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+footer ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px}
+.loading{color:var(--muted);font-size:14px;padding:40px 0;text-align:center}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="#home"><b>财报解读</b></a>
+    <a class="brand" href="calendar/" style="color:var(--accent)">财报日历 →</a>
+    <div class="sbox">
+      <input id="q" type="search" placeholder="搜索公司：代码、中文名或英文名" aria-label="搜索公司" autocomplete="off">
+      <div class="sres" id="sres" hidden></div>
+    </div>
+  </div>
+  <main id="app"><div class="loading">正在加载…</div></main>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cache={};
+async function getJSON(p){if(!cache[p]){cache[p]=fetch(p).then(r=>{if(!r.ok)throw new Error(p);return r.json()})}return cache[p]}
+const qLabel=q=>`Q${q.slice(5)}'${q.slice(2,4)}`;
+const tone=t=>({good:"p-good",bad:"p-bad",warn:"p-warn"}[t]||"p-neutral");
+const P=(t,tn)=>`<span class="pill ${tone(tn)}">${esc(t)}</span>`;
+const pct=(v,lab)=>P(`${lab?lab+" ":""}${v>0?"+":""}${(+v).toFixed(Math.abs(v)<10&&v%1?1:0)}%`, v>1?"good":v<-1?"bad":"");
+const col=c=>`var(--${c||"c1"})`;
+
+/* bar chart */
+function bars(vals,labels,o={}){
+  const W=o.W||300,H=o.H||118,Pd={l:6,r:6,t:20,b:18},color=o.color||"var(--accent)",f=o.f||(v=>v);
+  const max=Math.max(0,...vals),min=Math.min(0,...vals),span=(max-min)||1;
+  const y=v=>Pd.t+(max-v)/span*(H-Pd.t-Pd.b), bw=(W-Pd.l-Pd.r)/vals.length, gap=bw*0.3;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label||"")}"><line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(0)}" y2="${y(0)}" stroke="var(--line)"/>`;
+  vals.forEach((v,i)=>{const last=i===vals.length-1,x=Pd.l+i*bw+gap/2,w=bw-gap,top=Math.min(y(v),y(0)),h=Math.max(1.5,Math.abs(y(v)-y(0)));
+    s+=`<rect x="${x.toFixed(1)}" y="${top.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="${v<0?"var(--bad)":last?color:"var(--bar)"}"/>`;
+    s+=`<text x="${(x+w/2).toFixed(1)}" y="${(v<0?y(0)-5:top-5).toFixed(1)}" text-anchor="middle" class="${last?"lab":""}">${f(v)}</text><text x="${(x+w/2).toFixed(1)}" y="${H-4}" text-anchor="middle">${labels[i]}</text>`;});
+  return s+"</svg>";
+}
+function seriesWindow(co,key,q,n=5){const qs=co.series.q,i=qs.indexOf(q),from=Math.max(0,i-n+1);const m=co.series.metrics[key];
+  return {m,vals:m.v.slice(from,i+1),labels:qs.slice(from,i+1).map(qLabel)}}
+const fmt=(v,d)=>(+v).toFixed(d??1);
+
+/* ---------- search ---------- */
+let INDEX=[];
+function match(c,s){s=s.toLowerCase();return [c.t,c.n,c.en,...(c.aliases||[])].some(x=>String(x).toLowerCase().includes(s))}
+function renderSearch(){
+  const s=$("#q").value.trim(), box=$("#sres");
+  if(!s){box.hidden=true;return}
+  const hits=INDEX.filter(c=>match(c,s));
+  box.innerHTML=hits.length?hits.map((c,i)=>`<a href="#${c.t}" class="${i?"":"on"}"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${c.quarters.map(qLabel).join(" ")}</span></a>`).join("")
+    :`<div class="none">还没有"${esc(s)}"的财报解读。可以在财报日历里查看发布日期。</div>`;
+  box.hidden=false;
+}
+$("#q").addEventListener("input",renderSearch);
+$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"){const a=$("#sres a");if(a){location.hash=a.getAttribute("href");$("#q").value="";$("#sres").hidden=true}}if(e.key==="Escape"){$("#sres").hidden=true}});
+document.addEventListener("click",e=>{if(!e.target.closest(".sbox"))$("#sres").hidden=true;if(e.target.closest(".sres a")){$("#q").value="";$("#sres").hidden=true}});
+
+/* ---------- views ---------- */
+function home(){
+  const rows=[...INDEX].sort((a,b)=>b.latestDate.localeCompare(a.latestDate));
+  return `<div class="homeh"><h1>财报解读</h1><p>AI 产业链和重点科技公司的季度财报：业绩、估值、管理层承诺兑现和内部人动向。</p></div>
+  <section><h2>最新解读 <small>LATEST</small></h2><div class="clist">${rows.map(c=>`<a class="crow" href="#${c.t}">
+    <span class="l1"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${qLabel(c.latest)} · ${c.latestDate.slice(5).replace("-","月")}日发布</span></span>
+    <span class="hl">${esc(c.headline)}</span></a>`).join("")}</div>
+  <p class="note">更多公司的发布日期见<a href="calendar/">财报日历</a>。每家公司每季一份解读，往季解读保留在公司页的季度切换里。</p></section>`;
+}
+
+function hero(co,r,idx){
+  const qs=idx.quarters;
+  return `<header class="hero">
+    <div class="ticker"><span class="sym">${co.t}</span><span class="meta">${esc(co.n)} · ${esc(r.label)} · ${esc(r.dateLabel)}</span></div>
+    <nav class="qs" aria-label="切换季度">${qs.map(q=>`<a href="#${co.t}.${q}" ${q===r.quarter?'aria-current="page"':""}>${qLabel(q)}</a>`).join("")}</nav>
+    <h1>${esc(r.headline)}</h1>
+    <div class="verdicts">${r.verdicts.map(v=>`<div class="v"><span class="k">${esc(v.k)}</span><span class="val">${esc(v.val)}</span><span class="exp">${esc(v.exp||"")}</span>${P(v.pill,v.tone)}</div>`).join("")}</div>
+    <ol class="points">${r.points.map(p=>`<li><b>${esc(p.b)}：</b>${esc(p.t)}</li>`).join("")}</ol>
+    <p class="note">${r.reaction}</p>
+  </header>`;
+}
+
+function mVolPrice(x){return `<section><h2>增长来自量还是价 <small>VOLUME × PRICE</small></h2><p class="take">${x.take}</p>
+  <div class="panel"><div class="ph"><b>${esc(x.title)}</b><span>${esc(x.period)}</span></div>
+  <div class="vp">${x.items.map((it,i)=>`<div><span class="k">${esc(it.k)}</span><b>${esc(it.v)}</b>${pct(it.chg)}${i<2?`<span class="op">${i?"＝":"×"}</span>`:""}</div>`).join("")}</div></div>
+  ${x.note?`<p class="note">${x.note}</p>`:""}</section>`}
+
+function mSegments(x,co,q){
+  const mx=Math.max(...x.bridge.map(b=>Math.abs(b.v)))*1.08;
+  const br=x.bridge.map(b=>{const w=Math.abs(b.v)/mx*50,left=b.v>=0?50:50-w,c=b.v>=0?"var(--good)":"var(--bad)";
+    return `<div class="br"><span>${esc(b.n)}</span><span class="lane"><span class="fillbar" style="left:${left}%;width:${Math.max(w,.6)}%;background:${c}"></span></span><span class="amt" style="color:${c}">${b.v>0?"+":"−"}${Math.abs(b.v).toFixed(2)}</span></div>`}).join("");
+  const rows=x.rows.map(s=>{let ch="";if(s.m){const w=seriesWindow(co,s.m,q);ch=bars(w.vals,w.labels,{W:240,H:104,color:col(s.c),f:v=>fmt(v,w.m.dec),label:s.n})}
+    return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}<span class="share">占 ${esc(s.share)}</span></span>
+    <span class="big"><b>${esc(s.val)}</b>${(s.pills||[]).map(p=>pct(p.v,p.k)).join("")}</span><span class="why">${s.why}</span></div>${ch}</div>`}).join("");
+  return `<section><h2>${esc(x.title)} <small>${esc(x.en||"BY BUSINESS")}</small></h2><p class="take">${x.take}</p>
+  <div class="panel"><div class="ph"><b>营收同比变化</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>合计</span><span></span><span class="amt">${x.total}</span></div></div></div>
+  <div class="segs">${rows}</div>${x.note?`<p class="note">${x.note}</p>`:""}</section>`}
+
+function mExtra(x){
+  if(x.type==="stack"){const leg=x.keys.map(k=>`<span><i style="background:${col(k.c)}"></i>${esc(k.k)}</span>`).join("");
+    const rows=x.rows.map(([lab,v])=>`<div class="nr"><span>${esc(lab)}</span><div class="nbar" role="img" aria-label="${esc(lab)}：${x.keys.map((k,i)=>k.k+" "+v[i]+"%").join("，")}">${v.map((n,i)=>n?`<span style="flex:${n};background:${col(x.keys[i].c)}${x.keys[i].c==="bar"?";color:var(--ink)":""}">${n>=6?n+"%":""}</span>`:"").join("")}</div></div>`).join("");
+    return `<section><h2>${esc(x.title)} <small>${esc(x.en||"")}</small></h2><p class="take">${x.take}</p><div class="panel"><div class="stack">${rows}</div><div class="leg">${leg}<span>${esc(x.unit||"")}</span></div></div></section>`}
+  if(x.type==="list"){return `<section><h2>${esc(x.title)} <small>${esc(x.en||"")}</small></h2>${x.take?`<p class="take">${x.take}</p>`:""}<div class="panel drag">${x.items.map(i=>`<div><b>${esc(i.b)}</b>${P(i.pill,i.tone)}<span class="w">${i.w}</span></div>`).join("")}</div></section>`}
+  return "";
+}
+
+function mTrends(t,co,q){return `<section><h2>走势 <small>LAST 5 QUARTERS</small></h2><div class="grid">${t.map(c=>{const w=seriesWindow(co,c.m,q);
+  return `<div class="chart"><div class="t"><b>${esc(w.m.t)} <span class="u">${esc(w.m.u)}</span></b><span class="now">${fmt(w.vals.at(-1),w.m.dec)}</span></div>${bars(w.vals,w.labels,{f:v=>fmt(v,w.m.dec),label:w.m.t})}<div class="why">${c.why}</div></div>`}).join("")}</div></section>`}
+
+function tbl(head,rows,cols){const g=`grid-template-columns:${cols}`;return `<div class="tbl"><div class="tr th" style="${g}">${head.map(h=>`<span>${esc(h)}</span>`).join("")}</div>${rows.map(r=>`<div class="tr ${r.hl?"hl":""}" style="${g}">${r.c.map((c,i)=>`<span class="${(r.tone||[])[i]||""}">${c}</span>`).join("")}</div>`).join("")}</div>`}
+
+function mValuation(v,co,q){
+  let h=`<section><h2>估值 <small>VALUATION</small></h2><p class="take">${v.take}</p>
+  <div class="vgrid">${v.tiles.map(t=>`<div class="vt"><span class="k">${esc(t.k)}</span><b>${esc(t.v)}</b>${t.pill?P(t.pill,t.tone):""}<span class="f">${esc(t.f)}</span></div>`).join("")}</div>`;
+  if(v.forward)h+=`<div class="panel"><div class="ph"><b>${esc(v.forward.title)}</b><span>${esc(v.forward.sub||"")}</span></div><ol class="steps">${v.forward.steps.map(s=>`<li>${s}</li>`).join("")}</ol><p class="note">${v.forward.note}</p></div>`;
+  if(v.scenarios){const s=v.scenarios;h+=`<div class="panel"><div class="ph"><b>${esc(s.title)}</b><span>${esc(s.sub||"")}</span></div>${tbl(s.head,s.rows,s.cols)}<p class="note">${s.note}</p></div>`}
+  if(v.history){const x=v.history,vals=x.values.concat([x.cur]),W=320,H=130,Pd={l:24,r:34,t:12,b:20},max=x.max,n=vals.length,bw=(W-Pd.l-Pd.r)/n,y=t=>Pd.t+(max-t)/max*(H-Pd.t-Pd.b);
+    let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(x.title)}">`;
+    x.grid.forEach(g=>{s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(g)}" y2="${y(g)}" stroke="var(--line)" stroke-width="${g?.5:1}"/><text x="${Pd.l-4}" y="${y(g)+3}" text-anchor="end">${g}</text>`});
+    vals.forEach((t,i)=>{s+=`<rect x="${(Pd.l+i*bw+bw*.15).toFixed(1)}" y="${y(t).toFixed(1)}" width="${(bw*.7).toFixed(1)}" height="${(y(0)-y(t)).toFixed(1)}" rx="1.5" fill="${i===n-1?"var(--accent)":"var(--bar)"}"/>`});
+    s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(x.med)}" y2="${y(x.med)}" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="${W-Pd.r+3}" y="${y(x.med)+3}">中位</text><text x="${W-Pd.r+3}" y="${y(x.cur)+3}" class="lab">${x.cur}</text>`;
+    x.years.forEach((t,k)=>{s+=`<text x="${(Pd.l+(k*4+1)*bw).toFixed(1)}" y="${H-5}">${t}</text>`});
+    h+=`<div class="panel"><div class="ph"><b>${esc(x.title)}</b><span>${esc(x.sub)}</span></div>${s}</svg><p class="note">${x.note}</p></div>`}
+  if(v.decomp)h+=`<div class="panel"><div class="ph"><b>${esc(v.decomp.title)}</b><span>${esc(v.decomp.sub)}</span></div>${tbl(v.decomp.head,v.decomp.rows,"minmax(0,1fr) 6em 6em")}<p class="note">${v.decomp.note}</p></div>`;
+  if(v.cash){const w=v.cash.m?seriesWindow(co,v.cash.m,q):{vals:v.cash.d,labels:v.cash.labels,m:{dec:0}},unit=v.cash.unit||"";h+=`<div class="panel"><div class="ph"><b>${esc(v.cash.title)}</b><span>${esc(v.cash.sub||"")}</span></div>${v.cash.stats?`<div class="stats">${v.cash.stats.map(s=>`<div><span class="k">${esc(s.k)}</span><b style="${s.tone==="bad"?"color:var(--bad)":""}">${esc(s.v)}</b></div>`).join("")}</div>`:""}${bars(w.vals,w.labels,{W:320,H:110,f:x=>fmt(x,w.m.dec)+unit,label:v.cash.title})}<p class="note">${v.cash.note}</p></div>`}
+  if(v.sotp)h+=`<div class="panel"><div class="ph"><b>${esc(v.sotp.title)}</b><span>可拖动调整</span></div><p class="note" style="color:var(--ink)">${v.sotp.intro}</p><div class="sotp" id="sotp"></div><div class="sbar" id="sbar"></div><p class="take" id="sotp-out"></p><p class="note">${v.sotp.note}</p></div>`;
+  if(v.calc)h+=`<details class="calc"><summary>计算依据</summary><ul>${v.calc.map(c=>`<li>${c}</li>`).join("")}</ul></details>`;
+  if(v.next)h+=`<p class="note">${v.next}</p>`;
+  return h+"</section>";
+}
+function wireSotp(s){if(!s)return;const box=$("#sotp");if(!box)return;
+  box.innerHTML=s.parts.map((p,i)=>`<label class="sl" for="sl${i}"><span>${esc(p.n)}</span><input type="range" id="sl${i}" min="0.5" max="10" step="0.1" value="${p.def}"><span class="x" id="sl${i}x"></span><span class="val" id="sl${i}v"></span></label>`).join("");
+  const upd=()=>{let core=0;const vals=s.parts.map((p,i)=>{const m=+$("#sl"+i).value,v=m*p.rev;core+=v;$("#sl"+i+"x").textContent=m.toFixed(1)+"×";$("#sl"+i+"v").textContent="$"+v.toFixed(0)+"B";return v});
+    const rest=Math.max(0,s.ev-core),pc=rest/s.ev*100;
+    $("#sbar").innerHTML=vals.map((v,i)=>`<span style="flex:${v};background:${col(s.parts[i].c)}"></span>`).join("")+`<span style="flex:${rest};background:var(--muted)">未来业务 ${pc.toFixed(0)}%</span>`;
+    $("#sotp-out").innerHTML=`现有业务合计约 <b>$${core.toFixed(0)}B</b>，企业价值 $${s.ev.toFixed(0)}B 中约 <b>$${rest.toFixed(0)}B（${pc.toFixed(0)}%）</b>是在为尚未兑现的业务定价。`};
+  s.parts.forEach((p,i)=>$("#sl"+i).addEventListener("input",upd));upd()}
+
+function mManagement(m,pr,q){
+  const checks=pr.filter(p=>(p.checks||[]).some(c=>c.q===q));
+  const made=pr.filter(p=>p.made===q);
+  let h=`<section><h2>说了 vs 做到 <small>PROMISE LEDGER</small></h2>`;
+  h+=checks.length?`<div class="ledger">${checks.map(p=>{const c=p.checks.find(c=>c.q===q),prev=p.checks.filter(c=>c.q<q);
+    return `<div class="item"><span class="said">${esc(p.saidLabel)}</span>${P(c.status,c.tone)}<span class="what">${esc(p.text)}</span><span class="out">${c.note}</span>${prev.length?`<span class="hist">${prev.map(x=>`<span>${qLabel(x.q)}：${esc(x.status)} · ${x.note}</span>`).join("")}</span>`:""}</div>`}).join("")}</div>`
+    :`<div class="empty"><b>这是第一份解读</b><span>本季记录的承诺会从下一季开始逐条核对。</span></div>`;
+  if(made.length)h+=`<div class="sub">本季新承诺，下季起追踪</div><div class="future">${made.map(p=>`<div class="fi"><span class="when">${esc(p.dueLabel)}</span><span class="what">${esc(p.text)}</span></div>`).join("")}</div>`;
+  h+=`</section>`;
+  if(m.changes)h+=`<section><h2>和上季相比，说法有什么变化 <small>WHAT CHANGED</small></h2><div class="chg">${m.changes.map(c=>`<div class="ch"><span class="tp2">${esc(c.topic)}</span>${P(c.pill,c.tone)}<div class="ba"><span>上季</span><span>${c.before}</span><span>本季</span><span>${c.now}</span></div></div>`).join("")}</div></section>`;
+  h+=`<section><h2>电话会 <small>EARNINGS CALL</small></h2><div class="call">${m.call.map(c=>`<div class="card"><h3>${esc(c.h)}</h3><ul>${c.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("")}</div></section>`;
+  return h;
+}
+
+function mInsider(x){return `<section><h2>内部人动向 <small>INSIDER FLOW</small></h2><div class="empty"><b>${esc(x.title)}</b><span>${x.text}</span></div></section>`}
+
+const TABS=[["results","业绩"],["valuation","估值"],["management","管理层"],["insider","内部人"]];
+async function company(t,q,tab){
+  const idx=INDEX.find(c=>c.t===t);if(!idx)return `<div class="empty"><b>没有找到 ${esc(t)}</b><span>试试上方搜索。</span></div>`;
+  q=idx.quarters.includes(q)?q:idx.latest;tab=TABS.some(x=>x[0]===tab)?tab:"results";
+  const [co,r,pr]=await Promise.all([getJSON(`data/companies/${t}.json`),getJSON(`data/reports/${t}/${q}.json`),getJSON(`data/promises/${t}.json`)]);
+  const R=r.results,parts={
+    results:(R.volprice?mVolPrice(R.volprice):"")+mSegments(R.segments,co,q)+(R.extras||[]).map(mExtra).join("")+mTrends(R.trends,co,q),
+    valuation:mValuation(r.valuation,co,q),
+    management:mManagement(r.management,pr,q),
+    insider:mInsider(r.insider)};
+  document.title=`${co.t} ${co.n} ${qLabel(q)} · April's Earnings Lens`;
+  return {html:hero(co,r,idx)+`<nav class="tabs" role="tablist" aria-label="页面分区">${TABS.map(([k,n])=>`<a role="tab" href="#${t}.${q}.${k}" aria-selected="${k===tab}">${n}</a>`).join("")}</nav>
+    <div class="tp" role="tabpanel">${parts[tab]}</div>
+    <footer><span>本页仅为信息整理，不构成投资建议。数据截至 ${esc(r.asOf)}。</span><span>来源</span><ol>${r.sources.map(s=>`<li><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a></li>`).join("")}</ol></footer>`,
+    after:()=>{if(tab==="valuation")wireSotp(r.valuation.sotp)}};
+}
+
+let lastKey="";
+async function route(){
+  const h=decodeURIComponent(location.hash.slice(1));const [t,q,tab]=h.split(".");
+  const app=$("#app");const key=`${t}.${q}`;
+  try{
+    if(!t||t==="home"){app.innerHTML=`<div class="tp">${home()}</div>`;document.title="April's Earnings Lens";lastKey="";return}
+    const res=await company(t.toUpperCase(),q,tab);
+    if(typeof res==="string"){app.innerHTML=res;return}
+    const tabsEl=app.querySelector("nav.tabs"),stuck=tabsEl&&tabsEl.getBoundingClientRect().top<=1;
+    app.innerHTML=`<div class="tp">${res.html}</div>`;res.after();
+    if(key!==lastKey)window.scrollTo(0,0);else if(stuck)app.querySelector("nav.tabs").scrollIntoView({block:"start"});
+    lastKey=key;
+  }catch(e){app.innerHTML=`<div class="empty"><b>数据没有加载成功</b><span>请刷新页面再试。（${esc(e.message)}）</span></div>`}
+}
+window.addEventListener("hashchange",route);
+getJSON("data/index.json").then(d=>{INDEX=d.companies;route()}).catch(()=>{$("#app").innerHTML=`<div class="empty"><b>数据没有加载成功</b><span>请刷新页面再试。</span></div>`});
+</script>
