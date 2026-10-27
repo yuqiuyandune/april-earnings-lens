@@ -93,7 +93,7 @@ footer a{color:var(--accent)}
   <div class="brand"><a href="../" style="color:inherit;text-decoration:none"><b>财报日历</b></a><a href="../" style="color:var(--accent);text-decoration:none">← 财报解读</a></div>
   <header style="display:flex;flex-direction:column;gap:8px">
     <h1>2026 年 Q3 财报季</h1>
-    <p class="lede">AI 产业链五层里每家公司的财报日期，名单和 <a href="/">AI 产业链</a> 一致。点击已上线分析的公司，可直接查看财报解读。</p>
+    <p class="lede">AI 产业链五层里每家公司的财报日期，名单和 <a href="/">AI 产业链</a> 一致，包括为 AI 建设提供资金的银行和资产管理公司。点击已上线分析的公司，可直接查看财报解读。</p>
   </header>
 
   <div class="season">
@@ -130,7 +130,8 @@ footer a{color:var(--accent)}
 <script>
 const CATS=[
   {id:"energy",n:"能源",c:"--c4"},{id:"chip",n:"芯片",c:"--c3"},{id:"infra",n:"基础设施",c:"--c1"},
-  {id:"model",n:"模型",c:"--c2"},{id:"app",n:"应用",c:"--c6"}
+  {id:"model",n:"模型",c:"--c2"},{id:"app",n:"应用",c:"--c6"},
+  {id:"capital",n:"资金方",c:"--c5"}
 ];
 const SITE="../";
 const LINKS={TSLA:SITE+"#TSLA",TSM:SITE+"#TSM",META:SITE+"#META"};
@@ -146,13 +147,17 @@ const RAW=`08-26|CRM|Salesforce|app|a|1
 09-02|AVGO|博通|chip|a|1
 09-10|ORCL|甲骨文|infra|a|1
 09-30|MU|美光|chip|a|1
+10-13|GS|高盛|capital|b|1
+10-13|JPM|摩根大通|capital|b|1
 10-14|ASML|阿斯麦|chip|b|1
+10-14|MS|摩根士丹利|capital|b|1
 10-15|TSM|台积电|chip|b|1
 10-20|SPCX|SpaceX|model|n|1
 10-21|LRCX|泛林集团|chip|a|1
 10-21|META|Meta|model|a|1
 10-21|TSLA|特斯拉|app|a|1
 10-22|BE|Bloom Energy|energy|a|1
+10-22|BX|黑石|capital|b|1
 10-22|WDC|西部数据|chip|a|1
 10-26|AMKR|安靠|chip|a|1
 10-26|CLS|天弘|infra|a|1
@@ -171,6 +176,7 @@ const RAW=`08-26|CRM|Salesforce|app|a|1
 10-29|DLR|Digital Realty|infra|a|1
 10-29|INTC|英特尔|chip|a|1
 10-29|MPWR|芯源系统|chip|a|1
+10-29|OWL|Blue Owl|capital|b|1
 10-29|PWR|广达服务|energy|b|1
 10-29|SNDK|闪迪|chip|a|1
 11-02|AAPL|苹果|app|a|1
@@ -179,6 +185,7 @@ const RAW=`08-26|CRM|Salesforce|app|a|1
 11-03|ALAB|Astera Labs|chip|a|1
 11-03|AMD|超威半导体|chip|a|1
 11-03|ANET|Arista网络|infra|a|1
+11-03|APO|阿波罗|capital|b|1
 11-03|ETN|伊顿|infra|b|1
 11-03|MOD|Modine|infra|a|1
 11-03|SMCI|超微电脑|infra|a|1
@@ -190,6 +197,7 @@ const RAW=`08-26|CRM|Salesforce|app|a|1
 11-05|IREN|IREN|infra|n|1
 11-05|LITE|Lumentum|infra|a|1
 11-05|SMR|NuScale|energy|a|1
+11-06|BAM|布鲁克菲尔德|capital|b|1
 11-06|OKLO|Oklo|energy|b|1
 11-06|VST|Vistra|energy|b|1
 11-09|CEG|星座能源|energy|b|0
