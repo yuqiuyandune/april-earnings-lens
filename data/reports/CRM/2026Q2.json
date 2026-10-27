@@ -1,0 +1,505 @@
+{
+ "ticker": "CRM",
+ "quarter": "2026Q2",
+ "label": "FY2027 Q2（2026 年 5–7 月）",
+ "dateLabel": "2026 年 8 月 26 日盘后",
+ "asOf": "股价截至 2026-10-27 收盘",
+ "headline": "一天涨了 23%，推动它的是 Claudeforce，不是增长",
+ "verdicts": [
+  {
+   "k": "营收",
+   "val": "$11.35B",
+   "exp": "预期 $11.32B",
+   "pill": "+0.2%",
+   "tone": ""
+  },
+  {
+   "k": "Non-GAAP EPS（剔除投资收益）",
+   "val": "约 $3.37",
+   "exp": "指引 $3.25–3.27",
+   "pill": "+3%",
+   "tone": "good"
+  },
+  {
+   "k": "cRPO 增速",
+   "val": "+14%",
+   "exp": "指引约 13%",
+   "pill": "高 1 个点",
+   "tone": "good"
+  },
+  {
+   "k": "自然增长",
+   "val": "约 +6%",
+   "exp": "报告 +11%",
+   "pill": "Informatica 约 4.5 个点",
+   "tone": "warn"
+  }
+ ],
+ "points": [
+  {
+   "b": "增长有四成是买来的",
+   "t": "营收 +11%，但收购的 Informatica 贡献约 4.5 个点，剔除后约 6%。"
+  },
+  {
+   "b": "AI 指标在变大",
+   "t": "Agentforce ARR 超过 $15 亿，AI 和数据合计约 $39 亿；但口径扩大了，同比不完全可比。"
+  },
+  {
+   "b": "EPS 翻倍主要靠一次性和回购",
+   "t": "$2.53 来自投资收益；$250 亿回购让股数减少约 14%。"
+  }
+ ],
+ "reaction": "股价：公布当天收于 $205.62，次日收涨 <b>22.6%</b>（$252.05），成交量是平时的 3 倍多。主要推动力是同时宣布的 Claudeforce：Salesforce 和 Anthropic 合作，把 CRM 的数据和功能放进 Claude，缓解了市场对“AI 取代 SaaS”的担心；业绩本身只是小幅超预期。第三天再涨 1.6%。到 10 月 27 日收于 $240.89，比财报次日低 4.4%。营收预期为 Hudson Labs 引用的公开共识。",
+ "results": {
+  "segments": {
+   "title": "分业务",
+   "en": "BY OFFERING",
+   "period": "FY27 Q2 vs FY26 Q2，$B",
+   "take": "增长主要来自<b>Data 360 和平台</b>，但其中大部分是并入的 Informatica；Sales、Service 等核心应用只增长约 8%。",
+   "bridge": [
+    {
+     "n": "Data 360、平台及其他",
+     "v": 0.61
+    },
+    {
+     "n": "Agentforce 应用",
+     "v": 0.511
+    },
+    {
+     "n": "专业服务",
+     "v": -0.021
+    }
+   ],
+   "total": "+1.11",
+   "rows": [
+    {
+     "n": "Data 360、平台及其他",
+     "share": "32%",
+     "c": "c3",
+     "val": "$3.62B",
+     "pills": [
+      {
+       "k": "同比",
+       "v": 20.3
+      }
+     ],
+     "why": "包括 Informatica 本季约 $4.4 亿订阅收入、Slack、MuleSoft 和 Data 360。剔除 Informatica 后约 +6%。"
+    },
+    {
+     "n": "Agentforce 应用",
+     "share": "63%",
+     "c": "c1",
+     "val": "$7.19B",
+     "pills": [
+      {
+       "k": "同比",
+       "v": 7.6
+      }
+     ],
+     "why": "Sales、Service、Marketing、Commerce 等云产品，现在统一叫 Agentforce 应用。营销和电商仍然偏弱。"
+    },
+    {
+     "n": "专业服务",
+     "share": "5%",
+     "c": "c4",
+     "val": "$0.53B",
+     "pills": [
+      {
+       "k": "同比",
+       "v": -3.8
+      }
+     ],
+     "why": "实施和咨询，继续收缩。"
+    }
+   ],
+   "note": "FY27 起 Salesforce 只公布两大订阅类别，不再单独公布 Sales、Service 等云的营收，所以没有 5 季走势图。固定汇率增速：应用 +8%，平台 +20%。"
+  },
+  "extras": [
+   {
+    "type": "list",
+    "title": "增长里有多少是买来的",
+    "en": "ORGANIC VS ACQUIRED",
+    "take": "报告的 +11% 里，自然增长约 6%，管理层说下半年会重新加速。",
+    "items": [
+     {
+      "b": "Informatica",
+      "pill": "约 4.5 个点",
+      "tone": "warn",
+      "w": "本季贡献营收 $4.56 亿。剔除后营收约 $108.9 亿，同比约 +6.4%。Q3 指引里 Informatica 贡献略高于 4 个点。"
+     },
+     {
+      "b": "Contentful 和 Fin",
+      "pill": "待完成",
+      "tone": "warn",
+      "w": "全年营收指引上调的约 $3 亿里有 $2 亿来自这两笔收购，没有公布收购价格。"
+     },
+     {
+      "b": "Agentforce ARR",
+      "pill": "$15 亿+，+240%",
+      "tone": "good",
+      "w": "已经把 AI 功能、Slackbot 和 Headless 360 算进去，口径比去年宽。本季新增 2,000 家正式付费使用的客户，环比 +70%。"
+     },
+     {
+      "b": "用量",
+      "pill": "环比 +97%",
+      "tone": "good",
+      "w": "本季 32 亿个 Agentic Work Units（AI 代理完成的工作量单位），Slackbot 用户环比 +150%。"
+     }
+    ]
+   },
+   {
+    "type": "list",
+    "title": "EPS 里的一次性收益",
+    "en": "EPS QUALITY",
+    "take": "EPS 同比翻倍，但经营本身的贡献有限。",
+    "items": [
+     {
+      "b": "投资收益",
+      "pill": "$2.53 / 股",
+      "tone": "warn",
+      "w": "战略投资收益 $26.1 亿，一年前只有 $600 万。Non-GAAP EPS $5.90 剔除后约 $3.37。"
+     },
+     {
+      "b": "回购",
+      "pill": "股数约 −14%",
+      "tone": "",
+      "w": "发债 $250 亿做加速回购，已先交付 1.03 亿股，平均价约 $176。同样的利润分给更少的股数。"
+     },
+     {
+      "b": "营业利润率",
+      "pill": "基本持平",
+      "tone": "",
+      "w": "Non-GAAP 34.1%，一年前 34.3%；GAAP 20.5%，一年前 22.8%。"
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "m": "rev",
+    "why": "含 Informatica 后 +11%，自然约 +6%"
+   },
+   {
+    "m": "crpo",
+    "why": "连续加速到 14%，是领先指标"
+   },
+   {
+    "m": "opm",
+    "why": "Non-GAAP 稳定在 34% 左右"
+   },
+   {
+    "m": "fcf",
+    "why": "季节性强，Q4、Q1 收款集中"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "按过去一年自由现金流算约 <b>13 倍</b>，FCF 收益率约 8%，是自己 5 年来第三低（5 年中位数约 25 倍）。按中位倍数，现价只需要自由现金流比现在<b>少一半</b>：<b>市场在为 AI 冲击软件定价</b>，而不是为增长付溢价。",
+  "tiles": [
+   {
+    "k": "市值 / 自由现金流",
+    "v": "12.7×",
+    "pill": "FCF 收益率 7.9%",
+    "tone": "good",
+    "f": "市值约 $193B ÷ TTM FCF $15.2B"
+   },
+   {
+    "k": "前瞻 P/E（FY27，剔除投资收益）",
+    "v": "17.0×",
+    "f": "$240.89 ÷（指引中值 $16.69 − $2.53）"
+   },
+   {
+    "k": "P/E（TTM，GAAP）",
+    "v": "22.0×",
+    "pill": "剔除收益 28×",
+    "tone": "",
+    "f": "$240.89 ÷ TTM EPS $10.97"
+   },
+   {
+    "k": "企业价值 / 营收",
+    "v": "5.1×",
+    "f": "EV 约 $224B（含净负债约 $31B）÷ TTM 营收 $43.9B"
+   }
+  ],
+  "forward": {
+   "title": "公司已给出全年 EPS",
+   "sub": "FY27 指引",
+   "steps": [
+    "全年 Non-GAAP EPS 指引 $16.67–16.71",
+    "其中 Q2 的投资收益约 $2.53 不会重复 → 剔除后约 <b>$14.16</b>",
+    "Q3 指引 Non-GAAP EPS $3.42–3.44",
+    "现价 ÷ $14.16 → 前瞻市盈率约 <b>17×</b>"
+   ],
+   "note": "回购让股数大幅减少，所以 EPS 增速会明显高于净利润增速。以上为公司指引，不是我们的预测。"
+  },
+  "scenarios": {
+   "title": "三情境：现价落在哪里",
+   "sub": "FY28（2027 年 2 月–2028 年 1 月）假设",
+   "head": [
+    "情境",
+    "营收增长",
+    "FCF 利润率",
+    "自由现金流",
+    "市值/FCF"
+   ],
+   "cols": "4.2em repeat(4,minmax(0,1fr))",
+   "rows": [
+    {
+     "c": [
+      "悲观",
+      "+7%",
+      "31%",
+      "$15.3B",
+      "12.6×"
+     ]
+    },
+    {
+     "c": [
+      "基准",
+      "+10%",
+      "34%",
+      "$17.3B",
+      "11.2×"
+     ]
+    },
+    {
+     "c": [
+      "乐观",
+      "+13%",
+      "36%",
+      "$18.8B",
+      "10.3×"
+     ]
+    },
+    {
+     "c": [
+      "现价*",
+      "—",
+      "—",
+      "$7.8B",
+      "24.9×"
+     ],
+     "hl": true
+    }
+   ],
+   "note": "以 FY27 营收指引中值约 $46.25B 为基数，市值约 $193B。*现价：假设市场给过去 5 年市值/自由现金流中位数 24.9×，现价只需要每年约 $78 亿自由现金流，约为现在的一半。现价在悲观情境之下，<b>相当于假设 AI 会明显侵蚀它的现金流</b>。情境假设由我们设定，不构成预测。"
+  },
+  "history": {
+   "title": "和自己的过去 5 年比",
+   "sub": "市值 / 自由现金流，季末值",
+   "max": 60,
+   "grid": [
+    0,
+    20,
+    40,
+    60
+   ],
+   "years": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "values": [
+    53.41,
+    43.37,
+    30.56,
+    32.23,
+    29.22,
+    26.37,
+    27.49,
+    28.99,
+    22.18,
+    28.65,
+    23.02,
+    21.88,
+    23.46,
+    26.3,
+    20.39,
+    19.76,
+    19.23,
+    13.81,
+    9.85,
+    9.95
+   ],
+   "cur": 12.7,
+   "med": 24.9,
+   "note": "当前约 13× 只高于过去 20 个季末中的 2 个（2026 年 4 月和 7 月底，约 10×），处于<b>第 10 百分位</b>。这一年倍数从 20× 掉到 10×，市场担心 AI 代理会减少企业买软件账号的数量。GAAP 利润受投资收益影响大，所以用自由现金流倍数。StockAnalysis 口径。"
+  },
+  "decomp": {
+   "title": "财报后股价 +22.6%，拆开看",
+   "sub": "8/26 → 8/27 收盘",
+   "head": [
+    "口径",
+    "TTM 自由现金流",
+    "市值/FCF"
+   ],
+   "rows": [
+    {
+     "c": [
+      "自由现金流",
+      "+3.4%",
+      "+18.6%"
+     ],
+     "tone": [
+      "",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "note": "新一季替换掉一年前的季度，过去四季自由现金流只多了 3.4%。<b>涨幅几乎全部来自倍数修复</b>：市场是在重新评估 AI 对 Salesforce 是威胁还是机会，Claudeforce 是触发点。"
+  },
+  "cash": {
+   "title": "回购和负债",
+   "sub": "每季自由现金流，$B",
+   "m": "fcf",
+   "unit": "",
+   "stats": [
+    {
+     "k": "TTM 自由现金流",
+     "v": "$15.2B"
+    },
+    {
+     "k": "上半年回购",
+     "v": "$27.3B",
+     "tone": "warn"
+    },
+    {
+     "k": "净负债",
+     "v": "约 $31B",
+     "tone": "warn"
+    }
+   ],
+   "note": "上半年回购 $273 亿，超过过去一年自由现金流的总和，主要靠新发的 $250 亿债券。所以全年经营现金流增长指引从 9–10% 降到 4–5%（利息增加）。资本开支约占营收 1.5%。"
+  },
+  "calc": [
+   "股价 $240.89：10 月 27 日收盘；市值约 $193B（StockAnalysis 市值 ÷ 股价推算约 8.0 亿股），净负债约 $31B，EV 约 $224B",
+   "TTM = FY26 Q3 至 FY27 Q2：营收 $10.26B + $11.20B + $11.13B + $11.35B = $43.94B；GAAP EPS $2.19 + $2.07 + $2.42 + $4.29 = $10.97",
+   "自由现金流 = 经营现金流 − 资本开支：$2.18B + $5.32B + $6.56B + $1.10B = $15.15B",
+   "自然增长：($11.345B − Informatica $0.456B) ÷ $10.236B − 1 ≈ 6.4%",
+   "财报前后：价格 × 1.226，TTM 自由现金流 × 1.034 → 倍数 × 1.186",
+   "情境自由现金流 = FY28 营收 × 自由现金流利润率"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "AI 战略",
+    "pill": "新合作",
+    "tone": "good",
+    "before": "Agentforce 是 Salesforce 自己的 AI 代理平台。",
+    "now": "与 Anthropic 推出 Claudeforce，把 CRM 放进 Claude；Slackbot 也用 Claude。管理层称为“enterprise harness”（数据、应用、代理、界面四层）。"
+   },
+   {
+    "topic": "定价方式",
+    "pill": "承认旧模式受压",
+    "tone": "warn",
+    "before": "主推按用户的 Agentforce 版本和 Flex 额度。",
+    "now": "客户可以按用户、用量或结果付费；Benioff 说公司“在某些方面还困在按用户收费的旧模式里”。"
+   },
+   {
+    "topic": "全年营收",
+    "pill": "上调（含收购）",
+    "tone": "warn",
+    "before": "$45.9–46.2B，全部是已完成的业务。",
+    "now": "$46.1–46.4B，其中 $2 亿来自待完成的 Contentful 和 Fin。"
+   },
+   {
+    "topic": "GAAP 利润率",
+    "pill": "再下调",
+    "tone": "warn",
+    "before": "20.6%。",
+    "now": "20.1%。"
+   },
+   {
+    "topic": "长期目标",
+    "pill": "推迟",
+    "tone": "",
+    "before": "没有更新。",
+    "now": "FY28 细节推迟到 Dreamforce 投资者日。"
+   }
+  ],
+  "call": [
+   {
+    "h": "管理层强调",
+    "items": [
+     "AI 公司前 10 名里有 9 家用 Salesforce，支出同比增长 435%",
+     "通过 MCP 和 Claude 调用的 AI 代理用量增长 6 倍",
+     "只有 5% 的销售和客服人员升级到高级版，高级版贵 60–80%",
+     "年底前再招 1,200 名销售，现有约 15,000 名"
+    ]
+   },
+   {
+    "h": "分析师追问，没有给出答案",
+    "items": [
+     "Claudeforce 的收入目标和与 Anthropic 的分成",
+     "开源模型会不会降低 AI 代理的价格、什么时候能变现",
+     "AI 付费客户占比和销售周期",
+     "Headless（不经过 Salesforce 界面）的使用怎么收费"
+    ]
+   },
+   {
+    "h": "下季要盯的数字",
+    "items": [
+     "Q3 营收 $11.42–11.50B，剔除收购后自然增长能否回到 7–8%",
+     "cRPO 能否维持 14%",
+     "Claudeforce 上线后的客户数和用量",
+     "FY28 指引（Dreamforce 投资者日）"
+    ]
+   },
+   {
+    "h": "什么情况说明判断错了",
+    "items": [
+     "cRPO 增速回落到 12% 以下",
+     "剔除收购后营收增速继续低于 6%",
+     "付费账号数开始下降，说明 AI 代理在替代人工账号",
+     "Claudeforce 的使用主要发生在 Claude 里，Salesforce 只拿到很少的收入"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "财报前后 30 天的有效买卖",
+  "text": "财报前 30 天没有有效买卖。财报后 30 天：董事 David Kirk 9 月 18 日在公开市场<b>买入</b> 4,176 股，约 <b>$100 万</b>（约 $239/股）；董事 Craig Conway 9 月 4 日卖出 4,500 股，约 $117 万。买卖金额都不大，方向相反。数据来自 <a href=\"/s/CRM.html\">April's Stock Atlas 内部人动向</a>。"
+ },
+ "sources": [
+  {
+   "t": "Salesforce：FY27 Q2 财报新闻稿",
+   "u": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/"
+  },
+  {
+   "t": "Salesforce：FY27 Q1 财报（SEC 8-K）",
+   "u": "https://www.sec.gov/Archives/edgar/data/0001108524/000110852426000125/crm-q1fy27xexhibit991.htm"
+  },
+  {
+   "t": "Salesforce：FY26 Q4 财报（SEC 8-K，FY27 初始指引）",
+   "u": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm"
+  },
+  {
+   "t": "Salesforce：FY26 Q3 财报（SEC 8-K）",
+   "u": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm"
+  },
+  {
+   "t": "Motley Fool：FY27 Q2 电话会纪要",
+   "u": "https://www.fool.com/earnings/call-transcripts/2026/08/31/salesforce-crm-q2-2027-earnings-call-transcript/"
+  },
+  {
+   "t": "Hudson Labs：财报前一致预期",
+   "u": "https://www.hudson-labs.com/research/salesforce-q2-2027-earnings-preview-crm-revenue-preview"
+  },
+  {
+   "t": "Yahoo Finance：8 月 27 日上涨 23% 的原因",
+   "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-27-214747546.html"
+  },
+  {
+   "t": "Salesforce：Claudeforce 合作公告",
+   "u": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/"
+  },
+  {
+   "t": "StockAnalysis：股价与历史估值",
+   "u": "https://stockanalysis.com/stocks/crm/financials/ratios/?p=quarterly"
+  }
+ ]
+}

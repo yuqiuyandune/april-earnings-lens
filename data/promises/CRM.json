@@ -1,0 +1,141 @@
+[
+ {
+  "id": "crm-q2rev",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 财报）",
+  "text": "Q2 营收 $11.27–11.35B",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "已兑现",
+    "tone": "good",
+    "note": "实际 $11.345B，接近区间上限；按固定汇率高于上限。"
+   }
+  ]
+ },
+ {
+  "id": "crm-q2eps",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 财报）",
+  "text": "Q2 Non-GAAP EPS $3.25–3.27",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "一次性因素",
+    "tone": "warn",
+    "note": "报告 $5.90，其中 $2.53 来自战略投资收益；剔除后约 $3.37，仍高于指引上限约 3%。"
+   }
+  ]
+ },
+ {
+  "id": "crm-q2crpo",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 财报）",
+  "text": "Q2 cRPO 同比约 13%（固定汇率）",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 14%（固定汇率），$33.5B，高 1 个点。"
+   }
+  ]
+ },
+ {
+  "id": "crm-fyrev",
+  "made": "2025Q4",
+  "saidLabel": "2026 年 2 月（FY26 Q4 财报）",
+  "text": "FY27 营收 $45.8–46.2B",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q1",
+    "status": "上调",
+    "tone": "good",
+    "note": "下限提到 $45.9B。"
+   },
+   {
+    "q": "2026Q2",
+    "status": "上调（含收购）",
+    "tone": "warn",
+    "note": "上调到 $46.1–46.4B。增加的约 $3 亿里，$2 亿来自尚未完成的 Contentful 和 Fin 收购，自然增长只贡献约 $1 亿，汇率拖累 $1 亿。"
+   }
+  ]
+ },
+ {
+  "id": "crm-ocf",
+  "made": "2025Q4",
+  "saidLabel": "2026 年 2 月（FY26 Q4 财报）",
+  "text": "FY27 经营现金流和自由现金流增长 9–10%",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q1",
+    "status": "下调",
+    "tone": "bad",
+    "note": "下调到 4–5%，原因是为 $250 亿回购发债，利息增加。"
+   },
+   {
+    "q": "2026Q2",
+    "status": "维持",
+    "tone": "",
+    "note": "维持 4–5%。"
+   }
+  ]
+ },
+ {
+  "id": "crm-gaapom",
+  "made": "2025Q4",
+  "saidLabel": "2026 年 2 月（FY26 Q4 财报）",
+  "text": "FY27 GAAP 营业利润率 20.9%",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q1",
+    "status": "下调",
+    "tone": "warn",
+    "note": "降到 20.6%。"
+   },
+   {
+    "q": "2026Q2",
+    "status": "再下调",
+    "tone": "warn",
+    "note": "降到 20.1%，收购摊销和整合费用增加；Non-GAAP 维持 34.3%。"
+   }
+  ]
+ },
+ {
+  "id": "crm-q3",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "Q3 营收 $11.42–11.50B，cRPO 同比约 14%（固定汇率），下半年自然增长重新加速",
+  "dueLabel": "FY27 Q3",
+  "checks": []
+ },
+ {
+  "id": "crm-claude",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "Claudeforce 9 月在 Dreamforce 正式上线，每个销售都会演示",
+  "dueLabel": "2026 年 9 月",
+  "checks": []
+ },
+ {
+  "id": "crm-asr",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 财报）",
+  "text": "$250 亿加速回购在 Q3 完成结算，至少注销 14% 的流通股",
+  "dueLabel": "FY27 Q3",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "进行中",
+    "tone": "",
+    "note": "已先交付 1.03 亿股，目前平均价约 $176，预计 10 月最终结算。"
+   }
+  ]
+ }
+]

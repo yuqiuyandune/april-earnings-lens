@@ -85,6 +85,24 @@
    "latest": "2026Q2",
    "latestDate": "2026-08-26",
    "headline": "AI 点燃了安全需求，股价却跑得比 ARR 快一倍"
+  },
+  {
+   "t": "CRM",
+   "n": "Salesforce",
+   "en": "Salesforce",
+   "aliases": [
+    "赛富时",
+    "Agentforce",
+    "Slack",
+    "Claudeforce"
+   ],
+   "cat": "应用",
+   "quarters": [
+    "2026Q2"
+   ],
+   "latest": "2026Q2",
+   "latestDate": "2026-08-26",
+   "headline": "一天涨了 23%，推动它的是 Claudeforce，不是增长"
   }
  ]
 }
