@@ -50,6 +50,24 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-21",
    "headline": "广告越卖越贵，现金流却被 AI 投入吃成了负数"
+  },
+  {
+   "t": "NVDA",
+   "n": "英伟达",
+   "en": "NVIDIA",
+   "aliases": [
+    "Nvidia",
+    "辉达",
+    "輝達",
+    "黄仁勋"
+   ],
+   "cat": "芯片",
+   "quarters": [
+    "2026Q2"
+   ],
+   "latest": "2026Q2",
+   "latestDate": "2026-08-26",
+   "headline": "订单多到做不完，存储涨价先吃掉了毛利"
   }
  ]
 }

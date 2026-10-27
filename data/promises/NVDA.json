@@ -1,0 +1,154 @@
+[
+ {
+  "id": "nvda-q2rev",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "Q2 营收 $91.0B ±2%",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $96.2B，比指引中值高 5.7%，也高于区间上限 $92.8B。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-q2gm",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "Q2 毛利率 75.0% ±0.5 个点（Non-GAAP）",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "已兑现",
+    "tone": "good",
+    "note": "实际 75.0%，正好落在指引中值。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-fygm",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "FY27 全年毛利率保持在 75% 左右（mid-70s）",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "未兑现",
+    "tone": "bad",
+    "note": "改口：Q3 指引 74%，Q4 降到 71–72%，原因是存储涨价超出预期。下半年平均会明显低于 75%。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-opex",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "FY27 营业费用同比增长 40% 多（upper 40s）",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "上调",
+    "tone": "warn",
+    "note": "上调到增长 50% 出头（low 50s），主要是算力基础设施和薪酬。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-dso",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "应收账款天数 Q2 回到 55 天左右（Q1 为 45 天）",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "未兑现",
+    "tone": "bad",
+    "note": "实际升到 60 天，比说的还高。原因是给大客户的多季度合同放宽了付款期。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-return",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "今年把约 50% 的自由现金流回馈股东",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "上半年回购加分红约 $45B（现金流量表口径），占自由现金流 60% 以上。Q2 回购约 $20B、分红约 $6B。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-rubin",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "Vera Rubin 在 Q3（2026 下半年）开始量产出货",
+  "dueLabel": "FY27 Q3",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "按计划",
+    "tone": "good",
+    "note": "8 月开始量产出货；Q3 预计占数据中心营收约 20%。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-1t",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（FY27 Q1 电话会）",
+  "text": "有信心在 2025 至 2027 日历年拿到 $1 万亿 Blackwell 和 Rubin 营收",
+  "dueLabel": "2027 年底",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "说法改变",
+    "tone": "warn",
+    "note": "这次没有重复 $1 万亿的说法，改成初步预计 FY28 营收增长约 70%，并说受供应限制。"
+   }
+  ]
+ },
+ {
+  "id": "nvda-q3",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "Q3 营收 $108.0B ±2%，毛利率 74% ±0.5 个点，不含中国数据中心算力收入",
+  "dueLabel": "FY27 Q3",
+  "checks": []
+ },
+ {
+  "id": "nvda-q4gm",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "Q4 毛利率见底在 71–72%，FY28 回到 72–73%（已执行的涨价从 Q1 生效）",
+  "dueLabel": "FY27 Q4 / FY28",
+  "checks": []
+ },
+ {
+  "id": "nvda-fy28",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "初步预计 FY28 营收增长约 70%，至少到 FY28 底都受供应限制",
+  "dueLabel": "FY28",
+  "checks": []
+ },
+ {
+  "id": "nvda-cpu",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "数据中心 CPU 营收在 FY28 翻倍以上（过去四季已超过 $5B）",
+  "dueLabel": "FY28",
+  "checks": []
+ }
+]
