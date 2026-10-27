@@ -93,7 +93,7 @@ footer a{color:var(--accent)}
   <div class="brand"><a href="../" style="color:inherit;text-decoration:none"><b>财报日历</b></a><a href="../" style="color:var(--accent);text-decoration:none">← 财报解读</a></div>
   <header style="display:flex;flex-direction:column;gap:8px">
     <h1>2026 年 Q3 财报季</h1>
-    <p class="lede">AI 产业链和重点科技公司的财报日期。点击已上线分析的公司，可直接查看财报解读。</p>
+    <p class="lede">AI 产业链五层里每家公司的财报日期，名单和 <a href="/">AI 产业链</a> 一致。点击已上线分析的公司，可直接查看财报解读。</p>
   </header>
 
   <div class="season">
@@ -110,7 +110,7 @@ footer a{color:var(--accent)}
   </div>
 
   <div class="filters">
-    <div class="frow" id="cats" role="group" aria-label="按产业筛选"></div>
+    <div class="frow" id="cats" role="group" aria-label="按产业链层级筛选"></div>
     <div class="frow">
       <button class="chip" id="f-star" aria-pressed="false" type="button"><span style="color:var(--warn)">★</span>只看重点</button>
       <button class="chip" id="f-past" aria-pressed="true" type="button">显示已发布</button>
@@ -121,128 +121,95 @@ footer a{color:var(--accent)}
   <div id="list" style="display:flex;flex-direction:column;gap:26px"></div>
 
   <footer>
-    <span>日期来源：Nasdaq 财报日历、公司公告、StockTitan 与 TheStreet 周历。标"预计"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。</span>
-    <span>未列入：Kratos（KTOS）尚未公布日期；SK 海力士不在 SEC 申报；OpenAI、Anthropic 未上市。</span>
+    <span>日期来源：Nasdaq 财报日历、公司公告、StockTitan、MarketBeat 等财报日历。标"预计"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。</span>
+    <span>未列入：Anthropic（ANT）尚未上市；HPE、MongoDB、NANO Nuclear 尚未公布本季日期；Applied Digital 本季财报已在 10 月初发布。</span>
     <span>本页仅为信息整理，不构成投资建议。</span>
   </footer>
 </div>
 
 <script>
 const CATS=[
-  {id:"chip",n:"AI 芯片",c:"--c1"},{id:"fab",n:"代工与设备",c:"--c2"},{id:"mem",n:"存储",c:"--c3"},
-  {id:"opt",n:"光通讯与网络",c:"--c3"},{id:"cloud",n:"AI 云",c:"--c1"},{id:"power",n:"电力能源",c:"--c4"},
-  {id:"big",n:"大型科技",c:"--c2"},{id:"sw",n:"软件与资安",c:"--c5"},{id:"def",n:"国防航天",c:"--c7"},
-  {id:"fin",n:"金融",c:"--c6"},{id:"med",n:"医疗",c:"--c5"},{id:"cons",n:"消费与平台",c:"--c4"}
+  {id:"energy",n:"能源",c:"--c4"},{id:"chip",n:"芯片",c:"--c3"},{id:"infra",n:"基础设施",c:"--c1"},
+  {id:"model",n:"模型",c:"--c2"},{id:"app",n:"应用",c:"--c6"}
 ];
 const SITE="../";
 const LINKS={TSLA:SITE+"#TSLA",TSM:SITE+"#TSM",META:SITE+"#META"};
-const STAR=new Set("NVDA AMD AVGO MRVL MU MSFT GOOGL AMZN META PLTR PANW TSLA".split(" "));
-/* date | ticker | 中文名 | cat | time(b=盘前,a=盘后,n=未定) | conf(1=已确认,0=预计) */
-const RAW=`08-26|NVDA|英伟达|chip|a|1
-08-26|CRWD|CrowdStrike|sw|a|1
-08-26|CRM|Salesforce|sw|a|1
-08-26|SNPS|新思科技|chip|a|1
-08-27|MRVL|迈威尔|chip|a|1
-08-27|RBRK|Rubrik|sw|a|1
-09-01|PANW|Palo Alto|sw|a|1
+const STAR=new Set("NVDA AMD AVGO MRVL MU MSFT GOOGL AMZN META PLTR TSLA".split(" "));
+/* Only the companies in the AI supply-chain table (insider-flow repo: stack/company_master.csv); cat = its layer.
+   date | ticker | 中文名 | cat | time(b=盘前,a=盘后,n=未定) | conf(1=已确认,0=预计) */
+const RAW=`08-26|CRM|Salesforce|app|a|1
+08-26|CRWD|CrowdStrike|app|a|1
+08-26|NVDA|英伟达|chip|a|1
+08-27|MRVL|迈威尔科技|chip|a|1
 09-01|CRDO|Credo|chip|a|1
-09-01|DELL|戴尔|cloud|a|1
+09-01|DELL|戴尔|infra|a|1
 09-02|AVGO|博通|chip|a|1
-09-03|ZS|Zscaler|sw|a|1
-09-09|AVAV|AeroVironment|def|a|1
-09-10|ORCL|甲骨文|cloud|a|1
-09-30|MU|美光|mem|a|1
-10-13|JPM|摩根大通|fin|b|1
-10-13|GS|高盛|fin|b|1
-10-14|MS|摩根士丹利|fin|b|1
-10-14|ASML|阿斯麦|fab|b|1
-10-15|TSM|台积电|fab|b|1
-10-20|NFLX|奈飞|cons|a|1
-10-20|SPCX|SpaceX|def|n|1
-10-20|GE|GE 航空航天|def|b|1
-10-20|RTX|雷神|def|b|1
-10-20|ISRG|直觉外科|med|a|1
-10-21|META|Meta|big|a|1
-10-21|TSLA|特斯拉|cons|a|1
-10-21|LRCX|泛林|fab|a|1
-10-21|IBM|IBM|sw|a|1
-10-21|TXN|德州仪器|chip|a|1
-10-21|SAP|SAP|sw|a|1
-10-21|NEE|新纪元能源|power|b|1
-10-22|WDC|西部数据|mem|a|1
-10-22|BE|Bloom Energy|power|a|1
-10-22|NOK|诺基亚|opt|b|1
-10-22|LMT|洛克希德马丁|def|b|1
-10-26|RMBS|Rambus|chip|a|1
-10-26|CDNS|楷登电子|chip|a|1
-10-26|CLS|天弘科技|cloud|a|1
-10-27|STX|希捷|mem|a|1
-10-27|TER|泰瑞达|fab|a|1
-10-27|GLW|康宁|opt|b|1
-10-27|HOOD|Robinhood|fin|a|1
-10-27|PYPL|PayPal|fin|b|1
-10-27|SOFI|SoFi|fin|b|1
-10-28|GOOGL|谷歌|big|a|1
-10-28|MSFT|微软|big|a|1
-10-28|GEV|GE Vernova|power|b|1
-10-28|NOW|ServiceNow|sw|a|1
-10-28|KLAC|科磊|fab|a|1
-10-28|VRT|维谛|power|b|1
-10-29|AMZN|亚马逊|big|a|1
-10-29|LLY|礼来|med|b|1
+09-10|ORCL|甲骨文|infra|a|1
+09-30|MU|美光|chip|a|1
+10-14|ASML|阿斯麦|chip|b|1
+10-15|TSM|台积电|chip|b|1
+10-20|SPCX|SpaceX|model|n|1
+10-21|LRCX|泛林集团|chip|a|1
+10-21|META|Meta|model|a|1
+10-21|TSLA|特斯拉|app|a|1
+10-22|BE|Bloom Energy|energy|a|1
+10-22|WDC|西部数据|chip|a|1
+10-26|AMKR|安靠|chip|a|1
+10-26|CLS|天弘|infra|a|1
+10-27|GLW|康宁|infra|b|1
+10-27|STX|希捷|chip|a|1
+10-28|EQIX|易昆尼克斯|infra|a|1
+10-28|GEV|GE Vernova|energy|b|1
+10-28|GOOGL|谷歌|model|a|1
+10-28|KLAC|科磊|chip|a|1
+10-28|MSFT|微软|infra|a|1
+10-28|NOW|ServiceNow|app|a|1
+10-28|VRT|维谛|infra|b|1
+10-29|AMZN|亚马逊|infra|a|1
+10-29|ASX|日月光投控|chip|n|0
+10-29|AXTI|AXT|chip|a|1
+10-29|DLR|Digital Realty|infra|a|1
 10-29|INTC|英特尔|chip|a|1
-10-29|SNDK|闪迪|mem|a|1
-10-29|TWLO|Twilio|sw|a|1
 10-29|MPWR|芯源系统|chip|a|1
-11-02|AAPL|苹果|big|a|1
-11-02|PLTR|Palantir|sw|a|1
-11-02|GRAB|Grab|cons|a|1
-11-02|TEM|Tempus AI|med|b|1
-11-02|UUUU|Energy Fuels|power|n|0
-11-03|AMD|AMD|chip|a|1
-11-03|ETN|伊顿|power|b|1
+10-29|PWR|广达服务|energy|b|1
+10-29|SNDK|闪迪|chip|a|1
+11-02|AAPL|苹果|app|a|1
+11-02|FN|Fabrinet|infra|a|1
+11-02|PLTR|Palantir|app|a|1
 11-03|ALAB|Astera Labs|chip|a|1
-11-03|NVTS|纳微半导体|chip|a|1
-11-03|ANET|Arista|opt|a|1
-11-03|SMCI|超微电脑|cloud|a|1
-11-04|COHR|Coherent|opt|a|1
-11-04|FIG|Figma|sw|a|1
-11-04|CHYM|Chime|fin|a|1
-11-04|CRCL|Circle|fin|b|1
-11-04|MELI|美客多|cons|n|0
-11-04|TMDX|TransMedics|med|n|0
-11-04|RDW|Redwire|def|n|0
-11-04|ARM|Arm|chip|a|1
-11-04|QCOM|高通|chip|a|1
-11-04|APP|AppLovin|sw|a|1
-11-04|DDOG|Datadog|sw|b|1
-11-04|UBER|优步|cons|b|1
-11-05|LITE|Lumentum|opt|a|1
-11-05|NET|Cloudflare|sw|a|1
-11-05|AAOI|应用光电|opt|a|1
-11-05|MP|MP Materials|power|a|1
-11-05|SMR|NuScale|power|a|1
-11-05|EOSE|Eos Energy|power|b|1
-11-06|VST|Vistra|power|b|1
-11-09|CRWV|CoreWeave|cloud|n|0
-11-10|NBIS|Nebius|cloud|n|0
-11-12|AMAT|应用材料|fab|a|1
-11-12|ONDS|Ondas|def|n|0
-11-12|RCAT|Red Cat|def|n|0
+11-03|AMD|超威半导体|chip|a|1
+11-03|ANET|Arista网络|infra|a|1
+11-03|ETN|伊顿|infra|b|1
+11-03|MOD|Modine|infra|a|1
+11-03|SMCI|超微电脑|infra|a|1
+11-03|TLN|Talen|energy|b|1
+11-04|ARM|安谋|chip|a|1
+11-04|COHR|相干|infra|a|1
+11-04|DDOG|Datadog|app|b|1
+11-05|AAOI|应用光电|infra|a|1
+11-05|IREN|IREN|infra|n|1
+11-05|LITE|Lumentum|infra|a|1
+11-05|SMR|NuScale|energy|a|1
+11-06|OKLO|Oklo|energy|b|1
+11-06|VST|Vistra|energy|b|1
+11-09|CEG|星座能源|energy|b|0
+11-09|CRWV|CoreWeave|infra|n|0
+11-10|NBIS|Nebius|infra|n|0
+11-11|CSCO|思科|infra|a|0
+11-12|AMAT|应用材料|chip|a|1
+11-12|CBRS|Cerebras|chip|a|1
 11-18|NVDA|英伟达|chip|a|0
-11-18|PANW|Palo Alto|sw|n|0
-11-24|ZS|Zscaler|sw|n|0
-11-24|DELL|戴尔|cloud|n|0
-12-01|CRWD|CrowdStrike|sw|n|0
-12-01|MRVL|迈威尔|chip|n|0
-12-02|CRM|Salesforce|sw|n|0
-12-02|SNOW|Snowflake|sw|n|0
-12-03|RBRK|Rubrik|sw|n|0
+11-24|DELL|戴尔|infra|n|0
+12-01|CRWD|CrowdStrike|app|n|0
+12-01|MRVL|迈威尔科技|chip|n|0
+12-02|CRM|Salesforce|app|n|0
+12-02|SNOW|Snowflake|app|n|0
 12-07|CRDO|Credo|chip|n|0
-12-08|AVAV|AeroVironment|def|n|0
-12-09|ORCL|甲骨文|cloud|n|0
+12-09|ADBE|Adobe|app|a|0
+12-09|CIEN|Ciena|infra|b|0
+12-09|ORCL|甲骨文|infra|n|0
 12-10|AVGO|博通|chip|n|0
-12-16|MU|美光|mem|n|0`;
+12-16|MU|美光|chip|n|0`;
 const ITEMS=RAW.split("\n").map(l=>{const [d,t,n,c,tm,cf]=l.split("|");return {date:new Date(`2026-${d}T12:00:00`),key:`2026-${d}`,t,n,c,tm,conf:cf==="1"}});
 
 function todayKey(){const n=new Date();const y=n.getFullYear(),m=String(n.getMonth()+1).padStart(2,"0"),d=String(n.getDate()).padStart(2,"0");return `${y}-${m}-${d}`}
