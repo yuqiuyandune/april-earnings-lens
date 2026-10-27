@@ -1,0 +1,113 @@
+[
+ {
+  "id": "crwd-q2rev",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 6 月（FY27 Q1 财报）",
+  "text": "Q2 营收 $1,436–1,442M",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $1,470.9M，比区间上限高 2.0%。"
+   }
+  ]
+ },
+ {
+  "id": "crwd-q2arr",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 6 月（FY27 Q1 财报）",
+  "text": "Q2 期末 ARR $5,792.6–5,794.6M（隐含新增约 $287M）",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "期末 ARR $5.84B，新增 $332.8M，比指引上限多约 $45M。"
+   }
+  ]
+ },
+ {
+  "id": "crwd-q2oi",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 6 月（FY27 Q1 财报）",
+  "text": "Q2 Non-GAAP 营业利润 $345.6–349.1M",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "q": "2026Q2",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $371.6M，利润率 25.3%。"
+   }
+  ]
+ },
+ {
+  "id": "crwd-fyrev",
+  "made": "2025Q4",
+  "saidLabel": "2026 年 3 月（FY26 Q4 财报）",
+  "text": "FY27 营收 $5,867.6–5,927.6M",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q1",
+    "status": "上调",
+    "tone": "good",
+    "note": "上调到 $5,914.7–5,958.7M。"
+   },
+   {
+    "q": "2026Q2",
+    "status": "再上调",
+    "tone": "good",
+    "note": "上调到 $5,991.1–6,011.1M，中值比年初高 2.0%。"
+   }
+  ]
+ },
+ {
+  "id": "crwd-nnarr",
+  "made": "2025Q4",
+  "saidLabel": "2026 年 3 月（FY26 Q4 财报）",
+  "text": "FY27 期末 ARR $6,465.8–6,516.4M",
+  "dueLabel": "FY27 全年",
+  "checks": [
+   {
+    "q": "2026Q1",
+    "status": "上调",
+    "tone": "good",
+    "note": "ARR 上调到 $6,531.7–6,555.5M，全年新增 ARR 增长约 27.7%。"
+   },
+   {
+    "q": "2026Q2",
+    "status": "再上调",
+    "tone": "good",
+    "note": "ARR 上调到 $6,603.0–6,611.9M，全年新增 ARR 增长约 34%（中值上调 6.3 个点）。"
+   }
+  ]
+ },
+ {
+  "id": "crwd-q3",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "Q3 新增 ARR $343–347M，营收 $1,523–1,529M，自由现金流利润率 27.5%",
+  "dueLabel": "FY27 Q3",
+  "checks": []
+ },
+ {
+  "id": "crwd-fcf",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "FY27 自由现金流利润率至少 30%",
+  "dueLabel": "FY27 全年",
+  "checks": []
+ },
+ {
+  "id": "crwd-gm",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY27 Q2 电话会）",
+  "text": "订阅毛利率（Non-GAAP）在 FY29 达到 82–85%（本季 81%）",
+  "dueLabel": "FY29",
+  "checks": []
+ }
+]
