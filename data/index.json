@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25",
+ "updated": "2026-10-28",
  "companies": [
   {
    "t": "TSM",
@@ -103,6 +103,23 @@
    "latest": "2026Q2",
    "latestDate": "2026-08-26",
    "headline": "一天涨了 23%，推动它的是 Claudeforce，不是增长"
+  },
+  {
+   "t": "VRT",
+   "n": "维谛",
+   "en": "Vertiv",
+   "aliases": [
+    "Vertiv Holdings",
+    "維諦",
+    "维谛技术"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-28",
+   "headline": "收入增长 61%、全年指引第三次上调，但从此不再公布订单"
   }
  ]
 }
