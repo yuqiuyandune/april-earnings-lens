@@ -120,6 +120,41 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-28",
    "headline": "收入增长 61%、全年指引第三次上调，但从此不再公布订单"
+  },
+  {
+   "t": "GOOGL",
+   "n": "谷歌",
+   "en": "Alphabet",
+   "aliases": [
+    "Google",
+    "GOOG",
+    "Alphabet",
+    "谷歌"
+   ],
+   "cat": "模型与云",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-28",
+   "headline": "云收入翻倍，但赚的钱已经不够花：建数据中心开始靠发股发债"
+  },
+  {
+   "t": "MSFT",
+   "n": "微软",
+   "en": "Microsoft",
+   "aliases": [
+    "Microsoft",
+    "微軟",
+    "Azure"
+   ],
+   "cat": "模型与云",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-28",
+   "headline": "Azure 加速到 48%，新签合同却停了下来"
   }
  ]
 }

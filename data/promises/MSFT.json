@@ -1,0 +1,32 @@
+[
+ {
+  "id": "msft-azure-q1",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（FY26 Q4 电话会）",
+  "text": "FY27 Q1 Azure 增长 44–45%",
+  "dueLabel": "FY27 Q1",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 48%，高于指引上限 3 个点，也高于一致预期约 45%。"
+   }
+  ]
+ },
+ {
+  "id": "msft-rev-q1",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（FY26 Q4 电话会）",
+  "text": "FY27 Q1 营收 $898.5–909.5 亿",
+  "dueLabel": "FY27 Q1",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $922.8 亿，比指引上限高 1.5%。"
+   }
+  ]
+ }
+]
