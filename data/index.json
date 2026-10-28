@@ -154,7 +154,23 @@
    ],
    "latest": "2026Q3",
    "latestDate": "2026-10-28",
-   "headline": "Azure 加速到 48%，新签合同却停了下来"
+   "headline": "Azure 加速到 48%，但新签合同停了，微软也开始说要对外融资"
+  },
+  {
+   "t": "NOW",
+   "n": "ServiceNow",
+   "en": "ServiceNow",
+   "aliases": [
+    "ServiceNow",
+    "Now Assist"
+   ],
+   "cat": "应用",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-28",
+   "headline": "AI 合同在长，整体增长却要放慢：市场开始怀疑 AI 会吃掉软件"
   }
  ]
 }
