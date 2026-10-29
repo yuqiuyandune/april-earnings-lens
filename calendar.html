@@ -87,47 +87,59 @@ a.card .go{font-size:12px;color:var(--good);font-weight:500}
 footer{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:6px}
 footer a{color:var(--accent)}
 @media (max-width:480px){.day{grid-template-columns:minmax(0,1fr)}.dl{flex-direction:row;gap:8px;align-items:baseline;padding-top:0}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.lang{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px;letter-spacing:0}
+.lang button{font:inherit;font-size:12.5px;border:0;background:none;color:var(--muted);padding:3px 8px;border-radius:6px;cursor:pointer;min-width:30px}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 </style>
 
 <div class="wrap">
-  <div class="brand"><a href="../" style="color:inherit;text-decoration:none"><b>财报日历</b></a><a href="../" style="color:var(--accent);text-decoration:none">← 财报解读</a></div>
+  <div class="brand"><a href="../" style="color:inherit;text-decoration:none"><b data-i="cal">财报日历</b></a><span style="display:flex;gap:10px;align-items:center"><a href="../" style="color:var(--accent);text-decoration:none" data-i="back">← 财报解读</a><span class="lang" role="group" aria-label="Language"><button data-l="zh">简</button><button data-l="tw">繁</button><button data-l="en">EN</button></span></span></div>
   <header style="display:flex;flex-direction:column;gap:8px">
-    <h1>2026 年 Q3 财报季</h1>
-    <p class="lede">AI 产业链五层里每家公司的财报日期，名单和 <a href="/">AI 产业链</a> 一致，包括为 AI 建设提供资金的银行和资产管理公司。点击已上线分析的公司，可直接查看财报解读。</p>
+    <h1 data-i="h1">2026 年 Q3 财报季</h1>
+    <p class="lede" data-h="lede">AI 产业链五层里每家公司的财报日期，名单和 <a href="/">AI 产业链</a> 一致，包括为 AI 建设提供资金的银行和资产管理公司。点击已上线分析的公司，可直接查看财报解读。</p>
   </header>
 
   <div class="season">
     <div class="row"><span class="big" id="done"></span><span class="nextup" id="nextup"></span></div>
-    <a href="#upcoming" style="font-size:13px;color:var(--accent);width:max-content">跳到接下来的财报 ↓</a>
+    <a href="#upcoming" style="font-size:13px;color:var(--accent);width:max-content" data-i="jump">跳到接下来的财报 ↓</a>
     <div class="prog" role="img" id="progbar"><i id="progfill"></i></div>
     <div class="legend">
-      <span><span class="pill s-live">分析已上线</span></span>
-      <span><span class="pill s-wip">已发布 · 分析制作中</span></span>
-      <span><span class="pill s-conf">日期已确认</span></span>
-      <span><span class="pill s-est">预计日期</span></span>
-      <span><span style="color:var(--warn)">★</span> 重点关注</span>
+      <span><span class="pill s-live" data-i="live">分析已上线</span></span>
+      <span><span class="pill s-wip" data-i="wip">已发布 · 分析制作中</span></span>
+      <span><span class="pill s-conf" data-i="confd">日期已确认</span></span>
+      <span><span class="pill s-est" data-i="estd">预计日期</span></span>
+      <span><span style="color:var(--warn)">★</span> <span data-i="star">重点关注</span></span>
     </div>
   </div>
 
   <div class="filters">
-    <div class="frow" id="cats" role="group" aria-label="按产业链层级筛选"></div>
+    <div class="frow" id="cats" role="group" aria-label="filter"></div>
     <div class="frow">
-      <button class="chip" id="f-star" aria-pressed="false" type="button"><span style="color:var(--warn)">★</span>只看重点</button>
-      <button class="chip" id="f-past" aria-pressed="true" type="button">显示已发布</button>
-      <input class="search" id="q" type="search" placeholder="搜索代码或公司名" aria-label="搜索代码或公司名">
+      <button class="chip" id="f-star" aria-pressed="false" type="button"><span style="color:var(--warn)">★</span><span data-i="onlyStar">只看重点</span></button>
+      <button class="chip" id="f-past" aria-pressed="true" type="button" data-i="showPast">显示已发布</button>
+      <input class="search" id="q" type="search" placeholder="搜索代码或公司名" aria-label="搜索代码或公司名" data-ip="search">
     </div>
   </div>
 
   <div id="list" style="display:flex;flex-direction:column;gap:26px"></div>
 
   <footer>
-    <span>日期来源：Nasdaq 财报日历、公司公告、StockTitan、MarketBeat 等财报日历。标"预计"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。</span>
-    <span>未列入：Anthropic（ANT）尚未上市；HPE、MongoDB、NANO Nuclear 尚未公布本季日期；Applied Digital 本季财报已在 10 月初发布。</span>
-    <span>本页仅为信息整理，不构成投资建议。</span>
+    <span data-i="f1">日期来源：Nasdaq 财报日历、公司公告、StockTitan、MarketBeat 等财报日历。标"预计"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。</span>
+    <span data-i="f2">未列入：Anthropic（ANT）尚未上市；HPE、MongoDB、NANO Nuclear 尚未公布本季日期；Applied Digital 本季财报已在 10 月初发布。</span>
+    <span data-i="f3">本页仅为信息整理，不构成投资建议。</span>
   </footer>
 </div>
 
 <script>
+const I18N={zh:/*I18N_ZH*/{"cal": "财报日历", "back": "← 财报解读", "h1": "2026 年 Q3 财报季", "lede": "AI 产业链五层里每家公司的财报日期，名单和 <a href=\"/\">AI 产业链</a> 一致，包括为 AI 建设提供资金的银行和资产管理公司。点击已上线分析的公司，可直接查看财报解读。", "jump": "跳到接下来的财报 ↓", "live": "分析已上线", "wip": "已发布 · 分析制作中", "confd": "日期已确认", "estd": "预计日期", "star": "重点关注", "onlyStar": "只看重点", "showPast": "显示已发布", "search": "搜索代码或公司名", "f1": "日期来源：Nasdaq 财报日历、公司公告、StockTitan、MarketBeat 等财报日历。标\"预计\"的日期尚未经公司确认，可能变动。盘前 = 美股开盘前，盘后 = 收盘后。", "f2": "未列入：Anthropic（ANT）尚未上市；HPE、MongoDB、NANO Nuclear 尚未公布本季日期；Applied Digital 本季财报已在 10 月初发布。", "f3": "本页仅为信息整理，不构成投资建议。", "wd": "周日,周一,周二,周三,周四,周五,周六", "tb": "盘前", "ta": "盘后", "tn": "时间未定", "md": "{0}月{1}日", "done": "家已发布（本季）", "doneAria": "已发布 {0} 家，共 {1} 家", "next": "下一场：", "sep": "、", "all": "全部", "cat.energy": "能源", "cat.chip": "芯片", "cat.infra": "基础设施", "cat.model": "模型", "cat.app": "应用", "cat.capital": "资金方", "conf": "已确认", "est": "预计", "go": "查看财报分析 →", "empty": "没有符合条件的公司。试试清除筛选或换个关键词。", "pre": "8 – 9 月已发布", "preCnt": "{0} 家 · 财年与日历季度错开，这是它们最新一季", "thisW": "本周", "nextW": "下周", "cnt": "{0} 家", "gone": " · 已过", "today": " · 今天"}/*END*/,en:{"cal": "Earnings calendar", "back": "← Earnings Lens", "h1": "Q3 2026 earnings season", "lede": "Report dates for every company in the five layers of the AI supply chain, the same list as the <a href=\"/\">AI supply chain</a>, including the banks and asset managers funding the build-out. Click a company with a published review to open it.", "jump": "Jump to upcoming reports ↓", "live": "Review live", "wip": "Reported · review in progress", "confd": "Date confirmed", "estd": "Estimated date", "star": "Key names", "onlyStar": "Key names only", "showPast": "Show reported", "search": "Search ticker or company", "f1": "Date sources: Nasdaq earnings calendar, company announcements, StockTitan, MarketBeat and similar calendars. “Estimated” dates are not yet confirmed by the company and may change. Before open = before the US market opens; after close = after it closes.", "f2": "Not listed: Anthropic (ANT) is not public; HPE, MongoDB and NANO Nuclear have not announced this quarter's dates; Applied Digital already reported in early October.", "f3": "Information only, not investment advice.", "wd": "Sun,Mon,Tue,Wed,Thu,Fri,Sat", "tb": "before open", "ta": "after close", "tn": "time TBD", "md": "{0}/{1}", "done": " reported this season", "doneAria": "{0} of {1} reported", "next": "Next: ", "sep": ", ", "all": "All", "cat.energy": "Energy", "cat.chip": "Chips", "cat.infra": "Infrastructure", "cat.model": "Models", "cat.app": "Applications", "cat.capital": "Capital", "conf": "Confirmed", "est": "Estimated", "go": "Read the review →", "empty": "No companies match. Try clearing filters or another keyword.", "pre": "Reported in Aug–Sep", "preCnt": "{0} companies · fiscal years are offset from calendar quarters, so this is their latest quarter", "thisW": "This week", "nextW": "Next week", "cnt": "{0} companies", "gone": " · past", "today": " · today"}};
+const NAMES_EN=/*NAMES_EN*/{}, NAMES_TW=/*NAMES_TW*/{};
+let LANG=(()=>{let v=null;try{v=localStorage.getItem("sif-lang")}catch(e){}if(["zh","tw","en"].includes(v))return v;const ls=navigator.languages||[navigator.language||"zh"];for(const x of ls){const t=String(x).toLowerCase();if(t.startsWith("zh"))return /hant|-tw|-hk|-mo/.test(t)?"tw":"zh";if(t.startsWith("en"))return "en"}return "zh"})();
+function L(k,...a){const d=I18N[LANG]||I18N.zh;return (d[k]??I18N.zh[k]??k).replace(/\{(\d)\}/g,(_,i)=>a[i]??"")}
+document.documentElement.lang={zh:"zh-Hans",tw:"zh-Hant",en:"en"}[LANG];
+document.querySelectorAll("[data-i]").forEach(e=>e.textContent=L(e.dataset.i));
+document.querySelectorAll("[data-h]").forEach(e=>e.innerHTML=L(e.dataset.h));
+document.querySelectorAll("[data-ip]").forEach(e=>{e.placeholder=L(e.dataset.ip);e.setAttribute("aria-label",L(e.dataset.ip))});
+document.querySelectorAll(".lang button").forEach(b=>{b.setAttribute("aria-pressed",b.dataset.l===LANG);b.addEventListener("click",()=>{try{localStorage.setItem("sif-lang",b.dataset.l)}catch(e){}location.reload()})});
 const CATS=[
   {id:"energy",n:"能源",c:"--c4"},{id:"chip",n:"芯片",c:"--c3"},{id:"infra",n:"基础设施",c:"--c1"},
   {id:"model",n:"模型",c:"--c2"},{id:"app",n:"应用",c:"--c6"},
@@ -218,18 +230,18 @@ const RAW=`08-26|CRM|Salesforce|app|a|1
 12-09|ORCL|甲骨文|infra|n|0
 12-10|AVGO|博通|chip|n|0
 12-16|MU|美光|chip|n|0`;
-const ITEMS=RAW.split("\n").map(l=>{const [d,t,n,c,tm,cf]=l.split("|");return {date:new Date(`2026-${d}T12:00:00`),key:`2026-${d}`,t,n,c,tm,conf:cf==="1"}});
+const ITEMS=RAW.split("\n").map(l=>{const [d,t,n,c,tm,cf]=l.split("|");return {date:new Date(`2026-${d}T12:00:00`),key:`2026-${d}`,t,n:(LANG==="en"?NAMES_EN[t]:LANG==="tw"?NAMES_TW[t]:n)||n,c,tm,conf:cf==="1"}});
 
 function todayKey(){const n=new Date();const y=n.getFullYear(),m=String(n.getMonth()+1).padStart(2,"0"),d=String(n.getDate()).padStart(2,"0");return `${y}-${m}-${d}`}
 const TODAY=todayKey();
 const SEASON="2026-10-05";
 const inSeason=it=>it.key>=SEASON;
 const isPast=it=>it.key<TODAY;
-const WD=["周日","周一","周二","周三","周四","周五","周六"];
-const TM={b:"盘前",a:"盘后",n:"时间未定"};
+const WD=L("wd").split(",");
+const TM={b:L("tb"),a:L("ta"),n:L("tn")};
 const cat=id=>CATS.find(c=>c.id===id);
 function monday(dt){const d=new Date(dt);const w=(d.getDay()+6)%7;d.setDate(d.getDate()-w);return d}
-const fmt=d=>`${d.getMonth()+1}月${d.getDate()}日`;
+const fmt=d=>L("md",d.getMonth()+1,d.getDate());
 
 let state={cats:new Set(),star:false,past:true,q:""};
 try{const s=JSON.parse(localStorage.getItem("cal-filters")||"null");if(s){state.cats=new Set(s.cats||[]);state.star=!!s.star;state.past=s.past!==false;}}catch(e){}
@@ -238,17 +250,17 @@ function save(){try{localStorage.setItem("cal-filters",JSON.stringify({cats:[...
 /* season summary */
 (function(){
   const S=ITEMS.filter(inSeason), done=S.filter(isPast).length, total=S.length;
-  document.getElementById("done").innerHTML=`${done} / ${total}<span>家已发布（本季）</span>`;
+  document.getElementById("done").innerHTML=`${done} / ${total}<span>${L("done")}</span>`;
   document.getElementById("progfill").style.width=(done/total*100)+"%";
-  document.getElementById("progbar").setAttribute("aria-label",`已发布 ${done} 家，共 ${total} 家`);
+  document.getElementById("progbar").setAttribute("aria-label",L("doneAria",done,total));
   const up=S.filter(i=>!isPast(i));
   if(up.length){const k=up[0].key, same=up.filter(i=>i.key===k).map(i=>i.t);
-    document.getElementById("nextup").innerHTML=`下一场：<b>${fmt(up[0].date)} ${WD[up[0].date.getDay()]}</b> · ${same.join("、")}`;}
+    document.getElementById("nextup").innerHTML=`${L("next")}<b>${fmt(up[0].date)} ${WD[up[0].date.getDay()]}</b> · ${same.join(L("sep"))}`;}
 })();
 
 /* category chips */
 const catBox=document.getElementById("cats");
-catBox.innerHTML=`<button class="chip" type="button" data-cat="" aria-pressed="false">全部</button>`+CATS.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="false"><i style="background:var(${c.c})"></i>${c.n}</button>`).join("");
+catBox.innerHTML=`<button class="chip" type="button" data-cat="" aria-pressed="false">${L("all")}</button>`+CATS.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="false"><i style="background:var(${c.c})"></i>${L("cat."+c.id)}</button>`).join("");
 catBox.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const id=b.dataset.cat;
   if(!id)state.cats.clear();else state.cats.has(id)?state.cats.delete(id):state.cats.add(id);save();render();});
 document.getElementById("f-star").addEventListener("click",()=>{state.star=!state.star;save();render()});
@@ -258,13 +270,13 @@ document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value
 function card(it){
   const c=cat(it.c), past=isPast(it), link=LINKS[it.t];
   let pill;
-  if(past&&link) pill=`<span class="pill s-live">分析已上线</span>`;
-  else if(past) pill=`<span class="pill s-wip">已发布 · 分析制作中</span>`;
-  else pill=it.conf?`<span class="pill s-conf">已确认</span>`:`<span class="pill s-est">预计</span>`;
-  const inner=`<div class="top"><span class="tk">${it.t}</span><span class="nm">${it.n}</span>${STAR.has(it.t)?'<span class="star" aria-label="重点关注">★</span>':''}</div>
-    <div class="meta"><span>${inSeason(it)?TM[it.tm]:(it.date.getMonth()+1)+"/"+it.date.getDate()}</span>${pill}</div>${past&&link?'<span class="go">查看财报分析 →</span>':''}`;
+  if(past&&link) pill=`<span class="pill s-live">${L("live")}</span>`;
+  else if(past) pill=`<span class="pill s-wip">${L("wip")}</span>`;
+  else pill=it.conf?`<span class="pill s-conf">${L("conf")}</span>`:`<span class="pill s-est">${L("est")}</span>`;
+  const inner=`<div class="top"><span class="tk">${it.t}</span><span class="nm">${it.n}</span>${STAR.has(it.t)?`<span class="star" aria-label="${L("star")}">★</span>`:''}</div>
+    <div class="meta"><span>${inSeason(it)?TM[it.tm]:(it.date.getMonth()+1)+"/"+it.date.getDate()}</span>${pill}</div>${past&&link?`<span class="go">${L("go")}</span>`:''}`;
   const style=`style="--cat:var(${c.c})"`;
-  const title=`${it.t} ${it.n}，${c.n}`;
+  const title=`${it.t} ${it.n} · ${L("cat."+c.id)}`;
   return link? `<a class="card${past?'':''}" href="${link}" ${style} title="${title}">${inner}</a>`
              : `<div class="card${past?' past':''}" ${style} title="${title}">${inner}</div>`;
 }
@@ -276,25 +288,25 @@ function render(){
   const list=ITEMS.filter(it=>(state.cats.size===0||state.cats.has(it.c))&&(!state.star||STAR.has(it.t))&&(state.past||!isPast(it))
     &&(!state.q||it.t.toLowerCase().includes(state.q)||it.n.toLowerCase().includes(state.q)));
   const box=document.getElementById("list");
-  if(!list.length){box.innerHTML=`<div class="empty">没有符合条件的公司。试试清除筛选或换个关键词。</div>`;return}
+  if(!list.length){box.innerHTML=`<div class="empty">${L("empty")}</div>`;return}
   const thisMon=monday(new Date(TODAY+"T12:00:00")).getTime();
   const weeks=new Map();
   let html="";
   const pre=list.filter(it=>!inSeason(it));
   if(pre.length){
-    html+=`<section class="week"><div class="wh"><h2>8 – 9 月已发布</h2><span class="cnt">${pre.length} 家 · 财年与日历季度错开，这是它们最新一季</span></div><div class="cards">${pre.map(card).join("")}</div></section>`;
+    html+=`<section class="week"><div class="wh"><h2>${L("pre")}</h2><span class="cnt">${L("preCnt",pre.length)}</span></div><div class="cards">${pre.map(card).join("")}</div></section>`;
   }
   list.filter(inSeason).forEach(it=>{const m=monday(it.date).getTime();if(!weeks.has(m))weeks.set(m,[]);weeks.get(m).push(it)});
   [...weeks.keys()].sort((a,b)=>a-b).forEach(m=>{
     const items=weeks.get(m), mon=new Date(m), fri=new Date(m+4*864e5);
-    const tag=m===thisMon?'<span class="tag">本周</span>':(m===thisMon+7*864e5?'<span class="tag">下周</span>':'');
+    const tag=m===thisMon?`<span class="tag">${L("thisW")}</span>`:(m===thisMon+7*864e5?`<span class="tag">${L("nextW")}</span>`:'');
     const past=m<thisMon;
     const firstUp=!html.includes('id="upcoming"')&&items.some(i=>!isPast(i));
-    html+=`<section class="week" ${firstUp?'id="upcoming" style="scroll-margin-top:110px"':''}><div class="wh"><h2>${fmt(mon)} – ${fmt(fri)}</h2>${tag}<span class="cnt">${items.length} 家${past?' · 已过':''}</span></div>`;
+    html+=`<section class="week" ${firstUp?'id="upcoming" style="scroll-margin-top:110px"':''}><div class="wh"><h2>${fmt(mon)} – ${fmt(fri)}</h2>${tag}<span class="cnt">${L("cnt",items.length)}${past?L("gone"):''}</span></div>`;
     const days=new Map();items.forEach(it=>{if(!days.has(it.key))days.set(it.key,[]);days.get(it.key).push(it)});
     [...days.keys()].sort().forEach(k=>{const arr=days.get(k), d=arr[0].date;
       arr.sort((a,b)=>(STAR.has(b.t)-STAR.has(a.t))||a.tm.localeCompare(b.tm));
-      html+=`<div class="day"><div class="dl${k===TODAY?' today':''}"><b>${d.getMonth()+1}/${d.getDate()}</b><span>${WD[d.getDay()]}${k===TODAY?' · 今天':''}</span></div><div class="cards">${arr.map(card).join("")}</div></div>`;});
+      html+=`<div class="day"><div class="dl${k===TODAY?' today':''}"><b>${d.getMonth()+1}/${d.getDate()}</b><span>${WD[d.getDay()]}${k===TODAY?L("today"):''}</span></div><div class="cards">${arr.map(card).join("")}</div></div>`;});
     html+=`</section>`;
   });
   box.innerHTML=html;

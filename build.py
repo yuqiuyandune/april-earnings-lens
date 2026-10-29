@@ -30,7 +30,13 @@ HEAD = """<!doctype html>
 try:
     from opencc import OpenCC
     _CC = OpenCC("s2twp")
-    def to_tw(t: str) -> str: return _CC.convert(t)
+    # s2twp uses Taiwan vocabulary (软件→軟體, 内存→記憶體); undo two choices that read wrong here:
+    # 臺 → 台 (台積電, 平台 are the everyday forms) and 裝置 → 設備 (our 设备 means equipment, not device)
+    _FIX = (("臺", "台"), ("裝置", "設備"), ("釋出", "發布"), ("英偉達", "輝達"))
+    def to_tw(t: str) -> str:
+        t = _CC.convert(t)
+        for a, b in _FIX: t = t.replace(a, b)
+        return t
 except Exception:  # OpenCC missing: Traditional falls back to the Simplified text
     print("warning: opencc not installed, data-tw will be Simplified")
     def to_tw(t: str) -> str: return t
@@ -85,6 +91,14 @@ def tw_ui(page: str) -> str:
     tw = {k: to_tw(v) for k, v in json.loads(m.group(1)).items()}
     return page.replace("let LANG=", "I18N.tw=" + json.dumps(tw, ensure_ascii=False) + ";\nlet LANG=", 1)
 
+def cal_names(page: str) -> str:
+    """Fill the calendar's English names (data/names_en.json) and Traditional names (converted from RAW)."""
+    raw = page.split("const RAW=`", 1)[1].split("`", 1)[0]
+    tw = {l.split("|")[1]: to_tw(l.split("|")[2]) for l in raw.splitlines() if l.count("|") == 5}
+    en = json.loads((ROOT / "data" / "names_en.json").read_text(encoding="utf-8"))
+    return (page.replace("/*NAMES_EN*/{}", json.dumps(en, ensure_ascii=False), 1)
+                .replace("/*NAMES_TW*/{}", json.dumps(tw, ensure_ascii=False), 1))
+
 def wrap(src: str, desc: str) -> str:
     i = src.index('<div class="wrap">')  # everything before the first wrapper goes in <head>
     return HEAD.format(desc=desc) + src[:i] + "</head>\n<body>\n<script src=\"/earnings/switcher.js\"></script>\n" + src[i:] + "\n</body>\n</html>\n"
@@ -100,7 +114,7 @@ def main():
         wrap(tw_ui((ROOT / "index.html").read_text(encoding="utf-8")),
              "April's Earnings Lens：AI 产业链和重点科技公司的季度财报解读。"), encoding="utf-8")
     (DIST / "earnings" / "calendar" / "index.html").write_text(
-        wrap((ROOT / "calendar.html").read_text(encoding="utf-8"),
+        wrap(cal_names(tw_ui((ROOT / "calendar.html").read_text(encoding="utf-8"))),
              "April's Earnings Lens 财报日历：重点公司的发布日期与解读进度。"), encoding="utf-8")
     shutil.copytree(ROOT / "data", DIST / "earnings" / "data")
     build_langs(DIST / "earnings")

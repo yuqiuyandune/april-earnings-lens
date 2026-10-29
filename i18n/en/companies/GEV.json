@@ -1,0 +1,41 @@
+{
+ "n": "GE Vernova",
+ "config": {
+  "segmentBasis": "Three segments: Power (gas, nuclear, hydro, steam and services), Electrification (grid systems, transmission equipment, transformers, incl. Prolec GE) and Wind",
+  "fiscalNote": "Calendar fiscal year; spun off from General Electric in April 2024; reports GAAP EPS only",
+  "kpis": [
+   "Orders and organic growth",
+   "Backlog",
+   "Gas turbines under contract (GW)",
+   "Adjusted EBITDA margin",
+   "Free cash flow"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from",
+   "From slot to cash: three time lags"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "orders": {
+    "t": "Orders"
+   },
+   "backlog": {
+    "t": "Backlog (RPO)"
+   },
+   "gw": {
+    "t": "Gas turbines under contract (backlog + slots)"
+   },
+   "ebm": {
+    "t": "Adjusted EBITDA margin"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

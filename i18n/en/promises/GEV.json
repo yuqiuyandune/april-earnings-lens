@@ -1,0 +1,68 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Gas turbine output reaches 20 GW a year (about 5 GW a quarter) from Q3, 24 GW in 2028",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Q3 shipped 5 GW, 32 gas turbines (+60% y/y), including 13 aeroderivatives. The CFO said the factory ramp went well and productivity is reaching the bottom line. The 24 GW goal is tested in 2028."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "At least 125 GW of gas turbines under contract (backlog + slots) by end-2026",
+  "dueLabel": "end-2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Raised for the second time: 110 → 125 → <b>at least 130 GW</b>. 122 GW at the end of Q3, so Q4 needs at least about 13 GW of new contracts (assuming about 5 GW shipped)."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "2026 free cash flow of $11.5–12.5B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Raised to <b>$16–17B</b>. The guide started the year at $5.0–5.5B and has been raised three times. $15.3B already in the first nine months, leaving only $0.7–1.7B for Q4."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Power organic revenue growth 18–20%, segment EBITDA margin 17–19%",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Q3 margin 21.4%, even though Q3 is usually the lightest services quarter. Full-year guide raised to 19–21% growth and 19–21% margin."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Electrification revenue $14.5–15.0B (incl. about $3.1B from Prolec), segment EBITDA margin 18–20%",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Revenue range unchanged; Q3 margin 19.1%, and the full year is now “trending toward the higher end”."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Wind full-year EBITDA loss of about $400M, organic revenue down low double digits",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Missed",
+    "note": "Loss outlook widened to $400–500M because of extra onshore services costs and the Vineyard Wind settlement; revenue now down mid-single digits, better than before. Q3 alone made a $72M profit."
+   }
+  ]
+ }
+]

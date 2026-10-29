@@ -1,0 +1,432 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "before the open, 28 Oct 2026",
+ "asOf": "close of $878.03 on 28 Oct 2026 (StockAnalysis), $868.00 after hours",
+ "headline": "AI is short of power, and GEV sells power: turbines booked to 2032, paid for upfront by customers",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$12.64B",
+   "exp": "est. $12.02B"
+  },
+  {
+   "k": "EPS (GAAP)",
+   "val": "$4.81",
+   "exp": "est. $4.02"
+  },
+  {
+   "k": "Orders",
+   "val": "$29.3B",
+   "exp": "a year ago $14.6B",
+   "pill": "organic +96%"
+  },
+  {
+   "k": "Implied Q4 free cash flow",
+   "val": "$0.7–1.7B",
+   "exp": "Q3 $5.4B",
+   "pill": "from guidance"
+  }
+ ],
+ "points": [
+  {
+   "b": "Selling the bottleneck",
+   "t": "122 GW of gas turbines under contract, about 6 years of output at 20 GW a year; slots for 2032 delivery were sold this quarter, and full-year order prices are about 50% above 2025."
+  },
+  {
+   "b": "Customers pay first",
+   "t": "Q3 free cash flow of $5.4B was almost three times adjusted EBITDA of $1.9B, mostly down payments on new orders and slot reservations."
+  },
+  {
+   "b": "Using the cash to expand",
+   "t": "A $9.0B purchase of high-voltage equipment maker Trench (half debt-funded), and the buyback authorization doubled from $10B to $20B."
+  }
+ ],
+ "reaction": "Stock: results came before the open; it closed at <b>$878.03 (−1.9%)</b>, with an intraday low of $836.24 (6.6% below the prior close of $895.08), and $868.00 (−1.1%) after hours. Revenue, EPS and orders all beat by a wide margin and all three full-year guides were raised, yet the stock fell; the same day Vertiv, which also beat and raised, closed up 16.5%. The market gave no single reason: Benzinga's headline focused on the $9B Trench deal, and management said Q4 aeroderivative orders will be lighter than in Q2 and Q3 and price per kW below Q3. The stock is about 27% below its 52-week high of $1,195.94. Consensus from Benzinga: EPS $4.02, revenue $12.02B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Growth came from Power and Electrification, with Wind roughly flat. Most of Electrification's growth came from the Prolec GE acquisition.",
+   "bridge": [
+    {
+     "n": "Power"
+    },
+    {
+     "n": "Electrification"
+    },
+    {
+     "n": "Wind"
+    },
+    {
+     "n": "Eliminations"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Power",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "orders organic"
+      }
+     ],
+     "why": "Gas turbine equipment orders about 4x a year ago; 32 units shipped (+60%). Segment EBITDA $1.3B at a 21.4% margin (+8 points), the first quarter shipping large volumes of the higher-priced orders. Services orders +12%, from gas and nuclear."
+    },
+    {
+     "n": "Electrification",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Prolec GE contributed about $0.95B. Orders of $5.4B were down 9% organically because of large synchronous condenser orders a year ago; orders still ran about 1.4x revenue. Equipment backlog $42.2B, +60% in a year. Margin 19.1%."
+    },
+    {
+     "n": "Wind",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "orders organic"
+      }
+     ],
+     "why": "A $72M quarterly profit (a $61M loss a year ago), from lower offshore costs, tariff refunds and onshore services. The US onshore new-unit market is still weak and management sees no turning point."
+    }
+   ],
+   "note": "The three segments add up to slightly more than total revenue; the difference is inter-segment eliminations. Gas turbines come in two contract types: a “slot reservation” (the customer pays a deposit to lock in a production slot) and a firm order; 13 GW of slots converted to orders this quarter."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "What data centers lack most is power. GEV sits at the <b>very top</b> of the chain: generating units and grid equipment. Its orders and deposits are the earliest and longest-dated signal of data-center building; its risk is at the far end too: <b>its customers' customers increasingly rely on borrowing</b>.",
+    "items": [
+     {
+      "b": "Selling the bottleneck",
+      "pill": "booked to 2032",
+      "w": "122 GW of gas turbines under contract, about 6 years of output at 20 GW a year. Several slots for 2032 delivery were sold this quarter; Q3 order prices were more than 20% above Q4 2025, and full-year price per kW is about 50% above 2025. An analyst noted turbines are “sold out for a number of years” and asked where else power could be added faster; the CEO said grid equipment can only complement, it is “not going to replace the need for more power generation”."
+     },
+     {
+      "b": "Who is buying",
+      "pill": "data centers ≈ 20%",
+      "w": "About 100 gas customers in 25 countries; about 80% are utilities and other traditional customers and about 20% are directly for data centers. Electrification has booked more than $6B of data-center orders this year (about $1.4B in Q3), won its first MV-UPS order from a hyperscaler and is developing solid-state transformers with hyperscalers. The company does not split out how much of the traditional demand is to power data centers."
+     },
+     {
+      "b": "Customers fund the cash",
+      "pill": "working capital +$5.3B",
+      "w": "Working capital brought in $5.3B in Q3, mainly down payments on new orders and slots. Free cash flow over four quarters was $17.1B, more than three times adjusted EBITDA of $5.2B. It is the same pattern as Vertiv's deferred revenue: <b>customers pay first, and suppliers use that money to expand, buy back stock and acquire</b>. In reverse, if customers slow down, deposits are the first thing to fall."
+     },
+     {
+      "b": "Can customers pay?",
+      "pill": "“no financing challenges”",
+      "w": "Asked whether customers faced financing problems, wanted to exit slots or were slowing conversions, the CEO said “No”, and payment terms to secure equipment are unchanged because customers “have very strong balance sheets”. Yet the same week Google's Q3 capex was 121% of operating cash flow with $147.2B raised externally this year, and Microsoft began using leases and third-party compute and said it would “use additional financing”. GEV's deposits sit upstream of that borrowing."
+     },
+     {
+      "b": "Same day, different reactions",
+      "pill": "VRT +16.5% / GEV −1.9%",
+      "w": "Both sell power equipment to data centers and both beat and raised. Vertiv trades at about 28x forward earnings and GEV at about 38x, so more was already priced into GEV. GEV's margin jump came from the first quarter of large deliveries of higher-priced orders; profits in the next few years depend on whether the prices in today's $197B backlog are delivered."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "GEV's volumes are capped by factory capacity, so revenue growth has a ceiling; the real variable is <b>price and margin</b>: the higher-priced orders started shipping in the second half of 2026 and run into the early 2030s. The question is not whether orders double again, but how high margins go and when the order cycle turns.",
+    "items": [
+     {
+      "b": "Volume: capped by capacity",
+      "pill": "about +10% a year",
+      "w": "Gas turbine capacity is 20 GW a year today and 24 GW in 2028, only 20% more over two years. Orders beyond that just queue: about $71.8B of orders in the first nine months against $33.1B of revenue, and the $197B backlog is more than four years of this year's revenue. Planned capex of $6B over 2025–2028 goes mainly to Power and Electrification capacity."
+     },
+     {
+      "b": "Price: already locked into backlog",
+      "pill": "order price +50%",
+      "w": "New 2026 orders are priced about 50% higher per kW than 2025, and they only began shipping this quarter. Organic revenue grew 18% while adjusted EBITDA grew 123%: price is starting to reach profit. Management said backlog margin is rising much faster this year than last and will give the number in January."
+     },
+     {
+      "b": "Services: the long tail",
+      "pill": "$0.5B per GW over 20 years",
+      "w": "Installed turbines bring 20 years of maintenance and upgrade revenue at higher margins than equipment. The company's earlier target was Power services revenue rising from about $12B to $22B by 2035, which the CEO said “likely will prove out to be conservative”. Services orders grew 10% this quarter."
+     },
+     {
+      "b": "The grid: a second growth line",
+      "pill": "equipment backlog $42.2B",
+      "w": "Electrification equipment backlog was only $7B at the start of 2022. The company sizes its grid-equipment market at about $300B by 2030, including $130B of high-voltage equipment growing at high single digits long term. Trench has about $1.4B of 2026 revenue, approaching $2B in 2028, and only joins in late 2027."
+     },
+     {
+      "b": "Company targets are out of date",
+      "pill": "met two years early",
+      "w": "December 2025 targets for 2028: total backlog of about $200B (already $197B in Q3), at least $22B of cumulative 2025–2028 free cash flow ($3.7B in 2025 plus $16–17B guided for 2026, about $20B in two years), $52B of revenue and a 20% adjusted EBITDA margin. New 2030 targets come at a Capital Markets Day, with the date set in January."
+     },
+     {
+      "b": "What could break it",
+      "pill": "the order cycle",
+      "w": "After the US gas-plant building boom of the early 2000s, turbine orders fell sharply. Signals to watch this time: how fast slots convert to orders; the price per kW of new orders (Q4 falls on mix); and whether working capital turns from inflow to outflow. On the data-center side more of the money is borrowed; if financing tightens, new orders and deposits drop first."
+     }
+    ]
+   },
+   {
+    "title": "From slot to cash: three time lags",
+    "take": "Reading GEV's numbers means separating three stages: <b>slots</b> (a deposit to hold a production slot), <b>orders</b> (a firm contract in backlog) and <b>services</b> (20 years of revenue after the unit is installed).",
+    "items": [
+     {
+      "b": "Slots",
+      "pill": "58 GW",
+      "w": "8 GW of new slots signed this quarter and 13 GW converted to orders, so slots fell from 63 GW to 58 GW. Backlog is now larger than slots for the first time, which management says makes shipments over the next several years more certain."
+     },
+     {
+      "b": "Backlog",
+      "pill": "64 GW · $197B",
+      "w": "Gas equipment backlog rose from 53 GW to 64 GW. Total backlog is $197B, of which equipment is $104B (+92% y/y) and services about $93B. Management expects total backlog above $200B in Q4, with rising margins."
+     },
+     {
+      "b": "Shipments",
+      "pill": "5 GW a quarter",
+      "w": "Q3 was the first quarter shipping at a 20 GW annual rate, with a 21.4% Power margin; an analyst estimated the top of the Q4 guide implies a Power margin in the mid-20s by year end."
+     },
+     {
+      "b": "Services",
+      "pill": "400+ HA units",
+      "w": "At least 400 HA heavy-duty units running or on contract by the end of 2027. After delivery, services revenue builds with the installed base and is not limited by each year's factory capacity, which makes it the steadiest stage of the timeline."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Organic growth faster for five straight quarters, +96% in Q3"
+   },
+   {
+    "why": "Doubled in a year; year-end target at least 130 GW"
+   },
+   {
+    "why": "Higher-priced orders started shipping; jumped to 15.4% in Q3"
+   },
+   {
+    "why": "About $5B a quarter since Q1, mostly deposits"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>38x</b> forward earnings, the lowest since the spin-off: all 10 previous quarter ends were higher, with a median of about 56x. On free cash flow it is only 14x, a 7% yield, but that is mostly customer deposits and <b>cannot be treated as recurring profit</b>; on adjusted EBITDA it is still 42x.",
+  "tiles": [
+   {
+    "k": "Forward P/E",
+    "f": "$878.03 ÷ next-twelve-month consensus EPS (StockAnalysis); GAAP TTM 23x including one-off gains"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap ≈ $233.9B ÷ TTM revenue $44.0B"
+   },
+   {
+    "k": "EV / adjusted EBITDA",
+    "f": "EV ≈ $219.9B ÷ TTM adjusted EBITDA $5.25B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "mostly deposits",
+    "f": "market cap ≈ $233.9B ÷ TTM FCF $17.1B, a 7.3% yield"
+   }
+  ],
+  "forward": {
+   "title": "Full year from company guidance",
+   "sub": "no EPS guidance",
+   "steps": [
+    "Full-year revenue at the guided midpoint of <b>$47.0B</b> × 14% adjusted EBITDA margin midpoint → adjusted EBITDA of about <b>$6.58B</b>",
+    "EV ≈ $219.9B ÷ $6.58B → about <b>33x</b>",
+    "Free cash flow guided at $16–17B with $15.3B already in → only <b>$0.7–1.7B</b> left for Q4, far below about $5B a quarter so far"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast. On why Q4 cash flow slows, management only said Q4 free cash flow will be “positive”."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "2028 assumptions, starting from the 2026 guided midpoint of $47.0B",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Margin",
+    "EPS",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+8%",
+      "17%",
+      "$22.2",
+      "39.5x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+13%",
+      "20%",
+      "$30.4",
+      "28.9x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+18%",
+      "23%",
+      "$39.7",
+      "22.1x"
+     ]
+    }
+   ],
+   "note": "Margin is the adjusted EBITDA margin. The base case follows the company's December 2025 outlook of “low-double-digit organic growth and a 20% adjusted EBITDA margin in 2028”. EPS = (adjusted EBITDA − about $2.0B of D&A) × (1 − 21% tax) ÷ 260M shares, excluding interest income on cash and one-offs. <b>For comparison:</b> next-twelve-month consensus EPS is about $22.9 ($878.03 ÷ 38.38), so the bear case means no EPS growth from 2027 to 2028; the current price is about 29x base-case 2028 EPS, below today's 38x forward multiple. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS × our P/E (EPS from the scenarios above)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "order cycle peaks, 28x"
+    },
+    {
+     "n": "Base",
+     "how": "company's 2028 targets, 34x"
+    },
+    {
+     "n": "Bull",
+     "how": "pricing keeps delivering, 38x"
+    }
+   ],
+   "why": "Today's price is at the top of the zone: buying now, the base case gains only about 17% while the bear case loses about 29%, not enough reward for the risk. The $700 low end is about 23x base-case 2028 EPS; from there the bear case loses only about 11% and the base case gains nearly 50%. GEV's multiple fell from about 60x to 38x in a year, and the zone is wide because views on the order cycle change fast.",
+   "note": "The multiples are applied to 2028 EPS and sit below today's 38x forward P/E, because growth slows and there is less room for margin expansion two years out."
+  },
+  "history": {
+   "title": "Against its own history",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends; listed April 2024, so only 10 quarter ends",
+   "note": "About 38x at the close, <b>below all 10 quarter ends since listing</b>, median about 56x. It uses pre-report consensus EPS; estimates rise after the report, so the real multiple is lower. We use the forward measure because GAAP profit includes one-off gains that distort trailing P/E. StockAnalysis data."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Cash",
+     "v": "$16.8B"
+    },
+    {
+     "k": "Buybacks (Jan–Oct)",
+     "v": "about $6.6B"
+    },
+    {
+     "k": "Capex",
+     "v": "$0.6B a quarter"
+    }
+   ],
+   "note": "Q3 operating cash flow was $6.1B and capex only $0.6B: GEV spends little on expansion, and its cash comes mainly from customer deposits. Cash rose $4B in the quarter while it bought back $1.6B of stock and paid about $0.14B of dividends; it bought back another $1.3B on 1–23 October. About half of the Trench deal (about $4.5B) is debt-funded; management says debt stays below 1x adjusted EBITDA, and Fitch upgraded it to A− in August."
+  },
+  "calc": [
+   "Price $878.03: 28 Oct close (StockAnalysis); 266.3M shares, market cap ≈ $233.9B",
+   "Net cash: $16.8B of cash less borrowings, about $14.0B per StockAnalysis; EV ≈ $233.9B − $14.0B ≈ $219.9B",
+   "TTM = 2025 Q4 to 2026 Q3: adjusted EBITDA $1.158 + $0.896 + $1.250 + $1.943B = $5.25B",
+   "TTM free cash flow $1.809 + $4.791 + $5.107 + $5.409B = $17.12B; yield = $17.12B ÷ $233.9B ≈ 7.3%",
+   "TTM revenue $10.96 + $9.34 + $11.10 + $12.64B ≈ $44.0B (StockAnalysis shows $44.04B)",
+   "Forward P/E 38.38x from StockAnalysis; history median is the median of 10 quarter-end forward P/Es, 56.1x",
+   "Implied Q4: revenue $46.5–47.5B − $33.08B in nine months = $13.4–14.4B; free cash flow $16–17B − $15.31B = $0.69–1.69B",
+   "Years of gas capacity: 122 GW under contract ÷ 20 GW a year ≈ 6 years (before the 2028 step-up to 24 GW)",
+   "Scenarios: 2028 revenue = $47.0B × (1 + growth)²: bear $54.8B, base $60.0B, bull $65.4B (including Trench from late 2027); adjusted EBITDA about $9.3B, $12.0B and $15.1B; D&A about $2.0B (Q3's $0.439B × 4 plus expansion and acquisitions)"
+  ],
+  "next": "The Q4 report in January will give 2027 guidance and set the Capital Markets Day date (with 2030 targets)."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Contract target",
+    "pill": "raised again",
+    "before": "Q1: at least 110 GW by year end; Q2: at least 125 GW.",
+    "now": "At least 130 GW; total backlog expected above $200B in Q4."
+   },
+   {
+    "topic": "Pricing",
+    "pill": "+50% for the year",
+    "before": "Early in the year: orders 10–20 points above Q4 2025.",
+    "now": "Q3 alone was more than 20 points higher; full-year price per kW about 50% above 2025. Fewer aeroderivatives and more 50 Hz units mean Q4 prices land below Q3."
+   },
+   {
+    "topic": "Capital allocation",
+    "pill": "acquisition + buybacks",
+    "before": "$10B buyback authorization, largely used.",
+    "now": "Authorization doubled to $20B; Trench bought for $9.0B, 13x 2028 EBITDA, half debt-funded, closing late 2027."
+   },
+   {
+    "topic": "Management",
+    "pill": "CFO handover",
+    "before": "Ken Parks as CFO.",
+    "now": "His successor starts next week and takes over in January 2027; Ken Parks stays for a period in 2027."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Power margin of 21.4% in the lightest services quarter; “we are early in our margin expansion”",
+     "No customer financing problems, no requests to exit slots, payment terms unchanged",
+     "Each GW of HA turbines brings about $0.5B of high-margin services revenue over 20 years",
+     "Trench lets GEV make critical parts such as transformer bushings in house, easing a supply-chain bottleneck"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Whether the Q2–Q3 order pace can last: the CEO said Q4 aeroderivative orders will be lighter",
+     "Whether Electrification margins can exceed 30%: data only in January",
+     "Trench revenue synergies: not quantified",
+     "2027 and 2030 profit targets: wait for January and the Capital Markets Day"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether gas contracts reach 130 GW, and how fast slots convert to orders",
+     "Q4 free cash flow (implied $0.7–1.7B) and whether working capital starts to fall",
+     "The 2027 guidance in January and the change in backlog margin",
+     "The data-center share of Electrification orders, and new-product orders from hyperscalers"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Slot conversions slow, or customers ask to exit slots",
+     "Working capital turns from inflow to outflow: customers are paying more slowly",
+     "Price per kW on new orders falls for reasons other than mix",
+     "Cloud capex financing tightens while GEV's data-center share keeps rising"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No insider filed a Form 4 open-market purchase or sale in the 30 days before the report (9/28–10/27). The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/GEV.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "GE Vernova: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "GE Vernova: Q3 2026 10-Q"
+  },
+  {
+   "t": "StockAnalysis: GE Vernova earnings call transcripts (Q3, Q2 2026)"
+  },
+  {
+   "t": "Benzinga: consensus and history"
+  },
+  {
+   "t": "StockAnalysis: price and valuation"
+  },
+  {
+   "t": "StockAnalysis: Vertiv price that day"
+  }
+ ]
+}
