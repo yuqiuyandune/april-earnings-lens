@@ -44,7 +44,7 @@ except Exception:  # OpenCC missing: Traditional falls back to the Simplified te
 def conv(o, f):
     if isinstance(o, str): return f(o)
     if isinstance(o, list): return [conv(x, f) for x in o]
-    if isinstance(o, dict): return {k: (v if k == "u" else conv(v, f)) for k, v in o.items()}
+    if isinstance(o, dict): return {k: (v if k == "u" and str(v).startswith("http") else conv(v, f)) for k, v in o.items()}
     return o
 
 def merge(base, over):

@@ -1,0 +1,53 @@
+{
+ "n": "Tesla",
+ "config": {
+  "segmentBasis": "Automotive / Energy storage / Services and other",
+  "kpis": [
+   "Deliveries",
+   "Auto gross margin (excl. credits)",
+   "Storage deployments",
+   "FSD take rate",
+   "Robotaxi miles"
+  ],
+  "volprice": [
+   "Deliveries",
+   "Auto revenue per vehicle"
+  ],
+  "modules": [
+   "Sum of the parts",
+   "Stock compensation vs free cash flow"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "om": {
+    "t": "Operating margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   },
+   "deliv": {
+    "t": "Deliveries",
+    "u": "K units"
+   },
+   "seg_svc": {
+    "t": "Services and other"
+   },
+   "seg_auto": {
+    "t": "Automotive"
+   },
+   "seg_energy": {
+    "t": "Energy storage"
+   },
+   "sbc": {
+    "t": "Stock-based compensation"
+   }
+  }
+ }
+}

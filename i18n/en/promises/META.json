@@ -1,0 +1,89 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2'26 call)",
+  "text": "Q3 revenue of $61–64B",
+  "dueLabel": "2026 Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $64.60B, above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jan 2026 (Q4'25 call)",
+  "text": "2026 capex of $115–135B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Raised to $125–145B."
+   },
+   {
+    "status": "Narrowed",
+    "note": "Narrowed to $130–145B."
+   },
+   {
+    "status": "Raised, to be verified",
+    "note": "Low end raised again to $135B. $85.8B spent in three quarters, so Q4 needs $49–59B, more than 40% above Q3's record."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jan 2026 (Q4'25 call)",
+  "text": "2026 total expenses of $162–169B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "One-off",
+    "note": "Low end raised to $165B because of $2.4B of legal costs."
+   },
+   {
+    "status": "One-off",
+    "note": "Raised to $175–179B, almost entirely from a $9.9B legal settlement. Excluding it, roughly in line with the original range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2'26 call)",
+  "text": "2026 operating income above 2025 ($83.3B)",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Now excludes legal costs",
+    "note": "At the Q4 guided midpoint, GAAP full-year is about $79B, below 2025; only about $91B excluding legal costs is higher. The company has now added the condition “excluding Q3 legal costs”."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jan 2026 (Q4'25 call)",
+  "text": "Reality Labs 2026 loss similar to 2025 ($19.2B)",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Full-year guide $18–19B, slightly better than 2025. $12.8B of losses in three quarters."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Q4 revenue of $73–76B (FX about −1%), tax rate 15–17%",
+  "dueLabel": "2026 Q4"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Reality Labs 2027 loss narrows to about $15B",
+  "dueLabel": "full-year 2027"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Improve Muse serving-cost efficiency more than 10x within a year",
+  "dueLabel": "by Oct 2027"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "“Strong overall revenue growth” through 2027 while continuing to invest heavily",
+  "dueLabel": "full-year 2027 (guidance in Jan 2027)"
+ }
+]

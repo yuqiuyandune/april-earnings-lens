@@ -1,0 +1,60 @@
+{
+ "n": "Meta",
+ "config": {
+  "segmentBasis": "Family of Apps + Reality Labs",
+  "kpis": [
+   "Ad impression growth",
+   "Average price per ad growth",
+   "Daily active people (DAP)",
+   "Capex",
+   "Free cash flow"
+  ],
+  "volprice": [
+   "Ad impressions",
+   "Average price per ad"
+  ],
+  "modules": [
+   "Signs of AI payback",
+   "Capex intensity",
+   "One-off adjustments"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "om": {
+    "t": "Operating margin (GAAP)"
+   },
+   "eps": {
+    "t": "EPS (GAAP)"
+   },
+   "capex": {
+    "t": "Capex"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   },
+   "capexr": {
+    "t": "Capex / revenue"
+   },
+   "imp": {
+    "t": "Ad impressions y/y"
+   },
+   "ppa": {
+    "t": "Price per ad y/y"
+   },
+   "dap": {
+    "t": "Daily active people",
+    "u": "100M"
+   },
+   "seg_foa": {
+    "t": "Family of Apps revenue"
+   },
+   "seg_rl": {
+    "t": "Reality Labs operating loss"
+   }
+  }
+ }
+}

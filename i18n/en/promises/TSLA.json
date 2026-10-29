@@ -1,0 +1,55 @@
+[
+ {
+  "saidLabel": "Apr 2026 (Q1'26 call)",
+  "text": "2026 capex above $25B, negative FCF in the remaining three quarters",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Negative as expected",
+    "note": "Q2 FCF −$1.09B, capex $5.79B."
+   },
+   {
+    "status": "Better than promised",
+    "note": "Q3 FCF +$1.53B; capex guide cut to about $20B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2'26 call)",
+  "text": "Energy storage gross margin in the low-to-mid 20s long term",
+  "dueLabel": "long term",
+  "checks": [
+   {
+    "status": "One-off",
+    "note": "33.1% in Q3, but mainly from tariff refunds and supplier-borne warranty costs."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2'26 Update)",
+  "text": "Expand Robotaxi cities and start Cybercab production",
+  "dueLabel": "2026 H2",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Driverless operation in 6 cities; the Cybercab fleet grew 10x in a month."
+   }
+  ]
+ },
+ {
+  "dueLabel": "Nov 2026",
+  "text": "Cybercab launches in Dallas"
+ },
+ {
+  "dueLabel": "2027 Q1",
+  "text": "FSD may win EU approval"
+ },
+ {
+  "dueLabel": "2027 Q2",
+  "text": "Robotaxi starts contributing meaningfully to revenue and profit"
+ },
+ {
+  "dueLabel": "end-2027",
+  "text": "Optimus begins deliveries to external customers"
+ }
+]

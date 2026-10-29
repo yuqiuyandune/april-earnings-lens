@@ -1,0 +1,266 @@
+{
+ "label": "Q3 2026",
+ "dateLabel": "released after the close, 21 Oct",
+ "asOf": "23 Oct 2026",
+ "headline": "Gross margin is back, profit isn't: the money is going into AI and robots",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$28.05B",
+   "exp": "est. $28.06B",
+   "pill": "in line"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "val": "$0.48",
+   "exp": "est. $0.45"
+  },
+  {
+   "k": "Free cash flow",
+   "val": "+$1.53B",
+   "exp": "est. about −$4.5B",
+   "pill": "big beat"
+  },
+  {
+   "k": "Storage deployed",
+   "val": "13.7 GWh",
+   "exp": "est. about 15.9"
+  }
+ ],
+ "points": [
+  {
+   "b": "Autos stop the bleeding",
+   "t": "Gross margin recovered, but deliveries are still −2% y/y."
+  },
+  {
+   "b": "Profit eaten by investment",
+   "t": "Operating income −56% y/y, GAAP EPS only $0.22."
+  },
+  {
+   "b": "Cash flow surprised",
+   "t": "Expected to turn negative for the year, it came in positive, and the capex guide was cut."
+  }
+ ],
+ "reaction": "Stock: turned lower after the call and closed −3.1% the next day. Expectations use FactSet consensus; revenue consensus across sources ranges from $27.78B to $28.44B.",
+ "results": {
+  "volprice": {
+   "title": "Auto revenue = deliveries × revenue per vehicle",
+   "period": "Q3'26 vs Q3'25",
+   "take": "In autos, <b>both volume and price slipped slightly</b>; the gross margin improvement came from costs and regional mix, not from selling more or at higher prices.",
+   "items": [
+    {
+     "k": "Deliveries",
+     "v": "487K"
+    },
+    {
+     "k": "Auto revenue per vehicle"
+    },
+    {
+     "k": "Auto revenue"
+    }
+   ],
+   "note": "Revenue per vehicle = total auto revenue ÷ deliveries; auto revenue includes leasing and regulatory credits, so it is approximate."
+  },
+  "segments": {
+   "title": "By business",
+   "period": "Q3'26 vs Q3'25, $B",
+   "take": "“Flat” revenue is one gain offsetting two declines: <b style=\"color:var(--good)\">services and other grew 33%</b>, while autos and storage both fell.",
+   "bridge": [
+    {
+     "n": "Services and other"
+    },
+    {
+     "n": "Automotive"
+    },
+    {
+     "n": "Energy storage"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Services and other",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Gross margin 15.9%, a record. The only business clearly growing."
+    },
+    {
+     "n": "Automotive",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Gross margin 18.1% (excluding credits), versus 15.4% a year ago."
+    },
+    {
+     "n": "Energy storage",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Deployments +10% but revenue −16%, partly because of tariff refunds."
+    }
+   ],
+   "note": "Tesla does not disclose segment operating income. Services and other includes Superchargers, insurance, used cars and Robotaxi."
+  },
+  "trends": [
+   {
+    "why": "Gross margin gains eaten by operating expenses"
+   },
+   {
+    "why": "Up this quarter, still below a year ago"
+   },
+   {
+    "why": "Negative in Q2, unexpectedly positive in Q3"
+   },
+   {
+    "why": "−2% y/y; demand hasn't returned to growth"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "On GAAP earnings the stock is about <b>412x</b> trailing profit, and still 218x on the company's measure. This price is not for the car business; it is for whether Robotaxi and Optimus deliver.",
+  "tiles": [
+   {
+    "k": "P/E",
+    "pill": "218x non-GAAP",
+    "f": "$374.58 ÷ TTM GAAP EPS $0.91"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap $1,326B ÷ TTM revenue $103.6B"
+   },
+   {
+    "k": "EV / EBITDA",
+    "f": "EV $1,290B ÷ TTM adjusted EBITDA $15.0B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 0.25%",
+    "f": "market cap $1,326B ÷ TTM FCF $3.3B"
+   }
+  ],
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "P/S at quarter ends",
+   "note": "14.2x now is above 14 of the last 20 quarter ends, the <b>70th percentile</b>; median 10.7x. This chart uses StockAnalysis data, slightly different from the 12.8x above."
+  },
+  "sotp": {
+   "title": "Sum of the parts: how much the market pays for the “future”",
+   "intro": "Value today's businesses at peer multiples; what's left is what the market pays for Robotaxi, Optimus and other businesses with no revenue yet.",
+   "parts": [
+    {
+     "n": "Automotive"
+    },
+    {
+     "n": "Energy storage"
+    },
+    {
+     "n": "Services and other"
+    }
+   ],
+   "note": "For reference: Toyota trades at 1.4x EV/revenue, storage company Fluence at 0.4x. The defaults already give Tesla a clear premium. Segment revenue is the sum of the last four quarters."
+  },
+  "cash": {
+   "title": "The real cost of stock compensation",
+   "sub": "Quarterly stock-based compensation, $B",
+   "stats": [
+    {
+     "k": "Stock comp (TTM)",
+     "v": "$4.30B"
+    },
+    {
+     "k": "Free cash flow (TTM)",
+     "v": "$3.30B"
+    },
+    {
+     "k": "FCF after stock comp",
+     "v": "−$1.00B"
+    }
+   ],
+   "note": "The stock given to employees over the past year was worth 30% more than the free cash flow the company generated. Non-GAAP profit and adjusted EBITDA both exclude this cost. Quarterly stock comp was +76% y/y."
+  },
+  "decomp": {
+   "title": "The −3.1% post-report move, decomposed",
+   "sub": "21 Oct → 22 Oct close",
+   "head": [
+    "Measure",
+    "TTM earnings",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "GAAP",
+      "−15.7%",
+      "+15.0%"
+     ]
+    },
+    {
+     "c": [
+      "Non-GAAP",
+      "−1.1%",
+      "−1.9%"
+     ]
+    }
+   ],
+   "note": "On GAAP, trailing profit fell 16% while the stock fell only 3%, so the market actually paid a higher multiple: investors are paying for the future, not for this quarter."
+  },
+  "calc": [
+   "Price $374.58: 22 Oct close",
+   "3.541B diluted shares → market cap $1,326.4B",
+   "Cash and short-term investments $45.4B, debt and finance leases $9.5B → EV $1,290.5B",
+   "TTM = Q4'25 to Q3'26: revenue $103.57B, GAAP EPS $0.91, non-GAAP EPS $1.72, adjusted EBITDA $15.0B, FCF $3.30B"
+  ],
+  "next": "TSLA's profits are too thin for a guidance-based forward P/E or three scenarios to mean much, so this page leaves them out."
+ },
+ "management": {
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Robotaxi driverless miles grew 8x this quarter",
+     "FSD take rate on new North American cars above 75% (about 55% last quarter)",
+     "Megapack capacity nearly sold out through 2027",
+     "Deliberately cooled expectations for Optimus: the ramp will be bumpy"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Robotaxi cost per mile: target $0.30, not yet reached",
+     "Optimus unit cost: declined to give a number",
+     "A SpaceX merger: no response"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "To be connected to April's Insider Flow Form 4 data (excluding 10b5-1 plans, option exercises and tax-withholding sales); not filled in on this prototype page."
+ },
+ "sources": [
+  {
+   "t": "Tesla Q3 2026 Update (SEC 8-K)"
+  },
+  {
+   "t": "Tesla Q2 2026 Update (SEC 8-K)"
+  },
+  {
+   "t": "Electrek: Q3 2026 results and FactSet consensus"
+  },
+  {
+   "t": "Teslarati: Q3 2026 expected vs actual"
+  },
+  {
+   "t": "Motley Fool: Q3 2026 earnings call transcript"
+  },
+  {
+   "t": "StockAnalysis: TSLA P/S history"
+  }
+ ]
+}

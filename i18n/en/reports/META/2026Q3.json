@@ -1,0 +1,393 @@
+{
+ "label": "2026 Q3",
+ "dateLabel": "after the close, 21 Oct 2026",
+ "asOf": "prices as of the 23 Oct 2026 close",
+ "headline": "Ads sell at ever higher prices, but AI spending has eaten cash flow down to negative",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$64.60B",
+   "exp": "est. $63.3B"
+  },
+  {
+   "k": "GAAP EPS",
+   "val": "$3.83",
+   "exp": "est. $3.57"
+  },
+  {
+   "k": "Free cash flow",
+   "val": "−$2.12B",
+   "exp": "a year ago +$10.62B",
+   "pill": "turned negative"
+  },
+  {
+   "k": "Q4 revenue guide",
+   "val": "$73–76B",
+   "exp": "est. $73.6B",
+   "pill": "midpoint 1.2% higher"
+  }
+ ],
+ "points": [
+  {
+   "b": "The ad engine got stronger",
+   "t": "Revenue +26%, average price per ad +14%, and Q4 guidance above expectations."
+  },
+  {
+   "b": "Profit held down by a one-off",
+   "t": "A $9.9B legal settlement; excluding it, operating income +11% and EPS $7.40."
+  },
+  {
+   "b": "Cash flow negative for the first time",
+   "t": "Quarterly capex of $34.9B exceeded operating cash flow; no 2027 budget given."
+  }
+ ],
+ "reaction": "Stock: up about 1% after hours, then <b>−7.0%</b> the next day ($697.52 → $648.85), its biggest one-day drop in three months. It wasn't the results but the spending: negative free cash flow, a higher capex floor, and worries about financing and dilution from new non-voting Class C shares; the Nasdaq also fell 2.3% that day. Expectations are publicly reported consensus (Investing.com, investingLive); GAAP EPS consensus already included the legal costs.",
+ "results": {
+  "volprice": {
+   "title": "Ad revenue = impressions × price",
+   "period": "Q3'26 vs Q3'25",
+   "take": "This quarter's growth <b>came mainly from price</b>: impression growth slowed from 19% early in the year to 10%, while average price per ad accelerated to +14%; ads work better, so advertisers pay more.",
+   "items": [
+    {
+     "k": "Ad impressions"
+    },
+    {
+     "k": "Average price per ad"
+    },
+    {
+     "k": "Ad revenue"
+    }
+   ],
+   "note": "Meta only discloses growth rates, not absolute impressions or prices. 1.10 × 1.14 ≈ 1.25, consistent with +26% ad revenue. Daily active people 3.64B, +3% y/y."
+  },
+  "segments": {
+   "title": "By segment",
+   "period": "Q3'26 vs Q3'25, $B",
+   "take": "Growth <b>came almost entirely from the Family of Apps</b> (Facebook, Instagram, WhatsApp, Messenger); Reality Labs revenue is still shrinking.",
+   "bridge": [
+    {
+     "n": "Family of Apps"
+    },
+    {
+     "n": "Reality Labs"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Family of Apps",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Operating income $17.1B, −31% y/y, mainly from the legal settlement. Company-wide operating income excluding it was +11%."
+    },
+    {
+     "n": "Reality Labs",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "A $4.13B loss, 7% smaller than a year ago. Quest sales fell while AI glasses grew."
+    }
+   ],
+   "note": "The small chart shows Reality Labs' quarterly operating loss. Management said 2027 investment will shift from Reality Labs to AI."
+  },
+  "extras": [
+   {
+    "title": "Signs of AI payback",
+    "take": "Ads are already seeing returns; new AI products are still in the spending phase.",
+    "items": [
+     {
+      "b": "Ad tools",
+      "pill": "working",
+      "w": "Partnership ads run above $15B annualized, +97% y/y; nearly 10M advertisers have used at least one generative AI creative tool."
+     },
+     {
+      "b": "Muse personal assistant",
+      "pill": "fast user growth",
+      "w": "About 6 weeks after launch, more than 10M people in the US and Canada signed up and about 25% use it daily. Free for now; no numbers yet on monetization (commissions, subscriptions)."
+     },
+     {
+      "b": "Headcount cuts",
+      "pill": "offset some costs",
+      "w": "66,775 employees, −15% y/y (about 8,000 laid off in May). The labor savings are far from enough to cover compute and depreciation."
+     },
+     {
+      "b": "Serving cost",
+      "pill": "to be verified",
+      "w": "Management admitted Muse is compute-hungry, and costs rise with users; the goal is a 10x+ efficiency gain within a year, with no per-user cost given."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Still growing; Q4 guided at a $74.5B midpoint"
+   },
+   {
+    "why": "About 35% excluding one-offs, still 5 points below last year"
+   },
+   {
+    "why": "Nearly doubled in a year"
+   },
+   {
+    "why": "Negative in Q3, a first in recent years"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>22x</b> trailing earnings, below its five-year median of 24x. At the median multiple, the current price only needs a 2027 operating margin of about <b>26%</b> (about 36% this year excluding one-offs): <b>the market is pricing depreciation eating into margins</b>, not paying a premium for ad growth.",
+  "tiles": [
+   {
+    "k": "P/E (TTM)",
+    "f": "$642.62 ÷ TTM EPS $29.33"
+   },
+   {
+    "k": "Forward P/E (full-year 2026)",
+    "f": "$642.62 ÷ estimated full-year EPS $28.47"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap $1,643B ÷ TTM revenue $241.6B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 1.5%",
+    "f": "market cap $1,643B ÷ TTM FCF $25.1B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year earnings from company guidance",
+   "sub": "no paid consensus needed",
+   "steps": [
+    "Q4 revenue at the guided midpoint of <b>$74.5B</b>",
+    "Full-year expense guide midpoint $177B less $127.1B in three quarters → Q4 expenses about <b>$49.9B</b>",
+    "Q4 operating income about $24.6B (33% margin), non-operating items at 0, tax at the 16% guided midpoint → net income about $20.6B",
+    "÷ 2.573B shares → Q4 EPS about <b>$8.02</b> (public consensus about $8.26)",
+    "Full-year 2026 EPS = $10.44 + $6.18 + $3.83 + $8.02 = <b>$28.47</b>"
+   ],
+   "note": "Q4 annualized, the P/E is about 20x. Q1 included an $8.0B tax benefit and Q3 $9.9B of legal costs, which roughly offset. Our estimate, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "2027 assumptions",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Margin",
+    "EPS",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+12%",
+      "27%",
+      "$25.29",
+      "25.4x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+20%",
+      "33%",
+      "$33.12",
+      "19.4x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+25%",
+      "37%",
+      "$38.69",
+      "16.6x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "+20%",
+      "26.5%",
+      "$26.60",
+      "24.2x"
+     ]
+    }
+   ],
+   "note": "Margin is the operating margin. Base: full-year 2026 revenue of about $256B (including the Q4 guided midpoint), 16% tax, 2.573B shares. *Price: if the market pays the five-year median of 24.2x, the current price needs 2027 EPS of $26.60; with 20% revenue growth that means an operating margin of only about 26.5%. The price sits <b>between the bear and base cases, closer to the bear</b>. After the January 2027 split, per-share numbers halve and multiples stay the same. These assumptions are ours and are not forecasts."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "P/E at quarter ends",
+   "note": "About 22x now, above only 6 of the last 20 quarter ends, the <b>30th percentile</b>; median about 24x. It was lower in 2022 (peak metaverse losses, ad growth turning negative) and in the first half of this year. The 31.5x at the end of September 2025 was inflated by a one-off tax item and doesn't mean it was really more expensive then. StockAnalysis data."
+  },
+  "decomp": {
+   "title": "The −7.0% post-report move, decomposed",
+   "sub": "21 Oct → 22 Oct close",
+   "head": [
+    "Measure",
+    "TTM earnings",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "GAAP",
+      "+10.5%",
+      "−15.8%"
+     ]
+    },
+    {
+     "c": [
+      "Excl. one-offs",
+      "+0.5%",
+      "−7.4%"
+     ]
+    }
+   ],
+   "note": "The extra 10% of GAAP earnings is mainly last Q3's $15.9B tax charge dropping out of the trailing four quarters, not real extra profit. Excluding one-offs, earnings barely moved, so <b>almost all of the drop was multiple compression</b>: the market is discounting a bigger spending plan."
+  },
+  "cash": {
+   "title": "Capex intensity",
+   "sub": "Capex ÷ revenue",
+   "stats": [
+    {
+     "k": "Capex (TTM)",
+     "v": "$108.0B"
+    },
+    {
+     "k": "Operating cash flow (TTM)",
+     "v": "$133.1B"
+    },
+    {
+     "k": "Capex / operating cash flow",
+     "v": "81%"
+    }
+   ],
+   "note": "Of every $100 of revenue, $54 goes into data centers, versus $38 a year ago. Cash and marketable securities of $82.5B now roughly equal long-term debt of $80.9B; no buybacks this quarter. The full-year capex guide implies <b>$49–59B in Q4</b>."
+  },
+  "calc": [
+   "Price $642.62: 23 Oct close; market cap $1,643B (StockAnalysis), about 2.556B shares",
+   "TTM = Q4'25 to Q3'26: GAAP EPS $8.88 + $10.44 + $6.18 + $3.83 = $29.33; revenue $59.89B + $56.31B + $60.80B + $64.60B = $241.6B",
+   "TTM free cash flow $14.08B + $12.39B + $0.78B − $2.12B = $25.1B; capex includes finance lease principal",
+   "Excluding one-offs: Q3'25 excluding the $15.9B tax charge is $7.25 (company disclosure); Q1'26 excluding the $8.03B tax benefit is about $7.31 ($18.74B ÷ 2.564B shares); Q3'26 excluding $9.9B of legal costs is $7.40 (company disclosure); Q2'26's $2.4B legal and $1.2B severance costs are not adjusted",
+   "Pre-report P/E: $697.52 ÷ $26.55 = 26.3x ($29.62 excluding one-offs → 23.5x); post-report: $648.85 ÷ $29.33 = 22.1x ($29.77 excluding → 21.8x)",
+   "Scenario EPS = 2027 revenue × operating margin × (1 − 16%) ÷ 2.573B shares"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Capex",
+    "pill": "floor raised again",
+    "before": "2026 at $130–145B; no 2027 number, only that plans aim to maximize 2026–2027 capacity.",
+    "now": "2026 at $135–145B; still no 2027 number, only that it will keep “investing aggressively”, with guidance in January."
+   },
+   {
+    "topic": "2027 revenue",
+    "pill": "new statement",
+    "before": "Not mentioned.",
+    "now": "Expects “strong overall revenue growth” through 2027, with possible incremental revenue from new AI businesses."
+   },
+   {
+    "topic": "Operating income promise",
+    "pill": "condition added",
+    "before": "2026 operating income above 2025.",
+    "now": "Above 2025 excluding Q3 legal costs."
+   },
+   {
+    "topic": "Reality Labs",
+    "pill": "first 2027 number",
+    "before": "No update.",
+    "now": "2026 loss of $18–19B, narrowing to about $15B in 2027 as investment shifts to AI."
+   },
+   {
+    "topic": "Financing",
+    "pill": "new tool",
+    "before": "More long-term debt, plus partnerships (such as the BlackRock data center) to share costs.",
+    "now": "New non-voting Class C shares, effectively a 2-for-1 split; stated uses include financing, employee pay and acquisitions, with no specific issuance plan yet."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "About 6 weeks after launch, Muse has more than 10M sign-ups and about 25% use it daily",
+     "Annual revenue per existing user is “a few hundred dollars”; Muse would add commissions and subscriptions on top",
+     "Record time spent on Facebook and Instagram, mainly from video",
+     "Muse comes to Meta glasses next month"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "2027 expenses and capex: deferred to January",
+     "Muse serving cost per user: only listed cost-cutting levers, no number",
+     "When Muse makes money and how much: no numbers",
+     "Whether Class C shares will be used for financing soon: no specific plan"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue lands near $74.5B",
+     "Whether Q4 capex really reaches $49–59B",
+     "2027 expense and capex guidance (January call)",
+     "Whether free cash flow turns positive again"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Price-per-ad growth drops back to single digits: the AI ad-performance gains are fading",
+     "2027 expense growth clearly outpaces revenue growth without matching new revenue",
+     "Muse user growth stalls, or serving costs don't fall",
+     "New large verdicts in teen-related lawsuits"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "To be connected to April's Insider Flow Form 4 data (excluding 10b5-1 plans, option exercises and tax-withholding sales); not filled in on this prototype page."
+ },
+ "sources": [
+  {
+   "t": "Meta: Q3 2026 earnings release"
+  },
+  {
+   "t": "Meta: Q2 2026 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Meta: Q2 2026 earnings call transcript"
+  },
+  {
+   "t": "Meta: Q1 2026 results (via StockTitan)"
+  },
+  {
+   "t": "Meta: Q4 2025 earnings release (2026 guidance)"
+  },
+  {
+   "t": "Meta: Q3 2025 results (SEC 8-K)"
+  },
+  {
+   "t": "Motley Fool: Q3 2026 earnings call transcript"
+  },
+  {
+   "t": "Investing.com: consensus and unanswered questions"
+  },
+  {
+   "t": "investingLive: why it fell 7% the next day"
+  },
+  {
+   "t": "Yahoo Finance: negative cash flow and the capex floor"
+  },
+  {
+   "t": "StockAnalysis: META price and P/E history"
+  }
+ ]
+}
