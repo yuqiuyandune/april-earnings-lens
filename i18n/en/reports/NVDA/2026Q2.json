@@ -1,0 +1,405 @@
+{
+ "label": "FY2027 Q2 (May–Jul 2026)",
+ "dateLabel": "after the close, 26 Aug 2026",
+ "asOf": "prices as of the 27 Oct 2026 close",
+ "headline": "More orders than it can fill, but higher memory prices are eating gross margin first",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$96.22B",
+   "exp": "est. $92.2B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "val": "$2.22",
+   "exp": "est. $2.10"
+  },
+  {
+   "k": "Q3 revenue guide",
+   "val": "$108B ±2%",
+   "exp": "est. $104.2B",
+   "pill": "midpoint 3.6% higher"
+  },
+  {
+   "k": "Q4 gross margin guide",
+   "val": "71–72%",
+   "exp": "this quarter 75.0%",
+   "pill": "down 3–4 points"
+  }
+ ],
+ "points": [
+  {
+   "b": "Growth still accelerating",
+   "t": "Revenue +106%, a fourth straight quarter of acceleration; a preliminary view of about 70% more growth in FY28."
+  },
+  {
+   "b": "Gross margin heading down",
+   "t": "Memory prices rose more than expected; Q4 gross margin falls to 71–72%, and FY28 is only 72–73%."
+  },
+  {
+   "b": "Cash coming back slower",
+   "t": "Days sales outstanding 45 → 60, supply commitments doubled to $279B, and operating cash flow halved quarter on quarter."
+  }
+ ],
+ "reaction": "Stock: closed −1.6% ($209.66) on report day, fell then rose after hours, and closed <b>+8.7%</b> ($227.98) the next day, its biggest one-day gain since April 2025; it gave back 4.6% on the third day. The rally came from Q3 guidance and the preliminary ~70% FY28 growth view, both well above expectations; the worries were gross margin guidance and $108.5B of guarantee exposure. It closed at $217.94 on 27 Oct, 4.4% below the day after the report. Expectations are publicly reported consensus (Yahoo Finance); from FY27, non-GAAP EPS includes stock-based compensation.",
+ "results": {
+  "segments": {
+   "title": "By market",
+   "period": "FY27 Q2 vs FY26 Q2, $B",
+   "take": "Growth came almost entirely from <b>data center</b>, split evenly between two customer groups: large cloud providers doubled, and AI clouds, sovereign and enterprise customers grew faster still.",
+   "bridge": [
+    {
+     "n": "Hyperscale"
+    },
+    {
+     "n": "ACIE"
+    },
+    {
+     "n": "Edge computing"
+    }
+   ],
+   "rows": [
+    {
+     "n": "ACIE (AI clouds, industrial and enterprise)",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Includes AI clouds such as CoreWeave, sovereign AI and enterprise customers, plus AI cloud compute rented by large cloud providers. Management says this will be about half of data center and grow faster than Hyperscale long term."
+    },
+    {
+     "n": "Hyperscale",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Public clouds and large internet companies, driven mainly by Blackwell Ultra. The small chart shows total data center revenue (Hyperscale + ACIE)."
+    },
+    {
+     "n": "Edge computing",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Gaming and PCs, workstations, automotive and robotics. Workstations sold well; consumer PCs were held back by higher memory and system prices."
+    }
+   ],
+   "note": "From FY27 NVIDIA reports data center and edge computing, with data center split into Hyperscale and ACIE. One customer moved from ACIE to Hyperscale after changing its business model, and prior quarters were restated. China Hopper shipments were under 1% of data center revenue."
+  },
+  "extras": [
+   {
+    "title": "Why gross margin falls",
+    "take": "This quarter's 75% is the peak; the next two quarters head lower, mainly because of costs.",
+    "items": [
+     {
+      "b": "Memory prices",
+      "pill": "above expectations",
+      "w": "Management said memory price increases were “higher than we had previously expected”, the main reason Q4 gross margin falls to 71–72%."
+     },
+     {
+      "b": "Vera Rubin ramp",
+      "pill": "early in the cycle",
+      "w": "Volume shipments began in August, about 20% of Q3 data center revenue. New products cost more early in the ramp."
+     },
+     {
+      "b": "Price increases",
+      "pill": "effective in FY28",
+      "w": "Price increases already made take effect from FY28 Q1, so the FY28 gross margin guide returns to 72–73%."
+     }
+    ]
+   },
+   {
+    "title": "Cash comes back slower",
+    "take": "Revenue is rising, but cash is tied up in receivables, inventory and long-term purchase commitments.",
+    "items": [
+     {
+      "b": "Receivables",
+      "pill": "45 → 60 days",
+      "w": "Receivables of $63.1B. Payment terms were extended on multi-quarter contracts for some investment-grade large customers; last quarter it said DSO would return to about 55."
+     },
+     {
+      "b": "Inventory",
+      "pill": "$25.8B → $31.6B",
+      "w": "Built ahead for the Q3 Vera Rubin launch."
+     },
+     {
+      "b": "Supply and capacity commitments",
+      "pill": "$119B → $279B",
+      "w": "Up $160B in one quarter, mainly to lock in memory. $92B falls due this fiscal year and about $87–88B in each of FY28 and FY29."
+     },
+     {
+      "b": "Guarantees",
+      "pill": "up to $108.5B",
+      "w": "Guarantees for partners' data-center land, power and buildings, including up to $105B for SB Energy. Payment is only needed if the counterparty defaults."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Fourth straight quarter of acceleration; Q3 guided at $108B"
+   },
+   {
+    "why": "75% is the peak; Q4 guided at 71–72%"
+   },
+   {
+    "why": "GAAP includes $7.8B of investment gains; non-GAAP is $2.22"
+   },
+   {
+    "why": "Halved q/q in Q2 as receivables and taxes rose"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>28x</b> trailing earnings, the second lowest in its own five years. Even in the bear case (FY28 revenue up only 35%), the P/E is only about 20x: <b>the market is discounting the risk that the AI investment cycle peaks</b>, not paying a premium for next year's growth.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, GAAP)",
+    "f": "$217.94 ÷ TTM EPS $7.91"
+   },
+   {
+    "k": "Annualized P/E (non-GAAP)",
+    "f": "$217.94 ÷ (Q2 EPS $2.22 × 4)"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap ≈ $5,310B ÷ TTM revenue $303.0B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 2.4%",
+    "f": "market cap ≈ $5,310B ÷ TTM FCF $126.9B"
+   }
+  ],
+  "forward": {
+   "title": "Next quarter's earnings from company guidance",
+   "sub": "no paid consensus needed",
+   "steps": [
+    "Q3 revenue at the guided midpoint of <b>$108.0B</b>, 74% gross margin → gross profit about $79.9B",
+    "Less about $9.0B of non-GAAP operating expenses → operating income about $70.9B (66% margin)",
+    "Non-operating income at last quarter's $0.3B, 16% tax → net income about $59.8B",
+    "÷ 24.285B shares → Q3 EPS about <b>$2.46</b> (pre-report public consensus about $2.38)",
+    "Annualized $9.85 → forward P/E about <b>22x</b>"
+   ],
+   "note": "The company gives no Q4 revenue guidance, so this only goes to Q3. Our estimate, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "FY28 (Feb 2027–Jan 2028) assumptions",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Margin",
+    "EPS",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+35%",
+      "58%",
+      "$10.89",
+      "20.0x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+70%",
+      "64%",
+      "$15.14",
+      "14.4x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+85%",
+      "66%",
+      "$16.99",
+      "12.8x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "−31%",
+      "64%",
+      "$6.18",
+      "35.3x"
+     ]
+    }
+   ],
+   "note": "Margin is the operating margin; the base case follows management's “about 70% FY28 growth” and 72–73% gross margin. FY27 revenue is Q1 and Q2 actuals plus the Q3 guided midpoint, with Q4 assumed 8% above Q3, about $402B in total; 16% tax, 24.3B shares, excluding investment gains. *Price: if the market pays the five-year median forward P/E of 35x, the current price needs FY28 EPS of only $6.18, which at a 64% margin means revenue <b>about 31% below FY27</b>. The price sits below even the most pessimistic of the three scenarios. These assumptions are ours and are not forecasts."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "P/E (GAAP, TTM) at quarter ends",
+   "note": "About 28x now, above only 1 of the last 20 quarter ends (26x at the end of July 2026), the <b>5th percentile</b>; median about 52x. The 100x+ stretch in 2023 came from the stock rising before profits did, not from more confidence then. StockAnalysis data; quarter ends are NVIDIA's fiscal quarter ends (end of January, April, July, October)."
+  },
+  "decomp": {
+   "title": "The +8.7% post-report move, decomposed",
+   "sub": "26 Aug → 27 Aug close",
+   "head": [
+    "Measure",
+    "TTM earnings",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "GAAP",
+      "+21.1%",
+      "−10.2%"
+     ]
+    }
+   ],
+   "note": "The new quarter replaces the one a year ago, so trailing EPS rose from $6.53 to $7.91. The stock rose less than earnings, and <b>the multiple fell from 32x to 29x</b>: the market accepted higher earnings but didn't pay more for them."
+  },
+  "cash": {
+   "title": "Cash comes back slower",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Days sales outstanding",
+     "v": "60 days"
+    },
+    {
+     "k": "Inventory",
+     "v": "$31.6B"
+    },
+    {
+     "k": "Supply and capacity commitments",
+     "v": "$279B"
+    }
+   ],
+   "note": "Q2 operating cash flow was $24.1B, less than half of Q1's $50.3B, which the company attributed to working capital and higher taxes. Capex is small ($2.7B in Q2), so free cash flow depends mainly on receivables and inventory. Quarter-end cash and marketable securities were $56.6B, and $25B of new bonds were issued this quarter."
+  },
+  "calc": [
+   "Price $217.94: 27 Oct close; market cap ≈ $5,310B (about 24.36B shares from StockAnalysis market cap ÷ price)",
+   "TTM = FY26 Q3 to FY27 Q2: GAAP EPS $1.30 + $1.76 + $2.39 + $2.46 = $7.91; revenue $57.0B + $68.1B + $81.6B + $96.2B = $303.0B",
+   "TTM free cash flow $22.1B + $34.9B + $48.6B + $21.3B = $126.9B",
+   "Pre-report P/E: $209.66 ÷ $6.53 = 32.1x; post-report: $227.98 ÷ $7.91 = 28.8x; 1.211 × 0.898 ≈ 1.087",
+   "GAAP net income includes equity investment gains: $15.9B in Q1 and $7.8B in Q2, excluded from non-GAAP",
+   "Scenario EPS = FY28 revenue × operating margin × (1 − 16%) ÷ 24.3B shares; the forward P/E median is StockAnalysis's median over the last 20 quarter ends, 35.3x"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Gross margin",
+    "pill": "cut",
+    "before": "Full-year gross margin around 75%.",
+    "now": "Q3 74%, Q4 bottoming at 71–72%, FY28 72–73%; memory prices rose more than expected."
+   },
+   {
+    "topic": "Medium-term revenue",
+    "pill": "new wording",
+    "before": "Confident of $1T of Blackwell and Rubin revenue over 2025–2027.",
+    "now": "No longer cites $1T; instead a preliminary view of about 70% FY28 revenue growth, stressing supply limits and that true demand “would be much higher”."
+   },
+   {
+    "topic": "Operating expenses",
+    "pill": "raised",
+    "before": "Full-year growth in the upper 40s.",
+    "now": "Full-year growth in the low 50s."
+   },
+   {
+    "topic": "Customer financing",
+    "pill": "new argument",
+    "before": "Mainly investments in AI labs and supply lock-ins.",
+    "now": "Working with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to bring in more than $500B of third-party capital; revenue backstops for some AI clouds, and guarantees of up to $108.5B."
+   },
+   {
+    "topic": "Revenue per gigawatt",
+    "pill": "new number",
+    "before": "Not given.",
+    "now": "NVIDIA's revenue opportunity per gigawatt of data center: about $18B for Hopper, about $25B for Blackwell and about $40B for Vera Rubin."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Top five customers' capex is close to $800B in 2026 and $1.3T in 2027",
+     "Expanded partnership with Amazon: another 2M GPUs by FY29 Q2",
+     "Vera Rubin has orders from every major cloud, AI cloud and system maker and will be the fastest ramp in company history",
+     "Grace CPU revenue exceeded $5B over the past four quarters; data center CPU revenue more than doubles in FY28"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "How much of the 70% FY28 growth comes from price versus units",
+     "How big demand would be without supply limits",
+     "The total of investment and guarantee commitments across the ecosystem, and how much cash FY28 needs",
+     "Which supply step is the tightest: management wouldn't rank them"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q3 revenue reaches about $108B and gross margin holds 74%",
+     "Whether Vera Rubin really reaches about 20% of data center",
+     "Whether days sales outstanding come down and operating cash flow recovers",
+     "Q4 revenue guidance, and whether memory costs keep rising"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Q4 gross margin below 71%: memory costs or price pressure are out of control",
+     "DSO keeps rising while more guarantees or backstops are added",
+     "ACIE growth slows clearly: AI cloud demand depends on financing",
+     "Large customers' in-house chips (such as the chip Meta began mass-producing in September) start replacing NVIDIA purchases"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (7/27–8/26). In the 30 days after: director Mark Stevens sold three times in the open market, about 4.24M shares for <b>$947M</b> (average about $223), outside any 10b5-1 plan. CFO Colette Kress and General Counsel Timothy Teter sold about $21M in total under planned sales, which we don't count as effective sales. No insider bought. Data from <a href=\"/s/NVDA.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "NVIDIA: FY27 Q2 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "NVIDIA: FY27 Q2 CFO Commentary (via MarketScreener)"
+  },
+  {
+   "t": "NVIDIA: FY27 Q1 earnings release (Q2 guidance)"
+  },
+  {
+   "t": "NVIDIA: FY26 Q4 earnings release"
+  },
+  {
+   "t": "NVIDIA: FY26 Q3 earnings release"
+  },
+  {
+   "t": "Motley Fool: FY27 Q2 earnings call transcript"
+  },
+  {
+   "t": "Motley Fool: FY27 Q1 earnings call transcript"
+  },
+  {
+   "t": "Yahoo Finance: consensus and gross margin worries"
+  },
+  {
+   "t": "Kiplinger: the stock on report night and the next day"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}

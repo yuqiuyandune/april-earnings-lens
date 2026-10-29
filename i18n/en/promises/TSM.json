@@ -1,0 +1,69 @@
+[
+ {
+  "saidLabel": "Jan 2026 (Q4'25 call)",
+  "text": "2026 revenue growth of about 30% (USD)",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Raised to slightly above 40%."
+   },
+   {
+    "status": "Raised again",
+    "note": "Raised again to about 44%, twice in one year."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jan 2026 → Jul",
+  "text": "2026 capex of $52–56B, raised in July to $60–64B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Kept at $60–64B in October. $40.6B spent in three quarters, so Q4 needs $19–23B to get there."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2'26 call)",
+  "text": "Q3 revenue of $44.6–45.8B, gross margin 65–67%, operating margin 56–58%",
+  "dueLabel": "2026 Q3",
+  "checks": [
+   {
+    "status": "Above the top",
+    "note": "Actual revenue $46.72B, gross margin 66.4% (within range), operating margin 58.7% (above the top)."
+   }
+  ]
+ },
+ {
+  "dueLabel": "2026 Q4",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Revenue $52.3–54.3B, gross margin 65–67%, operating margin 56.5–58.5%"
+ },
+ {
+  "dueLabel": "2027",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "More than double 2nm-family capacity"
+ },
+ {
+  "dueLabel": "2027 H1",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "New 3nm fab in Tainan enters volume production"
+ },
+ {
+  "dueLabel": "2027 Q3",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Arizona fab 2 enters volume production (slightly earlier)"
+ },
+ {
+  "dueLabel": "2027 / 2028",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "A14 risk production / volume production"
+ },
+ {
+  "dueLabel": "2028",
+  "saidLabel": "Oct 2026 (Q3'26 call)",
+  "text": "Japan fab 2 3nm volume production"
+ }
+]

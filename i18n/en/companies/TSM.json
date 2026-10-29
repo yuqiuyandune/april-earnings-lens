@@ -1,0 +1,41 @@
+{
+ "n": "TSMC",
+ "config": {
+  "segmentBasis": "Application platform + process node",
+  "kpis": [
+   "HPC share",
+   "2nm/3nm share of wafer revenue",
+   "Wafer shipments",
+   "Gross margin",
+   "Capex intensity"
+  ],
+  "volprice": [
+   "Wafer shipments (K, 12-inch equivalent)",
+   "Revenue per wafer"
+  ],
+  "modules": [
+   "Node mix",
+   "Gross margin drags",
+   "Capex intensity"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "Gross margin"
+   },
+   "om": {
+    "t": "Operating margin"
+   },
+   "eps": {
+    "t": "EPS / ADR"
+   },
+   "capexr": {
+    "t": "Capex / revenue"
+   }
+  }
+ }
+}

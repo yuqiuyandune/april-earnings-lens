@@ -1,0 +1,110 @@
+[
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Q2 revenue of $91.0B ±2%",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $96.2B, 5.7% above the guided midpoint and above the $92.8B top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Q2 gross margin of 75.0% ±0.5 points (non-GAAP)",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Actual 75.0%, exactly the guided midpoint."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "FY27 gross margin stays around 75% (mid-70s)",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Missed",
+    "note": "Walked back: Q3 guided at 74% and Q4 down to 71–72% because memory prices rose more than expected. The second-half average will be clearly below 75%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "FY27 operating expenses up in the upper 40s percent",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Raised to growth in the low 50s, mainly compute infrastructure and compensation."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Days sales outstanding back to about 55 in Q2 (45 in Q1)",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Missed",
+    "note": "Actually rose to 60 days, higher than promised, because payment terms were extended on multi-quarter contracts for large customers."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Return about 50% of free cash flow to shareholders this year",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "About $45B of buybacks and dividends in the first half (cash flow statement), more than 60% of free cash flow. Q2: about $20B of buybacks and $6B of dividends."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Vera Rubin starts volume shipments in Q3 (2H 2026)",
+  "dueLabel": "FY27 Q3",
+  "checks": [
+   {
+    "status": "On plan",
+    "note": "Volume shipments began in August; expected to be about 20% of Q3 data center revenue."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 call)",
+  "text": "Confident of $1T of Blackwell and Rubin revenue over calendar 2025–2027",
+  "dueLabel": "end-2027",
+  "checks": [
+   {
+    "status": "Wording changed",
+    "note": "The $1T claim wasn't repeated this time; instead a preliminary view of about 70% FY28 revenue growth, limited by supply."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Q3 revenue of $108.0B ±2%, gross margin 74% ±0.5 points, excluding China data center compute revenue",
+  "dueLabel": "FY27 Q3"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Q4 gross margin bottoms at 71–72%, back to 72–73% in FY28 (price increases already made take effect from Q1)",
+  "dueLabel": "FY27 Q4 / FY28"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Preliminary view of about 70% FY28 revenue growth, supply-constrained at least through the end of FY28",
+  "dueLabel": "FY28"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Data center CPU revenue more than doubles in FY28 (more than $5B over the past four quarters)",
+  "dueLabel": "FY28"
+ }
+]

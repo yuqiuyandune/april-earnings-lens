@@ -1,0 +1,46 @@
+{
+ "n": "NVIDIA",
+ "config": {
+  "segmentBasis": "Data center (Hyperscale + AI clouds, industrial and enterprise, ACIE) + Edge computing",
+  "fiscalNote": "Fiscal year ends in late January; FY2027 Q2 = May–July 2026, shown on this site as 2026Q2",
+  "kpis": [
+   "Data center revenue",
+   "Hyperscale vs ACIE",
+   "Gross margin",
+   "Days sales outstanding (DSO)",
+   "Supply and capacity commitments"
+  ],
+  "modules": [
+   "Why gross margin falls",
+   "Cash comes back slower"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "Gross margin (GAAP)"
+   },
+   "om": {
+    "t": "Operating margin (GAAP)"
+   },
+   "eps": {
+    "t": "EPS (GAAP)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   },
+   "ocf": {
+    "t": "Operating cash flow"
+   },
+   "dc": {
+    "t": "Data center revenue"
+   },
+   "edge": {
+    "t": "Edge computing revenue"
+   }
+  }
+ }
+}

@@ -1,0 +1,435 @@
+{
+ "label": "Q3 2026",
+ "dateLabel": "released 15 Oct",
+ "asOf": "23 Oct 2026",
+ "headline": "AI orders are still accelerating, but the market has started paying a lower multiple",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$46.72B",
+   "exp": "est. $45.41B"
+  },
+  {
+   "k": "EPS / ADR",
+   "val": "$4.60",
+   "exp": "est. $4.42"
+  },
+  {
+   "k": "Revenue per wafer",
+   "val": "$10,438",
+   "exp": "y/y"
+  },
+  {
+   "k": "Q4 revenue guide",
+   "val": "$52.3–54.3B",
+   "exp": "midpoint +14% q/q",
+   "pill": "still accelerating"
+  }
+ ],
+ "points": [
+  {
+   "b": "Price, not volume",
+   "t": "Wafer shipments grew only 9.6% in a year while revenue grew 41%; the difference comes from more advanced, more expensive nodes."
+  },
+  {
+   "b": "AI is the only engine",
+   "t": "HPC is 68% of revenue, +22% q/q; smartphones were roughly flat y/y."
+  },
+  {
+   "b": "Guidance raised twice in a year",
+   "t": "Full-year growth went from about 30% to about 44%, and capex was raised to $60–64B."
+  }
+ ],
+ "reaction": "Stock: closed −1.8% on report day and fell another 2.3% the next day. Taiwan's chip stocks had already sold off sharply the day before the report. Profits are being delivered; the worry is how long the peak lasts and how large capex gets in the next two years, so the multiple was compressed (see Valuation).",
+ "results": {
+  "volprice": {
+   "title": "Revenue = wafer shipments × revenue per wafer",
+   "period": "Q3'26 vs Q3'25",
+   "take": "<b>More than 70% of TSMC's growth this year came from price.</b> Shipments rose only modestly; customers are paying for pricier nodes such as 2nm and 3nm.",
+   "items": [
+    {
+     "k": "Wafer shipments",
+     "v": "4,476K"
+    },
+    {
+     "k": "Revenue per wafer"
+    },
+    {
+     "k": "Revenue"
+    }
+   ],
+   "note": "Revenue per wafer = total revenue ÷ 12-inch-equivalent wafer shipments. Total revenue includes advanced packaging and other non-wafer revenue, so this is approximate. Quarter on quarter: shipments +3.2%, revenue per wafer +12.6%."
+  },
+  "segments": {
+   "title": "By platform",
+   "period": "Q3'26 vs Q3'25, $B",
+   "take": "Of the $13.6B of added revenue in a year, <b style=\"color:var(--good)\">95% came from HPC</b> (AI accelerators, server CPUs, etc.). Smartphones were once 30%; now only 20%.",
+   "bridge": [
+    {
+     "n": "HPC"
+    },
+    {
+     "n": "Other platforms"
+    },
+    {
+     "n": "Smartphone"
+    }
+   ],
+   "rows": [
+    {
+     "n": "High-performance computing (HPC)",
+     "val": "≈ $31.8B",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "AI accelerators, server CPUs and networking chips. 57% of revenue a year ago, 68% now."
+    },
+    {
+     "n": "Smartphone",
+     "val": "≈ $9.8B",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "A seasonal q/q rebound, roughly flat y/y. Management also mentioned pressure on consumer demand."
+    },
+    {
+     "n": "IoT",
+     "val": "≈ $1.9B",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Small and growing steadily."
+    },
+    {
+     "n": "Automotive",
+     "val": "≈ $1.9B",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "+23% q/q, from a small base."
+    }
+   ],
+   "note": "Platform amounts are estimated from the company's percentage shares times total revenue; shares are whole numbers, so small platforms carry larger errors. Quarter-on-quarter growth is as reported by the company."
+  },
+  "extras": [
+   {
+    "title": "By node",
+    "take": "3nm and 2nm together are now <b>41%</b> of wafer revenue, versus 23% a year ago. The most advanced nodes sell at the highest prices but dilute margins early in the ramp.",
+    "unit": "share of wafer revenue",
+    "keys": [
+     {
+      "k": "2nm"
+     },
+     {
+      "k": "3nm"
+     },
+     {
+      "k": "5nm"
+     },
+     {
+      "k": "7nm"
+     },
+     {
+      "k": "Other"
+     }
+    ]
+   },
+   {
+    "title": "Three gross margin drags",
+    "items": [
+     {
+      "b": "2nm ramp",
+      "pill": "visible this quarter",
+      "w": "The main reason gross margin fell 1.3 points q/q. 2nm capacity more than doubles again in 2027, so dilution continues near term."
+     },
+     {
+      "b": "Overseas fabs",
+      "pill": "growing",
+      "w": "US and Japan fabs cost more. Management expects about a 2-point drag near term, widening to 3–4 points in the later years of the five-year period."
+     },
+     {
+      "b": "Currency",
+      "pill": "small",
+      "w": "Priced in US dollars, reported in NT dollars. Q4 guidance assumes NT$31.8 per US$, slightly stronger than Q3's actual 31.98, a slight negative for gross margin."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+41% y/y, +16% q/q, still accelerating"
+   },
+   {
+    "why": "Up 7 points in a year; slightly lower this quarter on 2nm"
+   },
+   {
+    "why": "Expenses growing far slower than revenue"
+   },
+   {
+    "why": "+58% y/y"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "On full-year 2026 earnings (including Q4 guidance), the P/E is about <b>24x</b>; at the five-year median multiple, the current price needs only about 13% growth next year, <b>below our bear case</b>. The valuation is mainly supported by profits already earned.",
+  "tiles": [
+   {
+    "k": "P/E (TTM)",
+    "f": "$418.51 ÷ TTM EPS/ADR $15.54"
+   },
+   {
+    "k": "Forward P/E (full-year 2026)",
+    "f": "$418.51 ÷ estimated full-year EPS $17.55"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap $2,170B ÷ TTM revenue $156.6B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 2.2%",
+    "f": "market cap $2,170B ÷ TTM FCF ≈ $46.9B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year earnings from company guidance",
+   "sub": "no paid consensus needed",
+   "steps": [
+    "Q4 revenue at the guided midpoint of <b>$53.3B</b>, NT$1.69T at the guided rate of 31.8",
+    "Operating margin at the guided midpoint of <b>57.5%</b> → operating income about NT$975B",
+    "Non-operating items and tax at Q3's ratio (net income ÷ operating income = 0.87) → net income about NT$849B",
+    "Q4 EPS about NT$32.7, about <b>$5.15</b> per ADR",
+    "Full-year 2026 EPS/ADR = $3.49 + $4.31 + $4.60 + $5.15 = <b>$17.55</b>"
+   ],
+   "note": "Q4 annualized, the P/E is about 20x. Our estimate, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "2027 assumptions",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Margin",
+    "EPS/ADR",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+15%",
+      "52%",
+      "$17.68",
+      "23.7x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+28%",
+      "56%",
+      "$21.19",
+      "19.7x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+38%",
+      "58%",
+      "$23.67",
+      "17.7x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "+13%",
+      "56%",
+      "$18.68",
+      "22.4x"
+     ]
+    }
+   ],
+   "note": "Margin is the operating margin. Base is full-year 2026 revenue of about $176B. *Price: if the market pays the five-year median of 22.4x, the $418.51 price needs 2027 EPS of $18.68, about 13% revenue growth. That means the price is already near the bear case; if the market thinks growth has peaked, the multiple could stay below the median. These assumptions are ours and are not forecasts."
+  },
+  "riskreward": {
+   "title": "Price risk and reward",
+   "sub": "Scenario EPS converted to prices at the five-year median P/E of 22.4x",
+   "rows": [
+    {
+     "n": "Bear"
+    },
+    {
+     "n": "Base"
+    },
+    {
+     "n": "Bull"
+    }
+   ],
+   "note": "The $418.51 price is already near the bear case: about −5% down to bear, about +13% up to base and about +27% to bull, so <b>reward and risk lean to the upside</b>. These are not price targets but the prices each 2027 scenario implies if the market pays the five-year median P/E of 22.4x, without probabilities. If the market decides AI demand has peaked, the multiple could stay below the median, and the real downside would be larger."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "P/E at quarter ends",
+   "note": "About 28x now, above 19 of the last 20 quarter ends, the <b>95th percentile</b>; median about 22x. Only the end of June this year was higher. StockAnalysis data, slightly different from the 26.9x above mainly because of currency and share-count methods."
+  },
+  "decomp": {
+   "title": "The −1.8% post-report move, decomposed",
+   "sub": "14 Oct → 15 Oct close",
+   "head": [
+    "",
+    "TTM earnings",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Change",
+      "+12.1%",
+      "−12.4%"
+     ]
+    }
+   ],
+   "note": "Trailing EPS jumped 12% in one go, yet the stock didn't rise, meaning the market cut the multiple from 31x to 27x. It is the opposite of TSLA, where profits fell and the multiple rose."
+  },
+  "cash": {
+   "title": "Capex intensity",
+   "sub": "Capex ÷ revenue",
+   "note": "Of every $100 of revenue, about $30 goes back into fabs, yet free cash flow stays positive. The full-year capex guide of $60–64B with $40.6B spent in three quarters means <b>$19–23B in Q4</b>, a quarterly record. Management said 2026–2028 investment will be “meaningfully higher”."
+  },
+  "calc": [
+   "Price $418.51: 23 Oct ADR close",
+   "1 ADR = 5 common shares; about 25.93B common shares → about 5.19B ADR equivalents → market cap about $2,170B",
+   "TTM = Q4'25 to Q3'26: EPS/ADR $3.14 + $3.49 + $4.31 + $4.60 = $15.54; revenue $33.73B + $35.90B + $40.20B + $46.72B = $156.55B",
+   "Free cash flow is reported in NT dollars (NT$1,480.7B), about $46.9B at each quarter's average rate",
+   "Pre-report P/E: $430.00 ÷ TTM $13.86 = 31.0x; post-report: $422.25 ÷ $15.54 = 27.2x",
+   "Scenario EPS = 2027 revenue × operating margin × 0.87 ÷ 5.19B ADRs",
+   "Scenario-implied price = scenario EPS/ADR × the five-year median P/E of 22.4x; room = implied price ÷ $418.51 − 1"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Long-term AI accelerator growth",
+    "pill": "more optimistic",
+    "before": "No new number, only that demand is stronger than expected.",
+    "now": "Kept the original guide (mid-to-high 50s% CAGR for 2024–2029), but said it “could be higher”."
+   },
+   {
+    "topic": "Full-year revenue growth",
+    "pill": "raised",
+    "before": "Slightly above 40%.",
+    "now": "About 44%."
+   },
+   {
+    "topic": "Overseas fabs' margin drag",
+    "pill": "more specific",
+    "before": "Could widen to 3–4 points later.",
+    "now": "About 2 points near term, 3–4 points in the later years of the five-year period."
+   },
+   {
+    "topic": "Consumer demand",
+    "pill": "new caution",
+    "before": "Not emphasized.",
+    "now": "Consumer and price-sensitive products are “facing challenges”; 2027 planning will be prudent."
+   },
+   {
+    "topic": "New US sites",
+    "pill": "new topic",
+    "before": "Not mentioned.",
+    "now": "Evaluating Texas and discussing sites tied to the Terafab project, stressing TSMC must operate them."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "AI demand is “extremely robust”",
+     "“There is no ceiling on TSMC's profitability”, but it won't jump overnight",
+     "About 20 fabs under construction worldwide; CoWoS advanced packaging is still customers' first choice"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "How much capacity grows next year: the CFO said it's “too early”",
+     "Whether 2027 supply stays tight: can't say, because demand is still rising",
+     "Whether price increases apply to existing contracts: only that pricing is “very strategic”"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue lands near $53B",
+     "Whether gross margin holds 65% as 2nm's share rises",
+     "Monthly revenue reported around the 10th of each month"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Q4 capex clearly below $19B because customers delayed, not because of lead times",
+     "HPC q/q growth below 10% for two straight quarters",
+     "Gross margin below the 65% low end of guidance"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "TSMC does not file US Form 4s",
+  "text": "TSMC is a foreign private issuer; the SEC does not require its directors and officers to file Form 4. Insider holdings changes are reported on the Taiwan Stock Exchange's Market Observation Post System, which would need a separate data source."
+ },
+ "sources": [
+  {
+   "t": "TSMC 3Q26 Management Report"
+  },
+  {
+   "t": "TSMC 2Q26 Earnings Release (Q3 guidance)"
+  },
+  {
+   "t": "TSMC 1Q26 Earnings Release (SEC 6-K)"
+  },
+  {
+   "t": "TSMC 4Q25 Management Report"
+  },
+  {
+   "t": "Motley Fool: Q3 2026 earnings call transcript"
+  },
+  {
+   "t": "Yahoo Finance: Q2 2026 call highlights"
+  },
+  {
+   "t": "Investing.com: Q3 consensus"
+  },
+  {
+   "t": "DCD: January 2026 guidance"
+  },
+  {
+   "t": "TIKR: results and the Taiwan chip sell-off"
+  },
+  {
+   "t": "StockAnalysis: TSM price and P/E history"
+  }
+ ]
+}
