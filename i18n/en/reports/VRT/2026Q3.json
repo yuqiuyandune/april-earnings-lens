@@ -1,0 +1,435 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "before the open, 28 Oct 2026",
+ "asOf": "prices as of 12:51 pm ET on 28 Oct 2026 (intraday)",
+ "headline": "Revenue up 61% and full-year guidance raised a third time, but orders are no longer disclosed",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$4.31B",
+   "exp": "est. $3.75B"
+  },
+  {
+   "k": "Adjusted EPS",
+   "val": "$2.21",
+   "exp": "est. $1.82"
+  },
+  {
+   "k": "Adjusted operating margin",
+   "val": "25.2%",
+   "exp": "guided 24–25%",
+   "pill": "+2.9 points y/y"
+  },
+  {
+   "k": "Q4 revenue guide",
+   "val": "$4.41B (midpoint)",
+   "exp": "est. $4.31B"
+  }
+ ],
+ "points": [
+  {
+   "b": "Growth suddenly accelerated",
+   "t": "Organic growth jumped from 18% in Q2 to 55%. About $0.10–0.15B was revenue slipped from Q2; excluding it, growth is still about 50%."
+  },
+  {
+   "b": "Profit keeps up",
+   "t": "Each extra $1 of revenue earned about 30 cents of operating profit; EMEA margin rose from 18.8% to 28.0%."
+  },
+  {
+   "b": "Orders out of sight",
+   "t": "Orders were only described as “up more than 100%”, and won't be disclosed going forward; judging 2027 now depends on customers' capex and Vertiv's customer prepayments."
+  }
+ ],
+ "reaction": "Stock: closed at $208.56 the day before, down about 14% over three months. Results came before the open; it rose about 13–15% premarket and was +13.2% intraday ($236.18, 12:51 pm ET), then <b>closed at $242.94 (+16.5%)</b>, $236.10 after hours. Valuation on this page still uses the intraday price of $236.18. Three drivers: a large revenue and EPS beat; a Q4 revenue guide 2.4% above expectations at the midpoint; and full-year EPS guidance of $7.15, 6% above the expected $6.73. Consensus from Investing.com (StockStory's revenue estimate is $3.77B, which doesn't change the conclusion).",
+ "results": {
+  "segments": {
+   "title": "By region",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Of the $1.64B of added revenue, <b>the Americas contributed 78%</b>. Margins rose in all three regions, most in EMEA.",
+   "bridge": [
+    {
+     "n": "Americas"
+    },
+    {
+     "n": "APAC"
+    },
+    {
+     "n": "EMEA"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Americas (AMER)",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Mainly large North American cloud providers and AI data centers. Margin of 29.4%, flat with last year: new capacity is still ramping and not yet efficient, against a high base. Management said Americas incremental margins in the second half are lower than in the first."
+    },
+    {
+     "n": "Asia Pacific (APAC)",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Led by Australia and India, with “green shoots” in China. Margin 13.2% → 17.0%. APAC was still shrinking in Q4 last year."
+    },
+    {
+     "n": "Europe, Middle East and Africa (EMEA)",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Organic growth was negative in the first half and turned positive in Q3, delivering on the Q2 promise. Margin 18.8% → 28.0%, the biggest gain of the three regions. Management said the EMEA pipeline roughly doubled y/y."
+    }
+   ],
+   "note": "Vertiv reports segments by region, not by product line. By products and services: products +66%, services and spares +41% (services organic +18%). The release's income statement and product table split products/services differently (same total); we use the product table."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Vertiv sells data-center power and cooling, so its revenue depends on customers' capex; and that capex relies more and more on financing, so <b>Vertiv's cash flow is an amplified link in the chain</b>.",
+    "items": [
+     {
+      "b": "Where the money comes from",
+      "pill": "customer capex",
+      "w": "Customers are large cloud providers, AI clouds and enterprises. On its August call NVIDIA said its top five customers' 2026 capex is close to $800B, and $1.3T in 2027. Vertiv gets the power, cooling and rack share of each data center."
+     },
+     {
+      "b": "Customers' cash flow",
+      "pill": "no longer enough",
+      "w": "Meta's Q3 capex of $34.9B exceeded its operating cash flow, turning free cash flow negative for the first time; NVIDIA is guaranteeing up to $108.5B for partners' data-center land and power. The next leg of the loop depends on borrowing and outside money, not just profits."
+     },
+     {
+      "b": "Vertiv's cash",
+      "pill": "partly prepaid by customers",
+      "w": "Deferred revenue (mainly customer prepayments) rose from $1.81B to $4.12B in nine months, funding Vertiv's expansion and inventory. In reverse, if customer financing tightens, <b>prepayments shrink first</b>, while $3.29B of inventory already sits on the balance sheet."
+     },
+     {
+      "b": "And orders go dark now",
+      "pill": "fewer signals",
+      "w": "Orders are the earliest signal in this chain, and Vertiv no longer discloses them. From here we can only watch customers' capex guidance (Microsoft, Amazon, Equinix and Digital Realty all report this week), NVIDIA's data-center revenue, and Vertiv's deferred revenue."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Nearly all of the 61% growth was organic; acquisitions and currency mattered little.",
+    "items": [
+     {
+      "b": "Organic growth",
+      "pill": "+55%",
+      "w": "Excludes acquisitions and currency. Only 18% in Q2; management credited volume, operating leverage and productivity for the acceleration, without splitting out price."
+     },
+     {
+      "b": "Slipped revenue recovered",
+      "pill": "about $0.10–0.15B",
+      "w": "Some large Q2 project deliveries slipped and were recognized in Q3. That is about 2–3.5% of Q3 revenue and 4–6 points of growth; excluding it, organic growth is still about 50%."
+     },
+     {
+      "b": "Acquisitions",
+      "pill": "about +6%",
+      "w": "ThermoKey, Strategic Thermal Labs, UtilityInnovation Group and others acquired over the past year contributed about $157M of revenue this quarter."
+     },
+     {
+      "b": "Currency",
+      "pill": "about 0",
+      "w": "A −$9.1M currency effect this quarter, negligible."
+     }
+    ]
+   },
+   {
+    "title": "Without orders, what to watch",
+    "take": "The company no longer discloses orders, but two balance-sheet numbers still show demand indirectly.",
+    "items": [
+     {
+      "b": "Deferred revenue",
+      "pill": "$1.81B → $4.12B",
+      "w": "Mainly customer prepayments, up 2.3x in nine months. Customers willing to pay upfront means the orders are real, and it funds the working capital needed for expansion."
+     },
+     {
+      "b": "Inventory",
+      "pill": "$1.46B → $3.29B",
+      "w": "Up 2.3x in nine months; the CFO said it is built for growth. If demand slows, this is where it shows first."
+     },
+     {
+      "b": "Backlog",
+      "pill": "last disclosed $15.0B",
+      "w": "Q4 2025 backlog was $15.0B (+109% y/y) with a 2.9 book-to-bill. Management says backlog counts only firm purchase orders, and lead times are still 12–18 months."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+32% q/q in Q3; Q4 guided at a $4.41B midpoint"
+   },
+   {
+    "why": "25.2% is a record; Q4 guided at 25.3–26.3%"
+   },
+   {
+    "why": "+78% y/y; GAAP EPS $1.95"
+   },
+   {
+    "why": "Lower in Q3 than Q2: working capital and expansion used cash"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>44x</b> trailing GAAP earnings and about <b>33x</b> full-year guidance. The current price needs only about 13% revenue growth in 2027, between our bear and base cases and closer to the bear: <b>the market accepts this year's profit but discounts a 2027 slowdown in customer capex</b>, consistent with worries that customers' free cash flow has turned negative and depends more on financing.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, GAAP)",
+    "f": "$236.18 ÷ TTM EPS $5.35"
+   },
+   {
+    "k": "Forward P/E (2026 guide, adjusted)",
+    "f": "$236.18 ÷ full-year EPS guided midpoint $7.15"
+   },
+   {
+    "k": "EV / adjusted operating income",
+    "f": "EV ≈ $90.15B ÷ TTM adjusted operating income $3.05B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 3.5%",
+    "f": "market cap ≈ $90.94B ÷ TTM adjusted FCF $3.14B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year and Q4 earnings from company guidance",
+   "sub": "no paid consensus needed",
+   "steps": [
+    "Adjusted EPS for three quarters: $1.17 + $1.52 + $2.21 = <b>$4.91</b> (company's cumulative figure)",
+    "Q4 at the guided midpoint of <b>$2.25</b> → full year about $7.16, matching the company's full-year midpoint of $7.15",
+    "Price ÷ $7.15 → a 2026 forward P/E of about <b>33x</b>; about 37.5x on full-year GAAP of $6.29",
+    "Q4 midpoint annualized at $9.00 → about <b>26x</b>, the multiple if growth stopped at the Q4 level"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "2027 assumptions (2026 revenue at the $14.65B guided midpoint)",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Margin",
+    "EPS",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+15%",
+      "24%",
+      "$8.22",
+      "28.7x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+30%",
+      "26%",
+      "$10.07",
+      "23.4x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+45%",
+      "27.5%",
+      "$11.88",
+      "19.9x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "+13%",
+      "26%",
+      "$8.76",
+      "27.0x"
+     ]
+    }
+   ],
+   "note": "Margin is the adjusted operating margin. EPS = 2027 revenue × margin × 0.80 ÷ 392.6M shares, where 0.80 is the ratio of adjusted net income to adjusted operating income implied by 2026 guidance ($7.15 × 392.6M ÷ $3.515B). The base case reflects management's “2027 organic growth well above market” and “continued margin expansion”, with the numbers set by us. *Price: if the market pays the five-year median forward P/E of about 27x, the current price needs 2027 EPS of $8.76, which at a 26% margin means revenue growth of <b>only about 13%</b>, lower than the bear case's growth, though the bear case has a lower margin. These assumptions are not forecasts."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
+   "note": "About 31x now, above 11 of the last 20 quarter ends, roughly <b>in the middle</b>; median about 27x. It reached 49x at the end of June before the stock pulled back. The current value uses pre-report consensus EPS (about $7.63); analysts raise estimates after the report, so the real multiple is lower. We use the forward measure because StockAnalysis lacks GAAP P/E for 2024 Q1 and 2022 profits were thin, distorting trailing multiples."
+  },
+  "decomp": {
+   "title": "The +13.2% post-report move, decomposed",
+   "sub": "27 Oct close → 28 Oct intraday",
+   "head": [
+    "Measure",
+    "TTM earnings",
+    "P/E"
+   ],
+   "rows": [
+    {
+     "c": [
+      "GAAP",
+      "+21.0%",
+      "−6.4%"
+     ]
+    },
+    {
+     "c": [
+      "Adjusted",
+      "+18.3%",
+      "−4.3%"
+     ]
+    }
+   ],
+   "note": "The new quarter replaces the one a year ago, so trailing GAAP EPS rose from $4.42 to $5.35. The stock rose less than earnings, and <b>the multiple fell from 47x to 44x</b>: the market accepted higher earnings but didn't pay more for them."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Quarterly adjusted free cash flow, $B",
+   "stats": [
+    {
+     "k": "Capex / revenue",
+     "v": "4.2% (three quarters)"
+    },
+    {
+     "k": "Deferred revenue",
+     "v": "$4.12B"
+    },
+    {
+     "k": "Inventory",
+     "v": "$3.29B"
+    }
+   ],
+   "note": "Q3 operating cash flow was $0.79B, $0.31B less than Q2, because working capital and capex rose. Free cash flow of $2.23B in three quarters is already near the top of the original full-year guide. Quarter-end cash $3.51B, short-term investments $0.20B and debt $2.93B, <b>net cash about $0.78B</b>. No buybacks; $24M of dividends this quarter."
+  },
+  "calc": [
+   "Price $236.18: 28 Oct, 12:51 pm ET intraday (StockAnalysis); $208.56 pre-report is the 27 Oct close",
+   "Market cap = $236.18 × 385.0M shares (9/30 outstanding) ≈ $90.94B; net cash = $3.513B + $0.199B − $2.929B ≈ $0.78B; EV ≈ $90.15B",
+   "TTM = 2025 Q4 to 2026 Q3: GAAP EPS $1.14 + $0.99 + $1.27 + $1.95 = $5.35; adjusted EPS $1.36 + $1.17 + $1.52 + $2.21 = $6.26",
+   "TTM adjusted operating income $0.668 + $0.552 + $0.738 + $1.087B = $3.046B; TTM adjusted FCF $0.910 + $0.653 + $0.925 + $0.652B = $3.140B",
+   "Pre-report P/E: $208.56 ÷ $4.42 = 47.2x; post-report $236.18 ÷ $5.35 = 44.1x; 1.210 × 0.936 ≈ 1.132",
+   "Q1 2026 revenue, operating income and cash flow are first-half totals less Q2; Q3 2025 free cash flow uses the $436M comparison in this quarter's release (reported at the time as $462M, definition adjusted)",
+   "Forward P/E median is StockAnalysis's median over the last 20 quarter ends, 26.95x; current forward EPS = $208.56 ÷ 27.32 ≈ $7.63",
+   "Incremental margin = (Q3 adjusted operating income $1.087B − $0.596B a year ago) ÷ (revenue $4.313B − $2.676B) ≈ 30%"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Order disclosure",
+    "pill": "discontinued",
+    "before": "In 2025 each quarter disclosed organic order growth, book-to-bill and backlog (Q4: orders +252%, backlog $15.0B).",
+    "now": "From 2026 the releases no longer list these. This quarter only said orders grew “more than 100%”, and executive chairman Dave Cote stated on the call that <b>it does not plan to disclose order data going forward</b>, without giving a reason."
+   },
+   {
+    "topic": "Full-year guidance",
+    "pill": "third raise",
+    "before": "Revenue $14.0B, adjusted EPS $6.70, free cash flow $2.5B (Q2 guided midpoints).",
+    "now": "Revenue $14.65B, EPS $7.15, free cash flow $2.7B; full-year organic growth 37–39%."
+   },
+   {
+    "topic": "Delivery delays",
+    "pill": "quantified",
+    "before": "In Q2 it only cited “minor timing adjustments” on large phased projects, to be resolved in the second half.",
+    "now": "The CFO said about $0.10–0.15B of slipped revenue was recognized in Q3; management stressed this is not “catch-up” demand."
+   },
+   {
+    "topic": "2027",
+    "pill": "new language",
+    "before": "Only said capex is for 2027 capacity.",
+    "now": "Expects 2027 organic growth to stay “well above market” and margins to keep expanding despite inflation; no numbers, with formal guidance at Q4 results (February)."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "“We are in the middle of the largest infrastructure build-out, and it is accelerating”; orders grew more than 100%, equally strong with or without neocloud customers",
+     "The Americas pipeline grew fastest q/q this year, the EMEA pipeline roughly doubled y/y, APAC strong in Australia and India with green shoots in China",
+     "Capacity: new plant in Johor, Malaysia in production, chiller capacity doubled by year end, expansions in Slovakia and Ireland; new EVP of manufacturing and logistics Mike Resha",
+     "800V DC power in customer validation, revenue from 2027, large-scale deployment in 2028; involved in NVIDIA's DSX AI factory design"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Exactly how much orders grew, and why they will no longer be disclosed",
+     "Liquid cooling's share of revenue and orders, and its margin effect: “we won't be specific”",
+     "2027 capex, whether 2027 growth keeps accelerating, and the starting margin: all deferred to Q4 guidance",
+     "How much the services attach rate has improved: only “directionally improving”"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue lands at $4.31–4.51B and margin at 25.3–26.3%",
+     "Customers' 2027 capex this earnings round, and where the money comes from: operating cash flow, bonds or off-balance-sheet structures",
+     "Whether deferred revenue keeps rising, and whether inventory grows faster than revenue",
+     "2027 guidance (February); the Q4 free cash flow guide needs only $0.37–0.57B: is it expansion or working capital"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Deferred revenue starts falling while inventory keeps rising: customer prepayments and orders are slowing",
+     "Large customers cut 2027 capex, or AI cloud customers' financing stalls",
+     "2027 organic growth guidance far below this year's 37–39% while orders remain undisclosed",
+     "Americas margin falls below 29% on new-capacity ramp, quality problems or inflation, or Q2-style delivery delays recur"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No insider filed a Form 4 open-market purchase or sale in the 30 days before the report (9/28–10/27). The only trade since July was director Edward Monser's exercise-and-sale of about <b>$3.88M</b> on 1 Sep under a 10b5-1 plan, which we don't count as an effective sale. No insider bought. The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/VRT.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "Vertiv: 2026 Q3 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Vertiv: 2026 Q2 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Vertiv: 2026 Q1 earnings release"
+  },
+  {
+   "t": "Vertiv: 2025 Q4 earnings release (start-of-year guidance, backlog)"
+  },
+  {
+   "t": "Investing.com: 2026 Q3 earnings call transcript"
+  },
+  {
+   "t": "Investing.com: consensus versus actual"
+  },
+  {
+   "t": "StockStory: consensus and stock reaction"
+  },
+  {
+   "t": "MarketBeat (via Nasdaq): 2026 Q2 call highlights"
+  },
+  {
+   "t": "MarketChameleon: 2025 Q3 orders and backlog"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}

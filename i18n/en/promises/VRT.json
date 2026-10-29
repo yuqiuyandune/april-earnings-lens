@@ -1,0 +1,99 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 revenue of $3.65–3.85B, organic growth 34–36%",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $4.31B, 15% above the guided midpoint, organic growth 55%. About $0.10–0.15B was revenue slipped from Q2."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 adjusted EPS of $1.77–1.83, adjusted operating margin 24–25%",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual EPS $2.21, 23% above the midpoint; margin 25.2%, above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Some large Q2 project deliveries slipped, to be recovered in the second half",
+  "dueLabel": "2H 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "The CFO said about $0.10–0.15B of slipped revenue was recognized in Q3."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "EMEA returns to organic growth in the second half (−2.4% in Q2)",
+  "dueLabel": "2H 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Q3 organic growth +19.3%, margin up from 18.8% to 28.0%; Q4 guided at organic growth just above 20%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Feb 2026 (2025 Q4 call)",
+  "text": "2026 revenue of $13.25–13.75B, adjusted EPS $5.97–6.07",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Third raise: revenue midpoint $13.5 → 13.75 → 14.0 → <b>$14.65B</b>, EPS midpoint $6.02 → 6.35 → 6.70 → <b>7.15</b>. $10.24B and $4.91 already delivered in three quarters."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Feb 2026 (2025 Q4 call)",
+  "text": "2026 adjusted free cash flow of $2.1–2.3B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Now guided at $2.6–2.8B, with $2.23B already in three quarters. The guide implies only $0.37–0.57B in Q4, lower than any of the first three quarters."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Capex about 4% of revenue, at the top of the range, to expand capacity for 2027",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Capex of $425M in three quarters, 4.2% of revenue. The new plant in Johor, Malaysia is in production."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Q4 revenue of $4.31–4.51B, organic growth 49–51%; adjusted EPS $2.22–2.28; margin 25.3–26.3%",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "2027 organic growth stays “well above market”, with margins still expanding despite inflation; formal guidance with Q4 results",
+  "dueLabel": "2027"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "800V DC power in customer validation, revenue from 2027, large-scale deployment in 2028",
+  "dueLabel": "2027–2028"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Chiller capacity doubled by year end; 2026 price minus cost positive (including tariffs)",
+  "dueLabel": "end-2026"
+ }
+]

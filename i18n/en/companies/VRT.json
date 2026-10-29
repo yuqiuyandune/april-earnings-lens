@@ -1,0 +1,50 @@
+{
+ "n": "Vertiv",
+ "config": {
+  "segmentBasis": "By region: Americas (AMER), Asia Pacific (APAC), Europe, Middle East and Africa (EMEA); product lines are power, thermal (including liquid cooling), racks and services",
+  "fiscalNote": "Calendar fiscal year",
+  "kpis": [
+   "Organic growth",
+   "Adjusted operating margin",
+   "Orders and backlog (no longer fully disclosed from 2026)",
+   "Deferred revenue (customer prepayments)",
+   "Free cash flow"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from",
+   "Without orders, what to watch"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "aom": {
+    "t": "Adjusted operating margin"
+   },
+   "aeps": {
+    "t": "Adjusted EPS"
+   },
+   "eps": {
+    "t": "EPS (GAAP)"
+   },
+   "fcf": {
+    "t": "Adjusted free cash flow"
+   },
+   "capex": {
+    "t": "Capex"
+   },
+   "amer": {
+    "t": "Americas revenue"
+   },
+   "apac": {
+    "t": "APAC revenue"
+   },
+   "emea": {
+    "t": "EMEA revenue"
+   }
+  }
+ }
+}
