@@ -171,6 +171,24 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-28",
    "headline": "AI 合同在长，整体增长却要放慢：市场开始怀疑 AI 会吃掉软件"
+  },
+  {
+   "t": "GEV",
+   "n": "GE Vernova",
+   "en": "GE Vernova",
+   "aliases": [
+    "GE Vernova",
+    "GEV",
+    "通用电气 Vernova",
+    "燃气轮机"
+   ],
+   "cat": "能源",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-28",
+   "headline": "AI 缺的是电，GEV 卖的就是电：涡轮排到 2032 年，钱由客户先付"
   }
  ]
 }
