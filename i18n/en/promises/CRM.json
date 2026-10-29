@@ -1,0 +1,101 @@
+[
+ {
+  "saidLabel": "May 2026 (FY27 Q1 results)",
+  "text": "Q2 revenue of $11.27–11.35B",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Actual $11.345B, near the top of the range; above the top in constant currency."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 results)",
+  "text": "Q2 non-GAAP EPS of $3.25–3.27",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "One-off",
+    "note": "Reported $5.90, of which $2.53 came from strategic investment gains; excluding it about $3.37, still about 3% above the top of guidance."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 results)",
+  "text": "Q2 cRPO up about 13% y/y (constant currency)",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual 14% (constant currency), $33.5B, 1 point higher."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Feb 2026 (FY26 Q4 results)",
+  "text": "FY27 revenue of $45.8–46.2B",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Low end raised to $45.9B."
+   },
+   {
+    "status": "Raised (incl. acquisitions)",
+    "note": "Raised to $46.1–46.4B. Of the roughly $300M added, $200M comes from the pending Contentful and Fin acquisitions; organic growth contributed only about $100M, with a $100M FX drag."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Feb 2026 (FY26 Q4 results)",
+  "text": "FY27 operating and free cash flow growth of 9–10%",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Cut",
+    "note": "Cut to 4–5% because of higher interest on the bonds issued for the $25B buyback."
+   },
+   {
+    "status": "Kept",
+    "note": "Kept at 4–5%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Feb 2026 (FY26 Q4 results)",
+  "text": "FY27 GAAP operating margin of 20.9%",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Cut",
+    "note": "Cut to 20.6%."
+   },
+   {
+    "status": "Cut again",
+    "note": "Cut to 20.1% on higher acquisition amortization and integration costs; non-GAAP kept at 34.3%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Q3 revenue of $11.42–11.50B, cRPO up about 14% y/y (constant currency), organic growth re-accelerating in the second half",
+  "dueLabel": "FY27 Q3"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Claudeforce generally available at Dreamforce in September, demoed by every seller",
+  "dueLabel": "Sep 2026"
+ },
+ {
+  "saidLabel": "May 2026 (FY27 Q1 results)",
+  "text": "The $25B accelerated buyback settles in Q3, retiring at least 14% of shares",
+  "dueLabel": "FY27 Q3",
+  "checks": [
+   {
+    "status": "In progress",
+    "note": "103M shares delivered upfront at an average price of about $176 so far; final settlement expected in October."
+   }
+  ]
+ }
+]

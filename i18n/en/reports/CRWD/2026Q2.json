@@ -1,0 +1,361 @@
+{
+ "label": "FY2027 Q2 (May–Jul 2026)",
+ "dateLabel": "after the close, 26 Aug 2026",
+ "asOf": "prices as of the 27 Oct 2026 close",
+ "headline": "AI lit up security demand, but the stock is running twice as fast as ARR",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.471B",
+   "exp": "est. $1.44B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "val": "$0.31",
+   "exp": "est. $0.29"
+  },
+  {
+   "k": "Net new ARR",
+   "val": "$332.8M",
+   "exp": "guide implied about $287M",
+   "pill": "$45M more"
+  },
+  {
+   "k": "Full-year revenue guide",
+   "val": "$5.99–6.01B",
+   "exp": "est. $5.93B",
+   "pill": "midpoint 1.2% higher"
+  }
+ ],
+ "points": [
+  {
+   "b": "Record net new ARR",
+   "t": "$333M, +51% y/y; full-year net new ARR growth raised to about 34%."
+  },
+  {
+   "b": "Flex opens up cross-selling",
+   "t": "Customers on Falcon Flex have $2.29B of ARR, doubled; converted customers raise ARR by more than 40% on average."
+  },
+  {
+   "b": "Valuation at a record",
+   "t": "Up 20% the day after the report; enterprise value is now about 51x trailing revenue, above the 2021 peak."
+  }
+ ],
+ "reaction": "Stock: closed at $189.18 on report day and <b>+20.5%</b> ($227.96) the next day, giving back 4.2% on the third day. The rally came from net new ARR clearly above guidance, another full-year raise, and the market's view that AI deployments drive security spending first (what management called lasting demand after Mythos). It kept rising and closed at $268.02 on 27 Oct, another 17.6% above the day after the report. Expectations are publicly reported consensus (Yahoo Finance). After the 4-for-1 split on 1 Jul 2026, prices above are post-split.",
+ "results": {
+  "segments": {
+   "title": "By segment",
+   "period": "FY27 Q2 vs FY26 Q2, $M",
+   "take": "Growth came almost entirely from <b>subscriptions</b>; professional services is a supporting act.",
+   "bridge": [
+    {
+     "n": "Subscription"
+    },
+    {
+     "n": "Professional services"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Subscription",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Subscription gross margin 81% (non-GAAP), versus 80% a year ago. Management targets 82–85% by FY29."
+    },
+    {
+     "n": "Professional services",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Incident response and consulting, a quarterly record, at lower margins."
+    }
+   ],
+   "note": "CrowdStrike does not report revenue by product; product lines only disclose ARR, broken down below."
+  },
+  "extras": [
+   {
+    "title": "ARR breakdown",
+    "take": "New products beyond the endpoint each have several hundred million dollars of ARR, all growing faster than the company.",
+    "items": [
+     {
+      "b": "Falcon Flex customers",
+      "pill": "$2.29B, +101%",
+      "w": "A credit-based, use-as-you-go model. 34% of this quarter's net new ARR came from new customers on Flex."
+     },
+     {
+      "b": "Cloud security",
+      "pill": "$905M+, +29%",
+      "w": "Protects workloads in the cloud; the largest new product line."
+     },
+     {
+      "b": "Next-gen SIEM",
+      "pill": "$695M+, about +60%",
+      "w": "Log and security analytics, taking share from legacy SIEM vendors."
+     },
+     {
+      "b": "Identity security",
+      "pill": "$585M+, +34%",
+      "w": "Protects accounts and permissions."
+     },
+     {
+      "b": "AI detection and response (AI DR)",
+      "pill": "nearly 3x q/q",
+      "w": "Protects enterprise AI apps and agents, billed by token credits consumed through Flex. Still small; no dollar figure disclosed."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Ending ARR $5.84B, +25% y/y"
+   },
+   {
+    "why": "A record after Q1's dip; Q3 guided at $343–347M"
+   },
+   {
+    "why": "Non-GAAP margin 25%, +3.5 points y/y"
+   },
+   {
+    "why": "Q1 is the seasonal high; Q2 back to $377M"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "Enterprise value is about <b>51x</b> trailing revenue, the highest in five years and above 46x in 2021. At its five-year median of about 21x, the current price needs revenue to <b>more than double again from FY27</b>: <b>the price is supported by a story about the future</b>, not by money already earned.",
+  "tiles": [
+   {
+    "k": "EV / revenue",
+    "f": "EV ≈ $277B ÷ TTM revenue $5.40B"
+   },
+   {
+    "k": "Forward P/E (FY27, non-GAAP)",
+    "f": "$268.02 ÷ full-year guided EPS $1.255"
+   },
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "f": "$268.02 ÷ TTM EPS $1.105"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 0.5%",
+    "f": "market cap ≈ $282B ÷ TTM FCF $1.52B"
+   }
+  ],
+  "forward": {
+   "title": "The company already gives full-year EPS",
+   "sub": "FY27 guidance",
+   "steps": [
+    "Q1 $0.275 + Q2 $0.31 (actual, split-adjusted)",
+    "Q3 guided at about <b>$0.31</b>",
+    "Full-year guide of $1.25–1.26 → implied Q4 about <b>$0.36</b>",
+    "Price ÷ $1.255 → forward P/E about <b>214x</b>"
+   ],
+   "note": "GAAP EPS was only $0.01 this quarter; the gap is mainly stock-based compensation. This is company guidance, not our forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "FY28 (Feb 2027–Jan 2028) assumptions",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "FCF margin",
+    "Free cash flow",
+    "Mkt cap/FCF"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+20%",
+      "28%",
+      "$2.02B",
+      "140x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+25%",
+      "31%",
+      "$2.33B",
+      "121x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+32%",
+      "34%",
+      "$2.69B",
+      "105x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "+116%",
+      "—",
+      "—",
+      "EV/S 21x"
+     ]
+    }
+   ],
+   "note": "Base is the FY27 guided revenue midpoint of $6.0B; market cap about $282B. Even in the bull case, FY28 market cap / free cash flow is still above 100x. *Price: if the market pays the five-year median EV/revenue of 21.4x, the current price needs revenue of about $13.0B, about 116% above FY27. The price sits outside all three scenarios and <b>needs several more years of high growth</b> to grow into. These assumptions are ours and are not forecasts."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Enterprise value / revenue at quarter ends",
+   "note": "About 51x now, above every one of the last 20 quarter ends, the <b>100th percentile</b>. The last time it came close was 46x at the end of October 2021, after which it fell to 10x within a year. GAAP profit is too thin for P/E to mean anything, so we use EV/revenue. StockAnalysis data; quarter ends are fiscal quarter ends (end of January, April, July, October)."
+  },
+  "decomp": {
+   "title": "The +20.5% post-report move, decomposed",
+   "sub": "26 Aug → 27 Aug close",
+   "head": [
+    "Measure",
+    "TTM revenue",
+    "EV/revenue"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Revenue",
+      "+5.9%",
+      "+13.8%"
+     ]
+    }
+   ],
+   "note": "The new quarter replaces the one a year ago, adding 5.9% to trailing revenue. The stock rose 20%, <b>mostly from multiple expansion</b>: the market is paying for accelerating net new ARR and higher long-term growth expectations."
+  },
+  "cash": {
+   "title": "Stock compensation vs free cash flow",
+   "sub": "Free cash flow margin",
+   "stats": [
+    {
+     "k": "Q2 free cash flow",
+     "v": "$377M"
+    },
+    {
+     "k": "Q2 GAAP vs non-GAAP operating income gap",
+     "v": "$405M"
+    },
+    {
+     "k": "Cash",
+     "v": "$5.01B"
+    }
+   ],
+   "note": "A GAAP operating loss of $33M this quarter against $372M of non-GAAP operating income; the $405M gap is mainly stock-based compensation. <b>The stock given to employees in one quarter was worth more than that quarter's free cash flow</b>, continuously diluting shareholders. Management guides full-year free cash flow margin of at least 30%."
+  },
+  "calc": [
+   "Price $268.02: 27 Oct close; market cap ≈ $282B (about 1.05B shares from StockAnalysis market cap ÷ price), net cash about $4.2B, EV about $277B",
+   "TTM = FY26 Q3 to FY27 Q2: revenue $1,234.2M + $1,305.4M + $1,385.6M + $1,470.9M = $5,396.1M",
+   "TTM free cash flow $295.9M + $376.4M + $468.5M + $377.4M = $1,518.2M",
+   "Split adjustment: FY26 Q3 non-GAAP EPS $0.96 ÷ 4 = $0.24, FY26 Q4 $1.12 ÷ 4 = $0.28, FY27 Q1 $1.10 ÷ 4 = $0.275",
+   "Around the report: price × 1.205, TTM revenue × 1.059 → multiple × 1.138",
+   "Scenario free cash flow = FY28 revenue × free cash flow margin"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Full-year net new ARR",
+    "pill": "raised again",
+    "before": "FY27 net new ARR growth of about 27.7%.",
+    "now": "About 34%, midpoint up 6.3 points; Q3 alone $343–347M net new."
+   },
+   {
+    "topic": "Source of demand",
+    "pill": "new argument",
+    "before": "Mainly platform consolidation and Flex.",
+    "now": "Stresses that enterprises must solve AI security and compliance before they dare deploy, and calls the post-Mythos demand lasting, not one-off."
+   },
+   {
+    "topic": "Pricing",
+    "pill": "new tool",
+    "before": "Module subscriptions; Flex by credits.",
+    "now": "AI detection and response is billed by tokens: plans include an allowance, with token packs for overage consumed through Flex."
+   },
+   {
+    "topic": "Acquisitions",
+    "pill": "new",
+    "before": "Not mentioned.",
+    "now": "The XM Cyber technology asset acquisition is expected to close in the second half, excluded from ARR and revenue guidance."
+   },
+   {
+    "topic": "Margin targets",
+    "pill": "new numbers",
+    "before": "No update.",
+    "now": "Subscription gross margin of 82–85% by FY29; FY27 free cash flow margin of at least 30%."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "34% of net new ARR came from new customers on Flex",
+     "About half of the endpoint market still uses legacy antivirus, plenty to replace",
+     "Cloud marketplace transactions exceeded $600M, up more than 30% y/y",
+     "51% of subscription customers use six or more modules"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Net and gross revenue retention: only “improved sequentially”, no numbers",
+     "The ARR of AI detection and response",
+     "How long the post-Mythos demand lasts: only qualitative comments",
+     "Whether AI labs building their own security products become competitors: only talked about differentiation"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q3 net new ARR reaches $343–347M",
+     "Whether Flex customer ARR keeps doubling",
+     "Whether the free cash flow margin returns above 27.5%",
+     "Whether stock comp as a share of revenue comes down"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Net new ARR growth falls back below 20%: the AI-driven demand was a one-off",
+     "The ARR uplift from Flex conversions shrinks, or customers cut back after unused credits",
+     "Subscription gross margin falls instead of rising: compute costs of AI products eat profit",
+     "Large customers shift security budgets to cloud providers' or AI labs' built-in tools"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "In the 30 days around the report (7/27–9/25), there was only one effective sale: director Cary Davis sold about <b>$7.4M</b>. Everything else was planned or tax-withholding sales, which we don't count: CFO Burt Podbere sold about $126M under a 10b5-1 plan, CEO George Kurtz about $114M in planned batches, and director Gerhard Watzinger about $29M. No insider bought. Management's planned sales were large while the stock surged, but those plans were set in advance. Data from <a href=\"/s/CRWD.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "CrowdStrike: FY27 Q2 earnings release"
+  },
+  {
+   "t": "CrowdStrike: FY27 Q1 earnings release (Q2 guidance, split)"
+  },
+  {
+   "t": "CrowdStrike: FY26 Q4 results (SEC 8-K, initial FY27 guidance)"
+  },
+  {
+   "t": "CrowdStrike: FY26 Q3 earnings release"
+  },
+  {
+   "t": "Investing.com: FY27 Q2 earnings call transcript"
+  },
+  {
+   "t": "Yahoo Finance: consensus and stock reaction"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}

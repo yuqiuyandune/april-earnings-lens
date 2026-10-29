@@ -1,0 +1,46 @@
+{
+ "n": "CrowdStrike",
+ "config": {
+  "segmentBasis": "Subscription + professional services",
+  "fiscalNote": "Fiscal year ends in late January; FY2027 Q2 = May–July 2026, shown on this site as 2026Q2. 4-for-1 split on 1 Jul 2026; per-share figures adjusted",
+  "kpis": [
+   "Ending ARR",
+   "Net new ARR",
+   "Falcon Flex ARR",
+   "Subscription gross margin",
+   "Free cash flow margin"
+  ],
+  "modules": [
+   "ARR breakdown",
+   "Stock compensation vs free cash flow"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "sub": {
+    "t": "Subscription revenue"
+   },
+   "arr": {
+    "t": "Ending ARR"
+   },
+   "nnarr": {
+    "t": "Net new ARR"
+   },
+   "opm": {
+    "t": "Operating margin (non-GAAP)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   },
+   "fcfm": {
+    "t": "Free cash flow margin"
+   },
+   "eps": {
+    "t": "EPS (non-GAAP, split-adjusted)"
+   }
+  }
+ }
+}

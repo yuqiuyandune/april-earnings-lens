@@ -1,0 +1,40 @@
+{
+ "n": "Salesforce",
+ "config": {
+  "segmentBasis": "Agentforce Applications + Data 360, Platform and Other + Professional services",
+  "fiscalNote": "Fiscal year ends in late January; FY2027 Q2 = May–July 2026, shown on this site as 2026Q2",
+  "kpis": [
+   "cRPO growth",
+   "Organic growth (excl. Informatica)",
+   "Agentforce ARR",
+   "Non-GAAP operating margin",
+   "Free cash flow"
+  ],
+  "modules": [
+   "How much growth was bought",
+   "One-offs in EPS"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "crpo": {
+    "t": "cRPO y/y (constant currency)"
+   },
+   "opm": {
+    "t": "Operating margin (non-GAAP)"
+   },
+   "gopm": {
+    "t": "Operating margin (GAAP)"
+   },
+   "eps": {
+    "t": "EPS (GAAP)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

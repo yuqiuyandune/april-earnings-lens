@@ -1,0 +1,80 @@
+[
+ {
+  "saidLabel": "Jun 2026 (FY27 Q1 results)",
+  "text": "Q2 revenue of $1,436–1,442M",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $1,470.9M, 2.0% above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jun 2026 (FY27 Q1 results)",
+  "text": "Q2 ending ARR of $5,792.6–5,794.6M (implying about $287M net new)",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Ending ARR $5.84B, net new $332.8M, about $45M above the top of guidance."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jun 2026 (FY27 Q1 results)",
+  "text": "Q2 non-GAAP operating income of $345.6–349.1M",
+  "dueLabel": "FY27 Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $371.6M, a 25.3% margin."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Mar 2026 (FY26 Q4 results)",
+  "text": "FY27 revenue of $5,867.6–5,927.6M",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Raised to $5,914.7–5,958.7M."
+   },
+   {
+    "status": "Raised again",
+    "note": "Raised to $5,991.1–6,011.1M, a midpoint 2.0% above the start of the year."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Mar 2026 (FY26 Q4 results)",
+  "text": "FY27 ending ARR of $6,465.8–6,516.4M",
+  "dueLabel": "full-year FY27",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "ARR raised to $6,531.7–6,555.5M, implying about 27.7% growth in full-year net new ARR."
+   },
+   {
+    "status": "Raised again",
+    "note": "ARR raised to $6,603.0–6,611.9M, about 34% growth in full-year net new ARR (midpoint up 6.3 points)."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Q3 net new ARR of $343–347M, revenue of $1,523–1,529M, free cash flow margin 27.5%",
+  "dueLabel": "FY27 Q3"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "FY27 free cash flow margin of at least 30%",
+  "dueLabel": "full-year FY27"
+ },
+ {
+  "saidLabel": "Aug 2026 (FY27 Q2 call)",
+  "text": "Subscription gross margin (non-GAAP) of 82–85% by FY29 (81% this quarter)",
+  "dueLabel": "FY29"
+ }
+]

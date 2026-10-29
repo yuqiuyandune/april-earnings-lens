@@ -1,0 +1,396 @@
+{
+ "label": "FY2027 Q2 (May–Jul 2026)",
+ "dateLabel": "after the close, 26 Aug 2026",
+ "asOf": "prices as of the 27 Oct 2026 close",
+ "headline": "Up 23% in a day, driven by Claudeforce, not by growth",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$11.35B",
+   "exp": "est. $11.32B"
+  },
+  {
+   "k": "Non-GAAP EPS (excl. investment gains)",
+   "val": "≈ $3.37",
+   "exp": "guided $3.25–3.27"
+  },
+  {
+   "k": "cRPO growth",
+   "val": "+14%",
+   "exp": "guided about 13%",
+   "pill": "1 point higher"
+  },
+  {
+   "k": "Organic growth",
+   "val": "≈ +6%",
+   "exp": "reported +11%",
+   "pill": "Informatica ≈ 4.5 points"
+  }
+ ],
+ "points": [
+  {
+   "b": "About 40% of growth was bought",
+   "t": "Revenue +11%, but the acquired Informatica contributed about 4.5 points; excluding it, about 6%."
+  },
+  {
+   "b": "AI metrics are getting bigger",
+   "t": "Agentforce ARR above $1.5B, AI and data together about $3.9B; but the definition widened, so year-on-year isn't fully comparable."
+  },
+  {
+   "b": "EPS doubled mostly on one-offs and buybacks",
+   "t": "$2.53 came from investment gains; the $25B buyback cut the share count by about 14%."
+  }
+ ],
+ "reaction": "Stock: closed at $205.62 on report day and <b>+22.6%</b> ($252.05) the next day, on more than 3x normal volume. The main driver was Claudeforce, announced at the same time: Salesforce and Anthropic are putting CRM data and functions inside Claude, easing fears that “AI replaces SaaS”; the results themselves only beat slightly. Up another 1.6% on the third day. It closed at $240.89 on 27 Oct, 4.4% below the day after the report. The revenue estimate is the public consensus cited by Hudson Labs.",
+ "results": {
+  "segments": {
+   "title": "By offering",
+   "period": "FY27 Q2 vs FY26 Q2, $B",
+   "take": "Growth came mainly from <b>Data 360 and Platform</b>, but most of that is the consolidated Informatica; core apps such as Sales and Service grew only about 8%.",
+   "bridge": [
+    {
+     "n": "Data 360, Platform and Other"
+    },
+    {
+     "n": "Agentforce Applications"
+    },
+    {
+     "n": "Professional services"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Data 360, Platform and Other",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Includes about $440M of Informatica subscription revenue this quarter, Slack, MuleSoft and Data 360. About +6% excluding Informatica."
+    },
+    {
+     "n": "Agentforce Applications",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Sales, Service, Marketing, Commerce and other clouds, now all called Agentforce Applications. Marketing and Commerce remain weak."
+    },
+    {
+     "n": "Professional services",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Implementation and consulting, still shrinking."
+    }
+   ],
+   "note": "From FY27 Salesforce reports only two subscription categories and no longer breaks out Sales, Service and other clouds, so there are no five-quarter charts. Constant-currency growth: Applications +8%, Platform +20%."
+  },
+  "extras": [
+   {
+    "title": "How much growth was bought",
+    "take": "Of the reported +11%, organic growth is about 6%; management says it re-accelerates in the second half.",
+    "items": [
+     {
+      "b": "Informatica",
+      "pill": "about 4.5 points",
+      "w": "Contributed $456M of revenue this quarter. Excluding it, revenue was about $10.89B, about +6.4% y/y. Q3 guidance includes slightly more than 4 points from Informatica."
+     },
+     {
+      "b": "Contentful and Fin",
+      "pill": "pending",
+      "w": "$200M of the roughly $300M full-year revenue raise comes from these two acquisitions; no purchase prices disclosed."
+     },
+     {
+      "b": "Agentforce ARR",
+      "pill": "$1.5B+, +240%",
+      "w": "Now includes AI features, Slackbot and Headless 360, a wider definition than last year. 2,000 new customers in paid production use this quarter, +70% q/q."
+     },
+     {
+      "b": "Usage",
+      "pill": "+97% q/q",
+      "w": "3.2B Agentic Work Units (a unit of work done by AI agents) this quarter; Slackbot users +150% q/q."
+     }
+    ]
+   },
+   {
+    "title": "One-offs in EPS",
+    "take": "EPS doubled y/y, but operations contributed little of it.",
+    "items": [
+     {
+      "b": "Investment gains",
+      "pill": "$2.53 / share",
+      "w": "$2.61B of strategic investment gains, versus $6M a year ago. Non-GAAP EPS of $5.90 is about $3.37 excluding them."
+     },
+     {
+      "b": "Buybacks",
+      "pill": "shares about −14%",
+      "w": "$25B of bonds issued for an accelerated buyback; 103M shares delivered upfront at an average of about $176. The same profit is split across fewer shares."
+     },
+     {
+      "b": "Operating margin",
+      "pill": "roughly flat",
+      "w": "Non-GAAP 34.1% versus 34.3% a year ago; GAAP 20.5% versus 22.8%."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+11% with Informatica, about +6% organic"
+   },
+   {
+    "why": "Accelerating to 14%, a leading indicator"
+   },
+   {
+    "why": "Non-GAAP steady around 34%"
+   },
+   {
+    "why": "Highly seasonal; collections concentrate in Q4 and Q1"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>13x</b> trailing free cash flow, a FCF yield of about 8%, its third lowest in five years (five-year median about 25x). At the median multiple, the current price needs free cash flow <b>half of today's</b>: <b>the market is pricing AI disrupting software</b>, not paying a premium for growth.",
+  "tiles": [
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 7.9%",
+    "f": "market cap ≈ $193B ÷ TTM FCF $15.2B"
+   },
+   {
+    "k": "Forward P/E (FY27, excl. investment gains)",
+    "f": "$240.89 ÷ (guided midpoint $16.69 − $2.53)"
+   },
+   {
+    "k": "P/E (TTM, GAAP)",
+    "pill": "28x excl. gains",
+    "f": "$240.89 ÷ TTM EPS $10.97"
+   },
+   {
+    "k": "EV / revenue",
+    "f": "EV ≈ $224B (including about $31B of net debt) ÷ TTM revenue $43.9B"
+   }
+  ],
+  "forward": {
+   "title": "The company already gives full-year EPS",
+   "sub": "FY27 guidance",
+   "steps": [
+    "Full-year non-GAAP EPS guidance of $16.67–16.71",
+    "Q2's investment gain of about $2.53 won't repeat → about <b>$14.16</b> excluding it",
+    "Q3 guided non-GAAP EPS of $3.42–3.44",
+    "Price ÷ $14.16 → forward P/E about <b>17x</b>"
+   ],
+   "note": "Buybacks sharply reduce the share count, so EPS growth will clearly outpace net income growth. This is company guidance, not our forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: where the price sits",
+   "sub": "FY28 (Feb 2027–Jan 2028) assumptions",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "FCF margin",
+    "Free cash flow",
+    "Mkt cap/FCF"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+7%",
+      "31%",
+      "$15.3B",
+      "12.6x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+10%",
+      "34%",
+      "$17.3B",
+      "11.2x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+13%",
+      "36%",
+      "$18.8B",
+      "10.3x"
+     ]
+    },
+    {
+     "c": [
+      "Price*",
+      "—",
+      "—",
+      "$7.8B",
+      "24.9x"
+     ]
+    }
+   ],
+   "note": "Base is the FY27 guided revenue midpoint of about $46.25B; market cap about $193B. *Price: if the market pays the five-year median market cap / FCF of 24.9x, the current price needs only about $7.8B of annual free cash flow, about half of today's. The price is below the bear case, <b>equivalent to assuming AI will clearly erode its cash flow</b>. These assumptions are ours and are not forecasts."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Market cap / free cash flow at quarter ends",
+   "note": "About 13x now, above only 2 of the last 20 quarter ends (end of April and July 2026, about 10x), the <b>10th percentile</b>. The multiple fell from 20x to 10x this year on fears that AI agents will reduce the number of software seats companies buy. GAAP profit swings with investment gains, so we use the FCF multiple. StockAnalysis data."
+  },
+  "decomp": {
+   "title": "The +22.6% post-report move, decomposed",
+   "sub": "26 Aug → 27 Aug close",
+   "head": [
+    "Measure",
+    "TTM free cash flow",
+    "Mkt cap/FCF"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Free cash flow",
+      "+3.4%",
+      "+18.6%"
+     ]
+    }
+   ],
+   "note": "The new quarter replaces the one a year ago, and trailing free cash flow rose only 3.4%. <b>Nearly all of the gain was a re-rating</b>: the market is reassessing whether AI is a threat or an opportunity for Salesforce, with Claudeforce as the trigger."
+  },
+  "cash": {
+   "title": "Buybacks and debt",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "TTM free cash flow",
+     "v": "$15.2B"
+    },
+    {
+     "k": "First-half buybacks",
+     "v": "$27.3B"
+    },
+    {
+     "k": "Net debt",
+     "v": "about $31B"
+    }
+   ],
+   "note": "First-half buybacks of $27.3B exceeded the past year's total free cash flow, funded mainly by $25B of new bonds. That is why full-year operating cash flow growth guidance fell from 9–10% to 4–5% (higher interest). Capex is about 1.5% of revenue."
+  },
+  "calc": [
+   "Price $240.89: 27 Oct close; market cap ≈ $193B (about 800M shares from StockAnalysis market cap ÷ price), net debt about $31B, EV about $224B",
+   "TTM = FY26 Q3 to FY27 Q2: revenue $10.26B + $11.20B + $11.13B + $11.35B = $43.94B; GAAP EPS $2.19 + $2.07 + $2.42 + $4.29 = $10.97",
+   "Free cash flow = operating cash flow − capex: $2.18B + $5.32B + $6.56B + $1.10B = $15.15B",
+   "Organic growth: ($11.345B − Informatica $0.456B) ÷ $10.236B − 1 ≈ 6.4%",
+   "Around the report: price × 1.226, TTM free cash flow × 1.034 → multiple × 1.186",
+   "Scenario free cash flow = FY28 revenue × free cash flow margin"
+  ]
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "AI strategy",
+    "pill": "new partnership",
+    "before": "Agentforce is Salesforce's own AI agent platform.",
+    "now": "Launched Claudeforce with Anthropic, putting CRM inside Claude; Slackbot also uses Claude. Management calls it the “enterprise harness” (data, apps, agents and interface layers)."
+   },
+   {
+    "topic": "Pricing",
+    "pill": "admits old model under pressure",
+    "before": "Pushed per-user Agentforce editions and Flex credits.",
+    "now": "Customers can pay per user, by usage or by outcome; Benioff said the company is “still stuck in some ways in the per-user model”."
+   },
+   {
+    "topic": "Full-year revenue",
+    "pill": "raised (incl. acquisitions)",
+    "before": "$45.9–46.2B, all from completed businesses.",
+    "now": "$46.1–46.4B, including $200M from the pending Contentful and Fin deals."
+   },
+   {
+    "topic": "GAAP margin",
+    "pill": "cut again",
+    "before": "20.6%.",
+    "now": "20.1%."
+   },
+   {
+    "topic": "Long-term targets",
+    "pill": "deferred",
+    "before": "No update.",
+    "now": "FY28 details deferred to the Dreamforce investor day."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "9 of the top 10 AI companies use Salesforce, with spending up 435% y/y",
+     "AI agent usage via MCP and Claude grew 6x",
+     "Only 5% of sales and service users have upgraded to premium editions, which cost 60–80% more",
+     "Another 1,200 sellers hired by year end, on top of about 15,000"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Claudeforce revenue targets and the revenue split with Anthropic",
+     "Whether open-source models lower AI agent prices, and when it monetizes",
+     "The share of paying AI customers and the sales cycle",
+     "How headless use (not through the Salesforce interface) is priced"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Q3 revenue of $11.42–11.50B, and whether organic growth returns to 7–8%",
+     "Whether cRPO holds at 14%",
+     "Customer count and usage after Claudeforce's launch",
+     "FY28 guidance (Dreamforce investor day)"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "cRPO growth falls back below 12%",
+     "Revenue growth excluding acquisitions stays below 6%",
+     "Paid seat counts start falling: AI agents are replacing human seats",
+     "Claudeforce use happens mostly inside Claude, with little revenue for Salesforce"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report. In the 30 days after: director David Kirk <b>bought</b> 4,176 shares in the open market on 18 Sep, about <b>$1.0M</b> (about $239 a share); director Craig Conway sold 4,500 shares on 4 Sep, about $1.17M. Both are small and in opposite directions. Data from <a href=\"/s/CRM.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "Salesforce: FY27 Q2 earnings release"
+  },
+  {
+   "t": "Salesforce: FY27 Q1 results (SEC 8-K)"
+  },
+  {
+   "t": "Salesforce: FY26 Q4 results (SEC 8-K, initial FY27 guidance)"
+  },
+  {
+   "t": "Salesforce: FY26 Q3 results (SEC 8-K)"
+  },
+  {
+   "t": "Motley Fool: FY27 Q2 earnings call transcript"
+  },
+  {
+   "t": "Hudson Labs: pre-report consensus"
+  },
+  {
+   "t": "Yahoo Finance: why it rose 23% on 27 Aug"
+  },
+  {
+   "t": "Salesforce: Claudeforce partnership announcement"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}
