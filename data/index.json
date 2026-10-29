@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "companies": [
   {
    "t": "TSM",
@@ -189,6 +189,24 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-28",
    "headline": "AI 缺的是电，GEV 卖的就是电：涡轮排到 2032 年，钱由客户先付"
+  },
+  {
+   "t": "SNDK",
+   "n": "闪迪",
+   "en": "Sandisk",
+   "aliases": [
+    "Sandisk",
+    "SanDisk",
+    "閃迪",
+    "NAND"
+   ],
+   "cat": "存储",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-29",
+   "headline": "毛利率 85%、利润还在涨，股价却比高点低四成：市场在给存储周期的顶点定价"
   }
  ]
 }

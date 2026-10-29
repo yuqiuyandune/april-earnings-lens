@@ -200,23 +200,42 @@ details.calc ul{margin:8px 0 2px;padding-left:1.1em;display:flex;flex-direction:
 footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
 footer ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px}
 .loading{color:var(--muted);font-size:14px;padding:40px 0;text-align:center}
+.lang{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px}
+.lang button{font:inherit;font-size:12.5px;border:0;background:none;color:var(--muted);padding:3px 8px;border-radius:6px;cursor:pointer;min-width:30px}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lang button:focus-visible{outline:2px solid var(--accent)}
+.stats.pz .f{font-size:11.5px;color:var(--muted);line-height:1.45}
+.disc{font-size:12px;color:var(--warn);background:var(--warn-soft);border-radius:8px;padding:8px 10px;margin:0;line-height:1.55}
+.zh-only{color:var(--warn)}
+:lang(en) h2 small{display:none}
 </style>
 
 <div class="wrap">
   <div class="top">
-    <a class="brand" href="#home"><b>财报解读</b></a>
-    <a class="brand" href="calendar/" style="color:var(--accent)">财报日历 →</a>
+    <a class="brand" href="#home"><b data-i="brand">财报解读</b></a>
+    <a class="brand" href="calendar/" style="color:var(--accent)" data-i="calLink">财报日历 →</a>
     <div class="sbox">
-      <input id="q" type="search" placeholder="搜索公司：代码、中文名或英文名" aria-label="搜索公司" autocomplete="off">
+      <input id="q" type="search" placeholder="搜索公司：代码、中文名或英文名" aria-label="搜索公司" data-ip="search" autocomplete="off">
       <div class="sres" id="sres" hidden></div>
     </div>
+    <div class="lang" role="group" aria-label="Language"><button data-l="zh">简</button><button data-l="tw">繁</button><button data-l="en">EN</button></div>
   </div>
-  <main id="app"><div class="loading">正在加载…</div></main>
+  <main id="app"><div class="loading">…</div></main>
 </div>
 
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+/* ---------- languages: zh (source), tw (converted from zh at build time), en ---------- */
+const I18N={zh:/*I18N_ZH*/{"brand":"财报解读","calLink":"财报日历 →","search":"搜索公司：代码、中文名或英文名","none":"还没有“{0}”的财报解读。可以在财报日历里查看发布日期。","homeP":"AI 产业链和重点科技公司的季度财报：业绩、估值、管理层承诺兑现和内部人动向。","latest":"最新解读","pub":"{1}月{2}日发布","homeNote":"更多公司的发布日期见<a href=\"calendar/\">财报日历</a>。每家公司每季一份解读，往季解读保留在公司页的季度切换里。","qs":"切换季度","colon":"：","stop":"。","vp":"增长来自量还是价","share":"占","bridge":"营收同比变化","total":"合计","trends":"走势","val":"估值","rev":"营收","med":"中位","drag":"可拖动调整","calc":"计算依据","sotpRest":"未来业务","sotpOut":"现有业务合计约 <b>${0}B</b>，企业价值 ${1}B 中约 <b>${2}B（{3}%）</b>是在为尚未兑现的业务定价。","ledger":"说了 vs 做到","first":"这是第一份解读","firstNote":"本季记录的承诺会从下一季开始逐条核对。","newProm":"本季新承诺，下季起追踪","changed":"和上季相比，说法有什么变化","before":"上季","now":"本季","call":"电话会","insider":"内部人动向","tab.results":"业绩","tab.valuation":"估值","tab.management":"管理层","tab.insider":"内部人","sections":"页面分区","nf":"没有找到 {0}","nfTry":"试试上方搜索。","err":"数据没有加载成功","errTry":"请刷新页面再试。","foot":"本页仅为信息整理和作者个人观点，不构成投资建议。数据截至 {0}。","src":"来源","zhOnly":"这份解读暂时只有中文版。","zhTag":"中文","pz.title":"情景价格与作者关注区间","pz.zone":"作者关注区间","pz.now":"现价","pz.zoneIs":"作者关注区间：","pz.from":"买入价","pz.px":"价格","pz.toBear":"到悲观","pz.toBase":"到基准","pz.toBull":"到乐观","pz.rr":"回报/风险","pz.atNow":"现价","pz.atMid":"区间中值","pz.atLo":"区间下沿","pz.rrNote":"回报/风险 = 到基准情景的上涨幅度 ÷ 到悲观情景的下跌幅度。大于 1 说明按这个价格买，基准情景下能赚的比悲观情景下会亏的多；越高越有安全边际。","pz.disc":"情景价格和关注区间仅代表本文作者的个人观点，基于公开信息和我们设定的假设，可能出错，不构成投资建议，也不是买卖推荐。请独立判断并自行承担风险。"}/*END*/,
+en:{"brand":"Earnings Lens","calLink":"Earnings calendar →","search":"Search: ticker or company name","none":"No earnings review for “{0}” yet. Check the earnings calendar for dates.","homeP":"Quarterly earnings of AI supply-chain and key tech companies: results, valuation, management promises and insider activity.","latest":"Latest reviews","pub":"published {1}/{2}","homeNote":"Release dates for more companies are in the <a href=\"calendar/\">earnings calendar</a>. One review per company per quarter; earlier quarters stay in the quarter switcher on each company page.","qs":"Switch quarter","colon":": ","stop":". ","vp":"Volume or price","share":"","bridge":"Revenue change year on year","total":"Total","trends":"Trends","val":"Valuation","rev":"revenue ","med":"median","drag":"drag to adjust","calc":"How we calculated","sotpRest":"Future businesses","sotpOut":"Existing businesses add up to about <b>${0}B</b>; of the ${1}B enterprise value, about <b>${2}B ({3}%)</b> is paying for businesses that have not delivered yet.","ledger":"Said vs done","first":"This is the first review","firstNote":"Promises recorded this quarter will be checked one by one from next quarter.","newProm":"New promises this quarter, tracked from next quarter","changed":"What changed since last quarter","before":"Before","now":"Now","call":"Earnings call","insider":"Insider activity","tab.results":"Results","tab.valuation":"Valuation","tab.management":"Management","tab.insider":"Insiders","sections":"Sections","nf":"{0} not found","nfTry":"Try the search above.","err":"Data did not load","errTry":"Please refresh and try again.","foot":"Information and the author’s personal views only, not investment advice. Data as of {0}.","src":"Sources","zhOnly":"This review is only available in Chinese for now.","zhTag":"Chinese only","pz.title":"Scenario prices and the author’s zone","pz.zone":"Author’s zone","pz.now":"Now","pz.zoneIs":"Author’s zone:","pz.from":"Buy at","pz.px":"Price","pz.toBear":"To bear","pz.toBase":"To base","pz.toBull":"To bull","pz.rr":"Reward/risk","pz.atNow":"Current price","pz.atMid":"Zone midpoint","pz.atLo":"Zone low","pz.rrNote":"Reward/risk = upside to the base case ÷ downside to the bear case. Above 1 means that, at this price, the base case gains more than the bear case loses; the higher, the bigger the margin of safety.","pz.disc":"Scenario prices and the zone are only the author’s personal views, built on public information and our own assumptions. They may be wrong and are not investment advice or a recommendation to buy or sell. Please make your own decisions and take your own risks."}};
+let LANG=(()=>{let v=null;try{v=localStorage.getItem("sif-lang")}catch(e){}if(["zh","tw","en"].includes(v))return v;const ls=navigator.languages||[navigator.language||"zh"];for(const x of ls){const t=String(x).toLowerCase();if(t.startsWith("zh"))return /hant|-tw|-hk|-mo/.test(t)?"tw":"zh";if(t.startsWith("en"))return "en"}return "zh"})();
+const DATA=()=>({zh:"data/",tw:"data-tw/",en:"data-en/"}[LANG]);
+function L(k,...a){const d=I18N[LANG]||I18N.zh;let s=d[k]??I18N.zh[k]??k;if(k==="pub"&&a[0]){const[y,m,dd]=String(a[0]).split("-");a=[a[0],+m,+dd]}return s.replace(/\{(\d)\}/g,(_,i)=>a[i]??"")}
+function paintUI(){document.documentElement.lang={zh:"zh-Hans",tw:"zh-Hant",en:"en"}[LANG];
+  document.querySelectorAll("[data-i]").forEach(e=>e.textContent=L(e.dataset.i));
+  document.querySelectorAll("[data-ip]").forEach(e=>{e.placeholder=L(e.dataset.ip);e.setAttribute("aria-label",L(e.dataset.ip))});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===LANG))}
 const cache={};
 async function getJSON(p){if(!cache[p]){cache[p]=fetch(p).then(r=>{if(!r.ok)throw new Error(p);return r.json()})}return cache[p]}
 const qLabel=q=>`Q${q.slice(5)}'${q.slice(2,4)}`;
@@ -248,7 +267,7 @@ function renderSearch(){
   if(!s){box.hidden=true;return}
   const hits=INDEX.filter(c=>match(c,s));
   box.innerHTML=hits.length?hits.map((c,i)=>`<a href="#${c.t}" class="${i?"":"on"}"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${c.quarters.map(qLabel).join(" ")}</span></a>`).join("")
-    :`<div class="none">还没有"${esc(s)}"的财报解读。可以在财报日历里查看发布日期。</div>`;
+    :`<div class="none">${L("none",esc(s))}</div>`;
   box.hidden=false;
 }
 $("#q").addEventListener("input",renderSearch);
@@ -258,26 +277,26 @@ document.addEventListener("click",e=>{if(!e.target.closest(".sbox"))$("#sres").h
 /* ---------- views ---------- */
 function home(){
   const rows=[...INDEX].sort((a,b)=>b.latestDate.localeCompare(a.latestDate));
-  return `<div class="homeh"><h1>财报解读</h1><p>AI 产业链和重点科技公司的季度财报：业绩、估值、管理层承诺兑现和内部人动向。</p></div>
-  <section><h2>最新解读 <small>LATEST</small></h2><div class="clist">${rows.map(c=>`<a class="crow" href="#${c.t}">
-    <span class="l1"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${qLabel(c.latest)} · ${c.latestDate.slice(5).replace("-","月")}日发布</span></span>
+  return `<div class="homeh"><h1>${L("brand")}</h1><p>${L("homeP")}</p></div>
+  <section><h2>${L("latest")} <small>LATEST</small></h2><div class="clist">${rows.map(c=>`<a class="crow" href="#${c.t}">
+    <span class="l1"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${qLabel(c.latest)} · ${L("pub",c.latestDate)}${c.zhOnly?` · <span class="zh-only">${L("zhTag")}</span>`:""}</span></span>
     <span class="hl">${esc(c.headline)}</span></a>`).join("")}</div>
-  <p class="note">更多公司的发布日期见<a href="calendar/">财报日历</a>。每家公司每季一份解读，往季解读保留在公司页的季度切换里。</p></section>`;
+  <p class="note">${L("homeNote")}</p></section>`;
 }
 
 function hero(co,r,idx){
   const qs=idx.quarters;
   return `<header class="hero">
     <div class="ticker"><span class="sym">${co.t}</span><span class="meta">${esc(co.n)} · ${esc(r.label)} · ${esc(r.dateLabel)}</span></div>
-    <nav class="qs" aria-label="切换季度">${qs.map(q=>`<a href="#${co.t}.${q}" ${q===r.quarter?'aria-current="page"':""}>${qLabel(q)}</a>`).join("")}</nav>
+    <nav class="qs" aria-label="${L("qs")}">${qs.map(q=>`<a href="#${co.t}.${q}" ${q===r.quarter?'aria-current="page"':""}>${qLabel(q)}</a>`).join("")}</nav>
     <h1>${esc(r.headline)}</h1>
     <div class="verdicts">${r.verdicts.map(v=>`<div class="v"><span class="k">${esc(v.k)}</span><span class="val">${esc(v.val)}</span><span class="exp">${esc(v.exp||"")}</span>${P(v.pill,v.tone)}</div>`).join("")}</div>
-    <ol class="points">${r.points.map(p=>`<li><b>${esc(p.b)}：</b>${esc(p.t)}</li>`).join("")}</ol>
+    <ol class="points">${r.points.map(p=>`<li><b>${esc(p.b)}${L("colon")}</b>${esc(p.t)}</li>`).join("")}</ol>
     <p class="note">${r.reaction}</p>
   </header>`;
 }
 
-function mVolPrice(x){return `<section><h2>增长来自量还是价 <small>VOLUME × PRICE</small></h2><p class="take">${x.take}</p>
+function mVolPrice(x){return `<section><h2>${L("vp")} <small>VOLUME × PRICE</small></h2><p class="take">${x.take}</p>
   <div class="panel"><div class="ph"><b>${esc(x.title)}</b><span>${esc(x.period)}</span></div>
   <div class="vp">${x.items.map((it,i)=>`<div><span class="k">${esc(it.k)}</span><b>${esc(it.v)}</b>${pct(it.chg)}${i<2?`<span class="op">${i?"＝":"×"}</span>`:""}</div>`).join("")}</div></div>
   ${x.note?`<p class="note">${x.note}</p>`:""}</section>`}
@@ -287,88 +306,111 @@ function mSegments(x,co,q){
   const br=x.bridge.map(b=>{const w=Math.abs(b.v)/mx*50,left=b.v>=0?50:50-w,c=b.v>=0?"var(--good)":"var(--bad)";
     return `<div class="br"><span>${esc(b.n)}</span><span class="lane"><span class="fillbar" style="left:${left}%;width:${Math.max(w,.6)}%;background:${c}"></span></span><span class="amt" style="color:${c}">${b.v>0?"+":"−"}${Math.abs(b.v).toFixed(2)}</span></div>`}).join("");
   const rows=x.rows.map(s=>{let ch="";if(s.m){const w=seriesWindow(co,s.m,q);ch=bars(w.vals,w.labels,{W:240,H:104,color:col(s.c),f:v=>fmt(v,w.m.dec),label:s.n})}
-    return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}<span class="share">占 ${esc(s.share)}</span></span>
+    return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}<span class="share">${L("share")} ${esc(s.share)}</span></span>
     <span class="big"><b>${esc(s.val)}</b>${(s.pills||[]).map(p=>pct(p.v,p.k)).join("")}</span><span class="why">${s.why}</span></div>${ch}</div>`}).join("");
   return `<section><h2>${esc(x.title)} <small>${esc(x.en||"BY BUSINESS")}</small></h2><p class="take">${x.take}</p>
-  <div class="panel"><div class="ph"><b>营收同比变化</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>合计</span><span></span><span class="amt">${x.total}</span></div></div></div>
+  <div class="panel"><div class="ph"><b>${L("bridge")}</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>${L("total")}</span><span></span><span class="amt">${x.total}</span></div></div></div>
   <div class="segs">${rows}</div>${x.note?`<p class="note">${x.note}</p>`:""}</section>`}
 
 function mExtra(x){
   if(x.type==="stack"){const leg=x.keys.map(k=>`<span><i style="background:${col(k.c)}"></i>${esc(k.k)}</span>`).join("");
-    const rows=x.rows.map(([lab,v])=>`<div class="nr"><span>${esc(lab)}</span><div class="nbar" role="img" aria-label="${esc(lab)}：${x.keys.map((k,i)=>k.k+" "+v[i]+"%").join("，")}">${v.map((n,i)=>n?`<span style="flex:${n};background:${col(x.keys[i].c)}${x.keys[i].c==="bar"?";color:var(--ink)":""}">${n>=6?n+"%":""}</span>`:"").join("")}</div></div>`).join("");
+    const rows=x.rows.map(([lab,v])=>`<div class="nr"><span>${esc(lab)}</span><div class="nbar" role="img" aria-label="${esc(lab)}: ${x.keys.map((k,i)=>k.k+" "+v[i]+"%").join(", ")}">${v.map((n,i)=>n?`<span style="flex:${n};background:${col(x.keys[i].c)}${x.keys[i].c==="bar"?";color:var(--ink)":""}">${n>=6?n+"%":""}</span>`:"").join("")}</div></div>`).join("");
     return `<section><h2>${esc(x.title)} <small>${esc(x.en||"")}</small></h2><p class="take">${x.take}</p><div class="panel"><div class="stack">${rows}</div><div class="leg">${leg}<span>${esc(x.unit||"")}</span></div></div></section>`}
   if(x.type==="list"){return `<section><h2>${esc(x.title)} <small>${esc(x.en||"")}</small></h2>${x.take?`<p class="take">${x.take}</p>`:""}<div class="panel drag">${x.items.map(i=>`<div><b>${esc(i.b)}</b>${P(i.pill,i.tone)}<span class="w">${i.w}</span></div>`).join("")}</div></section>`}
   return "";
 }
 
-function mTrends(t,co,q){return `<section><h2>走势 <small>LAST 5 QUARTERS</small></h2><div class="grid">${t.map(c=>{const w=seriesWindow(co,c.m,q);
+function mTrends(t,co,q){return `<section><h2>${L("trends")} <small>LAST 5 QUARTERS</small></h2><div class="grid">${t.map(c=>{const w=seriesWindow(co,c.m,q);
   return `<div class="chart"><div class="t"><b>${esc(w.m.t)} <span class="u">${esc(w.m.u)}</span></b><span class="now">${fmt(w.vals.at(-1),w.m.dec)}</span></div>${bars(w.vals,w.labels,{f:v=>fmt(v,w.m.dec),label:w.m.t})}<div class="why">${c.why}</div></div>`}).join("")}</div></section>`}
 
 function tbl(head,rows,cols){const g=`grid-template-columns:${cols}`;return `<div class="tbl"><div class="tr th" style="${g}">${head.map(h=>`<span>${esc(h)}</span>`).join("")}</div>${rows.map(r=>`<div class="tr ${r.hl?"hl":""}" style="${g}">${r.c.map((c,i)=>`<span class="${(r.tone||[])[i]||""}">${c}</span>`).join("")}</div>`).join("")}</div>`}
 
 function mValuation(v,co,q){
-  let h=`<section><h2>估值 <small>VALUATION</small></h2><p class="take">${v.take}</p>
+  let h=`<section><h2>${L("val")} <small>VALUATION</small></h2><p class="take">${v.take}</p>
   <div class="vgrid">${v.tiles.map(t=>`<div class="vt"><span class="k">${esc(t.k)}</span><b>${esc(t.v)}</b>${t.pill?P(t.pill,t.tone):""}<span class="f">${esc(t.f)}</span></div>`).join("")}</div>`;
   if(v.forward)h+=`<div class="panel"><div class="ph"><b>${esc(v.forward.title)}</b><span>${esc(v.forward.sub||"")}</span></div><ol class="steps">${v.forward.steps.map(s=>`<li>${s}</li>`).join("")}</ol><p class="note">${v.forward.note}</p></div>`;
   if(v.scenarios){const s=v.scenarios;h+=`<div class="panel"><div class="ph"><b>${esc(s.title)}</b><span>${esc(s.sub||"")}</span></div>${tbl(s.head,s.rows,s.cols)}<p class="note">${s.note}</p></div>`}
   if(v.riskreward){const r=v.riskreward,px=r.price,ips=r.rows.map(o=>o.eps*r.mult),dlo=Math.min(px,...ips)*.985,dhi=Math.max(px,...ips)*1.015,W=320,ax=40,PL=10,X=p=>PL+(p-dlo)/(dhi-dlo)*(W-PL-10);
-    const tiles=r.rows.map((o,i)=>{const ip=ips[i],pc=(ip/px-1)*100,up=pc>=0,c=up?"var(--good)":"var(--bad)";return `<div><span class="k">${esc(o.n)} · 营收${esc(o.g)}</span><b style="color:${c}">$${ip.toFixed(0)}</b><span style="font-size:12.5px;font-weight:600;font-family:var(--f-num);color:${c}">${up?"+":""}${pc.toFixed(0)}%</span></div>`}).join("");
+    const tiles=r.rows.map((o,i)=>{const ip=ips[i],pc=(ip/px-1)*100,up=pc>=0,c=up?"var(--good)":"var(--bad)";return `<div><span class="k">${esc(o.n)} · ${L("rev")}${esc(o.g)}</span><b style="color:${c}">$${ip.toFixed(0)}</b><span style="font-size:12.5px;font-weight:600;font-family:var(--f-num);color:${c}">${up?"+":""}${pc.toFixed(0)}%</span></div>`}).join("");
     let g=`<svg viewBox="0 0 ${W} 66" role="img" aria-label="${esc(r.title)}"><line x1="${X(Math.min(...ips)).toFixed(1)}" x2="${X(px).toFixed(1)}" y1="${ax}" y2="${ax}" stroke="var(--bad)" stroke-width="3"/><line x1="${X(px).toFixed(1)}" x2="${X(Math.max(...ips)).toFixed(1)}" y1="${ax}" y2="${ax}" stroke="var(--good)" stroke-width="3"/>`;
     r.rows.forEach((o,i)=>{const xp=X(ips[i]).toFixed(1);g+=`<circle cx="${xp}" cy="${ax}" r="3.5" fill="var(--ink)"/><text x="${xp}" y="${ax+16}" text-anchor="middle">${esc(o.n)}</text>`});
-    g+=`<line x1="${X(px).toFixed(1)}" x2="${X(px).toFixed(1)}" y1="${ax-13}" y2="${ax+5}" stroke="var(--muted)" stroke-width="1.5"/><text x="${X(px).toFixed(1)}" y="${ax-17}" text-anchor="middle" class="lab">现价 $${px.toFixed(0)}</text></svg>`;
+    g+=`<line x1="${X(px).toFixed(1)}" x2="${X(px).toFixed(1)}" y1="${ax-13}" y2="${ax+5}" stroke="var(--muted)" stroke-width="1.5"/><text x="${X(px).toFixed(1)}" y="${ax-17}" text-anchor="middle" class="lab">${L("pz.now")} $${px.toFixed(0)}</text></svg>`;
     h+=`<div class="panel"><div class="ph"><b>${esc(r.title)}</b><span>${esc(r.sub||"")}</span></div><div class="stats">${tiles}</div>${g}<p class="note">${r.note}</p></div>`}
+  if(v.pricezone)h+=mPriceZone(v.pricezone);
   if(v.history){const x=v.history,vals=x.values.concat([x.cur]),W=320,H=130,Pd={l:24,r:34,t:12,b:20},max=x.max,n=vals.length,bw=(W-Pd.l-Pd.r)/n,y=t=>Pd.t+(max-t)/max*(H-Pd.t-Pd.b);
     let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(x.title)}">`;
     x.grid.forEach(g=>{s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(g)}" y2="${y(g)}" stroke="var(--line)" stroke-width="${g?.5:1}"/><text x="${Pd.l-4}" y="${y(g)+3}" text-anchor="end">${g}</text>`});
     vals.forEach((t,i)=>{s+=`<rect x="${(Pd.l+i*bw+bw*.15).toFixed(1)}" y="${y(t).toFixed(1)}" width="${(bw*.7).toFixed(1)}" height="${(y(0)-y(t)).toFixed(1)}" rx="1.5" fill="${i===n-1?"var(--accent)":"var(--bar)"}"/>`});
-    s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(x.med)}" y2="${y(x.med)}" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="${W-Pd.r+3}" y="${y(x.med)+3}">中位</text><text x="${W-Pd.r+3}" y="${y(x.cur)+3}" class="lab">${x.cur}</text>`;
+    s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${y(x.med)}" y2="${y(x.med)}" stroke="var(--muted)" stroke-dasharray="3 3"/><text x="${W-Pd.r+3}" y="${y(x.med)+3}">${L("med")}</text><text x="${W-Pd.r+3}" y="${y(x.cur)+3}" class="lab">${x.cur}</text>`;
     x.years.forEach((t,k)=>{s+=`<text x="${(Pd.l+(k*4+1)*bw).toFixed(1)}" y="${H-5}">${t}</text>`});
     h+=`<div class="panel"><div class="ph"><b>${esc(x.title)}</b><span>${esc(x.sub)}</span></div>${s}</svg><p class="note">${x.note}</p></div>`}
   if(v.decomp)h+=`<div class="panel"><div class="ph"><b>${esc(v.decomp.title)}</b><span>${esc(v.decomp.sub)}</span></div>${tbl(v.decomp.head,v.decomp.rows,"minmax(0,1fr) 6em 6em")}<p class="note">${v.decomp.note}</p></div>`;
   if(v.cash){const w=v.cash.m?seriesWindow(co,v.cash.m,q):{vals:v.cash.d,labels:v.cash.labels,m:{dec:0}},unit=v.cash.unit||"";h+=`<div class="panel"><div class="ph"><b>${esc(v.cash.title)}</b><span>${esc(v.cash.sub||"")}</span></div>${v.cash.stats?`<div class="stats">${v.cash.stats.map(s=>`<div><span class="k">${esc(s.k)}</span><b style="${s.tone==="bad"?"color:var(--bad)":""}">${esc(s.v)}</b></div>`).join("")}</div>`:""}${bars(w.vals,w.labels,{W:320,H:110,f:x=>fmt(x,w.m.dec)+unit,label:v.cash.title})}<p class="note">${v.cash.note}</p></div>`}
-  if(v.sotp)h+=`<div class="panel"><div class="ph"><b>${esc(v.sotp.title)}</b><span>可拖动调整</span></div><p class="note" style="color:var(--ink)">${v.sotp.intro}</p><div class="sotp" id="sotp"></div><div class="sbar" id="sbar"></div><p class="take" id="sotp-out"></p><p class="note">${v.sotp.note}</p></div>`;
-  if(v.calc)h+=`<details class="calc"><summary>计算依据</summary><ul>${v.calc.map(c=>`<li>${c}</li>`).join("")}</ul></details>`;
+  if(v.sotp)h+=`<div class="panel"><div class="ph"><b>${esc(v.sotp.title)}</b><span>${L("drag")}</span></div><p class="note" style="color:var(--ink)">${v.sotp.intro}</p><div class="sotp" id="sotp"></div><div class="sbar" id="sbar"></div><p class="take" id="sotp-out"></p><p class="note">${v.sotp.note}</p></div>`;
+  if(v.calc)h+=`<details class="calc"><summary>${L("calc")}</summary><ul>${v.calc.map(c=>`<li>${c}</li>`).join("")}</ul></details>`;
   if(v.next)h+=`<p class="note">${v.next}</p>`;
   return h+"</section>";
+}
+/* scenario prices + author's zone: price axis, % vs current, risk/reward at current price and at zone midpoint */
+function mPriceZone(z){
+  const px=z.price,S=z.scen,[lo,hi]=z.zone,mid=(lo+hi)/2,bear=S[0].p,base=S[1].p,bull=S[2].p;
+  const all=[px,lo,hi,...S.map(s=>s.p)],dlo=Math.min(...all)*.9,dhi=Math.max(...all)*1.04,W=320,PL=8,PR=8,X=p=>PL+(p-dlo)/(dhi-dlo)*(W-PL-PR),ax=46;
+  const $p=p=>"$"+(p>=1000?Math.round(p).toLocaleString("en-US"):p>=100?p.toFixed(0):p.toFixed(1));
+  const pc=(a,b)=>{const v=(a/b-1)*100;return `${v>=0?"+":"−"}${Math.abs(v).toFixed(0)}%`};
+  let g=`<svg viewBox="0 0 ${W} 104" role="img" aria-label="${esc(L("pz.title"))}">`;
+  g+=`<rect x="${X(lo).toFixed(1)}" y="${ax-14}" width="${(X(hi)-X(lo)).toFixed(1)}" height="28" rx="4" fill="var(--accent-soft)" stroke="var(--accent)" stroke-dasharray="3 2"/>`;
+  g+=`<text x="${((X(lo)+X(hi))/2).toFixed(1)}" y="${ax+52}" text-anchor="middle" style="fill:var(--accent)">${esc(L("pz.zone"))} ${$p(lo)}–${$p(hi)}</text>`;
+  g+=`<line x1="${PL}" x2="${W-PR}" y1="${ax}" y2="${ax}" stroke="var(--line)" stroke-width="2"/>`;
+  S.forEach((s,i)=>{const x=X(s.p).toFixed(1),c=["var(--bad)","var(--ink)","var(--good)"][i];g+=`<circle cx="${x}" cy="${ax}" r="4.5" fill="${c}"/><text x="${x}" y="${ax+22}" text-anchor="middle">${esc(s.n)}</text><text x="${x}" y="${ax+35}" text-anchor="middle" class="lab">${$p(s.p)}</text>`});
+  g+=`<line x1="${X(px).toFixed(1)}" x2="${X(px).toFixed(1)}" y1="${ax-12}" y2="${ax+12}" stroke="var(--accent)" stroke-width="2.5"/><text x="${X(px).toFixed(1)}" y="12" text-anchor="middle" class="lab">${esc(L("pz.now"))} ${$p(px)}</text></svg>`;
+  const tiles=S.map(s=>{const up=s.p>=px;return `<div><span class="k">${esc(s.n)}</span><b style="color:${up?"var(--good)":"var(--bad)"}">${$p(s.p)}</b><span class="f">${pc(s.p,px)} · ${esc(s.how)}</span></div>`}).join("");
+  const rr=p=>{const dn=(1-bear/p)*100,up=(base/p-1)*100;return dn<=0?"—":(up/dn).toFixed(1)+"×"};
+  const row=(lab,p,hl)=>({hl,c:[lab,$p(p),pc(bear,p),pc(base,p),pc(bull,p),rr(p)],tone:["","","bad",base>=p?"good":"bad",bull>=p?"good":"bad",""]});
+  const t=tbl([L("pz.from"),L("pz.px"),L("pz.toBear"),L("pz.toBase"),L("pz.toBull"),L("pz.rr")],[row(L("pz.atNow"),px),row(L("pz.atMid"),mid,true),row(L("pz.atLo"),lo)],"minmax(0,1.3fr) repeat(5,minmax(0,1fr))");
+  return `<div class="panel"><div class="ph"><b>${esc(z.title||L("pz.title"))}</b><span>${esc(z.sub||"")}</span></div>
+  <div class="stats pz">${tiles}</div>${g}
+  <p style="margin:0;font-size:14px">${L("pz.zoneIs")} <b class="num">${$p(lo)}–${$p(hi)}</b>${L("stop")}${z.why}</p>${t}
+  <p class="note">${L("pz.rrNote")}</p>${z.note?`<p class="note">${z.note}</p>`:""}
+  <p class="disc">${L("pz.disc")}</p></div>`;
 }
 function wireSotp(s){if(!s)return;const box=$("#sotp");if(!box)return;
   box.innerHTML=s.parts.map((p,i)=>`<label class="sl" for="sl${i}"><span>${esc(p.n)}</span><input type="range" id="sl${i}" min="0.5" max="10" step="0.1" value="${p.def}"><span class="x" id="sl${i}x"></span><span class="val" id="sl${i}v"></span></label>`).join("");
   const upd=()=>{let core=0;const vals=s.parts.map((p,i)=>{const m=+$("#sl"+i).value,v=m*p.rev;core+=v;$("#sl"+i+"x").textContent=m.toFixed(1)+"×";$("#sl"+i+"v").textContent="$"+v.toFixed(0)+"B";return v});
     const rest=Math.max(0,s.ev-core),pc=rest/s.ev*100;
-    $("#sbar").innerHTML=vals.map((v,i)=>`<span style="flex:${v};background:${col(s.parts[i].c)}"></span>`).join("")+`<span style="flex:${rest};background:var(--muted)">未来业务 ${pc.toFixed(0)}%</span>`;
-    $("#sotp-out").innerHTML=`现有业务合计约 <b>$${core.toFixed(0)}B</b>，企业价值 $${s.ev.toFixed(0)}B 中约 <b>$${rest.toFixed(0)}B（${pc.toFixed(0)}%）</b>是在为尚未兑现的业务定价。`};
+    $("#sbar").innerHTML=vals.map((v,i)=>`<span style="flex:${v};background:${col(s.parts[i].c)}"></span>`).join("")+`<span style="flex:${rest};background:var(--muted)">${L("sotpRest")} ${pc.toFixed(0)}%</span>`;
+    $("#sotp-out").innerHTML=L("sotpOut",core.toFixed(0),s.ev.toFixed(0),rest.toFixed(0),pc.toFixed(0))};
   s.parts.forEach((p,i)=>$("#sl"+i).addEventListener("input",upd));upd()}
 
 function mManagement(m,pr,q){
   const checks=pr.filter(p=>(p.checks||[]).some(c=>c.q===q));
   const made=pr.filter(p=>p.made===q);
-  let h=`<section><h2>说了 vs 做到 <small>PROMISE LEDGER</small></h2>`;
+  let h=`<section><h2>${L("ledger")} <small>PROMISE LEDGER</small></h2>`;
   h+=checks.length?`<div class="ledger">${checks.map(p=>{const c=p.checks.find(c=>c.q===q),prev=p.checks.filter(c=>c.q<q);
     return `<div class="item"><span class="said">${esc(p.saidLabel)}</span>${P(c.status,c.tone)}<span class="what">${esc(p.text)}</span><span class="out">${c.note}</span>${prev.length?`<span class="hist">${prev.map(x=>`<span>${qLabel(x.q)}：${esc(x.status)} · ${x.note}</span>`).join("")}</span>`:""}</div>`}).join("")}</div>`
-    :`<div class="empty"><b>这是第一份解读</b><span>本季记录的承诺会从下一季开始逐条核对。</span></div>`;
-  if(made.length)h+=`<div class="sub">本季新承诺，下季起追踪</div><div class="future">${made.map(p=>`<div class="fi"><span class="when">${esc(p.dueLabel)}</span><span class="what">${esc(p.text)}</span></div>`).join("")}</div>`;
+    :`<div class="empty"><b>${L("first")}</b><span>${L("firstNote")}</span></div>`;
+  if(made.length)h+=`<div class="sub">${L("newProm")}</div><div class="future">${made.map(p=>`<div class="fi"><span class="when">${esc(p.dueLabel)}</span><span class="what">${esc(p.text)}</span></div>`).join("")}</div>`;
   h+=`</section>`;
-  if(m.changes)h+=`<section><h2>和上季相比，说法有什么变化 <small>WHAT CHANGED</small></h2><div class="chg">${m.changes.map(c=>`<div class="ch"><span class="tp2">${esc(c.topic)}</span>${P(c.pill,c.tone)}<div class="ba"><span>上季</span><span>${c.before}</span><span>本季</span><span>${c.now}</span></div></div>`).join("")}</div></section>`;
-  h+=`<section><h2>电话会 <small>EARNINGS CALL</small></h2><div class="call">${m.call.map(c=>`<div class="card"><h3>${esc(c.h)}</h3><ul>${c.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("")}</div></section>`;
+  if(m.changes)h+=`<section><h2>${L("changed")} <small>WHAT CHANGED</small></h2><div class="chg">${m.changes.map(c=>`<div class="ch"><span class="tp2">${esc(c.topic)}</span>${P(c.pill,c.tone)}<div class="ba"><span>${L("before")}</span><span>${c.before}</span><span>${L("now")}</span><span>${c.now}</span></div></div>`).join("")}</div></section>`;
+  h+=`<section><h2>${L("call")} <small>EARNINGS CALL</small></h2><div class="call">${m.call.map(c=>`<div class="card"><h3>${esc(c.h)}</h3><ul>${c.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("")}</div></section>`;
   return h;
 }
 
-function mInsider(x){return `<section><h2>内部人动向 <small>INSIDER FLOW</small></h2><div class="empty"><b>${esc(x.title)}</b><span>${x.text}</span></div></section>`}
+function mInsider(x){return `<section><h2>${L("insider")} <small>INSIDER FLOW</small></h2><div class="empty"><b>${esc(x.title)}</b><span>${x.text}</span></div></section>`}
 
-const TABS=[["results","业绩"],["valuation","估值"],["management","管理层"],["insider","内部人"]];
+const TABS=["results","valuation","management","insider"];
 async function company(t,q,tab){
-  const idx=INDEX.find(c=>c.t===t);if(!idx)return `<div class="empty"><b>没有找到 ${esc(t)}</b><span>试试上方搜索。</span></div>`;
-  q=idx.quarters.includes(q)?q:idx.latest;tab=TABS.some(x=>x[0]===tab)?tab:"results";
-  const [co,r,pr]=await Promise.all([getJSON(`data/companies/${t}.json`),getJSON(`data/reports/${t}/${q}.json`),getJSON(`data/promises/${t}.json`)]);
+  const idx=INDEX.find(c=>c.t===t);if(!idx)return `<div class="empty"><b>${L("nf",esc(t))}</b><span>${L("nfTry")}</span></div>`;
+  q=idx.quarters.includes(q)?q:idx.latest;tab=TABS.includes(tab)?tab:"results";
+  const [co,r,pr]=await Promise.all([getJSON(`${DATA()}companies/${t}.json`),getJSON(`${DATA()}reports/${t}/${q}.json`),getJSON(`${DATA()}promises/${t}.json`)]);
   const R=r.results,parts={
     results:(R.volprice?mVolPrice(R.volprice):"")+mSegments(R.segments,co,q)+(R.extras||[]).map(mExtra).join("")+mTrends(R.trends,co,q),
     valuation:mValuation(r.valuation,co,q),
     management:mManagement(r.management,pr,q),
     insider:mInsider(r.insider)};
   document.title=`${co.t} ${co.n} ${qLabel(q)} · April's Earnings Lens`;
-  return {html:hero(co,r,idx)+`<nav class="tabs" role="tablist" aria-label="页面分区">${TABS.map(([k,n])=>`<a role="tab" href="#${t}.${q}.${k}" aria-selected="${k===tab}">${n}</a>`).join("")}</nav>
+  return {html:hero(co,r,idx)+`<nav class="tabs" role="tablist" aria-label="${L("sections")}">${TABS.map(k=>`<a role="tab" href="#${t}.${q}.${k}" aria-selected="${k===tab}">${L("tab."+k)}</a>`).join("")}</nav>
     <div class="tp" role="tabpanel">${parts[tab]}</div>
-    <footer><span>本页仅为信息整理，不构成投资建议。数据截至 ${esc(r.asOf)}。</span><span>来源</span><ol>${r.sources.map(s=>`<li><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a></li>`).join("")}</ol></footer>`,
+    <footer>${r._zhOnly?`<span class="zh-only">${L("zhOnly")}</span>`:""}<span>${L("foot",esc(r.asOf))}</span><span>${L("src")}</span><ol>${r.sources.map(s=>`<li><a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a></li>`).join("")}</ol></footer>`,
     after:()=>{if(tab==="valuation")wireSotp(r.valuation.sotp)}};
 }
 
@@ -384,8 +426,10 @@ async function route(){
     app.innerHTML=`<div class="tp">${res.html}</div>`;res.after();
     if(key!==lastKey)window.scrollTo(0,0);else if(stuck)app.querySelector("nav.tabs").scrollIntoView({block:"start"});
     lastKey=key;
-  }catch(e){app.innerHTML=`<div class="empty"><b>数据没有加载成功</b><span>请刷新页面再试。（${esc(e.message)}）</span></div>`}
+  }catch(e){app.innerHTML=`<div class="empty"><b>${L("err")}</b><span>${L("errTry")} (${esc(e.message)})</span></div>`}
 }
 window.addEventListener("hashchange",route);
-getJSON("data/index.json").then(d=>{INDEX=d.companies;route()}).catch(()=>{$("#app").innerHTML=`<div class="empty"><b>数据没有加载成功</b><span>请刷新页面再试。</span></div>`});
+function boot(){INDEX=[];lastKey="";paintUI();getJSON(DATA()+"index.json").then(d=>{INDEX=d.companies;route()}).catch(()=>{$("#app").innerHTML=`<div class="empty"><b>${L("err")}</b><span>${L("errTry")}</span></div>`})}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>{if(b.dataset.l===LANG)return;LANG=b.dataset.l;try{localStorage.setItem("sif-lang",LANG)}catch(e){}boot()}));
+boot();
 </script>

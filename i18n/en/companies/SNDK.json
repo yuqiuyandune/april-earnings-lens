@@ -1,0 +1,43 @@
+{
+ "n": "Sandisk",
+ "config": {
+  "segmentBasis": "By end market: Datacenter, Edge (phones, PCs, auto, IoT) and Consumer",
+  "fiscalNote": "Fiscal year ends near the end of June; FY2027 Q1 = July–September 2026. Quarter keys on this site follow calendar quarters. 8-for-1 split from 20 November 2026; all per-share figures here are pre-split",
+  "kpis": [
+   "Revenue and datacenter revenue",
+   "Non-GAAP gross margin",
+   "Share of bits under NBM contracts",
+   "Adjusted free cash flow",
+   "Buybacks"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "dc": {
+    "t": "Datacenter revenue"
+   },
+   "edge": {
+    "t": "Edge revenue"
+   },
+   "cons": {
+    "t": "Consumer revenue"
+   },
+   "gm": {
+    "t": "Gross margin (non-GAAP)"
+   },
+   "eps": {
+    "t": "EPS (non-GAAP, pre-split)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

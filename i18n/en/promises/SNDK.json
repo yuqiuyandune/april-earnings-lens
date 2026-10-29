@@ -1,0 +1,67 @@
+[
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 call)",
+  "text": "FY27 Q1 revenue of $10.3–10.8B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $11.03B, 2% above the top of the range. About 60% of the sequential growth came from volume and 40% from price."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 call)",
+  "text": "Non-GAAP gross margin 83–85%, EPS $44–46",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Gross margin 85.1%, just above the range; EPS $49.51, 8% above the top."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Investor Day)",
+  "text": "After investing, return 100% of excess cash; stay debt-free",
+  "dueLabel": "Long term",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "$5.0B of buybacks this quarter, about 3.2M shares; about 4% of shares bought back over two quarters. $5.1B cash, no debt."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Investor Day)",
+  "text": "NBM contracts cover about half of FY27 bits and two-thirds of FY28 bits",
+  "dueLabel": "FY2028",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Ratios unchanged; the CFO said the final share is “likely higher”. Some customers came back for a second tranche, and the pipeline exceeds supply through 2030."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Investor Day)",
+  "text": "HBF (high-bandwidth flash) samples in 2027, not in the long-term model",
+  "dueLabel": "2027",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "First HBF memory die taped out and in fabrication; samples still planned for 2027."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (FY27 Q1 call)",
+  "text": "FY27 Q2 revenue $12.2–12.6B, gross margin 84.5–85.5%, EPS $55–57 (pre-split)",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Oct 2026 (FY27 Q1 call)",
+  "text": "FY27 capex in the mid-single digits of revenue; bit output growth stays mid-to-high teens, no faster node transitions",
+  "dueLabel": "FY2027"
+ }
+]
