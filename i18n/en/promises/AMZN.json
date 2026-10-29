@@ -1,0 +1,66 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 revenue of $197.0–202.0B, +9–12% y/y (Prime Day moved to Q2, about a 4-point effect)",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Actual $201.94B, near the top of the range, +12% y/y."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 operating income of $22.5–26.5B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $28.08B, 6% above the top of the range; 13.9% operating margin, the highest in company history."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "2026 cash capex of about $220B",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Kept this quarter. $172.2B already spent in three quarters, so $220B leaves only about $48B for Q4, about 40% less than Q3's $75.9B; management didn't explain the gap, only that 2027 will be “meaningfully more”."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Amazon Leo satellite internet begins initial service this year",
+  "dueLabel": "end-2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Still on track to start this year, but capitalizing its costs now starts in Q1 2027, so most Leo costs are still expensed in Q4."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Q4 revenue of $240–247B (+12–16%), operating income of $28.5–33.5B; ad growth back to the high teens",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "AWS grows more than 40% in each of 2027 and 2028, and becomes a trillion-dollar revenue business within 5–10 years",
+  "dueLabel": "2027–2028"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "2027 capex “meaningfully more” than 2026",
+  "dueLabel": "2027"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Start selling Trainium chips outside AWS in late 2027",
+  "dueLabel": "late 2027"
+ }
+]

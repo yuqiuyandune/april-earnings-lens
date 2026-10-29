@@ -14,7 +14,7 @@
    "k": "EPS (GAAP)",
    "val": "$2.12",
    "exp": "est. $3.02",
-   "pill": "$2.67 excl. investment loss, −12%"
+   "pill": "$2.67 ex-loss, −12%"
   },
   {
    "k": "Google Cloud revenue",
@@ -26,7 +26,7 @@
    "k": "Free cash flow",
    "val": "−$9.07B",
    "exp": "a year ago +$24.46B",
-   "pill": "negative two quarters running"
+   "pill": "negative 2 quarters"
   }
  ],
  "points": [

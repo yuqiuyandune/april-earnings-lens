@@ -1,0 +1,400 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "after the close, 29 Oct 2026",
+ "asOf": "after-hours price of $230.60 on 29 Oct 2026 (6:08 pm ET, StockAnalysis), close $243.79",
+ "headline": "AWS accelerates to 39% with a $578B backlog, but it spent $75.9B in a quarter: Amazon is the biggest borrower in this build-out",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$201.94B",
+   "exp": "est. $202.22B"
+  },
+  {
+   "k": "EPS (GAAP)",
+   "val": "$1.89",
+   "exp": "est. $1.97"
+  },
+  {
+   "k": "AWS revenue",
+   "val": "$45.98B",
+   "exp": "a year ago $33.01B",
+   "pill": "+39%, fastest in ~5 years"
+  },
+  {
+   "k": "Q3 free cash flow",
+   "val": "−$33.5B",
+   "exp": "a year ago +$1.3B",
+   "pill": "TTM −$42.4B"
+  }
+ ],
+ "points": [
+  {
+   "b": "AWS is selling",
+   "t": "Growth accelerated for a sixth straight quarter to 39%, with a $578B backlog growing triple digits; management says it can grow 40%+ in each of 2027 and 2028."
+  },
+  {
+   "b": "The money is borrowed",
+   "t": "Q3 cash capex of $75.9B was 179% of operating cash flow; long-term debt rose from $65.6B to $173.1B in nine months."
+  },
+  {
+   "b": "Investing in both labs",
+   "t": "A major Anthropic shareholder that has also committed up to $50B to OpenAI; both have made multi-gigawatt commitments to AWS's own Trainium chips."
+  }
+ ],
+ "reaction": "Stock: closed at $254.60 the day before; on report day it fell 4.3% to $243.79 (Benzinga cited worries that AI shopping assistants could disrupt retail), then fell to <b>$230.60 (−5.4%)</b> after hours. Revenue and EPS were slightly below expectations (the EPS shortfall reflects smaller investment gains than a year ago), while operating income beat by a wide margin. The first question on the call was why AWS added only $3.8B quarter on quarter ($4.6B in Q2); management said capacity additions vary each quarter, and gave a 40%+ growth target for 2027 and 2028. Next-day close to be added. Consensus from Benzinga: revenue $202.22B, EPS $1.97.",
+ "results": {
+  "segments": {
+   "title": "By segment",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Of the $21.8B of added revenue, <b>AWS was 60%</b>. The two retail segments grew only in single digits because Prime Day moved into Q2; excluding it, company growth would be about 4 points higher.",
+   "bridge": [
+    {
+     "n": "AWS"
+    },
+    {
+     "n": "North America"
+    },
+    {
+     "n": "International"
+    }
+   ],
+   "rows": [
+    {
+     "n": "AWS",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Operating income of $17.77B, 63% of the company total; a 38.7% margin, 0.7 points below Q2. AI revenue grew triple digits and inference is now more than half of AWS AI revenue; core compute and storage grew at their fastest rates in several years."
+    },
+    {
+     "n": "North America",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Operating income $8.72B, a 7.7% margin (4.5% a year ago). Ads of $19.6B grew 12% (Prime Day and NBA timing cost about 8.5 points; Q4 expected back in the high teens). Fresh groceries and everyday essentials grow about 3x faster than other categories and are half of units."
+    },
+    {
+     "n": "International",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "ex-FX"
+      }
+     ],
+     "why": "Operating income $1.58B, a 3.7% margin."
+    }
+   ],
+   "note": "Worldwide paid units +12%, about +15% year to date. Shipping costs +11%, only +8% excluding fuel and line-haul inflation, about 4 points slower than units: cost to serve per unit keeps falling."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Amazon plays more roles in this chain than anyone: <b>it pays to build data centers, borrows, invests in two AI labs, and sells compute and its own chips</b>, while also paying for higher memory prices. Its cash gap is the largest of the three cloud providers that reported this week.",
+    "items": [
+     {
+      "b": "The payer",
+      "pill": "capex = 179% of operating cash flow",
+      "w": "Q3 cash capex $75.9B against $42.4B of operating cash flow: −$33.5B of free cash flow in one quarter. The same week: Google 121%, Microsoft 68%. About $220B for the year and “meaningfully more” in 2027. The CEO said an AI accelerator is installed every 14 seconds and “almost as fast as we install capacity, customers are gobbling it up”."
+     },
+     {
+      "b": "The borrower",
+      "pill": "long-term debt +$107.5B",
+      "w": "Long-term debt rose from $65.6B to $173.1B in nine months, with $48.1B issued in Q3; a $17.5B delayed-draw term loan was signed in June and sterling bonds were sold in September. Q3 interest expense was $1.69B versus $0.54B a year ago. The CEO: “We can fund this plan.”"
+     },
+     {
+      "b": "The lab investor",
+      "pill": "Anthropic + OpenAI",
+      "w": "Q2 non-operating income of $53.4B came “primarily from our investments in Anthropic”; in February it committed $15B to OpenAI plus up to $35B more (mandatory when OpenAI hits milestones or lists, by end-2028). In Q2 the company said Anthropic and OpenAI both made multi-year, multi-gigawatt Trainium commitments: part of the money Amazon invests comes back to AWS as compute orders."
+     },
+     {
+      "b": "Selling compute and chips",
+      "pill": "backlog $578B",
+      "w": "AWS backlog grew triple digits and is “well-diversified”; new customers include Meta, NVIDIA, OpenAI and Oracle. Chunks of hundreds of megawatts to a gigawatt are reserved well in advance, so it has “very good visibility” into 2027, 2028 and part of 2029. Trainium and Graviton revenue commitments each grew more than 20x, and Trainium goes on external sale in late 2027, competing directly with NVIDIA and Google's TPUs."
+     },
+     {
+      "b": "Paying for price rises",
+      "pill": "memory + fuel",
+      "w": "The release lists “supply volatility, including for memory chips” as a risk; the CFO called component pricing a headwind to AWS margins, and AI itself runs at lower margins than core cloud. The same day Sandisk reported an 85% gross margin. The CEO also took a swipe at neoclouds: renting their facilities costs about 3,500 basis points of operating margin."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Amazon's future rests almost entirely on AWS: <b>management gave a rare two-year growth target (40%+ a year)</b>, backed by pre-booked large deals and its own chips. The real variable is how much that growth costs and how much margin holds.",
+    "items": [
+     {
+      "b": "Volume: capacity drives revenue",
+      "pill": "big deals booked into 2029",
+      "w": "AWS runs at $184B annualized. At 40%, that is about $360B annualized by end-2028. Management said a lot of capacity is already lined up for the next 8–10 quarters; additions vary by quarter, so sequential gains swing ($3.8B this quarter versus $4.6B in Q2)."
+     },
+     {
+      "b": "Margin: AI lower, own chips pull it back",
+      "pill": "AWS 38.7%",
+      "w": "The CFO gives no margin guidance: a rising AI mix pulls overall margins down and component prices such as memory are a headwind; the offsets are Trainium, Graviton and owned or long-leased data centers. Most of Bedrock runs on Trainium, and management says its margins are good."
+     },
+     {
+      "b": "New businesses",
+      "pill": "chips + Bedrock",
+      "w": "External Trainium sales from late 2027; the CEO thinks Bedrock could be as large as EC2, and Fortune 500 spending on Bedrock grew nearly 7x in a year. Leo satellite service starts this year, and Zoox operates in 12 cities."
+     },
+     {
+      "b": "Retail is improving too",
+      "pill": "margins up ~10 points",
+      "w": "North America and International operating margins have each risen nearly 10 points in recent years; about 80% of US retail is still in physical stores. Same-day fresh groceries, pharmacy (customers +60%) and the Alexa shopping assistant (400M users) are next. Management says external AI shopping agents have “no” meaningful impact on ads so far."
+     },
+     {
+      "b": "Company targets",
+      "pill": "two trillion-dollar businesses",
+      "w": "CEO: AWS grows 40%+ in each of 2027 and 2028 and exceeds $1T of annual revenue within 5–10 years; retail is also on a path to $1T. No numbers on margins, capex or free cash flow."
+     },
+     {
+      "b": "What could break it",
+      "pill": "customers = investees",
+      "w": "The largest AI customers (Anthropic, OpenAI) are also companies Amazon invests in, and their ability to pay depends on raising more money. Watch backlog growth, whether Q4 capex really drops to about $48B, how much more long-term debt is added, memory prices, and whether AWS margin falls below 35%."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Six straight quarters of acceleration, fastest in ~5 years"
+   },
+   {
+    "why": "Rising AI mix; 0.7 points below Q2"
+   },
+   {
+    "why": "More than doubled in a year; $75.9B in Q3 alone"
+   },
+   {
+    "why": "Negative three quarters running; −$42.4B over four"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "At the after-hours price the forward P/E is about <b>26x</b>, <b>below all of the last 20 quarter ends</b> (median about 44x). On operating income it is about 31x. The reason is the same as Google's: free cash flow was −$42.4B over the past year, and the market is waiting for this capex to turn into cash first.",
+  "tiles": [
+   {
+    "k": "Forward P/E",
+    "f": "$230.60 ÷ next-twelve-month consensus EPS of about $8.90 (StockAnalysis)"
+   },
+   {
+    "k": "P/E on operating income",
+    "f": "$230.60 ÷ (TTM operating income $104.4B × (1 − 21%) ÷ 10.93B shares = $7.54); GAAP TTM 18.6x including Anthropic gains"
+   },
+   {
+    "k": "EV / operating income",
+    "f": "EV ≈ $2.55T ÷ TTM operating income $104.4B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "v": "negative",
+    "pill": "TTM FCF −$42.4B",
+    "f": "market cap ≈ $2.49T; operating cash flow $168.3B, capex $210.7B"
+   }
+  ],
+  "forward": {
+   "title": "2026 from company guidance",
+   "sub": "only next-quarter guidance is given",
+   "steps": [
+    "Operating income of $79.39B in three quarters + the Q4 guided midpoint of <b>$31.0B</b> → about <b>$110.4B</b> for the year, a margin of about 13.3%",
+    "Revenue of $584.07B in three quarters + the Q4 midpoint of $243.5B → about <b>$827.6B</b>",
+    "Capex of about $220B → $172.2B in three quarters, so about <b>$48B</b> in Q4; if Q4 matched Q3's $75.9B, the year would be about $248B"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast. The company didn't explain the Q4 capex gap."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2027 profits",
+   "sub": "2026 revenue about $827.6B (AWS about $175.6B)",
+   "head": [
+    "Case",
+    "AWS growth",
+    "AWS margin",
+    "Retail margin",
+    "EPS"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+30%",
+      "32%",
+      "6.5%",
+      "$8.17"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+40%",
+      "36%",
+      "7.5%",
+      "$9.86"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+45%",
+      "38%",
+      "8.5%",
+      "$11.05"
+     ]
+    }
+   ],
+   "note": "The base case follows management's “AWS 40%+ in 2027”, with margin slightly lower as the AI mix rises and memory costs more; retail (North America + International) revenue grows 8–12% with margins improving on ads and delivery costs. EPS = (operating income − about $5B of net interest) × (1 − 21%) ÷ 11.0B shares, excluding paper gains or losses on Anthropic, OpenAI and other investments. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2027 EPS × our P/E; excludes investment gains",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "AWS slows, 22x"
+    },
+    {
+     "n": "Base",
+     "how": "AWS +40%, 28x"
+    },
+    {
+     "n": "Bull",
+     "how": "margins hold, 32x"
+    }
+   ],
+   "why": "The after-hours price is slightly above the top of the zone: buying now, the base case gains about 20% and the bear case loses about 22%, so reward and risk are about even. The low end equals the bear-case price; buying near it, there is little downside even if AWS slows and margins are squeezed. The multiples used (22–32x) are all below the five-year median of 44x because capex and debt are far larger than in the past.",
+   "note": "Multiples apply to 2027 EPS. If the Anthropic, OpenAI and other stakes are realized in a listing or funding round, they would add value not counted here."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
+   "note": "About 26x at the after-hours price, <b>below every one of the last 20 quarter ends</b>; the lowest was 26.9x at the end of March this year. Five years ago Amazon's profits were thin and multiples high, so the 44x median is of limited use; but the steady decline shows the market increasingly prices it as a capital-heavy company. The current value uses pre-report consensus EPS of about $8.90. StockAnalysis data."
+  },
+  "cash": {
+   "title": "Capex eats all the cash",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Capex / operating cash flow",
+     "v": "179%"
+    },
+    {
+     "k": "Long-term debt",
+     "v": "$173.1B"
+    },
+    {
+     "k": "Cash and marketable securities",
+     "v": "$114.2B"
+    }
+   ],
+   "note": "Another $24.0B went into acquisitions and non-marketable investments in Q3 ($63.8B year to date), mainly stakes in AI companies. “Other assets” on the balance sheet rose from $122.6B to $358.8B in nine months, and accumulated other comprehensive income from $28.2B to $102.3B, mostly unrealized investment gains. Another $26.8B of equipment has been acquired but not yet paid for."
+  },
+  "calc": [
+   "Price $230.60: 29 Oct after hours (StockAnalysis, 6:08 pm ET), close $243.79; 10.811B shares outstanding, market cap ≈ $2.49T",
+   "EV = market cap + long-term debt $173.1B − cash and marketable securities $114.2B ≈ $2.55T (excluding lease liabilities)",
+   "TTM = 2025 Q4 to 2026 Q3: operating income $104.37B; GAAP EPS $12.37 (including about $53.4B of Q2 non-operating gains); revenue $797.46B",
+   "Operating-income EPS = $104.37B × (1 − 21%) ÷ 10.929B shares ≈ $7.54",
+   "TTM free cash flow = operating cash flow $168.30B − net capex $210.66B = −$42.36B (company definition)",
+   "Quarterly capex from the cash flow statement: Q3 $77.26B − $1.38B = $75.88B; Q2 $53.08B; Q1 $43.23B; Q4'25 $38.47B",
+   "Forward P/E: 27.38x at the close (StockAnalysis), implying EPS = $243.79 ÷ 27.38 ≈ $8.90; after hours $230.60 ÷ $8.90 ≈ 25.9x; the median is over the last 20 quarter ends, 44.5x",
+   "Scenarios: AWS 2026 = $125.8B in three quarters + about $49.8B in Q4 (Q3 plus another $3.8B); retail = full-year revenue − AWS ≈ $652B; price = EPS × multiple, rounded"
+  ],
+  "next": "The post-report price decomposition will be added after the next day's close."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "AWS growth",
+    "pill": "first two-year target",
+    "before": "Only that demand is strong and capacity is growing.",
+    "now": "AWS grows 40%+ in each of 2027 and 2028 and passes $1T of annual revenue within 5–10 years, because large deals are booked in advance with some visibility into 2029."
+   },
+   {
+    "topic": "Capex",
+    "pill": "more in 2027",
+    "before": "Q2 raised 2026 to about $220B, with nothing said on 2027.",
+    "now": "2026 kept at about $220B, 2027 “meaningfully more”; “we can fund this plan”."
+   },
+   {
+    "topic": "Chips",
+    "pill": "external sales",
+    "before": "Trainium only used inside AWS, rented to customers.",
+    "now": "External sales from late 2027; the CEO said selling recognizes revenue faster, while using chips in-house earns more over 5–6 years, and the balance will be revisited every year."
+   },
+   {
+    "topic": "AI shopping",
+    "pill": "addressed directly",
+    "before": "Had not directly addressed the impact of external AI shopping agents.",
+    "now": "External AI shopping agents have “no” meaningful impact on ads yet; 400M people have used the Alexa shopping assistant, and users spend 50% more per order."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "AWS backlog of $578B, growing triple digits; an AI accelerator installed every 14 seconds",
+     "Inference is already more than half of AWS AI revenue, and enterprise inference at scale is “very early”",
+     "Custom chips saved customers more than $2B this quarter; Trainium and Graviton revenue commitments each up more than 20x",
+     "The CEO said retail operating margins including ads are already double digits; cost to serve per unit falls for a fourth straight year"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "How much capex 40% growth requires: only “meaningful”, “a once in a lifetime opportunity” (J.P. Morgan)",
+     "AWS margins over the next two years: the CFO explicitly gave no guidance (Evercore)",
+     "Why AWS sequential growth slowed: only that capacity additions vary by quarter (BofA)",
+     "How much Trainium to sell outside versus keep inside: “we'll be thinking through that balance every year” (Goldman Sachs)"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Q4 revenue of $240–247B and operating income of $28.5–33.5B",
+     "Whether Q4 capex really is only about $48B, and the 2027 capex guide",
+     "AWS backlog and sequential revenue added",
+     "Changes in long-term debt and investments in AI companies"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "AWS growth falls back below 35% while capex keeps rising",
+     "Backlog growth slows clearly, or large customers (Anthropic, OpenAI) delay taking capacity",
+     "AWS margin falls below 35%: AI and memory costs outweigh the custom-chip advantage",
+     "Heavy bond issuance continues while retail margins stop improving"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "In the 30 days before the report (9/29–10/28) there was only one planned sale: Worldwide Stores CEO Doug Herrington sold about $0.25M on 1 Oct under a 10b5-1 plan, which we don't count as an effective trade. No open-market buys. The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/AMZN.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "Amazon: 2026 Q3 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Amazon: 2026 Q2 earnings release (Q3 guidance, Anthropic gains)"
+  },
+  {
+   "t": "Amazon: OpenAI investment commitment (SEC 8-K, Feb 2026)"
+  },
+  {
+   "t": "Amazon: $17.5B delayed-draw term loan (SEC 8-K, Jun 2026)"
+  },
+  {
+   "t": "StockAnalysis: 2026 Q3 earnings call transcript"
+  },
+  {
+   "t": "Benzinga: consensus estimates"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "n": "Amazon",
+ "config": {
+  "segmentBasis": "Three segments: North America, International (stores, ads, subscriptions, etc.) and AWS (cloud)",
+  "fiscalNote": "Calendar fiscal year",
+  "kpis": [
+   "AWS revenue and growth",
+   "AWS operating margin",
+   "AWS backlog",
+   "Cash capex / operating cash flow",
+   "Long-term debt and investments in AI companies"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "aws": {
+    "t": "AWS revenue"
+   },
+   "awsg": {
+    "t": "AWS growth (ex-FX)"
+   },
+   "awsm": {
+    "t": "AWS operating margin"
+   },
+   "na": {
+    "t": "North America revenue"
+   },
+   "intl": {
+    "t": "International revenue"
+   },
+   "om": {
+    "t": "Operating margin"
+   },
+   "capex": {
+    "t": "Cash capex"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}
