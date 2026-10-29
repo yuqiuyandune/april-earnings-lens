@@ -1,0 +1,52 @@
+{
+ "n": "Alphabet",
+ "config": {
+  "segmentBasis": "Google Services (Search, YouTube, subscriptions and devices, ad network) + Google Cloud (including TPU system sales) + Other Bets",
+  "fiscalNote": "Calendar fiscal year",
+  "kpis": [
+   "Google Cloud revenue and margin",
+   "Cloud backlog",
+   "Capex / operating cash flow",
+   "External financing (debt, equity)",
+   "Non-marketable equity investments"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Why profit didn't keep up"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "cloud": {
+    "t": "Google Cloud revenue"
+   },
+   "clm": {
+    "t": "Cloud operating margin"
+   },
+   "om": {
+    "t": "Operating margin (GAAP)"
+   },
+   "eps": {
+    "t": "EPS (GAAP, incl. investment gains)"
+   },
+   "capex": {
+    "t": "Capex"
+   },
+   "ocf": {
+    "t": "Operating cash flow"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   },
+   "search": {
+    "t": "Search revenue"
+   },
+   "yt": {
+    "t": "YouTube ads"
+   }
+  }
+ }
+}

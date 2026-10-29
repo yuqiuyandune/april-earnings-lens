@@ -1,0 +1,67 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 subscription revenue of $3.975–3.98B, +20% in constant currency",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $3.988B, +20.5% in constant currency, above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 cRPO +20% in constant currency",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual +21%, but the CFO said about half of the beat came from early renewals pulled in from Q4."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Q3 non-GAAP operating margin of 31%",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual 32.5%, 1.5 points above guidance."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jan 2026 (2025 Q4 call)",
+  "text": "AI annual contract value (AI ACV) reaches $1B by end-2026",
+  "dueLabel": "end-2026",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Passed $1B in Q2; the target was raised to $1.5B in May and now to <b>more than $1.7B</b>. Net new AI ACV grew 65% y/y in Q3."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "2026 subscription revenue of $15.76–15.78B; free cash flow margin 35%",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "The subscription midpoint rose only $15M to $15.785B, passing through just half of this quarter's beat; the free cash flow margin was raised to 36% because capex is lower."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Q4 subscription revenue of $4.245–4.255B (+21.5% constant currency), cRPO +18.5%, operating margin 32%",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "AI momentum brings “real acceleration” in 2027",
+  "dueLabel": "2027"
+ }
+]

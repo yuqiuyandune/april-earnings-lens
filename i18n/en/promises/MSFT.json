@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 call)",
+  "text": "FY27 Q1 Azure growth of 44–45%",
+  "dueLabel": "FY27 Q1",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual 48%, 3 points above the top of guidance and above consensus of about 45%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 call)",
+  "text": "FY27 Q1 revenue of $89.85–90.95B",
+  "dueLabel": "FY27 Q1",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $92.28B, 1.5% above the top of guidance."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 call)",
+  "text": "FY27 Q1 capex (including finance leases) above $50B",
+  "dueLabel": "FY27 Q1",
+  "checks": [
+   {
+    "status": "Missed",
+    "note": "Actual $45.2B (including $7.4B of new finance leases), below guidance because some third-party compute deliveries slipped into the second half of the fiscal year. Q2 is again guided above $50B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (FY27 Q1 call)",
+  "text": "FY27 Q2 revenue of $96.0–97.1B, Azure growth 49–50% (constant currency), operating margin slightly down y/y",
+  "dueLabel": "FY27 Q2"
+ },
+ {
+  "saidLabel": "Oct 2026 (FY27 Q1 call)",
+  "text": "Q2 capex above $50B, about $170B for calendar 2026; FY27 free cash flow positive",
+  "dueLabel": "FY27"
+ }
+]

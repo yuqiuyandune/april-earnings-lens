@@ -1,0 +1,43 @@
+{
+ "n": "ServiceNow",
+ "config": {
+  "segmentBasis": "No segment reporting; revenue splits into subscription and professional services, and the business is organized by workflows such as IT, CRM, security and risk, and employee services",
+  "fiscalNote": "Calendar fiscal year; 5-for-1 split on 1 Dec 2025, earlier per-share figures adjusted",
+  "kpis": [
+   "Subscription revenue growth (constant currency)",
+   "cRPO growth",
+   "New AI annual contract value (AI ACV)",
+   "Non-GAAP operating margin",
+   "Free cash flow margin"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Why cRPO is slowing"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "sub": {
+    "t": "Subscription revenue"
+   },
+   "subg": {
+    "t": "Subscription growth (constant currency)"
+   },
+   "crpo": {
+    "t": "cRPO"
+   },
+   "crpog": {
+    "t": "cRPO growth (constant currency)"
+   },
+   "om": {
+    "t": "Operating margin (non-GAAP)"
+   },
+   "eps": {
+    "t": "EPS (non-GAAP)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

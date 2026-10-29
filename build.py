@@ -59,6 +59,9 @@ def merge(base, over):
 
 def build_langs(out: pathlib.Path):
     src = ROOT / "data"; en_src = ROOT / "i18n" / "en"
+    CAT = {"应用": "Applications", "模型与云": "Models & cloud", "芯片": "Chips", "代工与设备": "Foundry & equipment",
+           "基础设施": "Infrastructure", "能源": "Energy", "消费与平台": "Consumer & platforms", "存储": "Memory & storage"}
+
     en_done = set()
     for f in sorted(src.rglob("*.json")):
         rel = f.relative_to(src); d = json.loads(f.read_text(encoding="utf-8"))
@@ -71,11 +74,10 @@ def build_langs(out: pathlib.Path):
         else:
             d2 = dict(d) if isinstance(d, dict) else d
             if rel.parts[0] == "reports": d2["_zhOnly"] = True
+        if rel.parts[0] == "companies" and isinstance(d2, dict) and "cat" in d2: d2["cat"] = CAT.get(d2["cat"], d2["cat"])
         if rel.as_posix() == "index.json": index_en = (en, d2)
         else: en.write_text(json.dumps(d2, ensure_ascii=False), encoding="utf-8")
     en, d2 = index_en  # mark companies whose latest report has no English version yet
-    CAT = {"应用": "Applications", "模型与云": "Models & cloud", "芯片": "Chips", "代工与设备": "Foundry & equipment",
-           "基础设施": "Infrastructure", "能源": "Energy", "消费与平台": "Consumer & platforms", "存储": "Memory & storage"}
     for c in d2["companies"]:
         c["zhOnly"] = (c["t"], c["latest"]) not in en_done
         c["n"] = c.get("en") or c["n"]; c["cat"] = CAT.get(c["cat"], c["cat"])

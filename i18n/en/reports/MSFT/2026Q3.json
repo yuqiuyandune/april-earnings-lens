@@ -1,0 +1,353 @@
+{
+ "label": "FY2027 Q1 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 28 Oct 2026",
+ "asOf": "after-hours price of $543.51 on 28 Oct 2026 (7:27 pm ET, StockAnalysis)",
+ "headline": "Azure accelerates to 48%, but new contracts stalled, and Microsoft too starts talking about outside financing",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$92.28B",
+   "exp": "est. $90.6B"
+  },
+  {
+   "k": "EPS (non-GAAP)",
+   "val": "$4.89",
+   "exp": "est. $4.72"
+  },
+  {
+   "k": "Azure revenue",
+   "val": "$33.17B",
+   "exp": "est. $32.2B",
+   "pill": "+48% y/y"
+  },
+  {
+   "k": "Commercial RPO",
+   "val": "$677B",
+   "exp": "last quarter $678B",
+   "pill": "flat q/q"
+  }
+ ],
+ "points": [
+  {
+   "b": "Azure drives growth",
+   "t": "Azure revenue disclosed in dollars for the first time: $33.2B, +48% y/y, 74% of the company's added revenue; OpenAI alone brought in $10B of revenue."
+  },
+  {
+   "b": "Margins are back",
+   "t": "Operating margin of 49.8%, 4.7 points above last quarter; operating income +21%, faster than revenue's +19%."
+  },
+  {
+   "b": "New contracts stalled",
+   "t": "Commercial bookings −12% and RPO of $677B flat with last quarter; the company blamed a few huge Azure contracts in the year-ago quarter."
+  }
+ ],
+ "reaction": "Stock: closed at $531.01 (−0.1%) on report day and rose to <b>$543.51 (+2.4%)</b> after hours, at one point up 4–6%. The gain came from Azure's 48% beating expectations of about 45%, revenue and EPS beats, and 49–50% Q2 Azure guidance; it narrowed because Q2 operating margin is guided slightly down y/y and commercial bookings fell 12%. Next-day close to be added. Consensus per ZeroHedge: revenue $90.6B, EPS $4.72, Azure $32.2B.",
+ "results": {
+  "segments": {
+   "title": "By product",
+   "period": "FY27 Q1 vs FY26 Q1, $B",
+   "take": "Of the $14.6B of added revenue, <b>Azure was 74%</b>. Consumer is shrinking: Windows and devices fell 22%.",
+   "bridge": [
+    {
+     "n": "Azure"
+    },
+    {
+     "n": "M365 cloud"
+    },
+    {
+     "n": "Other commercial"
+    },
+    {
+     "n": "Search ads"
+    },
+    {
+     "n": "Licensing, Windows, etc."
+    }
+   ],
+   "rows": [
+    {
+     "n": "Azure",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Under the new definition it includes non-GPU compute, data, storage, networking and security, plus GPU compute rental and the Foundry model platform."
+    },
+    {
+     "n": "Microsoft 365 cloud",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Commercial +17% (+18% excluding a one-time item last year), consumer +17%."
+    },
+    {
+     "n": "Industry solutions and frontier support",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Industry cloud (Dynamics etc.) $5.34B +9%, frontier and support services $2.11B +4%."
+    },
+    {
+     "n": "Search and advertising",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "+12% excluding traffic acquisition costs."
+    },
+    {
+     "n": "Productivity and server licenses",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "One-time Office and server licenses; customers keep moving to cloud subscriptions."
+    },
+    {
+     "n": "Windows OEM, devices and Xbox",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Windows and devices $3.55B −22%, Xbox $5.38B −2%."
+    }
+   ],
+   "note": "From FY27 Microsoft reports two segments: Agents and Infra $76.79B (+25%, 52.8% operating margin) and Devices and Consumer $15.48B (−3%, 34.6%). Prior quarters are restated on the new basis, and the Azure growth definition changed with them."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Like Google, Microsoft pays to build data centers and can still afford it; but it is <b>also OpenAI's shareholder and largest supplier</b>, and it has started moving part of the spending off its own balance sheet through leases, third-party compute and financing.",
+    "items": [
+     {
+      "b": "The payer",
+      "pill": "capex = 68% of operating cash flow",
+      "w": "Capex (including finance leases) was $45.2B, of which $7.4B was new finance leases; cash purchases of property and equipment were $39.4B (doubled y/y). About three-quarters is short-lived assets such as CPUs and GPUs, which also includes higher memory and storage prices. Q2 capex above $50B, about $170B for calendar 2026."
+     },
+     {
+      "b": "Outside financing",
+      "pill": "first time said",
+      "w": "CFO: FY27 free cash flow stays positive, but the company will use additional financing when it is “attractive and makes sense”. Asked how, she said leases are “already in use”, the bond market is “not yet tapped”, and “there are other options”. Q2 other income is about −$0.3B because interest income no longer covers interest on data-center finance leases."
+     },
+     {
+      "b": "Renting from others",
+      "pill": "third-party compute delayed",
+      "w": "Operating lease liabilities rose $5.2B in a quarter; part of the GPU-as-a-Service compute rented from third parties slipped into the second half of the fiscal year, which kept capex at $45.2B, below the “above $50B” guide. Per the FY26 annual report, Microsoft also advanced $27.8B for server component purchases and has $11.3B of restricted investment under a supplier agreement."
+     },
+     {
+      "b": "The seller: OpenAI",
+      "pill": "$10B this quarter",
+      "w": "The 10-Q shows $10B of revenue from OpenAI this quarter (including revenue share), about 11% of total revenue; OpenAI's receivable to Microsoft rose from $6.0B to $7.2B. Microsoft owns about 24% of OpenAI, has committed $13B and funded $12B. In October 2025 OpenAI also committed to buy another $250B of Azure, counted in RPO."
+     },
+     {
+      "b": "Choosing customers",
+      "pill": "“not a business”",
+      "w": "Nadella: relying on “four customers buying a lot of compute” for a few quarters of growth “is not a business, in my view”; for big customers, “if the price is right we sell some, if not we're patient and build breadth”. That differs from Google, which actively sells TPU systems to AI labs."
+     }
+    ]
+   },
+   {
+    "title": "Why bookings stalled",
+    "take": "Revenue is accelerating but new contracts are shrinking; the company blames last year's huge contracts and warns bookings will swing widely.",
+    "items": [
+     {
+      "b": "Commercial bookings",
+      "pill": "−12% y/y",
+      "w": "The CFO said the year-ago quarter had several very large Azure commitments, a high base; this quarter also included one large Azure contract, customer not named. She said Q2 bookings will also be affected by last year's large contracts."
+     },
+     {
+      "b": "RPO",
+      "pill": "$678B → $677B",
+      "w": "July–September is usually a seasonal low for RPO, and this time the decline was smaller than usual because of the large contract. The part recognized within 12 months grew 29%, the part beyond 12 months 98%: growth is concentrated far out."
+     },
+     {
+      "b": "M365 seats",
+      "pill": "+5%",
+      "w": "Paid commercial seats grew only 5%, with weak execution on standard suites like E3; growth comes mainly from higher-priced Copilot, E5 and E7 suites and usage pricing."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Three straight quarters of acceleration; 48% is on the new definition"
+   },
+   {
+    "why": "Back from 45.1% to 49.8%"
+   },
+   {
+    "why": "Flat in the latest quarter after last Q4's jump"
+   },
+   {
+    "why": "Doubled in a year, before finance leases"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "At the after-hours price, about <b>30x</b> trailing earnings and about 27x forward, below its five-year median of 30x. Versus Google: similar multiples, but Microsoft generated $60.0B of free cash flow over the past year (a 1.5% yield) versus Google's $19.7B. <b>Microsoft still earns its own money, while part of Google's is already borrowed</b>; though Microsoft has also started talking about outside financing.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "f": "$543.51 ÷ TTM EPS $18.04 (GAAP 28.4x)"
+   },
+   {
+    "k": "Annualized P/E (non-GAAP)",
+    "f": "$543.51 ÷ (Q1 EPS $4.89 × 4)"
+   },
+   {
+    "k": "EV / operating income",
+    "f": "EV ≈ $4.01T ÷ TTM operating income $163.2B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 1.5%",
+    "f": "market cap ≈ $4.04T ÷ TTM FCF $60.0B"
+   }
+  ],
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Capex / operating cash flow",
+     "v": "68%"
+    },
+    {
+     "k": "Cash and short-term investments",
+     "v": "$64.5B"
+    },
+    {
+     "k": "Debt",
+     "v": "$35.5B"
+    }
+   ],
+   "note": "Cash and short-term investments fell $12.3B from last quarter; $4.9B of debt was repaid, $4.4B of stock bought back and $6.8B paid in dividends. Operating cash flow was $58.0B (+29%), from cloud billings and collections. FY27 free cash flow is still guided positive."
+  },
+  "calc": [
+   "Price $543.51: 28 Oct after hours (StockAnalysis, 7:27 pm ET), close $531.01; 7.427B shares, market cap ≈ $4.04T; net cash = $64.51B − $35.48B debt ≈ $29.0B; EV ≈ $4.01T",
+   "TTM = FY26 Q2 to FY27 Q1: non-GAAP EPS $4.14 + $4.27 + $4.74 + $4.89 = $18.04; GAAP $5.16 + $4.27 + $4.81 + $4.92 = $19.16 (27.7x)",
+   "TTM operating income $38.28 + $38.40 + $40.60 + $45.92B = $163.2B; TTM revenue $346.4B",
+   "TTM free cash flow = operating cash flow − purchases of property and equipment: $5.88 + $15.80 + $19.64 + $18.63B = $60.0B",
+   "Azure added revenue $33.165 − $22.384B = $10.78B, 74% of the total $14.61B added",
+   "Capex / operating cash flow = $39.37B ÷ $58.00B = 68%",
+   "Forward P/E: pre-report consensus EPS = $531.01 ÷ 26.03 ≈ $20.40; $543.51 ÷ $20.40 ≈ 26.6x",
+   "Capex definitions: the reported $45.2B includes $7.4B of new finance leases (the full lease principal at commencement); $39.4B of cash purchases is the cash-flow-statement measure, and the two should not be added"
+  ],
+  "next": "The post-report price decomposition will be added after the next day's close.",
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
+   "note": "About 27x at the after-hours price, above 6 of the last 20 quarter ends; median about 30x. At the end of March and June this year it was only 20–21x, the lowest in five years. The current value uses pre-report consensus EPS (about $20.40). StockAnalysis data; quarter ends are calendar quarter ends."
+  }
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Financing",
+    "pill": "new language",
+    "before": "All capex paid from operating cash flow; only buybacks and dividends were stressed.",
+    "now": "“Use additional sources of financing when attractive”: leases already in use, bonds “not yet tapped”, other options available; interest on data-center finance leases has already turned other income negative."
+   },
+   {
+    "topic": "Bookings",
+    "pill": "new explanation",
+    "before": "Last quarter commercial bookings +10% and RPO jumped to $678B.",
+    "now": "Bookings −12%; the CFO warned huge Azure contracts make bookings “volatile” and quarterly growth “not very reflective of underlying sales execution”."
+   },
+   {
+    "topic": "Compute supply",
+    "pill": "delayed",
+    "before": "Q1 capex (including finance leases) above $50B.",
+    "now": "Q1 capex of $45.2B, below guidance: some third-party compute deliveries slipped into the second half of the fiscal year; Azure growth was held up by higher utilization of existing GPUs and CPUs, and demand still exceeds supply."
+   },
+   {
+    "topic": "Copilot",
+    "pill": "new business model",
+    "before": "Mostly priced per seat.",
+    "now": "Expanding from per-seat to usage pricing; usage-based Copilot customers grew more than 75% in a quarter, and daily active users rose nearly 50% q/q."
+   },
+   {
+    "topic": "This quarter's Azure beat",
+    "pill": "source explained",
+    "before": "Guided 44–45%.",
+    "now": "48%: partly compute freed up by engineering optimization, partly token prices above expectations; the CFO said both are “not very predictable”, and the Q2 guide still depends on finding more efficiency."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Demand still exceeds supply; in Q1 engineering optimization freed up compute from existing GPUs and CPUs, with more allocated to Foundry",
+     "Enterprise AI apps are rolling out (Unilever, Rolls-Royce, Austria's RBI); “the hype-chasing is receding”",
+     "Nadella: relying on a few large customers buying compute “is not a business”; if the price isn't right, Microsoft doesn't sell",
+     "24 new data centers this quarter, with the first NVIDIA Rubin systems installed; in-house Maia 200 delivers 1.7x the tokens per watt of GPUs"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Copilot seat count: not disclosed this quarter, only momentum in revenue and usage (BofA)",
+     "Debt or equity if financing is needed: only that leases are in use, bonds not yet tapped, other options exist (BofA)",
+     "How much of the 49–50% Q2 Azure guide depends on efficiencies not yet found and token prices: the CFO said both are hard to predict (UBS)",
+     "OpenAI is about 11% of revenue; how revenue will split between frontier models and in-house models: only the “toolbox” idea (Goldman Sachs)"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Q2 revenue of $96.0–97.1B, Azure growth 49–50%",
+     "Whether Q2 capex exceeds $50B, the share of finance leases, and any bond issuance",
+     "Revenue and receivables from OpenAI ($10B and $7.2B this quarter)",
+     "Whether commercial bookings and RPO return to growth; whether Windows OEM bottoms after falling 30%+"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "OpenAI's receivable keeps growing faster than its revenue: it is paying more slowly",
+     "RPO doesn't grow for two straight quarters while capex keeps rising",
+     "Azure growth falls back below 45%: this quarter relied on token prices and one-time efficiency gains",
+     "Third-party compute slips again, or lease liabilities keep rising fast"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (9/28–10/27). The only filing was CFO Amy Hood's sale of about <b>$3.98M</b> on 13 Oct under a 10b5-1 plan, which we don't count as an effective sale. No insider bought. The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/MSFT.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "Microsoft: FY27 Q1 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Microsoft: FY26 annual results restated for new segments (SEC 8-K)"
+  },
+  {
+   "t": "Microsoft: FY27 Q1 10-Q (OpenAI related-party revenue and receivables)"
+  },
+  {
+   "t": "Microsoft: FY26 Q4 earnings release"
+  },
+  {
+   "t": "ZeroHedge: consensus, bookings and RPO"
+  },
+  {
+   "t": "Benzinga: FY27 Q1 earnings call transcript"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  },
+  {
+   "t": "AlphaStreet: full FY27 Q1 call transcript (with Q&A)"
+  }
+ ]
+}

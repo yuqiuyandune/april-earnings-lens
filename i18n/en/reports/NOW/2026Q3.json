@@ -1,0 +1,319 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "after the close, 28 Oct 2026",
+ "asOf": "after-hours price of $124.18 on 28 Oct 2026 (7:27 pm ET, StockAnalysis)",
+ "headline": "AI contracts are growing, but overall growth is slowing: the market is starting to fear AI will eat software",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$4.106B",
+   "exp": "est. $4.09B"
+  },
+  {
+   "k": "EPS (non-GAAP)",
+   "val": "$1.00",
+   "exp": "est. $1.02"
+  },
+  {
+   "k": "AI contract value target",
+   "val": "$1.7B+",
+   "exp": "start-of-year target $1B",
+   "pill": "second raise this year"
+  },
+  {
+   "k": "Q4 cRPO guide",
+   "val": "+18.5%",
+   "exp": "this quarter +21%",
+   "pill": "2.5 points slower"
+  }
+ ],
+ "points": [
+  {
+   "b": "AI is growing",
+   "t": "Net new AI annual contract value grew 65% y/y and the full-year target went from $1B to more than $1.7B; AI deals above $1M grew 4.5x in a year."
+  },
+  {
+   "b": "The whole is slowing",
+   "t": "Q4 cRPO guided at +18.5%, 2.5 points below this quarter; full-year subscription revenue raised by only $15M."
+  },
+  {
+   "b": "Acquisitions dilute profit",
+   "t": "GAAP operating margin fell from 17% to 9.5%: $9.17B was spent this year on Armis and other acquisitions, mostly borrowed."
+  }
+ ],
+ "reaction": "Stock: closed at $150.13 (−3.0%) on report day and fell to <b>$124.18 (−17.3%)</b> after hours. Several metrics beat company guidance; what fell was Q4: cRPO growth drops from 21% to 18.5%, and full-year revenue was raised by only half of this quarter's beat. An analyst asked directly “when will AI momentum turn into overall acceleration”; management's answer was 2027. Next-day close to be added. Consensus from MarketBeat: EPS $1.02, revenue $4.09B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Almost all growth came from subscriptions; professional services lose money because the company now sends engineers for free to help large customers deploy AI.",
+   "bridge": [
+    {
+     "n": "Subscription"
+    },
+    {
+     "n": "Professional services"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Subscription revenue",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "constant currency"
+      }
+     ],
+     "why": "Includes this year's acquisitions of Armis, Veza, Moveworks and others; management did not give growth excluding acquisitions, and an analyst said it was a “slight deceleration” organically. Non-GAAP subscription gross margin 80%, versus 83% a year ago."
+    },
+    {
+     "n": "Professional services and other",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Gross margin went from +11% to −20% (non-GAAP): free AI deployment support for large customers, whose value would otherwise be booked as subscription revenue, cut about 0.25 points in Q3 and about 0.5 points in Q4."
+    }
+   ],
+   "note": "ServiceNow does not report revenue by segment. Security and risk appeared in 16 of the top 20 deals, CRM and industry workflows in 13; US federal deals above $1M grew 30% y/y."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "ServiceNow sits at the very end of the chain: <b>whether enterprises really pay for AI</b> shows up here first. The answer is that they pay, but it has not yet made total software spending bigger.",
+    "items": [
+     {
+      "b": "Enterprises are paying",
+      "pill": "AI ACV $1.7B+",
+      "w": "Net new AI annual contract value +65%, and agent usage in production grew 13x in a year. But $1.7B is only about a tenth of roughly $15.8B of full-year subscription revenue, and overall cRPO growth has not sped up."
+     },
+     {
+      "b": "Deployment needs subsidies",
+      "pill": "free engineers",
+      "w": "To get large customers live faster, the company provides deployment support for free and books less revenue upfront. Management says this is only for the “first wave of adopters” and won't last."
+     },
+     {
+      "b": "The people AI saves",
+      "pill": "$1B+ a year saved internally",
+      "w": "ServiceNow saves more than $1B a year using AI itself, and headcount dipped. Customers do the same, which pressures seat-based software: the same day Microsoft said paid M365 seats grew only 5%, with weak sales of standard suites like E3."
+     },
+     {
+      "b": "Not buying compute",
+      "pill": "capex −61%",
+      "w": "Capex was $91M this quarter versus $235M a year ago; the CEO stressed it has “no compute or capital constraints”. It uses the compute of cloud and model companies and formed the Control Tower alliance with Anthropic, OpenAI, AWS, NVIDIA and others."
+     },
+     {
+      "b": "But acquisitions are borrowed",
+      "pill": "debt $1.5B → $7.5B",
+      "w": "This year's acquisitions cost $9.17B in cash, funded by $3.9B of bonds and commercial paper; no buybacks this quarter ($580M a year ago), and cash and investments fell from $10.1B to $7.0B."
+     }
+    ]
+   },
+   {
+    "title": "Why cRPO is slowing",
+    "take": "Management attributed Q4's 18.5% to four causes, mostly timing and accounting, but the market didn't buy it.",
+    "items": [
+     {
+      "b": "Early renewals",
+      "pill": "Q4 into Q3",
+      "w": "About half of Q3's beat came from early renewals originally due in Q4."
+     },
+     {
+      "b": "On-premise deals",
+      "pill": "rising share",
+      "w": "On-premise contracts count as revenue but not in cRPO."
+     },
+     {
+      "b": "Contracts cancelable at any time",
+      "pill": "about 0.5 points",
+      "w": "Backlog with termination-for-convenience clauses is excluded from cRPO but recognized as revenue; about a 0.5-point effect in Q4."
+     },
+     {
+      "b": "Free deployment support",
+      "pill": "0.25–0.5 points",
+      "w": "A small drag on both cRPO and subscription revenue; the company says it doesn't affect revenue over the long run."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Q2's 23% included acquisitions; back to 20.5% in Q3"
+   },
+   {
+    "why": "Around 21% throughout; Q4 guided at 18.5%"
+   },
+   {
+    "why": "Still 32.5% after acquisition dilution"
+   },
+   {
+    "why": "Q1 is the collections season; full-year margin target 36%"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "At the after-hours price, the forward P/E is about <b>26x</b> versus a five-year median of 54x; only 2 of the last 20 quarter ends were lower. A 4% free cash flow yield is not expensive for large-cap software. <b>The market is not questioning this year's profit; it is questioning whether AI will eat the seat-based software business.</b>",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "f": "$124.18 ÷ TTM EPS $3.79 (GAAP 89x)"
+   },
+   {
+    "k": "P/S",
+    "f": "market cap ≈ $128.4B ÷ TTM revenue $15.43B"
+   },
+   {
+    "k": "EV / operating income (non-GAAP)",
+    "f": "EV ≈ $128.9B ÷ TTM non-GAAP operating income ≈ $4.82B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "pill": "FCF yield 4.0%",
+    "f": "market cap ≈ $128.4B ÷ TTM FCF $5.15B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year free cash flow from guidance",
+   "sub": "no EPS guidance",
+   "steps": [
+    "Full-year subscription revenue at the guided midpoint of <b>$15.785B</b>; professional services $327M in three quarters + Q4 at Q3's $118M → full-year revenue about $16.23B",
+    "× 36% guided free cash flow margin → full-year free cash flow about <b>$5.84B</b>",
+    "After-hours market cap ≈ $128.4B ÷ $5.84B → about <b>22x</b>"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast."
+  },
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
+   "note": "About 26x at the after-hours price, above only 2 of the last 20 quarter ends (this March and June), the <b>10th percentile</b>; median about 54x. The multiple halved in a year as the whole software sector was repriced. The current value uses pre-report consensus EPS (about $4.77). StockAnalysis data."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Capex",
+     "v": "$0.09B (−61%)"
+    },
+    {
+     "k": "Debt",
+     "v": "$7.5B"
+    },
+    {
+     "k": "Cash and investments",
+     "v": "$7.0B"
+    }
+   ],
+   "note": "Q3 free cash flow was $0.82B, a 20% margin; Q1 is the biggest collections quarter, so quarters swing a lot. Stock-based compensation was $0.63B, 15% of revenue, plus $0.18B of taxes paid on employees' vested shares, and with buybacks paused this quarter the dilution was not offset."
+  },
+  "calc": [
+   "Price $124.18: 28 Oct after hours (StockAnalysis, 7:27 pm ET), close $150.13; shares ≈ StockAnalysis market cap ÷ close ≈ 1.034B, market cap ≈ $128.4B",
+   "Net debt = short-term debt $2.09B + long-term debt $5.44B − cash and investments $6.96B ≈ $0.56B; EV ≈ $128.9B",
+   "TTM = 2025 Q4 to 2026 Q3: non-GAAP EPS $0.92 + $0.97 + $0.90 + $1.00 = $3.79; GAAP $0.38 + $0.45 + $0.29 + $0.27 = $1.39",
+   "TTM revenue $3.568 + $3.770 + $3.987 + $4.106B = $15.43B; TTM free cash flow $2.032 + $1.665 + $0.634 + $0.822B = $5.15B",
+   "TTM non-GAAP operating income ≈ quarterly revenue × that quarter's margin (31%, 32%, 29.5%, 32.5%) ≈ $4.83B",
+   "Forward P/E: pre-report consensus EPS = $150.13 ÷ 31.48 ≈ $4.77; $124.18 ÷ $4.77 ≈ 26.0x; the median is StockAnalysis's median forward P/E over the last 20 quarter ends, 53.8x",
+   "2025 Q3 EPS adjusted for the 5-for-1 split: non-GAAP $4.82 ÷ 5 ≈ $0.96"
+  ],
+  "next": "The post-report price decomposition will be added after the next day's close."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "AI target",
+    "pill": "second raise",
+    "before": "$1B at the start of the year, raised to $1.5B at the May investor day.",
+    "now": "More than $1.7B, and the CEO says to “exceed that”."
+   },
+   {
+    "topic": "Pricing model",
+    "pill": "toward usage",
+    "before": "Mostly seat-based subscriptions.",
+    "now": "A “hybrid model”: seats keep budgets predictable and usage pricing drives growth; the CEO said revenue per user could rise 5x. On outcome-based pricing, customers are “not asking at all”."
+   },
+   {
+    "topic": "Deployment",
+    "pill": "new approach",
+    "before": "Deployment left to partners.",
+    "now": "Free deployment engineers for large customers, booking less revenue upfront in exchange for faster usage growth; it says this won't last."
+   },
+   {
+    "topic": "Headcount",
+    "pill": "lower",
+    "before": "Kept hiring in sales and R&D.",
+    "now": "AI saves more than $1B a year internally and total headcount dipped slightly; quota-carrying sellers grew double digits while roles such as sales operations shrank sharply."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Every revenue and profit metric beat the top of guidance; “this is ServiceNow's inflection point as the control tower for super intelligence”",
+     "Control Tower net new ACV grew 6x in a year; EmployeeWorks reached $100M ACV in under three quarters",
+     "Armis, Veza and Moveworks contributed $100M ACV in three quarters, all ahead of deal expectations",
+     "No compute or capital constraints; capex falling and free cash flow margin rising"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "When AI momentum will accelerate cRPO and revenue overall: only “2027”",
+     "Whether AI “eats” or “adds” software revenue: no data given",
+     "Subscription and cRPO growth excluding acquisitions",
+     "How many customers get free deployment support, for how long, and at what cost"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 cRPO beats 18.5% and subscription revenue beats $4.255B",
+     "2027 guidance: does subscription growth accelerate as management says",
+     "Whether AI ACV reaches $1.7B+, and the share of usage-based revenue",
+     "Whether buybacks resume, and how the debt and commercial paper get repaid"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "AI ACV keeps rising but cRPO growth falls below 18% for several quarters: AI is replacing existing seat revenue",
+     "Free deployment support spreads to more customers: AI sells but doesn't get used",
+     "Professional services losses widen while subscription gross margin keeps falling",
+     "Large customers cut seat counts at renewal"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No insider filed a Form 4 open-market purchase or sale in the 30 days before the report (9/28–10/27), and no buys. The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/NOW.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "ServiceNow: 2026 Q3 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "ServiceNow: 8-K/A (XBRL tags only)"
+  },
+  {
+   "t": "ServiceNow: 2026 Q2 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "ServiceNow: 2026 Q1 earnings release"
+  },
+  {
+   "t": "ServiceNow: 2025 Q4 earnings release"
+  },
+  {
+   "t": "Benzinga: 2026 Q3 earnings call transcript"
+  },
+  {
+   "t": "MarketBeat: consensus estimates"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  }
+ ]
+}

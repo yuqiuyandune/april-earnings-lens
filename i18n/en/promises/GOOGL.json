@@ -1,0 +1,51 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "2026 capex of $195–205B (raised from $180–190B)",
+  "dueLabel": "full-year 2026",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Unchanged this quarter. $132B spent in the first three quarters, so the guide implies <b>$63–73B</b> in Q4, another 23–42% above Q3's $51.4B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "2027 capex will increase significantly again",
+  "dueLabel": "2027",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Reaffirmed this quarter that 2027 will “increase significantly”; the number comes with Q4 results."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Revenue from signed TPU system orders recognized gradually in 2026, mostly in 2027",
+  "dueLabel": "2026–2027",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Q3 TPU system sales were a “significant contributor” to cloud growth, rising again in Q4 and “ramping meaningfully” in 2027; inventory rose from $2.4B to $13.3B for it."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 call)",
+  "text": "Bring in third-party bridge compute to ease cloud supply limits",
+  "dueLabel": "2H 2026",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Only came online at the end of Q3, limiting the effect on this quarter's margin; usage grows in Q4, and the CFO flagged near-term margin pressure."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 call)",
+  "text": "Q4 search growth a few points lower again (tough comparison), slightly bigger FX headwind; cloud margin under near-term pressure",
+  "dueLabel": "2026Q4"
+ }
+]

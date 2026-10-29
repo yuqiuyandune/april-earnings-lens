@@ -1,0 +1,366 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "after the close, 28 Oct 2026",
+ "asOf": "after-hours price of $293.65 on 28 Oct 2026 (7:25 pm ET, StockAnalysis)",
+ "headline": "Cloud revenue doubled, but what it earns no longer covers the spending: data centers are now funded by stock and debt",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$127.58B",
+   "exp": "est. $127.2–128.2B",
+   "pill": "in line"
+  },
+  {
+   "k": "EPS (GAAP)",
+   "val": "$2.12",
+   "exp": "est. $3.02",
+   "pill": "$2.67 excl. investment loss, −12%"
+  },
+  {
+   "k": "Google Cloud revenue",
+   "val": "$30.71B",
+   "exp": "est. $29.6B",
+   "pill": "+3.7%, +103% y/y"
+  },
+  {
+   "k": "Free cash flow",
+   "val": "−$9.07B",
+   "exp": "a year ago +$24.46B",
+   "pill": "negative two quarters running"
+  }
+ ],
+ "points": [
+  {
+   "b": "Cloud is the only part accelerating",
+   "t": "Google Cloud +103% y/y, 62% of the company's added revenue; the release singled out TPU system sales as a significant source."
+  },
+  {
+   "b": "Profit didn't keep up",
+   "t": "Revenue +25%, yet operating income fell $0.19B quarter on quarter: depreciation +49% and unallocated AI research +71%."
+  },
+  {
+   "b": "The money comes from outside",
+   "t": "$85.2B of bonds, $42.9B of new common stock and $19.1B of convertible preferred this year, zero buybacks; future purchase commitments have reached $924B."
+  }
+ ],
+ "reaction": "Stock: closed at $324.89 (+1.3%) on report day; results came after the close and the stock fell to <b>$293.65 (−9.6%)</b> after hours. Three reasons: EPS of $2.12 was far below the $3.02 expected, and still only $2.67 excluding the paper loss on its SpaceX stake; 2026 capex stayed at $195–205B while 2027 was again said to “increase significantly”; and the CFO warned Q4 cloud margins will be pressured by renting third-party compute. Next-day close to be added. Two revenue estimates: Reuters $128.2B, Investing.com $127.2B.",
+ "results": {
+  "segments": {
+   "title": "By business",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Of the $25.2B of added revenue, <b>cloud was 62%</b>. Advertising still grows steadily, but only cloud is accelerating.",
+   "bridge": [
+    {
+     "n": "Cloud"
+    },
+    {
+     "n": "Search"
+    },
+    {
+     "n": "Subscriptions & devices"
+    },
+    {
+     "n": "YouTube"
+    },
+    {
+     "n": "Ad network etc."
+    }
+   ],
+   "rows": [
+    {
+     "n": "Google Cloud",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Includes GCP AI compute and AI solutions, Workspace, and TPU systems sold into customers' own data centers. Operating income $11.1B, a 36.2% margin versus 23.7% a year ago."
+    },
+    {
+     "n": "Search and other",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Management said search query growth was the highest in five years, with AI driving queries including commercial ones. Growth slowed from Q2's 17%."
+    },
+    {
+     "n": "Subscriptions, platforms and devices",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "More than 150M YouTube Music and Premium subscriptions (including trials), Google One, Play and devices."
+    },
+    {
+     "n": "YouTube ads",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Growth slowed from 13% in Q2 to 9%, below the expected $11.34B."
+    },
+    {
+     "n": "Ad network",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Ads on third-party sites and apps, essentially not growing."
+    }
+   ],
+   "note": "Shares are of total revenue ($127.58B); “other” includes Other Bets ($0.37B) and hedging changes. Google Services totaled $96.30B, +10.6% y/y, with a 40.7% operating margin."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Google holds four roles in this chain at once: <b>it pays to build data centers, sells compute and TPUs, rents others' compute and invests in AI companies</b>. This quarter shows clearly for the first time that the paying role now depends on outside money.",
+    "items": [
+     {
+      "b": "The payer",
+      "pill": "capex > operating cash flow",
+      "w": "Q3 capex of $51.4B was 121% of operating cash flow of $42.3B, versus 49% a year ago. About 65% is servers and networking (6-year depreciation) and 35% data centers. The full-year guide implies another $63–73B in Q4."
+     },
+     {
+      "b": "Money to fill the gap",
+      "pill": "$147.2B raised externally",
+      "w": "This year: $85.2B of bonds, $42.9B of new common stock ($27.6B left in the ATM program) and $19.1B of 6.25% mandatory convertible preferred; long-term debt rose from $46.5B to $125.1B, and buybacks stopped. Future purchase commitments are $924B, with another $152B of leases not yet commenced."
+     },
+     {
+      "b": "The seller",
+      "pill": "cloud +103%, backlog $561B",
+      "w": "Cloud backlog grew from $514B to $561B, about 55% recognized within 24 months. TPU customers include Anthropic (direct, and via Broadcom), Apple, Citadel Securities and nearly 100 others; TPU systems are also distributed through Crux AI (a joint venture with Blackstone) and Oracle. Blackstone and large banks are lining up $63B for Anthropic to lease Broadcom chips, money that also flows back into this chain."
+     },
+     {
+      "b": "Renting from others",
+      "pill": "short of compute",
+      "w": "Short of supply, Google began renting third-party compute as a “bridge” at the end of Q3, with more in Q4; the CFO said this will weigh on cloud margins near term. TPU systems are built ahead (only for signed contracts), so inventory rose from $2.4B to $13.3B: cash goes out first and revenue comes later."
+     },
+     {
+      "b": "The investor",
+      "pill": "paper gains amplify swings",
+      "w": "Non-marketable equity investments rose from $68.7B to $135.2B in nine months, with only $24.2B of new purchases; it also holds $90.4B of marketable equity. This quarter's $8.7B loss came mainly from a drop in SpaceX's valuation, which pushed GAAP EPS far below expectations."
+     }
+    ]
+   },
+   {
+    "title": "Why profit didn't keep up",
+    "take": "Revenue was $7.8B higher than in Q2, yet operating income fell $0.19B; the extra revenue was largely absorbed by three costs.",
+    "items": [
+     {
+      "b": "Depreciation",
+      "pill": "+49%",
+      "w": "Depreciation of property and equipment was $8.37B, versus $5.61B a year ago. Data centers built over the past two years are being depreciated, and capex is still accelerating."
+     },
+     {
+      "b": "Unallocated AI research",
+      "pill": "−$7.7B",
+      "w": "“Alphabet-level” costs are mainly the people and compute for training general models like Gemini: −$4.5B a year ago, up 71%. The CFO said depreciation and data-center operating costs such as energy will keep growing."
+     },
+     {
+      "b": "Total R&D",
+      "pill": "+36%",
+      "w": "R&D expense of $20.6B; 205,000 employees versus 190,000 a year ago."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+24% q/q, doubled y/y"
+   },
+   {
+    "why": "Cloud margin up 12.5 points in a year"
+   },
+   {
+    "why": "More than doubled in a year; the Q4 guide is higher still"
+   },
+   {
+    "why": "Negative two quarters running"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "At the after-hours price, the GAAP P/E is about 15x, but on profits inflated by about $129B of investment gains; on operating income it is about <b>29x</b>, and the forward P/E is about 22x, right at its five-year median. The real issue is cash: a market cap of about $3.6T against only $19.7B of free cash flow over the past year, <b>a 0.5% yield</b>. Today's price is a bet that this capex will pay back.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, GAAP)",
+    "pill": "includes investment gains, distorted",
+    "f": "$293.65 ÷ TTM EPS $19.16"
+   },
+   {
+    "k": "P/E on operating income",
+    "f": "$293.65 ÷ (TTM operating income $157.0B × (1 − 19%) ÷ 12.37B shares = $10.28)"
+   },
+   {
+    "k": "EV / operating income",
+    "f": "EV ≈ $3.47T ÷ TTM operating income $157.0B"
+   },
+   {
+    "k": "Market cap / FCF",
+    "v": "≈ 183x",
+    "pill": "FCF yield 0.5%",
+    "f": "market cap ≈ $3.61T ÷ TTM FCF $19.7B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year cash flow from the capex guide",
+   "sub": "no profit guidance, so we look at cash",
+   "steps": [
+    "Free cash flow in the first three quarters: $10.1B − $5.9B − $9.1B = <b>−$4.8B</b>",
+    "Q4 capex = full-year guide of $195–205B − $132B spent = <b>$63–73B</b>",
+    "Q4 operating cash flow at the three-quarter average of about $42.4B",
+    "→ Q4 free cash flow about <b>−$21B to −$31B</b>, full year about −$25B to −$35B",
+    "The company says 2027 capex will “increase significantly”, so the cash gap still needs financing"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast. Operating cash flow is held flat; in reality it moves with profit and working capital."
+  },
+  "cash": {
+   "title": "Capex eats all the cash",
+   "sub": "Quarterly free cash flow, $B",
+   "stats": [
+    {
+     "k": "Capex / operating cash flow",
+     "v": "121%"
+    },
+    {
+     "k": "Long-term debt",
+     "v": "$125.1B"
+    },
+    {
+     "k": "Cash and marketable securities",
+     "v": "$265.1B"
+    }
+   ],
+   "note": "Operating cash flow was also held back by building TPU systems ahead (inventory up $10.9B in nine months) and paying a $5.2B 2018 EU fine. Cash is actually $138.3B higher than at the start of the year because financing proceeds sit on the balance sheet first. The CFO said returns on capital over the investment cycle will be “well above the cost of capital”, but admitted free cash flow will be lower."
+  },
+  "calc": [
+   "Price $293.65: 28 Oct after hours (StockAnalysis, 7:25 pm ET), close $324.89; 12.294B shares at 9/30, market cap ≈ $3.61T; net cash = $265.1B − $125.1B long-term debt ≈ $140.0B; EV ≈ $3.47T",
+   "TTM = 2025 Q4 to 2026 Q3: GAAP EPS $2.82 + $5.11 + $9.11 + $2.12 = $19.16; operating income $35.9 + $39.7 + $40.8 + $40.6B = $157.0B",
+   "TTM free cash flow (company definition) $19.75B; revenue $471.1B",
+   "19% tax rate from this year's first three quarters ($47.3B ÷ $248.5B); 12.368B diluted shares",
+   "TTM investment gains about $129B: Q4 $2.3B, Q1 $36.9B, Q2 about $99B (derived from the −$126.8B nine-month cash-flow total less Q1 and Q3), Q3 −$8.7B",
+   "Capex / operating cash flow = $51.36B ÷ $42.29B = 121%; a year ago $23.95B ÷ $48.41B = 49%",
+   "Change in non-marketable equity $135.2B − $68.7B = $66.5B, less $24.2B purchased in three quarters ≈ $42.4B",
+   "Forward P/E: pre-report consensus EPS = $324.89 ÷ 24.27 ≈ $13.39; $293.65 ÷ $13.39 ≈ 21.9x; the median is StockAnalysis's forward P/E median over the last 20 quarter ends"
+  ],
+  "next": "The post-report price decomposition will be added after the next day's close.",
+  "history": {
+   "title": "Against its own last 5 years",
+   "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
+   "note": "About 22x at the after-hours price, the same as the 21.9x median of the last 20 quarter ends, <b>right in the middle</b>; the high was 29x at the end of 2025. The current value uses pre-report consensus EPS (about $13.39); if estimates fall after the report, the multiple is higher. StockAnalysis data."
+  }
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Funding",
+    "pill": "new argument",
+    "before": "For a decade, data centers were built from its own cash flow while buying back about $60B a year.",
+    "now": "$147.2B of bonds, stock and preferred this year, buybacks stopped; the CFO now argues with “return on capital over the investment cycle” rather than free cash flow."
+   },
+   {
+    "topic": "Cloud compute",
+    "pill": "now renting",
+    "before": "In Q2: supply can't keep up with demand; plans to bring in third-party “bridge” compute.",
+    "now": "Third-party compute only came online at the end of Q3, with more in Q4, and near-term cloud margin pressure flagged."
+   },
+   {
+    "topic": "TPU",
+    "pill": "becomes a platform",
+    "before": "Q2 first confirmed TPU system sales revenue, mostly in 2027.",
+    "now": "Nearly 100 customers, naming Anthropic, Apple and Citadel; TPU systems sold together with Crux AI (Blackstone JV) and Oracle; Pichai called it an “important platform”."
+   },
+   {
+    "topic": "Search",
+    "pill": "slowing",
+    "before": "Search +17% in Q2.",
+    "now": "+12%: FX, the EU ending the small-parcel duty exemption hit APAC e-commerce advertisers, World Cup timing, and AI Mode still monetizes below classic search; Q4 a few points lower again."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Annualized revenue has reached $500B; search query growth is the highest in five years",
+     "Cloud backlog of $561B, about 55% recognized within 24 months; 18 product lines each above $1B of annual revenue",
+     "1B Gemini app users; the model API processes nearly 32B tokens a minute, 4x a year ago",
+     "TPUs built only for signed contracts; placing them in customer and third-party facilities means building fewer of its own data centers"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "TPU system margins, and how much revenue is recognized in a roughly $35B-per-gigawatt system (Barclays, BofA)",
+     "Underlying cloud growth excluding TPUs: only “very strong” (AllianceBernstein)",
+     "The 2027 capex number: wait for Q4",
+     "Whether Google's own capex intensity falls once AI labs build their own compute"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 capex reaches $63–73B, and the 2027 capex guide",
+     "How much cloud margin holds once third-party compute is rented (36.2% this quarter)",
+     "Whether cloud backlog keeps growing, and whether TPU inventory turns into revenue and cash",
+     "Whether bond and stock issuance continues, and how much of the $27.6B ATM is used"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Cloud backlog stalls or falls quarter on quarter while capex keeps rising",
+     "TPU inventory keeps piling up while revenue recognition slips: a sign customers can't pay",
+     "Cloud margin falls back below 30%",
+     "Search growth keeps slowing: AI Mode is replacing ad revenue rather than adding to it"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (9/28–10/27). The only filing was director Frances Arnold's sale of about <b>$28K</b> on 30 Sep under a 10b5-1 plan, which we don't count as an effective sale. No insider bought. The 30 days after the report update daily with Insider Flow. Data from <a href=\"/s/GOOGL.html\">April's Stock Atlas insider activity</a>."
+ },
+ "sources": [
+  {
+   "t": "Alphabet: 2026 Q3 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Alphabet: 2026 Q2 earnings release"
+  },
+  {
+   "t": "Alphabet: 2026 Q1 earnings release"
+  },
+  {
+   "t": "Alphabet: 2025 Q4 earnings release"
+  },
+  {
+   "t": "IG: pre-report consensus, cloud backlog and financing"
+  },
+  {
+   "t": "Fortune: free cash flow turns negative"
+  },
+  {
+   "t": "TheWrap: EPS excluding the investment loss"
+  },
+  {
+   "t": "Reuters (via Investing.com): $63B to finance Broadcom chips for Anthropic"
+  },
+  {
+   "t": "Investing.com: 2026 Q3 earnings call transcript"
+  },
+  {
+   "t": "StockAnalysis: price and valuation history"
+  },
+  {
+   "t": "Fierce Network: Q2 2026 cloud backlog and TPU comments"
+  }
+ ]
+}

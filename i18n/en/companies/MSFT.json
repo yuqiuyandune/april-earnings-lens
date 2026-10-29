@@ -1,0 +1,43 @@
+{
+ "n": "Microsoft",
+ "config": {
+  "segmentBasis": "From FY27 two segments: Agents and Infra (Azure, Microsoft 365 commercial, industry solutions, etc.) + Devices and Consumer (Windows, Xbox, search advertising, etc.)",
+  "fiscalNote": "Fiscal year ends in June; FY2027 Q1 = July–September 2026, shown on this site as 2026Q3",
+  "kpis": [
+   "Azure revenue and growth",
+   "Commercial remaining performance obligation (RPO)",
+   "Capex (including finance leases)",
+   "Leases and supplier financing",
+   "OpenAI-related gains and losses"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Why bookings stalled"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "om": {
+    "t": "Operating margin"
+   },
+   "eps": {
+    "t": "EPS (non-GAAP, excl. OpenAI)"
+   },
+   "azg": {
+    "t": "Azure growth y/y"
+   },
+   "rpo": {
+    "t": "Commercial RPO"
+   },
+   "capex": {
+    "t": "Capex (excl. finance leases)"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}
