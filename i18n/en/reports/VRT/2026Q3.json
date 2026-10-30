@@ -40,7 +40,7 @@
    "t": "Orders were only described as “up more than 100%”, and won't be disclosed going forward; judging 2027 now depends on customers' capex and Vertiv's customer prepayments."
   }
  ],
- "reaction": "Stock: closed at $208.56 the day before, down about 14% over three months. Results came before the open; it rose about 13–15% premarket and was +13.2% intraday ($236.18, 12:51 pm ET), then <b>closed at $242.94 (+16.5%)</b>, $236.10 after hours. Valuation on this page still uses the intraday price of $236.18. Three drivers: a large revenue and EPS beat; a Q4 revenue guide 2.4% above expectations at the midpoint; and full-year EPS guidance of $7.15, 6% above the expected $6.73. Consensus from Investing.com (StockStory's revenue estimate is $3.77B, which doesn't change the conclusion).",
+ "reaction": "Stock: closed at $208.56 the day before, down about 14% over three months. Results came before the open; it rose about 13–15% premarket and was +13.2% intraday ($236.18, 12:51 pm ET), then <b>closed at $242.94 (+16.5%)</b>, $236.10 after hours. It rose another 1.2% the next day (10/29) to close at $245.92. Valuation on this page still uses the intraday price of $236.18; scenario prices use the 10/29 close. Three drivers: a large revenue and EPS beat; a Q4 revenue guide 2.4% above expectations at the midpoint; and full-year EPS guidance of $7.15, 6% above the expected $6.73. Consensus from Investing.com (StockStory's revenue estimate is $3.77B, which doesn't change the conclusion).",
  "results": {
   "segments": {
    "title": "By region",
@@ -126,6 +126,37 @@
    },
    {
     "title": "Where growth comes from",
+    "take": "Vertiv has already hit its 2029 targets; the future depends on <b>customers' 2027 capex</b> and continued expansion, just as the company stops disclosing orders.",
+    "items": [
+     {
+      "b": "Volume: expansion",
+      "pill": "chiller capacity doubling",
+      "w": "The new plant in Johor, Malaysia is in production, chiller capacity doubles by year end, and plants in Slovakia and Ireland are expanding; lead times are still 12–18 months."
+     },
+     {
+      "b": "Price: covering costs",
+      "pill": "price minus cost positive",
+      "w": "Management said 2026 price increases net of costs (including tariffs) are positive; each extra $1 of revenue earns about 30 cents of operating profit."
+     },
+     {
+      "b": "New business",
+      "pill": "800V DC power",
+      "w": "800V DC power is in customer validation, with revenue from 2027 and large-scale deployment in 2028; Vertiv is involved in NVIDIA's DSX AI factory design. Liquid cooling's share is not disclosed."
+     },
+     {
+      "b": "Company targets",
+      "pill": "already met",
+      "w": "Targets from the 2024 investor day: 12–14% organic growth a year over 2024–2029 and a 25% adjusted operating margin in 2029. This year's organic growth is 37–39% and Q3 margin already reached 25.2%. No new targets yet; 2027 guidance comes in February."
+     },
+     {
+      "b": "What could break it",
+      "pill": "customer financing",
+      "w": "Customers' capex relies more and more on borrowing (this week Google's $147.2B of outside financing, Amazon's long-term debt up $107.5B). Watch whether deferred revenue (prepayments) falls, whether inventory outgrows revenue, and the 2027 guide."
+     }
+    ]
+   },
+   {
+    "title": "This quarter's growth bridge",
     "take": "Nearly all of the 61% growth was organic; acquisitions and currency mattered little.",
     "items": [
      {
@@ -328,7 +359,25 @@
    "Q1 2026 revenue, operating income and cash flow are first-half totals less Q2; Q3 2025 free cash flow uses the $436M comparison in this quarter's release (reported at the time as $462M, definition adjusted)",
    "Forward P/E median is StockAnalysis's median over the last 20 quarter ends, 26.95x; current forward EPS = $208.56 ÷ 27.32 ≈ $7.63",
    "Incremental margin = (Q3 adjusted operating income $1.087B − $0.596B a year ago) ÷ (revenue $4.313B − $2.676B) ≈ 30%"
-  ]
+  ],
+  "pricezone": {
+   "sub": "2027 EPS (scenarios above) × our P/E; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "customers slow, 20x"
+    },
+    {
+     "n": "Base",
+     "how": "30% growth, 26x"
+    },
+    {
+     "n": "Bull",
+     "how": "45% growth, 30x"
+    }
+   ],
+   "why": "Up 18% in the two days after the report, the price is now near the base case: buying now, the base case gains only about 7% while the bear case loses about 33%, far more risk than reward. Near the $190 midpoint the reward/risk is about 2.8, and the low end is close to the bear-case price. The 20–30x multiples sit around its five-year median forward P/E of about 27x."
+  }
  },
  "management": {
   "changes": [

@@ -133,6 +133,63 @@
   },
   "extras": [
    {
+    "title": "Where it sits in the AI loop",
+    "take": "TSMC is <b>the common factory for every chip in this chain</b>: NVIDIA GPUs, Google TPUs and Amazon Trainium are all made here. However customers compete with each other, TSMC gets paid; its risk is the whole chain's capex slowing at once.",
+    "items": [
+     {
+      "b": "Everyone's chips are made here",
+      "pill": "HPC 68%",
+      "w": "AI accelerators, server CPUs and networking chips are 68% of revenue, versus 57% a year ago. Amazon's CEO said in late October that “everybody is producing their advanced chips with the same provider”; each gets an allocation and decides how much to sell versus use."
+     },
+     {
+      "b": "Pricing power",
+      "pill": "revenue per wafer +29%",
+      "w": "Shipments grew only 9.6% in a year while revenue grew 41%; customers pay more for 2nm and 3nm."
+     },
+     {
+      "b": "Where customers' money comes from",
+      "pill": "more and more financing",
+      "w": "In the late-October reporting season, Google's capex was 121% of operating cash flow and Amazon's 179%, with more than $250B of outside financing between them this year. TSMC's orders sit upstream of that spending."
+     },
+     {
+      "b": "Consumers squeezed",
+      "pill": "smartphones flat",
+      "w": "Management said consumer and price-sensitive products are “facing challenges”; in the same period Sandisk's consumer business fell 29% q/q and Intel cut guidance on PCs, as higher memory prices squeeze consumer electronics."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "TSMC is already far ahead of its long-term targets; the variables are <b>what price the doubled 2nm capacity sells at</b> and how much overseas fabs drag on margins.",
+    "items": [
+     {
+      "b": "Volume: 2nm doubles",
+      "pill": "about 20 fabs under construction",
+      "w": "2nm-family capacity more than doubles in 2027; the new Tainan 3nm fab enters volume production in 1H 2027 and Arizona fab 2 in Q3 2027."
+     },
+     {
+      "b": "Price: strategic increases",
+      "pill": "revenue per wafer +29%",
+      "w": "The CFO only said pricing is “very strategic”; CoWoS advanced packaging is still customers' first choice."
+     },
+     {
+      "b": "New technology",
+      "pill": "A14",
+      "w": "A14 risk production in 2027 and volume production in 2028; Japan fab 2 produces 3nm from 2028."
+     },
+     {
+      "b": "Company targets",
+      "pill": "far ahead",
+      "w": "Long-term targets: revenue growth approaching 25% a year over 2024–2029, AI accelerators growing in the mid-to-high 50s percent, and gross margin of 56% or higher through the cycle. This year's growth is about 44% with a 66% gross margin, both above target; management says AI accelerator growth “could be higher”."
+     },
+     {
+      "b": "What could break it",
+      "pill": "customers' capex slowing together",
+      "w": "Watch whether Q4 capex falls well below $19B because customers delay, HPC q/q growth below 10% for two quarters, gross margin below 65%, and the overseas-fab drag widening to 3–4 points."
+     }
+    ]
+   },
+   {
     "title": "By node",
     "take": "3nm and 2nm together are now <b>41%</b> of wafer revenue, versus 23% a year ago. The most advanced nodes sell at the highest prices but dilute margins early in the ramp.",
     "unit": "share of wafer revenue",
@@ -273,22 +330,6 @@
    ],
    "note": "Margin is the operating margin. Base is full-year 2026 revenue of about $176B. *Price: if the market pays the five-year median of 22.4x, the $418.51 price needs 2027 EPS of $18.68, about 13% revenue growth. That means the price is already near the bear case; if the market thinks growth has peaked, the multiple could stay below the median. These assumptions are ours and are not forecasts."
   },
-  "riskreward": {
-   "title": "Price risk and reward",
-   "sub": "Scenario EPS converted to prices at the five-year median P/E of 22.4x",
-   "rows": [
-    {
-     "n": "Bear"
-    },
-    {
-     "n": "Base"
-    },
-    {
-     "n": "Bull"
-    }
-   ],
-   "note": "The $418.51 price is already near the bear case: about −5% down to bear, about +13% up to base and about +27% to bull, so <b>reward and risk lean to the upside</b>. These are not price targets but the prices each 2027 scenario implies if the market pays the five-year median P/E of 22.4x, without probabilities. If the market decides AI demand has peaked, the multiple could stay below the median, and the real downside would be larger."
-  },
   "history": {
    "title": "Against its own last 5 years",
    "sub": "P/E at quarter ends",
@@ -326,7 +367,25 @@
    "Pre-report P/E: $430.00 ÷ TTM $13.86 = 31.0x; post-report: $422.25 ÷ $15.54 = 27.2x",
    "Scenario EPS = 2027 revenue × operating margin × 0.87 ÷ 5.19B ADRs",
    "Scenario-implied price = scenario EPS/ADR × the five-year median P/E of 22.4x; room = implied price ÷ $418.51 − 1"
-  ]
+  ],
+  "pricezone": {
+   "sub": "2027 EPS/ADR (scenarios above) × our P/E; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "15% growth, 18x"
+    },
+    {
+     "n": "Base",
+     "how": "28% growth, 22.4x"
+    },
+    {
+     "n": "Bull",
+     "how": "38% growth, 25x"
+    }
+   ],
+   "why": "The price is above the zone: buying now, the base case gains about 10% while the bear case loses about 26%, a reward/risk of about 0.4. Near the $365 midpoint the reward/risk is about 2.3, and the low end is close to the bear-case price. The base case uses the five-year median P/E of 22.4x; the bear case uses 18x because the multiple tends to fall first when the market fears the AI investment cycle has peaked."
+  }
  },
  "management": {
   "changes": [

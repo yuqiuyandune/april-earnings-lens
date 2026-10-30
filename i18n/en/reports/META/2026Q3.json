@@ -96,6 +96,63 @@
   },
   "extras": [
    {
+    "title": "Where it sits in the AI loop",
+    "take": "Meta is the <b>big buyer that doesn't sell compute</b>: it builds data centers only for its own ads and AI products, so the payback can only come from higher ad prices and new products. Its free cash flow turned negative for the first time this quarter.",
+    "items": [
+     {
+      "b": "The payer",
+      "pill": "capex > operating cash flow",
+      "w": "Q3 capex of $34.9B exceeded operating cash flow, for −$2.1B of free cash flow; $135–145B for the year means another $49–59B in Q4. The same reporting season: Google's capex was 121% of operating cash flow, Amazon's 179%, Microsoft's 68%."
+     },
+     {
+      "b": "Seeking outside money",
+      "pill": "Class C shares + partners",
+      "w": "Long-term debt of $80.9B now roughly equals $82.5B of cash and marketable securities; partners such as BlackRock share data-center costs; new non-voting Class C shares can be used for financing. No buybacks this quarter."
+     },
+     {
+      "b": "Doesn't sell compute",
+      "pill": "payback only from own use",
+      "w": "Unlike Google, Amazon and Microsoft, Meta doesn't rent out compute and has no cloud revenue to share the cost; payback must come from ad prices (+14%) and new products such as Muse."
+     },
+     {
+      "b": "In-house chips",
+      "pill": "less reliance on NVIDIA",
+      "w": "Mass production of its own AI chip began in September (see the NVIDIA page); higher memory and storage prices also raise its server costs."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Meta's growth comes almost entirely from <b>ad prices</b>: users have peaked, and AI makes each ad worth more. The variable is whether that money covers ever larger depreciation.",
+    "items": [
+     {
+      "b": "Volume: users have peaked",
+      "pill": "DAP +3%",
+      "w": "3.64B daily active people, up only 3% y/y; ad impression growth slowed from 19% early in the year to 10%."
+     },
+     {
+      "b": "Price: AI makes ads pricier",
+      "pill": "price per ad +14%",
+      "w": "Average price per ad accelerated to +14%; partnership ads run above $15B annualized, and nearly 10M advertisers have used generative AI creative tools."
+     },
+     {
+      "b": "New businesses",
+      "pill": "Muse + glasses",
+      "w": "Muse reached 10M users in 6 weeks with about 25% using it daily, but no monetization numbers yet; Reality Labs losses narrow to about $15B in 2027 as investment shifts to AI."
+     },
+     {
+      "b": "Company targets",
+      "pill": "no long-term numbers",
+      "w": "Only “strong overall revenue growth” through 2027; 2027 expense and capex guidance comes in January."
+     },
+     {
+      "b": "What could break it",
+      "pill": "depreciation and lawsuits",
+      "w": "Watch for price-per-ad growth falling back to single digits, 2027 expense growth clearly outpacing revenue, Muse serving costs that don't fall, and new verdicts in teen-related lawsuits."
+     }
+    ]
+   },
+   {
     "title": "Signs of AI payback",
     "take": "Ads are already seeing returns; new AI products are still in the spending phase.",
     "items": [
@@ -277,7 +334,26 @@
    "Excluding one-offs: Q3'25 excluding the $15.9B tax charge is $7.25 (company disclosure); Q1'26 excluding the $8.03B tax benefit is about $7.31 ($18.74B ÷ 2.564B shares); Q3'26 excluding $9.9B of legal costs is $7.40 (company disclosure); Q2'26's $2.4B legal and $1.2B severance costs are not adjusted",
    "Pre-report P/E: $697.52 ÷ $26.55 = 26.3x ($29.62 excluding one-offs → 23.5x); post-report: $648.85 ÷ $29.33 = 22.1x ($29.77 excluding → 21.8x)",
    "Scenario EPS = 2027 revenue × operating margin × (1 − 16%) ÷ 2.573B shares"
-  ]
+  ],
+  "pricezone": {
+   "sub": "2027 EPS (scenarios above) × our P/E; price at the 29 Oct close (pre-split)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "depreciation squeezes margins, 18x"
+    },
+    {
+     "n": "Base",
+     "how": "33% margin, 22x"
+    },
+    {
+     "n": "Bull",
+     "how": "37% margin, 25x"
+    }
+   ],
+   "why": "The price is above the zone: buying now, the base case gains about 17% while the bear case loses about 27%, a reward/risk of about 0.6. Near the $530 midpoint the reward/risk is about 2.7, and the low end is close to the bear-case price. The 18–25x multiples sit around its five-year median P/E of about 24x; the bear case is lower because capex now needs outside money.",
+   "note": "After the 2-for-1 split in January 2027, divide the prices and the zone by 2."
+  }
  },
  "management": {
   "changes": [

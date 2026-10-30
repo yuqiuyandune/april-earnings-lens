@@ -97,6 +97,63 @@
   },
   "extras": [
    {
+    "title": "Where it sits in the AI loop",
+    "take": "NVIDIA is at the center of the loop: <b>it sells the shovels and has started finding money for the people who buy them</b>. It has the most orders, but late-October results brought new signals on three fronts: customers' own chips, memory prices and customer financing.",
+    "items": [
+     {
+      "b": "Selling shovels",
+      "pill": "top five customers $800B",
+      "w": "Management said its top five customers' capex is close to $800B in 2026 and $1.3T in 2027; NVIDIA's revenue per gigawatt of data center rises from about $18B for Hopper to about $40B for Vera Rubin."
+     },
+     {
+      "b": "Finding money for customers",
+      "pill": "guarantees up to $108.5B",
+      "w": "Guarantees for partners' data-center land, power and buildings; working with Apollo, BlackRock and others to bring in more than $500B of third-party capital, with revenue backstops for some AI clouds. Days sales outstanding 45 → 60."
+     },
+     {
+      "b": "Customers make their own chips",
+      "pill": "TPU, Trainium, Maia",
+      "w": "Late October: Google's TPUs have nearly 100 customers and are sold as full systems; Amazon's Trainium revenue commitments grew more than 20x, with external sales from late 2027; Microsoft's Maia 200 delivers 1.7x the tokens per watt of GPUs; Meta began mass-producing its own chip in September."
+     },
+     {
+      "b": "Memory eats margin first",
+      "pill": "Q4 gross margin 71–72%",
+      "w": "To lock in memory, supply commitments jumped from $119B to $279B in a quarter; in late October Sandisk reported an 85% gross margin, which is what NVIDIA is paying extra for."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "NVIDIA's growth is <b>limited by supply, not demand</b> (management's words), and revenue per gigawatt is rising. The variables are how much gross margin holds and whether customers' capex can keep being financed.",
+    "items": [
+     {
+      "b": "Volume: supply decides",
+      "pill": "at least through FY28",
+      "w": "Management says it is supply-constrained at least through the end of FY28; Vera Rubin will be the fastest ramp in company history, about 20% of Q3 data center revenue."
+     },
+     {
+      "b": "Price: more per gigawatt",
+      "pill": "$18B → $40B",
+      "w": "Revenue opportunity per gigawatt: about $18B for Hopper, about $25B for Blackwell and about $40B for Vera Rubin; price increases already made take effect from FY28 Q1."
+     },
+     {
+      "b": "New businesses",
+      "pill": "CPUs doubling",
+      "w": "Grace CPU exceeded $5B over the past four quarters, and data center CPU revenue more than doubles in FY28; Amazon is adding another 2M GPUs."
+     },
+     {
+      "b": "Company targets",
+      "pill": "FY28 about +70%",
+      "w": "A preliminary view of about 70% FY28 revenue growth; the “$1T of Blackwell and Rubin revenue over 2025–2027” claim is no longer repeated."
+     },
+     {
+      "b": "What could break it",
+      "pill": "in-house chips + financing",
+      "w": "Watch large customers' own chips replacing purchases, gross margin below 71%, days sales outstanding rising further, more guarantees and backstops, and cuts to customers' capex guidance."
+     }
+    ]
+   },
+   {
     "title": "Why gross margin falls",
     "take": "This quarter's 75% is the peak; the next two quarters head lower, mainly because of costs.",
     "items": [
@@ -292,7 +349,25 @@
    "Pre-report P/E: $209.66 ÷ $6.53 = 32.1x; post-report: $227.98 ÷ $7.91 = 28.8x; 1.211 × 0.898 ≈ 1.087",
    "GAAP net income includes equity investment gains: $15.9B in Q1 and $7.8B in Q2, excluded from non-GAAP",
    "Scenario EPS = FY28 revenue × operating margin × (1 − 16%) ÷ 24.3B shares; the forward P/E median is StockAnalysis's median over the last 20 quarter ends, 35.3x"
-  ]
+  ],
+  "pricezone": {
+   "sub": "FY28 EPS (scenarios above) × our P/E; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "35% growth, 16x"
+    },
+    {
+     "n": "Base",
+     "how": "70% growth, 20x"
+    },
+    {
+     "n": "Bull",
+     "how": "85% growth, 24x"
+    }
+   ],
+   "why": "The price is at the top of the zone: buying now, the base case gains about 42% while the bear case loses about 19%, a reward/risk of about 2.3, among the best of the companies we cover. Near the $195 midpoint the reward/risk is about 5, and the low end is close to the bear-case price. The 16–24x multiples are all below its five-year median forward P/E of about 35x: the market discounts a peak in the AI investment cycle, and so do we."
+  }
  },
  "management": {
   "changes": [

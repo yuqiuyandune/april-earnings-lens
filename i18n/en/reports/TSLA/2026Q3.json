@@ -120,6 +120,65 @@
    {
     "why": "−2% y/y; demand hasn't returned to growth"
    }
+  ],
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Tesla is <b>on the using side of AI</b>: it spends on training self-driving and robots, and the payback depends on Robotaxi and Optimus becoming revenue. It doesn't sell compute and doesn't depend on others' capex.",
+    "items": [
+     {
+      "b": "The spender",
+      "pill": "operating income −56%",
+      "w": "Gross margin recovered, but operating expenses (AI and robotics R&D) ate the profit; GAAP EPS was only $0.22. The capex guide was actually cut to about $20B."
+     },
+     {
+      "b": "Storage and data centers on the same line",
+      "pill": "Megapack sold out to 2027",
+      "w": "Megapack capacity is nearly sold out through 2027; grids and data centers are both competing for power, but the company doesn't break out storage customers."
+     },
+     {
+      "b": "Stock compensation",
+      "pill": "exceeds free cash flow",
+      "w": "Stock comp over the past year was $4.3B, 30% more than $3.3B of free cash flow."
+     },
+     {
+      "b": "Relationship with SpaceX",
+      "pill": "no response",
+      "w": "Asked about a SpaceX merger, management didn't respond."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Today's businesses (cars, storage, services) explain only a small part of the share price at peer multiples; <b>the rest is a bet on Robotaxi and Optimus</b>.",
+    "items": [
+     {
+      "b": "Robotaxi",
+      "pill": "driverless in 6 cities",
+      "w": "Driverless miles grew 8x this quarter; Cybercab launches in Dallas in November; management says it contributes meaningfully to revenue and profit from Q2 2027. The $0.30 cost-per-mile target hasn't been reached."
+     },
+     {
+      "b": "FSD",
+      "pill": "75%+ take rate in North America",
+      "w": "FSD take rate on new North American cars rose from about 55% to more than 75%; EU approval may come in Q1 2027."
+     },
+     {
+      "b": "Optimus",
+      "pill": "external deliveries by end-2027",
+      "w": "Management deliberately cooled expectations: the ramp will be bumpy; it declined to give a unit cost."
+     },
+     {
+      "b": "Storage and cars",
+      "pill": "storage strong, cars weak",
+      "w": "Storage's 33% gross margin came mainly from one-offs, with a long-term target in the low-to-mid 20s; car deliveries were −2% y/y and demand hasn't returned to growth."
+     },
+     {
+      "b": "What could break it",
+      "pill": "timelines slip",
+      "w": "Watch Robotaxi's city and mileage expansion, cost per mile, EU FSD approval, and whether Optimus reaches external customers on time."
+     }
+    ]
+   }
   ]
  },
  "valuation": {
@@ -216,7 +275,7 @@
    "Cash and short-term investments $45.4B, debt and finance leases $9.5B → EV $1,290.5B",
    "TTM = Q4'25 to Q3'26: revenue $103.57B, GAAP EPS $0.91, non-GAAP EPS $1.72, adjusted EBITDA $15.0B, FCF $3.30B"
   ],
-  "next": "TSLA's profits are too thin for a guidance-based forward P/E or three scenarios to mean much, so this page leaves them out."
+  "next": "TSLA's profits are too thin for scenarios or scenario prices to mean much, so this page doesn't give them. At the default multiples in the sum-of-the-parts above, cars, storage and services add up to about $180B, plus about $36B of net cash, only about $60 a share; the remaining ~85% of the market value depends on whether Robotaxi and Optimus deliver, and there are no reliable numbers to estimate that yet."
  },
  "management": {
   "call": [

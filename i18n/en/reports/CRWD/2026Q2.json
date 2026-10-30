@@ -79,6 +79,63 @@
   },
   "extras": [
    {
+    "title": "Where it sits in the AI loop",
+    "take": "CrowdStrike sells <b>the security that AI deployment requires</b>: the stronger the models, the more vulnerabilities they find and the more security enterprises need. But cloud providers and AI labs are also building security into their own products.",
+    "items": [
+     {
+      "b": "AI creates security demand",
+      "pill": "net new ARR +51%",
+      "w": "Management says enterprises must solve AI security and compliance before they dare deploy; Amazon's CEO also said in late October that frontier models find vulnerabilities at “unprecedented rates” and that a significant share of tokens over the next year or two may go to security."
+     },
+     {
+      "b": "Priced by tokens",
+      "pill": "AI detection and response",
+      "w": "AI DR is billed by token credits consumed through Flex, nearly 3x q/q; pricing is starting to track AI usage."
+     },
+     {
+      "b": "Competition from upstream",
+      "pill": "clouds do security too",
+      "w": "In October Amazon launched AWS Continuum to find and fix vulnerabilities automatically, plugged into Anthropic's Claude Code and OpenAI's Codex; cloud providers and AI labs bundling security is CrowdStrike's biggest long-term risk."
+     },
+     {
+      "b": "Stock compensation",
+      "pill": "exceeds free cash flow",
+      "w": "The quarter's $405M gap between GAAP and non-GAAP operating income was larger than its $377M of free cash flow."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "The company's long-term target is actually <b>more conservative than today's growth</b>: $10B of ARR needs only about 11% growth a year. The current price bets that growth far above target lasts for many years.",
+    "items": [
+     {
+      "b": "Volume: replacing legacy antivirus",
+      "pill": "about half not yet replaced",
+      "w": "About half of the endpoint market still uses legacy antivirus; 51% of subscription customers use six or more modules."
+     },
+     {
+      "b": "Price: Flex lifts ARR",
+      "pill": "+40% after conversion",
+      "w": "Customers converting to Falcon Flex raise ARR by more than 40% on average; Flex customer ARR is $2.29B, doubled."
+     },
+     {
+      "b": "New products",
+      "pill": "cloud, SIEM, identity",
+      "w": "Cloud security $905M+, next-gen SIEM $695M+, identity security $585M+, all growing faster than the company."
+     },
+     {
+      "b": "Company targets",
+      "pill": "FY31 ARR $10B",
+      "w": "September 2025 investor day: $10B of ARR by FY31 and $20B by FY36; FY27 free cash flow margin above 30%; subscription gross margin of 82–85% by FY29. From about $6.6B at the end of FY27, reaching FY31 needs only about 11% a year, while net new ARR is growing about 34% this year."
+     },
+     {
+      "b": "What could break it",
+      "pill": "security gets bundled",
+      "w": "Watch for net new ARR growth back below 20%, Flex customers cutting back after unused credits, subscription gross margin falling instead of rising, and cloud providers' and AI labs' built-in security taking budget."
+     }
+    ]
+   },
+   {
     "title": "ARR breakdown",
     "take": "New products beyond the endpoint each have several hundred million dollars of ARR, all growing faster than the company.",
     "items": [
@@ -257,7 +314,25 @@
    "Split adjustment: FY26 Q3 non-GAAP EPS $0.96 ÷ 4 = $0.24, FY26 Q4 $1.12 ÷ 4 = $0.28, FY27 Q1 $1.10 ÷ 4 = $0.275",
    "Around the report: price × 1.205, TTM revenue × 1.059 → multiple × 1.138",
    "Scenario free cash flow = FY28 revenue × free cash flow margin"
-  ]
+  ],
+  "pricezone": {
+   "sub": "FY28 free cash flow (scenarios above) × our multiple ÷ about 1.05B shares; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "20% growth, 60x"
+    },
+    {
+     "n": "Base",
+     "how": "25% growth, 100x"
+    },
+    {
+     "n": "Bull",
+     "how": "32% growth, 120x"
+    }
+   ],
+   "why": "The price is above the base case: buying now, even the base case loses about 15% and the bear case about 56%; only the bull case leaves about 18% of upside. We already apply very high multiples (60–120x free cash flow), yet the zone sits about 30–45% below the price: near the $160 midpoint the reward/risk is about 1.4, and about 3.3 at the $140 low end. That doesn't mean the company is bad; the price already reflects many years of high growth."
+  }
  },
  "management": {
   "changes": [

@@ -41,7 +41,7 @@
    "t": "Commercial bookings −12% and RPO of $677B flat with last quarter; the company blamed a few huge Azure contracts in the year-ago quarter."
   }
  ],
- "reaction": "Stock: closed at $531.01 (−0.1%) on report day and rose to <b>$543.51 (+2.4%)</b> after hours, at one point up 4–6%. The gain came from Azure's 48% beating expectations of about 45%, revenue and EPS beats, and 49–50% Q2 Azure guidance; it narrowed because Q2 operating margin is guided slightly down y/y and commercial bookings fell 12%. Next-day close to be added. Consensus per ZeroHedge: revenue $90.6B, EPS $4.72, Azure $32.2B.",
+ "reaction": "Stock: closed at $531.01 (−0.1%) on report day and rose to <b>$543.51 (+2.4%)</b> after hours, at one point up 4–6%. The gain came from Azure's 48% beating expectations of about 45%, revenue and EPS beats, and 49–50% Q2 Azure guidance; it narrowed because Q2 operating margin is guided slightly down y/y and commercial bookings fell 12%. The next day it rose as much as about 2% intraday but closed at <b>$530.14 (−0.2%)</b>, giving back the entire after-hours gain. Consensus per ZeroHedge: revenue $90.6B, EPS $4.72, Azure $32.2B.",
  "results": {
   "segments": {
    "title": "By product",
@@ -155,6 +155,42 @@
     ]
    },
    {
+    "title": "Where growth comes from",
+    "take": "Microsoft's growth has two parts: <b>Azure depends on compute supply</b>, and Copilot on usage pricing. The real variables are whether compute arrives on time and whether OpenAI, its largest customer, can keep paying.",
+    "items": [
+     {
+      "b": "Volume: compute sets revenue",
+      "pill": "demand exceeds supply",
+      "w": "Part of Azure's 48% came from engineering that “freed up” existing compute; third-party compute deliveries slipped into the second half of the fiscal year. Calendar 2026 capex is about $170B, with Q2 above $50B."
+     },
+     {
+      "b": "Price: tokens and usage",
+      "pill": "Copilot usage pricing",
+      "w": "Part of this quarter's Azure beat came from token prices above expectations; Copilot is moving from per-seat to usage pricing, with usage-based customers up more than 75% in a quarter. The CFO called both “not very predictable”."
+     },
+     {
+      "b": "Backlog: weighted far out",
+      "pill": "RPO $677B",
+      "w": "The part recognized after 12 months grew 98%, including OpenAI's October 2025 commitment to buy $250B of Azure. Commercial bookings fell 12% this quarter, which management put down to a high base."
+     },
+     {
+      "b": "New businesses",
+      "pill": "Maia 200 + Foundry",
+      "w": "The in-house Maia 200 chip delivers 1.7x the tokens per watt of GPUs; the Foundry model platform and enterprise AI apps are rolling out."
+     },
+     {
+      "b": "Company targets",
+      "pill": "no long-term numbers",
+      "w": "Only next-quarter guidance: FY27 Q2 Azure growth of 49–50%, and positive FY27 free cash flow. No multi-year revenue or margin targets."
+     },
+     {
+      "b": "What could break it",
+      "pill": "OpenAI concentration",
+      "w": "OpenAI was about 11% of revenue this quarter and its receivable rose from $6.0B to $7.2B; Microsoft also owns about 24% of it. Watch whether the OpenAI receivable keeps outgrowing its revenue, whether RPO stalls for consecutive quarters, and whether Microsoft starts issuing bonds."
+     }
+    ]
+   },
+   {
     "title": "Why bookings stalled",
     "take": "Revenue is accelerating but new contracts are shrinking; the company blames last year's huge contracts and warns bookings will swing widely.",
     "items": [
@@ -241,11 +277,70 @@
    "Forward P/E: pre-report consensus EPS = $531.01 ÷ 26.03 ≈ $20.40; $543.51 ÷ $20.40 ≈ 26.6x",
    "Capex definitions: the reported $45.2B includes $7.4B of new finance leases (the full lease principal at commencement); $39.4B of cash purchases is the cash-flow-statement measure, and the two should not be added"
   ],
-  "next": "The post-report price decomposition will be added after the next day's close.",
+  "next": "The next-day close is in the price note at the top; scenario prices use the 29 Oct close.",
   "history": {
    "title": "Against its own last 5 years",
    "sub": "Forward P/E (next-twelve-month consensus) at quarter ends",
    "note": "About 27x at the after-hours price, above 6 of the last 20 quarter ends; median about 30x. At the end of March and June this year it was only 20–21x, the lowest in five years. The current value uses pre-report consensus EPS (about $20.40). StockAnalysis data; quarter ends are calendar quarter ends."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY2028 profits",
+   "sub": "Jul 2027–Jun 2028; FY27 revenue = Q1 actual + Q2 guided midpoint + second-half assumption ≈ $394B",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+10%",
+      "44%",
+      "$20.8",
+      "25.5x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+16%",
+      "47%",
+      "$23.4",
+      "22.7x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+20%",
+      "49%",
+      "$25.2",
+      "21.0x"
+     ]
+    }
+   ],
+   "note": "Bear: depreciation and lease interest squeeze margins and Azure slows; base: Azure stays above 40% with margins near this year's; bull: usage-priced Copilot takes off. EPS = revenue × operating margin × (1 − 19%) ÷ 7.43B shares, excluding OpenAI-related gains or losses. P/E at the 29 Oct close of $530.14. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY28 EPS × our P/E; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "Azure slows, 22x"
+    },
+    {
+     "n": "Base",
+     "how": "Azure 40%+, 28x"
+    },
+    {
+     "n": "Bull",
+     "how": "Copilot takes off, 32x"
+    }
+   ],
+   "why": "Today's price is at the top of the zone: buying now, the base case gains about 24% and the bear case loses about 14%, a reward/risk of about 1.7. The low end is close to the bear-case price, so buying near it leaves little to fear from the bear case. The 22–32x multiples sit around its five-year median forward P/E of about 30x; the bear case is lower because capex now needs financing and OpenAI risk is concentrated."
   }
  },
  "management": {

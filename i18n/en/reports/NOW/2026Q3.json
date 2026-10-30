@@ -41,7 +41,7 @@
    "t": "GAAP operating margin fell from 17% to 9.5%: $9.17B was spent this year on Armis and other acquisitions, mostly borrowed."
   }
  ],
- "reaction": "Stock: closed at $150.13 (−3.0%) on report day and fell to <b>$124.18 (−17.3%)</b> after hours. Several metrics beat company guidance; what fell was Q4: cRPO growth drops from 21% to 18.5%, and full-year revenue was raised by only half of this quarter's beat. An analyst asked directly “when will AI momentum turn into overall acceleration”; management's answer was 2027. Next-day close to be added. Consensus from MarketBeat: EPS $1.02, revenue $4.09B.",
+ "reaction": "Stock: closed at $150.13 (−3.0%) on report day and fell to <b>$124.18 (−17.3%)</b> after hours. Several metrics beat company guidance; what fell was Q4: cRPO growth drops from 21% to 18.5%, and full-year revenue was raised by only half of this quarter's beat. An analyst asked directly “when will AI momentum turn into overall acceleration”; management's answer was 2027. The next day it closed at <b>$109.67 (−27.0%)</b>, falling further than after hours, one of its largest one-day drops since listing. Consensus from MarketBeat: EPS $1.02, revenue $4.09B.",
  "results": {
   "segments": {
    "title": "Revenue mix",
@@ -109,6 +109,37 @@
       "b": "But acquisitions are borrowed",
       "pill": "debt $1.5B → $7.5B",
       "w": "This year's acquisitions cost $9.17B in cash, funded by $3.9B of bonds and commercial paper; no buybacks this quarter ($580M a year ago), and cash and investments fell from $10.1B to $7.0B."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "ServiceNow's future hinges on one thing: <b>whether AI adds to software spending or replaces seat-based software</b>. The company set 2030 targets in May, but this quarter's cRPO guidance is slowing.",
+    "items": [
+     {
+      "b": "Volume: seats under pressure",
+      "pill": "own headcount down",
+      "w": "ServiceNow saves more than $1B a year using AI itself and headcount dipped; customers will do the same. The same week, Microsoft's paid M365 seats grew only 5%."
+     },
+     {
+      "b": "Price: hybrid pricing",
+      "pill": "revenue per user up to 5x",
+      "w": "Seats keep budgets predictable while usage pricing drives growth; the CEO said revenue per user could rise 5x, though customers are “not asking at all” for outcome-based pricing."
+     },
+     {
+      "b": "New business: AI",
+      "pill": "AI ACV $1.7B+",
+      "w": "Net new AI annual contract value +65%, with the full-year target raised twice; Armis, Veza and Moveworks contributed $100M of ACV in three quarters."
+     },
+     {
+      "b": "Company targets",
+      "pill": "about $30B of subscription in 2030",
+      "w": "At the May investor day, according to press reports: about $30B of subscription revenue in 2030 ($32B upside case), about 19% a year, with AI about 30% of 2030 ACV. This year's subscription revenue is about $15.8B growing about 20%, and Q4 cRPO is guided down to 18.5%."
+     },
+     {
+      "b": "What could break it",
+      "pill": "cRPO below 18%",
+      "w": "Watch for cRPO below 18% for several quarters, wider free deployment support, bigger professional services losses, seat cuts at renewal, and how the $6B of acquisition debt is repaid."
      }
     ]
    },
@@ -218,7 +249,66 @@
    "Forward P/E: pre-report consensus EPS = $150.13 ÷ 31.48 ≈ $4.77; $124.18 ÷ $4.77 ≈ 26.0x; the median is StockAnalysis's median forward P/E over the last 20 quarter ends, 53.8x",
    "2025 Q3 EPS adjusted for the 5-for-1 split: non-GAAP $4.82 ÷ 5 ≈ $0.96"
   ],
-  "next": "The post-report price decomposition will be added after the next day's close."
+  "next": "The next-day close is in the price note at the top; scenario prices use the 29 Oct close.",
+  "scenarios": {
+   "title": "Three scenarios: 2027 cash flow",
+   "sub": "Starting from the 2026 subscription guided midpoint of $15.785B",
+   "head": [
+    "Case",
+    "Subscription growth",
+    "FCF margin",
+    "Free cash flow",
+    "Mkt cap/FCF"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+12%",
+      "30%",
+      "$5.45B",
+      "15x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+18%",
+      "35%",
+      "$6.69B",
+      "22x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+21%",
+      "37%",
+      "$7.25B",
+      "28x"
+     ]
+    }
+   ],
+   "note": "Bear: AI replaces seats, growth falls to the low teens and margins drop; base: close to the ~19% implied by the 2030 target, with margins at this year's 35–36%; bull: AI drives re-acceleration. Revenue = subscription + about $0.5B of professional services; the last column is the multiple we apply, not today's. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2027 free cash flow × our multiple ÷ 1.034B shares; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "AI replaces seats, 15x"
+    },
+    {
+     "n": "Base",
+     "how": "near the 2030 target, 22x"
+    },
+    {
+     "n": "Bull",
+     "how": "re-acceleration, 28x"
+    }
+   ],
+   "why": "After falling 27% the next day, the price sits inside the zone: buying now, the base case gains about 30% and the bear case loses about 28%, so reward and risk are about even. Near the $100 midpoint the reward/risk is about 2; at the $85 low end the bear case loses only about 7% more. The 15–28x multiples are far below its five-year median P/E of about 54x because the whole software sector is being repriced."
+  }
  },
  "management": {
   "changes": [

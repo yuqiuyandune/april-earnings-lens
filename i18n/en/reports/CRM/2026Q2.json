@@ -91,6 +91,63 @@
   },
   "extras": [
    {
+    "title": "Where it sits in the AI loop",
+    "take": "Salesforce sits in the application layer at the end of the chain: <b>whether enterprises pay for AI, and whether AI cuts software seats</b>, shows up here. It chose to partner with Anthropic and put itself inside Claude.",
+    "items": [
+     {
+      "b": "Partnering with model makers",
+      "pill": "Claudeforce",
+      "w": "Launched Claudeforce with Anthropic, putting CRM data and functions inside Claude; Slackbot also uses Claude. The stock rose 23% in a day on the news."
+     },
+     {
+      "b": "AI companies as customers",
+      "pill": "spending +435%",
+      "w": "9 of the top 10 AI companies use Salesforce, with spending up 435% y/y."
+     },
+     {
+      "b": "Seat pricing under pressure",
+      "pill": "only 5% upgraded",
+      "w": "Benioff said the company is “still stuck in some ways in the per-user model”. In late October ServiceNow fell 27% the next day and Microsoft's paid M365 seats grew only 5%: the market's worries about software haven't gone away."
+     },
+     {
+      "b": "Borrowing for buybacks",
+      "pill": "$25B of bonds",
+      "w": "An accelerated buyback funded with $25B of new bonds cut the share count by about 14%; operating cash flow growth guidance fell from 9–10% to 4–5% as a result."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Salesforce targets <b>10%+ organic growth a year</b>, but organic growth is only about 6% now. The variables are whether AI products can pull growth back up, and whether AI agents replace seats.",
+    "items": [
+     {
+      "b": "Volume: sellers and seats",
+      "pill": "1,200 more sellers",
+      "w": "Another 1,200 sellers by year end (about 15,000 today); whether paid seat counts fall is the most direct signal of AI disruption."
+     },
+     {
+      "b": "Price: upgrades and usage",
+      "pill": "premium costs 60–80% more",
+      "w": "Only 5% of sales and service users have upgraded to premium editions; customers can pay per user, by usage or by outcome."
+     },
+     {
+      "b": "New businesses",
+      "pill": "Agentforce ARR $1.5B+",
+      "w": "Agentforce ARR exceeds $1.5B (on a wider definition), with AI and data together about $3.9B; Claudeforce launched in September."
+     },
+     {
+      "b": "Company targets",
+      "pill": "FY30 revenue $60B+",
+      "w": "October 2025 investor day: FY30 revenue above $60B (excluding Informatica), 10%+ organic growth a year over FY26–FY30, and the “Rule of 50”. Organic growth this quarter was about 6%, well short of the target; management says it re-accelerates in the second half."
+     },
+     {
+      "b": "What could break it",
+      "pill": "seats replaced",
+      "w": "Watch for cRPO back below 12%, growth excluding acquisitions staying below 6%, falling paid seat counts, and Claudeforce's value staying mostly inside Claude."
+     }
+    ]
+   },
+   {
     "title": "How much growth was bought",
     "take": "Of the reported +11%, organic growth is about 6%; management says it re-accelerates in the second half.",
     "items": [
@@ -286,7 +343,25 @@
    "Organic growth: ($11.345B − Informatica $0.456B) ÷ $10.236B − 1 ≈ 6.4%",
    "Around the report: price × 1.226, TTM free cash flow × 1.034 → multiple × 1.186",
    "Scenario free cash flow = FY28 revenue × free cash flow margin"
-  ]
+  ],
+  "pricezone": {
+   "sub": "FY28 free cash flow (scenarios above) × our multiple ÷ about 800M shares; price at the 29 Oct close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "AI erodes, 10x"
+    },
+    {
+     "n": "Base",
+     "how": "10% growth, 15x"
+    },
+    {
+     "n": "Bull",
+     "how": "13% growth, 18x"
+    }
+   ],
+   "why": "The price is at the top of the zone: buying now, the base case gains about 40% while the bear case loses about 17%, a reward/risk of about 2.3. The low end equals the bear-case price. The 10–18x multiples are all below its five-year median of about 25x because AI's impact on software is still unresolved; even so, the price is already close to the bear case."
+  }
  },
  "management": {
   "changes": [
