@@ -1,0 +1,47 @@
+name: Daily prices
+
+# Weekdays after the US close: 21:40 UTC = 14:40 PDT / 13:40 PST (the close is 13:00 PT).
+# A catch-up run follows in case GitHub delays or skips the first one.
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"
+    - cron: "13 1 * * 2-6"
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: "Only test which data sources answer"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe sources
+        if: ${{ inputs.probe }}
+        run: python3 scripts/prices.py --probe
+      - name: Fetch closes
+        if: ${{ !inputs.probe }}
+        run: python3 scripts/prices.py
+      - name: Commit
+        if: ${{ !inputs.probe }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data/prices.json
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Daily prices $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && exit 0; sleep 5; done
+          exit 1
