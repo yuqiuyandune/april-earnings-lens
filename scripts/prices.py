@@ -8,7 +8,8 @@ import argparse, csv, datetime as dt, io, json, pathlib, sys, time, urllib.reque
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "prices.json"
-UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+      "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}
 
 
 def get(url):
@@ -35,13 +36,27 @@ def yahoo(t, since):
 
 def stooq(t, since):
     txt = get(f"https://stooq.com/q/d/l/?s={t.lower()}.us&d1={since.replace('-', '')}&i=d")
+    if not txt.startswith("Date"):
+        raise ValueError("stooq: " + txt[:120].replace("\n", " "))
     rows = []
     for r in csv.DictReader(io.StringIO(txt)):
         rows.append([r["Date"], round(float(r["Close"]), 2), int(float(r.get("Volume") or 0))])
     return rows
 
 
-SOURCES = {"yahoo": yahoo, "stooq": stooq}
+def nasdaq(t, since):
+    kind = "etf" if t in ETFS else "stocks"
+    j = json.loads(get(f"https://api.nasdaq.com/api/quote/{t}/historical?assetclass={kind}&fromdate={since}&limit=9999"))
+    rows = []
+    for r in j["data"]["tradesTable"]["rows"]:
+        m, d, y = r["date"].split("/")
+        rows.append([f"{y}-{m}-{d}", round(float(r["close"].replace("$", "").replace(",", "")), 2),
+                     int(r["volume"].replace(",", "") or 0) if r["volume"] not in ("N/A", "") else 0])
+    return sorted(rows)
+
+
+ETFS = {"QQQ", "SMH", "IGV", "GRID", "XLY", "XLC", "DRAM"}
+SOURCES = {"nasdaq": nasdaq, "yahoo": yahoo, "stooq": stooq}
 
 
 def tickers():
@@ -65,6 +80,7 @@ def main():
         for n, f in SOURCES.items():
             try:
                 rows = f("NVDA", a.since)
+                print(n, "QQQ", len(f("QQQ", a.since)) if n == "nasdaq" else "")
                 print(n, "OK", len(rows), rows[-2:])
             except Exception as e:
                 print(n, "FAIL", repr(e)[:200])
