@@ -445,5 +445,9 @@
    "t": "StockAnalysis：TSLA 历史市销率",
    "u": "https://stockanalysis.com/stocks/tsla/financials/ratios/?p=quarterly"
   }
- ]
+ ],
+ "event": {
+  "date": "2026-10-21",
+  "when": "amc"
+ }
 }

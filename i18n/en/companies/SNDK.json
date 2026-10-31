@@ -13,7 +13,10 @@
   "modules": [
    "Where it sits in the AI loop",
    "Where growth comes from"
-  ]
+  ],
+  "peer": {
+   "n": "Semiconductor ETF (SMH)"
+  }
  },
  "series": {
   "metrics": {

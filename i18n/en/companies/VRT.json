@@ -15,7 +15,10 @@
    "Where growth comes from",
    "This quarter's growth bridge",
    "Without orders, what to watch"
-  ]
+  ],
+  "peer": {
+   "n": "Grid infrastructure ETF (GRID)"
+  }
  },
  "series": {
   "metrics": {

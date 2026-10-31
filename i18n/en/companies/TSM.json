@@ -19,7 +19,10 @@
    "Node mix",
    "Gross margin drags",
    "Capex intensity"
-  ]
+  ],
+  "peer": {
+   "n": "Semiconductor ETF (SMH)"
+  }
  },
  "series": {
   "metrics": {

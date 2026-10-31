@@ -14,7 +14,10 @@
    "Where it sits in the AI loop",
    "Where growth comes from",
    "From slot to cash: three time lags"
-  ]
+  ],
+  "peer": {
+   "n": "Grid infrastructure ETF (GRID)"
+  }
  },
  "series": {
   "metrics": {

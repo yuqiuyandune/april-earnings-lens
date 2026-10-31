@@ -15,7 +15,10 @@
    "Where growth comes from",
    "ARR breakdown",
    "Stock compensation vs free cash flow"
-  ]
+  ],
+  "peer": {
+   "n": "Software ETF (IGV)"
+  }
  },
  "series": {
   "metrics": {

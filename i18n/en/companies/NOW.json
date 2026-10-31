@@ -14,7 +14,10 @@
    "Where it sits in the AI loop",
    "Where growth comes from",
    "Why cRPO is slowing"
-  ]
+  ],
+  "peer": {
+   "n": "Software ETF (IGV)"
+  }
  },
  "series": {
   "metrics": {

@@ -19,7 +19,10 @@
    "Signs of AI payback",
    "Capex intensity",
    "One-off adjustments"
-  ]
+  ],
+  "peer": {
+   "n": "the other three hyperscalers"
+  }
  },
  "series": {
   "metrics": {

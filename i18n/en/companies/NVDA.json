@@ -15,7 +15,10 @@
    "Where growth comes from",
    "Why gross margin falls",
    "Cash comes back slower"
-  ]
+  ],
+  "peer": {
+   "n": "Semiconductor ETF (SMH)"
+  }
  },
  "series": {
   "metrics": {

@@ -15,7 +15,10 @@
    "Where growth comes from",
    "How much growth was bought",
    "One-offs in EPS"
-  ]
+  ],
+  "peer": {
+   "n": "Software ETF (IGV)"
+  }
  },
  "series": {
   "metrics": {

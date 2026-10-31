@@ -14,7 +14,10 @@
    "Where it sits in the AI loop",
    "Where growth comes from",
    "Why profit didn't keep up"
-  ]
+  ],
+  "peer": {
+   "n": "the other three hyperscalers"
+  }
  },
  "series": {
   "metrics": {
