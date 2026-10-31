@@ -64,6 +64,7 @@ def build_langs(out: pathlib.Path):
 
     en_done = set()
     for f in sorted(src.rglob("*.json")):
+        if f.name == "prices.json": continue  # numbers only; the site always reads data/prices.json
         rel = f.relative_to(src); d = json.loads(f.read_text(encoding="utf-8"))
         tw = out / "data-tw" / rel; tw.parent.mkdir(parents=True, exist_ok=True)
         tw.write_text(json.dumps(conv(d, to_tw), ensure_ascii=False), encoding="utf-8")
@@ -85,6 +86,24 @@ def build_langs(out: pathlib.Path):
             c["headline"] = json.loads((out / "data-en" / "reports" / c["t"] / f"{c['latest']}.json").read_text(encoding="utf-8"))["headline"]
     en.write_text(json.dumps(d2, ensure_ascii=False), encoding="utf-8")
     print("languages: tw converted, en reports", len(en_done))
+
+def track(out: pathlib.Path):
+    """data/track.json: language-neutral summary of each company's latest zone, report event and peer benchmark,
+    so the home page can draw the zone tracker and post-earnings list without loading every report."""
+    idx = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
+    items = []
+    for c in idx["companies"]:
+        r = json.loads((ROOT / "data" / "reports" / c["t"] / f"{c['latest']}.json").read_text(encoding="utf-8"))
+        co = json.loads((ROOT / "data" / "companies" / f"{c['t']}.json").read_text(encoding="utf-8"))
+        it = {"t": c["t"], "q": c["latest"], "event": r.get("event")}
+        peer = co.get("config", {}).get("peer")
+        if peer: it["peer"] = {k: v for k, v in peer.items() if k in ("t", "basket")}
+        z = r.get("valuation", {}).get("pricezone")
+        if z:
+            it["zone"] = {"on": z.get("on"), "price": z["price"], "bear": z["scen"][0]["p"], "base": z["scen"][1]["p"],
+                          "bull": z["scen"][2]["p"], "lo": z["zone"][0], "hi": z["zone"][1], "status": z.get("status", "ok")}
+        items.append(it)
+    (out / "data" / "track.json").write_text(json.dumps({"items": items}, ensure_ascii=False), encoding="utf-8")
 
 def tw_ui(page: str) -> str:
     """Add I18N.tw to the page by converting the Simplified UI dictionary."""
@@ -120,6 +139,7 @@ def main():
              "April's Earnings Lens 财报日历：重点公司的发布日期与解读进度。"), encoding="utf-8")
     shutil.copytree(ROOT / "data", DIST / "earnings" / "data")
     build_langs(DIST / "earnings")
+    track(DIST / "earnings")
     shutil.copy(ROOT / "switcher.js", DIST / "earnings" / "switcher.js")
     zpath = ROOT / "earnings-lens-site.zip"
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:

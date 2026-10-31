@@ -432,5 +432,8 @@
   {
    "t": "StockAnalysis: price and valuation history"
   }
- ]
+ ],
+ "digest": {
+  "verdict": "The market sided fully with growth. Up 20.5% the next day, it gave back to +7.5% in the first week, then climbed steadily to +37.3% after four weeks, about 33 points ahead of IGV, with a high of $262.49 on 23 Sep. The record valuation we flagged didn't matter in those four weeks: the market accepted that AI deployment drives security spending and kept raising the multiple. That is why the price is now above our base-case price (see the valuation page)."
+ }
 }

@@ -476,5 +476,8 @@
   {
    "t": "StockAnalysis: price and valuation history"
   }
- ]
+ ],
+ "digest": {
+  "verdict": "The market rewarded the growth but not with a higher multiple. Up 8.7% the next day, about 5.6 points ahead of the semiconductor ETF; after four weeks it was up 7.1%, actually 1 point behind SMH (+8.1%), so the relative gain was fully given back. That fits the concerns we flagged (falling gross margin, slower collections, the guarantee exposure): the growth was accepted, but the market wouldn't pay more for it, which is what the valuation page calls “discounting a peak in the AI investment cycle”."
+ }
 }
