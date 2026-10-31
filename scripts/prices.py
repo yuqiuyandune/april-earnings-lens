@@ -66,8 +66,10 @@ def tickers():
         ts.add(c["t"])
         co = json.loads((ROOT / "data" / "companies" / f"{c['t']}.json").read_text())
         peer = co.get("config", {}).get("peer")
-        if peer:
+        if peer and peer.get("t"):
             ts.add(peer["t"])
+        for b in (peer or {}).get("basket", []):
+            ts.add(b)
     return sorted(ts)
 
 
