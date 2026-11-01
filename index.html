@@ -29,7 +29,12 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .wrap{max-width:760px;margin:0 auto;padding-block:16px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:30px}
 a{color:var(--accent)}
-.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.top{display:flex;align-items:center;gap:10px 12px;flex-wrap:wrap;justify-content:space-between}
+.top .sbox{flex:1 1 100%}
+.snav{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:2px}
+.snav a{font-size:13px;padding:4px 11px;border-radius:7px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.snav a[aria-current="page"]{background:var(--ink);color:var(--bg);font-weight:600}
+
 .brand{font-size:12.5px;color:var(--muted);letter-spacing:.05em;text-decoration:none;white-space:nowrap}
 .brand b{color:var(--ink);font-weight:700}
 .sbox{position:relative;flex:1 1 200px;min-width:0}
@@ -76,11 +81,13 @@ h1{font-family:var(--f-display);font-size:clamp(24px,5.4vw,34px);line-height:1.3
 .points{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px}
 .points b{font-weight:700}
 
-nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin:-12px 0 -8px;padding-block:8px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;border-bottom:1px solid var(--line)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin:-12px 0 -8px;padding-block:8px;display:grid;grid-template-columns:repeat(5,auto);justify-content:space-between;gap:2px;border-bottom:1px solid var(--line)}
 nav.tabs a{font-size:14.5px;font-weight:500;color:var(--muted);text-decoration:none;text-align:center;border-radius:8px;padding:8px 4px;position:relative}
+@media (min-width:560px){nav.tabs{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:420px){nav.tabs a{font-size:13.5px;padding:8px 4px}}
 nav.tabs a:hover{color:var(--ink);background:var(--surface)}
 nav.tabs a[aria-selected="true"]{color:var(--ink);font-weight:700}
-nav.tabs a[aria-selected="true"]::after{content:"";position:absolute;left:22%;right:22%;bottom:-9px;height:3px;border-radius:2px;background:var(--accent)}
+nav.tabs a[aria-selected="true"]::after{content:"";position:absolute;left:12%;right:12%;bottom:-9px;height:3px;border-radius:2px;background:var(--accent)}
 nav.tabs a:focus-visible,.crow:focus-visible,.qs a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tp{display:flex;flex-direction:column;gap:32px}
 
@@ -223,6 +230,20 @@ footer ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px
 .zrow .zm{grid-area:m}
 .zrow .pill{white-space:normal}
 @media (max-width:560px){.zrow{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"n s" "a a" "m m"}}
+.crow .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.crow .chips .pill,.hsum .pill{white-space:normal}
+.hsum{display:flex;flex-direction:column;gap:6px}
+.hsum a{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.hsum a:hover{border-color:var(--accent)}
+.hsum .k{font-size:12px;color:var(--muted);min-width:5.5em}
+.lg{display:flex;gap:16px;margin:0;font-size:12.5px;color:var(--muted)}
+.lg span{display:flex;align-items:center;gap:6px}
+.lg i{display:inline-block;width:16px;height:3px;border-radius:2px}
+.lg i.dash{background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px)}
+.vdp{border-left:3px solid var(--accent)}
+.vgrid.mt{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.vgrid.mt .vt{padding:10px 12px}
+.vgrid.mt .vt b{font-size:19px}
 .dg .dgf{margin:0;font-size:13.5px}
 .dg .vd{display:flex;flex-direction:column;gap:3px;font-size:14px;border-left:3px solid var(--accent);padding:2px 0 2px 10px}
 .dg .vd span{color:var(--muted)}
@@ -232,13 +253,12 @@ footer ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px
 
 <div class="wrap">
   <div class="top">
-    <a class="brand" href="#home"><b data-i="brand">财报解读</b></a>
-    <a class="brand" href="calendar/" style="color:var(--accent)" data-i="calLink">财报日历 →</a>
+    <nav class="snav" aria-label="Earnings Lens"><a href="#home" data-nav="home" data-i="nav.home">财报</a><a href="#zones" data-nav="zones" data-i="nav.zones">区间跟踪</a><a href="calendar/" data-i="nav.cal">财报日历</a></nav>
+    <div class="lang" role="group" aria-label="Language"><button data-l="zh">简</button><button data-l="tw">繁</button><button data-l="en">EN</button></div>
     <div class="sbox">
       <input id="q" type="search" placeholder="搜索公司：代码、中文名或英文名" aria-label="搜索公司" data-ip="search" autocomplete="off">
       <div class="sres" id="sres" hidden></div>
     </div>
-    <div class="lang" role="group" aria-label="Language"><button data-l="zh">简</button><button data-l="tw">繁</button><button data-l="en">EN</button></div>
   </div>
   <main id="app"><div class="loading">…</div></main>
 </div>
@@ -247,8 +267,8 @@ footer ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:2px
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 /* ---------- languages: zh (source), tw (converted from zh at build time), en ---------- */
-const I18N={zh:/*I18N_ZH*/{"brand":"财报解读","calLink":"财报日历 →","search":"搜索公司：代码、中文名或英文名","none":"还没有“{0}”的财报解读。可以在财报日历里查看发布日期。","homeP":"AI 产业链和重点科技公司的季度财报：业绩、估值、管理层承诺兑现和内部人动向。","latest":"最新解读","pub":"{1}月{2}日发布","homeNote":"更多公司的发布日期见<a href=\"calendar/\">财报日历</a>。每家公司每季一份解读，往季解读保留在公司页的季度切换里。","qs":"切换季度","colon":"：","stop":"。","vp":"增长来自量还是价","share":"占","bridge":"营收同比变化","total":"合计","trends":"走势","val":"估值","rev":"营收","med":"中位","drag":"可拖动调整","calc":"计算依据","sotpRest":"未来业务","sotpOut":"现有业务合计约 <b>${0}B</b>，企业价值 ${1}B 中约 <b>${2}B（{3}%）</b>是在为尚未兑现的业务定价。","ledger":"说了 vs 做到","first":"这是第一份解读","firstNote":"本季记录的承诺会从下一季开始逐条核对。","newProm":"本季新承诺，下季起追踪","changed":"和上季相比，说法有什么变化","before":"上季","now":"本季","call":"电话会","insider":"内部人动向","tab.results":"业绩","tab.valuation":"估值","tab.management":"管理层","tab.insider":"内部人","sections":"页面分区","nf":"没有找到 {0}","nfTry":"试试上方搜索。","err":"数据没有加载成功","errTry":"请刷新页面再试。","foot":"本页仅为信息整理和作者个人观点，不构成投资建议。数据截至 {0}。","src":"来源","zhOnly":"这份解读暂时只有中文版。","zhTag":"中文","pz.title":"情景价格与作者关注区间","pz.zone":"作者关注区间","pz.now":"现价","pz.zoneIs":"作者关注区间：","pz.from":"买入价","pz.px":"价格","pz.toBear":"到悲观","pz.toBase":"到基准","pz.toBull":"到乐观","pz.rr":"回报/风险","pz.atNow":"现价","pz.atMid":"区间中值","pz.atLo":"区间下沿","pz.rrNote":"回报/风险 = 到基准情景的上涨幅度 ÷ 到悲观情景的下跌幅度。大于 1 说明按这个价格买，基准情景下能赚的比悲观情景下会亏的多；越高越有安全边际。","pz.disc":"情景价格和关注区间仅代表本文作者的个人观点，基于公开信息和我们设定的假设，可能出错，不构成投资建议，也不是买卖推荐。请独立判断并自行承担风险。","zt.title":"作者关注区间跟踪","zt.sub":"按每日收盘价自动更新；区间只在财报或基本面变化时修改，不随股价调整","zt.week":"本周变化","zt.none":"本周没有公司进出区间。","zt.chg":"{0} → {1}","zt.st.bb":"低于悲观","zt.st.b":"低于区间","zt.st.in":"区间内","zt.st.a":"高于区间 {0}","zt.st.ab":"高于基准","zt.review":"待复核","zt.set":"区间定于 {0}","zt.rr":"回报/风险","zt.noZone":"未设区间：{0}（理由见各自估值页）","zt.data":"收盘价来自 Nasdaq.com，最新为 {0}。区间和情景价格仅代表作者个人观点，不是投资建议。","zt.how":"灰点是悲观、基准、乐观情景价格，虚线框是作者关注区间，竖线是最新收盘。回报/风险 = 按最新收盘到基准情景的涨幅 ÷ 到悲观情景的跌幅。","dg.title":"市场怎么消化这份财报","dg.sub":"以财报前收盘 {0}（{1}）为起点","dg.h0":"节点","dg.h1":"日期","dg.h2":"股价","dg.h3":"纳指 100","dg.h4":"同行","dg.h5":"相对同行","dg.d1":"次日","dg.w1":"1 周后","dg.w4":"4 周后","dg.now":"至今 · {0} 日","dg.wait":"待更新","dg.vol":"次日成交量是此前 50 日均量的 <b>{0} 倍</b>","dg.imp":"期权预期波动 ±{0}%，次日实际 {1}","dg.impNA":"期权预期波动：待作者补充","dg.recDown":"已收复财报前价格","dg.notRecDown":"还没收复财报前价格","dg.backUp":"曾回落到财报前价格之下","dg.holdUp":"一直在财报前价格之上","dg.peerNote":"相对同行 = 股价涨跌 − 同行涨跌，用来剔除整个板块的涨跌。同行 = {0}。","dg.noPeer":"没有合适的同行基准，“相对同行”按纳指 100（QQQ）计算。","dg.verdict":"4 周结论","dg.pending":"第 20 个交易日后写：市场最终是奖励还是惩罚了这份财报，以及我们当时标出的亮点和风险，哪些被市场认同。","dg.due":"4 周的数据已经到了，结论待写。","dg.src":"收盘价来自 Nasdaq.com，最新为 {0}。","dl.title":"最近财报的市场消化","dl.h0":"公司","dl.h1":"财报","dl.h2":"交易日","dl.h3":"股价","dl.h4":"相对同行","pz.live":"区间定于 {0}（当时 {1}），最新收盘 {2}（{3}）。上面的价格轴、涨跌幅和下面的回报/风险按最新收盘重算；文字说明仍是设定时写的。","pz.atSet":"设定时","pz.atLast":"最新收盘","pz.reviewing":"这个区间正在复核：公司或生态链出现了可能改变基本面的变化，复核完会更新或确认不变。","dl.note":"相对同行 = 股价涨跌 − 同行涨跌；每家的同行基准见各自财报页。超过 20 个交易日的按第 20 个交易日（4 周）计算。","dg.h5b":"相对纳指","dg.verdictOn":"写于 {0}"}/*END*/,
-en:{"brand":"Earnings Lens","calLink":"Earnings calendar →","search":"Search: ticker or company name","none":"No earnings review for “{0}” yet. Check the earnings calendar for dates.","homeP":"Quarterly earnings of AI supply-chain and key tech companies: results, valuation, management promises and insider activity.","latest":"Latest reviews","pub":"published {1}/{2}","homeNote":"Release dates for more companies are in the <a href=\"calendar/\">earnings calendar</a>. One review per company per quarter; earlier quarters stay in the quarter switcher on each company page.","qs":"Switch quarter","colon":": ","stop":". ","vp":"Volume or price","share":"","bridge":"Revenue change year on year","total":"Total","trends":"Trends","val":"Valuation","rev":"revenue ","med":"median","drag":"drag to adjust","calc":"How we calculated","sotpRest":"Future businesses","sotpOut":"Existing businesses add up to about <b>${0}B</b>; of the ${1}B enterprise value, about <b>${2}B ({3}%)</b> is paying for businesses that have not delivered yet.","ledger":"Said vs done","first":"This is the first review","firstNote":"Promises recorded this quarter will be checked one by one from next quarter.","newProm":"New promises this quarter, tracked from next quarter","changed":"What changed since last quarter","before":"Before","now":"Now","call":"Earnings call","insider":"Insider activity","tab.results":"Results","tab.valuation":"Valuation","tab.management":"Management","tab.insider":"Insiders","sections":"Sections","nf":"{0} not found","nfTry":"Try the search above.","err":"Data did not load","errTry":"Please refresh and try again.","foot":"Information and the author’s personal views only, not investment advice. Data as of {0}.","src":"Sources","zhOnly":"This review is only available in Chinese for now.","zhTag":"Chinese only","pz.title":"Scenario prices and the author’s zone","pz.zone":"Author’s zone","pz.now":"Now","pz.zoneIs":"Author’s zone:","pz.from":"Buy at","pz.px":"Price","pz.toBear":"To bear","pz.toBase":"To base","pz.toBull":"To bull","pz.rr":"Reward/risk","pz.atNow":"Current price","pz.atMid":"Zone midpoint","pz.atLo":"Zone low","pz.rrNote":"Reward/risk = upside to the base case ÷ downside to the bear case. Above 1 means that, at this price, the base case gains more than the bear case loses; the higher, the bigger the margin of safety.","pz.disc":"Scenario prices and the zone are only the author’s personal views, built on public information and our own assumptions. They may be wrong and are not investment advice or a recommendation to buy or sell. Please make your own decisions and take your own risks.","zt.title":"Author's zone tracker","zt.sub":"Updated with each daily close; zones change only after earnings or a change in fundamentals, never because the price moved","zt.week":"This week","zt.none":"No company moved into or out of its zone this week.","zt.chg":"{0} → {1}","zt.st.bb":"Below bear","zt.st.b":"Below zone","zt.st.in":"In zone","zt.st.a":"Above zone {0}","zt.st.ab":"Above base","zt.review":"Under review","zt.set":"Zone set {0}","zt.rr":"Reward/risk","zt.noZone":"No zone: {0} (see its valuation page for why)","zt.data":"Closing prices from Nasdaq.com, latest {0}. Zones and scenario prices are the author's personal views, not investment advice.","zt.how":"Grey dots are the bear, base and bull scenario prices, the dashed box is the author's zone, and the line is the latest close. Reward/risk = upside from the latest close to the base case ÷ downside to the bear case.","dg.title":"How the market digested this report","dg.sub":"From the pre-report close of {0} ({1})","dg.h0":"Checkpoint","dg.h1":"Date","dg.h2":"Stock","dg.h3":"Nasdaq-100","dg.h4":"Peers","dg.h5":"vs peers","dg.d1":"Next day","dg.w1":"1 week","dg.w4":"4 weeks","dg.now":"So far · {0} days","dg.wait":"pending","dg.vol":"Next-day volume was <b>{0}x</b> the prior 50-day average","dg.imp":"Options implied ±{0}%; next-day actual {1}","dg.impNA":"Options-implied move: to be added","dg.recDown":"back above the pre-report price","dg.notRecDown":"not yet back to the pre-report price","dg.backUp":"has dipped below the pre-report price","dg.holdUp":"has stayed above the pre-report price","dg.peerNote":"vs peers = stock move − peer move, to strip out sector-wide swings. Peers = {0}.","dg.noPeer":"No suitable peer benchmark; “vs peers” uses the Nasdaq-100 (QQQ).","dg.verdict":"Four-week verdict","dg.pending":"Written after the 20th trading day: did the market reward or punish this report, and which of the strengths and risks we flagged did it agree with?","dg.due":"The four-week data is in; the verdict is still to be written.","dg.src":"Closing prices from Nasdaq.com, latest {0}.","dl.title":"Post-earnings digestion","dl.h0":"Company","dl.h1":"Report","dl.h2":"Days","dl.h3":"Stock","dl.h4":"vs peers","pz.live":"Zone set {0} (price then {1}); latest close {2} ({3}). The price axis, moves and reward/risk are recalculated at the latest close; the text was written when the zone was set.","pz.atSet":"When set","pz.atLast":"Latest close","pz.reviewing":"This zone is under review: something that may change the fundamentals happened at the company or in the ecosystem. It will be updated or confirmed once reviewed.","dl.note":"vs peers = stock move − peer move; each company's peer benchmark is shown on its report page. After 20 trading days the four-week figure is used.","dg.h5b":"vs Nasdaq-100","dg.verdictOn":"written {0}"}};
+const I18N={zh:/*I18N_ZH*/{"brand":"财报解读","calLink":"财报日历 →","search":"搜索公司：代码、中文名或英文名","none":"还没有“{0}”的财报解读。可以在财报日历里查看发布日期。","homeP":"AI 产业链和重点科技公司的季度财报：业绩、估值、管理层承诺兑现和内部人动向。","latest":"最新解读","pub":"{1}月{2}日发布","homeNote":"更多公司的发布日期见<a href=\"calendar/\">财报日历</a>。每家公司每季一份解读，往季解读保留在公司页的季度切换里。","qs":"切换季度","colon":"：","stop":"。","vp":"增长来自量还是价","share":"占","bridge":"营收同比变化","total":"合计","trends":"走势","val":"估值","rev":"营收","med":"中位","drag":"可拖动调整","calc":"计算依据","sotpRest":"未来业务","sotpOut":"现有业务合计约 <b>${0}B</b>，企业价值 ${1}B 中约 <b>${2}B（{3}%）</b>是在为尚未兑现的业务定价。","ledger":"说了 vs 做到","first":"这是第一份解读","firstNote":"本季记录的承诺会从下一季开始逐条核对。","newProm":"本季新承诺，下季起追踪","changed":"和上季相比，说法有什么变化","before":"上季","now":"本季","call":"电话会","insider":"内部人动向","tab.results":"业绩","tab.valuation":"估值","tab.management":"管理层","tab.insider":"内部人","sections":"页面分区","nf":"没有找到 {0}","nfTry":"试试上方搜索。","err":"数据没有加载成功","errTry":"请刷新页面再试。","foot":"本页仅为信息整理和作者个人观点，不构成投资建议。数据截至 {0}。","src":"来源","zhOnly":"这份解读暂时只有中文版。","zhTag":"中文","pz.title":"情景价格与作者关注区间","pz.zone":"作者关注区间","pz.now":"现价","pz.zoneIs":"作者关注区间：","pz.from":"买入价","pz.px":"价格","pz.toBear":"到悲观","pz.toBase":"到基准","pz.toBull":"到乐观","pz.rr":"回报/风险","pz.atNow":"现价","pz.atMid":"区间中值","pz.atLo":"区间下沿","pz.rrNote":"回报/风险 = 到基准情景的上涨幅度 ÷ 到悲观情景的下跌幅度。大于 1 说明按这个价格买，基准情景下能赚的比悲观情景下会亏的多；越高越有安全边际。","pz.disc":"情景价格和关注区间仅代表本文作者的个人观点，基于公开信息和我们设定的假设，可能出错，不构成投资建议，也不是买卖推荐。请独立判断并自行承担风险。","zt.title":"作者关注区间跟踪","zt.sub":"按每日收盘价自动更新；区间只在财报或基本面变化时修改，不随股价调整","zt.week":"本周变化","zt.none":"本周没有公司进出区间。","zt.chg":"{0} → {1}","zt.st.bb":"低于悲观","zt.st.b":"低于区间","zt.st.in":"区间内","zt.st.a":"高于区间 {0}","zt.st.ab":"高于基准","zt.review":"待复核","zt.set":"区间定于 {0}","zt.rr":"回报/风险","zt.noZone":"未设区间：{0}（理由见各自估值页）","zt.data":"收盘价来自 Nasdaq.com，最新为 {0}。区间和情景价格仅代表作者个人观点，不是投资建议。","zt.how":"灰点是悲观、基准、乐观情景价格，虚线框是作者关注区间，竖线是最新收盘。回报/风险 = 按最新收盘到基准情景的涨幅 ÷ 到悲观情景的跌幅。","dg.title":"市场怎么消化这份财报","dg.sub":"以财报前收盘 {0}（{1}）为起点","dg.h0":"节点","dg.h1":"日期","dg.h2":"股价","dg.h3":"纳指 100","dg.h4":"同行","dg.h5":"相对同行","dg.d1":"次日","dg.w1":"1 周后","dg.w4":"4 周后","dg.now":"至今 · {0} 日","dg.wait":"待更新","dg.vol":"次日成交量是此前 50 日均量的 <b>{0} 倍</b>","dg.imp":"期权预期波动 ±{0}%，次日实际 {1}","dg.impNA":"期权预期波动：待作者补充","dg.recDown":"已收复财报前价格","dg.notRecDown":"还没收复财报前价格","dg.backUp":"曾回落到财报前价格之下","dg.holdUp":"一直在财报前价格之上","dg.peerNote":"相对同行 = 股价涨跌 − 同行涨跌，用来剔除整个板块的涨跌。同行 = {0}。","dg.noPeer":"没有合适的同行基准，“相对同行”按纳指 100（QQQ）计算。","dg.verdict":"4 周结论","dg.pending":"第 20 个交易日后写：市场最终是奖励还是惩罚了这份财报，以及我们当时标出的亮点和风险，哪些被市场认同。","dg.due":"4 周的数据已经到了，结论待写。","dg.src":"收盘价来自 Nasdaq.com，最新为 {0}。","dl.title":"最近财报的市场消化","dl.h0":"公司","dl.h1":"财报","dl.h2":"交易日","dl.h3":"股价","dl.h4":"相对同行","pz.live":"区间定于 {0}（当时 {1}），最新收盘 {2}（{3}）。上面的价格轴、涨跌幅和下面的回报/风险按最新收盘重算；文字说明仍是设定时写的。","pz.atSet":"设定时","pz.atLast":"最新收盘","pz.reviewing":"这个区间正在复核：公司或生态链出现了可能改变基本面的变化，复核完会更新或确认不变。","dl.note":"相对同行 = 股价涨跌 − 同行涨跌；每家的同行基准见各自财报页。超过 20 个交易日的按第 20 个交易日（4 周）计算。","dg.h5b":"相对纳指","dg.verdictOn":"写于 {0}","nav.home":"财报","nav.zones":"区间跟踪","nav.cal":"财报日历","tab.market":"市场反应","mk.h":"市场怎么消化这份财报","mk.lead":"财报后 {0} 个交易日{1}，{2} {3}，{4} {5}：<b>{6}</b>。","mk.w4":"（4 周）","mk.up":"涨了 {0}","mk.down":"跌了 {0}","mk.beat":"跑赢同行 {0} 个百分点","mk.lag":"跑输同行 {0} 个百分点","mk.flat":"和同行基本持平","mk.beatQ":"跑赢纳指 {0} 个百分点","mk.lagQ":"跑输纳指 {0} 个百分点","mk.flatQ":"和纳指基本持平","mk.peerW":"同行","mk.qqq":"纳指 100","mk.chart":"财报前收盘 = 100","mk.chartSub":"财报后前 20 个交易日","mk.d1":"次日","mk.w1":"1 周","mk.w4l":"4 周","mk.vol":"次日成交量","mk.volV":"{0} 倍","mk.volF":"相对此前 50 日均量","mk.imp":"期权预期波动","mk.impNA":"待补","mk.impF":"次日实际 {0}","mk.rec":"财报前价格","mk.recF":"{0}（{1}）","mk.recDown":"已收复","mk.notRecDown":"未收复","mk.backUp":"曾跌回","mk.holdUp":"守住","mk.since":"至今 {0} 个交易日：{1} {2}，{3}。","mk.detail":"详细数据","mk.wait":"财报后第 {0} 个交易日更新","sum.mkt":"市场反应","sum.zone":"作者区间","sum.d":"财报后 {0} 日","sum.4w":"4 周","chip.beat":"{0}：跑赢同行 {1} 点","chip.lag":"{0}：跑输同行 {1} 点","chip.flat":"{0}：与同行持平","chip.beatQ":"{0}：跑赢纳指 {1} 点","chip.lagQ":"{0}：跑输纳指 {1} 点","chip.flatQ":"{0}：与纳指持平","zp.h1":"作者关注区间跟踪","zp.p":"我们写过财报解读的公司，现价落在作者情景价格和关注区间的哪个位置。按每日收盘自动更新；区间只在财报或基本面变化时修改，不随股价调整。点击任一行可看完整的估值和理由。"}/*END*/,
+en:{"brand":"Earnings Lens","calLink":"Earnings calendar →","search":"Search: ticker or company name","none":"No earnings review for “{0}” yet. Check the earnings calendar for dates.","homeP":"Quarterly earnings of AI supply-chain and key tech companies: results, valuation, management promises and insider activity.","latest":"Latest reviews","pub":"published {1}/{2}","homeNote":"Release dates for more companies are in the <a href=\"calendar/\">earnings calendar</a>. One review per company per quarter; earlier quarters stay in the quarter switcher on each company page.","qs":"Switch quarter","colon":": ","stop":". ","vp":"Volume or price","share":"","bridge":"Revenue change year on year","total":"Total","trends":"Trends","val":"Valuation","rev":"revenue ","med":"median","drag":"drag to adjust","calc":"How we calculated","sotpRest":"Future businesses","sotpOut":"Existing businesses add up to about <b>${0}B</b>; of the ${1}B enterprise value, about <b>${2}B ({3}%)</b> is paying for businesses that have not delivered yet.","ledger":"Said vs done","first":"This is the first review","firstNote":"Promises recorded this quarter will be checked one by one from next quarter.","newProm":"New promises this quarter, tracked from next quarter","changed":"What changed since last quarter","before":"Before","now":"Now","call":"Earnings call","insider":"Insider activity","tab.results":"Results","tab.valuation":"Valuation","tab.management":"Management","tab.insider":"Insiders","sections":"Sections","nf":"{0} not found","nfTry":"Try the search above.","err":"Data did not load","errTry":"Please refresh and try again.","foot":"Information and the author’s personal views only, not investment advice. Data as of {0}.","src":"Sources","zhOnly":"This review is only available in Chinese for now.","zhTag":"Chinese only","pz.title":"Scenario prices and the author’s zone","pz.zone":"Author’s zone","pz.now":"Now","pz.zoneIs":"Author’s zone:","pz.from":"Buy at","pz.px":"Price","pz.toBear":"To bear","pz.toBase":"To base","pz.toBull":"To bull","pz.rr":"Reward/risk","pz.atNow":"Current price","pz.atMid":"Zone midpoint","pz.atLo":"Zone low","pz.rrNote":"Reward/risk = upside to the base case ÷ downside to the bear case. Above 1 means that, at this price, the base case gains more than the bear case loses; the higher, the bigger the margin of safety.","pz.disc":"Scenario prices and the zone are only the author’s personal views, built on public information and our own assumptions. They may be wrong and are not investment advice or a recommendation to buy or sell. Please make your own decisions and take your own risks.","zt.title":"Author's zone tracker","zt.sub":"Updated with each daily close; zones change only after earnings or a change in fundamentals, never because the price moved","zt.week":"This week","zt.none":"No company moved into or out of its zone this week.","zt.chg":"{0} → {1}","zt.st.bb":"Below bear","zt.st.b":"Below zone","zt.st.in":"In zone","zt.st.a":"Above zone {0}","zt.st.ab":"Above base","zt.review":"Under review","zt.set":"Zone set {0}","zt.rr":"Reward/risk","zt.noZone":"No zone: {0} (see its valuation page for why)","zt.data":"Closing prices from Nasdaq.com, latest {0}. Zones and scenario prices are the author's personal views, not investment advice.","zt.how":"Grey dots are the bear, base and bull scenario prices, the dashed box is the author's zone, and the line is the latest close. Reward/risk = upside from the latest close to the base case ÷ downside to the bear case.","dg.title":"How the market digested this report","dg.sub":"From the pre-report close of {0} ({1})","dg.h0":"Checkpoint","dg.h1":"Date","dg.h2":"Stock","dg.h3":"Nasdaq-100","dg.h4":"Peers","dg.h5":"vs peers","dg.d1":"Next day","dg.w1":"1 week","dg.w4":"4 weeks","dg.now":"So far · {0} days","dg.wait":"pending","dg.vol":"Next-day volume was <b>{0}x</b> the prior 50-day average","dg.imp":"Options implied ±{0}%; next-day actual {1}","dg.impNA":"Options-implied move: to be added","dg.recDown":"back above the pre-report price","dg.notRecDown":"not yet back to the pre-report price","dg.backUp":"has dipped below the pre-report price","dg.holdUp":"has stayed above the pre-report price","dg.peerNote":"vs peers = stock move − peer move, to strip out sector-wide swings. Peers = {0}.","dg.noPeer":"No suitable peer benchmark; “vs peers” uses the Nasdaq-100 (QQQ).","dg.verdict":"Four-week verdict","dg.pending":"Written after the 20th trading day: did the market reward or punish this report, and which of the strengths and risks we flagged did it agree with?","dg.due":"The four-week data is in; the verdict is still to be written.","dg.src":"Closing prices from Nasdaq.com, latest {0}.","dl.title":"Post-earnings digestion","dl.h0":"Company","dl.h1":"Report","dl.h2":"Days","dl.h3":"Stock","dl.h4":"vs peers","pz.live":"Zone set {0} (price then {1}); latest close {2} ({3}). The price axis, moves and reward/risk are recalculated at the latest close; the text was written when the zone was set.","pz.atSet":"When set","pz.atLast":"Latest close","pz.reviewing":"This zone is under review: something that may change the fundamentals happened at the company or in the ecosystem. It will be updated or confirmed once reviewed.","dl.note":"vs peers = stock move − peer move; each company's peer benchmark is shown on its report page. After 20 trading days the four-week figure is used.","dg.h5b":"vs Nasdaq-100","dg.verdictOn":"written {0}","nav.home":"Reports","nav.zones":"Zone tracker","nav.cal":"Calendar","tab.market":"Market","mk.h":"How the market digested this report","mk.lead":"{0} trading days after the report{1}, {2} {3} and {4} {5}: <b>{6}</b>.","mk.w4":" (four weeks)","mk.up":"rose {0}","mk.down":"fell {0}","mk.beat":"{0} points ahead of peers","mk.lag":"{0} points behind peers","mk.flat":"roughly level with peers","mk.beatQ":"{0} points ahead of the Nasdaq-100","mk.lagQ":"{0} points behind the Nasdaq-100","mk.flatQ":"roughly level with the Nasdaq-100","mk.peerW":"peers","mk.qqq":"the Nasdaq-100","mk.chart":"Pre-report close = 100","mk.chartSub":"First 20 trading days after the report","mk.d1":"Day 1","mk.w1":"1 wk","mk.w4l":"4 wks","mk.vol":"Next-day volume","mk.volV":"{0}x","mk.volF":"vs the prior 50-day average","mk.imp":"Options-implied move","mk.impNA":"to be added","mk.impF":"next-day actual {0}","mk.rec":"Pre-report price","mk.recF":"{0} ({1})","mk.recDown":"Recovered","mk.notRecDown":"Not recovered","mk.backUp":"Dipped below","mk.holdUp":"Held","mk.since":"So far, {0} trading days: {1} {2}, {3}.","mk.detail":"Detailed figures","mk.wait":"updates on trading day {0}","sum.mkt":"Market","sum.zone":"Author's zone","sum.d":"day {0}","sum.4w":"4 wks","chip.beat":"{0}: {1} pts ahead of peers","chip.lag":"{0}: {1} pts behind peers","chip.flat":"{0}: level with peers","chip.beatQ":"{0}: {1} pts ahead of Nasdaq","chip.lagQ":"{0}: {1} pts behind Nasdaq","chip.flatQ":"{0}: level with Nasdaq","zp.h1":"Author's zone tracker","zp.p":"Where each company we've reviewed trades against the author's scenario prices and zone. Updated with each daily close; zones change only after earnings or a change in fundamentals, never because the price moved. Tap a row for the full valuation and reasoning."}};
 let LANG=(()=>{let v=null;try{v=localStorage.getItem("sif-lang")}catch(e){}if(["zh","tw","en"].includes(v))return v;const ls=navigator.languages||[navigator.language||"zh"];for(const x of ls){const t=String(x).toLowerCase();if(t.startsWith("zh"))return /hant|-tw|-hk|-mo/.test(t)?"tw":"zh";if(t.startsWith("en"))return "en"}return "zh"})();
 const DATA=()=>({zh:"data/",tw:"data-tw/",en:"data-en/"}[LANG]);
 function L(k,...a){const d=I18N[LANG]||I18N.zh;let s=d[k]??I18N.zh[k]??k;if(k==="pub"&&a[0]){const[y,m,dd]=String(a[0]).split("-");a=[a[0],+m,+dd]}return s.replace(/\{(\d)\}/g,(_,i)=>a[i]??"")}
@@ -317,21 +337,58 @@ function digest(t,ev,peer){
   const rec=n>0?(down?(cl.some(c=>c>=p0)?"recDown":"notRecDown"):(cl.some(c=>c<p0)?"backUp":"holdUp")):null;
   return {d0,p0,n,pts,vr,rec,d1:n>0?r[i0+1][1]/p0-1:null,last:r[last][0]}
 }
-function mDigest(co,r){
-  if(!PR||!r.event)return "";const peer=co.config&&co.config.peer,g=digest(co.t,r.event,peer);if(!g)return "";
-  const lab=p=>p.now?L("dg.now",p.k):L({1:"dg.d1",5:"dg.w1",20:"dg.w4"}[p.k]);
-  const bm=p=>peer?p.pe:p.q;
-  const rows=g.pts.map(p=>p.wait?{c:[lab(p),"—","—","—"],tone:["","","",""]}:{hl:p.now,c:[`${lab(p)} <span class="sm">${md(p.d)}</span>`,sp(p.s),sp(bm(p)),sp(p.x)],tone:["",spc(p.s),spc(bm(p)),spc(p.x)]});
-  const facts=[];
-  if(g.d1!=null)facts.push(r.event.implied?L("dg.imp",r.event.implied,sp(g.d1)):L("dg.impNA"));
-  if(g.vr)facts.push(L("dg.vol",g.vr.toFixed(1)));
-  if(g.rec)facts.push(L("dg."+g.rec));
+/* ---------- market reaction ---------- */
+const pts1=v=>{const a=Math.abs(v*100);return a>=10?a.toFixed(0):a.toFixed(1)};
+function rel(x,peer){const k=x>0.005?"beat":x<-0.005?"lag":"flat";return [k+(peer?"":"Q"),k==="beat"?"good":k==="lag"?"bad":""]}
+function lastPt(g){return g.pts.filter(p=>!p.wait).pop()}
+function digChip(t,ev,peer){const g=digest(t,ev,peer);if(!g||!g.n)return "";const p=lastPt(g),[k,tn]=rel(p.x,peer),w=p.k>=20?L("sum.4w"):L("sum.d",p.k);return P(L("chip."+k,w,pts1(p.x)),tn)}
+function zoneChip(t){const it=TR&&TR.items.find(x=>x.t===t),r=ser(t);if(!it||!it.zone||!r)return "";const c=r[r.length-1][1];if(it.zone.status==="review")return P(L("zt.review"),"warn");const [k,tn]=zst(c,it.zone);return P(zlab(k,c,it.zone),tn)}
+function heroSum(co,r,idx){
+  if(!PR||!r.event)return "";const peer=co.config&&co.config.peer,g=digest(co.t,r.event,peer),out=[];
+  if(g&&g.n){const p=lastPt(g),[k]=rel(p.x,peer),w=p.k>=20?L("sum.4w"):L("sum.d",p.k);
+    out.push(`<a href="#${co.t}.${r.quarter}.market"><span class="k">${L("sum.mkt")}</span>${L("mk.d1")} ${sp(g.d1)} · ${L("chip."+k,w,pts1(p.x))} →</a>`)}
+  if(r.quarter===idx.latest){const z=zoneChip(co.t);if(z)out.push(`<a href="#${co.t}.${r.quarter}.valuation"><span class="k">${L("sum.zone")}</span>${z} →</a>`)}
+  return out.length?`<div class="hsum">${out.join("")}</div>`:"";
+}
+function mkChart(co,g,peer){
+  const r=ser(co.t),i0=at(r,g.d0),N=20,W=320,H=150,Pd={l:30,r:30,t:14,b:22};
+  const days=r.slice(i0,Math.min(r.length,i0+N+1)).map(x=>x[0]);
+  const sv=days.map(d=>ret(co.t,g.d0,d)),pv=days.map(d=>peer?peerRet(peer,g.d0,d):ret("QQQ",g.d0,d));
+  const all=[0,...sv,...pv.filter(v=>v!=null)],lo=Math.min(...all),hi=Math.max(...all),pad=(hi-lo)*.12||.02,y0=lo-pad,y1=hi+pad;
+  const X=k=>Pd.l+k/N*(W-Pd.l-Pd.r),Y=v=>Pd.t+(y1-v)/(y1-y0)*(H-Pd.t-Pd.b);
+  const path=a=>a.map((v,k)=>v==null?"":`${k?"L":"M"}${X(k).toFixed(1)},${Y(v).toFixed(1)}`).join("");
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(L("mk.chart"))}">`;
+  const step=(y1-y0)>.3?.1:(y1-y0)>.12?.05:.02;
+  for(let v=Math.ceil(y0/step)*step;v<=y1;v+=step){const yy=Y(v).toFixed(1);s+=`<line x1="${Pd.l}" x2="${W-Pd.r}" y1="${yy}" y2="${yy}" stroke="var(--line)" stroke-width="${Math.abs(v)<1e-9?1.2:.5}"/><text x="${Pd.l-4}" y="${+yy+3}" text-anchor="end">${Math.round(100+v*100)}</text>`}
+  // gap shading between the two lines
+  const n=sv.length;if(n>1){let a="",b="";for(let k=0;k<n;k++){a+=`${k?"L":"M"}${X(k).toFixed(1)},${Y(sv[k]).toFixed(1)}`}for(let k=n-1;k>=0;k--){b+=`L${X(k).toFixed(1)},${Y(pv[k]??sv[k]).toFixed(1)}`}
+    const last=sv[n-1]-(pv[n-1]??0);s+=`<path d="${a}${b}Z" fill="${last>=0?"var(--good-soft)":"var(--bad-soft)"}" opacity=".9"/>`}
+  [[1,"mk.d1"],[5,"mk.w1"],[20,"mk.w4l"]].forEach(([k,l])=>{const xx=X(k).toFixed(1);s+=`<line x1="${xx}" x2="${xx}" y1="${Pd.t}" y2="${H-Pd.b}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${xx}" y="${H-6}" text-anchor="middle">${esc(L(l))}</text>`;if(k<n)s+=`<circle cx="${xx}" cy="${Y(sv[k]).toFixed(1)}" r="3" fill="var(--accent)"/>`});
+  s+=`<path d="${path(pv)}" fill="none" stroke="var(--muted)" stroke-width="1.8" stroke-dasharray="4 3"/><path d="${path(sv)}" fill="none" stroke="var(--accent)" stroke-width="2.4"/>`;
+  const e=n-1,ys=Y(sv[e]),yp=Y(pv[e]??0),sep=Math.abs(ys-yp)<12?(ys<yp?-6:6):0;
+  s+=`<text x="${X(e)+5}" y="${(ys+3+sep).toFixed(1)}" class="lab" style="fill:var(--accent)">${Math.round(100+sv[e]*100)}</text><text x="${X(e)+5}" y="${(yp+3-sep).toFixed(1)}">${Math.round(100+(pv[e]??0)*100)}</text>`;
+  return s+"</svg>";
+}
+function mMarket(co,r){
+  const none=`<section><h2>${L("mk.h")} <small>MARKET REACTION</small></h2><div class="empty"><span>${L("errTry")}</span></div></section>`;
+  if(!PR||!r.event)return none;const peer=co.config&&co.config.peer,g=digest(co.t,r.event,peer);if(!g||!g.n)return none;
+  const p=lastPt(g),bm=peer?p.pe:p.q,[k]=rel(p.x,peer);
+  const mv=v=>L(v>=0?"mk.up":"mk.down",`${Math.abs(v*100).toFixed(1)}%`);
+  const lead=L("mk.lead",p.k,p.k>=20?L("mk.w4"):"",co.t,mv(p.s),peer?esc(peer.n):L("mk.qqq"),mv(bm),L("mk."+k,pts1(p.x)));
+  let since="";if(g.n>20){const d=g.last,s1=ret(co.t,g.d0,d),b1=peer?peerRet(peer,g.d0,d):ret("QQQ",g.d0,d),[k2]=rel(s1-b1,peer);since=`<p class="note" style="margin:0">${L("mk.since",g.n,co.t,mv(s1),L("mk."+k2,pts1(s1-b1)))}</p>`}
+  const tiles=[[L("mk.vol"),g.vr?L("mk.volV",g.vr.toFixed(1)):"—",L("mk.volF")],
+    [L("mk.imp"),r.event.implied?`±${r.event.implied}%`:"—",(r.event.implied?"":L("mk.impNA")+" · ")+L("mk.impF",sp(g.d1))],
+    [L("mk.rec"),L("mk."+g.rec),`${$$(g.p0)} · ${md(g.d0)}`]];
+  const lab=q=>q.now?L("dg.now",q.k):L({1:"dg.d1",5:"dg.w1",20:"dg.w4"}[q.k]);
+  const rows=g.pts.map(q=>q.wait?{c:[lab(q),`<span class="sm">${L("mk.wait",q.k)}</span>`,"","",""],tone:[]}:{hl:q.now,c:[`${lab(q)} <span class="sm">${md(q.d)}</span>`,sp(q.s),sp(peer?q.pe:q.q),sp(q.q),sp(q.x)],tone:["",spc(q.s),spc(peer?q.pe:q.q),spc(q.q),spc(q.x)]});
   const vd=r.digest&&r.digest.verdict;
-  return `<div class="panel dg"><div class="ph"><b>${L("dg.title")}</b><span>${L("dg.sub",$$(g.p0),md(g.d0))}</span></div>
-  ${facts.length?`<p class="dgf">${facts.join(" · ")}</p>`:""}
-  ${tbl([L("dg.h0"),L("dg.h2"),peer?L("dg.h4"):L("dg.h3"),peer?L("dg.h5"):L("dg.h5b")],rows,"minmax(0,1.6fr) repeat(3,minmax(0,1fr))")}
-  <div class="vd"><b>${L("dg.verdict")}${vd&&r.digest.on?` <span class="sm">· ${L("dg.verdictOn",md(r.digest.on))}</span>`:""}</b><span>${vd||L(g.n>=20?"dg.due":"dg.pending")}</span></div>
-  <p class="note">${peer?L("dg.peerNote",esc(peer.n)):L("dg.noPeer")} ${L("dg.src",md(g.last))}</p></div>`;
+  return `<section><h2>${L("mk.h")} <small>MARKET REACTION</small></h2><p class="take">${lead}</p>
+  <div class="panel"><div class="ph"><b>${L("mk.chart")}</b><span>${L("mk.chartSub")}</span></div>${mkChart(co,g,peer)}
+  <p class="lg"><span><i style="background:var(--accent)"></i>${co.t}</span><span><i class="dash"></i>${peer?esc(peer.n):"QQQ"}</span></p>${since}</div>
+  <div class="vgrid mt">${tiles.map(t=>`<div class="vt"><span class="k">${esc(t[0])}</span><b>${t[1]}</b><span class="f">${t[2]}</span></div>`).join("")}</div>
+  <div class="panel vdp"><div class="ph"><b>${L("dg.verdict")}</b>${vd&&r.digest.on?`<span>${L("dg.verdictOn",md(r.digest.on))}</span>`:""}</div><p class="${vd?"":"note"}" style="margin:0">${vd||L(g.n>=20?"dg.due":"dg.pending")}</p></div>
+  <details class="calc"><summary>${L("mk.detail")}</summary>${tbl([L("dg.h0"),L("dg.h2"),peer?L("dg.h4"):L("dg.h3"),L("dg.h3"),peer?L("dg.h5"):L("dg.h5b")],rows,"minmax(0,1.5fr) repeat(4,minmax(0,1fr))")}</details>
+  <p class="note">${peer?L("dg.peerNote",esc(peer.n)):L("dg.noPeer")} ${L("dg.src",md(g.last))}</p></section>`;
 }
 /* zone status at a close */
 function zst(c,z){if(c<z.bear)return ["bb","warn"];if(c<z.lo)return ["b",""];if(c<=z.hi)return ["in","good"];if(c<=z.base)return ["a",""];return ["ab",""]}
@@ -339,7 +396,7 @@ const zlab=(k,c,z)=>L("zt.st."+k,k==="a"?sp(c/z.hi-1):"");
 function zrr(c,z){const dn=1-z.bear/c,up=z.base/c-1;return dn<=0||up<=0?"—":(up/dn>10?">10×":(up/dn).toFixed(1)+"×")}
 function zaxis(c,z){const all=[c,z.bear,z.bull,z.lo,z.hi],lo=Math.min(...all)*.94,hi=Math.max(...all)*1.03,X=p=>((p-lo)/(hi-lo)*100).toFixed(1)+"%";
   return `<span class="zax" aria-hidden="true"><i class="zl"></i><i class="zb" style="left:${X(z.lo)};width:calc(${X(z.hi)} - ${X(z.lo)})"></i>${[z.bear,z.base,z.bull].map(p=>`<i class="zd" style="left:${X(p)}"></i>`).join("")}<i class="zc" style="left:${X(c)}"></i></span>`}
-function mTracker(){
+function zonesPage(){
   if(!PR||!TR)return "";const name=t=>{const c=INDEX.find(x=>x.t===t);return c?c.n:t};
   const zs=TR.items.filter(x=>x.zone&&ser(x.t)).map(x=>{const r=ser(x.t),c=r[r.length-1][1],[k,tn]=zst(c,x.zone);
     let prev=null;const j=r.length-6;if(j>=0&&r[j][0]>=x.zone.on){prev=zst(r[j][1],x.zone)[0]}
@@ -350,26 +407,20 @@ function mTracker(){
     <span class="zs">${z.zone.status==="review"?P(L("zt.review"),"warn"):P(zlab(z.k,z.c,z.zone),z.tn)}<span class="num">${$$(z.c)}</span><span class="sm">${L("zt.rr")} <b class="num">${zrr(z.c,z.zone)}</b></span></span>
     <span class="zm sm">${L("zt.set",md(z.zone.on))} · $${Math.round(z.zone.lo).toLocaleString("en-US")}–${Math.round(z.zone.hi).toLocaleString("en-US")}</span></a>`).join("");
   const nz=TR.items.filter(x=>!x.zone).map(x=>x.t);
-  return `<section><h2>${L("zt.title")} <small>ZONE TRACKER</small></h2><p class="take" style="font-size:14px;color:var(--muted)">${L("zt.sub")}</p>
+  return `<div class="homeh"><h1>${L("zp.h1")}</h1><p>${L("zp.p")}</p></div><section>
   <div class="panel"><div class="ph"><b>${L("zt.week")}</b></div><p style="margin:0;font-size:14px">${ch.length?ch.map(z=>`<b>${z.t}</b> ${L("zt.chg",zlab(z.prev,z.c,z.zone).replace(/ [+−].*$/,""),zlab(z.k,z.c,z.zone))}`).join("；"):L("zt.none")}</p></div>
   <div class="zlist">${rows}</div>
   <p class="note">${L("zt.how")}${nz.length?" "+L("zt.noZone",nz.join("、")):""}</p><p class="note">${L("zt.data",md(PR.last))}</p></section>`;
 }
-function mDigestList(){
-  if(!PR||!TR)return "";
-  const its=TR.items.filter(x=>x.event).map(x=>{const g=digest(x.t,x.event,x.peer);return g&&g.n>0?{...x,g}:null}).filter(Boolean).sort((a,b)=>b.event.date.localeCompare(a.event.date));
-  if(!its.length)return "";
-  const rows=its.map(x=>{const p=x.g.pts.filter(p=>!p.wait).pop();return {c:[`<a href="#${x.t}.${x.q}">${x.t}</a>`,md(x.event.date),String(Math.min(x.g.n,20))+(x.g.n>20?"+":""),sp(p.s),sp(p.x)],tone:["","","",spc(p.s),spc(p.x)]}});
-  return `<section><h2>${L("dl.title")} <small>AFTER EARNINGS</small></h2><div class="panel">${tbl([L("dl.h0"),L("dl.h1"),L("dl.h2"),L("dl.h3"),L("dl.h4")],rows,"minmax(0,1fr) repeat(4,minmax(0,1fr))")}<p class="note">${L("dl.note")}</p></div></section>`;
-}
 /* ---------- views ---------- */
+function cardChips(c){if(!PR||!TR)return "";const it=TR.items.find(x=>x.t===c.t);if(!it)return "";const a=[zoneChip(c.t),digChip(c.t,it.event,it.peer)].filter(Boolean);return a.length?`<span class="chips">${a.join("")}</span>`:""}
 function home(){
   const rows=[...INDEX].sort((a,b)=>b.latestDate.localeCompare(a.latestDate));
-  return `<div class="homeh"><h1>${L("brand")}</h1><p>${L("homeP")}</p></div>${mTracker()}
+  return `<div class="homeh"><h1>${L("brand")}</h1><p>${L("homeP")}</p></div>
   <section><h2>${L("latest")} <small>LATEST</small></h2><div class="clist">${rows.map(c=>`<a class="crow" href="#${c.t}">
     <span class="l1"><span class="tk">${c.t}</span><span>${esc(c.n)}</span><span class="sm">${esc(c.cat)} · ${qLabel(c.latest)} · ${L("pub",c.latestDate)}${c.zhOnly?` · <span class="zh-only">${L("zhTag")}</span>`:""}</span></span>
-    <span class="hl">${esc(c.headline)}</span></a>`).join("")}</div>
-  <p class="note">${L("homeNote")}</p></section>${mDigestList()}`;
+    <span class="hl">${esc(c.headline)}</span>${cardChips(c)}</a>`).join("")}</div>
+  <p class="note">${L("homeNote")}</p></section>`;
 }
 
 function hero(co,r,idx){
@@ -381,7 +432,7 @@ function hero(co,r,idx){
     <div class="verdicts">${r.verdicts.map(v=>`<div class="v"><span class="k">${esc(v.k)}</span><span class="val">${esc(v.val)}</span><span class="exp">${esc(v.exp||"")}</span>${P(v.pill,v.tone)}</div>`).join("")}</div>
     <ol class="points">${r.points.map(p=>`<li><b>${esc(p.b)}${L("colon")}</b>${esc(p.t)}</li>`).join("")}</ol>
     <p class="note">${r.reaction}</p>
-    ${mDigest(co,r)}
+    ${heroSum(co,r,idx)}
   </header>`;
 }
 
@@ -488,7 +539,7 @@ function mManagement(m,pr,q){
 
 function mInsider(x){return `<section><h2>${L("insider")} <small>INSIDER FLOW</small></h2><div class="empty"><b>${esc(x.title)}</b><span>${x.text}</span></div></section>`}
 
-const TABS=["results","valuation","management","insider"];
+const TABS=["results","valuation","management","market","insider"];
 async function company(t,q,tab){
   const idx=INDEX.find(c=>c.t===t);if(!idx)return `<div class="empty"><b>${L("nf",esc(t))}</b><span>${L("nfTry")}</span></div>`;
   q=idx.quarters.includes(q)?q:idx.latest;tab=TABS.includes(tab)?tab:"results";
@@ -498,6 +549,7 @@ async function company(t,q,tab){
     results:(R.volprice?mVolPrice(R.volprice):"")+mSegments(R.segments,co,q)+(R.extras||[]).map(mExtra).join("")+mTrends(R.trends,co,q),
     valuation:mValuation(livePZ(r,co,idx),co,q),
     management:mManagement(r.management,pr,q),
+    market:mMarket(co,r),
     insider:mInsider(r.insider)};
   document.title=`${co.t} ${co.n} ${qLabel(q)} · April's Earnings Lens`;
   return {html:hero(co,r,idx)+`<nav class="tabs" role="tablist" aria-label="${L("sections")}">${TABS.map(k=>`<a role="tab" href="#${t}.${q}.${k}" aria-selected="${k===tab}">${L("tab."+k)}</a>`).join("")}</nav>
@@ -507,10 +559,13 @@ async function company(t,q,tab){
 }
 
 let lastKey="";
+function setNav(k){document.querySelectorAll(".snav a[data-nav]").forEach(a=>{if(a.dataset.nav===k)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")})}
 async function route(){
   const h=decodeURIComponent(location.hash.slice(1));const [t,q,tab]=h.split(".");
   const app=$("#app");const key=`${t}.${q}`;
   try{
+    setNav(t==="zones"?"zones":(!t||t==="home")?"home":"");
+    if(t==="zones"){await loadMkt();app.innerHTML=`<div class="tp">${zonesPage()}</div>`;document.title=L("zp.h1")+" · April's Earnings Lens";window.scrollTo(0,0);lastKey="";return}
     if(!t||t==="home"){await loadMkt();app.innerHTML=`<div class="tp">${home()}</div>`;document.title="April's Earnings Lens";lastKey="";return}
     const res=await company(t.toUpperCase(),q,tab);
     if(typeof res==="string"){app.innerHTML=res;return}
