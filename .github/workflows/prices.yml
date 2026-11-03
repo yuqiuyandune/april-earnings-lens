@@ -12,6 +12,14 @@ on:
         description: "Only test which data sources answer"
         type: boolean
         default: false
+      extra:
+        description: "Extra tickers to fetch, comma separated"
+        required: false
+        default: ""
+      qe:
+        description: "Tickers for quarter-end closes since 2021 (data/qclose.json)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -34,13 +42,16 @@ jobs:
         run: python3 scripts/prices.py --probe
       - name: Fetch closes
         if: ${{ !inputs.probe }}
-        run: python3 scripts/prices.py
+        env:
+          IN_EXTRA: ${{ inputs.extra }}
+          IN_QE: ${{ inputs.qe }}
+        run: python3 scripts/prices.py --extra "$IN_EXTRA" --qe "$IN_QE"
       - name: Commit
         if: ${{ !inputs.probe }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add data/prices.json
+          git add data/prices.json data/qclose.json 2>/dev/null || git add data/prices.json
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -m "Daily prices $(date -u +%F)"
           for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && exit 0; sleep 5; done

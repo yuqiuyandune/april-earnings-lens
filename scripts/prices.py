@@ -77,7 +77,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--since", default="2026-06-01")
     ap.add_argument("--probe", action="store_true", help="only report which sources answer")
+    ap.add_argument("--extra", default="", help="comma-separated tickers to add (e.g. before a report exists)")
+    ap.add_argument("--qe", default="", help="comma-separated tickers: write quarter-end closes since 2021 to data/qclose.json")
     a = ap.parse_args()
+    if a.qe:
+        out = json.loads((ROOT / "data" / "qclose.json").read_text()) if (ROOT / "data" / "qclose.json").exists() else {}
+        for t in [x.strip().upper() for x in a.qe.split(",") if x.strip()]:
+            rows = nasdaq(t, "2021-01-01")
+            q = {}
+            for d, c, v in rows:
+                k = d[:4] + "Q" + str((int(d[5:7]) - 1) // 3 + 1)
+                q[k] = [d, c]  # last trading day of each calendar quarter
+            out[t] = q
+            print(t, len(q), "quarters")
+            time.sleep(0.5)
+        (ROOT / "data" / "qclose.json").write_text(json.dumps(out, separators=(",", ":")))
     if a.probe:
         for n, f in SOURCES.items():
             try:
@@ -88,7 +102,7 @@ def main():
                 print(n, "FAIL", repr(e)[:200])
         return
     out, used, bad = {}, {}, []
-    for t in tickers():
+    for t in sorted(set(tickers()) | {x.strip().upper() for x in a.extra.split(",") if x.strip()}):
         for n, f in SOURCES.items():
             try:
                 rows = f(t, a.since)
