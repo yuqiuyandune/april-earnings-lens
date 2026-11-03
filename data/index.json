@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-11-02",
  "companies": [
   {
    "t": "TSM",
@@ -224,6 +224,73 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-29",
    "headline": "AWS 加速到 39%、积压 $5,780 亿，但一季花掉 $759 亿：亚马逊是这轮建设里借得最多的买家"
+  },
+  {
+   "t": "PLTR",
+   "n": "Palantir",
+   "en": "Palantir Technologies",
+   "aliases": [
+    "帕兰提尔",
+    "Palantir",
+    "AIP"
+   ],
+   "cat": "应用",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-02",
+   "headline": "收入翻倍、利润率 62%，股价却在盘后下跌：好消息早已算进了 120 多倍的市盈率"
+  },
+  {
+   "t": "AAPL",
+   "n": "苹果",
+   "en": "Apple",
+   "aliases": [
+    "Apple",
+    "iPhone",
+    "蘋果"
+   ],
+   "cat": "消费与平台",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-02",
+   "headline": "卖得比预期好，赚得比预期少：内存涨价开始吃掉苹果的毛利"
+  },
+  {
+   "t": "FN",
+   "n": "Fabrinet",
+   "en": "Fabrinet",
+   "aliases": [
+    "光模块代工",
+    "Fabrinet"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-02",
+   "headline": "收入涨了一半，股价却跌掉了一半多：市场在为客户集中和现金流打折"
+  },
+  {
+   "t": "AEHR",
+   "n": "Aehr测试",
+   "en": "Aehr Test Systems",
+   "aliases": [
+    "Aehr",
+    "Aehr Test",
+    "老化测试"
+   ],
+   "cat": "代工与设备",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-02",
+   "headline": "收入一年 3 倍、订单还在涨，股价却在财报前腰斩：AI 芯片的老化测试，市场只肯先信一半"
   }
  ]
 }

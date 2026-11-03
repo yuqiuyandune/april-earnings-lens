@@ -1,0 +1,51 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 revenue $2.160–2.164B, adjusted operating income $1.292–1.296B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Revenue $2.313B, 7% above the top of the range; adjusted operating income $1.427B, 10% above."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Full-year revenue $8.150–8.158B; US commercial at least $3.424B (+134%)",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Full-year revenue raised to $8.530–8.534B (+91%), US commercial to at least $3.559B (+143%). The third raise this year."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Full-year adjusted free cash flow $4.5–4.7B",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Raised to $4.8–5.0B; $3.36B already in the first three quarters."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "GAAP operating and net income in every quarter this year",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Q3 GAAP operating margin 47%, net income $1.13B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Q4 revenue $2.649–2.653B (about +88%), adjusted operating income $1.640–1.644B",
+  "dueLabel": "2026Q4"
+ }
+]

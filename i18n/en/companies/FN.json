@@ -1,0 +1,40 @@
+{
+ "n": "Fabrinet",
+ "config": {
+  "segmentBasis": "From FY2026 Q4, by end market: data center, communications infrastructure, automotive/industrial/other (previously optical vs non-optical)",
+  "fiscalNote": "Fiscal year ends near the end of June; FY2027 Q1 = July–September 2026. Quarter keys on this site follow calendar quarters. Headquarters and main plants in Thailand; incorporated in the Cayman Islands and files as a US domestic issuer",
+  "kpis": [
+   "Data center revenue",
+   "Non-GAAP gross margin",
+   "Capacity (annual revenue capability)",
+   "Capex and free cash flow",
+   "Top-four customer share"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "optical peers (average of Coherent and Lumentum)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "Non-GAAP gross margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "capex": {
+    "t": "Capex"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

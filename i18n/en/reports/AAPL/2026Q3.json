@@ -1,0 +1,415 @@
+{
+ "label": "FY2026 Q4 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 2 Nov 2026",
+ "asOf": "close of $338.32 on 2 Nov 2026, $328.85 after hours (Investing.com)",
+ "headline": "Selling more than expected, earning less: memory prices start eating Apple's gross margin",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$114.48B",
+   "exp": "est. $113.38B"
+  },
+  {
+   "k": "EPS",
+   "exp": "est. $1.99"
+  },
+  {
+   "k": "iPhone revenue",
+   "val": "$57.58B",
+   "exp": "a year ago $49.03B"
+  },
+  {
+   "k": "Dec-quarter gross margin guide",
+   "exp": "this quarter 47.9%",
+   "pill": "down 2–3 pts"
+  }
+ ],
+ "points": [
+  {
+   "b": "Memory costs “unprecedented”",
+   "t": "December-quarter gross margin is guided to 45–46%, 2–3 points below this quarter; management blamed mainly memory prices and expects them to keep rising beyond December."
+  },
+  {
+   "b": "Demand outruns supply",
+   "t": "iPhone +17% and Mac +24%, yet iPhone, Mac and iPad were all supply-constrained; the new foldable iPhone Duo is sold out with no timeline."
+  },
+  {
+   "b": "AI money goes to R&D, not data centers",
+   "t": "R&D rose 32% in a year; full-year capex was just $9.0B, 29% less than the year before."
+  }
+ ],
+ "reaction": "Stock: closed at $338.32 (−1.8%) on report day and fell to <b>$328.85 (−2.8%)</b> after hours. Revenue and EPS beat, and the +7–10% December-quarter revenue guide would be the biggest quarter in company history; what the market focused on was gross margin guided down to 45–46% and management saying memory prices will keep rising after December. The stock is up about 24% this year and trades at about 38 times trailing earnings. Next-day close to be added. Consensus from Investing.com: EPS $1.99, revenue $113.38B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "FY26 Q4 vs FY25 Q4, $B",
+   "take": "Growth came mainly from iPhone and Mac; iPad and wearables fell against strong launch comparisons and supply limits.",
+   "bridge": [
+    {
+     "n": "iPhone"
+    },
+    {
+     "n": "Services"
+    },
+    {
+     "n": "Mac"
+    },
+    {
+     "n": "Wearables"
+    },
+    {
+     "n": "iPad"
+    }
+   ],
+   "rows": [
+    {
+     "n": "iPhone",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "A September-quarter record, with “strong double-digit” iPhone growth in Greater China. Still limited by advanced-node chip supply, which management says eases as more products move to 2nm."
+    },
+    {
+     "n": "Services",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "An all-time high with a 76% gross margin. Guided to slow to +8–9% in December: third-party licensing and FX, plus the US court ruling on App Store link-out payments."
+    },
+    {
+     "n": "Mac",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Management stressed that Macs can run AI models locally; the December quarter will be memory-constrained."
+    },
+    {
+     "n": "Wearables, Home & Accessories",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Tough comparison with last year's Watch SE3 and AirPods Pro 3 launches."
+    },
+    {
+     "n": "iPad",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Supply limits plus last year's A16 iPad launch."
+    }
+   ],
+   "note": "Greater China revenue was $17.54B, +21%, a September-quarter record; +28% for the year. Over 2.5B active devices and over 1.5B paid subscriptions."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "In this chain Apple is <b>a buyer competing with AI data centers for the same parts</b>: AI has taken a share of memory and advanced-node capacity. It doesn't build large AI data centers itself; its AI money goes mostly to R&D, and the payback has to come from paid services across 2.5 billion devices.",
+    "items": [
+     {
+      "b": "Paying for higher memory prices",
+      "pill": "gross margin −2 to −3 pts",
+      "w": "The CEO called memory costs “unprecedented”. To lock in supply, manufacturing purchase obligations rose $33B from June to September and inventory went from $5.7B a year ago to $14.5B. The same week Sandisk reported an 85% gross margin: what Apple pays extra, Sandisk earns."
+     },
+     {
+      "b": "Competing with AI chips for leading nodes",
+      "pill": "supply-constrained",
+      "w": "Management said September-quarter constraints came from advanced-node capacity and will ease with 2nm; December constraints on Mac and iPad come from memory. NVIDIA, Google's TPUs and Apple's chips all queue at TSMC."
+     },
+     {
+      "b": "No AI data-center build-out",
+      "pill": "capex −29%",
+      "w": "Full-year capex was $9.0B, 29% less than the prior year, while Google, Amazon, Microsoft and Meta each spend over $100B a year. Apple keeps AI on device and in Private Cloud Compute, with server inference costs booked in services cost of sales. Asked what share runs on Google Cloud, management didn't answer."
+     },
+     {
+      "b": "AI money goes to R&D",
+      "pill": "R&D +32%",
+      "w": "R&D was $11.7B in the quarter, up 32% in a year; December-quarter opex is guided up 11–13% y/y, mostly for AI R&D according to management."
+     },
+     {
+      "b": "2.5B devices as the AI front door",
+      "pill": "Siri AI starts charging",
+      "w": "Siri AI launched in beta in September and expanded to five more languages in October. Server-side AI features will have usage limits, with extra access for purchase: the first time Apple prices AI features separately."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Apple grows through <b>upgrade cycles and services</b>: iPhone is accelerating, but memory prices mean each extra phone earns less. The variables are how much cost Apple can pass on, and whether AI becomes a new paid service.",
+    "items": [
+     {
+      "b": "Volume: upgrades and China",
+      "pill": "iPhone +17%",
+      "w": "2.5B active devices and a record iPhone user base; Greater China +21%. Demand exceeds supply, and the December revenue guide already assumes “constrained supply”."
+     },
+     {
+      "b": "Price: passing on costs",
+      "pill": "June and Sept price rises",
+      "w": "Management said June and September price increases, carry-in inventory and cheaper non-memory parts offset part of the memory increase. Asked about price elasticity, the CFO said it's “early”."
+     },
+     {
+      "b": "New products",
+      "pill": "iPhone Duo",
+      "w": "The foldable iPhone Duo is supply-constrained; the CEO acknowledged display issues, with a “very small percentage” returned. No date for supply to meet demand."
+     },
+     {
+      "b": "Company targets",
+      "pill": "no long-term numbers",
+      "w": "Apple guides only one quarter ahead: December-quarter revenue +7–10%, its biggest quarter ever, and Services +8–9%. No long-term services or margin targets."
+     },
+     {
+      "b": "What could break it",
+      "pill": "memory and regulation",
+      "w": "Watch whether memory keeps rising and gross margin falls below 45%; whether iPhone volumes slow after price rises; the effect of App Store link-out rulings on services; FX."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "December guide $153.8–158.1B, the biggest quarter ever"
+   },
+   {
+    "why": "50.1% in June was the peak; December guided to 45–46%"
+   },
+   {
+    "why": "A record every quarter; December growth slows to 8–9%"
+   },
+   {
+    "why": "Up 32% in a year; this is where the AI money goes"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "Apple trades at about 38 times earnings, above 18 of its past 20 quarter ends. <b>The price assumes profits keep growing steadily</b>, but on December-quarter guidance EPS is only about 2% above a year ago: memory costs make it hard to turn revenue growth into profit growth.",
+  "tiles": [
+   {
+    "k": "P/E (TTM)",
+    "pill": "5-yr median 31x",
+    "f": "$338.32 ÷ TTM EPS $8.97"
+   },
+   {
+    "k": "P/S",
+    "v": "10.3x",
+    "f": "market value ≈ $4,917B ÷ TTM revenue $478.8B"
+   },
+   {
+    "k": "EPS on December guidance",
+    "v": "about $2.89",
+    "pill": "about +2% y/y",
+    "f": "revenue midpoint × 45.5% gross margin − $20.6B opex, 17% tax"
+   },
+   {
+    "k": "Market value / FCF",
+    "v": "36.1x",
+    "pill": "FCF yield 2.8%",
+    "f": "market value ≈ $4,917B ÷ TTM FCF $136.1B"
+   }
+  ],
+  "forward": {
+   "title": "December quarter from company guidance",
+   "sub": "GAAP",
+   "steps": [
+    "Revenue: $143.76B a year ago × (1 + 8.5%) ≈ <b>$156.0B</b>",
+    "Gross profit: × 45.5% ≈ $71.0B; less the $20.6B opex midpoint, plus $0.3B other income",
+    "17% tax, about 14.55B shares → EPS about <b>$2.89</b>, about 2% above last year's $2.84"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY2027 profits",
+   "sub": "Oct 2026–Sep 2027, from FY26 revenue of $478.8B",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Gross margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+3%",
+      "45.0%",
+      "$7.99",
+      "42x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+7%",
+      "46.5%",
+      "$8.92",
+      "38x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+11%",
+      "47.5%",
+      "$9.74",
+      "35x"
+     ]
+    }
+   ],
+   "note": "Bear: memory keeps rising and price increases hurt volume; base: revenue grows at the December-guide pace with gross margin near the December guide; bull: iPhone Duo and AI services drive upgrades and memory prices peak. Opex = FY26 + 12% (the December-guide growth rate), other income $1.2B, 17% tax, 14.4B shares (with buybacks). Base EPS is almost identical to FY26's $8.98. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY27 EPS × our P/E; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "memory keeps rising, 24x"
+    },
+    {
+     "n": "Base",
+     "how": "flat profit, 30x"
+    },
+    {
+     "n": "Bull",
+     "how": "faster upgrades, 34x"
+    }
+   ],
+   "why": "The price is already above the bull case: buying now, all three scenarios lose money, the base case about 21% and the bear case about 43%. Near the $223 midpoint the base case gains about 20% and the bear case loses about 14%, a reward/risk of about 1.5; the $200 low end is close to the bear-case price. The base case uses 30x, close to its five-year median P/E of about 31x; no higher, because profit may not grow for two years."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "P/E (TTM, GAAP), quarter ends",
+   "note": "About 38x now, above 18 of the past 20 quarter ends, against a median of about 31x; only in the second half of 2024 was it higher. We calculate it from SEC quarterly EPS and calendar quarter-end closes; fiscal and calendar quarters are a few days apart."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "R&D expense per quarter, $B (where the AI money goes)",
+   "stats": [
+    {
+     "k": "Buybacks (quarter)",
+     "v": "$24B"
+    },
+    {
+     "k": "Net cash",
+     "v": "$56.8B"
+    },
+    {
+     "k": "Full-year capex",
+     "v": "$9.0B"
+    }
+   ],
+   "note": "Operating cash flow was $28.1B this quarter, with $24B of buybacks and $3.9B of dividends. Full-year operating cash flow was $145.1B against just $9.0B of capex. Inventory rose from $5.7B to $14.5B in a year and manufacturing purchase obligations rose $33B from June to September: Apple is locking in memory early. Management dropped the net-cash-neutral goal; cash and debt are now managed separately."
+  },
+  "calc": [
+   "Price $338.32: 2 Nov close, $328.85 after hours (Investing.com)",
+   "14.532B shares outstanding, market value ≈ $4,916.6B; cash and securities $136.9B, debt $80.1B, net cash $56.8B",
+   "TTM EPS = FY26 $8.98 (quarters $2.84 + $2.01 + $2.02 + $2.10 = $8.97)",
+   "TTM FCF = operating cash flow $145.10B − capex $9.04B = $136.06B",
+   "December quarter: $143.756B × 1.085 × 45.5% − $20.6B + $0.3B, × 83% ÷ 14.55B",
+   "Scenarios: opex $75.54B × 1.12 = $84.6B; EPS = (revenue × gross margin − opex + $1.2B) × 83% ÷ 14.4B; price = EPS × multiple, rounded",
+   "Historical P/E = quarter-end close ÷ TTM GAAP EPS (SEC XBRL); 2026Q3 uses $333.02 ÷ $8.97"
+  ],
+  "next": "Next report around late January 2027 (December quarter)."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "CEO",
+    "pill": "first call",
+    "before": "Tim Cook hosted the calls.",
+    "now": "John Ternus hosted his first call as CEO; Tim Cook is executive chairman."
+   },
+   {
+    "topic": "Costs",
+    "pill": "memory unprecedented",
+    "before": "Gross margin was 50.1% last quarter, and memory wasn't named as the main pressure.",
+    "now": "Memory costs are “unprecedented”, the main reason December gross margin falls, and will persist beyond it."
+   },
+   {
+    "topic": "AI pricing",
+    "pill": "charging for the first time",
+    "before": "Apple Intelligence came free with devices.",
+    "now": "Server-side features such as Siri AI get usage limits, with extra access for purchase; server inference costs go into services cost of sales."
+   },
+   {
+    "topic": "Capital allocation",
+    "pill": "no more net-cash-neutral",
+    "before": "Long-term goal of net cash neutral.",
+    "now": "Cash and debt managed separately; still “invest what we need, return the excess”."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "September-quarter records for revenue, iPhone and EPS; Services at an all-time high",
+     "December revenue +7–10%, the biggest quarter in company history",
+     "Greater China +21%, +28% for the year",
+     "Over 2.5B active devices and 1.5B paid subscriptions"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Whether Apple signed long-term supply agreements with memory makers",
+     "How Siri AI inference splits between device, Apple's servers and Google Cloud",
+     "The dollar impact of supply constraints in the September and December quarters",
+     "When iPhone Duo supply will meet demand"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether December gross margin holds above 45%",
+     "Whether revenue reaches +7–10% and iPhone growth slows",
+     "Whether Services really slows to 8–9%",
+     "Whether purchase obligations and inventory keep rising"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Gross margin falls below 45% and management stops saying costs are “partly offset”",
+     "iPhone units start falling after price increases",
+     "Siri AI server costs pull services gross margin down",
+     "Greater China growth clearly slows"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (10/3–11/2). Nine sales totalling about $92M, all under 10b5-1 plans: executive chairman Tim Cook about $63.85M on 2 Oct, SVP Deirdre O'Brien about $15.47M, CEO John Ternus about $8.46M, and small sales by the general counsel, CFO and chief accounting officer. No open-market buys. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=AAPL\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Apple: FY2026 Q4 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Apple: FY2026 Q3 earnings release"
+  },
+  {
+   "t": "Six Colors: FY26 Q4 call transcript (prepared remarks)"
+  },
+  {
+   "t": "Investing.com: call Q&A, consensus and stock moves"
+  },
+  {
+   "t": "MacRumors: call takeaways"
+  },
+  {
+   "t": "Platform Aeronaut: FY26 Q3 call summary (September guidance)"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

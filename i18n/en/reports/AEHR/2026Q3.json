@@ -1,0 +1,376 @@
+{
+ "label": "FY2027 Q1 (27 Jun–25 Sep 2026)",
+ "dateLabel": "after the close, 2 Nov 2026",
+ "asOf": "close of $51.47 on 2 Nov 2026, $59.12 after hours (Investing.com)",
+ "headline": "Revenue tripled and orders keep rising, yet the stock halved before the report: on burn-in for AI chips, the market only half believes",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$33.0M",
+   "exp": "est. $26.82M"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $0.10",
+   "pill": "2.8x"
+  },
+  {
+   "k": "Bookings",
+   "val": "$46.7M",
+   "exp": "book-to-bill 1.4",
+   "pill": "backlog $100.9M"
+  },
+  {
+   "k": "FY27 revenue guide",
+   "val": "$150M",
+   "exp": "was $130–150M",
+   "pill": "about 3x FY26"
+  }
+ ],
+ "points": [
+  {
+   "b": "The hotter AI chips run, the more they need burn-in",
+   "t": "Burn-in stresses chips at high heat and voltage to weed out early failures before shipping; an AI processor draws over a kilowatt and costs tens of thousands of dollars, so each failure costs more."
+  },
+  {
+   "b": "Both product lines are ramping",
+   "t": "Package-level Sonoma systems are installed at more than a dozen a month for one hyperscaler; the lead AI customer for wafer-level FOX-XP keeps expanding, and another large AI chip maker will evaluate it in volume production."
+  },
+  {
+   "b": "The stock halved first",
+   "t": "It closed at $99.62 at the end of September and $51.47 on report day, down 48%, with no guidance cut in between. It rebounded about 15% after hours."
+  }
+ ],
+ "reaction": "Stock: closed at $51.47 (−6.2%) on report day and rose to <b>$59.12 (+14.9%)</b> after hours. Revenue was 23% above consensus, EPS nearly 3x, and full-year guidance moved to the top of the range. In the month before the report the stock fell about half from $99.62 on 30 Sep, with no negative company news; it had already gone from about $20 to about $100 in the first three quarters of 2026, so swings this large are normal for it. Next-day close to be added. Consensus from Investing.com: EPS $0.10, revenue $26.82M.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "FY27 Q1 vs FY26 Q1, $M",
+   "take": "Systems and consumables each added about half of the increase. Consumables rose from 24% to 41% of revenue: the more systems installed, the more WaferPaks and burn-in boards customers buy each year, and that revenue is steadier.",
+   "bridge": [
+    {
+     "n": "Systems"
+    },
+    {
+     "n": "Consumables"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Systems",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "FOX-XP wafer-level systems, automated aligners and package-level Sonoma systems. Management said customers asked to pull some shipments into Q1."
+    },
+    {
+     "n": "Consumables",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "WaferPak full-wafer contactors, DiePaks, burn-in modules and boards. Expected at about 35% for the year, up to 50% in a strong year; the long-term model is about 30%."
+    }
+   ],
+   "note": "The company doesn't split revenue by AI, silicon photonics, SiC or GaN. Year-ago systems and consumables are backed out from the 24% consumables share management gave. FY26 silicon carbide revenue was under 10% of revenue (about $5M)."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Aehr does the last step in the chip layer: <b>burn-in testing before chips ship</b>. Its customers are hyperscalers building their own AI chips and AI processor makers, so it rides the ramp of in-house chips like TPU, Trainium and MTIA, not just NVIDIA.",
+    "items": [
+     {
+      "b": "A winner from in-house AI chips",
+      "pill": "hyperscale customer",
+      "w": "The lead Sonoma customer is a hyperscaler ramping its first in-house AI processor; the second has qualified and will be bigger. In the late-October reporting season, Google's TPU, Amazon's Trainium, Microsoft's Maia and Meta's own chips were all ramping (see the NVIDIA and cloud pages)."
+     },
+     {
+      "b": "More power, more need for burn-in",
+      "pill": "2,000W per device",
+      "w": "Sonoma handles up to 2,000 watts per device. The bigger, pricier and hotter a chip, the more a failure in the data center costs, and the more customers want to “bake” it before it ships."
+     },
+     {
+      "b": "Moving onto the test giants' turf",
+      "pill": "vs Advantest, Teradyne",
+      "w": "The mainstream AI chip test platforms are Advantest's V93000 and Teradyne's UltraFLEX, with system-level test (SLT) as another option. Aehr's pitch is burn-in at the wafer stage, weeding out bad die before packaging."
+     },
+     {
+      "b": "Following the Taiwan test houses",
+      "pill": "Taiwan OSATs",
+      "w": "The first AI wafer-level systems sit at a leading global test house, and the new evaluation customer will also install at a Taiwan test house. Aehr has leased new space and added service staff in Taiwan. Its risk statements name geopolitical conditions affecting Taiwan and Southeast Asia."
+     },
+     {
+      "b": "Silicon photonics is the second line",
+      "pill": "optical interconnect",
+      "w": "Photonics chips also need wafer-level burn-in; several customers added FOX-XP orders this quarter, including a global networking leader. It is the same demand as the optical module ramp on the Fabrinet page."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Backlog already covers most of FY27's $150M; the stock is betting on <b>the next big customer</b>: if the AI accelerator maker evaluating in Taiwan goes into production, its orders could exceed all current customers combined. It is close to a yes-or-no outcome.",
+    "items": [
+     {
+      "b": "Volume: a year of backlog",
+      "pill": "backlog $109M",
+      "w": "Effective backlog was $109.3M as of 1 November; about $117M of revenue is still needed for the year, mostly covered. Capacity supports more than $150M, and a Southeast Asian contract maker can add over 20 Sonoma systems a month."
+     },
+     {
+      "b": "Price: margins rising",
+      "pill": "48.5%",
+      "w": "Up from 37.5% a year ago on more consumables and scale. Q2 will be lower than Q1 because of a heavy Sonoma mix; about 48.5% for the year."
+     },
+     {
+      "b": "New customer",
+      "pill": "Taiwan evaluation",
+      "w": "Management's illustration: every 1 million chips a year needs about 5–10 systems, worth $35–70M in systems and consumables; 2027 AI accelerators run about 25 million units and CPUs about double. That's the company's framing, not an order."
+     },
+     {
+      "b": "Company targets",
+      "pill": "FY27 only",
+      "w": "FY27 revenue $150M with non-GAAP net income at least 20% of revenue; no multi-year targets. Management says more than a dozen customers could now place large orders, versus a handful before."
+     },
+     {
+      "b": "What could break it",
+      "pill": "customer concentration",
+      "w": "Watch whether the Taiwan evaluation slips or loses; the ramp pace of the hyperscaler's second chip; big swings in single-customer orders between quarters; and whether operating cash flow turns positive (−$3.1M this quarter on early component buying)."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Tripled in two quarters; full-year guide $150M"
+   },
+   {
+    "why": "Over $37M a quarter for three quarters running"
+   },
+   {
+    "why": "Up 11 points in a year; dips in Q2"
+   },
+   {
+    "why": "From losses to $0.28 a quarter"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "Very expensive on past profits: 24 times trailing revenue and over 170 times non-GAAP earnings, and about 58 times even on FY27 guidance. <b>The price rests on the next big customer</b>: if the Taiwan evaluation becomes a production order, profits could multiply again; if it doesn't, the valuation has no cushion.",
+  "tiles": [
+   {
+    "k": "P/S (TTM)",
+    "pill": "5-yr median about 10x",
+    "f": "market value ≈ $1.73B ÷ TTM revenue $72M"
+   },
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "v": "about 172x",
+    "f": "$51.47 ÷ TTM EPS $0.30"
+   },
+   {
+    "k": "P/E on FY27 guidance",
+    "f": "$51.47 ÷ EPS of at least about $0.88 ($150M × 20% ÷ 34M shares)"
+   },
+   {
+    "k": "EV / revenue",
+    "pill": "$105M cash, no debt",
+    "f": "(market value − cash) ÷ TTM revenue"
+   }
+  ],
+  "forward": {
+   "title": "FY2027 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Revenue guide <b>$150M</b>, non-GAAP net income at least 20%, i.e. at least $30M",
+    "÷ about 34M diluted shares ≈ <b>at least $0.88</b>",
+    "$51.47 ÷ $0.88 ≈ <b>58x</b> (about 67x at the $59.12 after-hours price)"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY2028 profits",
+   "sub": "Jul 2027–Jun 2028, with FY27 revenue at the $150M guide",
+   "head": [
+    "Case",
+    "Revenue",
+    "Non-GAAP net margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$110M",
+      "12%",
+      "$0.38",
+      "135x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$220M",
+      "22%",
+      "$1.40",
+      "37x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$330M",
+      "26%",
+      "$2.49",
+      "21x"
+     ]
+    }
+   ],
+   "note": "Bear: the Taiwan evaluation fails and the lead customer slows purchases, so revenue falls about a quarter; base: current AI customers keep expanding and photonics ramps, about 47% growth; bull: the Taiwan evaluation customer goes into production. 34.5M shares (with dilution). These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY28 EPS × our P/E; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "big customer lost, 35x"
+    },
+    {
+     "n": "Base",
+     "how": "current customers expand, 40x"
+    },
+    {
+     "n": "Bull",
+     "how": "new customer in production, 45x"
+    }
+   ],
+   "why": "The price is close to the base case: buying now, the base case gains only about 9% while the bear case loses about 75%, far more risk than reward. Near the $32.5 midpoint the base case gains about 72% and the bear case loses about 60%, a reward/risk of about 1.2; about 2.6 at the $25 low end. The outcome here is close to yes-or-no, with bear and bull nearly 9x apart, so the zone is wider than for other companies (60% from bottom to top) and further from the bear-case price. The stock has swung between $7 and $100 over the past year and a half, so multiples are a weak guide."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "Price/sales (TTM revenue, diluted shares), quarter ends",
+   "note": "About 24x now, above 16 of the past 20 quarter ends, against a median of about 10x; it reached 59x at the end of June. Aehr's fiscal quarters end in February, May, August and November, about a month off calendar quarter ends. We calculate it from SEC revenue, diluted shares and quarter-end closes."
+  },
+  "cash": {
+   "title": "Bookings and backlog",
+   "sub": "Bookings per quarter, $M",
+   "stats": [
+    {
+     "k": "Cash",
+     "v": "$105M"
+    },
+    {
+     "k": "Debt",
+     "v": "none"
+    },
+    {
+     "k": "Operating cash flow (quarter)",
+     "v": "−$3.1M"
+    }
+   ],
+   "note": "Operating cash flow was −$3.05M: receivables rose $10.7M and inventory $9.0M as the company bought long-lead parts early. It paid $4.47M of employee tax withholding on vested shares. Cash was only about $25M a year ago; most of today's $105M came from an equity raise over the past year."
+  },
+  "calc": [
+   "Price $51.47: 2 Nov close, $59.12 after hours (Investing.com)",
+   "33.52M diluted shares, market value ≈ $1.725B; cash $105.1M, no debt",
+   "TTM revenue $9.88 + $10.31 + $18.84 + $33.01M = $72.04M (excluding the $0.64M June transition month)",
+   "TTM non-GAAP EPS −$0.04 − $0.05 + $0.11 + $0.28 = $0.30",
+   "FY27: $150M × 20% ÷ 34M ≈ $0.88",
+   "Scenario EPS = revenue × net margin ÷ 34.5M; price = EPS × multiple, rounded",
+   "Historical P/S = quarter-end close × diluted shares ÷ TTM revenue (SEC XBRL); 2022Q4 shares hand-corrected to 29.08M; 2026Q3 uses $99.62"
+  ],
+  "next": "Next report around January 2027 (FY27 Q2, to late December). The Taiwan evaluation result is expected some time after January–March 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Guidance",
+    "pill": "raised to the top",
+    "before": "FY27 revenue $130–150M.",
+    "now": "$150M, which management calls “conservative”; added non-GAAP net income of at least 20%."
+   },
+   {
+    "topic": "AI evaluation customer",
+    "pill": "into production evaluation",
+    "before": "Finished a benchmark, interested in pilot validation.",
+    "now": "Bought a full test cell to install at a Taiwan test house in early 2027, “one of the largest burn-in opportunities Aehr has ever pursued”."
+   },
+   {
+    "topic": "Customer base",
+    "pill": "a dozen potential big customers",
+    "before": "Only a handful of customers could place large orders.",
+    "now": "More than a dozen across AI processors, silicon photonics, SiC and GaN."
+   },
+   {
+    "topic": "Memory",
+    "pill": "slower than expected",
+    "before": "Flash wafer-level burn-in evaluation went well; proposed a high-bandwidth flash solution.",
+    "now": "Flash is slower than expected (customer capacity and delayed high-bandwidth flash volumes); a new wafer-level burn-in opportunity in HBM base dies."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Revenue +200%, bookings up more than 300%, book-to-bill 1.4",
+     "More than a dozen Sonoma systems a month shipping to the lead hyperscaler",
+     "Revenue rises every quarter, with Q4 possibly the highest",
+     "Capacity supports more than $150M; supply isn't the constraint"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "The potential order size of the Taiwan evaluation customer",
+     "An FY27 silicon carbide revenue target",
+     "The Q2 revenue figure and quarterly split",
+     "Revenue by AI, photonics, SiC and GaN"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q2 revenue exceeds $33M and how far gross margin dips",
+     "Whether bookings keep exceeding revenue",
+     "Whether operating cash flow turns positive",
+     "Whether the Taiwan test cell ships on schedule"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "The Taiwan evaluation slips, or the customer picks system-level test instead",
+     "The hyperscaler's second chip ramp is delayed",
+     "Bookings below revenue for two quarters",
+     "Gross margin falls even as consumables rise"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No Form 4 trades by directors or officers in the 30 days before the report (10/3–11/2). On 28 October new director Narsing Vijayrao joined the board; he was previously VP of Infrastructure at Meta for 13 years. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=AEHR\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Aehr: FY2027 Q1 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Aehr: FY2026 Q4 earnings release (FY27 guidance)"
+  },
+  {
+   "t": "Aehr: new director 8-K (29 Oct 2026)"
+  },
+  {
+   "t": "Investing.com: FY27 Q1 call transcript and stock moves"
+  },
+  {
+   "t": "Investing.com: consensus and after-hours move"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

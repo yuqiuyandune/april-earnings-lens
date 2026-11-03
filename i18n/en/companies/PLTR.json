@@ -1,0 +1,43 @@
+{
+ "n": "Palantir",
+ "config": {
+  "segmentBasis": "By customer and region: US commercial, US government, international commercial, international government",
+  "fiscalNote": "Calendar fiscal year. Market value and multiples use about 2.574B diluted shares",
+  "kpis": [
+   "US commercial revenue growth",
+   "Adjusted operating margin",
+   "Net dollar retention",
+   "US commercial remaining deal value (RDV)",
+   "Adjusted free cash flow"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "Software ETF (IGV)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "uscom": {
+    "t": "US commercial revenue"
+   },
+   "usgov": {
+    "t": "US government revenue"
+   },
+   "opm": {
+    "t": "Adjusted operating margin"
+   },
+   "eps": {
+    "t": "Adjusted EPS"
+   },
+   "fcf": {
+    "t": "Adjusted free cash flow"
+   }
+  }
+ }
+}

@@ -1,0 +1,63 @@
+[
+ {
+  "id": "fn-q1rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "FY27 Q1 营收 $13.75–14.25 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $14.74 亿，比区间上限高 3.5%，连续第 14 个季度创新高。"
+   }
+  ]
+ },
+ {
+  "id": "fn-q1eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "Non-GAAP EPS $4.10–4.25",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "$4.34，高于区间上限 2%。GAAP EPS $2.86，因为一笔 $2,000 万的全球最低税（Pillar Two）计提和 $2,100 万的投资账面损失。"
+   }
+  ]
+ },
+ {
+  "id": "fn-cap",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "Building 10 在 2027 年初完工，产能升到 $85–93 亿；长期产能 $125–140 亿",
+  "dueLabel": "2027Q1",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "上调后待验证",
+    "tone": "good",
+    "note": "Building 10 1 月完工，产能到约 $100 亿；Building 11 1 月开工、估算上调到 $30 亿；长期目标上调到约 $160 亿。"
+   }
+  ]
+ },
+ {
+  "id": "fn-q2",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 财报）",
+  "text": "FY27 Q2 营收 $16.0–16.5 亿，Non-GAAP EPS $4.77–4.92，毛利率环比改善",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "fn-npo",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 电话会）",
+  "text": "近封装光学（NPO）在 FY27 下半年开始贡献收入，共封装光学（CPO）更晚",
+  "dueLabel": "2027Q2",
+  "checks": []
+ }
+]

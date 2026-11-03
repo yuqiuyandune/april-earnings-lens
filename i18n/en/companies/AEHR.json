@@ -1,0 +1,40 @@
+{
+ "n": "Aehr Test Systems",
+ "config": {
+  "segmentBasis": "No revenue split by market; only the share of consumables (WaferPaks, DiePaks, burn-in boards) versus systems",
+  "fiscalNote": "From FY2027 the fiscal year ends near the end of June; FY2027 Q1 = 27 June–25 September 2026. Previously it ended in late May. June 2026 was a one-month transition period, left out of the quarterly series. Quarter keys on this site follow calendar quarters",
+  "kpis": [
+   "Revenue and bookings",
+   "Backlog",
+   "Non-GAAP gross margin",
+   "Consumables share",
+   "AI customer progress"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "Semiconductor ETF (SMH)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "book": {
+    "t": "Bookings"
+   },
+   "backlog": {
+    "t": "Backlog (quarter end)"
+   },
+   "gm": {
+    "t": "Non-GAAP gross margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   }
+  }
+ }
+}

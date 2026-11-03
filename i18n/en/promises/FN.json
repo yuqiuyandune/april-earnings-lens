@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "FY27 Q1 revenue $1.375–1.425B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $1.474B, 3.5% above the top of the range; a record for the 14th straight quarter."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "Non-GAAP EPS $4.10–4.25",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "$4.34, 2% above the top. GAAP EPS was $2.86 because of a $20M global minimum tax (Pillar Two) provision and a $21M paper loss on an investment."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "Building 10 done in early 2027, lifting capacity to $8.5–9.3B; long-term capacity $12.5–14B",
+  "dueLabel": "2027Q1",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Building 10 finishes in January, taking capacity to about $10B; Building 11 starts in January with its estimate raised to $3B; the long-term target is now about $16B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "FY27 Q2 revenue $1.60–1.65B, non-GAAP EPS $4.77–4.92, gross margin up q/q",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 call)",
+  "text": "Near-packaged optics (NPO) revenue starts in the second half of FY27; co-packaged optics (CPO) later",
+  "dueLabel": "2027Q2"
+ }
+]

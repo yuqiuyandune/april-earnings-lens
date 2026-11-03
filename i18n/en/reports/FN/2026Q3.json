@@ -1,0 +1,405 @@
+{
+ "label": "FY2027 Q1 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 2 Nov 2026",
+ "asOf": "close of $314.70 on 2 Nov 2026, $350.59 after hours (Investing.com)",
+ "headline": "Revenue up by half, the stock down by more than half: the market discounts customer concentration and cash flow",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.474B",
+   "exp": "est. $1.40B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $4.19"
+  },
+  {
+   "k": "Data center revenue",
+   "val": "$777M",
+   "exp": "a year ago about $437M"
+  },
+  {
+   "k": "Q2 revenue guide",
+   "val": "$1.60–1.65B",
+   "exp": "a year ago $1.133B",
+   "pill": "midpoint +43%"
+  }
+ ],
+ "points": [
+  {
+   "b": "The contract maker of AI optics",
+   "t": "Data center revenue +78%, now over half the total; capacity rises from about $5.8B to about $10B by January."
+  },
+  {
+   "b": "Expansion eats the cash",
+   "t": "Capex of $159M and free cash flow of −$137M this quarter; with a gross margin around 12%, expansion is funded entirely from its own cash."
+  },
+  {
+   "b": "The stock is nearly 60% off its high",
+   "t": "It closed at $314.70 before the report against a 52-week high of $748.89. It fell 19% after the August report on cash flow, then again in October on co-packaged optics (CPO) worries."
+  }
+ ],
+ "reaction": "Stock: closed at $314.70 (−3.9%) on report day, near the 52-week low of $305.63, and rose to <b>$350.59 (+11.4%)</b> after hours. Revenue, EPS and next-quarter guidance all beat; the Building 11 capacity estimate and the long-term capacity target (now about $16B) were raised, and $103M was added to the buyback. Two earlier drops: −19.4% on 18 Aug after the FY26 Q4 report (free cash flow turned negative), and about −8% on 12 Oct during the OCP summit (fears that co-packaged optics replace pluggable modules). Next-day close to be added. Consensus from Investing.com: EPS $4.19, revenue $1.40B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "FY27 Q1 vs FY26 Q1, $M",
+   "take": "All three markets grew, but two-thirds of the increase came from data center.",
+   "bridge": [
+    {
+     "n": "Data center"
+    },
+    {
+     "n": "Communications infra"
+    },
+    {
+     "n": "Auto/industrial"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Data center",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Transceivers, data center interconnect (DCI) and high-performance computing (HPC). Management says “more than one” transceiver customer is ramping but won't name them. DCI passed a $1B annual run rate last quarter."
+    },
+    {
+     "n": "Communications infrastructure",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Telecom and networking equipment; customers include Cisco and Nokia."
+    },
+    {
+     "n": "Automotive/industrial/other",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Industrial lasers drove most of the sequential gain."
+    }
+   ],
+   "note": "The company switched to these three categories from FY26 Q4. Year-ago figures are backed out from the company's growth rates, accurate to about ±$1M. Customers above 10% of FY26 revenue: Cisco 20%, NVIDIA 16%, Nokia 11%, Amazon 11%, 58% combined."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Fabrinet is <b>the contract manufacturer of optical modules and interconnects</b> in AI data centers: NVIDIA, Cisco and Amazon design them, Fabrinet assembles and tests them in Thailand. It earns a manufacturing fee at a 12% gross margin, not the chip margin; its risks are customers' technology choices and how they split orders.",
+    "items": [
+     {
+      "b": "A bottleneck in AI networking",
+      "pill": "data center +78%",
+      "w": "More GPUs mean more data moving between racks, and optical module demand follows. Management says components are “tight across the board” but it is getting its share."
+     },
+     {
+      "b": "Four customers are over half",
+      "pill": "top four 58%",
+      "w": "Cisco 20%, NVIDIA 16%, Nokia 11%, Amazon 11%. The capex pace of NVIDIA and Amazon, and who they give orders to, directly drive Fabrinet's growth."
+     },
+     {
+      "b": "Technology-path risk",
+      "pill": "CPO",
+      "w": "Co-packaged optics put the optical engine right next to the switch chip and could reduce the number of pluggable modules. Management calls NPO and CPO “complementary”, not replacements; NPO revenue starts in the second half of FY27 and Fabrinet will take part. The stock fell about 8% during the October OCP summit on this worry."
+     },
+     {
+      "b": "Paying for its own expansion",
+      "pill": "FCF −$137M",
+      "w": "Building 10 plus the Santa Clara site purchase drove $159M of capex this quarter; free cash flow over the past four quarters totals about −$190M. Like the cloud companies, growth has to be paid for first."
+     },
+     {
+      "b": "Peers are consolidating",
+      "pill": "Lumentum, Marvell",
+      "w": "Asked about the Lumentum–Marvell deal, management said it didn't know the terms and that past consolidation has benefited Fabrinet."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Fabrinet's growth ceiling is <b>floor space</b>: capacity goes from about $5.8B to about $10B within three months, and to about $16B long term. The real variables are whether the new plants fill up, and at what margin.",
+    "items": [
+     {
+      "b": "Volume: capacity nearly doubles",
+      "pill": "about $10B",
+      "w": "Building 10 (about 2M sq ft, about $3.5B of capacity) finishes in January; Building 11 starts in January, takes about 18 months and adds about $3B; a later Building 12 adds about $3B more, for about $16B long term. Revenue is running at about $5.9B a year."
+     },
+     {
+      "b": "Price: stable but thin margins",
+      "pill": "gross margin 12%",
+      "w": "New-product ramps depress gross margin early on; management expects operating margin to keep rising, and opex is just 1.3% of revenue."
+     },
+     {
+      "b": "New businesses",
+      "pill": "NPO, OCS",
+      "w": "Near-packaged optics (NPO) and optical circuit switching (OCS) could each be a “multi-hundred-million-dollar” opportunity; Fabrinet is “very well positioned” in coherent-lite, with no announced wins."
+     },
+     {
+      "b": "Company targets",
+      "pill": "one quarter at a time",
+      "w": "Only next-quarter guidance: Q2 revenue +43%. Revenue grew about 17% a year over the past decade, 19% in FY25 and 36% in FY26; management says another year of acceleration is “not beyond the bounds of possibility” but gives no full-year guide."
+     },
+     {
+      "b": "What could break it",
+      "pill": "customers and technology",
+      "w": "Watch whether top-four customers move orders to other manufacturers; how fast CPO spreads; utilization of the new plants; and whether capex falls back to about 5% of revenue after Building 10."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Up by half in five quarters; Q2 guide adds another 10%"
+   },
+   {
+    "why": "Stuck around 12%; scale hasn't lifted it"
+   },
+   {
+    "why": "3.5x in a year, including $77M for a building"
+   },
+   {
+    "why": "Negative four quarters running; expansion is paid first"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "No longer expensive on earnings: about 20 times trailing non-GAAP profit and about 15 times our FY27 estimate, below its five-year median of about 25 times. <b>It is cheap because of cash flow and customer concentration</b>: profits are rising while free cash flow is negative, and four customers drive more than half of revenue.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP 23.8x",
+    "f": "$314.70 ÷ TTM EPS $15.52 (GAAP $13.25)"
+   },
+   {
+    "k": "P/S",
+    "v": "2.2x",
+    "f": "market value ≈ $11.4B ÷ TTM revenue $5.14B"
+   },
+   {
+    "k": "P/E on FY27 estimate",
+    "v": "15.5x",
+    "pill": "5-yr median 25x",
+    "f": "$314.70 ÷ FY27 EPS ≈ $20.3 (below)"
+   },
+   {
+    "k": "Market value / FCF",
+    "v": "negative",
+    "pill": "TTM FCF −$190M",
+    "f": "free cash flow over the past four quarters about −$190M"
+   }
+  ],
+  "forward": {
+   "title": "FY2027 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1 actual $4.34 + Q2 guide midpoint <b>$4.85</b>",
+    "Q3 and Q4 assumed at $5.30 and $5.80, about 10% growth a quarter",
+    "Full year about <b>$20.3</b> → $314.70 ÷ $20.3 ≈ <b>15.5x</b>"
+   ],
+   "note": "Q3 and Q4 are our assumptions, not guidance; the company guides one quarter at a time."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY2028 profits",
+   "sub": "Jul 2027–Jun 2028, from FY27 revenue of about $6.88B",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+5%",
+      "10.0%",
+      "$17.5",
+      "18x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+35%",
+      "11.0%",
+      "$24.8",
+      "13x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+55%",
+      "11.5%",
+      "$29.8",
+      "11x"
+     ]
+    }
+   ],
+   "note": "Bear: major customers shift orders elsewhere or CPO arrives faster, and the new plants don't fill; base: Building 10 is largely full within a year; bull: Building 10 is full and Building 11 contributes early. FY27 revenue = Q1 actual + Q2 guide midpoint + assumed Q3/Q4 of $1.80B and $1.98B. Tax at 12% (between the 4% non-GAAP rate and the 15% global minimum), 36.3M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY28 EPS × our P/E; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "plants not full, 14x"
+    },
+    {
+     "n": "Base",
+     "how": "Building 10 full, 20x"
+    },
+    {
+     "n": "Bull",
+     "how": "both new plants contribute, 24x"
+    }
+   ],
+   "why": "The price is inside the zone: buying now, the base case gains about 58% and the bear case loses about 22%, a reward/risk of about 2.6, among the better ones we cover. Near the $300 midpoint the reward/risk is about 3.6; the $260 low end is close to the bear-case price. The 14–24x multiples are all below its five-year median P/E of about 25x: negative cash flow and concentrated customers deserve a discount. After hours it was already $350, a little above the top of the zone."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "P/E (TTM, GAAP), quarter ends",
+   "note": "About 24x now (GAAP), close to the five-year median of about 25x; it reached 43–45x in the first half of this year. This quarter's GAAP profit was depressed by one-off tax and investment losses; on non-GAAP it is only about 20x. We calculate it from SEC quarterly EPS and quarter-end closes."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Free cash flow per quarter, $M",
+   "stats": [
+    {
+     "k": "Cash and short-term investments",
+     "v": "$756M"
+    },
+    {
+     "k": "Debt",
+     "v": "$75M"
+    },
+    {
+     "k": "Buybacks (quarter)",
+     "v": "$29M"
+    }
+   ],
+   "note": "Operating cash flow was just $21M this quarter: receivables and inventory rose about $140M and $170M with revenue. Capex was $159M, including $77M for the Santa Clara site. Management says routine capex is about 5% of revenue, excluding large expansions, and that borrowing in Thailand is cheaper than selling US investments."
+  },
+  "calc": [
+   "Price $314.70: 2 Nov close, $350.59 after hours (Investing.com)",
+   "36.23M diluted shares, market value ≈ $11.40B; cash and short-term investments $756M, debt $75M, EV ≈ $10.72B",
+   "TTM non-GAAP EPS $3.36 + $3.72 + $4.10 + $4.34 = $15.52; GAAP $3.11 + $3.45 + $3.83 + $2.86 = $13.25",
+   "TTM revenue $1.133 + $1.214 + $1.316 + $1.474B = $5.138B",
+   "TTM free cash flow: −$5.3M − $10.8M − $36.9M − $137.4M ≈ −$190M",
+   "FY27 revenue = $1.474 + $1.625 + $1.80 + $1.98B ≈ $6.88B",
+   "Scenario EPS = revenue × operating margin × (1 − 12%) ÷ 36.3M; price = EPS × multiple, rounded",
+   "Historical P/E = quarter-end close ÷ TTM GAAP EPS (SEC XBRL); 2026Q3 uses $424.27 ÷ $13.25"
+  ],
+  "next": "Next report around early February 2027, by which time Building 10 should be finished."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Capacity",
+    "pill": "targets raised",
+    "before": "Long-term capacity $12.5–14B; Building 11 about $2.1B.",
+    "now": "About $16B long term; Building 11 raised to about $3B, starting in January; Building 12 now planned."
+   },
+   {
+    "topic": "New technology",
+    "pill": "NPO has a date",
+    "before": "Only said it was following CPO.",
+    "now": "NPO revenue starts in the second half of FY27; NPO and OCS could each be multi-hundred-million-dollar opportunities."
+   },
+   {
+    "topic": "Capital allocation",
+    "pill": "bigger buyback",
+    "before": "About $169M of authorization left.",
+    "now": "$103M added, about $200M left; growth investment remains the priority."
+   },
+   {
+    "topic": "Tax",
+    "pill": "global minimum tax",
+    "before": "Low non-GAAP tax rate, small GAAP vs non-GAAP gap.",
+    "now": "Now provisioning for the global minimum tax (Pillar Two): $20M this quarter, excluded from non-GAAP."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "14th straight quarter of record revenue, 7th straight quarter of faster y/y growth",
+     "Growth is “broad-based across all industries and all customers”, from existing and new programs",
+     "Components are tight everywhere, but Fabrinet gets its share",
+     "Operating margin will keep expanding"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Which transceiver customers are ramping",
+     "What the Lumentum–Marvell deal means for Fabrinet",
+     "Whether about $75M of long-term borrowing is accurate (management only said Thai borrowing is cheaper)",
+     "Next-quarter guidance by market"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q2 revenue reaches $1.60–1.65B and gross margin recovers",
+     "Whether Building 10 finishes on time in January",
+     "Whether operating cash flow turns positive",
+     "Whether data center revenue keeps growing about 15% q/q"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Data center revenue falls q/q and the company blames “customer timing”",
+     "One of the top-four customers' share drops noticeably",
+     "Gross margin falls below 11% once new plants open",
+     "Capex doesn't come down after Building 10"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No Form 4 trades by directors or officers in the 30 days before the report (10/3–11/2). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=FN\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Fabrinet: FY2027 Q1 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Fabrinet: FY2026 Q4 earnings release (Q1 guidance)"
+  },
+  {
+   "t": "Investing.com: FY27 Q1 call transcript, consensus and stock moves"
+  },
+  {
+   "t": "Investing.com: FY27 Q1 investor slides"
+  },
+  {
+   "t": "TradingKey: FY26 Q4 call (customer shares, capacity plans)"
+  },
+  {
+   "t": "Motley Fool: stock drop after the August report"
+  },
+  {
+   "t": "TradingKey: stock drop on 12 Oct"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

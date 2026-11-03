@@ -1,0 +1,411 @@
+{
+ "label": "2026 Q3 (Jul–Sep)",
+ "dateLabel": "after the close, 2 Nov 2026",
+ "asOf": "close of $178.44 on 2 Nov 2026, $171.52 after hours (Investing.com)",
+ "headline": "Revenue doubled and margins hit 62%, yet the stock fell after hours: the good news was already in a 120-plus P/E",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$2.313B",
+   "exp": "est. $2.17B"
+  },
+  {
+   "k": "Adjusted EPS",
+   "exp": "est. $0.41"
+  },
+  {
+   "k": "US commercial revenue",
+   "val": "$984M",
+   "exp": "a year ago $397M"
+  },
+  {
+   "k": "Q4 revenue guide",
+   "val": "$2.649–2.653B",
+   "exp": "a year ago $1.407B",
+   "pill": "about +88%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Business customers overtake government",
+   "t": "US commercial revenue of $984M passed US government's $953M for the first time; existing customers spent 65% more than a year ago (net dollar retention 165%)."
+  },
+  {
+   "b": "Margin stalls at 62%",
+   "t": "Adjusted operating margin was flat with last quarter rather than still rising; stock compensation was $319M in the quarter."
+  },
+  {
+   "b": "New contracts are slowing",
+   "t": "Total contract value signed this quarter was $2.92B, only 6% above a year ago; US commercial remaining deal value grew just 4% q/q versus 27% last quarter."
+  }
+ ],
+ "reaction": "Stock: closed at $178.44 (−3.1%) on report day and fell to <b>$171.52 (−3.8%)</b> after hours. Revenue, profit and full-year guidance all beat, but at the close the market value was about $459B, 63 times trailing revenue and 125 times adjusted earnings. Before the report, consensus cited by TIKR had 2027 revenue at about $12.4B (+45%); the market wanted faster. Slower new contract signings were the question analysts kept returning to. Next-day close to be added. Consensus from Investing.com: EPS $0.41, revenue $2.17B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "2026 Q3 vs 2025 Q3, $B",
+   "take": "Almost all growth came from the US, roughly half each from US commercial and US government; international grew only 20–30%.",
+   "bridge": [
+    {
+     "n": "US commercial"
+    },
+    {
+     "n": "US government"
+    },
+    {
+     "n": "Intl government"
+    },
+    {
+     "n": "Intl commercial"
+    }
+   ],
+   "rows": [
+    {
+     "n": "US commercial",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "686 US commercial customers, up 29%; $1.46B of US commercial contracts signed this quarter. Management says customers start with “sovereign AI” bootcamps, then expand quickly from small first contracts."
+    },
+    {
+     "n": "US government",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Maven has over 100,000 users; the Army TITAN prime agreement (eight systems) is being delivered. This revenue depends on the defense budget."
+    },
+    {
+     "n": "International government",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Mainly NATO and allies such as the UK."
+    },
+    {
+     "n": "International commercial",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Barely grew quarter on quarter. Businesses outside the US haven't caught up."
+    }
+   ],
+   "note": "Year-ago international figures are backed out from the growth rates the company gave, accurate to about ±$0.01B."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Palantir sits at the very end of the chain: <b>when businesses pay for AI, which application does the money land in</b>. It doesn't sell compute or build frontier models; it plugs other people's models into customers' own data and workflows. The same week ServiceNow fell 27%, Palantir kept accelerating: AI isn't replacing it, it's bringing it customers.",
+    "items": [
+     {
+      "b": "Uses other people's models",
+      "pill": "open + closed",
+      "w": "Partners named on the call include NVIDIA, Anthropic and OpenAI. The pitch is “sovereign AI”: customers fine-tune open-weight models (such as NVIDIA's Nemotron) on their own data and run them inside Palantir's Ontology. The cheaper and more plentiful models get, the better for Palantir."
+     },
+     {
+      "b": "Existing customers spend more",
+      "pill": "NDR 165%",
+      "w": "Net dollar retention rose 8 points in a quarter; the top 20 customers averaged $146M each over the past year, up 76%."
+     },
+     {
+      "b": "Moving opposite to software peers",
+      "pill": "IGV falling",
+      "w": "In late October ServiceNow fell 27% the next day on fears AI will replace seat-priced software, and Salesforce chose to partner with Anthropic. Palantir isn't priced per seat; it grows with deployments and usage, so it hasn't taken that hit."
+     },
+     {
+      "b": "No big data-center spending",
+      "pill": "tiny capex",
+      "w": "Only $30M of equipment purchases in nine months and a 53% free cash flow margin. Next to Google, Amazon and Meta this week, it's one of the few AI companies actually generating cash."
+     },
+     {
+      "b": "Half the revenue is government",
+      "pill": "budget risk",
+      "w": "US government is 41% of revenue. Karp's shareholder letter discussed an “anti-war movement”; asked about the impact on government business, management didn't answer directly."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Growth relies on <b>both the number of US business customers and spending per customer rising</b>. The real variable is new contracts: signing growth has dropped from triple digits to single digits, while the stock assumes many years of rapid growth.",
+    "items": [
+     {
+      "b": "Volume: customer count",
+      "pill": "US commercial +29%",
+      "w": "686 US commercial customers. Management says demand exceeds its staffing, but customer growth is well below revenue growth: most growth comes from existing customers spending more."
+     },
+     {
+      "b": "Price: spend per customer",
+      "pill": "top 20 at $146M",
+      "w": "Net dollar retention of 165% is among the highest since listing. Contracts start small and expand fast, which is how revenue keeps growing about 20% a quarter."
+     },
+     {
+      "b": "New contracts",
+      "pill": "TCV only +6%",
+      "w": "Total contract value signed was $2.92B versus $2.76B a year ago; remaining deal value $13.4B, up 2% q/q; RPO $4.9B, flat. Revenue is accelerating while the backlog slows, and the two can't diverge forever."
+     },
+     {
+      "b": "Company targets",
+      "pill": "only to year end",
+      "w": "No multi-year targets and no 2027 guidance yet. Full-year revenue guidance has been raised three times this year, from about $7.19B in February to $8.53B now, about 19% higher."
+     },
+     {
+      "b": "What could break it",
+      "pill": "contracts and government",
+      "w": "Watch for new contracts and RDV flat for two quarters, net dollar retention falling, US government revenue slowing on budget or politics, and customers going straight to model companies' products instead of Palantir."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Nearly doubled in five quarters; Q4 guide adds another 15%"
+   },
+   {
+    "why": "2.5x in a year, now ahead of US government"
+   },
+   {
+    "why": "From 51% to 62%, flat this quarter"
+   },
+   {
+    "why": "Flat with last quarter, a 53% margin"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "Expensive on any current measure: 63 times trailing revenue, 125 times adjusted earnings, 111 times free cash flow. <b>The price rests on many years of rapid growth</b>; if growth falls from doubling to 40–50%, the multiple has to come down a lot.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, adjusted)",
+    "v": "124.8x",
+    "f": "$178.44 ÷ TTM EPS $1.43 (GAAP also $1.43)"
+   },
+   {
+    "k": "P/S",
+    "v": "63.0x",
+    "pill": "5-yr median 24x",
+    "f": "market value ≈ $459.3B ÷ TTM revenue $7.29B"
+   },
+   {
+    "k": "P/E on annualized Q4 guide",
+    "v": "about 88x",
+    "f": "$178.44 ÷ (Q4 adjusted EPS ≈ $0.51 × 4)"
+   },
+   {
+    "k": "Market value / FCF",
+    "v": "110.6x",
+    "pill": "FCF yield 0.9%",
+    "f": "market value ≈ $459.3B ÷ TTM adjusted FCF $4.15B"
+   }
+  ],
+  "forward": {
+   "title": "Q4 from company guidance",
+   "sub": "adjusted basis",
+   "steps": [
+    "Q4 adjusted operating income guide midpoint <b>$1.642B</b>",
+    "At Q3's ratio (adjusted net income about 80% of adjusted operating income), adjusted net income ≈ $1.31B",
+    "÷ about 2.58B diluted shares ≈ <b>$0.51</b>; annualized $2.04 → $178.44 ÷ $2.04 ≈ <b>88x</b>"
+   ],
+   "note": "Our estimate from company guidance, not a company forecast."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2027 profits",
+   "sub": "Starting from the 2026 revenue guide midpoint of $8.532B",
+   "head": [
+    "Case",
+    "Revenue growth",
+    "Adj. operating margin",
+    "Adjusted EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+35%",
+      "55%",
+      "$1.93",
+      "92x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+50%",
+      "60%",
+      "$2.34",
+      "76x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+70%",
+      "63%",
+      "$2.79",
+      "64x"
+     ]
+    }
+   ],
+   "note": "Bear: slower signings feed into revenue and margins slip as hiring rises; base: a bit above the pre-report consensus of about $12.4B of 2027 revenue (+45%), with today's margin; bull: this year's growth continues. EPS = revenue × margin × 80% ÷ 2.62B shares (with dilution). These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2027 adjusted EPS × our P/E; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "35% growth, 45x"
+    },
+    {
+     "n": "Base",
+     "how": "50% growth, 70x"
+    },
+    {
+     "n": "Bull",
+     "how": "70% growth, 90x"
+    }
+   ],
+   "why": "The price is above the base case: buying now, the base case loses about 8% and the bear case about 51%; only the bull case leaves about 41% of upside. Near the $110 midpoint the base case gains about 49% and the bear case loses about 21%, a reward/risk of about 2.3; the $95 low end is close to the bear-case price. Our 45–90x multiples are far above software peers but below its own 100x-plus forward P/E of the past year: when growth falls from doubling to 50%, the multiple usually falls first."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "Price/sales (TTM revenue, diluted shares), quarter ends",
+   "note": "About 63x now, above 13 of the past 20 quarter ends, against a median of about 24x. It reached 120x in mid-2025 and was only 7x at the end of 2022. We calculate it from SEC revenue, diluted shares and quarter-end closes."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Adjusted free cash flow per quarter, $B",
+   "stats": [
+    {
+     "k": "Cash and US Treasuries",
+     "v": "$10.4B"
+    },
+    {
+     "k": "Debt",
+     "v": "none"
+    },
+    {
+     "k": "Stock comp (quarter)",
+     "v": "$319M"
+    }
+   ],
+   "note": "Nine-month operating cash flow was $3.32B with $30M of capex. Stock compensation was $319M in the quarter, plus $23M of related employer taxes, about 15% of revenue, which adjusted profit doesn't deduct. Receivables rose $843M over the year with revenue."
+  },
+  "calc": [
+   "Price $178.44: 2 Nov close, $171.52 after hours (Investing.com)",
+   "2.574B diluted shares (Q3 report); market value ≈ $459.3B; $10.4B of cash and US Treasuries, no debt",
+   "TTM revenue $1.407 + $1.633 + $1.935 + $2.313B = $7.288B",
+   "TTM adjusted EPS $0.25 + $0.33 + $0.41 + $0.44 = $1.43; GAAP $0.24 + $0.34 + $0.41 + $0.44 = $1.43",
+   "TTM adjusted FCF $0.791 + $0.925 + $1.220 + $1.216B = $4.152B",
+   "Q4 EPS: $1.642B × 80% ÷ 2.58B ≈ $0.51",
+   "Scenarios: 2027 revenue = $8.532B × (1 + growth); EPS = revenue × margin × 80% ÷ 2.62B; price = EPS × multiple, rounded",
+   "Historical P/S = quarter-end close × diluted shares ÷ TTM revenue (SEC XBRL); 2026Q3 uses this quarter's figures"
+  ],
+  "next": "Next report around early February 2027, with full-year 2027 guidance."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Message",
+    "pill": "sovereign AI",
+    "before": "Mostly about AIP and bootcamps bringing in businesses.",
+    "now": "Focus shifted to “sovereign AI”: customers fine-tune open-weight models on their own data, and Palantir wires the models into their workflows."
+   },
+   {
+    "topic": "Customer mix",
+    "pill": "business passes government",
+    "before": "US government was always the largest source of revenue.",
+    "now": "US commercial revenue passed US government for the first time."
+   },
+   {
+    "topic": "Backlog",
+    "pill": "growth slowing",
+    "before": "US commercial RDV grew 27% q/q last quarter.",
+    "now": "Up 4% q/q this quarter, total RDV up 2%, RPO flat; management gave no reason."
+   },
+   {
+    "topic": "Strategic commercial contracts",
+    "pill": "zero from 2027",
+    "before": "Revenue from contracts with SPAC investees was disclosed separately.",
+    "now": "About $0.4M this quarter, under $0.5M in Q4 and zero from 2027."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized",
+    "items": [
+     "Revenue +96%, US commercial +148%, Rule of 40 score 158%",
+     "Net dollar retention 165%; top 20 customers average $146M",
+     "Time from bootcamp to production keeps shrinking; demand exceeds staffing",
+     "A fine-tuned 30B-parameter model beat a trillion-parameter general model in an exercise (company's claim)"
+    ]
+   },
+   {
+    "h": "Analysts asked, no answer",
+    "items": [
+     "Why new contracts and RDV slowed",
+     "The concrete impact of the letter's “anti-war movement” on government revenue and orders",
+     "How many customers work directly with model companies, bypassing Palantir",
+     "Any early view on 2027 growth"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue exceeds $2.65B",
+     "Whether US commercial RDV and total TCV re-accelerate",
+     "Whether net dollar retention holds above 160%",
+     "2027 guidance: is growth above the roughly 45% consensus"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Signings keep growing in single digits while revenue still accelerates: the backlog is being used up",
+     "US commercial revenue growth falls below 15% q/q",
+     "Government budgets are delayed or major contracts cut",
+     "Stock compensation rises as a share of revenue"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (10/3–11/2): five sales by directors and officers (Ryan Taylor about $3.62M, director Alexander Moore about $3.17M and others, about $8.25M in total), all under 10b5-1 plans, so not counted. No open-market buys. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=PLTR\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Palantir: 2026 Q3 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Palantir: 2026 Q2 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Investing.com: Q3 call transcript and stock moves"
+  },
+  {
+   "t": "TIKR: pre-report consensus and valuation"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

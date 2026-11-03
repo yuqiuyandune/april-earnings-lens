@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Jul 2026 (FY26 Q3 call)",
+  "text": "September-quarter revenue +9–11% y/y (including about 2.5 points of FX headwind)",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual +12%, above the top of the range; iPhone and Mac were still supply-constrained."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q3 call)",
+  "text": "Gross margin 47–48% (including about 1 point of tariff refunds)",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "47.9%, at the top of the range; excluding tariff refunds it fell about 1 point q/q, mainly on memory costs."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q3 call)",
+  "text": "Operating expenses $19.1–19.4B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "$19.19B, at the low end; +21% y/y with R&D +32%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY26 Q4 call)",
+  "text": "December-quarter revenue +7–10% (the biggest quarter in company history), gross margin 45–46%, opex $20.4–20.8B, Services +8–9%",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY26 Q4 call)",
+  "text": "iPhone Duo is supply-constrained and supply is being added as fast as possible; Mac and iPad stay memory-constrained in the December quarter",
+  "dueLabel": "2027Q1"
+ }
+]

@@ -1,0 +1,51 @@
+[
+ {
+  "saidLabel": "Jan 2026 (FY26 Q2 report)",
+  "text": "FY26 second-half bookings of $60–80M",
+  "dueLabel": "2026Q2",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $97.9M for the half ($37.2M in Q3 + $60.7M in Q4), about 22% above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 report)",
+  "text": "FY27 revenue of $130–150M",
+  "dueLabel": "2027Q2",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Raised to $150M (about 3x FY26), which management calls “conservative”; non-GAAP net income at least 20% of revenue."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 report)",
+  "text": "A major supplier of AI accelerators, CPUs and network chips completed a wafer-level burn-in benchmark and wants to move to pilot production validation",
+  "dueLabel": "2027Q1",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "The customer will buy a full FOX-XP test cell for a Taiwan test house to evaluate in volume production; installation early 2027, with a production decision several months later."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY26 Q4 report)",
+  "text": "The lead hyperscale customer's second AI processor will expand Sonoma purchases",
+  "dueLabel": "2027Q2",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "The second processor has qualified on Sonoma with follow-on orders, ramping in 2027; the customer expects higher volume than the first."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 call)",
+  "text": "Q2 revenue a little above Q1 with lower gross margin; full-year gross margin about 48.5% (±0.5 pt), rising every quarter",
+  "dueLabel": "2026Q4"
+ }
+]

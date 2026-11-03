@@ -1,0 +1,40 @@
+{
+ "n": "Apple",
+ "config": {
+  "segmentBasis": "By product: iPhone, Services, Mac, Wearables/Home/Accessories, iPad",
+  "fiscalNote": "Fiscal year ends near the last Saturday of September; FY2026 Q4 = July–September 2026. Quarter keys on this site follow calendar quarters. Apple reports GAAP only",
+  "kpis": [
+   "Revenue and iPhone revenue",
+   "Gross margin (memory costs)",
+   "Services revenue",
+   "R&D expense",
+   "Buybacks"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ]
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "iphone": {
+    "t": "iPhone revenue"
+   },
+   "svc": {
+    "t": "Services revenue"
+   },
+   "gm": {
+    "t": "Gross margin"
+   },
+   "eps": {
+    "t": "EPS (diluted)"
+   },
+   "rnd": {
+    "t": "R&D expense"
+   }
+  }
+ }
+}
