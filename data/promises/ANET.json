@@ -1,0 +1,48 @@
+[
+ {
+  "id": "anet-q3rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（Q2 财报）",
+  "text": "Q3 营收约 $33 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $36.6 亿，比指引高 11%，同比 +58.5%，上市以来最快。"
+   }
+  ]
+ },
+ {
+  "id": "anet-q3eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（Q2 财报）",
+  "text": "Q3 Non-GAAP 营业利润率 48–49%，EPS $1.06–1.08",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "营业利润率 49.1%，略高于上限；EPS $1.20，比上限高 11%。GAAP EPS $1.22，含 $2.7 亿其他收益。"
+   }
+  ]
+ },
+ {
+  "id": "anet-q4",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（Q3 财报）",
+  "text": "Q4 营收 $39–40 亿，Non-GAAP 营业利润率 48–49%，EPS $1.26–1.30",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "anet-rack",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（Q3 财报）",
+  "text": "和 AMD、Arm、博通、Meta、微软、高通等推出开放的机柜级以太网 AI 架构（Etherlink SU-144，单机柜 144 颗加速卡）",
+  "dueLabel": "2027Q2",
+  "checks": []
+ }
+]

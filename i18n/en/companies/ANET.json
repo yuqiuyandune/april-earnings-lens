@@ -1,0 +1,37 @@
+{
+ "n": "Arista Networks",
+ "config": {
+  "segmentBasis": "A single segment; revenue is split into product (switches, routers, software licenses) and service (maintenance, support). The company also describes customer types (cloud and AI titans, enterprise, providers) but doesn't report them quarterly",
+  "fiscalNote": "Fiscal year matches the calendar year. From Q1 2026, non-GAAP EPS no longer includes tax benefits on stock awards; prior periods are restated",
+  "kpis": [
+   "Revenue growth",
+   "Non-GAAP gross and operating margin",
+   "Deferred revenue (contract amounts collected in advance)",
+   "Inventory and purchase commitments",
+   "AI networking revenue"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "networking peers (average of Cisco and Ciena)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "Non-GAAP gross margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "ocf": {
+    "t": "Operating cash flow"
+   }
+  }
+ }
+}

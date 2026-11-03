@@ -1,0 +1,48 @@
+[
+ {
+  "id": "smci-q1rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "FY27 Q1 营收 $145–155 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "远好于承诺",
+    "tone": "good",
+    "note": "10 月 20 日先上调到 $185–195 亿，实际 $199.5 亿，比原指引上限高 29%。"
+   }
+  ]
+ },
+ {
+  "id": "smci-q1eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "Non-GAAP EPS $1.01–1.10，GAAP EPS $0.89–0.98",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "Non-GAAP $1.81、GAAP $1.75。毛利率 12.7%，原指引是 10.4–10.8%。"
+   }
+  ]
+ },
+ {
+  "id": "smci-q2",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 财报）",
+  "text": "FY27 Q2 营收 $195–215 亿，Non-GAAP EPS $1.66–1.90",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "smci-fy",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 财报）",
+  "text": "FY2027 全年营收 $720–820 亿",
+  "dueLabel": "2027Q2",
+  "checks": []
+ }
+]

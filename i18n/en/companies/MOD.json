@@ -1,0 +1,34 @@
+{
+ "n": "Modine",
+ "config": {
+  "segmentBasis": "Still three segments this quarter: Data Centers (chillers, air handling units, computer room air conditioning), Commercial HVAC (coils, coatings, heating and ventilation) and Performance Technologies (thermal management for vehicles and gensets, spun off into Gentherm on 1 Oct). From next quarter, Performance Technologies is reported as discontinued operations",
+  "fiscalNote": "Fiscal year ends 31 March; FY2027 Q2 = Jul–Sep 2026. Quarter keys on this site follow calendar quarters. The company plans to rename itself Modexus Solutions (shareholder vote on 13 Nov)",
+  "kpis": [
+   "Data center revenue and orders",
+   "Adjusted EBITDA and margin",
+   "Number of chiller lines",
+   "Free cash flow",
+   "Net debt"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "data center power and cooling peers (average of Vertiv and Eaton)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue (including the spun-off business)"
+   },
+   "ebitda": {
+    "t": "Adjusted EBITDA"
+   },
+   "eps": {
+    "t": "Adjusted EPS"
+   }
+  }
+ }
+}

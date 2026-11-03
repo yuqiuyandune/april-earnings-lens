@@ -344,6 +344,91 @@
    "latest": "2026Q3",
    "latestDate": "2026-11-03",
    "headline": "收费业务创新高，保险利差和税吃掉了增长：AI 基建需要的钱越多，阿波罗越忙，但每股利润没跟上"
+  },
+  {
+   "t": "AMD",
+   "n": "超威半导体",
+   "en": "AMD",
+   "aliases": [
+    "AMD",
+    "超微半導體",
+    "Advanced Micro Devices",
+    "苏姿丰"
+   ],
+   "cat": "芯片",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "数据中心翻倍、下季指引 $170 亿：AMD 终于在 AI 加速卡上放量，但股价已经先跑了一大段"
+  },
+  {
+   "t": "ANET",
+   "n": "Arista网络",
+   "en": "Arista Networks",
+   "aliases": [
+    "Arista",
+    "以太网交换机"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "上市以来最快的增长、营业利润率 49%：AI 集群越大，以太网越吃香，Arista 是最直接的受益者"
+  },
+  {
+   "t": "ALAB",
+   "n": "Astera Labs",
+   "en": "Astera Labs",
+   "aliases": [
+    "Astera",
+    "Scorpio",
+    "retimer"
+   ],
+   "cat": "芯片",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "收入一年 2.5 倍、指引再高一截，股价却比高点低一半：GPU 之间的“交换机”芯片，市场在担心毛利率和对手"
+  },
+  {
+   "t": "SMCI",
+   "n": "超微电脑",
+   "en": "Super Micro Computer",
+   "aliases": [
+    "Supermicro",
+    "超微電腦",
+    "美超微"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "一个季度卖了 $200 亿、利润 $16 亿，市值只有 $230 亿：市场不相信超微的利润能留住，也不相信能变成现金"
+  },
+  {
+   "t": "MOD",
+   "n": "Modine",
+   "en": "Modine",
+   "aliases": [
+    "Modine",
+    "Modexus",
+    "冷水机组"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "数据中心收入翻倍、订单单季超过 $10 亿，股价却比 6 月低六成：分拆后的 Modine 变成一家纯粹的数据中心散热公司，市场在等利润率"
   }
  ]
 }

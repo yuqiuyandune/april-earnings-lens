@@ -1,0 +1,40 @@
+{
+ "n": "AMD",
+ "config": {
+  "segmentBasis": "Three segments: Data Center (Instinct GPUs, EPYC server CPUs, NICs, data center FPGAs), Client and Gaming (Ryzen PC processors, Radeon graphics, game-console custom chips), and Embedded (FPGAs and embedded processors for industrial, auto and aerospace)",
+  "fiscalNote": "The fiscal year is close to the calendar year, with quarters ending on the last Saturday; Q3 2026 ended 26 Sep. The company gives GAAP and non-GAAP; non-GAAP excludes stock compensation, acquired-intangible amortization (mostly from Xilinx) and fair-value changes on warrants issued to customers",
+  "kpis": [
+   "Data center revenue (Instinct GPU + EPYC CPU)",
+   "Non-GAAP gross margin",
+   "Next-quarter revenue guidance",
+   "Inventory and free cash flow",
+   "Helios rack and MI450 ramp"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "semiconductor ETF (SMH)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "dc": {
+    "t": "Data center revenue"
+   },
+   "gm": {
+    "t": "Non-GAAP gross margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

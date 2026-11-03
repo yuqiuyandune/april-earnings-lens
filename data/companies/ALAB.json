@@ -1,0 +1,77 @@
+{
+ "t": "ALAB",
+ "n": "Astera Labs",
+ "en": "Astera Labs",
+ "cat": "芯片",
+ "foreignIssuer": false,
+ "config": {
+  "segmentBasis": "单一分部，不按产品披露收入。产品线：Scorpio 交换芯片（GPU 之间的 PCIe/私有协议互联）、Aries 信号调理（retimer）、Taurus 有源电缆模块、Leo 内存控制器（CXL），以及 COSMOS 管理软件",
+  "fiscalNote": "财年与日历年一致；2024 年 3 月上市。Non-GAAP 剔除股权激励（占比较高）和收购相关费用",
+  "kpis": [
+   "营收和环比增速",
+   "Non-GAAP 毛利率（随硬件占比下降）",
+   "Scorpio 放量",
+   "库存",
+   "客户和设计订单（design win）数量"
+  ],
+  "volprice": [],
+  "modules": [
+   "在 AI 闭环里的位置",
+   "未来几年的增长从哪来"
+  ],
+  "peer": {
+   "basket": [
+    "CRDO",
+    "MRVL"
+   ],
+   "n": "高速互联芯片同行（Credo、Marvell 平均）"
+  }
+ },
+ "series": {
+  "q": [
+   "2025Q3",
+   "2025Q4",
+   "2026Q1",
+   "2026Q2",
+   "2026Q3"
+  ],
+  "metrics": {
+   "rev": {
+    "t": "营收",
+    "u": "$M",
+    "dec": 0,
+    "v": [
+     230.6,
+     270.6,
+     308.4,
+     392.4,
+     584.9
+    ]
+   },
+   "gm": {
+    "t": "Non-GAAP 毛利率",
+    "u": "%",
+    "dec": 1,
+    "v": [
+     76.4,
+     75.7,
+     76.4,
+     73.7,
+     72.4
+    ]
+   },
+   "eps": {
+    "t": "Non-GAAP EPS",
+    "u": "$",
+    "dec": 2,
+    "v": [
+     0.49,
+     0.58,
+     0.61,
+     0.8,
+     1.32
+    ]
+   }
+  }
+ }
+}

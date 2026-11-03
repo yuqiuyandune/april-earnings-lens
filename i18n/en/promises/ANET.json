@@ -1,0 +1,34 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 revenue about $3.3B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $3.66B, 11% above guidance and +58.5% y/y, the fastest since its IPO."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 non-GAAP operating margin 48–49%, EPS $1.06–1.08",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Operating margin 49.1%, slightly above the top; EPS $1.20, 11% above the top. GAAP EPS of $1.22 includes $273M of other income."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Q4 revenue $3.9–4.0B, non-GAAP operating margin 48–49%, EPS $1.26–1.30",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Open rack-scale Ethernet AI architectures with AMD, Arm, Broadcom, Meta, Microsoft, Qualcomm and others (Etherlink SU-144, 144 accelerators per rack)",
+  "dueLabel": "2027Q2"
+ }
+]

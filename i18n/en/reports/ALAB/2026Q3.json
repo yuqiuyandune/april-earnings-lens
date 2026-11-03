@@ -1,0 +1,370 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "after the close, 3 Nov 2026",
+ "asOf": "close of $233.62 on 3 Nov 2026 (MarketBeat); lower after hours",
+ "headline": "Revenue 2.5x in a year and guidance higher again, yet the stock is half its peak: the market worries about margins and rivals for the chips that switch traffic between GPUs",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$584.9M",
+   "exp": "est. $551M"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $1.19"
+  },
+  {
+   "k": "Non-GAAP gross margin",
+   "exp": "a year ago 76.4%",
+   "pill": "−4.0 pts"
+  },
+  {
+   "k": "Q4 revenue guidance",
+   "val": "$730–750M",
+   "exp": "this quarter $584.9M",
+   "pill": "midpoint +26% q/q"
+  }
+ ],
+ "points": [
+  {
+   "b": "Scorpio becomes the largest product line",
+   "t": "The Scorpio X 320-lane GPU-to-GPU switch began shipping in volume; revenue rose 49% q/q and 154% y/y."
+  },
+  {
+   "b": "Gross margin is drifting down",
+   "t": "From 76% to 72%, with Q4 guided to about 72%: switch chips and board- and module-type hardware are a bigger share and carry lower margins than retimers."
+  },
+  {
+   "b": "The stock has halved from its peak",
+   "t": "It closed at $233.62 before the report, against a $483.02 closing high on 30 Jun and a 52-week range of $97.89–499.48; it fell hard in late October with the AI sector."
+  }
+ ],
+ "reaction": "Stock: closed at $233.62 (+1.7%, MarketBeat) on report day and fell after hours (Benzinga and Seeking Alpha headlines: results and guidance beat but shares slid); the size of the move and the next-day close are to be added. Consensus from MarketBeat: EPS $1.19, revenue $551M.",
+ "results": {
+  "segments": {
+   "title": "Where the money comes from and goes",
+   "period": "Q3 2026, $M",
+   "bridgeT": "From revenue to non-GAAP operating profit",
+   "take": "Of every $1 of revenue, about 28 cents is cost of sales and about 28 cents opex, leaving about 45 cents of operating profit. R&D is the biggest expense.",
+   "bridge": [
+    {
+     "n": "Revenue"
+    },
+    {
+     "n": "Cost of sales"
+    },
+    {
+     "n": "R&D, sales and admin"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Scorpio switch chips",
+     "val": "largest line",
+     "why": "The P-Series connects GPUs, CPUs, NICs and storage (PCIe 6); the X-Series handles GPU-to-GPU scale-up, with the 320-lane version in volume this quarter. The company sizes the merchant scale-up switch market at about $20B by 2030."
+    },
+    {
+     "n": "Aries / Taurus signal conditioning and cables",
+     "val": "the original business",
+     "why": "Aries retimers carry high-speed signals further over boards and cables; Aries 7 supports PCIe 7 and extends into optics (NPO, LPO). Taurus is an active copper cable module."
+    },
+    {
+     "n": "Leo memory controllers",
+     "val": "new",
+     "why": "Adds memory to CPUs or GPUs over CXL. Paired with Scorpio X, Leo X cuts time-to-first-token for long-context inference by 62% (company testing)."
+    }
+   ],
+   "note": "The company doesn't disclose revenue by product; it only says Scorpio became the largest line this quarter. Cost of sales is backed out from the 72.4% non-GAAP gross margin."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Astera Labs makes <b>the wiring that connects chips inside the rack</b>: switch and signal chips between GPU and GPU, GPU and CPU, and chips and memory. Every AI server has several, and more GPUs at higher speeds mean more of them.",
+    "items": [
+     {
+      "b": "Content per accelerator is rising",
+      "pill": "Scorpio + Leo + Aries",
+      "w": "Management's core claim is rising “dollar content per accelerator”: it used to sell only retimers, and now sells switch chips, memory controllers and optical chips too."
+     },
+     {
+      "b": "Open scale-up",
+      "pill": "vs NVLink",
+      "w": "NVIDIA links its GPUs with its own NVLink; everyone else (AMD, cloud companies' in-house chips) needs an open alternative, which is Scorpio X's market."
+     },
+     {
+      "b": "Competition is fierce",
+      "pill": "Broadcom, Marvell",
+      "w": "Broadcom has an Ethernet scale-up approach (SUE/ESUN), and Marvell and Credo also make retimers and active cables. Arista launched an Ethernet scale-up architecture this quarter too."
+     },
+     {
+      "b": "Customer concentration",
+      "pill": "a few clouds",
+      "w": "Revenue is concentrated in a few hyperscalers and their custom-chip programs; one program's timing or share can swing a quarter."
+     },
+     {
+      "b": "From chips to reference designs",
+      "pill": "Orion",
+      "w": "Orion is a GPU- and CPU-agnostic full-rack reference design, aimed mainly at neoclouds and enterprises, shipping through OEMs/ODMs from Q1 2027."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Astera's growth comes from <b>how much scale-up networking share Scorpio X wins</b>. Q4 guidance implies annualized revenue near $3B, three times a year ago.",
+    "items": [
+     {
+      "b": "Volume: Scorpio X ramp",
+      "pill": "Q4 +26%",
+      "w": "The Q4 midpoint of $740M is +26% q/q and about +173% y/y. Design wins cover “multiple programs at multiple customers”."
+     },
+     {
+      "b": "Price: margin traded for growth",
+      "pill": "about 72%",
+      "w": "More hardware and switch chips cut gross margin from 76% to 72%. The long-term target is around 70%, so it is still above target."
+     },
+     {
+      "b": "Operating leverage",
+      "pill": "operating margin 44.7%",
+      "w": "Non-GAAP opex is growing slower than revenue; Q4 guidance has opex at about $197M, only 22% above this quarter's."
+     },
+     {
+      "b": "Company targets",
+      "pill": "one quarter at a time",
+      "w": "Only next-quarter guidance, with no annual or long-term revenue target."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Customers switching to Ethernet scale-up or in-house links; a big program slipping; gross margin below 70%; inventory still climbing fast."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "2.5x in five quarters, +49% q/q in Q3"
+   },
+   {
+    "why": "Down 4 points in a year as hardware mix rises"
+   },
+   {
+    "why": "2.7x in a year"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 71 times trailing non-GAAP earnings and about 53 times 2026, with a P/S of about 28, <b>below its post-IPO median of about 38</b> but still among the most expensive chip companies we cover. The price bets on Scorpio X winning the scale-up market.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP 93x",
+    "f": "$233.62 ÷ TTM EPS $3.31 (GAAP $2.51)"
+   },
+   {
+    "k": "P/E on our 2026 estimate",
+    "v": "53.5x",
+    "f": "$233.62 ÷ 2026 EPS ≈ $4.37"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "post-IPO median 38x",
+    "f": "market value ≈ $43.0B ÷ TTM revenue $1.56B"
+   },
+   {
+    "k": "Cash",
+    "v": "$1.38B",
+    "pill": "no debt",
+    "f": "cash and marketable securities $209M + $1.169B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1–Q3 actual $0.61 + $0.80 + $1.32 = $2.73",
+    "Q4 guidance midpoint <b>$1.64</b>",
+    "Full year about <b>$4.37</b> → $233.62 ÷ $4.37 ≈ <b>53.5x</b>"
+   ],
+   "note": "2026 revenue about $2.03B (Q4 at the $740M midpoint), about +115% y/y."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits",
+   "sub": "from Q4's annualized revenue of about $3B",
+   "head": [
+    "Case",
+    "2028 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$3.0B",
+      "38%",
+      "$5.17",
+      "45x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$5.5B",
+      "43%",
+      "$10.72",
+      "22x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$7.5B",
+      "46%",
+      "$15.63",
+      "15x"
+     ]
+    }
+   ],
+   "note": "Bear: scale-up shifts to Ethernet or in-house links and revenue stalls at Q4's annualized level; base: Scorpio X wins the main share, about 35% a year for two years; bull: Scorpio, Leo and optical products all ramp. EPS = revenue × non-GAAP operating margin × (1 − 13% tax) ÷ 192M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS × our P/E; price at the 3 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "revenue stalls, 22x"
+    },
+    {
+     "n": "Base",
+     "how": "Scorpio X wins share, 30x"
+    },
+    {
+     "n": "Bull",
+     "how": "several lines ramp, 36x"
+    }
+   ],
+   "why": "The price is above the zone: buying at $234, the base case gains about 38% and the bear case loses about 51%, a reward/risk of about 0.7. At the $185 top of the zone the reward/risk is about 1.9; at the $165 low end, about 3.1. The $114 bear price is near the 52-week low of $97.89: this stock's range is wide, and the competitive picture isn't settled."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), quarter ends; listed in March 2024, so 10 quarter ends from 2024Q2",
+   "note": "About 28x now, below the post-IPO median of about 38x and far below the 74x of end-June. Its P/S has swung between 20x and 74x, a sign of deep disagreement about its long-term share. We calculate it from SEC quarterly revenue, diluted shares and quarter-end closes."
+  },
+  "cash": {
+   "title": "Non-GAAP EPS",
+   "sub": "Non-GAAP EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow, first three quarters",
+     "v": "$341M"
+    },
+    {
+     "k": "Capex, first three quarters",
+     "v": "$73M"
+    },
+    {
+     "k": "Inventory",
+     "v": "$201M (start of year $59M)"
+    }
+   ],
+   "note": "Operating cash flow of $341M over the first three quarters trails non-GAAP net income: receivables rose from $83M to $284M and inventory from $59M to $201M, normal in a ramp, but Q4 needs to show them coming back."
+  },
+  "calc": [
+   "Price $233.62: 3 Nov close (MarketBeat)",
+   "184.1M diluted shares, market value ≈ $43.0B; cash and marketable securities $1.38B, no debt, EV ≈ $41.6B",
+   "TTM non-GAAP EPS $0.58 + $0.61 + $0.80 + $1.32 = $3.31; GAAP $0.25 + $0.44 + $0.83 + $0.99 = $2.51",
+   "TTM revenue $270.6 + $308.4 + $392.4 + $584.9M = $1.556B",
+   "Scenario EPS = revenue × operating margin × 87% ÷ 192M shares; price = EPS × multiple, rounded",
+   "Historical P/S = quarter-end close × diluted shares ÷ TTM revenue (SEC XBRL)"
+  ],
+  "next": "Next report around mid-February 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Product mix",
+    "pill": "Scorpio first",
+    "before": "Aries retimers were the largest line.",
+    "now": "Scorpio switch chips became the largest line."
+   },
+   {
+    "topic": "Gross margin",
+    "pill": "still falling",
+    "before": "Q2 73.7%.",
+    "now": "Q3 72.4%, Q4 guided to about 72%."
+   },
+   {
+    "topic": "New products",
+    "pill": "broadening",
+    "before": "Leo used mainly for CPU memory expansion.",
+    "now": "Aries 7 (including optics), Leo X/Leo 2, Orion rack reference designs."
+   },
+   {
+    "topic": "Target customers",
+    "pill": "into neoclouds",
+    "before": "Mainly hyperscalers.",
+    "now": "Orion targets neoclouds and enterprises, shipping through OEMs/ODMs from Q1 2027."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Record revenue with growth across product lines",
+     "Scorpio in high-volume production and the largest line",
+     "Design wins across multiple programs at multiple customers",
+     "Dollar content per accelerator will keep rising strongly"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "Who Scorpio X's customers are, and their shares",
+     "Whether Ethernet scale-up replaces PCIe/proprietary approaches",
+     "Where gross margin bottoms",
+     "A 2027 growth framework"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue reaches $730–750M",
+     "Whether gross margin holds at 72%",
+     "Whether inventory and receivables start coming down",
+     "Aries 7 sampling progress"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Revenue falling q/q",
+     "Gross margin below 70%",
+     "A big customer announcing a move to Ethernet scale-up",
+     "Inventory still rising sharply"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective open-market trades in the 30 days before the report (10/4–11/3). Director Stefan Dyckerhoff sold about $4.7M on 7 Oct under a preset 10b5-1 plan, which doesn't count as effective. Earlier, in August–September, the CEO and other directors made planned or tax-related sales (MarketBeat counts about $127M over three months). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=ALAB\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Astera Labs: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Astera Labs: Q2 2026 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "MarketBeat: Q3 consensus, stock price and insider trades"
+  },
+  {
+   "t": "Benzinga: results beat but shares slide"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

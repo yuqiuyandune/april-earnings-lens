@@ -1,0 +1,34 @@
+{
+ "n": "Super Micro Computer",
+ "config": {
+  "segmentBasis": "A single segment: AI servers, general servers, storage and networking, plus DCBBS whole-data-center solutions (racks, liquid cooling, power, software and services). This quarter's release doesn't split revenue by customer or product",
+  "fiscalNote": "Fiscal year ends 30 June; FY2027 Q1 = Jul–Sep 2026. Quarter keys on this site follow calendar quarters. 10-for-1 split on 1 Oct 2024. This quarter's figures are unaudited preliminary results",
+  "kpis": [
+   "Revenue and next-quarter guidance",
+   "Gross margin (very volatile)",
+   "Operating cash flow and inventory",
+   "Customer deposits (deferred revenue)",
+   "Orders and backlog"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "server peers (average of Dell and HPE)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "GAAP gross margin"
+   },
+   "eps": {
+    "t": "GAAP EPS"
+   }
+  }
+ }
+}

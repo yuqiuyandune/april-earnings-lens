@@ -1,0 +1,34 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 revenue about $13.0B ± $300M, non-GAAP gross margin about 56%",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Revenue of $13.38B, above the $13.3B top of the range; gross margin 56%, in line. Data center $8.55B, +97% y/y."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2025 (analyst day)",
+  "text": "Revenue growth above 35% a year and data center above 60% a year over 3–5 years, with EPS above $20",
+  "dueLabel": "2030Q4",
+  "checks": [
+   {
+    "status": "Ahead",
+    "note": "Revenue +45% and data center +97% this quarter; Q4 guidance of $17B is about +66% y/y. Non-GAAP EPS over the past four quarters is $6.65, about a third of $20."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Q4 revenue about $17B ± 3% (+27% q/q), non-GAAP gross margin about 55%",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Scale Helios racks and 6th Gen EPYC (Venice) production in Q4, with growth accelerating further",
+  "dueLabel": "2026Q4"
+ }
+]

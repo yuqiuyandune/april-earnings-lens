@@ -1,0 +1,34 @@
+{
+ "n": "Astera Labs",
+ "config": {
+  "segmentBasis": "A single segment with no revenue by product. Product lines: Scorpio switch chips (PCIe and proprietary-protocol links between GPUs), Aries signal conditioning (retimers), Taurus active cable modules, Leo memory controllers (CXL), plus COSMOS management software",
+  "fiscalNote": "Fiscal year matches the calendar year; listed in March 2024. Non-GAAP excludes stock compensation (a large share) and acquisition-related costs",
+  "kpis": [
+   "Revenue and sequential growth",
+   "Non-GAAP gross margin (falling as hardware mix rises)",
+   "Scorpio ramp",
+   "Inventory",
+   "Customers and design wins"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "high-speed connectivity peers (average of Credo and Marvell)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "gm": {
+    "t": "Non-GAAP gross margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   }
+  }
+ }
+}

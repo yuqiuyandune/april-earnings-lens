@@ -1,0 +1,389 @@
+{
+ "label": "FY2027 Q2 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 3 Nov 2026",
+ "asOf": "close of $123.34 on 2 Nov 2026 (Nasdaq.com)",
+ "headline": "Data center revenue doubles and quarterly orders top $1B, yet the stock is 60% below June: after the spin-off Modine is a pure data center cooling company, and the market is waiting for margins",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$994.4M",
+   "exp": "a year ago $738.9M"
+  },
+  {
+   "k": "Data center revenue",
+   "val": "$439.7M",
+   "exp": "a year ago $225.0M"
+  },
+  {
+   "k": "Adjusted EPS",
+   "exp": "a year ago $1.06"
+  },
+  {
+   "k": "Data center gross margin",
+   "exp": "a year ago 24.4%",
+   "pill": "−4.7 pts"
+  }
+ ],
+ "points": [
+  {
+   "b": "A fourth straight quarter of record orders",
+   "t": "Data center orders topped $1B in the quarter, more than twice this quarter's revenue, including a $400M program from a hyperscale customer."
+  },
+  {
+   "b": "Margins haven't caught up",
+   "t": "Data center gross margin fell from 24.4% to 19.7%: material, component and tariff costs rose, and it paid more to lock in supply."
+  },
+  {
+   "b": "Repositioned after the spin-off",
+   "t": "On 1 Oct it spun off vehicle and genset thermal management into Gentherm; the new full-year outlook covers only data centers and commercial HVAC: revenue $3.1–3.2B, +50–55%."
+  }
+ ],
+ "reaction": "Stock: closed at $123.34 before the report (2 Nov), against a $296.82 closing high on 2 Jun. That period includes the 1 Oct spin-off (shareholders also received Gentherm shares), so part of the decline is value that was distributed; we haven't separated it. The call is on the morning of 4 Nov; after-hours and next-day data to be added. We found no reliable consensus for this quarter, so comparisons are to a year ago; a GuruFocus headline says revenue and adjusted EPS beat estimates.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "FY27 Q2 vs FY26 Q2, $M",
+   "take": "Over 80% of the increase came from data centers; commercial HVAC is also supplying coils to data center customers; the spun-off Performance Technologies barely grew.",
+   "bridge": [
+    {
+     "n": "Data centers"
+    },
+    {
+     "n": "Commercial HVAC"
+    },
+    {
+     "n": "Performance Technologies (spun off)"
+    },
+    {
+     "n": "Intersegment eliminations"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Data centers",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Mainly chillers, air handling units and white-space equipment for North American hyperscalers. Operating profit $61.2M (+70%); adjusted EBITDA margin 15.4% against 18.1% a year ago, though better than last quarter. A third dedicated data center plant in Calgary started production."
+    },
+    {
+     "n": "Commercial HVAC",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Coils (many sold to data center customers), anti-corrosion coatings (+28%) and heating and ventilation products. Adjusted EBITDA margin 15.1%, flat with a year ago."
+    },
+    {
+     "n": "Performance Technologies (spun off)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Genset and commercial vehicle demand grew while automotive and off-highway fell. No longer part of Modine from 1 Oct."
+    }
+   ],
+   "note": "Shares are of the $1.013B segment total; the gap to consolidated revenue of $994.4M is intersegment eliminations."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Modine's job in the loop is <b>getting heat out of the data center</b>: the hotter the GPU racks, the more and bigger the chillers and air handlers. It sells large cooling equipment outside and inside the data hall, competing with Vertiv, Schneider, Johnson Controls and Carrier.",
+    "items": [
+     {
+      "b": "Orders far exceed revenue",
+      "pill": "> $1B a quarter",
+      "w": "Orders were more than twice this quarter's data center revenue, and backlog is a record. A hyperscaler signed a $400M program, a sign Modine is on the core supplier list."
+     },
+     {
+      "b": "Capacity is the bottleneck",
+      "pill": "13 → 20 lines",
+      "w": "North American chiller lines go from 13 to 20 (by March 2027). Chiller sales fell this quarter on shipment timing; the company expects a sharp rise in the second half."
+     },
+     {
+      "b": "Cost pressure",
+      "pill": "gross margin 19.7%",
+      "w": "To secure supply it signed long-term agreements with key suppliers at higher prices, on top of tariffs and raw materials. The company says it is recovering this through pricing."
+     },
+     {
+      "b": "What liquid cooling does",
+      "pill": "two-sided",
+      "w": "Liquid cooling takes some heat straight off the chip, but it still has to be rejected outdoors by chillers and dry coolers. Wider adoption changes the equipment mix and doesn't necessarily shrink Modine's market."
+     },
+     {
+      "b": "Negative cash flow",
+      "pill": "first-half FCF −$146M",
+      "w": "Expansion capex and inventory built for orders made first-half free cash flow negative, and net debt rose from $363M to $574M."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "After the spin-off Modine is <b>mainly a data center cooling company</b>: data centers are already about 60% of continuing revenue. Growth depends on capacity; profit on whether costs can be passed on.",
+    "items": [
+     {
+      "b": "Volume: capacity and orders",
+      "pill": "record orders",
+      "w": "Four straight quarters of record orders, with backlog enough to support second-half growth; the full-year continuing revenue outlook is +50–55%."
+     },
+     {
+      "b": "Price: margin repair",
+      "pill": "data center EBITDA margin 15.4%",
+      "w": "The company expects data center earnings to grow more than 80% for the year, based on better fixed-cost absorption as lines ramp, plus pricing."
+     },
+     {
+      "b": "A second line through commercial HVAC",
+      "pill": "+23%",
+      "w": "Commercial HVAC is also a tier-two coil supplier to data center customers and newly qualified to supply evaporators."
+     },
+     {
+      "b": "Company targets",
+      "pill": "18 Nov",
+      "w": "Long-term revenue and earnings targets come at the 18 Nov analyst day, and we'll review the zone then."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Hyperscalers delaying projects; data center construction hitting local opposition or power limits; costs that can't be passed on; new lines ramping poorly."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+35% in five quarters; excludes Performance Technologies from next quarter"
+   },
+   {
+    "why": "Dipped in Q1 on expansion costs, recovered in Q2"
+   },
+   {
+    "why": "Q1 grew 44%, far faster than EBITDA's 5%; the two measures differ"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 15 times EV/EBITDA on the full-year continuing-operations outlook, and about 21 times trailing adjusted EPS (including the spun-off business). <b>Not a high multiple</b>, because margins are falling, cash flow is negative, and the post-spin basis won't be clear until the analyst day.",
+  "tiles": [
+   {
+    "k": "EV / EBITDA (FY27 outlook)",
+    "pill": "continuing ops",
+    "f": "EV ≈ $7.1B ÷ adjusted EBITDA midpoint $485M"
+   },
+   {
+    "k": "P/E (TTM, adjusted)",
+    "pill": "incl. spun-off business",
+    "f": "$123.34 ÷ TTM adjusted EPS $5.78"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "5-yr median 1.8x",
+    "f": "market value ≈ $6.5B ÷ TTM revenue $3.63B (including the spun-off business)"
+   },
+   {
+    "k": "Net debt",
+    "v": "$574M",
+    "pill": "first-half FCF −$146M",
+    "f": "debt $724M − cash $151M (30 Sep, before the spin-off)"
+   }
+  ],
+  "forward": {
+   "title": "FY2027 for continuing operations",
+   "sub": "adjusted, our estimate",
+   "steps": [
+    "Adjusted EBITDA midpoint <b>$485M</b>",
+    "Less about $60M of D&A and $35M of interest, 25% tax, 53M shares",
+    "Adjusted EPS about <b>$5.5</b> → $123.34 ÷ $5.5 ≈ <b>22x</b>"
+   ],
+   "note": "The company gives no continuing-operations EPS; D&A, interest and tax are our assumptions. The spin-off's effect on debt shows in next quarter's statements."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY2029 profits",
+   "sub": "Apr 2028–Mar 2029, continuing operations",
+   "head": [
+    "Case",
+    "Revenue",
+    "EBITDA margin",
+    "EBITDA",
+    "EV/EBITDA at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$3.5B",
+      "14%",
+      "$490M",
+      "14.5x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$5.0B",
+      "17%",
+      "$850M",
+      "8.4x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$6.0B",
+      "18%",
+      "$1.08B",
+      "6.6x"
+     ]
+    }
+   ],
+   "note": "Bear: data center orders slow in FY28 and cost pressure persists; base: 20 lines running full with margins back to a year ago; bull: further expansion and more hyperscale programs. Price = (EBITDA × multiple − $570M net debt) ÷ 53M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY29 EBITDA × our EV/EBITDA; price at the 2 Nov close (the day before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "orders slow, 11x"
+    },
+    {
+     "n": "Base",
+     "how": "new lines full, 14x"
+    },
+    {
+     "n": "Bull",
+     "how": "more expansion, 16x"
+    }
+   ],
+   "why": "The price is inside the zone: buying at $123, the base case gains about 74% and the bear case loses about 26%, a reward/risk of about 2.8, among the best in this batch. At the $130 top of the zone the reward/risk is about 2.2; at the $105 low end, about 7.8. But these are profits two and a half years out, with a capacity ramp and cost pass-through in between; we'll review the zone after the 18 Nov analyst day sets long-term targets."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "P/S (TTM revenue, including the spun-off business), quarter ends",
+   "note": "About 1.8x now, equal to the five-year median and less than half the 4.1x of end-June. Five years ago it was mainly an auto parts company at 0.3x; the data center business lifted the valuation several times over. Revenue shrinks after the spin-off; on continuing operations the P/S is about 2.1x. We calculate it from SEC quarterly revenue, diluted shares and quarter-end closes."
+  },
+  "cash": {
+   "title": "Adjusted EBITDA",
+   "sub": "Adjusted EBITDA per quarter, $M",
+   "stats": [
+    {
+     "k": "First-half operating cash flow",
+     "v": "−$57.1M"
+    },
+    {
+     "k": "First-half free cash flow",
+     "v": "−$146M"
+    },
+    {
+     "k": "Net debt",
+     "v": "$574M"
+    }
+   ],
+   "note": "First-half free cash flow was −$146M: data center expansion capex and inventory built to meet orders. Restructuring, spin-off and similar cash payments totaled $27.7M."
+  },
+  "calc": [
+   "Price $123.34: 2 Nov close (Nasdaq.com); results came after the close on 3 Nov",
+   "About 53M diluted shares, market value ≈ $6.54B; debt $724M, cash $151M, net debt $574M, EV ≈ $7.1B (30 Sep, before the spin-off)",
+   "TTM adjusted EPS $1.19 + $1.71 + $1.53 + $1.35 = $5.78 (including the spun-off business)",
+   "TTM revenue $805 + $954 + $874 + $994M = $3.63B",
+   "Scenarios: price = (EBITDA × multiple − net debt) ÷ 53M shares, rounded",
+   "Historical P/S = quarter-end close × diluted shares ÷ TTM revenue (SEC XBRL)"
+  ],
+  "next": "The 18 Nov analyst day brings long-term targets; the next report is around early February 2027, with Performance Technologies shown as discontinued operations."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Full-year outlook",
+    "pill": "raised on a new basis",
+    "before": "Revenue +20–35%, adjusted EBITDA $650–680M (including Performance Technologies).",
+    "now": "Continuing revenue $3.1–3.2B (+50–55%), adjusted EBITDA $470–500M."
+   },
+   {
+    "topic": "Supply chain",
+    "pill": "supply secured",
+    "before": "Component shortages caused production inefficiencies last quarter.",
+    "now": "Long-term agreements with several strategic suppliers; supply has stabilized, at higher cost."
+   },
+   {
+    "topic": "Capacity",
+    "pill": "third plant",
+    "before": "Two dedicated data center plants.",
+    "now": "A third plant in Calgary (air handling units) in production; 13 chiller lines, 20 by year-end."
+   },
+   {
+    "topic": "Company",
+    "pill": "new name",
+    "before": "Modine.",
+    "now": "Plans to rename itself Modexus Solutions, with a shareholder vote on 13 Nov."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release and slides)",
+    "items": [
+     "Strong quarters in both data centers and commercial HVAC",
+     "Record data center orders and backlog",
+     "Long-term agreements securing critical components",
+     "More confidence in the core business outlook after the spin-off"
+    ]
+   },
+   {
+    "h": "Questions still open (call on 4 Nov)",
+    "items": [
+     "The size and delivery schedule of the backlog",
+     "When data center gross margin returns to around 24%",
+     "Debt and share count after the spin-off",
+     "Long-term targets (held for 18 Nov)"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether chiller shipments rise sharply in the second half",
+     "Whether the data center adjusted EBITDA margin keeps recovering",
+     "Whether free cash flow turns positive",
+     "Long-term targets at the analyst day"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Data center orders falling q/q",
+     "Margins still sliding",
+     "Line expansion delayed",
+     "Debt rising sharply to fund expansion"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No open-market Form 4 trades by directors or officers in the 30 days before the report (10/4–11/3). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=MOD\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Modine: FY2027 Q2 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Modine: FY2027 Q2 investor slides"
+  },
+  {
+   "t": "Modine: FY2027 Q1 earnings release (original full-year outlook)"
+  },
+  {
+   "t": "Quiver Quantitative: spin-off trading mechanics (28 Sep)"
+  },
+  {
+   "t": "GuruFocus: Q2 revenue and adjusted EPS beat"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

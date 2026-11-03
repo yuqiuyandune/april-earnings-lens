@@ -1,0 +1,63 @@
+[
+ {
+  "id": "alab-q3rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（Q2 财报）",
+  "text": "Q3 营收 $5.4–5.6 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "实际 $5.85 亿，比上限高 4.4%，环比 +49%。"
+   }
+  ]
+ },
+ {
+  "id": "alab-q3eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（Q2 财报）",
+  "text": "Q3 Non-GAAP EPS $1.16–1.21",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "$1.32，比上限高 9%；营业利润率 44.7%。"
+   }
+  ]
+ },
+ {
+  "id": "alab-scorpio",
+  "made": "2026Q1",
+  "saidLabel": "2026 年 5 月（Q1 财报）",
+  "text": "Scorpio X 系列 320 通道交换芯片在 2026 下半年量产爬坡",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "做到",
+    "tone": "good",
+    "note": "Q3 已大量出货，Scorpio 成为最大的产品线。"
+   }
+  ]
+ },
+ {
+  "id": "alab-q4",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（Q3 财报）",
+  "text": "Q4 营收 $7.3–7.5 亿，Non-GAAP 毛利率约 72%，EPS $1.62–1.66",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "alab-new",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（Q3 财报）",
+  "text": "Aries 7 在 Q4 送样；Orion 机柜参考设计 2027 年 Q1 通过 OEM/ODM 上市",
+  "dueLabel": "2027Q1",
+  "checks": []
+ }
+]

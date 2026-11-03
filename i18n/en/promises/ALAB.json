@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 revenue $540–560M",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $584.9M, 4.4% above the top, +49% q/q."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 non-GAAP EPS $1.16–1.21",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "$1.32, 9% above the top; operating margin 44.7%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (Q1 report)",
+  "text": "Scorpio X-Series 320-lane switch ramps in the second half of 2026",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Done",
+    "note": "Shipping in volume in Q3; Scorpio became the largest product line."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Q4 revenue $730–750M, non-GAAP gross margin about 72%, EPS $1.62–1.66",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Aries 7 samples in Q4; Orion rack reference designs available through OEMs/ODMs in Q1 2027",
+  "dueLabel": "2027Q1"
+ }
+]

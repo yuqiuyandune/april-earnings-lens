@@ -1,0 +1,400 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "after the close, 3 Nov 2026",
+ "asOf": "close of $483.90 on 3 Nov 2026 (Investing.com); about +7% after hours",
+ "headline": "Data center doubles and Q4 guidance is $17B: AMD's AI accelerators are finally ramping, but the stock already ran a long way ahead",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$13.38B",
+   "exp": "est. $13.06B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $1.94"
+  },
+  {
+   "k": "Data center revenue",
+   "val": "$8.55B",
+   "exp": "a year ago $4.34B"
+  },
+  {
+   "k": "Q4 revenue guidance",
+   "val": "about $17B",
+   "exp": "est. $16.23B"
+  }
+ ],
+ "points": [
+  {
+   "b": "MI450 and Helios start to ramp",
+   "t": "Data center revenue rose 27% q/q with record GPU and CPU sales; Q4 guidance of $17B is $3.6B more than this quarter, mostly from Helios racks."
+  },
+  {
+   "b": "Gross margin isn't rising with it",
+   "t": "Non-GAAP gross margin of 56%, guided down to 55% for Q4: full racks include more bought-in parts, so the price is higher but the margin lower."
+  },
+  {
+   "b": "Inventory ate the cash",
+   "t": "Free cash flow was only $554M; inventory rose from $7.9B at the start of the year to $11.5B to prepare Q4 shipments, and new debt took total debt from $3.2B to $7.1B."
+  }
+ ],
+ "reaction": "Stock: closed at $483.90 (+3.7%) on report day and rose about 7% after hours (Investing.com). Revenue, EPS and Q4 guidance all beat. The stock has more than doubled this year, but fell 17.5% in October with the AI trade (the Philadelphia Semiconductor Index fell 15.4%), from a high of $649.42 on 6 Oct. Next-day close to be added. Consensus from Investing.com: EPS $1.94, revenue $13.06B, Q4 revenue $16.23B.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "Q3 2026 vs Q3 2025, $M",
+   "take": "All of the increase came from data center; console chips fell in a generation lull, while PCs and embedded grew modestly.",
+   "bridge": [
+    {
+     "n": "Data center"
+    },
+    {
+     "n": "Embedded"
+    },
+    {
+     "n": "PC client"
+    },
+    {
+     "n": "Gaming"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Data center",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Instinct MI450 GPUs began shipping and EPYC server CPUs hit a record. Operating profit $2.88B at a 34% margin, against 25% a year ago. The first Helios racks are running at customers including Meta, Microsoft, OpenAI and Oracle."
+    },
+    {
+     "n": "PC client",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Ryzen notebook processors drove the y/y growth; down 4% q/q."
+    },
+    {
+     "n": "Gaming",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Console custom chips and discrete graphics both fell, with consoles in the trough before a new generation."
+    },
+    {
+     "n": "Embedded",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Recovery across aerospace and defense, auto, communications and industrial. Operating profit $453M, a 41% margin."
+    }
+   ],
+   "note": "Client and gaming are reported as one segment, with combined operating profit of $573M ($867M a year ago). “All other” (stock compensation, amortization and so on) lost $1.08B and is not allocated to segments."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "AMD is the loop's <b>second AI accelerator supplier</b>: cloud companies and AI labs buy its GPUs and full racks to train and run models, paid for out of their capex. It is also the second-largest server CPU supplier, and AI agents need plenty of CPUs alongside GPUs.",
+    "items": [
+     {
+      "b": "From chips to full racks",
+      "pill": "Helios",
+      "w": "Helios puts 72 MI450 GPUs, EPYC CPUs and NICs into one rack, competing head on with NVIDIA's NVL72. The price is higher, but more bought-in parts dilute the margin."
+     },
+     {
+      "b": "Big customers locked in multi-year demand",
+      "pill": "Meta 6 GW",
+      "w": "This year it signed a multi-year 6 GW agreement with Meta (reported at about $60B), and last year a 6 GW agreement with OpenAI that included warrants. Fair-value changes on those warrants cut GAAP profit by $1.1B this quarter."
+     },
+     {
+      "b": "CPUs eat from AI too",
+      "pill": "record EPYC",
+      "w": "AI inference and agent workloads need more general-purpose compute, and Oracle, Google Cloud and Microsoft are all launching new EPYC instances. CPUs are AMD's most distinctive advantage over NVIDIA."
+     },
+     {
+      "b": "Software is still the weak spot",
+      "pill": "ROCm 10",
+      "w": "ROCm 10 shipped, but the developer ecosystem still trails NVIDIA's CUDA. AMD is filling gaps with acquisitions: this quarter it announced World Labs (model research) and Taalas (inference silicon)."
+     },
+     {
+      "b": "Dependent on a few customers' capex",
+      "pill": "the biggest variable",
+      "w": "Data center growth is concentrated in a handful of cloud companies and AI labs. If they slow capex or shift more to in-house chips (Google TPU, Amazon Trainium, Broadcom custom silicon), AMD's growth feels it first."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "AMD's growth rests almost entirely on <b>how much data center GPU share it wins</b>: Q4 guidance means quarterly revenue goes from $9.2B to $17B in a year. The questions are how long that pace lasts and whether margins hold.",
+    "items": [
+     {
+      "b": "Volume: rack deliveries",
+      "pill": "Q4 +$3.6B",
+      "w": "Q4 revenue rises $3.6B q/q, mostly Helios. MI450 ships for the full year next year, then MI500."
+     },
+     {
+      "b": "Price: gross margin of 55–57%",
+      "pill": "Q4 55%",
+      "w": "Full racks carry a lower margin than chips alone. Whether it gets back above 57% at scale decides whether profit can grow faster than revenue."
+     },
+     {
+      "b": "Operating leverage",
+      "pill": "margin 29%",
+      "w": "Non-GAAP operating margin rose from 24% to 29%: opex grew 29% while revenue grew 45%."
+     },
+     {
+      "b": "Company targets",
+      "pill": "EPS > $20",
+      "w": "November 2025 analyst day: revenue growth above 35% a year over 3–5 years, data center above 60%, EPS above $20. It is ahead of that pace so far."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Helios delivery delays; big customers delaying deployments; HBM memory and advanced packaging (CoWoS) shortages; export controls; NVIDIA cutting Rubin prices to defend share."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Doubled in a year, +27% q/q in Q3"
+   },
+   {
+    "why": "Q4 guidance is another big step up"
+   },
+   {
+    "why": "Holding at 54–57%"
+   },
+   {
+    "why": "Stocking up cut this quarter's cash flow to $554M"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 73 times trailing non-GAAP earnings and about 61 times 2026, with a P/S of about 18, more than twice its five-year median of about 8. <b>The market is already pricing profits from 2028 on</b>: if growth holds, the multiple falls fast; if it slows, the downside is large.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP 105x",
+    "f": "$483.90 ÷ TTM EPS $6.65 (GAAP $4.60)"
+   },
+   {
+    "k": "P/E on our 2026 estimate",
+    "v": "60.7x",
+    "f": "$483.90 ÷ 2026 EPS ≈ $7.97 (below)"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "5-yr median 8.4x",
+    "f": "market value ≈ $804B ÷ TTM revenue $45.4B"
+   },
+   {
+    "k": "Free cash flow yield",
+    "f": "TTM free cash flow $6.76B ÷ market value"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1–Q3 actual $1.37 + $1.66 + $2.09 = $5.12",
+    "Q4: $17B revenue × 55% gross margin − about $3.9B opex, 13% tax, 1.665B shares ≈ <b>$2.85</b>",
+    "Full year about <b>$7.97</b> → $483.90 ÷ $7.97 ≈ <b>60.7x</b>"
+   ],
+   "note": "Q4 EPS is our estimate from guidance; the company gives no EPS guidance. Opex is this quarter's $3.56B plus 10%."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits",
+   "sub": "from Q4's annualized revenue of about $68B",
+   "head": [
+    "Case",
+    "2028 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$70B",
+      "28%",
+      "$10.2",
+      "48x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$105B",
+      "35%",
+      "$19.0",
+      "25x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$130B",
+      "38%",
+      "$25.6",
+      "19x"
+     ]
+    }
+   ],
+   "note": "Bear: AI capex slows in 2027 and revenue stalls at Q4's annualized level; base: close to the analyst-day targets, with data center still growing fast; bull: a clearly larger GPU share. EPS = revenue × non-GAAP operating margin × (1 − 13% tax) ÷ 1.68B shares (including warrant dilution). These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS × our P/E; price at the 3 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "revenue stalls, 25x"
+    },
+    {
+     "n": "Base",
+     "how": "analyst-day targets, 30x"
+    },
+    {
+     "n": "Bull",
+     "how": "much bigger share, 35x"
+    }
+   ],
+   "why": "The price is far above the zone: buying at $484, the base case gains only about 18% and the bear case loses about 48%, a reward/risk of about 0.4. At the $365 top of the zone the reward/risk is about 1.9; at the $330 low end, about 3.2. The base case already assumes AMD gets close to its long-term targets, and 30x is above most chip companies; today's price is roughly paying for an outcome between base and bull. After hours it was about $518, further from the zone."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "P/S (TTM revenue, diluted shares), quarter ends",
+   "note": "About 18x now, more than twice the five-year median of about 8x; it reached 22–23x in June and at end-September. We use P/S because GAAP profit is depressed by Xilinx amortization and the warrants, which distorts GAAP P/E. We calculate it from SEC quarterly revenue, diluted shares and quarter-end closes."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Free cash flow per quarter, $B",
+   "stats": [
+    {
+     "k": "Cash and short-term investments",
+     "v": "$15.78B"
+    },
+    {
+     "k": "Debt",
+     "v": "$7.08B"
+    },
+    {
+     "k": "Inventory",
+     "v": "$11.46B"
+    }
+   ],
+   "note": "Free cash flow of $554M this quarter, after $2.57B and $1.56B in the prior two: inventory is $3.5B above the start of the year and receivables $2.9B higher, stocking up for Q4 rack shipments; capex was $648M against $258M a year ago. New notes issued in August took debt from $3.2B to $7.1B."
+  },
+  "calc": [
+   "Price $483.90: 3 Nov close; about +7% after hours (Investing.com)",
+   "1.661B diluted shares, market value ≈ $804B; cash and short-term investments $15.78B, debt $7.08B, EV ≈ $795B",
+   "TTM non-GAAP EPS $1.53 + $1.37 + $1.66 + $2.09 = $6.65; GAAP $0.92 + $0.84 + $1.38 + $1.46 = $4.60",
+   "TTM revenue $10.27 + $10.25 + $11.54 + $13.38B = $45.44B",
+   "TTM free cash flow $2.08 + $2.57 + $1.56 + $0.55B = $6.76B",
+   "Scenario EPS = revenue × operating margin × 87% ÷ 1.68B shares; price = EPS × multiple, rounded",
+   "Historical P/S = quarter-end close × diluted shares ÷ TTM revenue (SEC XBRL)"
+  ],
+  "next": "Next report around early February 2027, with the first full quarter of Helios deliveries."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Next-quarter guidance",
+    "pill": "big step up",
+    "before": "Q3 guidance of $13.0B, +13% q/q.",
+    "now": "Q4 guidance of $17B, +27% q/q and about +66% y/y."
+   },
+   {
+    "topic": "Gross margin",
+    "pill": "slightly lower",
+    "before": "Q3 guidance 56%.",
+    "now": "Q4 guidance 55%, as full racks become a bigger share."
+   },
+   {
+    "topic": "Acquisitions",
+    "pill": "software and inference",
+    "before": "ZT Systems acquired and its manufacturing business sold.",
+    "now": "Announced deals for World Labs (model research) and Taalas (inference silicon)."
+   },
+   {
+    "topic": "Balance sheet",
+    "pill": "more leverage",
+    "before": "Debt about $3.2B.",
+    "now": "Debt $7.1B; inventory $11.5B, stocked for Q4."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Revenue above the top of guidance, data center nearly doubled y/y",
+     "Instinct and EPYC demand kept strengthening",
+     "Scaling Helios and Venice production in Q4, with growth accelerating",
+     "Very strong revenue growth and margin expansion for years to come"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "How Q4's $17B splits between GPUs and CPUs",
+     "Whether Helios rack margins get back above 57%",
+     "A 2027 framework for data center GPU revenue",
+     "How much more dilution the warrants bring"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue lands at $16.5–17.5B",
+     "Whether gross margin holds at 55%",
+     "Whether inventory starts falling and free cash flow recovers",
+     "New large customer agreements"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "A clearly lower Q1 guide blamed on “customer timing”",
+     "Gross margin below 54%",
+     "Inventory rising further while revenue slows",
+     "Big customers moving orders to in-house chips"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective open-market trades in the 30 days before the report (10/4–11/3). Data center chief Forrest Norrod exercised options and sold about $9.3M on 15 Oct under a preset 10b5-1 plan; planned trades don't count as effective. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=AMD\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "AMD: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "AMD: Q2 2026 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Investing.com: Q3 consensus, after-hours move and October decline"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

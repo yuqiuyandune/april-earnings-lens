@@ -447,7 +447,7 @@ function mSegments(x,co,q){
   const br=x.bridge.map(b=>{const w=Math.abs(b.v)/mx*50,left=b.v>=0?50:50-w,c=b.v>=0?"var(--good)":"var(--bad)";
     return `<div class="br"><span>${esc(b.n)}</span><span class="lane"><span class="fillbar" style="left:${left}%;width:${Math.max(w,.6)}%;background:${c}"></span></span><span class="amt" style="color:${c}">${b.v>0?"+":"−"}${Math.abs(b.v).toFixed(x.dec??2)}</span></div>`}).join("");
   const rows=x.rows.map(s=>{let ch="";if(s.m){const w=seriesWindow(co,s.m,q);ch=bars(w.vals,w.labels,{W:240,H:104,color:col(s.c),f:v=>fmt(v,w.m.dec),label:s.n})}
-    return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}<span class="share">${L("share")} ${esc(s.share)}</span></span>
+    return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}${s.share?`<span class="share">${L("share")} ${esc(s.share)}</span>`:""}</span>
     <span class="big"><b>${esc(s.val)}</b>${(s.pills||[]).map(p=>pct(p.v,p.k)).join("")}</span><span class="why">${s.why}</span></div>${ch}</div>`}).join("");
   return `<section><h2>${esc(x.title)} <small>${esc(x.en||"BY BUSINESS")}</small></h2><p class="take">${x.take}</p>
   <div class="panel"><div class="ph"><b>${x.bridgeT?esc(x.bridgeT):L("bridge")}</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>${L("total")}</span><span></span><span class="amt">${x.total}</span></div></div></div>
