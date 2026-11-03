@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "2026 adjusted EBITDA $2.025–2.225B (after a raise)",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Midpoint kept, range narrowed",
+    "note": "Narrowed to $2.05–2.2B with the $2.125B midpoint unchanged. The first three quarters delivered $1.516B, so Q4 needs only $530–680M; Q4 a year ago was $382M."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "2026 adjusted free cash flow $1.2–1.35B",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Midpoint kept, range narrowed",
+    "note": "Narrowed to $1.225–1.325B. The first three quarters delivered $995M, so Q4 needs $230–330M."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Buybacks are the benchmark for capital allocation; $1.7B left on the SRP through end-2028",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Done, and more",
+    "note": "SRP raised to $3.0B through end-2028, including a $1.5B accelerated share repurchase (ASR); about 3.8M shares were received on 1 Oct. Another 600,000 shares (about $200M) were bought in Q3. About 19.5M shares bought since 2024, more than a third of the shares at emergence."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "2027 adjusted EBITDA $2.5–2.85B and adjusted free cash flow $1.5–1.75B (about +26% and +27% at the midpoints)",
+  "dueLabel": "2027Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "ASR completed no later than Q1 2027; net leverage back to the 3.5x target",
+  "dueLabel": "2027Q1"
+ }
+]

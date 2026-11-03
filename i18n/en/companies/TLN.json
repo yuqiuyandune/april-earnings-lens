@@ -1,0 +1,37 @@
+{
+ "n": "Talen Energy",
+ "config": {
+  "segmentBasis": "A single business: selling power, capacity and ancillary services into wholesale markets such as PJM; plants include the Susquehanna nuclear station (2.2 GW) plus gas and coal units, about 15.5 GW in all",
+  "fiscalNote": "Fiscal year matches the calendar year; relisted after emerging from bankruptcy in May 2023, and earlier financials are not comparable. The company focuses on adjusted EBITDA and adjusted free cash flow (AFCF) and gives no EPS guidance",
+  "kpis": [
+   "Adjusted EBITDA",
+   "Adjusted free cash flow (per share)",
+   "Generation and capacity factor",
+   "Hedge ratio",
+   "Net leverage (3.5x target)"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "independent power peers (average of Vistra and Constellation)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "ebitda": {
+    "t": "Adjusted EBITDA"
+   },
+   "afcf": {
+    "t": "Adjusted free cash flow"
+   },
+   "twh": {
+    "t": "Generation"
+   }
+  }
+ }
+}

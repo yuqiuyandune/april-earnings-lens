@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "companies": [
   {
    "t": "TSM",
@@ -291,6 +291,59 @@
    "latest": "2026Q3",
    "latestDate": "2026-11-02",
    "headline": "收入一年 3 倍、订单还在涨，股价却在财报前腰斩：AI 芯片的老化测试，市场只肯先信一半"
+  },
+  {
+   "t": "ETN",
+   "n": "伊顿",
+   "en": "Eaton",
+   "aliases": [
+    "Eaton",
+    "伊頓",
+    "配电",
+    "液冷"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "订单又快了一档、全年指引第三次上调：AI 数据中心的配电和液冷，伊顿两头都在卖"
+  },
+  {
+   "t": "TLN",
+   "n": "Talen能源",
+   "en": "Talen Energy",
+   "aliases": [
+    "Talen",
+    "核电",
+    "独立发电商"
+   ],
+   "cat": "能源",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "电厂翻倍、现金流翻倍，再借未来的容量收入回购股票：Talen 把 AI 用电需求押在每股现金流上"
+  },
+  {
+   "t": "APO",
+   "n": "阿波罗",
+   "en": "Apollo Global Management",
+   "aliases": [
+    "Apollo",
+    "阿波羅",
+    "Athene",
+    "私募信贷"
+   ],
+   "cat": "资金方",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-03",
+   "headline": "收费业务创新高，保险利差和税吃掉了增长：AI 基建需要的钱越多，阿波罗越忙，但每股利润没跟上"
   }
  ]
 }

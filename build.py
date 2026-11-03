@@ -60,7 +60,7 @@ def merge(base, over):
 def build_langs(out: pathlib.Path):
     src = ROOT / "data"; en_src = ROOT / "i18n" / "en"
     CAT = {"应用": "Applications", "模型与云": "Models & cloud", "芯片": "Chips", "代工与设备": "Foundry & equipment",
-           "基础设施": "Infrastructure", "能源": "Energy", "消费与平台": "Consumer & platforms", "存储": "Memory & storage"}
+           "基础设施": "Infrastructure", "能源": "Energy", "消费与平台": "Consumer & platforms", "存储": "Memory & storage", "资金方": "Capital providers"}
 
     en_done = set()
     for f in sorted(src.rglob("*.json")):

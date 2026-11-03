@@ -1,0 +1,375 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "before the open, 3 Nov 2026",
+ "asOf": "close of $332.99 on 2 Nov 2026; about $342.50 before the open on 3 Nov (Investing.com)",
+ "headline": "Twice the plants, twice the cash flow, and future capacity revenue sold to buy back stock: Talen turns AI power demand into cash flow per share",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.33B",
+   "exp": "est. $1.29B"
+  },
+  {
+   "k": "Adjusted EBITDA",
+   "val": "$669M",
+   "exp": "a year ago $363M"
+  },
+  {
+   "k": "Adjusted free cash flow",
+   "val": "$433M",
+   "exp": "a year ago $223M"
+  },
+  {
+   "k": "2027 EBITDA guidance",
+   "val": "$2.5–2.85B",
+   "exp": "2026 midpoint $2.125B",
+   "pill": "midpoint +26%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Twice the size",
+   "t": "After buying Freedom, Guernsey and three gas plants in June, generation rose from 11.1 TWh to 23.9 TWh and the capacity factor from 57% to 75%."
+  },
+  {
+   "b": "Borrowing from the future to buy back stock",
+   "t": "Sold about $1.5B of 2027/28 and 2028/29 PJM capacity revenue for $1.3B and, with cash on hand, funded a $1.5B accelerated buyback; the share count is down to about 43.5M."
+  },
+  {
+   "b": "The stock has already come down",
+   "t": "It closed at $332.99 before the report, 26% below the 52-week high of $449.84 and 13% below the end-June $384."
+  }
+ ],
+ "reaction": "Stock: closed at $332.99 before the report and was about $342.50 (+2.9%) before the open on 3 Nov (Investing.com). Revenue beat, the 2026 guidance midpoint held, and the first 2027 guidance calls for EBITDA +26% and free cash flow +27%. The day's close and next-day data to be added. Consensus from Investing.com: revenue $1.29B.",
+ "results": {
+  "segments": {
+   "title": "Where the money comes from and goes",
+   "period": "Q3 2026, $M",
+   "bridgeT": "From adjusted EBITDA to free cash flow",
+   "take": "Two-thirds of EBITDA became free cash flow; the biggest deduction is interest, because the plant acquisitions were financed with debt.",
+   "bridge": [
+    {
+     "n": "Adjusted EBITDA"
+    },
+    {
+     "n": "Interest and finance charges"
+    },
+    {
+     "n": "Capex"
+    },
+    {
+     "n": "Taxes and pensions"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Nuclear (Susquehanna)",
+     "why": "A Pennsylvania nuclear station that earns the nuclear production tax credit (PTC). In 2025 it signed a long-term power contract with Amazon (AWS) of up to 1.92 GW through 2042, with a minimum volume that steps up each year. Nuclear is Talen's most direct link to data centers."
+    },
+    {
+     "n": "Gas and other thermal",
+     "val": "about 13.3 GW",
+     "pills": [
+      {
+       "k": "company generation y/y"
+      }
+     ],
+     "why": "Gas and coal units in PJM, plus plants in Ohio, Indiana and Montana. Purchases over the past year of Freedom, Guernsey, Lawrenceburg, Waterford and Darby doubled the fleet. More than 10 GW cleared the 2028/29 PJM capacity auction at $325/MW-day."
+    }
+   ],
+   "note": "The company reports a single segment and does not disclose revenue by plant. Shares are by installed capacity. GAAP net income of $138M was below last year's $207M, mainly because of a $190M unrealized loss on commodity derivatives and interest on acquisition financing."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Talen sits at the very top of the loop: <b>generation</b>. AI data centers need large amounts of steady power, so power and capacity prices in PJM (the eastern US grid, home to northern Virginia's data center cluster) have risen, and Talen's plants are worth more. It is the same kind of company as Vistra and Constellation.",
+    "items": [
+     {
+      "b": "Nuclear straight to a data center",
+      "pill": "AWS contract",
+      "w": "The long-term Susquehanna contract locks part of the nuclear output to Amazon at a price that does not float with the market. It is the template for “behind-the-meter” supply (a data center next to the plant)."
+     },
+     {
+      "b": "PJM capacity prices",
+      "pill": "$325/MW-day",
+      "w": "Data centers are pushing PJM's forecast peak up fast, and capacity auctions have cleared at high prices for several years. Capacity revenue is the most certain part of Talen's cash flow over the next two years, but two of those years have already been sold for cash."
+     },
+     {
+      "b": "Hedges lock in most prices",
+      "pill": "70% of 2027",
+      "w": "About 80% of Q4, about 70% of 2027 and about 35% of 2028 is hedged. The upside: 2027 guidance is fairly stable. The downside: if prices keep rising, Talen captures less than its peers."
+     },
+     {
+      "b": "Higher leverage",
+      "pill": "net leverage about 5x",
+      "w": "After the acquisitions and the accelerated buyback, net debt is about 5x 2026 EBITDA, above the 3.5x target; the plan is to bring it down through 2027 EBITDA growth. If power prices fall, high leverage amplifies the stock's swings."
+     },
+     {
+      "b": "Policy risk",
+      "pill": "PJM rules",
+      "w": "Capacity price caps, “bring your own generation” rules for data centers, and regulatory approval of behind-the-meter supply all affect how much power Talen can sell and at what price. In 2024 the Federal Energy Regulatory Commission (FERC) rejected an expanded behind-the-meter arrangement for Amazon at Susquehanna."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Talen's own target is <b>free cash flow per share</b>: a fleet twice the size brings more EBITDA, and buybacks keep shrinking the share count. 2027 growth comes mainly from a full year of the new plants.",
+    "items": [
+     {
+      "b": "Volume: a full year of new plants",
+      "pill": "15.5 GW",
+      "w": "The three plants bought in June contributed only part of the year; 2027 is a full year, the main reason for 2027 EBITDA +26%."
+     },
+     {
+      "b": "Price: capacity and power",
+      "pill": "only 35% of 2028 hedged",
+      "w": "Most power prices from 2028 on are not locked in, so PJM supply and demand set Talen's ceiling and floor."
+     },
+     {
+      "b": "Shares: steady buybacks",
+      "pill": "$1.5B left",
+      "w": "After the ASR, $1.5B remains on the SRP through end-2028. At today's price that buys about 4.5M more shares, about 10%."
+     },
+     {
+      "b": "Company targets",
+      "pill": "2027 AFCF/share about $38",
+      "w": "The 2027 AFCF midpoint of $1.625B over about 42.6M shares (after the ASR) is about $38 a share, more than 40% above 2026's roughly $26.6. Company materials put 2028 at about $48 a share."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "PJM capacity or power prices falling; outages at the nuclear station or big units; rules that limit behind-the-meter supply; higher rates making refinancing costlier; more borrowing to fund buybacks."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Nearly double a year ago after the plant purchases"
+   },
+   {
+    "why": "Interest rose, but it still nearly doubled"
+   },
+   {
+    "why": "Generation more than doubled in a year"
+   },
+   {
+    "why": "Moves with fleet size and power prices"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "On 2027 guidance, about <b>9x EV/EBITDA and under 9x free cash flow per share</b> (a free cash flow yield of about 11%). It looks cheap because most power prices are unhedged, leverage is about 5x, and two years of capacity revenue have already been spent.",
+  "tiles": [
+   {
+    "k": "EV / EBITDA (2026 guidance)",
+    "pill": "2027 guidance 9.4x",
+    "f": "EV ≈ $25.1B ÷ 2026 EBITDA midpoint $2.125B"
+   },
+   {
+    "k": "Price / AFCF per share (2027)",
+    "pill": "yield 11.4%",
+    "f": "$332.99 ÷ 2027 AFCF/share ≈ $38.1"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "median 5.0x",
+    "f": "market value ≈ $14.5B ÷ TTM revenue $3.95B"
+   },
+   {
+    "k": "Net debt / EBITDA",
+    "v": "about 5.0x",
+    "pill": "target 3.5x",
+    "f": "net debt ≈ $10.6B (including the $1.3B capacity monetization) ÷ 2026 EBITDA midpoint"
+   }
+  ],
+  "forward": {
+   "title": "2027 free cash flow per share from company guidance",
+   "sub": "adjusted",
+   "steps": [
+    "2027 AFCF midpoint <b>$1.625B</b>",
+    "About 42.6M shares (43.5M less about 0.9M remaining ASR shares)",
+    "About <b>$38.1 a share</b> → $332.99 ÷ $38.1 ≈ <b>8.7x</b>"
+   ],
+   "note": "The remaining ASR shares are estimated at today's price. We count the $1.3B capacity monetization as debt-like in EV; the company's 2027 free cash flow reconciliation does not show its effect separately."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 free cash flow per share",
+   "sub": "40M shares (buybacks continue)",
+   "head": [
+    "Case",
+    "2028 EBITDA",
+    "2028 AFCF",
+    "Per share",
+    "Price multiple"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$2.4B",
+      "$1.25B",
+      "$31",
+      "10.7x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$2.9B",
+      "$1.75B",
+      "$44",
+      "7.6x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$3.3B",
+      "$2.1B",
+      "$54",
+      "6.2x"
+     ]
+    }
+   ],
+   "note": "Bear: PJM capacity and power prices fall and the unhedged 65% sells cheaply; base: near the top of 2027 guidance plus modest growth, a little below the roughly $48 a share in company materials; bull: prices keep rising and a new data center contract is signed. Deductions from EBITDA to AFCF (capex, interest, taxes, pensions) are about $1.15B a year per 2027 guidance, a bit more tax in the bull case. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 AFCF per share × our multiple; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "prices fall, 8x"
+    },
+    {
+     "n": "Base",
+     "how": "grows with guidance, 9.5x"
+    },
+    {
+     "n": "Bull",
+     "how": "new contracts land, 11x"
+    }
+   ],
+   "why": "The price is above the zone: buying at $333, the base case gains about 26% and the bear case loses about 25%, a reward/risk of about 1.0. At the $305 top of the zone the reward/risk is about 2; at the $270 low end, about 7. The multiples are low (8–11x free cash flow) because most prices are unhedged and leverage is high; multiples for this group have swung widely with power prices. The $248 bear price is below the 52-week low of $279.77."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue), quarter ends; relisted after its May 2023 reorganization, so only 8 comparable quarter ends",
+   "note": "About 3.7x now, <b>the lowest since relisting</b>, against a median of about 5x. One reason is that acquisitions doubled revenue while the stock didn't keep up. Talen has no steady GAAP profit (large derivative marks) and an incomplete EBITDA history, so we compare P/S. We calculate it from SEC quarterly revenue, share counts and quarter-end closes."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Adjusted free cash flow per quarter, $M",
+   "stats": [
+    {
+     "k": "Available liquidity (30 Oct)",
+     "v": "about $1.6B"
+    },
+    {
+     "k": "Long-term debt",
+     "v": "$9.54B"
+    },
+    {
+     "k": "Cash (30 Oct)",
+     "v": "$220M"
+    }
+   ],
+   "note": "Interest payments were $149M this quarter, against $36M a year ago. 2027 guidance has $585–615M of interest payments, up from $460–480M in 2026. On 1 Oct the $1.3B from the capacity monetization plus cash funded the first ASR delivery."
+  },
+  "calc": [
+   "Price $332.99: 2 Nov close; about $342.50 before the open (Investing.com)",
+   "43.5M shares (10-Q cover), market value ≈ $14.5B",
+   "Debt: long-term $9.54B + current $29M + capacity monetization about $1.3B, less $220M cash = net debt about $10.6B; EV ≈ $25.1B",
+   "2026 EBITDA midpoint $2.125B, AFCF midpoint $1.275B; 2027 EBITDA midpoint $2.675B, AFCF midpoint $1.625B",
+   "2026 AFCF/share about $26.6, on about 48M weighted shares for the year",
+   "TTM revenue $0.749 + $1.129 + $0.747 + $1.327B = $3.95B (SEC XBRL)",
+   "Scenarios: AFCF = EBITDA − about $1.15B of deductions ($1.2B in the bull case); per share = AFCF ÷ 40M; price = per share × multiple, rounded",
+   "Historical P/S = quarter-end close × shares ÷ TTM revenue"
+  ],
+  "next": "Next report around late February 2027, by when the ASR should be nearly done and the CEO handover (Terry Nutt takes over on 1 Jan) complete."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Buybacks",
+    "pill": "doubled",
+    "before": "$1.7B left on the SRP through end-2028.",
+    "now": "Raised to $3.0B, including a $1.5B accelerated buyback funded by the capacity monetization."
+   },
+   {
+    "topic": "Guidance",
+    "pill": "first 2027 guide",
+    "before": "In August it only said the 2027 and 2028 outlooks were raised.",
+    "now": "2027 EBITDA $2.5–2.85B and AFCF $1.5–1.75B; 2026 midpoint kept, range narrowed."
+   },
+   {
+    "topic": "Funding",
+    "pill": "selling future revenue",
+    "before": "Buybacks funded from free cash flow.",
+    "now": "Sold about $1.5B of two years' PJM capacity revenue at once for $1.3B of cash for buybacks."
+   },
+   {
+    "topic": "Leadership",
+    "pill": "CEO handover",
+    "before": "Mac McFarland is CEO.",
+    "now": "President Terry Nutt becomes CEO on 1 Jan 2027."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Buybacks are the benchmark for capital allocation",
+     "More than a third of the shares at emergence have been bought back",
+     "Growing PJM demand supports the fleet's outlook",
+     "The goal is higher free cash flow per share every year"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "How the capacity monetization flows through 2027–2029 accounts and cash flow",
+     "Whether there is progress on new data center contracts",
+     "When net leverage gets back to 3.5x",
+     "The hedging plan beyond 2028"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 EBITDA reaches $530–680M",
+     "The final ASR share count",
+     "PJM rule changes affecting 2027/28",
+     "Whether net debt starts to fall"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "2027 guidance cut",
+     "More borrowing for buybacks, with leverage not falling",
+     "Long outages at the nuclear station or big units",
+     "Regulators limiting direct supply to data centers, or a big cut to capacity prices"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No open-market Form 4 trades by directors or officers in the 30 days before the report (10/4–11/2). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=TLN\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Talen Energy: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Talen Energy: Q2 2026 earnings release (guidance raise, PJM auction)"
+  },
+  {
+   "t": "Talen Energy: September capacity monetization and ASR announcement"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

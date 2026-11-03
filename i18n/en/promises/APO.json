@@ -1,0 +1,46 @@
+[
+ {
+  "saidLabel": "Oct 2024 (investor day)",
+  "text": "FRE growth of about 20% a year through 2029",
+  "dueLabel": "2029Q4",
+  "checks": [
+   {
+    "status": "On track",
+    "note": "FRE of $802M this quarter, +23% y/y; $3.01B over the past four quarters, 46% above 2024's $2.06B in about two years, roughly 20% a year."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2024 (investor day)",
+  "text": "SRE growth of about 10% a year through 2029",
+  "dueLabel": "2029Q4",
+  "checks": [
+   {
+    "status": "Behind",
+    "note": "SRE of $844M this quarter, −3% y/y ($909M excluding notable items, +7%). $3.31B over the past four quarters, just 3% above 2024's $3.22B. Net spread fell from 1.24% to 1.06%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2024 (investor day)",
+  "text": "About $15 of ANI per share and about $1.5T of AUM in 2029",
+  "dueLabel": "2029Q4",
+  "checks": [
+   {
+    "status": "Ahead on size, behind on profit",
+    "note": "AUM is already $1.074T (+18%), on pace to pass $1.5T before 2029. But ANI per share over the past four quarters is $8.59, only 16% above 2024's $7.43; reaching $15 in 2029 needs about +20% a year for the remaining three-plus years."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2024 (investor day)",
+  "text": "Debt and equity origination above $275B a year by 2029",
+  "dueLabel": "2029Q4",
+  "checks": [
+   {
+    "status": "Already above",
+    "note": "$356B over the past 12 months, with a record $114B this quarter."
+   }
+  ]
+ }
+]

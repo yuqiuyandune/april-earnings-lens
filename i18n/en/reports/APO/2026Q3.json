@@ -1,0 +1,397 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "before the open, 3 Nov 2026",
+ "asOf": "close of $119.46 on 2 Nov 2026; about $114.49 before the open on 3 Nov (Investing.com)",
+ "headline": "Fee earnings hit a record while insurance spreads and taxes ate the growth: the more money AI infrastructure needs, the busier Apollo gets, but earnings per share haven't kept up",
+ "verdicts": [
+  {
+   "k": "ANI per share",
+   "exp": "est. $2.22"
+  },
+  {
+   "k": "Fee-related earnings (FRE)",
+   "val": "$802M",
+   "exp": "a year ago $652M"
+  },
+  {
+   "k": "Spread-related earnings (SRE)",
+   "val": "$844M",
+   "exp": "a year ago $871M"
+  },
+  {
+   "k": "Assets under management",
+   "val": "$1.074T",
+   "exp": "$53B of inflows this quarter"
+  }
+ ],
+ "points": [
+  {
+   "b": "Fee business is strong",
+   "t": "Management fees +18%, capital solutions fees +37% to $290M (a record for the fourth straight quarter), FRE margin 58%. Origination hit a record $114B."
+  },
+  {
+   "b": "Insurance spreads are narrowing",
+   "t": "Athene's net spread fell from 1.24% to 1.06% (1.14% excluding notable items); the annual actuarial assumption review cost $65M."
+  },
+  {
+   "b": "Taxes nearly doubled",
+   "t": "Taxes on an ANI basis rose from $183M to $356M, more than the $150M gain in FRE; the GAAP loss of $1.06B came from marking Athene's assets to market as rates rose."
+  }
+ ],
+ "reaction": "Stock: closed at $119.46 before the report and was about $114.49 (−4.2%) before the open on 3 Nov (Investing.com). ANI per share of $2.07 missed the $2.22 consensus (Investing.com; Newsquawk had $2.19); excluding notable items it was $2.15. The stock is already down about 17% from the end-2025 $144.76. The day's close and next-day data to be added.",
+ "results": {
+  "segments": {
+   "title": "Earnings mix",
+   "period": "Q3 2026 vs Q3 2025, $M",
+   "bridgeT": "Adjusted net income (ANI) change year on year",
+   "take": "The fee business earned $150M more, and taxes and insurance spreads offset all of it; ANI fell $64M y/y.",
+   "bridge": [
+    {
+     "n": "Asset Management FRE"
+    },
+    {
+     "n": "Retirement Services SRE"
+    },
+    {
+     "n": "Principal Investing PII"
+    },
+    {
+     "n": "HoldCo interest"
+    },
+    {
+     "n": "Taxes and related payables"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Asset Management (FRE)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Management fees $1.017B (+18%), capital solutions fees $290M (+37%, about 115 transactions, 60% from credit), fee-related performance fees $67M. Asset Management inflows were $35B this quarter, strongest from institutions, with Global Wealth also contributing."
+    },
+    {
+     "n": "Retirement Services (SRE)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Athene sells annuities and funding agreements and invests the money in loans Apollo originates, earning a spread. Average net invested assets were $318.3B, but the net spread was 1.06% (1.24% a year ago) with a 4.05% cost of funds. Excluding the annual actuarial assumption review, SRE was $909M. Retirement Services inflows were $19B."
+    },
+    {
+     "n": "Principal Investing (PII)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Realized gains on Apollo's own money in its funds: volatile and small."
+    }
+   ],
+   "note": "Shares are of FRE + SRE + PII, $1.698B in total. ANI = the three combined − $49M HoldCo interest − $356M taxes and related payables = $1.293B, or $2.07 a share on 624M ANI shares."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Apollo is the loop's <b>capital provider</b>: chips, data centers and power plants all need money, and cloud and chip companies increasingly use private credit and structured financing rather than only their own cash or bonds. Athene's insurance money is the main ammunition for Apollo's lending.",
+    "items": [
+     {
+      "b": "Large loans for AI infrastructure",
+      "pill": "Broadcom $35B",
+      "w": "In June it led an initial $35B investment-grade financing for Broadcom's AI XPV platform, with Blackstone as the main partner; in 2024 it provided $11B for Intel's Ireland fab. Capital solutions fees rose 37%, and deals like these are one source."
+     },
+     {
+      "b": "Owning data centers directly",
+      "pill": "Stream",
+      "w": "In August 2025 Apollo funds bought a majority stake in Stream Data Centers. Besides lending, it is also a data center owner."
+     },
+     {
+      "b": "Athene's exposure is small",
+      "pill": "about 3%",
+      "w": "Per Athene's investor materials of 30 Oct, “digital infrastructure” investments are about $12.9B, about 3% of $423.7B of total invested assets, and about 92% investment grade."
+     },
+     {
+      "b": "Management is sounding a warning too",
+      "pill": "who gets the returns",
+      "w": "President Jim Zelter said in interviews over the past year that AI has enormous utility but the spending won't necessarily turn into good investment returns, as in earlier cycles such as mobile phones. Apollo wants to be the side collecting interest and fees, not the side carrying equity risk."
+     },
+     {
+      "b": "Private credit risk",
+      "pill": "the biggest variable",
+      "w": "The bigger AI infrastructure loans get, the more borrowers concentrate in a few tech companies and their project vehicles. If AI capex slows or project returns sour, Athene's portfolio and Apollo's valuation come under pressure together."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Apollo has two engines: <b>the fee business</b> (FRE) is growing at its 20% target; <b>insurance spreads</b> (SRE) are barely growing under rate and competitive pressure. How fast per-share earnings can grow depends on whether the second recovers.",
+    "items": [
+     {
+      "b": "Volume: scale and origination",
+      "pill": "AUM +18%",
+      "w": "$270B of inflows over the past 12 months (including $65B from Athora's purchase of PIC) and $356B of origination. Origination is Apollo's core: it originates loans and its own funds and Athene buy them."
+     },
+     {
+      "b": "Price: spreads narrowing",
+      "pill": "1.06%",
+      "w": "Athene's cost of funds is 4.05%, and competitors are also chasing annuity and funding agreement money, while yields on new investments haven't risen in step. That is the main reason SRE isn't growing."
+     },
+     {
+      "b": "Taxes and capital return",
+      "pill": "LTM buybacks $1.4B",
+      "w": "The ANI tax charge rose sharply this quarter, and the materials don't explain it. Over the past 12 months it bought back about $1.4B and paid more than $1.3B of dividends, keeping ANI shares roughly flat at 624M."
+     },
+     {
+      "b": "Company targets",
+      "pill": "$15 a share in 2029",
+      "w": "2024 investor day: FRE up about 20% a year, SRE up about 10% a year, about $15 of ANI per share and about $1.5T of AUM in 2029. FRE and scale are on track; SRE and ANI per share are behind."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Rising credit losses (especially on large AI and data center loans); lower rates slowing annuity sales; tighter regulatory scrutiny of private credit and insurers' assets; spreads narrowing further."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+23% in five quarters, up every quarter"
+   },
+   {
+    "why": "No growth in a year; a one-off drag in Q1"
+   },
+   {
+    "why": "Lower than a year ago this quarter"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About <b>14 times trailing ANI</b>, close to its median of about 14 times since the Athene merger and below the 17–22 times of 2024. <b>The market is discounting insurance spreads and private credit risk</b>: the fee business deserves a high multiple, Athene's spread business a low one, and right now the spread business isn't growing.",
+  "tiles": [
+   {
+    "k": "Price / ANI per share (TTM)",
+    "pill": "5-yr median 14x",
+    "f": "$119.46 ÷ TTM ANI $8.59"
+   },
+   {
+    "k": "On our 2026 estimate",
+    "v": "14.1x",
+    "f": "$119.46 ÷ 2026 ANI per share ≈ $8.47 (below)"
+   },
+   {
+    "k": "GAAP P/E",
+    "v": "negative",
+    "pill": "TTM GAAP EPS −$1.83",
+    "f": "Athene's assets are marked to market; GAAP losses in Q1 and Q3"
+   },
+   {
+    "k": "Dividend yield",
+    "v": "1.9%",
+    "f": "quarterly dividend $0.5625 × 4 ÷ $119.46"
+   }
+  ],
+  "forward": {
+   "title": "Estimating 2026 ANI per share",
+   "sub": "no ANI guidance",
+   "steps": [
+    "Q1–Q3 actual $1.94 + $2.11 + $2.07 = $6.12",
+    "Q4 assumed at <b>$2.35</b> (a year ago $2.47 included more performance fees)",
+    "Full year about <b>$8.47</b> → $119.46 ÷ $8.47 ≈ <b>14.1x</b>"
+   ],
+   "note": "Q4 is our assumption. Apollo gives only multi-year targets, no quarterly or annual ANI guidance."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 ANI per share",
+   "sub": "from 2026 FRE of about $3.15B and SRE of about $3.31B",
+   "head": [
+    "Case",
+    "FRE growth",
+    "SRE growth",
+    "2028 ANI/share",
+    "Price multiple"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+8%",
+      "−3%",
+      "$9.1",
+      "13.1x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+17%",
+      "+5%",
+      "$10.7",
+      "11.2x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+22%",
+      "+12%",
+      "$12.0",
+      "10.0x"
+     ]
+    }
+   ],
+   "note": "Bear: credit losses appear in private credit, fundraising slows and spreads keep narrowing; base: the fee business runs a little below its 20% target and spreads stabilize; bull: close to the investor-day targets. ANI = (FRE + SRE + about $100M of PII net of interest) × (1 − 18% tax) ÷ about 620M shares. Even the bull case is below the “$15 a share in 2029” path. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 ANI per share × our multiple; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "credit cycle, 11x"
+    },
+    {
+     "n": "Base",
+     "how": "fee business on plan, 14x"
+    },
+    {
+     "n": "Bull",
+     "how": "close to company targets, 16x"
+    }
+   ],
+   "why": "The price is a little above the zone: buying at $119, the base case gains about 26% and the bear case loses about 16%, a reward/risk of about 1.6. At the $115 top of the zone the reward/risk is about 2.3; the $100 low end is close to the bear-case price. The 11–16x multiples sit around its own median of about 14x and assume no re-rating. Before the open it was about $114.5, near the top of the zone."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "Price / ANI per share (TTM), quarter ends",
+   "note": "About 14x now, level with the five-year median and well below the 22x of end-2024. 2021Q4 is on the pre-Athene-merger basis. 2022 uses quarterly ANI as restated by the company in 2023. We calculate it from the company's quarterly ANI per share and quarter-end closes."
+  },
+  "cash": {
+   "title": "ANI per share",
+   "sub": "ANI per share each quarter, $",
+   "stats": [
+    {
+     "k": "Buybacks, past 12 months",
+     "v": "about $1.4B"
+    },
+    {
+     "k": "Dividends, past 12 months",
+     "v": "over $1.3B"
+    },
+    {
+     "k": "ANI shares",
+     "v": "624M"
+    }
+   ],
+   "note": "For Apollo, “cash generation” means ANI and capital returns rather than free cash flow (an insurer's cash flow statement doesn't show distributable earnings). ANI over the past 12 months was about $5.36B; about half went to buybacks and dividends, the rest to strategic investments ($748M) and supporting Athene's growth."
+  },
+  "calc": [
+   "Price $119.46: 2 Nov close; about $114.49 before the open (Investing.com)",
+   "623.8M ANI shares, market value ≈ $74.5B",
+   "TTM ANI per share $2.47 + $1.94 + $2.11 + $2.07 = $8.59; TTM GAAP EPS $1.07 − $3.27 + $2.15 − $1.78 = −$1.83",
+   "TTM FRE $690 + $728 + $785 + $802M = $3.005B; TTM SRE $865 + $719 + $877 + $844M = $3.305B",
+   "2026 FRE = first three quarters $2.315B + assumed Q4 $830M ≈ $3.15B; SRE = $2.44B + $870M ≈ $3.31B",
+   "Scenario 2028 ANI = (FRE × (1+g₁)² + SRE × (1+g₂)² + $100M) × 82% ÷ 610–620M shares; price = ANI × multiple, rounded",
+   "Historical multiple = quarter-end close ÷ TTM ANI per share (company releases; 2022 restated)"
+  ],
+  "next": "Next report around early February 2027, with full-year results and possibly updated multi-year targets."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Fee business",
+    "pill": "another record",
+    "before": "Q2 FRE of $785M.",
+    "now": "Q3 FRE of $802M; capital solutions fees a record for the fourth straight quarter."
+   },
+   {
+    "topic": "Origination",
+    "pill": "record",
+    "before": "Q2 origination below this quarter's.",
+    "now": "$114B this quarter, $356B over 12 months, already above the 2029 target."
+   },
+   {
+    "topic": "Insurance spreads",
+    "pill": "still narrowing",
+    "before": "Q2 net spread 1.14%.",
+    "now": "Q3 1.06%; 1.14% excluding the annual assumption review, flat."
+   },
+   {
+    "topic": "Taxes",
+    "pill": "sharply higher",
+    "before": "ANI-basis taxes of $183M a year ago.",
+    "now": "$356M this quarter, with no separate explanation in the materials."
+   }
+  ],
+  "call": [
+   {
+    "h": "Company materials emphasized",
+    "items": [
+     "Record origination of $114B, growing across channels",
+     "Strong institutional inflows, complemented by Global Wealth",
+     "Capital solutions fees a record for the fourth straight quarter",
+     "More than $2.7B of buybacks and dividends over the past 12 months"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "Why the ANI tax charge nearly doubled, and whether it lasts",
+     "When the net spread stops falling",
+     "How much of origination is AI and data center lending",
+     "Whether the target of about $15 of ANI per share in 2029 still stands"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 FRE tops $830M",
+     "Whether the net spread (excluding notable items) gets back above 1.15%",
+     "Retirement Services inflows",
+     "Whether meaningful credit losses appear"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "FRE growth slowing below 15% y/y",
+     "Net spread falling below 1.0%",
+     "Defaults or impairments on large AI or data center loans",
+     "Fundraising and inflows slowing sharply"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No open-market Form 4 trades by directors or officers in the 30 days before the report (10/4–11/2). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=APO\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Apollo: Q3 2026 earnings presentation (SEC 8-K)"
+  },
+  {
+   "t": "Apollo: Q4 2025 earnings presentation (full-year ANI per share)"
+  },
+  {
+   "t": "Apollo: Q4 2024 earnings presentation (2024 FRE and SRE)"
+  },
+  {
+   "t": "Zacks / Nasdaq: 2024 investor-day five-year targets"
+  },
+  {
+   "t": "Apollo: leads $35B financing for Broadcom's AI XPV platform"
+  },
+  {
+   "t": "Apollo: majority stake in Stream Data Centers"
+  },
+  {
+   "t": "Let's Data Science: Jim Zelter on AI infrastructure returns"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

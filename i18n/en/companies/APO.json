@@ -1,0 +1,34 @@
+{
+ "n": "Apollo Global Management",
+ "config": {
+  "segmentBasis": "Three segments: Asset Management (measured by fee-related earnings, FRE), Retirement Services through the insurer Athene (spread-related earnings, SRE), and Principal Investing (PII); together, less interest and taxes, they make adjusted net income (ANI)",
+  "fiscalNote": "Fiscal year matches the calendar year; merged with Athene in January 2022, so earlier figures are on a different basis. GAAP profit includes mark-to-market on Athene's portfolio and swings widely; the company focuses on ANI",
+  "kpis": [
+   "Fee-related earnings (FRE)",
+   "Spread-related earnings (SRE) and net spread",
+   "ANI per share",
+   "Assets under management and inflows",
+   "Origination"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "alternative asset manager peers (average of KKR and Blackstone)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "fre": {
+    "t": "Fee-related earnings (FRE)"
+   },
+   "sre": {
+    "t": "Spread-related earnings (SRE)"
+   },
+   "ani": {
+    "t": "ANI per share"
+   }
+  }
+ }
+}

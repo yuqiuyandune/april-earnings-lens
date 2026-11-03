@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 report)",
+  "text": "Q3 adjusted EPS $3.46–3.56",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $3.68, 3.4% above the top of the range and up 20% y/y. GAAP EPS of $2.77 rose only 7%: interest expense and acquired-intangible amortization roughly doubled."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 report)",
+  "text": "Q3 organic growth 13.5–15.5%, segment margin 24.6–25.0%",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Organic growth of 19%, 3.5 points above the top; segment margin a record 25.3%."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 report)",
+  "text": "2026 adjusted EPS $13.40–13.60, organic growth 11–13%",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised",
+    "note": "Adjusted EPS raised to $13.70–13.80 and organic growth to 13–15%. The full-year segment margin range of 24.1–24.5% is unchanged. The original February guide was $13.00–13.50; this is the third raise this year."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Q4 adjusted EPS $4.05–4.15, organic growth 13–15%, segment margin 25.4–25.8%",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "Combining Mobility with Dana through a Reverse Morris Trust (RMT) and buying Italy's COL Group, both to close in the first four months of 2027",
+  "dueLabel": "2027Q2"
+ }
+]

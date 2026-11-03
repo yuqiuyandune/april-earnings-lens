@@ -1,0 +1,412 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "before the open, 3 Nov 2026",
+ "asOf": "close of $366.07 on 2 Nov 2026 (Investing.com); about $392 intraday on 3 Nov",
+ "headline": "Orders shift up another gear and full-year guidance rises for the third time: Eaton sells both the power path and the liquid cooling for AI data centers",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$8.95B",
+   "exp": "est. $8.53B"
+  },
+  {
+   "k": "Adjusted EPS",
+   "exp": "est. $3.54"
+  },
+  {
+   "k": "Electrical Americas orders",
+   "val": "12-month rolling +39%",
+   "exp": "backlog +33%",
+   "pill": "record"
+  },
+  {
+   "k": "Full-year adjusted EPS",
+   "exp": "est. $13.60",
+   "pill": "third raise"
+  }
+ ],
+ "points": [
+  {
+   "b": "Electrical orders are accelerating",
+   "t": "12-month rolling organic orders: Electrical Americas +39%, Electrical Global +51%; Electrical backlog +46% combined, book-to-bill 1.2."
+  },
+  {
+   "b": "Record margins",
+   "t": "Segment margin 25.3%; Electrical Americas 29.8% (up 2.3 points q/q). Capacity spending did not hold margins back."
+  },
+  {
+   "b": "The cost of acquisitions shows in GAAP",
+   "t": "Adjusted EPS +20%, GAAP EPS only +7%: borrowing for Boyd Thermal and other deals nearly tripled net interest expense and doubled intangible amortization."
+  }
+ ],
+ "reaction": "Stock: closed at $366.07 before the report, 15% below the end-September $429.71 and down about 18% over three months (Investing.com). On 3 Nov it rose about 2% before the open and about 7% intraday, to around $392 (GuruFocus, Motley Fool quote). Revenue, EPS and full-year guidance all beat consensus, and orders grew faster than last quarter. The day's close and next-day data to be added. Consensus from Investing.com: EPS $3.54, revenue $8.53B, full-year EPS $13.60.",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "Q3 2026 vs Q3 2025, $M",
+   "take": "Half the increase came from Electrical Global, more than half of that from Boyd Thermal (liquid cooling), bought in March; Electrical Americas is the biggest profit source.",
+   "bridge": [
+    {
+     "n": "Electrical Global"
+    },
+    {
+     "n": "Electrical Americas"
+    },
+    {
+     "n": "Aerospace"
+    },
+    {
+     "n": "Mobility"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Electrical Americas",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Power distribution for data centers, utilities and industry: switchgear, transformers, UPS, power distribution units. Operating profit $1.2B, +20%, margin 29.8%. 12-month rolling orders +39%, backlog +33%."
+    },
+    {
+     "n": "Electrical Global",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Electrical outside the Americas, plus Boyd Thermal liquid cooling (31 points of the growth). Operating profit $576M, +75%, margin 21.1%. Orders +51%, backlog +121%."
+    },
+    {
+     "n": "Aerospace",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Fuel, hydraulic and power systems, including the acquired Ultra PCS. Margin 24.9%, down 1 point. Orders +20%."
+    },
+    {
+     "n": "Mobility",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "organic"
+      }
+     ],
+     "why": "Truck and car drivetrain, engine and electric components. Operating profit $146M, +39%, margin 17.2%. To be combined with Dana and separated in the first four months of 2027."
+    }
+   ],
+   "note": "Year-ago figures for Electrical Global, Aerospace and Mobility are backed out from the company's growth rates, accurate to about ±$5M."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Eaton sells <b>the stretch from the grid to the rack</b>: medium-voltage switchgear, transformers, UPS and power distribution units, and this year liquid cooling through Boyd Thermal. More GPUs and denser racks mean more of this equipment. It sits on the same chain as GE Vernova (generation and grid) and Vertiv (data-hall power and cooling).",
+    "items": [
+     {
+      "b": "Orders run ahead of revenue",
+      "pill": "Electrical backlog +46%",
+      "w": "Electrical book-to-bill is 1.2: $1.2 of new orders for every $1 shipped. Backlog makes the next few quarters more certain, but it also means delivery capacity is the bottleneck."
+     },
+     {
+      "b": "From power to cooling",
+      "pill": "Boyd Thermal",
+      "w": "Bought Boyd Thermal in March for $9.55B for data center liquid cooling. It added 31 points of Electrical Global's growth this quarter. Selling power and cooling together puts it head to head with Vertiv."
+     },
+     {
+      "b": "Expanding in Europe",
+      "pill": "COL Group €810M",
+      "w": "Buying Italy's COL Group (medium-voltage distribution, SF₆-free switchgear), about 400 people and four plants, to add delivery capacity for European data centers and grids."
+     },
+     {
+      "b": "The money is borrowed",
+      "pill": "debt about $19.4B",
+      "w": "After acquisition borrowing, net interest expense nearly tripled to $198M a quarter. Full-year GAAP EPS guidance of $10.39–10.49 is about flat with 2025; only the adjusted figure shows double-digit growth."
+     },
+     {
+      "b": "Data center customers' capex",
+      "pill": "the biggest variable",
+      "w": "AI data centers drive most of the acceleration in Electrical orders. If cloud capex slows, orders react first; the stock had already fallen about 15% in October."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Eaton's growth over the next two or three years mostly depends on <b>how fast the Electrical backlog turns into revenue</b>, and on a company that, after the Mobility separation, is a purer bet on power.",
+    "items": [
+     {
+      "b": "Volume: backlog and capacity",
+      "pill": "orders +39% / +51%",
+      "w": "Orders are growing far faster than revenue (Electrical Americas organic +22%), so as long as capacity keeps up, revenue growth has at least a year or two of visibility. Eaton keeps adding capacity, and that cost is already in the margin."
+     },
+     {
+      "b": "Price: margins still rising",
+      "pill": "Electrical Americas 29.8%",
+      "w": "Q4 guidance calls for a 25.4–25.8% segment margin, slightly above Q3. With demand ahead of supply, it has pricing power."
+     },
+     {
+      "b": "Mix: separating Mobility",
+      "pill": "early 2027",
+      "w": "Mobility (about $3.4B of revenue a year at a 17% margin) is combined with Dana and separated. What remains has a bigger, higher-margin Electrical share, but adjusted EPS loses a piece, about $1.1 a share by our estimate; cash received in the separation offsets part of it, and the release does not give the amount."
+     },
+     {
+      "b": "Company targets",
+      "pill": "full year $13.70–13.80",
+      "w": "The full-year adjusted EPS midpoint is up about 14% y/y, with organic growth of 13–15%. 2027 guidance comes with the February report."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Electrical order growth falling below 20%; backlog no longer growing; delivery delays; interest expense still rising; the separation or the COL Group deal slipping."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+28% in a year, about 9 points from acquisitions"
+   },
+   {
+    "why": "Rising every quarter since the Q1 low"
+   },
+   {
+    "why": "Held down by expansion in the first half, a record in Q3"
+   },
+   {
+    "why": "Strongly seasonal: Q1 lowest, Q4 highest"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 27 times adjusted earnings (full-year 2026) and about 37 times GAAP, above its five-year median of about 31 times (GAAP). <b>The market pays a power-equipment premium</b>: orders are accelerating and margins rising, but the free cash flow yield is under 3% and debt rose with the acquisitions.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, adjusted)",
+    "pill": "GAAP 36.6x",
+    "f": "$366.07 ÷ TTM adjusted EPS $12.97 (GAAP $10.01)"
+   },
+   {
+    "k": "P/E on 2026 guidance",
+    "v": "26.6x",
+    "f": "$366.07 ÷ full-year adjusted EPS midpoint $13.75"
+   },
+   {
+    "k": "EV / revenue",
+    "v": "5.0x",
+    "f": "EV ≈ $161.2B ÷ TTM revenue $32.0B"
+   },
+   {
+    "k": "Free cash flow yield",
+    "pill": "TTM FCF $3.8B",
+    "f": "TTM free cash flow $3.82B ÷ market value ≈ $142.6B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "adjusted",
+   "steps": [
+    "Q1–Q3 actual $2.81 + $3.15 + $3.68 = $9.64",
+    "Q4 guidance midpoint <b>$4.10</b>",
+    "Full year about <b>$13.75</b> → $366.07 ÷ $13.75 ≈ <b>26.6x</b>"
+   ],
+   "note": "No 2027 guidance yet. The scenarios below exclude Mobility."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits (excluding Mobility)",
+   "sub": "starting from about $12.6 a share in 2026 excluding Mobility",
+   "head": [
+    "Case",
+    "Annual growth, 2 yrs",
+    "Segment margin",
+    "2028 EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "+7%",
+      "24%",
+      "$14.4",
+      "25x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "+17%",
+      "26.5%",
+      "$17.3",
+      "21x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "+24%",
+      "28%",
+      "$19.4",
+      "19x"
+     ]
+    }
+   ],
+   "note": "Bear: data center capex slows in 2027 and order growth drops to single digits; base: backlog ships at today's pace and margins rise a little; bull: orders keep accelerating and liquid cooling ramps. Starting point = 2026 adjusted EPS of $13.75 minus our estimate of about $1.15 a share for Mobility (operating profit about $580M a year, 22% tax, 390M shares), before any cash from the separation. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS (ex Mobility) × our P/E; price at the 2 Nov close (before the report)",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "orders slow, 20x"
+    },
+    {
+     "n": "Base",
+     "how": "backlog ships on pace, 28x"
+    },
+    {
+     "n": "Bull",
+     "how": "orders keep accelerating, 33x"
+    }
+   ],
+   "why": "The price is a little above the zone: buying at $366, the base case gains about 32% and the bear case loses about 21%, a reward/risk of about 1.5. At the $350 top of the zone the reward/risk is about 2; at the $315 low end, about 6. The 28x base multiple is below its five-year GAAP median of about 31x (lower still on adjusted), so it does not assume the multiple keeps expanding. On report day it traded near $392 intraday, further from the zone."
+  },
+  "history": {
+   "title": "Against its own past 5 years",
+   "sub": "P/E (TTM, GAAP), quarter ends",
+   "note": "About 37x now (GAAP), above the five-year median of about 31x and below the 43x of mid-year. This year's GAAP profit is depressed by acquisition interest and amortization; on adjusted it is only about 28x. We calculate it from SEC quarterly GAAP EPS and quarter-end closes."
+  },
+  "cash": {
+   "title": "Cash generation",
+   "sub": "Free cash flow per quarter, $B",
+   "stats": [
+    {
+     "k": "Operating cash flow (quarter)",
+     "v": "$1.31B"
+    },
+    {
+     "k": "Debt",
+     "v": "about $19.4B"
+    },
+    {
+     "k": "Cash and short-term investments",
+     "v": "about $0.8B"
+    }
+   ],
+   "note": "Operating cash flow of $1.31B and free cash flow of $1.03B this quarter, below the roughly $1.2B a year ago: expansion capex, and receivables and inventory growing with revenue. Eaton's cash flow is strongly seasonal, usually highest in Q4."
+  },
+  "calc": [
+   "Price $366.07: 2 Nov close (Investing.com); about $392 intraday on 3 Nov",
+   "389.6M diluted shares, market value ≈ $142.6B; debt about $19.4B, cash and short-term investments about $0.82B, EV ≈ $161.2B",
+   "TTM adjusted EPS $3.33 + $2.81 + $3.15 + $3.68 = $12.97; GAAP $2.91 + $2.22 + $2.11 + $2.77 = $10.01",
+   "TTM revenue $7.06 + $7.45 + $8.53 + $8.95B ≈ $32.0B",
+   "TTM free cash flow $1.6 + $0.31 + $0.87 + $1.03B ≈ $3.82B",
+   "Mobility EPS ≈ Q3 operating profit $146M × 4 × (1 − 22%) ÷ 390M shares ≈ $1.15",
+   "Scenario 2028 EPS = $12.6 × (1 + growth)²; price = EPS × multiple, rounded",
+   "Historical P/E = quarter-end close ÷ TTM GAAP EPS (SEC XBRL); 2026Q3 uses $429.71 ÷ $10.01 = 42.9"
+  ],
+  "next": "Next report around early February 2027, with full-year 2027 guidance and an update on the separation."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Full-year guidance",
+    "pill": "third raise",
+    "before": "Adjusted EPS $13.40–13.60, organic growth 11–13%.",
+    "now": "Adjusted EPS $13.70–13.80, organic growth 13–15%; segment margin of 24.1–24.5% unchanged."
+   },
+   {
+    "topic": "Orders",
+    "pill": "accelerating",
+    "before": "Record orders, growing backlog.",
+    "now": "Record order dollars in all three segments, still growing q/q; Electrical backlog +46%."
+   },
+   {
+    "topic": "European capacity",
+    "pill": "new acquisition",
+    "before": "European medium-voltage distribution relied on its own plants.",
+    "now": "Buying Italy's COL Group for €810M (about $921M) to add delivery capacity for data centers and grids."
+   },
+   {
+    "topic": "Mobility separation",
+    "pill": "terms supplemented",
+    "before": "RMT agreement signed with Dana in June.",
+    "now": "A supplemental letter agreement signed on 16 Oct; still expected to close in the first four months of 2027."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Organic growth and segment margins above the top of guidance",
+     "Orders still growing q/q, backlog expanding",
+     "Margins rising while capacity is added",
+     "More confident about the rest of the year"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "How much of Electrical orders is data center, and how fast it is growing",
+     "How long the backlog takes to ship",
+     "How much cash Eaton receives in the Mobility separation",
+     "The 2027 growth and margin framework"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 adjusted EPS reaches $4.05–4.15",
+     "Whether Electrical 12-month rolling orders keep accelerating",
+     "Q4 free cash flow (usually the year's highest)",
+     "Organic growth in the 2027 guidance"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Electrical order growth slowing below 20% for two quarters",
+     "Book-to-bill falling below 1.0",
+     "Electrical Americas margin falling back below 27%",
+     "The separation or acquisition slipping while debt keeps rising"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No open-market Form 4 trades by directors or officers in the 30 days before the report (10/4–11/2). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=ETN\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Eaton: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Investing.com: Q3 consensus and stock price"
+  },
+  {
+   "t": "Motley Fool: why GAAP EPS rose only 7%"
+  },
+  {
+   "t": "GuruFocus: pre-market move"
+  },
+  {
+   "t": "24/7 Wall St.: Electrical backlog +46%"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

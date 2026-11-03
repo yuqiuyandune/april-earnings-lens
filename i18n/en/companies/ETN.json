@@ -1,0 +1,40 @@
+{
+ "n": "Eaton",
+ "config": {
+  "segmentBasis": "Four segments from 2026: Electrical Americas, Electrical Global (including Boyd Thermal liquid cooling), Aerospace, and Mobility (former Vehicle and eMobility, being separated)",
+  "fiscalNote": "Fiscal year matches the calendar year; incorporated in Ireland and files as a US domestic issuer. The company gives both GAAP and adjusted EPS; adjusted excludes acquired-intangible amortization, restructuring and separation costs",
+  "kpis": [
+   "Electrical 12-month rolling order growth",
+   "Backlog",
+   "Organic growth",
+   "Segment margin",
+   "Adjusted EPS and free cash flow"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "grid infrastructure ETF (GRID)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "eps": {
+    "t": "Adjusted EPS"
+   },
+   "margin": {
+    "t": "Segment margin"
+   },
+   "ea": {
+    "t": "Electrical Americas revenue"
+   },
+   "fcf": {
+    "t": "Free cash flow"
+   }
+  }
+ }
+}

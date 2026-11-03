@@ -450,7 +450,7 @@ function mSegments(x,co,q){
     return `<div class="seg ${ch?"wc":""}"><div class="left"><span class="name"><i style="background:${col(s.c)}"></i>${esc(s.n)}<span class="share">${L("share")} ${esc(s.share)}</span></span>
     <span class="big"><b>${esc(s.val)}</b>${(s.pills||[]).map(p=>pct(p.v,p.k)).join("")}</span><span class="why">${s.why}</span></div>${ch}</div>`}).join("");
   return `<section><h2>${esc(x.title)} <small>${esc(x.en||"BY BUSINESS")}</small></h2><p class="take">${x.take}</p>
-  <div class="panel"><div class="ph"><b>${L("bridge")}</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>${L("total")}</span><span></span><span class="amt">${x.total}</span></div></div></div>
+  <div class="panel"><div class="ph"><b>${x.bridgeT?esc(x.bridgeT):L("bridge")}</b><span>${esc(x.period)}</span></div><div class="bridge">${br}<div class="br total"><span>${L("total")}</span><span></span><span class="amt">${x.total}</span></div></div></div>
   <div class="segs">${rows}</div>${x.note?`<p class="note">${x.note}</p>`:""}</section>`}
 
 function mExtra(x){
