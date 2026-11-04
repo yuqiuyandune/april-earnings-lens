@@ -1,23 +1,23 @@
-/* April's product switcher — shared by April's Stock Atlas: Overview (/overview/), the AI supply-chain home (/), Insider Flow (/insider/) and Earnings Lens (/earnings/).
+/* April's product switcher — shared by April's Stock Atlas: Overview (/overview/), the AI supply-chain home (/), Insider Flow (/insider/), Earnings Lens (/earnings/) and Articles (/articles/).
    Loaded as a blocking <script> at the start of <body>; inserts the bar right after itself so it paints with the page.
-   Design: a dark full-width band (clearly separate from any site's own header) with a four-button segmented control and a
+   Design: a dark full-width band (clearly separate from any site's own header) with a five-button segmented control and a
    Subscribe button; the current product is a solid light button, the others are outlined, clearly clickable buttons.
    Labels follow the reader's language (EN / 简 / 繁): the page's <html lang>, else localStorage "sif-lang", else the browser.
    Subscribe opens a small dialog (Buttondown embed form) on every page. */
 (function () {
   if (document.getElementById("aps")) return;
   var path = location.pathname;
-  var cur = path.indexOf("/earnings") === 0 ? "earn" : path.indexOf("/overview") === 0 ? "ov"
+  var cur = path.indexOf("/earnings") === 0 ? "earn" : path.indexOf("/overview") === 0 ? "ov" : path.indexOf("/articles") === 0 ? "art"
     : /^\/(insider|en|zh|tw|s|subscribed)(\/|\.|$)/.test(path) ? "ins" : "chain";
 
   var L = {
-    en: { ov: "Overview", ovS: "About", chainS: "Chain", insS: "Insiders", earnS: "Earnings", chain: "Supply Chain", ins: "Insider Flow", earn: "Earnings Lens", sub: "Subscribe",
+    en: { ov: "Overview", ovS: "About", chainS: "Chain", insS: "Insiders", earnS: "Earnings", chain: "Supply Chain", ins: "Insider Flow", earn: "Earnings Lens", art: "Articles", artS: "Posts", sub: "Subscribe",
       st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights: sectors, cluster buys, the largest purchases and planned sales.",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close", nav: "April’s" },
-    zh: { ov: "概览", ovS: "概览", chainS: "产业链", insS: "内部人", earnS: "财报", chain: "AI 产业链", ins: "内部人动向", earn: "财报解读", sub: "订阅",
+    zh: { ov: "概览", ovS: "概览", chainS: "产业链", insS: "内部人", earnS: "财报", chain: "AI 产业链", ins: "内部人动向", earn: "财报解读", art: "文章", artS: "文章", sub: "订阅",
       st: "每周邮件", sd: "每个周末一封，汇总一周的内部人买卖要点：板块、集群买入、最大的买入和拟出售。",
       sp: "你的邮箱", sb: "订阅", sf: "免费，随时可以退订。中文在前，英文在后。", sc: "关闭", nav: "April’s" },
-    tw: { ov: "概覽", ovS: "概覽", chainS: "產業鏈", insS: "內部人", earnS: "財報", chain: "AI 產業鏈", ins: "內部人動向", earn: "財報解讀", sub: "訂閱",
+    tw: { ov: "概覽", ovS: "概覽", chainS: "產業鏈", insS: "內部人", earnS: "財報", chain: "AI 產業鏈", ins: "內部人動向", earn: "財報解讀", art: "文章", artS: "文章", sub: "訂閱",
       st: "每週郵件", sd: "每個週末一封，彙總一週的內部人買賣要點：板塊、集群買入、最大的買入和擬出售。",
       sp: "你的郵箱", sb: "訂閱", sf: "免費，隨時可以退訂。中文在前，英文在後。", sc: "關閉", nav: "April’s" }
   };
@@ -83,13 +83,14 @@
     chain: '<svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2" y="2.5" width="14" height="3" rx="1.2" fill="currentColor"/><rect x="2" y="7.5" width="14" height="3" rx="1.2" fill="currentColor" opacity=".75"/><rect x="2" y="12.5" width="14" height="3" rx="1.2" fill="currentColor" opacity=".5"/></svg>',
     ins: '<svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2" y="9" width="3" height="7" rx="1.5" fill="#ff7b72"/><rect x="7.5" y="5" width="3" height="11" rx="1.5" fill="#3ddc9b"/><rect x="13" y="2" width="3" height="14" rx="1.5" fill="#3ddc9b"/></svg>',
     earn: '<svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="1.5" width="13" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 12.5v-2.5M9 12.5v-5M12.5 12.5V9" stroke="#7d9bff" stroke-width="1.8" stroke-linecap="round"/></svg>',
+    art: '<svg viewBox="0 0 18 18" aria-hidden="true"><rect x="3" y="1.5" width="12" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 6h6M6 9h6M6 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
     mail: '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 4.5 8 9l5.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   };
-  var HREF = { ov: "/overview/", chain: "/", ins: "/insider/", earn: "/earnings/" };
+  var HREF = { ov: "/overview/", chain: "/", ins: "/insider/", earn: "/earnings/", art: "/articles/" };
   var bar = document.createElement("nav");
   bar.id = "aps";
   var seg = "";
-  ["ov", "chain", "ins", "earn"].forEach(function (k) {
+  ["ov", "chain", "ins", "earn", "art"].forEach(function (k) {
     seg += '<a href="' + HREF[k] + '" data-k="' + k + '"' + (cur === k ? ' aria-current="page"' : "") + ">" + ICO[k] + '<span class="aps-t"></span><span class="aps-ts"></span></a>';
   });
   bar.innerHTML = '<div class="aps-in"><span class="aps-b"></span><div class="aps-seg">' + seg + "</div>" +
@@ -130,7 +131,7 @@
   function paint() {
     var s = L[lang] || L.en;
     bar.querySelector(".aps-b").textContent = s.nav;
-    ["ov", "chain", "ins", "earn"].forEach(function (k) {
+    ["ov", "chain", "ins", "earn", "art"].forEach(function (k) {
       var a = bar.querySelector('a[data-k="' + k + '"]');
       a.querySelector(".aps-t").textContent = s[k];
       a.querySelector(".aps-ts").textContent = s[k + "S"];
