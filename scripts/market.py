@@ -105,10 +105,10 @@ def sources(key, since):
                "VIX": [("cboe", lambda: cboe_vix(since)), ("nasdaq", lambda: nasdaq_any("VIX", "index", since))],
                "WTI": [("nasdaq", lambda: nasdaq_any("CL:NMX", "commodities", since))],
                "DXY": [("nasdaq", lambda: nasdaq_any("DX:NYB", "commodities", since))]}[key]
+        fund = {"WTI": "USO", "DXY": "UUP"}.get(key)
+        if fund: out.append(("etf:" + fund, lambda: two(nasdaq(fund, since))))  # works from GitHub runners (Nov 2026 probe)
         out += [("yahoo", lambda: yahoo(y, since)), ("stooq", lambda: stooq_raw(s, since))]
         if f: out.append(("fred", lambda: fred(f, since)))
-        fund = {"WTI": "USO", "DXY": "UUP"}.get(key)
-        if fund: out.append(("etf:" + fund, lambda: two(nasdaq(fund, since))))
         return out
     two = lambda rows: [[d, c] for d, c, *_ in rows]
     return [("nasdaq", lambda: two(nasdaq(key, since))), ("yahoo", lambda: yahoo(key, since)), ("stooq", lambda: two(stooq(key, since)))]
