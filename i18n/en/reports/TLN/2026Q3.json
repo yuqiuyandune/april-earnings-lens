@@ -40,7 +40,7 @@
    "t": "It closed at $332.99 before the report, 26% below the 52-week high of $449.84 and 13% below the end-June $384."
   }
  ],
- "reaction": "Stock: closed at $332.99 before the report and was about $342.50 (+2.9%) before the open on 3 Nov (Investing.com). Revenue beat, the 2026 guidance midpoint held, and the first 2027 guidance calls for EBITDA +26% and free cash flow +27%. The day's close and next-day data to be added. Consensus from Investing.com: revenue $1.29B.",
+ "reaction": "Stock: closed at $332.99 before the report and was about $342.50 (+2.9%) before the open on 3 Nov (Investing.com). Revenue beat, the 2026 guidance midpoint held, and the first 2027 guidance calls for EBITDA +26% and free cash flow +27%. On the day (3 Nov) it closed at $357.28, +7.3%, against +3.0% for the power peers average; the next day (4 Nov) it closed at $326.78, −8.5%, against −10.3%. 4 Nov was the first day after the midterms, when the AI chain split: cloud companies rose while power, cooling and construction stocks fell hard. Consensus from Investing.com: revenue $1.29B.",
  "results": {
   "segments": {
    "title": "Where the money comes from and goes",
@@ -250,7 +250,8 @@
      "how": "new contracts land, 11x"
     }
    ],
-   "why": "The price is above the zone: buying at $333, the base case gains about 26% and the bear case loses about 25%, a reward/risk of about 1.0. At the $305 top of the zone the reward/risk is about 2; at the $270 low end, about 7. The multiples are low (8–11x free cash flow) because most prices are unhedged and leverage is high; multiples for this group have swung widely with power prices. The $248 bear price is below the 52-week low of $279.77."
+   "why": "The price is above the zone: buying at $333, the base case gains about 26% and the bear case loses about 25%, a reward/risk of about 1.0. At the $305 top of the zone the reward/risk is about 2; at the $270 low end, about 7. The multiples are low (8–11x free cash flow) because most prices are unhedged and leverage is high; multiples for this group have swung widely with power prices. The $248 bear price is below the 52-week low of $279.77.",
+   "note": "Under review: after the midterms, rules on direct supply to data centers and PJM capacity prices may face more scrutiny. First check data center contracts in the Vistra (6 Nov) and Constellation (9 Nov) results."
   },
   "history": {
    "title": "Against its own past",

@@ -39,7 +39,7 @@
    "t": "Adjusted EPS +20%, GAAP EPS only +7%: borrowing for Boyd Thermal and other deals nearly tripled net interest expense and doubled intangible amortization."
   }
  ],
- "reaction": "Stock: closed at $366.07 before the report, 15% below the end-September $429.71 and down about 18% over three months (Investing.com). On 3 Nov it rose about 2% before the open and about 7% intraday, to around $392 (GuruFocus, Motley Fool quote). Revenue, EPS and full-year guidance all beat consensus, and orders grew faster than last quarter. The day's close and next-day data to be added. Consensus from Investing.com: EPS $3.54, revenue $8.53B, full-year EPS $13.60.",
+ "reaction": "Stock: closed at $366.07 before the report, 15% below the end-September $429.71 and down about 18% over three months (Investing.com). On 3 Nov it rose about 2% before the open and about 7% intraday, to around $392 (GuruFocus, Motley Fool quote). Revenue, EPS and full-year guidance all beat consensus, and orders grew faster than last quarter. On the day (3 Nov) it closed at $391.70, +7.0%, against +1.9% for the grid ETF (GRID); the next day (4 Nov) it closed at $353.08, −9.9%, against −3.1%. 4 Nov was the first day after the midterms, when the AI chain split: cloud companies rose while power, cooling and construction stocks fell hard. Consensus from Investing.com: EPS $3.54, revenue $8.53B, full-year EPS $13.60.",
  "results": {
   "segments": {
    "title": "Revenue mix",
@@ -281,7 +281,8 @@
      "how": "orders keep accelerating, 33x"
     }
    ],
-   "why": "The price is a little above the zone: buying at $366, the base case gains about 32% and the bear case loses about 21%, a reward/risk of about 1.5. At the $350 top of the zone the reward/risk is about 2; at the $315 low end, about 6. The 28x base multiple is below its five-year GAAP median of about 31x (lower still on adjusted), so it does not assume the multiple keeps expanding. On report day it traded near $392 intraday, further from the zone."
+   "why": "The price is a little above the zone: buying at $366, the base case gains about 32% and the bear case loses about 21%, a reward/risk of about 1.5. At the $350 top of the zone the reward/risk is about 2; at the $315 low end, about 6. The 28x base multiple is below its five-year GAAP median of about 31x (lower still on adjusted), so it does not assume the multiple keeps expanding. On report day it traded near $392 intraday, further from the zone.",
+   "note": "Under review: after the election the market worries data center construction will slow. Waiting for CoreWeave (9 Nov) and Nebius (10 Nov) results, and cloud companies' 2027 capex (Jan–Feb 2027)."
   },
   "history": {
    "title": "Against its own past 5 years",

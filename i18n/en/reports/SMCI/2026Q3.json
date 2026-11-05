@@ -40,7 +40,7 @@
    "t": "Net income of $1.59B but operating cash flow of −$434M: receivables rose $3.6B and inventory $2.5B, only partly offset by $3.1B more in customer deposits."
   }
  ],
- "reaction": "Stock: closed at $30.44 before the report (2 Nov), down 7.6% that day, and rose after hours on 3 Nov (investingLive, Benzinga headlines). On 10 Jun the company announced a roughly $7B financing plan (including preferred stock) and the stock fell about 28% in a day; it jumped after the 20 Oct guidance raise. The 3 Nov close and next-day data to be added. Consensus from MarketBeat: EPS $1.23, revenue $17.53B; investingLive cites Q2 consensus of about $18B in revenue and $1.14 in EPS.",
+ "reaction": "Stock: closed at $30.44 before the report (2 Nov), down 7.6% that day, and rose after hours on 3 Nov (investingLive, Benzinga headlines). On 10 Jun the company announced a roughly $7B financing plan (including preferred stock) and the stock fell about 28% in a day; it jumped after the 20 Oct guidance raise. On 3 Nov it closed at $31.39 (+3.1%). Next day (4 Nov) it closed at $29.60, −5.7%, against −7.2% for the Dell/HPE average. 4 Nov was the first day after the midterms, when the AI chain split: cloud companies rose while power, cooling and construction stocks fell hard. Consensus from MarketBeat: EPS $1.23, revenue $17.53B; investingLive cites Q2 consensus of about $18B in revenue and $1.14 in EPS.",
  "results": {
   "segments": {
    "title": "Why profit didn't become cash",
@@ -248,7 +248,8 @@
      "how": "margins near this quarter, 12x"
     }
    ],
-   "why": "The price is a little above the zone: buying at $30.44, the base case gains about 81% and the bear case loses about 47%, a reward/risk of about 1.7. At the $29 top of the zone the reward/risk is about 2; at the $25 low end, about 3.3. We give only 8–12x, below most hardware companies, because margins and cash flow are unstable; if working capital starts coming back and the formal results bring no surprises, the discount has room to narrow."
+   "why": "The price is a little above the zone: buying at $30.44, the base case gains about 81% and the bear case loses about 47%, a reward/risk of about 1.7. At the $29 top of the zone the reward/risk is about 2; at the $25 low end, about 3.3. We give only 8–12x, below most hardware companies, because margins and cash flow are unstable; if working capital starts coming back and the formal results bring no surprises, the discount has room to narrow.",
+   "note": "Under review: this quarter's figures are unaudited and preliminary, and working capital hasn't come back yet; waiting for the formal 10-Q in mid-November."
   },
   "history": {
    "title": "Against its own past 5 years",
