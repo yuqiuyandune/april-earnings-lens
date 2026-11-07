@@ -1,0 +1,48 @@
+[
+ {
+  "id": "lite-q1rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "FY27 Q1 营收 $12.25–12.75 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "已兑现",
+    "tone": "good",
+    "note": "实际 $12.63 亿，略高于中值，环比 +25%。"
+   }
+  ]
+ },
+ {
+  "id": "lite-q1eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 8 月（FY26 Q4 财报）",
+  "text": "FY27 Q1 Non-GAAP 营业利润率 39.5–40.5%，EPS $4.05–4.35",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "营业利润率 42.3%（高 1.8 点），EPS $4.57（比上限高 5%）。"
+   }
+  ]
+ },
+ {
+  "id": "lite-q2",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 财报）",
+  "text": "FY27 Q2 营收 $15.75–16.25 亿，营业利润率 45–46%，EPS $5.90–6.20",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "lite-deal",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 11 月（FY27 Q1 财报）",
+  "text": "与 Marvell 合并：每股换 4.5 股 Marvell，预计 2028 年上半年完成，需要双方股东和监管批准",
+  "dueLabel": "2028Q2",
+  "checks": []
+ }
+]

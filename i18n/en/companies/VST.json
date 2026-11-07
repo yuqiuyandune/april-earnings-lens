@@ -1,0 +1,46 @@
+{
+ "n": "Vistra",
+ "config": {
+  "segmentBasis": "Five blocks by adjusted EBITDA: Retail (selling power to homes and businesses), Texas (ERCOT plants), East (PJM and others, including acquired nuclear and gas plants), West (California) and Asset Closure. The company leads with Ongoing Operations Adjusted EBITDA and Adjusted Free Cash Flow before Growth (FCFbG)",
+  "fiscalNote": "Fiscal year matches the calendar year. GAAP net income includes large unrealized hedge gains and losses that swing quarter to quarter, so this page uses adjusted EBITDA and FCFbG. Closed the Cogentrix acquisition (about 5,500 MW of gas plants) in October 2026",
+  "kpis": [
+   "Ongoing Operations Adjusted EBITDA",
+   "FCFbG (adjusted free cash flow before growth)",
+   "Hedge ratios and forward power prices",
+   "Data-center power purchase agreements (PPAs)",
+   "Buybacks and dividends"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "independent power peers (average of Constellation and Talen)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "ebitda": {
+    "t": "Adjusted EBITDA"
+   },
+   "tx": {
+    "t": "Texas EBITDA"
+   },
+   "east": {
+    "t": "East EBITDA"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

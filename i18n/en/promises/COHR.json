@@ -1,0 +1,39 @@
+[
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "FY27 Q1 revenue $2.2–2.4B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Actual $2.370B, in the upper half, +16% q/q."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "FY27 Q1 non-GAAP gross margin 39.5–41.5%, EPS $1.85–2.05",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Gross margin 40.6% (mid-range); EPS $2.09, 2% above the top."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "FY27 Q2 revenue $2.55–2.75B, gross margin 40–42%, EPS $2.28–2.48",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "FY27 pro forma revenue growth above 60%; first $3B revenue quarter by the end of FY27, first $4B quarter in FY28",
+  "dueLabel": "2027Q2"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "First quarter with non-GAAP gross margin above 45% before the end of calendar 2028 (new target)",
+  "dueLabel": "2028Q4"
+ }
+]

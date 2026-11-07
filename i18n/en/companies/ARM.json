@@ -1,0 +1,37 @@
+{
+ "n": "Arm Holdings",
+ "config": {
+  "segmentBasis": "A single segment with two revenue types: license and other (customers buying architecture and designs) and royalties (paid on every chip a customer ships). From 2026 it also sells its own chip, the Arm AGI CPU, with first commercial deliveries in FY27 Q4 (Jan–Mar 2027)",
+  "fiscalNote": "Fiscal year ends 31 March; FY27 Q2 = Jul–Sep 2026, keyed here by calendar quarter as 2026Q3. A UK company filing quarterly shareholder letters on 6-K (US GAAP) as a foreign private issuer; its directors and officers don't file Form 4. SoftBank owns about 90%",
+  "kpis": [
+   "Royalty growth (especially data center)",
+   "License revenue and annualized contract value (ACV)",
+   "Non-GAAP operating margin",
+   "Arm AGI CPU orders and deliveries",
+   "Smartphone market (memory-price impact)"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "semiconductor ETF (SMH)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "roy": {
+    "t": "Royalty revenue"
+   },
+   "lic": {
+    "t": "License and other revenue"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   }
+  }
+ }
+}

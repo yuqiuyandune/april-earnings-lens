@@ -1,0 +1,43 @@
+{
+ "n": "Intel",
+ "config": {
+  "segmentBasis": "Two blocks: Intel Products (Client Computing and Physical AI, CCPG; Data Center and AI, DCAI) and Intel Foundry (wafer manufacturing, mostly for Intel's own product groups). Segment revenue includes intersegment sales eliminated on consolidation",
+  "fiscalNote": "Fiscal year close to the calendar year; Q3 2026 ended 26 Sep. Altera was deconsolidated from 12 Sep 2025 and y/y figures are not adjusted. Intel gives GAAP and non-GAAP; non-GAAP excludes acquisition amortization, stock compensation, restructuring and investment gains/losses",
+  "kpis": [
+   "Data Center and AI (DCAI) revenue",
+   "PC market and client revenue",
+   "Non-GAAP gross margin",
+   "External foundry customers (14A)",
+   "Adjusted free cash flow"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "semiconductor ETF (SMH)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "dcai": {
+    "t": "Data Center and AI revenue"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

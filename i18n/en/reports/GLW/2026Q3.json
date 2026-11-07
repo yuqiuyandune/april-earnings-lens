@@ -1,0 +1,391 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "before the open, 27 Oct 2026",
+ "asOf": "close of $106.13 on 6 Nov 2026; $127.74 before the report (26 Oct)",
+ "headline": "Optical Communications +44% and core EPS +36%, beating guidance across the board, yet the stock is nearly 60% below its June peak: the market is repricing “AI fiber”",
+ "verdicts": [
+  {
+   "k": "Core sales",
+   "val": "$5.08B",
+   "exp": "est. $5.03B"
+  },
+  {
+   "k": "Core EPS",
+   "exp": "est. $0.88"
+  },
+  {
+   "k": "Optical Communications",
+   "val": "$2.38B",
+   "exp": "a year ago $1.65B",
+   "pill": "+44% y/y"
+  },
+  {
+   "k": "Q4 core EPS guidance",
+   "exp": "a year ago $0.72",
+   "pill": "about +36%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Optics is now half the business",
+   "t": "Optical Communications was $2.38B, +44%, 47% of core sales; Enterprise (data center) rose 84%, with Gen AI products more than doubling, faster than GPU shipments."
+  },
+  {
+   "b": "Four big long-term deals",
+   "t": "This quarter it signed four multiyear, multibillion-dollar customer agreements, including Verizon and AT&T, on top of Amazon and NVIDIA. Customers share expansion costs, lowering Corning's own risk."
+  },
+  {
+   "b": "Solar still lags",
+   "t": "Solar sales rose 37% but it is still losing money, ramping slower than expected; Section 232 trade action improved pricing for US-made solar products."
+  }
+ ],
+ "reaction": "Stock: closed at $126.30 on report day (27 Oct), down 1.1%, while peers (average of Amphenol and Ciena) rose about 4%, a gap of about 5 points; it then fell with the AI sector, down 12.9% on 5 Nov, and closed at $106.13 on 6 Nov, about 31% below the end-September $153.76 and 58% below the $255.69 high since June. Consensus from Newsquawk: core EPS $0.88, core sales $5.03B.",
+ "results": {
+  "segments": {
+   "title": "Segments",
+   "period": "Q3 2026 y/y, $M",
+   "take": "Almost all the growth came from <b>Optical Communications</b>, with Solar a second engine; Glass Innovations (phone, TV and PC glass) is shrinking.",
+   "bridge": [
+    {
+     "n": "Optical Communications"
+    },
+    {
+     "n": "Solar"
+    },
+    {
+     "n": "Automotive"
+    },
+    {
+     "n": "Life Sciences & Emerging"
+    },
+    {
+     "n": "Glass Innovations"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Optical Communications",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Enterprise rose 84% (data-center fiber and connectivity), with Gen AI products more than doubling. Net income $532M, +80%. The NVIDIA partnership expands US optical connectivity capacity tenfold."
+    },
+    {
+     "n": "Glass Innovations",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "TV panel glass and cover glass for phones and laptops. Higher memory prices are weighing on TV, PC and phone shipments; Corning outperforms end markets by adding more glass per device."
+    },
+    {
+     "n": "Automotive",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Emissions-control ceramics and auto glass; steady growth."
+    },
+    {
+     "n": "Solar",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Hemlock polysilicon plus US-made wafers and modules. The output ramp is slower than expected and it lost $7M; the goal is a revenue stream above $3B."
+    }
+   ],
+   "note": "Segment sales use Corning's hedge-rate basis and sum to roughly the $5.08B of core sales; Life Sciences & Emerging is about $290M, calculated as the difference."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Corning is <b>the largest supplier of data-center fiber</b>. AI clusters need huge amounts of fiber between GPUs, racks and data centers, so more GPUs mean more fiber.",
+    "items": [
+     {
+      "b": "Fiber outgrowing GPUs",
+      "pill": "Gen AI products +100%",
+      "w": "Management says Gen AI sales are growing faster than GPU shipments because each GPU needs more fiber (higher bandwidth, more cross-rack links)."
+     },
+     {
+      "b": "Customers lock in capacity",
+      "pill": "Amazon, NVIDIA, telcos",
+      "w": "A multiyear, multibillion-dollar Amazon deal, a partnership to expand NVIDIA's US capacity tenfold, and four new deals this quarter including Verizon and AT&T. Customers share expansion costs and risk."
+     },
+     {
+      "b": "Data-center policy risk",
+      "pill": "watch",
+      "w": "If data-center construction slows on power and local politics, fiber demand slows with it; but telecom fiber-to-the-home and long-haul upgrades are a separate demand line."
+     },
+     {
+      "b": "AI eats memory, hurting glass",
+      "pill": "consumer electronics",
+      "w": "Higher memory prices are pressuring TV, PC and phone shipments, which weighs on Glass Innovations."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Corning grows on <b>optical volume plus the solar ramp</b>; management's Springboard plan targets $40B of annualized sales by end-2030. The real variable is the pace of data-center construction.",
+    "items": [
+     {
+      "b": "Volume: fiber and connectivity",
+      "pill": "optical +44%",
+      "w": "Enterprise +84%, with capacity expansion backed by long-term agreements."
+     },
+     {
+      "b": "Price: margins",
+      "pill": "core operating margin 22.7%",
+      "w": "Up 3.1 points from a year ago; the plan is for profits to grow faster than sales, and ROIC was 16.7% this quarter."
+     },
+     {
+      "b": "Second engine: solar",
+      "pill": "target above $3B",
+      "w": "Sales +37% but still loss-making; Section 232 and US manufacturing incentives improve pricing. The ramp is slower than expected."
+     },
+     {
+      "b": "Company targets",
+      "pill": "Springboard",
+      "w": "Annualized sales of $20B by end-2026, $30B by end-2028 and $40B by end-2030, about a 19% CAGR from 2026Q4 to 2030Q4."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Slower data-center construction; new technologies such as hollow-core fiber changing volumes; continued solar losses; further declines in consumer-electronics glass."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+19% over five quarters, and accelerating"
+   },
+   {
+    "why": "+36% in a year, faster than sales"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 34 times trailing core earnings and about 31 times 2026, with a P/S of about 5.2, twice the five-year median of 2.5. <b>The price bets on Springboard delivering</b>; since the report the stock has given back more than half its peak.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, core)",
+    "pill": "GAAP 43x",
+    "f": "$106.13 ÷ TTM core EPS $3.11 ($0.72 + $0.70 + $0.78 + $0.91)"
+   },
+   {
+    "k": "P/E on full-year 2026",
+    "f": "$106.13 ÷ 2026 core EPS ≈ $3.37 (Q4 at the $0.98 midpoint)"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "five-year median 2.5x",
+    "f": "market value ≈ $92.4B ÷ TTM GAAP sales $17.7B"
+   },
+   {
+    "k": "Dividend yield",
+    "f": "$0.28 a quarter × 4 ÷ $106.13"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "core",
+   "steps": [
+    "Q1–Q3 actual $0.70 + $0.78 + $0.91 = $2.39",
+    "Q4 guidance midpoint <b>$0.98</b>",
+    "Full year about <b>$3.37</b> → $106.13 ÷ $3.37 ≈ <b>31.5x</b>"
+   ],
+   "note": "2026 core sales about $19.4B (Q4 at the $5.25B midpoint), about +18% y/y."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits",
+   "sub": "from 2026 core sales of about $19.4B",
+   "head": [
+    "Case",
+    "2028 sales",
+    "Core net margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$21B",
+      "14.5%",
+      "$3.48",
+      "30x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$26B",
+      "16%",
+      "$4.75",
+      "22x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$29B",
+      "17.5%",
+      "$5.80",
+      "18x"
+     ]
+    }
+   ],
+   "note": "Bear: data-center construction slows and solar keeps losing money, about 4% growth over two years; base: close to Springboard's $30B annualized by end-2028 (about $26B for the year); bull: optics and solar both beat. EPS = sales × core net margin ÷ 875M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 core EPS × our P/E; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "data centers slow, 20x"
+    },
+    {
+     "n": "Base",
+     "how": "Springboard on plan, 25x"
+    },
+    {
+     "n": "Bull",
+     "how": "optics and solar both beat, 28x"
+    }
+   ],
+   "why": "The price is slightly above the zone: buying at $106, the base case gains about 12% and the bear case loses about 34%, a reward/risk of about 0.4. At the $95 midpoint it is about 1.0, and at the $85 low end about 2.3. The multiples are above Corning's usual 15–20x of the past decade, because optics is now over half the business and growth has doubled; but it is still a capital-heavy materials company, and we don't give it an AI-chip multiple."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM GAAP sales, diluted shares), last 20 quarter ends",
+   "note": "The multiple climbed fast from 2H 2025 to 13x at end-June 2026; it's about 5.2x now, still twice the five-year median of 2.5x. Calculated from SEC XBRL quarterly sales, diluted shares and Nasdaq quarter-end closes."
+  },
+  "cash": {
+   "title": "Core EPS",
+   "sub": "core EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "$1.06B"
+    },
+    {
+     "k": "Adjusted free cash flow this quarter",
+     "v": "$661M"
+    },
+    {
+     "k": "Capex this quarter",
+     "v": "$545M"
+    }
+   ],
+   "note": "Adjusted free cash flow over the first three quarters was $2.27B, against $0.99B a year earlier. Capex was $545M (a year ago $334M), with customers sharing part of the expansion cost, so cash flow is still improving.",
+   "ret": {
+    "note": "The quarterly dividend is $0.28 a share, about $1.0B over the last four quarters; there were no buybacks in the first three quarters of 2026, with cash going first to expansion."
+   }
+  },
+  "calc": [
+   "Price $106.13: 6 Nov close (Nasdaq); $127.74 before the report (26 Oct), $126.30 that day (27 Oct)",
+   "871M diluted shares, market value ≈ $92.4B",
+   "TTM core EPS $0.72 + $0.70 + $0.78 + $0.91 = $3.11; TTM GAAP EPS $0.62 + $0.43 + $0.64 + $0.78 = $2.47",
+   "TTM GAAP sales $4.215 + $4.144 + $4.505 + $4.855B = $17.72B (SEC XBRL)",
+   "Scenario EPS = sales × core net margin ÷ 875M shares; price = EPS × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around late January 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Growth phase",
+    "pill": "accelerating",
+    "before": "Last quarter: core sales +17%.",
+    "now": "+19%, “the strongest growth since the launch of Springboard”, with Q4 guided to +19% again."
+   },
+   {
+    "topic": "Customer agreements",
+    "pill": "more",
+    "before": "Two big deals with Amazon and NVIDIA.",
+    "now": "Four more multiyear, multibillion-dollar deals this quarter, including Verizon and AT&T."
+   },
+   {
+    "topic": "Solar",
+    "pill": "slower than expected",
+    "before": "Last quarter: profits improve from Q3.",
+    "now": "Sales +37% but still loss-making; the ramp is “slower than anticipated”."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Core sales +19% and core EPS +36%, both above guidance",
+     "Gen AI sales doubled, faster than GPU shipments",
+     "Core operating margin +310 bps, ROIC 16.7%",
+     "Springboard's acceleration “has begun”"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "How much of Enterprise comes from a single big customer",
+     "When solar turns profitable",
+     "How much the long-term deals protect it if data-center building slows",
+     "The 2027 capex plan"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 core sales reach $5.2–5.3B",
+     "Whether core EPS reaches $0.96–1.00",
+     "Optical Communications' sequential growth",
+     "Whether solar turns profitable"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Optical Communications down q/q",
+     "A big customer delaying deliveries",
+     "Core operating margin back below 20%",
+     "Wider solar losses"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "Insider Flow recorded no open-market buy or sell filings for Corning in the 30 days before the report (9/27–10/27). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=GLW\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Corning: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Corning: Q2 2026 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Newsquawk: Q3 consensus"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

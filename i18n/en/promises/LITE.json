@@ -1,0 +1,34 @@
+[
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "FY27 Q1 revenue $1.225–1.275B",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Actual $1.263B, slightly above the midpoint, +25% q/q."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (FY26 Q4 report)",
+  "text": "FY27 Q1 non-GAAP operating margin 39.5–40.5%, EPS $4.05–4.35",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Operating margin 42.3% (1.8 points higher), EPS $4.57 (5% above the top)."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "FY27 Q2 revenue $1.575–1.625B, operating margin 45–46%, EPS $5.90–6.20",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q1 report)",
+  "text": "Merger with Marvell: 4.5 Marvell shares per share, expected to close in 1H 2028, subject to both shareholder votes and regulatory approval",
+  "dueLabel": "2028Q2"
+ }
+]

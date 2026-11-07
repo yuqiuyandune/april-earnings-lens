@@ -1,0 +1,46 @@
+{
+ "n": "Lumentum",
+ "config": {
+  "segmentBasis": "Revenue disclosed by product type: Components (laser chips, pump lasers, EMLs and more) and Systems (cloud transceivers, optical circuit switches, industrial lasers). Signed an all-stock merger agreement with Marvell in November 2026",
+  "fiscalNote": "Fiscal year ends around end-June; FY27 Q1 = 28 Jun–26 Sep 2026, keyed here by calendar quarter as 2026Q3. FY26 Q4 booked a one-time $7.8B non-cash loss on converting convertible notes into equity, hence a large GAAP loss",
+  "kpis": [
+   "Revenue and sequential growth",
+   "Non-GAAP operating margin",
+   "Optical circuit switch (OCS) and CPO/NPO orders",
+   "Cloud transceiver gross margin",
+   "Marvell merger progress and the exchange spread"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "acquirer Marvell (MRVL)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "comp": {
+    "t": "Components revenue"
+   },
+   "om": {
+    "t": "Non-GAAP operating margin"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

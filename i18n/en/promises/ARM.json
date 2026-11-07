@@ -1,0 +1,45 @@
+[
+ {
+  "saidLabel": "Jul 2026 (FY27 Q1 letter)",
+  "text": "FY27 Q2 revenue $1.38B ± $50M",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Actual $1.443B, about 1% above the $1.43B top, +27% y/y."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (FY27 Q1 letter)",
+  "text": "FY27 Q2 non-GAAP EPS $0.47 ± $0.04",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "$0.52, $0.01 above the top; opex $774M, below the ~$780M guide."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (FY26 Q4 letter)",
+  "text": "Up to $2B of Arm AGI CPU revenue across FY27–28",
+  "dueLabel": "2028Q1",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Management says its confidence rose over the last 90 days: purchase orders from several customers run into 2027, and first commercial deliveries remain on track for FY27 Q4. No revenue recognized yet."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q2 letter)",
+  "text": "FY27 Q3 revenue $1.54B ± $50M, non-GAAP EPS $0.56 ± $0.04, opex about $825M; on the call, royalties guided to only low-single-digit growth",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (FY27 Q2 letter)",
+  "text": "Arm's share of server CPUs at the top hyperscalers above 60% by the end of 2026 (above 50% in 2025)",
+  "dueLabel": "2027Q1"
+ }
+]

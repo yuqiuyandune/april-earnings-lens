@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-07",
  "companies": [
   {
    "t": "TSM",
@@ -429,6 +429,120 @@
    "latest": "2026Q3",
    "latestDate": "2026-11-03",
    "headline": "数据中心收入翻倍、订单单季超过 $10 亿，股价却比 6 月低六成：分拆后的 Modine 变成一家纯粹的数据中心散热公司，市场在等利润率"
+  },
+  {
+   "t": "ARM",
+   "n": "安谋",
+   "en": "Arm Holdings",
+   "aliases": [
+    "Arm",
+    "ARM Holdings",
+    "安謀"
+   ],
+   "cat": "芯片",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-04",
+   "headline": "授权收入大增 50%，版税却只涨 8%：数据中心翻倍，手机被内存涨价拖住，下季版税只有低个位数增长"
+  },
+  {
+   "t": "COHR",
+   "n": "相干",
+   "en": "Coherent",
+   "aliases": [
+    "Coherent",
+    "II-VI",
+    "相干"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-04",
+   "headline": "数据中心收入一年 +79%、目标再上调，但一季花掉 $7.8 亿扩产、现金流转负：股价比 6 月高点低一半以上"
+  },
+  {
+   "t": "GLW",
+   "n": "康宁",
+   "en": "Corning",
+   "aliases": [
+    "Corning",
+    "康寧"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-27",
+   "headline": "光通信 +44%、核心 EPS +36%，全面超指引，股价却比 6 月高点低近六成：市场在给“AI 光纤”重新定价"
+  },
+  {
+   "t": "VST",
+   "n": "Vistra",
+   "en": "Vistra",
+   "aliases": [
+    "Vistra",
+    "Vistra Energy"
+   ],
+   "cat": "能源",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-06",
+   "headline": "EBITDA 一年 +50%、2027 年指引再高 10%，股价却比 7 月低四分之一：选举后市场担心数据中心用电被管"
+  },
+  {
+   "t": "BE",
+   "n": "Bloom Energy",
+   "en": "Bloom Energy",
+   "aliases": [
+    "Bloom Energy",
+    "布鲁姆能源"
+   ],
+   "cat": "能源",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-22",
+   "headline": "收入翻 2.4 倍、全年指引第三次上调，股价却跌 11%：利润在涨，现金在流出"
+  },
+  {
+   "t": "LITE",
+   "n": "Lumentum",
+   "en": "Lumentum",
+   "aliases": [
+    "Lumentum",
+    "朗美通"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-02",
+   "headline": "收入一年 2.4 倍、利润率 42%，却在同一天宣布卖给 Marvell：股价从此跟着 Marvell 走，比换股价值还低 15%"
+  },
+  {
+   "t": "INTC",
+   "n": "英特尔",
+   "en": "Intel",
+   "aliases": [
+    "Intel",
+    "英特爾"
+   ],
+   "cat": "芯片",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-10-29",
+   "headline": "数据中心 15 年来最快增长，股价却一天跌 29%：PC 放缓、毛利率掉回 38%，下季利润只剩一半"
   }
  ]
 }

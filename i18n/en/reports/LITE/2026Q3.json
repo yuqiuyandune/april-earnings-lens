@@ -1,0 +1,353 @@
+{
+ "label": "FY27 Q1 (Jul–Sep 2026)",
+ "dateLabel": "before the open, 2 Nov 2026 (with the Marvell deal)",
+ "asOf": "close of $538.59 on 6 Nov 2026; $840.70 before the report (30 Oct)",
+ "headline": "Revenue 2.4x in a year and a 42% margin, yet on the same day it agreed to sell itself to Marvell: the stock now tracks Marvell, 15% below the exchange value",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.263B",
+   "exp": "est. $1.249B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $4.19"
+  },
+  {
+   "k": "Non-GAAP operating margin",
+   "exp": "a year ago 18.7%",
+   "pill": "+23.6 pts"
+  },
+  {
+   "k": "FY27 Q2 revenue guidance",
+   "val": "$1.575–1.625B",
+   "exp": "this quarter $1.263B",
+   "pill": "midpoint +27% q/q"
+  }
+ ],
+ "points": [
+  {
+   "b": "An all-stock sale to Marvell",
+   "t": "Each LITE share becomes 4.5 Marvell shares. That was about $1,132 a share on pre-rumor prices of 28 Oct (a 24% premium), but Marvell has since fallen, so at the 6 Nov close it is worth about $635; closing is expected only in 1H 2028."
+  },
+  {
+   "b": "The business itself is accelerating",
+   "t": "Revenue rose 137%, led by laser chips and optical circuit switches (OCS); it won a second big NPO/CPO deal backed by more than $5B of purchase commitments. Next quarter adds another ~$350M."
+  },
+  {
+   "b": "Down 19% in a day",
+   "t": "On deal day LITE closed at $684.40 (−18.6%), with Marvell down 12.7%. It kept falling with the AI sector to $538.59 on 6 Nov, about 15% below the exchange value."
+  }
+ ],
+ "reaction": "Stock: on 2 Nov (results and the merger announced together) it closed at $684.40, down 18.6%; acquirer Marvell fell 12.7% the same day. Since then LITE has mostly tracked Marvell: on 5 Nov, as the AI sector sold off, both fell about 16–19%. Consensus from Newsquawk: EPS $4.19, revenue $1.249B (TIKR cites $4.22 EPS).",
+ "results": {
+  "segments": {
+   "title": "By product type",
+   "period": "FY27 Q1 y/y, $M",
+   "take": "Both are growing fast, <b>with Systems (transceivers and optical switches) growing more than twice as fast as Components</b>.",
+   "bridge": [
+    {
+     "n": "Components"
+    },
+    {
+     "n": "Systems"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Components",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Data-center laser chips (EMLs and CW lasers for 800G/1.6T transceivers and CPO) and pump lasers (for long-haul links between data centers). Management named pump lasers as one of the biggest growth contributors."
+    },
+    {
+     "n": "Systems",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Cloud transceivers (with improving gross margin) and optical circuit switches. OCS switches light paths with mirrors, removing electrical switches; Google was the first big user. The company says OCS could become a multi-billion-dollar annual business."
+    }
+   ],
+   "note": "Systems was $155M a year ago and $508M now; Components $379M a year ago and $754M now. Shares are of this quarter's revenue."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Lumentum is <b>the light source of optical networking</b>: laser chips inside transceivers, pump lasers for long-haul links and switches that route light directly.",
+    "items": [
+     {
+      "b": "Laser chips sold out",
+      "pill": "EML, CW",
+      "w": "1.6T transceivers and CPO need high-power laser chips, and indium phosphide capacity is one of the industry's bottlenecks."
+     },
+     {
+      "b": "Optical circuit switches",
+      "pill": "multi-billion",
+      "w": "Management says OCS demand visibility “expanded significantly in recent months”, positioning it as a multi-billion-dollar annual business."
+     },
+     {
+      "b": "Into the rack",
+      "pill": "second NPO/CPO win",
+      "w": "A second major NPO/CPO win, with purchase commitments above $5B, is a sign optics is moving inside the GPU rack."
+     },
+     {
+      "b": "Its role after the merger",
+      "pill": "Marvell's optics arm",
+      "w": "After closing, Marvell could offer everything from electrical chips (DSPs, switches) to lasers and transceivers, competing with Broadcom and NVIDIA."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Buying LITE now is <b>mostly buying Marvell stock plus a deal spread</b>. The business's own growth sets the fallback value if the deal fails.",
+    "items": [
+     {
+      "b": "Exchange value",
+      "pill": "4.5 × MRVL",
+      "w": "At Marvell's $141.20 on 6 Nov, each share is worth about $635; LITE closed at $538.59, a spread of about 15% (not high annualized, given the wait until 1H 2028)."
+     },
+     {
+      "b": "Volume: revenue accelerating",
+      "pill": "next quarter +27%",
+      "w": "The Q2 midpoint of $1.6B adds about $350M q/q, more than the whole company's quarterly revenue two years ago."
+     },
+     {
+      "b": "Price: margins",
+      "pill": "42% → 45%+",
+      "w": "Q2 operating margin is guided to 45–46%, against 19% a year ago."
+     },
+     {
+      "b": "Deal risk",
+      "pill": "an 18-month wait",
+      "w": "It needs both shareholder votes and approvals in several countries (optics is sensitive, and China's review is a common uncertainty). Termination fees: $5.8B on Marvell's side, $2.9B on Lumentum's."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Marvell's stock falling further; regulators blocking the deal; industry indium phosphide oversupply cutting laser-chip prices; customers moving orders to rivals during the merger."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "2.4x in five quarters"
+   },
+   {
+    "why": "From 19% to 42% in a year"
+   },
+   {
+    "why": "More than 4x in a year"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "On the business alone it's about 45 times trailing non-GAAP earnings and about 22 times next quarter's guide annualized. But after the merger, <b>LITE's price is set mainly by 4.5x Marvell's stock and the odds the deal closes</b>.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP loss",
+    "f": "$538.59 ÷ TTM EPS $11.84 ($1.67 + $2.37 + $3.23 + $4.57)"
+   },
+   {
+    "k": "P/E on next quarter annualized",
+    "f": "$538.59 ÷ ($6.05 × 4 = $24.2)"
+   },
+   {
+    "k": "Exchange value",
+    "pill": "price 15% below",
+    "f": "4.5 × Marvell's 6 Nov close of $141.20"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "five-year median 3.3x",
+    "f": "market value ≈ $54.8B ÷ TTM revenue $3.74B"
+   }
+  ],
+  "forward": {
+   "title": "Next quarter annualized",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1 actual $4.57",
+    "Q2 guidance midpoint <b>$6.05</b>",
+    "Q2 annualized <b>$24.2</b> → $538.59 ÷ $24.2 ≈ <b>22x</b>"
+   ],
+   "note": "Consensus cited by TIKR: FY27 EPS $21.82, FY28 $35.72."
+  },
+  "scenarios": {
+   "title": "Three scenarios: the deal sets the price",
+   "sub": "value per LITE share",
+   "head": [
+    "Case",
+    "Value per share",
+    "vs price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "about $375",
+      "−30%"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "about $635",
+      "+18%"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "about $1,132",
+      "+110%"
+     ]
+    }
+   ],
+   "note": "Bear: the deal breaks, LITE is standalone again and optics cools, with standalone FY28 EPS about $25 (below the $35.7 consensus, assuming laser-chip price cuts) × 15; base: the deal closes with Marvell at its 6 Nov price; bull: the deal closes with Marvell back at its 28 Oct price, both = 4.5 × Marvell's price ($141.20 / $251.60). The time until closing is not discounted. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "base and bull = 4.5 × Marvell's price; bear = standalone FY28 EPS × 15",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "deal breaks, standalone value"
+    },
+    {
+     "n": "Base",
+     "how": "deal closes at MRVL $141"
+    },
+    {
+     "n": "Bull",
+     "how": "deal closes, MRVL back to $252"
+    }
+   ],
+   "why": "The price sits at the top of the zone: buying at $539, the base case gains about 18% and the bear case loses about 30%, a reward/risk of about 0.6; at the $495 midpoint it is about 1.2, and at the $450 low end about 2.5. This zone is really a price for “Marvell plus deal risk”: if you don't like Marvell, you shouldn't like LITE."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), last 20 quarter ends",
+   "note": "From 2H 2025 the multiple rose from about 4x to 27x; it's about 15x now. After the merger this history matters less. Calculated from SEC XBRL quarterly revenue, diluted shares and Nasdaq quarter-end closes."
+  },
+  "cash": {
+   "title": "Non-GAAP operating margin",
+   "sub": "non-GAAP operating margin per quarter, %",
+   "stats": [
+    {
+     "k": "Cash and short-term investments",
+     "v": "$2.0B"
+    },
+    {
+     "k": "Down from last quarter",
+     "v": "$759M"
+    },
+    {
+     "k": "Non-GAAP gross margin",
+     "v": "53.2%"
+    }
+   ],
+   "note": "Cash and short-term investments fell $759M from last quarter, and the release summary doesn't explain why (part of last quarter's convertible-note conversion was cash-settled, and capacity is expanding). No dividend or buyback."
+  },
+  "calc": [
+   "Price $538.59: 6 Nov close (Nasdaq); $840.70 before results and the merger (30 Oct), $684.40 that day (2 Nov)",
+   "101.7M diluted shares, market value ≈ $54.8B",
+   "TTM non-GAAP EPS $1.67 + $2.37 + $3.23 + $4.57 = $11.84; TTM revenue $665.5 + $808.4 + $1,006.3 + $1,262.6M = $3.743B",
+   "Exchange value = 4.5 × Marvell's close: 6 Nov $141.20 → $635.4; 28 Oct about $251.6 → about $1,132",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around early February 2027; merger votes and regulatory progress will be announced separately."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "The company's future",
+    "pill": "sold to Marvell",
+    "before": "Independent, expanding laser-chip capacity.",
+    "now": "Merger agreement signed on 1 Nov; CEO Michael Hurlston will join Marvell's board."
+   },
+   {
+    "topic": "CPO/NPO",
+    "pill": "a second big win",
+    "before": "Last quarter: first CPO laser orders and a first ELS module order.",
+    "now": "A second major NPO/CPO program, with purchase commitments above $5B."
+   },
+   {
+    "topic": "Optical circuit switches",
+    "pill": "more visibility",
+    "before": "OCS starting to ramp.",
+    "now": "“Demand visibility has expanded significantly in recent months”; could become a multi-billion-dollar annual business."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Growth across all businesses, led by pump lasers and OCS",
+     "A second big NPO/CPO win with commitments above $5B",
+     "Another ~$350M of sequential growth next quarter",
+     "Operating margin above 45% next quarter"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "Why sell while growth is accelerating, and for all stock",
+     "Which countries must approve, and how big the China risk is",
+     "Whether customers move orders during the deal",
+     "Why cash fell $759M in one quarter"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether revenue reaches $1.575–1.625B",
+     "Whether operating margin reaches 45–46%",
+     "Whether the exchange spread (LITE ÷ 4.5 × MRVL) widens or narrows",
+     "The shareholder-vote timetable"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "The spread widening above 25% (the market doubting the deal)",
+     "A regulator raising major objections",
+     "Revenue down q/q",
+     "Marvell's own results deteriorating"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "Insider Flow recorded no open-market buy or sell filings for Lumentum in the 30 days before the report (10/3–11/2). After the deal, executives signed tax reimbursement agreements (covering change-of-control taxes), which are not trades. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=LITE\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Lumentum: FY27 Q1 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Lumentum: FY26 Q4 earnings release (Q1 guidance)"
+  },
+  {
+   "t": "Lumentum: merger 8-K and joint press release with Marvell"
+  },
+  {
+   "t": "Newsquawk: Q1 consensus"
+  },
+  {
+   "t": "TIKR: why it fell 19% on deal day"
+  }
+ ]
+}

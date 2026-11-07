@@ -1,0 +1,46 @@
+{
+ "n": "Corning",
+ "config": {
+  "segmentBasis": "Five segments from 2026: Optical Communications (fiber, cable, data-center connectivity), Glass Innovations (former Display and Specialty Materials, including phone cover glass), Automotive, Solar (Hemlock polysilicon, wafers and modules), and Life Sciences & Emerging Growth. Prior periods recast",
+  "fiscalNote": "Fiscal year matches the calendar year. The company leads with “core” measures: foreign revenue (mainly yen) translated at internal hedge rates and one-offs excluded, so core sales run above GAAP sales",
+  "kpis": [
+   "Core sales and core EPS",
+   "Optical Communications revenue (Enterprise / Gen AI products)",
+   "Core operating margin and ROIC",
+   "Adjusted free cash flow",
+   "Springboard progress ($30B annualized by end-2028)"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "connectivity and optical-network peers (average of Amphenol and Ciena)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Core sales"
+   },
+   "oc": {
+    "t": "Optical Communications revenue"
+   },
+   "eps": {
+    "t": "Core EPS"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

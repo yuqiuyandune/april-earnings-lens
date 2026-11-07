@@ -1,0 +1,355 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "after the close, 22 Oct 2026",
+ "asOf": "close of $173.24 on 6 Nov 2026; $217.77 before the report (22 Oct)",
+ "headline": "Revenue 2.4x and full-year guidance raised a third time, yet the stock fell 11%: profits are rising while cash flows out",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.236B",
+   "exp": "est. $1.06B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $0.69"
+  },
+  {
+   "k": "Free cash flow",
+   "val": "−$181M",
+   "exp": "capex $153M",
+   "pill": "negative"
+  },
+  {
+   "k": "2026 revenue guidance",
+   "val": "$4.4–4.6B",
+   "exp": "was $3.9–4.2B",
+   "pill": "midpoint +12%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Revenue and profit both accelerating",
+   "t": "Revenue rose 138% and product revenue 179%; non-GAAP operating margin was 23.1% (8.9% a year ago). Full-year guidance was raised for the third time this year, with the revenue midpoint about 40% above January's."
+  },
+  {
+   "b": "Cash flow turned negative",
+   "t": "Operating cash flow was −$27M and capex $153M, so free cash flow was −$181M. Contract assets rose from $179M at the start of the year to $793M and inventory from $643M to $928M: product shipped, cash not yet collected."
+  },
+  {
+   "b": "Into the S&P 500",
+   "t": "Added to the S&P 500 this quarter. Customers are spreading from hyperscalers to other industries, and management says backlog is growing faster than revenue."
+  }
+ ],
+ "reaction": "Stock: closed at $193.30 the next day (23 Oct), down 11.2%, while peers (average of GE Vernova and Vertiv) fell about 1%, a gap of about 10 points; it fell another 16% in the 5 Nov AI sell-off and closed at $173.24 on 6 Nov. Consensus from Newsquawk: EPS $0.69, revenue $1.06B (TIKR records $0.94 EPS and $1.07B revenue; the sources differ widely).",
+ "results": {
+  "segments": {
+   "title": "Revenue mix",
+   "period": "Q3 2026 y/y, $M",
+   "take": "Almost all the growth came from <b>selling the fuel-cell equipment itself</b>: data centers and others generating their own power where they can't get a grid connection.",
+   "bridge": [
+    {
+     "n": "Product"
+    },
+    {
+     "n": "Installation, service and electricity"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Product (Energy Servers)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Solid-oxide fuel cells that generate power on site from natural gas and can be running within months, far faster than waiting for the grid. All shipments are ready for data centers' 800V DC architecture."
+    },
+    {
+     "n": "Installation, service and electricity",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Installation work, long-term service contracts and power sold from owned sites. Large projects increasingly use a “consult only” installation model, so installation's share is falling."
+    }
+   ],
+   "note": "Product revenue a year ago was about $384M (backed out from +179.4%); the rest is the difference."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Bloom sells <b>power that doesn't wait for the grid</b>. In many places data centers wait years for a grid connection; fuel cells generate power on site from natural gas and can be running in months.",
+    "items": [
+     {
+      "b": "Grid connections are the bottleneck",
+      "pill": "on-site power",
+      "w": "Data-center interconnection queues on the main US grids are long; on-site generation sidesteps them and fits “bring your own power” policies."
+     },
+     {
+      "b": "Customers spreading",
+      "pill": "hyperscalers → every industry",
+      "w": "The CEO says demand “began with hyperscalers and is rapidly moving across market segments” because every business needs reliable power."
+     },
+     {
+      "b": "Competing with turbines and the grid",
+      "pill": "GE Vernova, Caterpillar",
+      "w": "Gas turbines and reciprocating engines also compete for on-site data-center power; once grid upgrades land, fuel cells' speed advantage shrinks."
+     },
+     {
+      "b": "Natural gas prices",
+      "pill": "operating cost",
+      "w": "The fuel cells run on natural gas, so higher gas prices raise customers' power costs; carbon policy also affects demand."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Bloom grows on <b>capacity expansion and data-center orders</b>. The real variable is whether cash flow keeps up: the faster it grows, the more cash it has to front.",
+    "items": [
+     {
+      "b": "Volume: capacity",
+      "pill": "Fremont, Newark",
+      "w": "Both factories are expanding; the company says it will add capacity step by step with orders rather than in big jumps."
+     },
+     {
+      "b": "Price: gross margin",
+      "pill": "34%",
+      "w": "Non-GAAP gross margin rose from 30% to 34.5%, and service margins went from near zero to double digits."
+     },
+     {
+      "b": "Cash flow",
+      "pill": "watch",
+      "w": "Contract assets and inventory are rising fast and free cash flow turned negative. Management calls it timing but gave no timeline; $2.49B of cash covers it for now."
+     },
+     {
+      "b": "Company targets",
+      "pill": "2026 revenue $4.4–4.6B",
+      "w": "A full-year revenue midpoint of about +122% and non-GAAP EPS of $3.10–3.40. No targets for 2027 or later."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Tighter data-center financing or a construction pause; gas turbines winning orders; air-permit delays; further dilution from convertible notes."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "2.4x in five quarters"
+   },
+   {
+    "why": "From $0.15 to $0.94"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 66 times trailing non-GAAP earnings and about 53 times the 2026 guidance midpoint, with a P/S of about 15, more than four times the five-year median of 3.5. <b>The price bets on on-site power becoming mainstream for data centers</b>, which cash flow hasn't proven yet.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP 105x",
+    "f": "$173.24 ÷ TTM EPS $2.61 ($0.45 + $0.44 + $0.78 + $0.94)"
+   },
+   {
+    "k": "P/E on 2026 guidance",
+    "f": "$173.24 ÷ $3.25 midpoint"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "five-year median 3.5x",
+    "f": "market value ≈ $56.2B ÷ TTM revenue $3.83B"
+   },
+   {
+    "k": "Cash",
+    "v": "$2.49B",
+    "pill": "negative free cash flow",
+    "f": "cash and cash equivalents at end-September"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1–Q3 actual $0.44 + $0.78 + $0.94 = $2.16",
+    "Full-year midpoint <b>$3.25</b> → Q4 about $1.09",
+    "$173.24 ÷ $3.25 ≈ <b>53x</b>"
+   ],
+   "note": "The $4.5B revenue midpoint less $3.05B for the first three quarters leaves about $1.45B for Q4, about +17% q/q."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits",
+   "sub": "from 2026 revenue of about $4.5B",
+   "head": [
+    "Case",
+    "2028 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$5.5B",
+      "18%",
+      "$2.55",
+      "68x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$8.0B",
+      "23%",
+      "$4.74",
+      "37x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$11.0B",
+      "26%",
+      "$7.37",
+      "24x"
+     ]
+    }
+   ],
+   "note": "Bear: data-center financing tightens, only about 10% growth over two years; base: about 33% a year; bull: on-site power goes mainstream, about 56% a year. EPS = revenue × non-GAAP operating margin × (1 − 15% tax) ÷ 330M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS × our P/E; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "data centers slow, 30x"
+    },
+    {
+     "n": "Base",
+     "how": "about 30% a year, 40x"
+    },
+    {
+     "n": "Bull",
+     "how": "on-site power goes mainstream, 45x"
+    }
+   ],
+   "why": "The price is above the zone: buying at $173, the base case gains about 10% and the bear case loses about 56%, a reward/risk of about 0.2. At the $155 top of the zone it is about 0.4, at the $138 midpoint about 0.9, and at the $120 low end about 1.6. This stock has a wide range both ways: the bear price is less than half today's, because its profits have only just begun and the multiple is very sensitive to growth."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), last 20 quarter ends",
+   "note": "Before 2H 2025 it sat at 2–5x for years, then rose to 32x on data-center orders; it's about 15x now. Calculated from SEC XBRL quarterly revenue, diluted shares and Nasdaq quarter-end closes (Q3 revenue from the release)."
+  },
+  "cash": {
+   "title": "Non-GAAP EPS",
+   "sub": "Non-GAAP EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "−$27M"
+    },
+    {
+     "k": "Capex this quarter",
+     "v": "$153M"
+    },
+    {
+     "k": "Contract assets",
+     "v": "$793M (start of year $179M)"
+    }
+   ],
+   "note": "Profits are rising but cash is flowing out: contract assets (revenue recognized but not yet billable) rose $614M, inventory $284M and receivables $263M. Bloom pays no dividend and doesn't buy back stock."
+  },
+  "calc": [
+   "Price $173.24: 6 Nov close (Nasdaq); $217.77 before the report (22 Oct), $193.30 the next day (23 Oct)",
+   "About 324M diluted shares, market value ≈ $56.2B",
+   "TTM non-GAAP EPS $0.45 + $0.44 + $0.78 + $0.94 = $2.61; TTM GAAP EPS $0.01 + $0.23 + $0.62 + $0.78 = $1.64",
+   "TTM revenue $773 + $751 + $1,065 + $1,236M = $3.825B",
+   "Scenario EPS = revenue × operating margin × 85% ÷ 330M shares; price = EPS × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around early February 2027, with 2027 guidance."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Full-year guidance",
+    "pill": "raised a third time",
+    "before": "July: revenue $3.9–4.2B, EPS $2.55–2.85.",
+    "now": "Revenue $4.4–4.6B, EPS $3.10–3.40."
+   },
+   {
+    "topic": "Cash flow",
+    "pill": "negative",
+    "before": "Positive operating cash flow for a second straight year in 2025.",
+    "now": "Q3 operating cash flow −$27M; management calls it timing."
+   },
+   {
+    "topic": "Customers",
+    "pill": "spreading",
+    "before": "Demand concentrated in hyperscalers.",
+    "now": "“Rapidly moving across market segments”, with backlog growing faster than revenue."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release and call)",
+    "items": [
+     "Record revenue, +138% y/y",
+     "A third full-year guidance raise this year",
+     "Added to the S&P 500",
+     "Backlog growing faster than revenue"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "How big the backlog is",
+     "When cash flow turns positive",
+     "A 2027 capacity and revenue framework",
+     "Customer concentration"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue reaches about $1.35–1.55B",
+     "Whether operating cash flow turns positive",
+     "Whether contract assets start falling",
+     "2027 guidance"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Two straight quarters of negative operating cash flow",
+     "2027 guidance below 30% growth",
+     "Gross margin back below 30%",
+     "Big customers switching to gas turbines"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "In the 30 days before the report (9/22–10/22) the only trade was chief commercial officer Aman Joshi selling about $2.34M on 2 Oct under a 10b5-1 plan, which doesn't count as effective. After the report, directors John Chambers (3 Nov, about $1.8M, via an affiliated company) and Barbara Burger (5 Nov, about $0.5M) also sold under plans. No effective buys. See the <a href=\"/insider/#t=BE\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Bloom Energy: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Bloom Energy: Q2 2026 earnings release (previous guidance)"
+  },
+  {
+   "t": "Newsquawk: Q3 consensus"
+  },
+  {
+   "t": "TIKR: cash flow and the stock drop"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

@@ -1,0 +1,370 @@
+{
+ "label": "FY27 Q1 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 4 Nov 2026",
+ "asOf": "close of $192.81 on 6 Nov 2026; $195.09 before the report (4 Nov)",
+ "headline": "Data-center revenue up 79% and targets raised again, but $776M of capex in one quarter turned cash flow negative: the stock is more than 50% below its June peak",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$2.370B",
+   "exp": "est. about $2.32B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $2.00"
+  },
+  {
+   "k": "Datacenter & Communications",
+   "val": "$1.952B",
+   "exp": "a year ago $1.090B",
+   "pill": "+79% y/y"
+  },
+  {
+   "k": "FY27 Q2 revenue guidance",
+   "val": "$2.55–2.75B",
+   "exp": "consensus $2.55B",
+   "pill": "midpoint +3.9%"
+  }
+ ],
+ "points": [
+  {
+   "b": "AI optics carries all the growth",
+   "t": "Datacenter & Communications rose 79% and is 82% of revenue; Industrial fell 15% and keeps shrinking. The company expects FY27 pro forma growth above 60% and a $4B quarter in FY28."
+  },
+  {
+   "b": "Gross-margin target raised",
+   "t": "The new target is a quarter above 45% non-GAAP gross margin before the end of 2028 (40.6% now), from pricing, cost improvements and in-house 6-inch indium phosphide laser chips."
+  },
+  {
+   "b": "Expansion is eating cash",
+   "t": "Capex was $776M this quarter (a year ago $104M), inventory rose $760M and operating cash flow was −$93M. Debt rose to about $4.0B and leverage from 0.7x to 1.1x."
+  }
+ ],
+ "reaction": "Stock: closed at $169.76 the next day (5 Nov), down 13.0%, while optical peers (average of Fabrinet and Ciena) fell about 15% as the whole AI sector sold off; it rebounded 13.6% to $192.81 on 6 Nov. Consensus from Zacks: EPS $2.00, revenue about $2.32B (backed out from a 2.35% beat); next quarter revenue $2.55B, EPS $2.23.",
+ "results": {
+  "segments": {
+   "title": "Segments",
+   "period": "FY27 Q1 y/y, $M",
+   "take": "All the growth came from <b>data-center optics</b>: transceivers, laser chips and optical switches sold to cloud companies and NVIDIA; the industrial laser business is shrinking.",
+   "bridge": [
+    {
+     "n": "Datacenter & Communications"
+    },
+    {
+     "n": "Industrial"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Datacenter & Communications",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "800G/1.6T transceivers, data-center laser chips (indium phosphide EMLs, CW lasers), optical amplifiers and optical circuit switches (OCS). It signed a roughly $20B, five-year long-term agreement with a major AI company that starts contributing in early 2028, alongside its NVIDIA agreement."
+    },
+    {
+     "n": "Industrial",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "Industrial lasers, optics for chip equipment and materials. Slow growth and lower margins; the company is gradually shrinking or selling parts of it."
+    }
+   ],
+   "note": "Revenue rose 50% y/y; excluding the divested aerospace & defense business, pro forma growth was 56%. The $20B agreement figure is the company's statement as relayed in third-party coverage."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Coherent makes the transceivers and laser chips that <b>turn electrical signals between GPUs into light</b>. The bigger the AI cluster, the less copper can carry and the more optics it needs.",
+    "items": [
+     {
+      "b": "From copper to light",
+      "pill": "1.6T and CPO",
+      "w": "Links between racks have long been optical; now links inside the rack are moving to optics too (near-packaged NPO, co-packaged CPO). The company sizes optical connectivity at about $90B by 2030, of which CPO/NPO is about $30B."
+     },
+     {
+      "b": "In-house laser chips",
+      "pill": "6-inch indium phosphide",
+      "w": "Indium phosphide capacity doubled a quarter early, but the in-house versus purchased chip mix hasn't improved in a year, so the 6-inch cost advantage is still ahead."
+     },
+     {
+      "b": "Long-term deals lock in demand",
+      "pill": "about $20B",
+      "w": "A five-year, roughly $20B agreement with a major AI company starts shipping in early 2028, with the customer sharing some expansion costs."
+     },
+     {
+      "b": "Competition and pricing",
+      "pill": "Chinese makers",
+      "w": "Chinese transceiver makers (Innolight, Eoptolink) are bigger and cheaper; once Marvell buys Lumentum it becomes a combined chip-plus-optics competitor."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Coherent grows on <b>AI transceiver volume and the margin from its own laser chips</b>. The real variable is whether the expansion spending turns into revenue and cash on time.",
+    "items": [
+     {
+      "b": "Volume: revenue targets",
+      "pill": "$3B → $4B a quarter",
+      "w": "A $3B quarter by the end of FY27 and a $4B quarter in FY28, against $2.37B now. That implies FY28 revenue of roughly $14–16B."
+     },
+     {
+      "b": "Price: gross margin",
+      "pill": "40.6% → 45%+",
+      "w": "The new target is a quarter above 45% before the end of 2028, driven by pricing, yields and the in-house laser-chip share."
+     },
+     {
+      "b": "The cost of expansion",
+      "pill": "$776M capex a quarter",
+      "w": "Capex will keep rising, and inventory grew $760M in one quarter. Free cash flow has turned sharply negative, funded by debt and customer cost-sharing."
+     },
+     {
+      "b": "Company targets",
+      "pill": "FY27 +60%",
+      "w": "FY27 pro forma revenue growth above 60% (FY26 about +29%). CEO Jim Anderson, who joined in 2024, has raised targets twice."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Industry indium phosphide oversupply in 2028; Chinese price cuts; slower cloud capex or policy limits on data centers; less transceiver demand as customers adopt co-packaged optics."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "+50% over five quarters, and accelerating"
+   },
+   {
+    "why": "Nearly doubled in a year"
+   },
+   {
+    "why": "Shrinking quarter after quarter"
+   },
+   {
+    "why": "+80% in a year"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 29 times trailing non-GAAP earnings and about 20 times next quarter's guide annualized, with a P/S of about 4.9. <b>Cheaper than optical peers</b>, discounted for heavy capital needs, negative cash flow and the industrial drag.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP 40x",
+    "f": "$192.81 ÷ TTM EPS $6.54 (about $1.30 + $1.41 + $1.74 + $2.09)"
+   },
+   {
+    "k": "P/E on next quarter annualized",
+    "f": "$192.81 ÷ ($2.38 × 4 = $9.52)"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "four-year median 2.3x",
+    "f": "market value ≈ $38.9B ÷ TTM revenue $7.91B"
+   },
+   {
+    "k": "Net debt",
+    "v": "about $2.2B",
+    "pill": "leverage 1.1x",
+    "f": "long-term debt $3.98B − cash and short-term investments $1.75B"
+   }
+  ],
+  "forward": {
+   "title": "First half of FY27 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1 actual $2.09",
+    "Q2 guidance midpoint <b>$2.38</b>",
+    "Q2 annualized about <b>$9.52</b> → $192.81 ÷ $9.52 ≈ <b>20x</b>"
+   ],
+   "note": "No full-year EPS guidance; FY27 pro forma growth above 60% and a $3B quarter by the end of FY27 imply further sequential growth in the second half."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY28 (Jul 2027–Jun 2028) profits",
+   "sub": "from TTM revenue of $7.9B",
+   "head": [
+    "Case",
+    "FY28 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$11.5B",
+      "22%",
+      "$9.21",
+      "21x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$15.0B",
+      "26%",
+      "$14.62",
+      "13x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$18.0B",
+      "29%",
+      "$19.84",
+      "10x"
+     ]
+    }
+   ],
+   "note": "Bear: a transceiver price war and expansion delays leave FY28 only about 30% above FY27; base: hits the “$4B quarter in FY28” target; bull: the long-term deal and CPO ramp early. EPS = (revenue × non-GAAP operating margin − about $0.2B interest) × (1 − 19% tax) ÷ 205M shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY28 EPS × our P/E; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "price war, expansion delays, 15x"
+    },
+    {
+     "n": "Base",
+     "how": "hits the $4B-quarter target, 18x"
+    },
+    {
+     "n": "Bull",
+     "how": "CPO and the long-term deal ramp early, 20x"
+    }
+   ],
+   "why": "The price is slightly above the zone: buying at $193, the base case gains about 36% and the bear case loses about 28%, a reward/risk of about 1.3. At the $185 top of the zone it is about 1.7, at the $168 midpoint about 3.2, and at the $150 low end about 9.4. The multiples are below optical peers because Coherent funds its own expansion, has negative cash flow and carries a low-growth industrial business."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), quarter ends; 17 quarter ends from 2022Q3 (after the name change)",
+   "note": "About 4.9x now, twice the four-year median of about 2.3x but less than half the 10.9x of end-June. Its multiple used to be low because most revenue was industrial and materials; now more than 80% is AI optics, so a higher midpoint is reasonable. Calculated from SEC XBRL quarterly revenue, diluted shares and Nasdaq quarter-end closes."
+  },
+  "cash": {
+   "title": "Non-GAAP EPS",
+   "sub": "Non-GAAP EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "−$93M"
+    },
+    {
+     "k": "Capex this quarter",
+     "v": "$776M"
+    },
+    {
+     "k": "Inventory",
+     "v": "$3.34B (last quarter $2.58B)"
+    }
+   ],
+   "note": "Operating cash flow turned negative as inventory rose $760M and receivables $260M in one quarter, while capex was more than seven times a year ago. Free cash flow was about −$870M (our calculation: operating cash flow less capex). Long-term debt rose from $3.2B to $4.0B. No dividend, and essentially no buybacks.",
+   "ret": {
+    "note": "Coherent pays no common dividend; the small dividend a year ago was on preferred stock (since converted or redeemed). No buybacks this quarter; all cash is going to expansion."
+   }
+  },
+  "calc": [
+   "Price $192.81: 6 Nov close (Nasdaq); $195.09 before the report (4 Nov), $169.76 the next day (5 Nov)",
+   "202M diluted shares, market value ≈ $38.9B; long-term debt $3.98B, cash and short-term investments $1.75B, EV ≈ $41.2B",
+   "TTM non-GAAP EPS: FY26 Q2 about $1.30 (full year $5.61 less the other three quarters) + $1.41 + $1.74 + $2.09 = $6.54",
+   "TTM revenue $1.686 + $1.806 + $2.046 + $2.370B = $7.908B",
+   "Scenario EPS = (revenue × operating margin − $0.2B interest) × 81% ÷ 205M shares; price = EPS × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around early February 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Gross-margin target",
+    "pill": "raised",
+    "before": "Long-term target about 42%.",
+    "now": "A quarter above 45% before the end of 2028."
+   },
+   {
+    "topic": "Revenue targets",
+    "pill": "more specific",
+    "before": "FY27 growth accelerating.",
+    "now": "FY27 pro forma +60% or more; a $3B quarter within FY27 and a $4B quarter in FY28."
+   },
+   {
+    "topic": "Capex",
+    "pill": "sharply higher",
+    "before": "$556M in FY26 Q4.",
+    "now": "$776M in FY27 Q1, and management says it will keep rising."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Pro forma revenue +56%, non-GAAP EPS +80%",
+     "Strong established businesses, new growth areas ramping",
+     "AI data centers moving from copper to optics",
+     "Structural margin gains; long-term target raised"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "Who the $20B long-term customer is, and its pricing and margins",
+     "When 6-inch indium phosphide delivers its cost advantage",
+     "Which quarter capex peaks",
+     "Whether more of Industrial will be sold"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether revenue reaches $2.55–2.75B",
+     "Whether gross margin lands in the upper half of 40–42%",
+     "Whether operating cash flow turns positive",
+     "Whether inventory keeps rising"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Data-center revenue down q/q",
+     "Gross margin back below 39%",
+     "Two more quarters of deeply negative free cash flow with rising inventory",
+     "The long-term customer delaying shipments"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "Insider Flow recorded no open-market buy or sell filings for Coherent in the 30 days before the report (10/5–11/4). The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=COHR\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Coherent: FY27 Q1 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Coherent: FY26 Q4 earnings release (Q1 guidance)"
+  },
+  {
+   "t": "Zacks: Q1 consensus"
+  },
+  {
+   "t": "Finviz: capex, inventory and the long-term agreement"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

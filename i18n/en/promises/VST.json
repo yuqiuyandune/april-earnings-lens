@@ -1,0 +1,34 @@
+[
+ {
+  "saidLabel": "Feb 2026 (full-year report)",
+  "text": "2026 adjusted EBITDA $6.8–7.6B, FCFbG $3.925–4.725B",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Narrowed to EBITDA of $7.1–7.5B (midpoint up from $7.2B to $7.3B) and FCFbG of $4.3–4.7B. The first three quarters already delivered $5.64B of EBITDA."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Close the Cogentrix acquisition (already approved by FERC)",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Delivered",
+    "note": "Closed in October, adding about 5,500 MW of gas plants, and about $1.7B of assumed debt was repaid."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "2027 adjusted EBITDA $7.7–8.5B, FCFbG $4.3–5.1B; about 98% of 2027 generation hedged",
+  "dueLabel": "2027Q4"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "A new $1.5B buyback authorization, leaving about $2.5B, to be used by end-2028",
+  "dueLabel": "2028Q4"
+ }
+]

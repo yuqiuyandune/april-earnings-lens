@@ -1,0 +1,379 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "after the close, 29 Oct 2026",
+ "asOf": "close of $56.28 on 6 Nov 2026; $92.07 before the report (29 Oct)",
+ "headline": "Data center grew fastest in 15 years, yet the stock fell 29% in a day: a PC slowdown, gross margin back to 38%, and next quarter's profit cut in half",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$16.5B",
+   "exp": "est. $16.48B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $0.40"
+  },
+  {
+   "k": "Data Center and AI",
+   "val": "$7.3B",
+   "exp": "a year ago $4.1B",
+   "pill": "+78% y/y"
+  },
+  {
+   "k": "Q4 EPS guidance",
+   "exp": "consensus $0.44"
+  }
+ ],
+ "points": [
+  {
+   "b": "Two Intels",
+   "t": "Data center rose 78% to $7.3B and foundry 58% to $6.7B; client (PC) fell 5% to $8.1B. Xeon CPUs are sold out while PC chips weaken."
+  },
+  {
+   "b": "A deep guidance cut",
+   "t": "Q4 revenue $15.0–16.0B (midpoint about 9% below consensus), gross margin from 44.1% down to 38.0%, EPS $0.25 against $0.44 expected. The CFO says the PC slowdown lasts at least through 1H 2027."
+  },
+  {
+   "b": "The CEO bought",
+   "t": "After the stock lost 30%, CEO Lip-Bu Tan bought about $9.7M on the open market on 4 Nov, one of the largest individual executive buys on Insider Flow this quarter."
+  }
+ ],
+ "reaction": "Stock: closed at $65.76 the next day (30 Oct), down 28.6%, while SMH fell 7.0%; it kept falling with the AI sector to a $52.25 close on 5 Nov and was $56.28 on 6 Nov. Consensus via Finviz: revenue $16.48B, EPS $0.40; Q4 revenue $17.08B, EPS $0.44.",
+ "results": {
+  "segments": {
+   "title": "Segments",
+   "period": "Q3 2026 y/y, $B",
+   "take": "All the growth came from <b>data center and foundry</b>: Xeon CPUs go into AI servers as the “orchestrator”, and the foundry is adding volume for Intel's own products; PC chips have started to decline.",
+   "bridge": [
+    {
+     "n": "Data Center and AI"
+    },
+    {
+     "n": "Foundry (incl. internal)"
+    },
+    {
+     "n": "Client and Physical AI"
+    },
+    {
+     "n": "Other (Altera deconsolidated)"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Data Center and AI (DCAI)",
+     "share": "about 47%",
+     "val": "$7.3B, +78%",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "The fastest growth in 15 years. AI agents need lots of CPUs for orchestration and tool calls, and cloud companies are scrambling for Xeon; Intel says the bottleneck is supply, not demand. A multiyear deal with Oracle was signed."
+    },
+    {
+     "n": "Intel Foundry",
+     "share": "mostly internal",
+     "val": "$6.7B, +58%",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Most revenue comes from Intel's own product groups; 18A is in production and the 14A PDK 0.9 shipped in October. The real test is whether a big external customer signs for 14A."
+    },
+    {
+     "n": "Client and Physical AI (CCPG)",
+     "share": "about 53%",
+     "val": "$8.1B, −5%",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "q/q"
+      }
+     ],
+     "why": "The PC market is held back by higher memory prices (raising system costs), which the CFO expects to last at least through 1H 2027. Google's first Googlebooks use Core Ultra Series 3."
+    }
+   ],
+   "note": "Segment revenue includes intersegment sales (most foundry revenue comes from Intel Products): $22.1B total less $6.3B of eliminations = $16.5B. Shares are of the $15.4B product total, approximate. DCAI's year-ago $4.1B is backed out from +78%."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Intel's AI role is <b>the CPU next to the GPU, plus US-based fabs</b>. As AI moves from chat to agents, CPU demand is recovering, and Intel is the only US option for leading-edge foundry.",
+    "items": [
+     {
+      "b": "Xeon sold out",
+      "pill": "DCAI +78%",
+      "w": "Every AI rack needs CPUs for orchestration, and agent workloads raise CPU use. Intel's “immediate priority” is unlocking more Xeon supply."
+     },
+     {
+      "b": "Fighting Arm for the same pie",
+      "pill": "share pressure",
+      "w": "Cloud companies' own Arm CPUs (Graviton, Axion, Cobalt) and NVIDIA's Vera are taking server share; Arm says its share at the top hyperscalers will exceed 60%."
+     },
+     {
+      "b": "Foundry as a national project",
+      "pill": "government + NVIDIA + SoftBank stakes",
+      "w": "The US government, NVIDIA and SoftBank all own stakes, and this quarter Intel completed a $23B public offering. It has the money; what it lacks is big external customers."
+     },
+     {
+      "b": "Its own AI accelerator",
+      "pill": "GPU D-series",
+      "w": "Technical details of the inference GPU D-series (formerly Crescent Island) were shown, running Meta's open model; it is not yet at the scale of NVIDIA or AMD."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Intel's future depends on <b>how fast Xeon supply expands and whether foundry signs big external customers</b>. PCs will be a drag for at least half a year.",
+    "items": [
+     {
+      "b": "Volume: Xeon capacity",
+      "pill": "supply is the bottleneck",
+      "w": "Demand exceeds supply; capex and working capital are tilting toward expansion. Next-generation Diamond Rapids Xeon will power Oracle Cloud X14 instances."
+     },
+     {
+      "b": "Price: gross margin",
+      "pill": "44% → 38%",
+      "w": "Q4 gross margin is guided to 38%, 6 points below Q3: lower PC volume, a worse mix and new-node ramp costs. Getting back above 50% needs 18A/14A yields and external foundry revenue."
+     },
+     {
+      "b": "Second engine: external foundry",
+      "pill": "14A",
+      "w": "The 14A PDK is out, with ASML collaboration on High-NA EUV and an advanced-packaging deal with Lens Technology. No external customer list yet."
+     },
+     {
+      "b": "Company targets",
+      "pill": "one quarter at a time",
+      "w": "Only next-quarter guidance. Management's base assumption is a PC slowdown through at least 1H 2027."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "A deeper PC decline; Xeon share lost to Arm and AMD; no external 14A customers; dilution from equity raises (shares up from 4.5B to 5.3B in a year)."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Jumped above $16B from Q2; Q4 guided lower"
+   },
+   {
+    "why": "Up $3.2B in a year, rising q/q for four straight quarters"
+   },
+   {
+    "why": "Q3 is the peak; Q4 guided to half"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 41 times trailing non-GAAP earnings, or about 56 times Q4's $0.25 guide annualized; P/S about 5, still twice the five-year median of 2.6. <b>The price bets on a data-center and foundry recovery</b>, not today's profits.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP loss",
+    "f": "$56.28 ÷ TTM EPS $1.38 ($0.15 + $0.29 + $0.42 + $0.52)"
+   },
+   {
+    "k": "P/E on full-year 2026",
+    "f": "$56.28 ÷ 2026 EPS ≈ $1.48 (Q4 at the $0.25 guide)"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "five-year median 2.6x",
+    "f": "market value ≈ $298.7B ÷ TTM revenue $59.9B"
+   },
+   {
+    "k": "Cash and investments",
+    "v": "$54.0B",
+    "pill": "debt $50.1B",
+    "f": "cash $21.8B + short-term investments $32.2B; short- and long-term debt $3.8B + $46.3B"
+   }
+  ],
+  "forward": {
+   "title": "Full-year 2026 from company guidance",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1–Q3 actual $0.29 + $0.42 + $0.52 = $1.23",
+    "Q4 guidance <b>$0.25</b>",
+    "Full year about <b>$1.48</b> → $56.28 ÷ $1.48 ≈ <b>38x</b>"
+   ],
+   "note": "If 1H 2027 profits stay at the Q4 guide, $0.25 × 4 = $1.00 annualized puts the P/E at about 56x."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 profits",
+   "sub": "from TTM revenue of $59.9B",
+   "head": [
+    "Case",
+    "2028 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$62B",
+      "12%",
+      "$1.23",
+      "46x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$72B",
+      "18%",
+      "$2.15",
+      "26x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$82B",
+      "23%",
+      "$3.13",
+      "18x"
+     ]
+    }
+   ],
+   "note": "Bear: PCs don't recover for two years and foundry lands no big customer, so revenue is roughly flat; base: Xeon supply expands and PCs steady in 2H 2027, about 10% a year; bull: 14A signs a big external customer and data-center share holds. EPS = revenue × non-GAAP operating margin × (1 − 12% tax) ÷ 5.31B shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EPS × our P/E; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "PC and foundry both disappoint, 25x"
+    },
+    {
+     "n": "Base",
+     "how": "Xeon expands, PCs steady, 28x"
+    },
+    {
+     "n": "Bull",
+     "how": "14A wins a big external customer, 32x"
+    }
+   ],
+   "why": "The price is above the zone and near the base case: buying at $56, the base case gains about 7% and the bear case loses about 45%, a reward/risk of about 0.1. At the $50 top of the zone it is about 0.5, at the $45 midpoint about 1.1, and at the $40 low end about 2.2. The multiples are above the chip average because profits are near a trough; if margins return to historical levels the multiple falls on its own."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), last 20 quarter ends",
+   "note": "The stock surged in 1H 2026, pushing P/S as high as 12.5x; after the report it is back to about 5x, still above the five-year median of 2.6x. Shares rose about 17% in a year (offerings and strategic stakes), so the valuation looks more expensive on market value than on the share price. Calculated from SEC XBRL quarterly revenue, diluted shares and Nasdaq quarter-end closes."
+  },
+  "cash": {
+   "title": "Non-GAAP EPS",
+   "sub": "Non-GAAP EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "$5.1B"
+    },
+    {
+     "k": "Adjusted free cash flow this quarter",
+     "v": "$1.64B"
+    },
+    {
+     "k": "Gross capex this quarter",
+     "v": "$4.22B"
+    }
+   ],
+   "note": "Adjusted free cash flow was $1.64B (a year ago $0.9B), counting $0.85B of partner contributions and government incentives. The $23B offering lifted cash and short-term investments to $54.0B, roughly equal to debt. Intel suspended its dividend in 2024 and doesn't buy back stock."
+  },
+  "calc": [
+   "Price $56.28: 6 Nov close (Nasdaq); $92.07 before the report (29 Oct), $65.76 the next day (30 Oct)",
+   "5.307B diluted shares, market value ≈ $298.7B",
+   "TTM non-GAAP EPS $0.15 + $0.29 + $0.42 + $0.52 = $1.38; TTM revenue $13.67 + $13.58 + $16.13 + $16.51B = $59.89B (SEC XBRL)",
+   "Scenario EPS = revenue × operating margin × 88% ÷ 5.31B shares; price = EPS × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around late January 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "PC outlook",
+    "pill": "weaker",
+    "before": "Last quarter: PC demand steady, revenue +13% y/y.",
+    "now": "“The PC slowdown continues at least through the first half of next year”; client revenue −5%."
+   },
+   {
+    "topic": "Data center",
+    "pill": "sold out",
+    "before": "DCAI +59% last quarter.",
+    "now": "+78%, the fastest in 15 years; the immediate priority is unlocking Xeon supply."
+   },
+   {
+    "topic": "Capital structure",
+    "pill": "a big offering",
+    "before": "Cash topped up through strategic stakes and asset sales.",
+    "now": "Completed a $23B public offering; about 5.3B shares now."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "Revenue, gross margin and EPS all above guidance",
+     "Fastest data-center growth in 15 years",
+     "CPU demand “remains robust”; supply is the bottleneck",
+     "14A PDK released; multiyear Oracle deal"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "Who the external 14A customers are, and when they'll be named",
+     "How much of Q4's 6-point margin drop is one-off",
+     "How long the Xeon expansion takes",
+     "Where the offering proceeds go"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue reaches $15.0–16.0B",
+     "Whether gross margin holds at 38%",
+     "Whether DCAI keeps growing q/q",
+     "The 2027 capex plan"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "DCAI down q/q",
+     "Gross margin below 35%",
+     "The PC slowdown extending into 2H 2027",
+     "External foundry customers failing to appear"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "No effective trades in the 30 days before the report (9/29–10/29). After it, CEO Lip-Bu Tan bought about <b>$9.7M</b> on the open market on 4 Nov, outside any trading plan, so it counts as effective; the stock was around $58, about 37% below its pre-report close. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=INTC\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Intel: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Intel: Q2 2026 earnings release (Q3 guidance)"
+  },
+  {
+   "t": "Finviz: consensus, Q4 guidance and the stock reaction"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}

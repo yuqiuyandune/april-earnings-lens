@@ -1,0 +1,40 @@
+[
+ {
+  "saidLabel": "Jul 2026 (Q2 report)",
+  "text": "Q3 core sales $4.9–5.0B, core EPS $0.85–0.89",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Core sales $5.08B and EPS $0.91, both above the top of the range."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Jul 2026 (Q2 report)",
+  "text": "Solar profits start improving from Q3",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Missed",
+    "note": "Solar sales rose 37% but it still lost $7M, the same as last quarter; the company says the ramp is “slower than anticipated”."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Oct 2026 (Q3 report)",
+  "text": "Q4 core sales $5.2–5.3B (about +19%), core EPS $0.96–1.00 (about +36%)",
+  "dueLabel": "2026Q4"
+ },
+ {
+  "saidLabel": "May 2026 (investor day)",
+  "text": "Springboard: annualized sales of $20B by end-2026, $30B by end-2028 and $40B by end-2030",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "The Q4 midpoint of $5.25B × 4 = $21B annualized, so guidance meets the end-2026 target."
+   }
+  ]
+ }
+]

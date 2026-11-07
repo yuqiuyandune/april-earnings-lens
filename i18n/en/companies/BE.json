@@ -1,0 +1,40 @@
+{
+ "n": "Bloom Energy",
+ "config": {
+  "segmentBasis": "A single segment. Revenue from product (solid-oxide fuel-cell “Energy Servers”), installation, service and electricity (selling power from owned sites). Customers are mainly data centers and commercial and industrial users generating power on site from natural gas",
+  "fiscalNote": "Fiscal year matches the calendar year. Full-year guidance only, no quarterly guidance. Non-GAAP excludes stock compensation and more; convertible notes make diluted shares well above basic shares",
+  "kpis": [
+   "Revenue and product revenue growth",
+   "Non-GAAP gross margin",
+   "Non-GAAP operating income",
+   "Operating and free cash flow",
+   "Backlog and capacity"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "data-center power peers (average of GE Vernova and Vertiv)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

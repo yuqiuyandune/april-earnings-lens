@@ -1,0 +1,373 @@
+{
+ "label": "FY27 Q2 (Jul–Sep 2026)",
+ "dateLabel": "after the close, 4 Nov 2026",
+ "asOf": "close of $174.62 on 6 Nov 2026; $191.80 before the report (4 Nov)",
+ "headline": "License revenue up 50% but royalties up only 8%: data center doubled, phones were held back by memory prices, and next quarter's royalties grow only low single digits",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$1.443B",
+   "exp": "est. $1.38B"
+  },
+  {
+   "k": "Non-GAAP EPS",
+   "exp": "est. $0.47"
+  },
+  {
+   "k": "Royalty revenue",
+   "val": "$670M",
+   "exp": "prior guide about +13%",
+   "pill": "+8% y/y"
+  },
+  {
+   "k": "FY27 Q3 revenue guidance",
+   "val": "$1.54B ± 0.05",
+   "exp": "consensus $1.53B",
+   "pill": "midpoint +0.7%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Royalties slowed",
+   "t": "Royalties rose 8%, below last quarter's guide of about 13%, and fell q/q from $715M to $670M. Data-center royalties doubled, but phone chips (over 40% of FY26 royalties) were held back by memory prices. Next quarter is guided to only low-single-digit growth."
+  },
+  {
+   "b": "Licensing carried the quarter",
+   "t": "License and other revenue rose 50% to $773M, mostly on the timing of several large deals. Annualized contract value grew only 12%, so part of it is pulled forward and won't repeat every quarter."
+  },
+  {
+   "b": "More confidence in its own chip",
+   "t": "Arm AGI CPU orders run into 2027, with first deliveries in Jan–Mar 2027; the company is “more confident” in up to $2B of FY27–28 revenue, but none has been recognized yet."
+  }
+ ],
+ "reaction": "Stock: closed at $166.72 the next day (5 Nov), down 13.1%; that day the Nasdaq fell about 4.5% and SMH 11.2% as the AI sector sold off on fears that data-center construction could be halted after the Democratic sweep. The royalty guide added stock-specific pressure. It rebounded to $174.62 on 6 Nov. Consensus via Finviz: revenue $1.38B, EPS $0.47; next quarter $1.53B, $0.55.",
+ "results": {
+  "segments": {
+   "title": "Where the money comes from and goes",
+   "period": "FY27 Q2, $M",
+   "bridgeT": "From revenue to non-GAAP operating profit",
+   "take": "Arm has almost no production cost (98% gross margin); of every $1 of revenue about 56 cents goes to costs, R&D and sales/admin, leaving about 44 cents of operating profit. R&D is the biggest investment.",
+   "bridge": [
+    {
+     "n": "Revenue"
+    },
+    {
+     "n": "Cost of sales"
+    },
+    {
+     "n": "R&D"
+    },
+    {
+     "n": "Sales and admin"
+    }
+   ],
+   "rows": [
+    {
+     "n": "License and other",
+     "val": "$773M, +50%",
+     "pills": [
+      {
+       "k": "y/y"
+      },
+      {
+       "k": "ACV"
+      }
+     ],
+     "why": "Fees customers pay for new architectures (Armv9, compute subsystems CSS). Large-deal timing makes quarters swing: last quarter was only $574M. ACV (signed contracts annualized) grew only 12%, much steadier than revenue."
+    },
+    {
+     "n": "Royalties",
+     "val": "$670M, +8%",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Paid on customer shipments: the rate per chip is rising (v9, CSS), data center doubled and physical AI such as cars grew 50%; but phones were held back by memory prices, and total royalties are guided to low-single-digit growth next quarter."
+    }
+   ],
+   "note": "The company doesn't disclose royalties by end market; “data center doubled” and “physical AI +50%” are from the shareholder letter. Shares are of this quarter's revenue."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Arm sells <b>CPU designs and the instruction set</b>. The cloud companies' own CPUs (AWS Graviton, Google Axion, Microsoft Cobalt) and NVIDIA's Grace/Vera are all Arm-based, so more AI data centers mean more royalties.",
+    "items": [
+     {
+      "b": "Data-center share",
+      "pill": "50% → 60%+",
+      "w": "The company says Arm's share of server CPUs at the top hyperscalers rose from 15% in 2024 to over 50% in 2025, and expects over 60% by end-2026. AWS says Graviton revenue commitments grew more than 20x y/y."
+     },
+     {
+      "b": "Agents make CPUs matter more",
+      "pill": "Vera, AGI CPU",
+      "w": "AI agents call tools and run software, so CPUs do more work than in plain chat. NVIDIA's Vera CPU runs in production at OpenAI and is available on Oracle Cloud."
+     },
+     {
+      "b": "Selling its own chip",
+      "pill": "competing with customers",
+      "w": "Arm AGI CPU is sold directly to cloud companies, competing with licensees that build CPUs on Arm (including Qualcomm and NVIDIA), which could strain licensing relationships over time."
+     },
+     {
+      "b": "Phones are the biggest drag",
+      "pill": "memory prices",
+      "w": "AI data centers are absorbing memory capacity, and higher memory prices are squeezing phone shipments; Qualcomm's handset chip revenue fell 26% in the September quarter. Phone chips were over 40% of Arm's FY26 royalties."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Arm grows by <b>charging more per chip (rates) plus data-center shipments</b>, with a brand-new chip business on top. The real variables are when phones recover and whether the AGI CPU ships on time.",
+    "items": [
+     {
+      "b": "Volume: Arm-based chip shipments",
+      "pill": "10B a quarter",
+      "w": "Partners shipped over 10 billion chips in a quarter for the first time, 1.5 billion more than a year ago. But unit growth is mostly in cheap chips; the money comes from data center and premium phones."
+     },
+     {
+      "b": "Price: royalty rate per chip",
+      "pill": "v9, CSS",
+      "w": "Armv9 and CSS carry higher royalty rates than older architectures. Licensing up 50% is a leading indicator for royalties: new designs reach volume two to three years later."
+     },
+     {
+      "b": "Second engine: AGI CPU",
+      "pill": "up to $2B",
+      "w": "Up to $2B of revenue over FY27–28, with orders into 2027 and Oracle Cloud planning instances in 2027. Its own silicon will carry gross margins far below the 98% of licensing and royalties."
+     },
+     {
+      "b": "Company targets",
+      "pill": "one quarter at a time",
+      "w": "Only next-quarter guidance, with no annual or long-term revenue target. At the IPO it pointed to a long-term operating margin above 50%."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Phone royalties falling further; a licensing dispute with a big customer (Qualcomm); AGI CPU delays or a lack of TSMC capacity; policy slowing data-center construction."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "Five quarters in a row above 20% y/y, with licensing timing moving quarters around"
+   },
+   {
+    "why": "Down q/q for two quarters as the phone drag shows"
+   },
+   {
+    "why": "Big deals make quarters swing"
+   },
+   {
+    "why": "+33% in a year"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "About 87 times trailing non-GAAP earnings and about 78 times FY27 consensus ($2.23), with a P/S of about 34. <b>The price rests on the data-center and AGI CPU future</b>; today's profits explain only a small part.",
+  "tiles": [
+   {
+    "k": "P/E (TTM, non-GAAP)",
+    "pill": "GAAP far higher",
+    "f": "$174.62 ÷ TTM EPS $2.00 ($0.43 + $0.60 + $0.45 + $0.52)"
+   },
+   {
+    "k": "P/E on FY27 consensus",
+    "f": "$174.62 ÷ consensus $2.23 (TIKR)"
+   },
+   {
+    "k": "P/S (TTM)",
+    "pill": "post-IPO median 41x",
+    "f": "market value ≈ $188.4B ÷ TTM revenue $5.46B"
+   },
+   {
+    "k": "Cash",
+    "v": "$3.62B",
+    "pill": "no debt",
+    "f": "cash $3.25B + short-term investments $0.37B"
+   }
+  ],
+  "forward": {
+   "title": "FY27 (Apr 2026–Mar 2027) EPS",
+   "sub": "non-GAAP",
+   "steps": [
+    "Q1–Q2 actual $0.45 + $0.52 = $0.97",
+    "Q3 guidance midpoint <b>$0.56</b>",
+    "Q4 backed out of consensus at about $0.70 → full year about <b>$2.23</b>",
+    "$174.62 ÷ $2.23 ≈ <b>78x</b>"
+   ],
+   "note": "The company gives no Q4 guidance. Consensus has Q4 well above Q3, partly from first AGI CPU deliveries and licensing seasonality."
+  },
+  "scenarios": {
+   "title": "Three scenarios: FY29 (Apr 2028–Mar 2029) profits",
+   "sub": "from TTM revenue of $5.46B",
+   "head": [
+    "Case",
+    "FY29 revenue",
+    "Operating margin",
+    "EPS",
+    "P/E at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$7.0B",
+      "42%",
+      "$2.29",
+      "76x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$9.5B",
+      "44%",
+      "$3.25",
+      "54x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$12.0B",
+      "47%",
+      "$4.39",
+      "40x"
+     ]
+    }
+   ],
+   "note": "Bear: phone royalties don't recover for two years and the AGI CPU ships only a fraction, about 13% a year; base: data-center royalties keep doubling and the AGI CPU adds about $1.5B a year, about 32% a year; bull: royalties and the AGI CPU both beat. EPS = revenue × non-GAAP operating margin × (1 − 16% tax) ÷ 1.08B shares. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "FY29 EPS × our P/E; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "phone drag persists, 45x"
+    },
+    {
+     "n": "Base",
+     "how": "data center + AGI CPU deliver, 55x"
+    },
+    {
+     "n": "Bull",
+     "how": "royalties and chips both beat, 65x"
+    }
+   ],
+   "why": "The price is above the zone and near the base case: buying at $175, the base case gains about 3% and the bear case loses about 41%, a reward/risk of about 0.1. At the $150 top of the zone it is about 0.6, at the $135 midpoint about 1.4, and at the $120 low end about 3.5. Our multiples sit below Arm's roughly 85x three-year average forward P/E: its own chips will pull margins down, so we don't think it should keep a pure-licensing multiple."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), quarter ends; listed in September 2023, so 11 quarter ends from 2024Q1",
+   "note": "About 34x now, below the post-IPO median of about 41x and less than half the 74x of end-June 2026. Quarterly revenue is from each shareholder letter, shares from SEC XBRL, quarter-end closes from Nasdaq."
+  },
+  "cash": {
+   "title": "Non-GAAP EPS",
+   "sub": "Non-GAAP EPS per quarter, $",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "$207M (a year ago $567M)"
+    },
+    {
+     "k": "TTM non-GAAP free cash flow",
+     "v": "$1.096B"
+    },
+    {
+     "k": "Stock compensation (quarter)",
+     "v": "$376M"
+    }
+   ],
+   "note": "Operating cash flow was only $207M, mainly because contract assets rose $203M (license fees recognized but not yet billed) and other liabilities fell. Stock compensation of $376M, 26% of revenue, is the main reason GAAP profit is far below non-GAAP. Arm pays no dividend and buys back no stock; cash goes mainly to chip-business capacity and acquisitions."
+  },
+  "calc": [
+   "Price $174.62: 6 Nov close (Nasdaq); $191.80 before the report (4 Nov), $166.72 the next day (5 Nov)",
+   "1.079B diluted shares, market value ≈ $188.4B; cash and short-term investments $3.62B, no debt, EV ≈ $184.8B",
+   "TTM non-GAAP EPS $0.43 + $0.60 + $0.45 + $0.52 = $2.00; TTM revenue $1.242 + $1.490 + $1.289 + $1.443B = $5.464B",
+   "Scenario EPS = revenue × operating margin × 84% ÷ 1.08B shares; price = EPS × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next shareholder letter around early February 2027."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Royalty outlook",
+    "pill": "clearly cooler",
+    "before": "Last quarter: royalties about +13% y/y.",
+    "now": "Actual +8% this quarter; next quarter guided to only low single digits, blamed on memory prices squeezing phones."
+   },
+   {
+    "topic": "Own chip",
+    "pill": "more confident",
+    "before": "Up to $2B of AGI CPU revenue over FY27–28, with supply the main risk.",
+    "now": "“Confidence increased over the last 90 days”: more supply, a better customer mix, orders into 2027."
+   },
+   {
+    "topic": "Disclosure",
+    "pill": "two metrics dropped",
+    "before": "Disclosed remaining performance obligations (RPO) and the number of active licenses.",
+    "now": "No longer disclosed from FY27 Q1, because the chip business makes them “less relevant”."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (letter)",
+    "items": [
+     "Five straight quarters above 20% y/y growth",
+     "Data-center royalties doubled; Arm's hyperscaler share heading above 60%",
+     "Licensing +50% is a leading indicator for royalties",
+     "AGI CPU orders into 2027; Oracle Cloud launches in 2027"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "When phone royalties recover",
+     "What gross margin the AGI CPU carries",
+     "Whether its own chip pushes licensees toward RISC-V",
+     "How to judge licensing visibility without RPO"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether revenue reaches $1.54B ± 0.05",
+     "Whether royalties turn negative y/y",
+     "Whether first AGI CPU deliveries are on time",
+     "Opex about $825M"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "Royalties turning negative y/y and staying there",
+     "AGI CPU slipping to FY28",
+     "Data-center royalty growth slowing sharply",
+     "A licensing dispute with a big customer escalating"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Insider trades",
+  "text": "Arm is a foreign private issuer, so its directors and officers <b>don't file Form 4</b> and Insider Flow has no insider trades for it. Controlling shareholder SoftBank owns about 90%; any SoftBank buying or selling would show up in 13D/13G filings or UK RNS announcements."
+ },
+ "sources": [
+  {
+   "t": "Arm: FY27 Q2 shareholder letter (SEC 6-K, exhibit 99.2)"
+  },
+  {
+   "t": "Arm: FY27 Q1 shareholder letter (Q2 guidance)"
+  },
+  {
+   "t": "Finviz: Q2 consensus and Q3 guidance comparison"
+  },
+  {
+   "t": "TIKR: royalty guide cut to low single digits"
+  },
+  {
+   "t": "ITV/AP: the 5 Nov AI sell-off"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "n": "Coherent",
+ "config": {
+  "segmentBasis": "Two segments: Datacenter & Communications (optical transceivers, laser chips, optical amplifiers, optical circuit switches and more) and Industrial (lasers, materials, instruments). Aerospace & defense was sold in 2025, so the company quotes “pro forma” growth excluding it",
+  "fiscalNote": "Fiscal year ends 30 June; FY27 Q1 = Jul–Sep 2026, keyed here by calendar quarter as 2026Q3. Formerly II-VI, renamed after buying Coherent in 2022. Non-GAAP excludes stock compensation, acquisition amortization, integration and restructuring costs",
+  "kpis": [
+   "Datacenter & Communications revenue",
+   "Non-GAAP gross margin (target above 45%)",
+   "Capex and free cash flow",
+   "Inventory",
+   "6-inch indium phosphide capacity and yields"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from"
+  ],
+  "peer": {
+   "n": "optical peers (average of Fabrinet and Ciena)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "dc": {
+    "t": "Datacenter & Communications revenue"
+   },
+   "ind": {
+    "t": "Industrial revenue"
+   },
+   "eps": {
+    "t": "Non-GAAP EPS"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

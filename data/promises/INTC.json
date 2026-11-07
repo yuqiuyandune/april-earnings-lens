@@ -1,0 +1,48 @@
+[
+ {
+  "id": "intc-q3rev",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（Q2 财报）",
+  "text": "Q3 营收 $158–168 亿",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "已兑现",
+    "tone": "good",
+    "note": "实际 $165 亿，在区间上半部分，同比 +21%。"
+   }
+  ]
+ },
+ {
+  "id": "intc-q3eps",
+  "made": "2026Q2",
+  "saidLabel": "2026 年 7 月（Q2 财报）",
+  "text": "Q3 Non-GAAP 毛利率 42.0%、EPS $0.38",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "q": "2026Q3",
+    "status": "比承诺好",
+    "tone": "good",
+    "note": "毛利率 44.1%（高 2.1 点），EPS $0.52（高 37%）。"
+   }
+  ]
+ },
+ {
+  "id": "intc-q4",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 10 月（Q3 财报）",
+  "text": "Q4 营收 $150–160 亿，Non-GAAP 毛利率 38.0%，EPS $0.25",
+  "dueLabel": "2026Q4",
+  "checks": []
+ },
+ {
+  "id": "intc-pc",
+  "made": "2026Q3",
+  "saidLabel": "2026 年 10 月（Q3 财报）",
+  "text": "PC 市场放缓至少持续到 2027 年上半年；优先扩大至强（Xeon）CPU 的供应",
+  "dueLabel": "2027Q2",
+  "checks": []
+ }
+]

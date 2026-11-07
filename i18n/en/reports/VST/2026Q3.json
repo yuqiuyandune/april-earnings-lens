@@ -1,0 +1,374 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "before the open, 6 Nov 2026",
+ "asOf": "close of $124.80 on 6 Nov 2026; $112.89 before the report (5 Nov)",
+ "headline": "EBITDA up 50% in a year and 2027 guidance another 10% higher, yet the stock is a quarter below July: after the election, the market fears limits on data-center power",
+ "verdicts": [
+  {
+   "k": "Adjusted EBITDA",
+   "val": "$2.378B",
+   "exp": "a year ago $1.581B",
+   "pill": "+50% y/y"
+  },
+  {
+   "k": "2026 EBITDA guidance",
+   "val": "$7.1–7.5B",
+   "exp": "was $6.8–7.6B",
+   "pill": "midpoint +$0.1B"
+  },
+  {
+   "k": "2027 EBITDA guidance",
+   "val": "$7.7–8.5B",
+   "exp": "2026 midpoint $7.3B",
+   "pill": "midpoint +11%"
+  },
+  {
+   "k": "2027 FCFbG guidance",
+   "val": "$4.3–5.1B",
+   "exp": "market value at the price $42.3B",
+   "pill": "yield about 11%"
+  }
+ ],
+ "points": [
+  {
+   "b": "A hot summer plus acquisitions",
+   "t": "ERCOT and PJM both set peak-demand records in July, lifting realized energy and capacity prices; the acquired Lotus plants contributed a full quarter and Martin Lake Unit 1 returned to service. Texas EBITDA rose 57% and East 36%."
+  },
+  {
+   "b": "2027 is largely locked in",
+   "t": "About 98% of 2027 generation is hedged, so the $7.7–8.5B guide is little affected by power-price swings. Cogentrix joined in October; earlier reports said the Meta power agreement could add about $0.7B once closed, which isn't in guidance yet."
+  },
+  {
+   "b": "Bigger buybacks",
+   "t": "A new $1.5B authorization leaves about $2.5B through end-2028. Since 2021 it has bought back about $6.7B, cutting the share count by about 30%."
+  }
+ ],
+ "reaction": "Stock: closed at $124.80 on report day (6 Nov), up 10.6%, while peers (average of Constellation and Talen) rose about 5.7%, a lead of about 5 points. Earlier, on 4 Nov (after the midterm results) it fell 13.8% in a day on fears that a Democratic Congress would limit data-center power use and prices. We found no reliable quarterly EBITDA consensus, so this page compares against company guidance.",
+ "results": {
+  "segments": {
+   "title": "Segments",
+   "period": "Q3 2026 y/y, $M",
+   "take": "Growth came mainly from <b>the Texas and East plants</b>: higher energy and capacity prices and acquired plants. Retail is seasonally weak in summer.",
+   "bridge": [
+    {
+     "n": "Texas"
+    },
+    {
+     "n": "East"
+    },
+    {
+     "n": "Retail"
+    },
+    {
+     "n": "West and other"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Texas (ERCOT)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "ERCOT demand hit a record in July, raising realized prices; Martin Lake Unit 1 (coal) returned to service. The Comanche Peak nuclear plant is in Texas."
+    },
+    {
+     "n": "East (PJM and others)",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "PJM capacity prices rose sharply and the acquired Lotus gas plants contributed a full quarter. PJM is the US grid with the most data centers (Northern Virginia)."
+    },
+    {
+     "n": "Retail",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Retail earns least in summer (when wholesale power costs most); its profit comes mainly in winter and spring."
+    }
+   ],
+   "note": "Shares are of the five-segment total before corporate and asset-closure items (about $2.38B), approximate."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "Vistra is <b>one of the largest US independent power producers</b>, with nuclear, gas and coal. AI data centers need round-the-clock power, which is what Vistra sells.",
+    "items": [
+     {
+      "b": "Long-term power deals",
+      "pill": "AWS, Meta, Microsoft",
+      "w": "It already has long-term nuclear power deals with AWS and Meta; this quarter the 405 MW Pulaski solar plant started up under a Microsoft agreement, and the Odessa gas plant signed a 20-year, 207 MW deal with New Era."
+     },
+     {
+      "b": "Capacity prices",
+      "pill": "PJM",
+      "w": "Data centers have pushed PJM capacity auction prices sharply higher, directly lifting East plant revenue."
+     },
+     {
+      "b": "Policy risk",
+      "pill": "after the election",
+      "w": "With Democrats controlling Congress, the market fears federal or state limits on data-center hookups or caps on energy and capacity prices. PJM has already put a cap and floor on its capacity auctions."
+     },
+     {
+      "b": "Its own compute platform",
+      "pill": "Helix",
+      "w": "With KKR, NVIDIA and others it formed Helix Digital Infrastructure, committing up to $1B to turn land and power next to its plants into data-center campuses."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Vistra grows on <b>higher energy and capacity prices, acquired plants and long-term data-center deals</b>, while spending heavily on buybacks. The real variable is whether policy pushes prices down.",
+    "items": [
+     {
+      "b": "Volume: capacity",
+      "pill": "+5,500 MW",
+      "w": "Cogentrix's gas plants joined in October, mostly outside Texas; with the Lotus plants, its gas fleet is much larger."
+     },
+     {
+      "b": "Price: hedged",
+      "pill": "98% of 2027",
+      "w": "About 100% of 2026, 98% of 2027 and 78% of 2028 is hedged. Near-term price swings matter little; market prices matter more from 2028."
+     },
+     {
+      "b": "Cash returns",
+      "pill": "$2.5B of buybacks",
+      "w": "The 2027 FCFbG midpoint of $4.7B is about 11% of today's market value; buybacks and dividends are the main uses."
+     },
+     {
+      "b": "Company targets",
+      "pill": "2027 EBITDA $8.1B",
+      "w": "The 2027 midpoint is about 11% above 2026 and excludes the Meta agreement's contribution once closed."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "PJM capacity caps or federal price limits; a pause in data-center construction; lower Texas power prices (forwards have been soft); a gas-price spike squeezing margins."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "A record in the summer peak quarter, +50% in a year"
+   },
+   {
+    "why": "Highest in summer; strongly seasonal"
+   },
+   {
+    "why": "Lifted by capacity prices and acquisitions"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "On the 2027 FCFbG midpoint, the market value is only about 9 times free cash flow (an 11% yield), and EV/EBITDA about 7.3x (2027). <b>The low price reflects policy risk, not results</b>: hedged profits are being discounted.",
+  "tiles": [
+   {
+    "k": "EV / EBITDA (2026 guidance midpoint)",
+    "f": "EV ≈ $59.2B ÷ $7.3B"
+   },
+   {
+    "k": "EV / EBITDA (2027 guidance midpoint)",
+    "f": "EV ≈ $59.2B ÷ $8.1B"
+   },
+   {
+    "k": "Market value / 2027 FCFbG",
+    "pill": "11% yield",
+    "f": "market value ≈ $42.3B ÷ $4.7B midpoint"
+   },
+   {
+    "k": "Net debt",
+    "v": "about $16.9B",
+    "f": "long-term debt about $19.6B (end-June, SEC XBRL) − cash $2.74B (end-September)"
+   }
+  ],
+  "forward": {
+   "title": "Free cash flow per share (2027)",
+   "sub": "on FCFbG guidance",
+   "steps": [
+    "2027 FCFbG midpoint <b>$4.7B</b>",
+    "About 330M shares after buybacks → about <b>$14.2</b> a share",
+    "$124.80 ÷ $14.2 ≈ <b>8.8x</b>"
+   ],
+   "note": "FCFbG is free cash flow “before growth”: it deducts maintenance capex and interest but not new plants or acquisitions."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2027 free cash flow per share",
+   "sub": "FCFbG ÷ shares × our multiple",
+   "head": [
+    "Case",
+    "2027 FCFbG",
+    "Shares",
+    "Per share",
+    "Multiple at price"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$3.8B",
+      "335M",
+      "$11.3",
+      "11.0x"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$4.7B",
+      "330M",
+      "$14.2",
+      "8.8x"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$5.4B",
+      "325M",
+      "$16.6",
+      "7.5x"
+     ]
+    }
+   ],
+   "note": "Bear: policy pushes capacity prices down and Texas power prices fall, below the guidance range; base: guidance midpoint; bull: new agreements such as Meta close, above the top of the range. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2027 FCFbG per share × our multiple; price at the 6 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "policy price cuts, 9x"
+    },
+    {
+     "n": "Base",
+     "how": "guidance midpoint, 11x"
+    },
+    {
+     "n": "Bull",
+     "how": "new deals close, 13x"
+    }
+   ],
+   "why": "The price is inside the zone: buying at $125, the base case gains about 26% and the bear case loses about 18%, a reward/risk of about 1.4. At the $130 top of the zone it is about 1.0, at the $118 midpoint about 2.5, and the $105 low end is close to the bear price. Eleven times free cash flow is still below what the market paid in 2025; the risk is policy, not the hedged profits."
+  },
+  "history": {
+   "title": "Against its own past",
+   "sub": "P/S (TTM revenue, diluted shares), last 20 quarter ends",
+   "note": "A power producer's revenue swings with prices, so P/S is only a rough guide: below 1x before 2023, 2–4x after the AI-power theme took off in 2024, and about 2.1x now, near the five-year median. Calculated from SEC XBRL quarterly revenue, diluted shares and Nasdaq quarter-end closes (Q3 revenue from the release)."
+  },
+  "cash": {
+   "title": "Adjusted EBITDA",
+   "sub": "adjusted EBITDA per quarter, $M",
+   "stats": [
+    {
+     "k": "Available liquidity (end-September)",
+     "v": "$8.9B"
+    },
+    {
+     "k": "Buybacks, first three quarters",
+     "v": "$917M"
+    },
+    {
+     "k": "Common dividends, first three quarters",
+     "v": "$231M"
+    }
+   ],
+   "note": "After the Cogentrix acquisition, liquidity fell to about $5.4B pro forma. In the first three quarters it spent $917M on buybacks, $231M on common dividends and $117M on preferred dividends.",
+   "ret": {
+    "auth": "about $2.5B",
+    "note": "After the new $1.5B authorization, about $2.5B remains, to be used by end-2028, about 6% of market value at today's price. Buybacks have always been Vistra's main cash return, with dividends a small share; the share count is down about 30% since 2021."
+   }
+  },
+  "calc": [
+   "Price $124.80: 6 Nov close (Nasdaq); $112.89 before the report (5 Nov)",
+   "About 339M shares (2 Nov), market value ≈ $42.3B; long-term debt about $19.6B (end-June), cash $2.74B (end-September), EV ≈ $59.2B",
+   "Quarterly EBITDA: Q4 2025 = full-year $5.912B − first three quarters $4.170B = $1.742B; Q1 2026 = first half $3.261B − Q2 $1.767B = $1.494B",
+   "FCFbG per share = FCFbG ÷ shares; price = per-share × multiple, rounded",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around late February 2027, with full-year 2026 results."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "2026 guidance",
+    "pill": "narrowed higher",
+    "before": "EBITDA $6.8–7.6B, earlier steered to the lower half (weaker Texas forwards).",
+    "now": "$7.1–7.5B, midpoint $7.3B."
+   },
+   {
+    "topic": "2027 outlook",
+    "pill": "first formal range",
+    "before": "Only a 2027 midpoint opportunity of about $7.4–7.8B.",
+    "now": "Formal guidance of $7.7–8.5B, 98% hedged."
+   },
+   {
+    "topic": "Buybacks",
+    "pill": "stepped up",
+    "before": "About $1B of authorization left.",
+    "now": "A new $1.5B, leaving about $2.5B through end-2028."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release)",
+    "items": [
+     "EBITDA up more than 50% y/y",
+     "Fleet availability near 95% through record summer heat",
+     "Cogentrix closed, adding about 5,500 MW",
+     "Pulaski and Deer Creek online; a 20-year Odessa deal"
+    ]
+   },
+   {
+    "h": "Questions still open",
+    "items": [
+     "When the Meta power agreement closes and what it adds",
+     "What happens to Moss Landing after the impairment",
+     "How long-term deals hold up if policy limits data centers",
+     "Hedging and price assumptions beyond 2028"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether 2026 EBITDA lands in $7.1–7.5B",
+     "The pace of buybacks",
+     "New data-center power agreements",
+     "Rules for PJM's next capacity auction"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "A cut to 2027 guidance",
+     "A PJM or federal capacity price cap",
+     "A big customer delaying or cancelling a power deal",
+     "Leverage rising markedly"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "There were two executive sales in the 30 days before the report (10/7–11/6): retail president Scott Hudson sold about $3.56M on 7 Oct and CFO Kristopher Moldovan about $3.30M on 8 Oct, both under preset 10b5-1 plans, so neither counts as effective. No effective buys. The 30 days after the report update daily with Insider Flow; see the <a href=\"/insider/#t=VST\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "Vistra: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "Vistra: Q2 2026 earnings release"
+  },
+  {
+   "t": "Earnings Whispers: earnings preview (Meta deal and the 2027 opportunity)"
+  },
+  {
+   "t": "SEC EDGAR: historical financial data (XBRL)"
+  }
+ ]
+}
