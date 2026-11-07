@@ -275,7 +275,11 @@
      "v": "$220M"
     }
    ],
-   "note": "Interest payments were $149M this quarter, against $36M a year ago. 2027 guidance has $585–615M of interest payments, up from $460–480M in 2026. On 1 Oct the $1.3B from the capacity monetization plus cash funded the first ASR delivery."
+   "note": "Interest payments were $149M this quarter, against $36M a year ago. 2027 guidance has $585–615M of interest payments, up from $460–480M in 2026. On 1 Oct the $1.3B from the capacity monetization plus cash funded the first ASR delivery.",
+   "ret": {
+    "auth": "$1.5B",
+    "note": "Talen pays no dividend; all cash returns are buybacks. In September the board raised the authorization to $3.0 billion (through 2028) and started a $1.5 billion accelerated buyback (ASR), receiving about 3.81 million shares on October 1. The payment falls in Q4, so the Q3 cash-flow statement does not show it yet; about $1.5 billion of capacity remains."
+   }
   },
   "calc": [
    "Price $332.99: 2 Nov close; about $342.50 before the open (Investing.com)",

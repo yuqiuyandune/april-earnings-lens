@@ -11,7 +11,7 @@
     : /^\/(insider|en|zh|tw|s|subscribed)(\/|\.|$)/.test(path) ? "ins" : "chain";
 
   var L = {
-    en: { ov: "Overview", ovS: "About", chainS: "Chain", insS: "Insiders", earnS: "Earnings", chain: "Supply Chains", ins: "Insider Flow", earn: "Earnings Lens", mkt: "Market Watch", mktS: "Markets", sub: "Subscribe",
+    en: { ov: "Overview", ovS: "About", chainS: "Chains", insS: "Insiders", earnS: "Earnings", chain: "Supply Chains", ins: "Insider Flow", earn: "Earnings Lens", mkt: "Market Watch", mktS: "Markets", sub: "Subscribe",
       st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights: sectors, cluster buys, the largest purchases and planned sales.",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close", nav: "April’s" },
     zh: { ov: "概览", ovS: "概览", chainS: "产业链", insS: "内部人", earnS: "财报", chain: "产业链", ins: "内部人动向", earn: "财报解读", mkt: "市场观察", mktS: "市场", sub: "订阅",
@@ -54,6 +54,9 @@
     "#aps svg{flex:none;display:block;width:16px!important;height:16px!important;max-width:none}" +
     "#aps button.aps-sub{margin-left:auto}" +
     "#aps .aps-ts{display:none}" +
+    /* mid widths: short labels so five buttons + Subscribe fit (English full labels need ~1180px) */
+    "@media (max-width:1240px){#aps .aps-b{display:none}#aps .aps-t{display:none}#aps .aps-ts{display:inline}}" +
+    "@media (max-width:820px){#aps a svg{display:none}#aps a{padding:0 10px}#aps button.aps-sub{width:36px;padding:0;justify-content:center}#aps .aps-subt{display:none}}" +
     "@media (max-width:640px){#aps .aps-b{display:none}#aps .aps-seg{flex:1}#aps a{flex:1;justify-content:center;padding:0 6px;font-size:13.5px}#aps a svg{display:none}#aps .aps-t{display:none}#aps .aps-ts{display:inline}" +
     "#aps button.aps-sub{width:36px;padding:0;justify-content:center;margin-left:0}#aps .aps-subt{display:none}}" +
     "@media (max-width:380px){#aps .aps-in{gap:6px}#aps .aps-seg{gap:4px}#aps a{font-size:12.5px;padding:0 3px}}" +

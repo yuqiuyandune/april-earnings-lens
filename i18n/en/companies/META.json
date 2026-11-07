@@ -59,6 +59,15 @@
    },
    "seg_rl": {
     "t": "Reality Labs operating loss"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
    }
   }
  }

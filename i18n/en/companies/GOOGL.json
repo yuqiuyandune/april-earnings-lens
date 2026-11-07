@@ -50,6 +50,15 @@
    },
    "yt": {
     "t": "YouTube ads"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
    }
   }
  }

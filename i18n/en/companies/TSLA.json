@@ -49,6 +49,12 @@
    },
    "sbc": {
     "t": "Stock-based compensation"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
    }
   }
  }

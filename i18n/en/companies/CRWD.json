@@ -45,6 +45,12 @@
    },
    "eps": {
     "t": "EPS (non-GAAP, split-adjusted)"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
    }
   }
  }

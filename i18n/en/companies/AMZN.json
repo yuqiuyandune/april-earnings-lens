@@ -46,6 +46,12 @@
    },
    "fcf": {
     "t": "Free cash flow"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
    }
   }
  }

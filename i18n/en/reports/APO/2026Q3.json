@@ -285,7 +285,11 @@
      "v": "624M"
     }
    ],
-   "note": "For Apollo, “cash generation” means ANI and capital returns rather than free cash flow (an insurer's cash flow statement doesn't show distributable earnings). ANI over the past 12 months was about $5.36B; about half went to buybacks and dividends, the rest to strategic investments ($748M) and supporting Athene's growth."
+   "note": "For Apollo, “cash generation” means ANI and capital returns rather than free cash flow (an insurer's cash flow statement doesn't show distributable earnings). ANI over the past 12 months was about $5.36B; about half went to buybacks and dividends, the rest to strategic investments ($748M) and supporting Athene's growth.",
+   "ret": {
+    "auth": "$2.89B",
+    "note": "The quarterly dividend rose from $0.51 to $0.5625 a share (+10%). A new $4.0 billion buyback authorization was approved in February; part of the buying offsets dilution from equity awards, and about $2.89 billion remained at quarter end. An asset manager's operating cash flow mixes in insurance (Athene) flows, so the share of free cash flow is not shown."
+   }
   },
   "calc": [
    "Price $119.46: 2 Nov close; about $114.49 before the open (Investing.com)",

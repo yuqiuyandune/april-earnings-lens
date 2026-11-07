@@ -7,3 +7,4 @@ Source for https://april-insider-flow.com/earnings/
 - `switcher.js` — product switcher bar shared with Insider Flow
 - `data/` — `index.json`, `companies/`, `reports/<TICKER>/<YYYYQn>.json`, `promises/`
 - `build.py` — builds `dist/` (Cloudflare Pages build command: `python3 build.py`, output: `dist`)
+- `scripts/capital_return.py` — buybacks, dividends and dividend per share per quarter from SEC XBRL into `data/companies/*.json` (`bb`, `dv`, `dps`, and `fcfx` when there is no hand-entered free-cash-flow series). Run it after adding a quarter; hand-entered extras go in a report's `valuation.cash.ret` (`auth`: buyback authorization left, `note`: one-line reading)

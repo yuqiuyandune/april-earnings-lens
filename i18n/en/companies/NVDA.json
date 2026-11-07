@@ -45,6 +45,15 @@
    },
    "edge": {
     "t": "Edge computing revenue"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
    }
   }
  }

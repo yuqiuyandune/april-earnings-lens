@@ -306,7 +306,10 @@
      "v": "about $0.8B"
     }
    ],
-   "note": "Operating cash flow of $1.31B and free cash flow of $1.03B this quarter, below the roughly $1.2B a year ago: expansion capex, and receivables and inventory growing with revenue. Eaton's cash flow is strongly seasonal, usually highest in Q4."
+   "note": "Operating cash flow of $1.31B and free cash flow of $1.03B this quarter, below the roughly $1.2B a year ago: expansion capex, and receivables and inventory growing with revenue. Eaton's cash flow is strongly seasonal, usually highest in Q4.",
+   "ret": {
+    "note": "Buybacks are paused in 2026: the company says it does not plan to repurchase shares this year after closing the Boyd Thermal acquisition in March. Dividends continue, with the quarterly dividend raised from $1.04 to $1.10 a share (about +6%)."
+   }
   },
   "calc": [
    "Price $366.07: 2 Nov close (Investing.com); about $392 intraday on 3 Nov",

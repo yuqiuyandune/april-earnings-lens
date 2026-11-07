@@ -34,6 +34,18 @@
    },
    "rnd": {
     "t": "R&D expense"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "dps": {
+    "t": "Dividend per share declared"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
    }
   }
  }

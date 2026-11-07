@@ -48,6 +48,12 @@
    },
    "emea": {
     "t": "EMEA revenue"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
    }
   }
  }

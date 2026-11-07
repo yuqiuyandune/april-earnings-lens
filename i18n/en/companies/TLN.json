@@ -31,6 +31,15 @@
    },
    "twh": {
     "t": "Generation"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
    }
   }
  }
