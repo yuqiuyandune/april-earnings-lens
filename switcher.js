@@ -1,4 +1,4 @@
-/* April's product switcher — shared by April's Stock Atlas: Overview (/overview/), the AI supply-chain home (/), Insider Flow (/insider/), Earnings Lens (/earnings/) and Market watch (/market/, with its articles under /articles/).
+/* April's product switcher — shared by April's Stock Atlas: Overview (/overview/), the supply-chain pages (AI at /, energy at /energy/ — both under the Supply Chains button), Insider Flow (/insider/), Earnings Lens (/earnings/) and Market watch (/market/, with its articles under /articles/).
    Loaded as a blocking <script> at the start of <body>; inserts the bar right after itself so it paints with the page.
    Design: a dark full-width band (clearly separate from any site's own header) with a five-button segmented control and a
    Subscribe button; the current product is a solid light button, the others are outlined, clearly clickable buttons.
@@ -11,13 +11,13 @@
     : /^\/(insider|en|zh|tw|s|subscribed)(\/|\.|$)/.test(path) ? "ins" : "chain";
 
   var L = {
-    en: { ov: "Overview", ovS: "About", chainS: "Chain", insS: "Insiders", earnS: "Earnings", chain: "Supply Chain", ins: "Insider Flow", earn: "Earnings Lens", mkt: "Market Watch", mktS: "Markets", sub: "Subscribe",
+    en: { ov: "Overview", ovS: "About", chainS: "Chain", insS: "Insiders", earnS: "Earnings", chain: "Supply Chains", ins: "Insider Flow", earn: "Earnings Lens", mkt: "Market Watch", mktS: "Markets", sub: "Subscribe",
       st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights: sectors, cluster buys, the largest purchases and planned sales.",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close", nav: "April’s" },
-    zh: { ov: "概览", ovS: "概览", chainS: "产业链", insS: "内部人", earnS: "财报", chain: "AI 产业链", ins: "内部人动向", earn: "财报解读", mkt: "市场观察", mktS: "市场", sub: "订阅",
+    zh: { ov: "概览", ovS: "概览", chainS: "产业链", insS: "内部人", earnS: "财报", chain: "产业链", ins: "内部人动向", earn: "财报解读", mkt: "市场观察", mktS: "市场", sub: "订阅",
       st: "每周邮件", sd: "每个周末一封，汇总一周的内部人买卖要点：板块、集群买入、最大的买入和拟出售。",
       sp: "你的邮箱", sb: "订阅", sf: "免费，随时可以退订。中文在前，英文在后。", sc: "关闭", nav: "April’s" },
-    tw: { ov: "概覽", ovS: "概覽", chainS: "產業鏈", insS: "內部人", earnS: "財報", chain: "AI 產業鏈", ins: "內部人動向", earn: "財報解讀", mkt: "市場觀察", mktS: "市場", sub: "訂閱",
+    tw: { ov: "概覽", ovS: "概覽", chainS: "產業鏈", insS: "內部人", earnS: "財報", chain: "產業鏈", ins: "內部人動向", earn: "財報解讀", mkt: "市場觀察", mktS: "市場", sub: "訂閱",
       st: "每週郵件", sd: "每個週末一封，彙總一週的內部人買賣要點：板塊、集群買入、最大的買入和擬出售。",
       sp: "你的郵箱", sb: "訂閱", sf: "免費，隨時可以退訂。中文在前，英文在後。", sc: "關閉", nav: "April’s" }
   };
