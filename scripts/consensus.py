@@ -39,7 +39,7 @@ def call(fn, sym, key):
 
 def num(x, f=float):
     try:
-        return f(x) if x not in (None, "", "None", "-") else None
+        return f(float(x)) if x not in (None, "", "None", "-") else None
     except (TypeError, ValueError):
         return None
 
@@ -51,7 +51,7 @@ def parse_est(j):
         h = (r.get("horizon") or "").lower()
         if "year" not in h:
             continue
-        out.append({"h": "fy" if "current" in h else ("ny" if "next" in h else h), "end": r.get("date"),
+        out.append({"end": r.get("date"),
                     "eps": num(r.get("eps_estimate_average")),
                     "e7": num(r.get("eps_estimate_average_7_days_ago")), "e30": num(r.get("eps_estimate_average_30_days_ago")),
                     "e60": num(r.get("eps_estimate_average_60_days_ago")), "e90": num(r.get("eps_estimate_average_90_days_ago")),
@@ -61,7 +61,10 @@ def parse_est(j):
                     "dn30": num(r.get("eps_estimate_revision_down_trailing_30_days"), int),
                     "n": num(r.get("eps_estimate_analyst_count"), int), "rev": num(r.get("revenue_estimate_average"))})
     out.sort(key=lambda r: r["end"] or "")
-    return out[:2]
+    out = out[:2]  # the two nearest fiscal years: this year and next
+    for r, h in zip(out, ("fy", "ny")):
+        r["h"] = h
+    return out
 
 
 def parse_ov(j):
