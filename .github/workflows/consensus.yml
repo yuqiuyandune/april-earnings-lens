@@ -1,7 +1,7 @@
 name: Analyst consensus
 
 # Weekdays before the US open (13:17 UTC = 05:17 PST / 06:17 PDT). The free Alpha Vantage key
-# allows about 25 calls a day, so each run refreshes the 12 companies with the oldest data.
+# allows about 25 calls a day, so each run refreshes the companies with the oldest data.
 on:
   schedule:
     - cron: "17 13 * * 1-5"

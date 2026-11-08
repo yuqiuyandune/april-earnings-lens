@@ -2,7 +2,8 @@
 
 Source: Alpha Vantage (EARNINGS_ESTIMATES + OVERVIEW). Needs the repo secret ALPHAVANTAGE_KEY.
 The free key allows about 25 calls a day, so each run refreshes the companies with the oldest data
-(two calls per company) and keeps the rest from earlier runs.
+and keeps the rest from earlier runs. OVERVIEW (target price, ratings) is premium on the free key:
+the script notices and goes on with estimates only.
 
 Writes data/consensus.json:
   {"updated": ISO time, "src": "Alpha Vantage",
@@ -27,12 +28,18 @@ class Limit(Exception):
     pass
 
 
+class Premium(Exception):
+    pass
+
+
 def call(fn, sym, key):
     q = urllib.parse.urlencode({"function": fn, "symbol": sym, "apikey": key})
     with urllib.request.urlopen(urllib.request.Request(f"{API}?{q}", headers=UA), timeout=40) as r:
         j = json.loads(r.read().decode())
     for k in ("Information", "Note", "Error Message"):
         if k in j:
+            if "premium endpoint" in j[k]:
+                raise Premium(fn)
             raise Limit(f"{fn} {sym}: {j[k][:160]}")
     return j
 
@@ -85,7 +92,7 @@ def tickers():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--max", type=int, default=12, help="companies per run (two calls each)")
+    ap.add_argument("--max", type=int, default=22, help="companies per run")
     ap.add_argument("--only", default="", help="comma-separated tickers to refresh first")
     ap.add_argument("--probe", action="store_true", help="print the raw answers for IBM with the public demo key")
     a = ap.parse_args()
@@ -116,10 +123,21 @@ def main():
     order = first + sorted((t for t in tickers() if t not in first), key=lambda t: have.get(t, {}).get("on", ""))
     today = dt.date.today().isoformat()
     done = 0
-    for t in order[: a.max]:
+    ov_ok = os.environ.get("AV_OVERVIEW", "1") == "1"  # target price and ratings; premium on some keys
+    budget = 24
+    for t in order:
+        if done >= a.max or budget < (2 if ov_ok else 1):
+            break
         try:
-            est = parse_est(call("EARNINGS_ESTIMATES", t, key)); time.sleep(PAUSE)
-            tgt, rt = parse_ov(call("OVERVIEW", t, key)); time.sleep(PAUSE)
+            est = parse_est(call("EARNINGS_ESTIMATES", t, key)); budget -= 1; time.sleep(PAUSE)
+            tgt, rt = have.get(t, {}).get("tgt"), have.get(t, {}).get("rt")
+            if ov_ok:
+                try:
+                    tgt, rt = parse_ov(call("OVERVIEW", t, key))
+                except Premium:
+                    print("OVERVIEW is premium on this key: skipping target price and ratings")
+                    ov_ok = False
+                budget -= 1; time.sleep(PAUSE)
         except Limit as e:
             print("stopped:", e)
             break
