@@ -64,7 +64,7 @@ def build_langs(out: pathlib.Path):
 
     en_done = set()
     for f in sorted(src.rglob("*.json")):
-        if f.name in ("prices.json", "market.json"): continue  # numbers only; the site always reads data/prices.json
+        if f.name in ("prices.json", "market.json", "consensus.json"): continue  # numbers only; the site always reads data/prices.json
         rel = f.relative_to(src); d = json.loads(f.read_text(encoding="utf-8"))
         tw = out / "data-tw" / rel; tw.parent.mkdir(parents=True, exist_ok=True)
         tw.write_text(json.dumps(conv(d, to_tw), ensure_ascii=False), encoding="utf-8")
