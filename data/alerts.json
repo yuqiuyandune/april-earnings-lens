@@ -1,0 +1,24 @@
+{
+ "items": [
+  {
+   "t": "VST",
+   "on": "2026-11-04",
+   "kind": "rating",
+   "dir": "down",
+   "effect": "multiple",
+   "review": false,
+   "what": "KeyBanc 把评级从增持降到中性，并撤掉目标价",
+   "why": "公开报道的理由是民主党赢下得州州长选举，新州长竞选时主张暂停新建数据中心，VST 在同行里受影响最大。这一周盈利预期基本没动：2026 年发电量几乎全部对冲，2027 年对冲 90% 以上，跌的是估值倍数（前瞻市盈率约 13 倍降到约 12 倍）。2027 年 EPS 预期的下调主要发生在 8 月到 9 月初，原因是得州电价走弱，以及 8 月 3 日暂停数据中心并网审批。我们 11/6 设区间时已把政策风险放进悲观情景，暂不复核。",
+   "src": [
+    {
+     "t": "TIKR · Vistra Fell 14% on the Texas Election Vote",
+     "u": "https://www.tikr.com/blog/vistra-fell-14-on-the-texas-election-vote-heres-what-the-november-6-report-has-to-settle"
+    },
+    {
+     "t": "Finviz · Vistra's third quarter must show whether softer ERCOT prices threaten its 2027 outlook",
+     "u": "https://finviz.com/news/411949/vistras-third-quarter-must-show-whether-softer-ercot-prices-threaten-its-2027-outlook"
+    }
+   ]
+  }
+ ]
+}

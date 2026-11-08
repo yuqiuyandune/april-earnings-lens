@@ -1,0 +1,16 @@
+{
+ "items": [
+  {
+   "what": "KeyBanc cut its rating from Overweight to Sector Weight and removed its price target",
+   "why": "The publicly reported reason is the Democratic win in the Texas governor's race: the new governor campaigned on pausing new data centers, and Vistra is the most exposed of its peers. Earnings estimates barely moved this week: 2026 output is almost fully hedged and 2027 more than 90%, so what fell was the multiple (forward P/E from about 13x to about 12x). Most of the cut to 2027 EPS estimates came from August to early September, on softer Texas power prices and the August 3 pause on data-center grid approvals. Our November 6 zone already puts policy risk in the bear case, so no review for now.",
+   "src": [
+    {
+     "t": "TIKR · Vistra Fell 14% on the Texas Election Vote"
+    },
+    {
+     "t": "Finviz · Vistra's third quarter must show whether softer ERCOT prices threaten its 2027 outlook"
+    }
+   ]
+  }
+ ]
+}
