@@ -53,8 +53,6 @@ jobs:
         run: python3 scripts/market.py || echo "market data failed; keeping previous file"
       - name: Private desk page data
         if: ${{ !inputs.probe }}
-        env:
-          FRED_KEY: ${{ secrets.FRED_KEY }}
         run: python3 scripts/desk.py --fetch || echo "desk failed; keeping previous file"
       - name: Commit
         if: ${{ !inputs.probe }}

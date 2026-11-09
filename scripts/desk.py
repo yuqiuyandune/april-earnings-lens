@@ -3,7 +3,7 @@ covered companies plus a small market-risk regime.
 
 Inputs: data/prices.json (daily closes), data/hist.json (one year of closes, kept here),
 data/market.json (indices, VIX, 10-year yield), data/consensus.json, data/reports (zones),
-data/desk_groups.json (risk groups), data/chain.json (segments). Optional env FRED_KEY for the
+data/desk_groups.json (risk groups), data/chain.json (segments), and FRED's public CSV for the
 high-yield credit spread.
 Writes data/desk.json and refreshes data/hist.json.
 
@@ -91,15 +91,14 @@ def est(t, cn):
 
 
 def fred_hy():
-    key = os.environ.get("FRED_KEY")
-    if not key:
-        return None
-    q = urllib.parse.urlencode({"series_id": "BAMLH0A0HYM2", "api_key": key, "file_type": "json",
-                                "observation_start": (TODAY - dt.timedelta(days=60)).isoformat()})
+    """ICE BofA US high-yield spread from FRED's public CSV (no key needed); FRED_KEY is not required."""
+    since = (TODAY - dt.timedelta(days=70)).isoformat()
     try:
-        with urllib.request.urlopen(f"https://api.stlouisfed.org/fred/series/observations?{q}", timeout=30) as r:
-            obs = [o for o in json.loads(r.read().decode())["observations"] if o["value"] not in (".", "")]
-        v = [(o["date"], float(o["value"])) for o in obs]
+        req = urllib.request.Request(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLH0A0HYM2&cosd={since}",
+                                     headers={"User-Agent": "EarningsLens research bot admin@example.com"})
+        with urllib.request.urlopen(req, timeout=75) as r:
+            lines = r.read().decode().strip().splitlines()[1:]
+        v = [(d, float(x)) for d, x in (l.split(",") for l in lines) if x not in (".", "")]
         return {"on": v[-1][0], "now": v[-1][1], "m1": v[-1][1] - v[max(0, len(v) - 22)][1]}
     except Exception as e:
         print("FRED failed:", repr(e)[:120])
