@@ -64,7 +64,7 @@ def build_langs(out: pathlib.Path):
 
     en_done = set()
     for f in sorted(src.rglob("*.json")):
-        if f.name in ("prices.json", "market.json", "consensus.json", "chain.json"): continue  # numbers only; the site always reads data/prices.json
+        if f.name in ("prices.json", "market.json", "consensus.json", "chain.json", "desk.json", "hist.json", "desk_groups.json"): continue  # numbers only; the site always reads data/prices.json
         rel = f.relative_to(src); d = json.loads(f.read_text(encoding="utf-8"))
         tw = out / "data-tw" / rel; tw.parent.mkdir(parents=True, exist_ok=True)
         tw.write_text(json.dumps(conv(d, to_tw), ensure_ascii=False), encoding="utf-8")
@@ -137,6 +137,13 @@ def main():
     (DIST / "earnings" / "calendar" / "index.html").write_text(
         wrap(cal_names(tw_ui((ROOT / "calendar.html").read_text(encoding="utf-8"))),
              "April's Earnings Lens 财报日历：重点公司的发布日期与解读进度。"), encoding="utf-8")
+    # private desk page: unlisted, not indexed, not linked from anywhere, no product switcher
+    (DIST / "earnings" / "desk").mkdir(parents=True)
+    (DIST / "earnings" / "desk" / "index.html").write_text(
+        '<!doctype html>\n<html lang="zh-CN">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+        + (ROOT / "desk.html").read_text(encoding="utf-8").replace("<div class=\"wrap\"", "</head>\n<body>\n<div class=\"wrap\"", 1)
+        + "\n</body>\n</html>\n", encoding="utf-8")
     shutil.copytree(ROOT / "data", DIST / "earnings" / "data")
     build_langs(DIST / "earnings")
     track(DIST / "earnings")

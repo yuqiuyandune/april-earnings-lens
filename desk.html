@@ -1,0 +1,92 @@
+<title>Desk</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --line:#E1E4EA; --ink:#14171C; --muted:#5D6573;
+  --accent:#2F55D4; --good:#1E7F55; --good-soft:#E3F3EA; --bad:#B83A33; --bad-soft:#F8E5E3; --warn:#9A6A12; --warn-soft:#F7EED9;
+  --f-num:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --f-sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --good:#5CC995; --good-soft:#15291F; --bad:#F07C72; --bad-soft:#331A18; --warn:#E3B45A; --warn-soft:#2F2614;}}
+:root[data-theme="dark"]{
+  --bg:#0F1218; --surface:#171B23; --line:#2A303C; --ink:#E8EAEE; --muted:#9AA3B2;
+  --accent:#7D9BFF; --good:#5CC995; --good-soft:#15291F; --bad:#F07C72; --bad-soft:#331A18; --warn:#E3B45A; --warn-soft:#2F2614;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:4px 0 2px}h2{font-size:17px;margin:28px 0 10px}
+.sub{color:var(--muted);font-size:13px;margin:0}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.reg{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.lvl{font-size:26px;font-weight:700;padding:6px 14px;border-radius:10px}
+.lvl.att{background:var(--good-soft);color:var(--good)}.lvl.neu{background:var(--warn-soft);color:var(--warn)}.lvl.def{background:var(--bad-soft);color:var(--bad)}
+.sig{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 18px;font-size:13.5px}
+.sig li{display:flex;gap:8px;align-items:baseline}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;transform:translateY(-1px)}
+.d1{background:var(--good)}.d0{background:var(--muted);opacity:.5}.d-1{background:var(--bad)}
+.sig .sm{color:var(--muted);font-size:12px}
+.chg{margin:0;padding-left:18px;font-size:14px}
+.tiers{display:flex;flex-direction:column;gap:22px}
+.tier h2{display:flex;align-items:baseline;gap:10px;margin:0 0 4px}
+.tier h2 .n{font-size:13px;color:var(--muted);font-weight:500}
+.tier p.td{margin:0 0 10px;color:var(--muted);font-size:13.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--accent)}
+.c1{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.c1 .tk{font-family:var(--f-num);font-weight:700;font-size:15px}.c1 .nm{font-size:13.5px}.c1 .sg{font-size:12px;color:var(--muted);margin-left:auto}
+.bar{position:relative;height:6px;background:var(--line);border-radius:3px}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--accent)}
+.bar b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);opacity:.55}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:12px;color:var(--muted)}
+.kv span{display:flex;flex-direction:column}.kv .num{font-size:14px;color:var(--ink)}
+.pos{color:var(--good)!important}.neg{color:var(--bad)!important}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:11.5px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tag.miss{border-color:var(--warn);color:var(--warn)}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.groups .panel b{display:block;font-size:14px}.groups .panel p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);margin-top:28px}
+@media(max-width:520px){.reg{grid-template-columns:1fr}.kv{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="wrap" id="app"><p class="sub">载入中…</p></div>
+<script>
+const TIERS=[["all","全部达标","趋势、预期、回报/风险都过线"],["wait","等趋势","预期和回报/风险过线，价格还没走好"],["watch","观察","至少一项基本面或估值条件没过"],["avoid","回避信号","盈利预期在下调"]];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pc=(x,d=1)=>x==null?"—":(x>=0?"+":"−")+Math.abs(x*100).toFixed(d)+"%";
+const cl=x=>x==null?"":x>0?"pos":x<0?"neg":"";
+const md=s=>s?+s.slice(5,7)+"/"+ +s.slice(8,10):"";
+function card(r,D,G){
+  const e=r.est||{},z=r.zone;
+  const miss=r.why.map(w=>`<span class="tag miss">${w}未达标</span>`).join("");
+  const grp=r.groups.map(g=>`<span class="tag">${esc(G[g]?G[g].n:g)}</span>`).join("");
+  return `<a class="card" href="/earnings/#${r.t}">
+  <div class="c1"><span class="tk">${r.t}</span><span class="nm">${esc(r.n)}</span><span class="sg">${esc(r.seg)}</span></div>
+  <div style="display:flex;align-items:center;gap:10px"><span class="sub" style="white-space:nowrap">趋势 <b class="num" style="color:var(--ink)">${r.score}</b></span><div class="bar" style="flex:1"><i style="width:${r.score}%"></i><b style="left:${D.rules.score}%"></b></div></div>
+  <div class="kv">
+    <span>距50日线<b class="num ${cl(r.d50)}">${pc(r.d50)}</b></span>
+    <span>3月 vs QQQ<b class="num ${cl(r.rs3)}">${pc(r.rs3)}</b></span>
+    <span>预期30天<b class="num ${cl(e.c30)}">${pc(e.c30)}</b></span>
+    <span>${z?esc(r.where)+(z.status==="review"?"·待复核":""):"区间"}<b class="num">${r.rr==null?"—":r.rr>=20?"&gt;20":r.rr.toFixed(1)}</b></span>
+  </div>
+  ${miss||grp?`<div class="tags">${miss}${grp}</div>`:""}</a>`}
+function render(D){
+  const G=D.groups,R=D.regime,k={"进攻":"att","中性":"neu","防守":"def"}[R.level];
+  const fmt=s=>s.k==="vix"?s.val.toFixed(1):s.k==="breadth"?Math.round(s.val*100)+"%":s.k==="tnx"||s.k==="hy"?(s.val>=0?"+":"")+s.val.toFixed(2):pc(s.val);
+  const todays=D.log.filter(c=>c.on===D.last),N=Object.fromEntries(TIERS.map(t=>[t[0],t[1]]));
+  let h=`<h1>私人看板</h1><p class="sub">不公开 · 收盘 ${md(D.last)} · 关注的 ${D.rows.length} 家公司 · 只说条件是否满足，不是买卖建议</p>
+  <h2>市场风险档位</h2><div class="panel reg"><div class="lvl ${k}">${R.level}</div><div><p class="sub" style="margin-bottom:8px">${R.of} 个信号合计 <b class="num">${R.score>0?"+":""}${R.score}</b>（≥ +2 进攻，≤ −2 防守）</p>
+  <ul class="sig">${R.signals.map(s=>`<li><span class="dot d${s.s}"></span><span>${esc(s.label)} <b class="num">${fmt(s)}</b> <span class="sm">${esc(s.note)}</span></span></li>`).join("")}</ul></div></div>
+  <h2>今天变了什么</h2><div class="panel">${todays.length?`<ul class="chg">${todays.map(c=>`<li><b class="num">${c.t}</b>：${N[c.from]} → ${N[c.to]}</li>`).join("")}</ul>`:`<p class="sub">今天没有公司换档。</p>`}</div>
+  <div class="tiers" style="margin-top:24px">`;
+  TIERS.forEach(([id,name,desc])=>{const rs=D.rows.filter(r=>r.tier===id).sort((a,b)=>b.score-a.score);
+    h+=`<section class="tier"><h2>${name}<span class="n">${rs.length} 家</span></h2><p class="td">${desc}</p>${rs.length?`<div class="grid">${rs.map(r=>card(r,D,G)).join("")}</div>`:`<p class="sub">暂无</p>`}</section>`});
+  h+=`</div><h2>风险分组（全部达标 + 等趋势）</h2><div class="groups">${Object.entries(G).map(([id,g])=>`<div class="panel"><b>${esc(g.n)} <span class="num sub">${g.names.length}</span></b><p>${g.names.length?g.names.join("、"):"暂无"}</p><p>${esc(g.why)}</p></div>`).join("")}</div>
+  <p class="note">趋势分 0–100：站上 50 日线 25、50/150/200 日线排列 20、200 日线向上 10、距 52 周高点 20、3 和 6 个月相对 QQQ 的强度排名 25；${D.rules.score} 分算达标。预期 = 下一财年 EPS 一致预期 30 天变化，跌过 ${Math.abs(D.rules.est*100)}% 算未达标，跌过 ${Math.abs(D.rules.est_bad*100)}% 进回避。回报/风险 = 到基准情景的涨幅 ÷ 到悲观情景的跌幅，≥ ${D.rules.rr} 且区间不在待复核算达标。数据更新于 ${esc(D.updated.replace("T"," ").slice(0,16))} UTC。</p>`;
+  document.getElementById("app").innerHTML=h;
+}
+fetch("/earnings/data/desk.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{document.getElementById("app").innerHTML=`<p class="sub">数据载入失败：${esc(e.message)}</p>`});
+</script>
