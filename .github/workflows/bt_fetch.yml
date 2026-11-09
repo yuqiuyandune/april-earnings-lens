@@ -1,11 +1,12 @@
 name: Backtest data
 
-# Manual only: daily OHLCV since 2015 for the backtest universe, uploaded as an artifact (not committed).
+# Manual only: daily OHLCV since 2015 for the backtest universe, committed to bt/data
+# (not part of the site build: build.py only publishes data/).
 on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   fetch:
@@ -16,9 +17,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python3 scripts/bt_fetch.py bt-data
-      - uses: actions/upload-artifact@v4
-        with:
-          name: bt-data
-          path: bt-data
-          retention-days: 30
+      - run: python3 scripts/bt_fetch.py bt/data
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add bt/data
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Backtest data $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && exit 0; sleep 5; done
+          exit 1
