@@ -50,6 +50,16 @@ h1{font-size:22px;margin:4px 0 2px}h2{font-size:17px;margin:28px 0 10px}
 .groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
 .groups .panel b{display:block;font-size:14px}.groups .panel p{margin:4px 0 0;font-size:13px;color:var(--muted)}
 .note{font-size:12.5px;color:var(--muted);margin-top:28px}
+.calc .in{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px 14px;margin-bottom:12px}
+.calc label{display:flex;flex-direction:column;gap:3px;font-size:12.5px;color:var(--muted)}
+.calc input,.calc select{font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px;width:100%}
+.calc input:focus-visible,.calc select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.calc .eff{font-size:13.5px;margin:0 0 10px}
+.ctab{width:100%;border-collapse:collapse;font-size:13.5px}
+.ctab td{padding:6px 4px;border-top:1px solid var(--line)}.ctab td:last-child{text-align:right}
+.cline{font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:6px}
+.cline b{color:var(--ink);font-family:var(--f-num);font-weight:600}
+.warn{color:var(--warn)}
 @media(max-width:520px){.reg{grid-template-columns:1fr}.kv{grid-template-columns:repeat(2,1fr)}}
 </style>
 <div class="wrap" id="app"><p class="sub">载入中…</p></div>
@@ -72,7 +82,67 @@ function card(r,D,G){
     <span>预期30天<b class="num ${cl(e.c30)}">${pc(e.c30)}</b></span>
     <span>${z?esc(r.where)+(z.status==="review"?"·待复核":""):"区间"}<b class="num">${r.rr==null?"—":r.rr>=20?"&gt;20":r.rr.toFixed(1)}</b></span>
   </div>
-  ${miss||grp?`<div class="tags">${miss}${grp}</div>`:""}</a>`}
+  ${miss||grp?`<div class="tags">${miss}${grp}</div>`:""}<div class="cline" data-t="${r.t}"></div></a>`}
+/* ---------- position sizing (inputs stay in this browser only) ---------- */
+const MULT={"进攻":1,"中性":0.75,"防守":0.5};
+const DEF={cap:100000,risk:1,stop:"near",fix:7,first:25,maxpos:20,t:"",custom:""};
+function getS(){try{return {...DEF,...JSON.parse(localStorage.getItem("desk-calc")||"{}")}}catch(e){return {...DEF}}}
+function putS(S){try{localStorage.setItem("desk-calc",JSON.stringify(S))}catch(e){}}
+const $f=x=>"$"+(x>=1000?Math.round(x).toLocaleString("en-US"):x.toFixed(2));
+function size(r,S,D,custom){
+  const p=r.p,cands=[];
+  if(custom>0&&custom<p)cands.push(["自定",custom]);
+  else{
+    const fx=p*(1-S.fix/100);
+    if(S.stop==="fix"||S.stop==="near")cands.push(["固定 "+S.fix+"%",fx]);
+    if((S.stop==="ma50"||S.stop==="near")&&p>r.ma50)cands.push(["50 日线下",r.ma50*0.99]);
+    if(S.stop==="low"||S.stop==="near")if(r.lo10<p*0.98)cands.push(["10 日低点下",r.lo10*0.99]);
+    if(!cands.length)cands.push(["固定 "+S.fix+"%",fx]);
+  }
+  // nearest stop below price, but not tighter than 2%
+  let [how,stop]=cands.filter(c=>c[1]<=p*0.98).sort((a,b)=>b[1]-a[1])[0]||["固定 2%",p*0.98];
+  const dist=(p-stop)/p,mult=MULT[D.regime.level]||1,risk=S.cap*S.risk/100*mult;
+  let full=risk/dist,capped=false;
+  if(full>S.cap*S.maxpos/100){full=S.cap*S.maxpos/100;capped=true}
+  const sh=Math.floor(full/p),fsh=Math.floor(sh*S.first/100);
+  return {how,stop,dist,risk,mult,full:sh*p,sh,fsh,first:fsh*p,loss1:fsh*(p-stop),lossF:sh*(p-stop),be:p*(1+2*dist),tp:p*(1+3*dist),capped,far:dist>0.10};
+}
+function calcPanel(D){
+  const S=getS(),opts=D.rows.slice().sort((a,b)=>a.t.localeCompare(b.t));
+  if(!S.t||!D.rows.find(r=>r.t===S.t))S.t=(D.rows.find(r=>r.tier==="all")||D.rows[0]).t;
+  const sel=(k,v,l)=>`<option value="${v}"${S[k]===v?" selected":""}>${l}</option>`;
+  return `<h2>仓位计算</h2><div class="panel calc">
+  <div class="in">
+    <label>总资金（$）<input id="c-cap" type="number" min="0" step="1000" value="${S.cap}"></label>
+    <label>每笔最多亏总资金的（%）<input id="c-risk" type="number" min="0.1" max="5" step="0.1" value="${S.risk}"></label>
+    <label>止损方式<select id="c-stop">${sel("stop","near","取最近的一个")}${sel("stop","fix","固定比例")}${sel("stop","ma50","50 日线下方")}${sel("stop","low","10 日低点下方")}</select></label>
+    <label>固定止损（%）<input id="c-fix" type="number" min="2" max="20" step="0.5" value="${S.fix}"></label>
+    <label>第一笔占满仓（%）<input id="c-first" type="number" min="10" max="100" step="5" value="${S.first}"></label>
+    <label>单只最多占总资金（%）<input id="c-maxpos" type="number" min="5" max="100" step="5" value="${S.maxpos}"></label>
+  </div>
+  <p class="eff" id="c-eff"></p>
+  <div class="in" style="margin-bottom:6px">
+    <label>看哪一家<select id="c-t">${opts.map(r=>`<option value="${r.t}"${r.t===S.t?" selected":""}>${r.t} ${esc(r.n)}</option>`).join("")}</select></label>
+    <label>自定止损价（可空）<input id="c-custom" type="number" min="0" step="0.01" value="${S.custom}" placeholder="按上面的方式"></label>
+  </div>
+  <table class="ctab" id="c-out"></table>
+  <p class="sub" style="margin-top:8px">输入只保存在这个浏览器里。仓位 = 每笔风险 ÷ 止损距离；市场档位进攻 ×1、中性 ×0.75、防守 ×0.5。2R：涨到止损距离的 2 倍时，把止损移到成本价；3R：可以先卖一部分，其余跟着 20 或 50 日线走。</p></div>`;
+}
+function updCalc(D){
+  const S=getS(),g=id=>document.getElementById(id);
+  ["cap","risk","fix","first","maxpos"].forEach(k=>{const v=parseFloat(g("c-"+k).value);if(v>0)S[k]=v});
+  S.stop=g("c-stop").value;S.t=g("c-t").value;S.custom=g("c-custom").value;putS(S);
+  const mult=MULT[D.regime.level]||1;
+  g("c-eff").innerHTML=`今天是<b>${D.regime.level}</b>档，每笔风险 ${S.risk}% × ${mult} = <b class="num">${$f(S.cap*S.risk/100*mult)}</b>`;
+  const r=D.rows.find(x=>x.t===S.t),z=size(r,S,D,parseFloat(S.custom));
+  const row=(k,v)=>`<tr><td>${k}</td><td class="num">${v}</td></tr>`;
+  g("c-out").innerHTML=row("收盘价（"+md(D.last)+"）",$f(r.p))+row("止损（"+z.how+"）",`${$f(z.stop)}（−${(z.dist*100).toFixed(1)}%）${z.far?' <span class="warn">止损偏远，仓位会很小</span>':""}`)
+    +row("满仓",`${z.sh} 股 ≈ ${$f(z.full)}${z.capped?' <span class="warn">已按单只上限截断</span>':""}`)+row("第一笔（"+S.first+"%）",`${z.fsh} 股 ≈ ${$f(z.first)}`)
+    +row("第一笔触发止损亏损",`${$f(z.loss1)}（总资金 ${(z.loss1/S.cap*100).toFixed(2)}%）`)+row("满仓触发止损亏损",`${$f(z.lossF)}（${(z.lossF/S.cap*100).toFixed(2)}%）`)
+    +row("2R：止损移到成本价",$f(z.be))+row("3R：可先卖一部分",$f(z.tp));
+  document.querySelectorAll(".cline").forEach(el=>{const x=D.rows.find(y=>y.t===el.dataset.t),q=size(x,S,D,NaN);
+    el.innerHTML=`止损 <b>${$f(q.stop)}</b>（−${(q.dist*100).toFixed(1)}%）· 第一笔 <b>${q.fsh}</b> 股 ≈ ${$f(q.first)} · 满仓 ${q.sh} 股`});
+}
 function render(D){
   const G=D.groups,R=D.regime,k={"进攻":"att","中性":"neu","防守":"def"}[R.level];
   const fmt=s=>s.k==="vix"?s.val.toFixed(1):s.k==="breadth"?Math.round(s.val*100)+"%":s.k==="tnx"||s.k==="hy"?(s.val>=0?"+":"")+s.val.toFixed(2):pc(s.val);
@@ -80,6 +150,7 @@ function render(D){
   let h=`<h1>私人看板</h1><p class="sub">不公开 · 收盘 ${md(D.last)} · 关注的 ${D.rows.length} 家公司 · 只说条件是否满足，不是买卖建议</p>
   <h2>市场风险档位</h2><div class="panel reg"><div class="lvl ${k}">${R.level}</div><div><p class="sub" style="margin-bottom:8px">${R.of} 个信号合计 <b class="num">${R.score>0?"+":""}${R.score}</b>（≥ +2 进攻，≤ −2 防守）</p>
   <ul class="sig">${R.signals.map(s=>`<li><span class="dot d${s.s}"></span><span>${esc(s.label)} <b class="num">${fmt(s)}</b> <span class="sm">${esc(s.note)}</span></span></li>`).join("")}</ul></div></div>
+  ${calcPanel(D)}
   <h2>今天变了什么</h2><div class="panel">${todays.length?`<ul class="chg">${todays.map(c=>`<li><b class="num">${c.t}</b>：${N[c.from]} → ${N[c.to]}</li>`).join("")}</ul>`:`<p class="sub">今天没有公司换档。</p>`}</div>
   <div class="tiers" style="margin-top:24px">`;
   TIERS.forEach(([id,name,desc])=>{const rs=D.rows.filter(r=>r.tier===id).sort((a,b)=>b.score-a.score);
@@ -87,6 +158,8 @@ function render(D){
   h+=`</div><h2>风险分组（全部达标 + 等趋势）</h2><div class="groups">${Object.entries(G).map(([id,g])=>`<div class="panel"><b>${esc(g.n)} <span class="num sub">${g.names.length}</span></b><p>${g.names.length?g.names.join("、"):"暂无"}</p><p>${esc(g.why)}</p></div>`).join("")}</div>
   <p class="note">趋势分 0–100：站上 50 日线 25、50/150/200 日线排列 20、200 日线向上 10、距 52 周高点 20、3 和 6 个月相对 QQQ 的强度排名 25；${D.rules.score} 分算达标。预期 = 下一财年 EPS 一致预期 30 天变化，跌过 ${Math.abs(D.rules.est*100)}% 算未达标，跌过 ${Math.abs(D.rules.est_bad*100)}% 进回避。回报/风险 = 到基准情景的涨幅 ÷ 到悲观情景的跌幅，≥ ${D.rules.rr} 且区间不在待复核算达标。数据更新于 ${esc(D.updated.replace("T"," ").slice(0,16))} UTC。</p>`;
   document.getElementById("app").innerHTML=h;
+  document.querySelectorAll(".calc input,.calc select").forEach(el=>el.addEventListener("input",()=>updCalc(D)));
+  updCalc(D);
 }
 fetch("/earnings/data/desk.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{document.getElementById("app").innerHTML=`<p class="sub">数据载入失败：${esc(e.message)}</p>`});
 </script>

@@ -183,6 +183,7 @@ def main():
                      else "区间上方" if p <= z["base"] else "高于基准")
         rows.append({"t": t, "n": idx[t]["n"], "seg": seg.get((chain["co"].get(t) or [0, 0])[1], idx[t].get("cat", "")),
                      "groups": groups["co"].get(t, []), "p": p, "d50": p / m50 - 1,
+                     "ma20": round(ma(c, 20), 2), "ma50": round(m50, 2), "lo10": min(c[-10:]),
                      "d200": (p / m200 - 1) if m200 else None, "dhi": p / hi - 1, "dlo": p / lo - 1,
                      "rs1": rs1, "rs3": rs3, "rs6": rs6,
                      "parts": {"a50": a50, "align": align, "slope": slope, "near": near},
