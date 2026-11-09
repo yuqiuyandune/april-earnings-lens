@@ -18,7 +18,7 @@ import pandas as pd
 COST = 0.001
 RISK = 0.01
 MAXPOS = 0.20
-START = "2016-01-04"
+START = "2017-11-15"
 SPLIT = "2022-01-01"
 
 
@@ -81,7 +81,7 @@ class Data:
         for ser in (self.qqq, self.spy):
             d50 = ser / ser.rolling(50).mean() - 1
             s += np.where(d50 > 0.01, 1, np.where(d50 < -0.01, -1, 0))
-        br = (C > self.ma50).where(self.elig).sum(axis=1) / self.elig.sum(axis=1)
+        br = (C > self.ma50).where(self.elig).sum(axis=1) / self.elig.sum(axis=1).replace(0, np.nan)
         s += np.where(br >= 0.60, 1, np.where(br <= 0.35, -1, 0))
         d200 = self.spy / self.spy.rolling(200).mean() - 1
         s += np.where(d200 > 0.03, 1, np.where(d200 < 0, -1, 0))
@@ -159,6 +159,8 @@ def run(D, strat, start=START):
                 B.sell(t, o, day, a.get("why", ""), a.get("frac", 1.0))
             elif kind == "buy":
                 stop = o * (1 - a["stopd"]) if "stopd" in a else a["stop"]
+                if stop is None:
+                    stop = 0.0
                 if stop >= o:
                     stop = o * 0.93
                 eq = B.value(D.C, i - 1)
@@ -312,10 +314,7 @@ def s5_meanrev(D, B, i, st):
         ok = D.elig.iloc[i] & (D.C.iloc[i] > D.ma200.iloc[i]) & (R.iloc[i] < 10)
         names = [t for t in ok[ok.fillna(False)].index if t not in B.pos]
         names.sort(key=lambda t: R.iat[i, R.columns.get_loc(t)])
-        out += [("buy", t, {"weight": 0.10, "stop": 0, "tag": "meanrev"}) for t in names[: 10 - len(B.pos)]]
-        for o in out:
-            if o[0] == "buy":
-                o[2]["stop"] = None
+        out += [("buy", t, {"weight": 0.10, "stopd": 0.07, "tag": "meanrev"}) for t in names[: 10 - len(B.pos)]]
     return out
 
 
