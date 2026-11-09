@@ -1,0 +1,24 @@
+name: Backtest data
+
+# Manual only: daily OHLCV since 2015 for the backtest universe, uploaded as an artifact (not committed).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/bt_fetch.py bt-data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bt-data
+          path: bt-data
+          retention-days: 30
