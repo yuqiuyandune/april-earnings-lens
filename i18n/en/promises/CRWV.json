@@ -1,0 +1,56 @@
+[
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q3 revenue $3.45–3.6B, adjusted operating income $200–260M, capex $11.5–13.5B, interest expense $860–940M",
+  "dueLabel": "2026Q3",
+  "checks": [
+   {
+    "status": "Better than promised",
+    "note": "Revenue of $3.66B and adjusted operating income of $379M both beat the top of the range; interest of $846M came in below it. Capex of about $14.5B (accrual basis) was above the range; the company says it pulled Q4 deliveries forward."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "2026 revenue $12.4–13.2B, adjusted operating income $960M–1.15B, capex $35–39B, exit run-rate revenue $18.5–19.5B",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Revenue raised to $13.0–13.3B, adjusted operating income to $1.275–1.375B (midpoint +26%) and exit run-rate revenue to $20–21B; the low end of capex rose to $37B."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Aug 2026 (Q2 report)",
+  "text": "Q4 adjusted operating margin in the “low teens”",
+  "dueLabel": "2026Q4",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "Q3 already reached 10%, a quarter ahead of plan; full-year guidance implies about 16–17% in Q4."
+   }
+  ]
+ },
+ {
+  "saidLabel": "May 2026 (Q1 report)",
+  "text": "More than 8 GW of active power by 2030",
+  "dueLabel": "2030",
+  "checks": [
+   {
+    "status": "Raised, to be verified",
+    "note": "1.7 GW active and 4.6 GW contracted (about 3.1 GW at the start of the year); the year-end target stays above 1.85 GW."
+   }
+  ]
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "2027 adjusted EBITDA less interest at least doubles and the adjusted net loss narrows meaningfully; adjusted net income positive in 1H 2028 and for full-year 2028",
+  "dueLabel": "2028Q2"
+ },
+ {
+  "saidLabel": "Nov 2026 (Q3 report)",
+  "text": "No parent-level unsecured debt through 2027; under $5B of parent-level capital raised through 2027; about $9B of customer prepayments and deposits over the next three months",
+  "dueLabel": "2027Q4"
+ }
+]

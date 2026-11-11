@@ -1,0 +1,419 @@
+{
+ "label": "Q3 2026 (Jul–Sep)",
+ "dateLabel": "after the close, 10 Nov 2026",
+ "asOf": "close of $48.73 on 10 Nov 2026 (results came after the close)",
+ "headline": "Revenue up $1.1B in a quarter and margins hit target early, but every $1 of EBITDA pays $0.37 of interest: the price bets on borrowed money turning into profit on time",
+ "verdicts": [
+  {
+   "k": "Revenue",
+   "val": "$3.66B",
+   "exp": "est. about $3.6B"
+  },
+  {
+   "k": "Adjusted operating income",
+   "val": "$379M",
+   "exp": "guide $200–260M",
+   "pill": "46% above the top"
+  },
+  {
+   "k": "GAAP loss per share",
+   "exp": "est. −$1.46",
+   "pill": "smaller loss"
+  },
+  {
+   "k": "2026 revenue guidance",
+   "val": "$13.0–13.3B",
+   "exp": "was $12.4–13.2B",
+   "pill": "midpoint +3%"
+  }
+ ],
+ "points": [
+  {
+   "b": "Growth and margins ahead of plan",
+   "t": "Revenue rose 168% y/y and $1.09B q/q; adjusted operating margin reached 10%, double digits a quarter earlier than planned. Full-year revenue, profit and exit run-rate guidance were all raised, with exit run-rate revenue now $20–21B."
+  },
+  {
+   "b": "Interest eats a third of EBITDA",
+   "t": "Adjusted EBITDA was $2.26B and interest $846M; with depreciation at 52% of revenue, the GAAP net loss was $709M. Capex was $9.4B in cash this quarter, free cash flow about −$7.5B, covered by about $10.3B of new borrowing (with $2.3B repaid)."
+  },
+  {
+   "b": "$132.5B backlog, over half from one contract",
+   "t": "Backlog rose 138% y/y, but more than half sits in one contract that starts delivering before year-end. Management says 2027 is “largely sold out”, and renewals of existing GPUs add revenue outside the backlog."
+  }
+ ],
+ "reaction": "Stock: results came after the close on 10 Nov, when it closed at $48.73; it rose about 6% after hours. It was near $85 at the end of September, its bonds briefly yielded 15–16% in mid-October, and it fell further in the 5 Nov AI sell-off. Consensus varies widely: revenue about $3.54–3.6B and a loss of −$1.17 to −$1.55 a share; we use investingLive (about $3.6B and −$1.46).",
+ "results": {
+  "volprice": {
+   "title": "Volume × price = revenue",
+   "period": "Q3 2026 y/y",
+   "take": "Nearly all the growth came from <b>volume</b>: active power almost tripled in a year. Revenue per unit of average active power is actually lower than a year ago, because new capacity ramps before it bills in full.",
+   "items": [
+    {
+     "k": "Active power at quarter-end"
+    },
+    {
+     "k": "Annual revenue per MW (average active power)",
+     "v": "about $9.2M"
+    },
+    {
+     "k": "Revenue",
+     "v": "$3.66B"
+    }
+   ],
+   "note": "Annual revenue per MW = quarterly revenue × 4 ÷ the average of opening and closing active power: $3.66B × 4 ÷ 1.6 GW this quarter; $1.36B × 4 ÷ 0.53 GW a year ago (about 0.47 GW opening, 0.59 GW closing). Management says it raised prices about 25% from July and another 10% later, mainly on short-term contracts and older GPUs; new long-term contracts run about $20–25M per MW a year and short-term capacity over $40M."
+  },
+  "segments": {
+   "title": "Growth breakdown",
+   "bridgeT": "Revenue change y/y split into volume and price",
+   "period": "Q3 2026 y/y, $M",
+   "take": "One segment; the company doesn't split revenue by customer or product. Splitting the extra $2.296B y/y: <b>all of it came from new active power</b>, while revenue per unit held it back.",
+   "bridge": [
+    {
+     "n": "Volume: more active power"
+    },
+    {
+     "n": "Price: change in revenue per MW"
+    }
+   ],
+   "rows": [
+    {
+     "n": "Volume: active power",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "Average active power over the quarter rose from about 0.53 GW to about 1.6 GW. At last year's revenue per unit, the new capacity adds about $2.76B of quarterly revenue."
+    },
+    {
+     "n": "Price: annual revenue per MW",
+     "val": "about $9.2M",
+     "pills": [
+      {
+       "k": "y/y"
+      }
+     ],
+     "why": "New capacity is tested and ramped before it bills in full, so heavy end-of-quarter additions pull the per-unit figure down. Once the 0.85 GW added this year runs at full load it should recover; if it doesn't, prices are falling."
+    }
+   ],
+   "note": "Volume effect = last year's annual revenue per MW of $10.3M × the roughly 1.07 GW rise in average active power ÷ 4; price effect = the rest. Average active power is the mean of opening and closing levels."
+  },
+  "extras": [
+   {
+    "title": "Where it sits in the AI loop",
+    "take": "CoreWeave is a <b>compute landlord that borrows to buy GPUs and rents them to AI companies</b>. Money comes from banks and private credit and flows to Nvidia, server makers and data centers; revenue comes from AI labs, cloud providers and a growing number of enterprises.",
+    "items": [
+     {
+      "b": "Upstream: Nvidia and data centers",
+      "pill": "first with new chips",
+      "w": "It brought the first Nvidia Vera Rubin NVL72 systems online this quarter, with customer Cognition getting 4.8x the throughput of GB200. Contracted power is 4.6 GW, 1.3 GW of it outside the US (India, Indonesia, Spain)."
+     },
+     {
+      "b": "Downstream: AI labs and enterprises",
+      "pill": "diversifying",
+      "w": "Named customers include OpenAI, Jane Street, Perplexity and Cohere; more than half of this year's new customers are outside AI and tech, and 10% of the Fortune 500 are customers. But over half of backlog is one contract, and the customer isn't disclosed."
+     },
+     {
+      "b": "Cross-check with cloud capex",
+      "pill": "demand holding",
+      "w": "None of the four big cloud providers cut capex plans in Q3; management says demand is growing faster than supply, 2027 is largely sold out, and 2028 capacity isn't on the market yet."
+     },
+     {
+      "b": "Squeezed in the middle",
+      "pill": "pressure both ways",
+      "w": "Each GPU generation costs more upstream and older chips lose value fast; big customers downstream have bargaining power. If supply catches up, rents fall first, while the cost of debt doesn't."
+     }
+    ]
+   },
+   {
+    "title": "Where growth comes from",
+    "take": "Growth comes from <b>turning contracted power into active power</b>: 1.7 GW active, 4.6 GW contracted and a target of over 8 GW by 2030. The real variables are financing costs and whether new capacity comes online on time.",
+    "items": [
+     {
+      "b": "Volume: power coming online",
+      "pill": "year-end >1.85 GW",
+      "w": "Active power doubled this year; management says most of its Texas power is online or fully permitted and the post-election policy shift doesn't affect 2027 deliveries."
+     },
+     {
+      "b": "Price: rents and renewals",
+      "pill": "price rises + renewals",
+      "w": "Older GPUs (Ampere, Hopper) rose 30–50% in price q/q; renewals of existing GPUs should add about $4B of run-rate revenue in 2027 and close to $10B by 2028, with no new capex and outside the backlog."
+     },
+     {
+      "b": "New business: software and inference",
+      "pill": "Forge",
+      "w": "It launched the Forge AI development platform, already used by 70% of new cloud customers in Q3; managed inference passed $100M of run-rate revenue in Q2. Still small; its job is to make customers stickier."
+     },
+     {
+      "b": "Against company targets",
+      "pill": "ahead of plan",
+      "w": "The “double-digit adjusted operating margin by year-end” target was hit in Q3; the full-year revenue midpoint of about $13.15B is about +160% y/y; adjusted net income turns positive in 2028."
+     },
+     {
+      "b": "What could break it",
+      "pill": "watch",
+      "w": "Higher financing costs (its bonds briefly yielded 15–16% in October); the biggest contract's customer delaying or defaulting; construction delays; GPUs aging faster than their depreciation life; rents falling once supply catches up."
+     }
+    ]
+   },
+   {
+    "title": "Where the money comes from",
+    "take": "This quarter it spent about $9.4B on equipment against about $2.0B of operating cash flow, and <b>borrowing covered nearly all of the gap</b>. Financing costs and the capital markets' mood matter as much as demand.",
+    "items": [
+     {
+      "b": "Debt",
+      "pill": "$46.9B",
+      "w": "$41.6B of recourse debt and $5.3B of non-recourse (project-level) debt, versus $21.4B at the start of the year. Net debt is about $41.1B, about 4.5x annualized adjusted EBITDA."
+     },
+     {
+      "b": "Cost of debt",
+      "pill": "7.9% weighted",
+      "w": "The weighted average cost of debt is 7.9%, down 2.5 points in a year; the next delayed-draw term loan (DDTL) should price around 7–7.5% and fund over 90% of capex. Q4 interest guidance is $1.05–1.15B."
+     },
+     {
+      "b": "Customer prepayments",
+      "pill": "about $9B",
+      "w": "About $9B of prepayments and deposits are expected over the next three months, on top of $10B of deferred revenue. Customers paying up front means less to borrow."
+     },
+     {
+      "b": "Equity",
+      "pill": "dilution starting",
+      "w": "It issued about $4.2B of convertible notes this quarter and set up its first at-the-market program for up to 35M shares, about 6% of the current share count."
+     }
+    ]
+   }
+  ],
+  "trends": [
+   {
+    "why": "2.7x in five quarters"
+   },
+   {
+    "why": "Margin 56–62%"
+   },
+   {
+    "why": "2.7x in five quarters, rising with revenue"
+   },
+   {
+    "why": "2.4x in a year"
+   }
+  ]
+ },
+ "valuation": {
+  "take": "It still loses money on a GAAP basis, so P/E means nothing; enterprise value is about 7.6x annualized EBITDA and about 1.3x exit run-rate revenue. <b>The price bets on borrowed money turning into profit on time</b>: debt is 1.5x the market value, so a small change in EBITDA moves the share price a lot.",
+  "tiles": [
+   {
+    "k": "EV / annualized adjusted EBITDA",
+    "f": "enterprise value ≈ $68.3B ÷ ($2.256B × 4)"
+   },
+   {
+    "k": "Market value / exit run-rate revenue",
+    "f": "market value ≈ $27.2B ÷ $20.5B guidance midpoint"
+   },
+   {
+    "k": "Net debt / annualized EBITDA",
+    "pill": "high",
+    "f": "net debt ≈ $41.1B ÷ $9.02B"
+   },
+   {
+    "k": "EBITDA / interest",
+    "pill": "2.7x a year ago",
+    "f": "$2.256B ÷ $846M"
+   }
+  ],
+  "forward": {
+   "title": "Q4 from company guidance",
+   "sub": "adjusted operating income",
+   "steps": [
+    "Full-year revenue guide $13.0–13.3B − $8.31B for Q1–Q3 = Q4 of about <b>$4.69–4.99B</b>, midpoint about +32% q/q",
+    "Full-year adjusted operating income $1.275–1.375B − $528M for Q1–Q3 = Q4 of about $750–850M",
+    "Q4 adjusted operating margin about <b>16–17%</b>, above August's “low teens”"
+   ],
+   "note": "Q4 interest guidance of $1.05–1.15B is about the same as adjusted operating income, so Q4 is still an adjusted loss; management targets a profit in 2028."
+  },
+  "scenarios": {
+   "title": "Three scenarios: 2028 EBITDA and value per share",
+   "sub": "enterprise value multiple less net debt",
+   "head": [
+    "Case",
+    "2028 revenue",
+    "EBITDA margin",
+    "EV/EBITDA",
+    "Value per share"
+   ],
+   "rows": [
+    {
+     "c": [
+      "Bear",
+      "$32B",
+      "55%",
+      "5.5x",
+      "$20"
+     ]
+    },
+    {
+     "c": [
+      "Base",
+      "$42B",
+      "60%",
+      "5.5x",
+      "$73"
+     ]
+    },
+    {
+     "c": [
+      "Bull",
+      "$50B",
+      "63%",
+      "6.5x",
+      "$175"
+     ]
+    }
+   ],
+   "note": "Bear: the big contract is delayed and renewals reprice lower, 2028 revenue about $32B, net debt about $85B; base: close to consensus (about $43.7B), net debt about $95B; bull: renewals and new contracts both go well, net debt about $100B. Value per share = (EBITDA × multiple − net debt) ÷ about 600M shares (including converts and the ATM). Today's price implies about 6x consensus 2027 EBITDA. These assumptions are ours and are not forecasts."
+  },
+  "pricezone": {
+   "sub": "2028 EBITDA × our multiple − net debt, about 600M shares; price at the 10 Nov close",
+   "scen": [
+    {
+     "n": "Bear",
+     "how": "big contract delayed, 5.5x"
+    },
+    {
+     "n": "Base",
+     "how": "close to consensus, 5.5x"
+    },
+    {
+     "n": "Bull",
+     "how": "renewals go well, 6.5x"
+    }
+   ],
+   "why": "The price is above the zone: buying at $48.73, the base case gains about 50% and the bear case loses about 59%, a reward/risk of about 0.8. At the $38 top of the zone it is about 1.9, at the $33.50 midpoint about 2.9, and at the $29 low end about 4.9. The defining feature is leverage: in the base case each turn of EBITDA multiple is worth about $42 a share, so the three prices sit far apart and the zone sits not far above the bear price."
+  },
+  "cash": {
+   "title": "Capex and operating cash flow",
+   "sub": "cash capex per quarter, $M",
+   "stats": [
+    {
+     "k": "Operating cash flow this quarter",
+     "v": "$1.98B"
+    },
+    {
+     "k": "Capex this quarter",
+     "v": "$9.44B"
+    },
+    {
+     "k": "Free cash flow, last four quarters",
+     "v": "about −$20.4B"
+    }
+   ],
+   "note": "A typical build-out: operating cash flow is positive but far below capex, with borrowing and customer prepayments filling the gap. Operating cash flow swings a lot by quarter (only $679M in Q2), mainly with the timing of prepayments and receivables. CoreWeave pays no dividend and doesn't buy back stock."
+  },
+  "calc": [
+   "Price $48.73: 10 Nov close (results came after the close)",
+   "Diluted weighted shares 559M, market value ≈ $27.2B; about 600M shares assumed for 2028 (converts and the 35M-share ATM)",
+   "Debt: recourse $9.18B + $32.42B, non-recourse $1.39B + $3.88B, total $46.87B; finance leases $0.65B; cash, restricted cash and securities $6.47B; net debt ≈ $41.06B; enterprise value ≈ $68.3B (excluding $18.7B of operating leases)",
+   "Annualized adjusted EBITDA $2.256B × 4 = $9.02B; EBITDA − interest = $2.256B − $0.846B = $1.41B",
+   "Free cash flow (last four quarters) = ($1.559 + $2.984 + $0.679 + $1.975B) − ($4.060 + $7.695 + $6.422 + $9.441B) ≈ −$20.4B",
+   "Scenario value per share = (2028 EBITDA × multiple − net debt) ÷ 600M shares, rounded",
+   "Consensus (MarketScreener): 2027 revenue $26.4B, EBITDA $16.7B, net debt $74.3B; 2028 revenue $43.7B, EBITDA $29.2B, net debt $94.8B",
+   "Reward/risk = gain to the base price ÷ loss to the bear price"
+  ],
+  "next": "Next report around late February 2027, with 2027 guidance."
+ },
+ "management": {
+  "changes": [
+   {
+    "topic": "Full-year guidance",
+    "pill": "raised",
+    "before": "August: revenue $12.4–13.2B, adjusted operating income $960M–1.15B, exit run-rate revenue $18.5–19.5B.",
+    "now": "Revenue $13.0–13.3B, adjusted operating income $1.275–1.375B, exit run-rate revenue $20–21B."
+   },
+   {
+    "topic": "Margins",
+    "pill": "a quarter early",
+    "before": "Q4 adjusted operating margin in the “low teens”.",
+    "now": "10% already in Q3; Q4 guidance implies about 16–17%."
+   },
+   {
+    "topic": "Funding",
+    "pill": "equity enters",
+    "before": "Mostly debt (DDTLs and senior notes).",
+    "now": "A first 35M-share at-the-market program; no parent-level unsecured debt through 2027 and under $5B of parent-level capital."
+   },
+   {
+    "topic": "2027 and beyond",
+    "pill": "new",
+    "before": "Only “over 8 GW of active power by 2030”.",
+    "now": "2027 EBITDA less interest at least doubles and adjusted net income turns positive in 2028; 2027 capex roughly flat with this year (contracted backlog only)."
+   }
+  ],
+  "call": [
+   {
+    "h": "Management emphasized (release and call)",
+    "items": [
+     "Revenue up more than $1B q/q, margins in double digits early",
+     "2027 largely sold out, demand growing faster than supply",
+     "Renewals of existing GPUs add revenue outside the backlog",
+     "Cost of debt down 2.5 points in a year",
+     "The post-election policy shift doesn't affect 2027 deliveries"
+    ]
+   },
+   {
+    "h": "Questions analysts asked that went unanswered",
+    "items": [
+     "Which customer holds the biggest backlog contract, and on what terms",
+     "2027 revenue and run-rate targets",
+     "Total new debt and its maturity schedule",
+     "Whether older GPUs' useful life is shorter than the 6-year depreciation period"
+    ]
+   },
+   {
+    "h": "Numbers to watch next quarter",
+    "items": [
+     "Whether Q4 revenue reaches $4.7–5.0B at about a 16–17% margin",
+     "Whether active power passes 1.85 GW at year-end",
+     "Whether the roughly $9B of prepayments arrives",
+     "Whether the next DDTL prices at 7–7.5%",
+     "How much of the ATM program is used"
+    ]
+   },
+   {
+    "h": "What would prove us wrong",
+    "items": [
+     "The biggest contract is delayed or cut",
+     "New financing priced well above 8%",
+     "Power coming online more than a quarter behind plan",
+     "Rents or renewal prices starting to fall",
+     "2027 guidance with much higher capex but EBITDA less interest not doubling"
+    ]
+   }
+  ]
+ },
+ "insider": {
+  "title": "Effective trades 30 days around the report",
+  "text": "In the 30 days before the report (10/11–11/10) insiders sold about $6.1M, all under 10b5-1 plans or to cover taxes on stock awards, so none counts as effective; CEO Michael Intrator sold about $25M a week under his plan in September. No effective buys. See the <a href=\"/insider/#t=CRWV\">Insider Flow page</a>."
+ },
+ "sources": [
+  {
+   "t": "CoreWeave: Q3 2026 earnings release (SEC 8-K)"
+  },
+  {
+   "t": "CoreWeave: Q2 2026 earnings release"
+  },
+  {
+   "t": "Investing.com: Q3 call transcript"
+  },
+  {
+   "t": "Futurum: Q2 guidance"
+  },
+  {
+   "t": "investingLive: Q3 results vs consensus"
+  },
+  {
+   "t": "TradingKey: preview and bond yields"
+  },
+  {
+   "t": "MarketScreener: 2027–2028 consensus"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "n": "CoreWeave",
+ "config": {
+  "segmentBasis": "A single segment: renting GPU compute by usage or under long-term contracts (with storage, networking and CoreWeave Cloud software). No split by customer or product; it discloses backlog, active power and contracted power",
+  "fiscalNote": "Fiscal year matches the calendar year. Listed in March 2025, so history is short. Gives full-year and quarterly guidance (quarterly on the call). GAAP loss-making; adjusted operating income excludes stock compensation and acquisition costs",
+  "kpis": [
+   "Revenue and adjusted operating margin",
+   "Adjusted EBITDA less interest",
+   "Backlog",
+   "Active and contracted power",
+   "Capex and cost of financing"
+  ],
+  "volprice": [
+   "Active power",
+   "Annual revenue per MW"
+  ],
+  "modules": [
+   "Where it sits in the AI loop",
+   "Where growth comes from",
+   "Where the money comes from"
+  ],
+  "peer": {
+   "n": "AI cloud peers (average of Nebius and Oracle)"
+  }
+ },
+ "series": {
+  "metrics": {
+   "rev": {
+    "t": "Revenue"
+   },
+   "ebitda": {
+    "t": "Adjusted EBITDA"
+   },
+   "adjoi": {
+    "t": "Adjusted operating income"
+   },
+   "int": {
+    "t": "Interest expense, net"
+   },
+   "capex": {
+    "t": "Capex (cash)"
+   },
+   "ocf": {
+    "t": "Operating cash flow"
+   },
+   "backlog": {
+    "t": "Backlog"
+   },
+   "power": {
+    "t": "Active power"
+   },
+   "bb": {
+    "t": "Buybacks"
+   },
+   "dv": {
+    "t": "Dividends"
+   },
+   "fcfx": {
+    "t": "Free cash flow (operating cash flow minus capex)"
+   }
+  }
+ }
+}

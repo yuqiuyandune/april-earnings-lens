@@ -543,6 +543,22 @@
    "latest": "2026Q3",
    "latestDate": "2026-10-29",
    "headline": "数据中心 15 年来最快增长，股价却一天跌 29%：PC 放缓、毛利率掉回 38%，下季利润只剩一半"
+  },
+  {
+   "t": "CRWV",
+   "n": "CoreWeave",
+   "en": "CoreWeave",
+   "aliases": [
+    "CoreWeave",
+    "CRWV"
+   ],
+   "cat": "基础设施",
+   "quarters": [
+    "2026Q3"
+   ],
+   "latest": "2026Q3",
+   "latestDate": "2026-11-10",
+   "headline": "营收一个季度多了 $11 亿、利润率提前达标，但每赚 $1 EBITDA 要付 $0.37 利息：价格押的是借来的钱能不能按时变成利润"
   }
  ]
 }
