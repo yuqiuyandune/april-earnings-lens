@@ -11,6 +11,36 @@
      "t": "Finviz · Vistra's third quarter must show whether softer ERCOT prices threaten its 2027 outlook"
     }
    ]
+  },
+  {
+   "what": "2027 EPS consensus up about 7% in 7 days as post-earnings revisions came through",
+   "why": "The raises follow the October 28 report: revenue and EPS beat by a wide margin and full-year guidance was raised for the third time; at the Baird conference on November 10 management said demand is resilient, customers are not pushing back on higher prices, and adding capacity is the main constraint. Over the same stretch the stock sat about 15% below its post-earnings high, so the forward P/E on 2027 EPS fell from about 27x to about 21x; on November 11 JPMorgan resumed coverage at Neutral, with the publicly reported reason that AI-linked industrial valuations are exposed to slower spending. The new consensus (about $9.84) is still below the 2027 EPS in our base case (about $10.1), so this alone does not trigger a review; the zone was already marked for review.",
+   "src": [
+    {
+     "t": "Yahoo Finance · Vertiv raises 2026 outlook after third-quarter revenue jumps 61%"
+    },
+    {
+     "t": "ad-hoc-news · Vertiv stock draws focus as CFO flags pricing and capacity tests"
+    },
+    {
+     "t": "FinChannel · Vertiv stock rallies as JPMorgan sets a cautious target"
+    }
+   ]
+  },
+  {
+   "what": "2026 EPS consensus down about 5% in 7 days on the paper loss in the SpaceX stake",
+   "why": "GAAP EPS includes mark-to-market gains and losses on the SpaceX stake: in Q3 it cut EPS by about $0.55, and SpaceX closed at $134.27 on November 6, about 11% below its roughly $151 at the end of September, so Q4 may carry another loss. What came down is this year's accounting profit, not operating profit: 2027 EPS consensus moved only about -1% in 7 days and is roughly flat over 30 days. This does not touch the cloud margin and capex assumptions behind our zone, so no review.",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Alphabet's SpaceX Bet Wiped 55 Cents Off Its Earnings"
+    },
+    {
+     "t": "The Coin Republic · SpaceX Stock Closes Up 9% as Alphabet Adds 3.85 Million Shares"
+    },
+    {
+     "t": "Yahoo Finance · SpaceX Stock Is Down More Than 13% in the Past Month"
+    }
+   ]
   }
  ]
 }

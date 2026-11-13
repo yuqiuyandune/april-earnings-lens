@@ -19,6 +19,54 @@
      "u": "https://finviz.com/news/411949/vistras-third-quarter-must-show-whether-softer-ercot-prices-threaten-its-2027-outlook"
     }
    ]
+  },
+  {
+   "t": "VRT",
+   "on": "2026-11-12",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "2027 年 EPS 一致预期 7 天上调约 7%，财报后的上调集中体现",
+   "why": "上调来自 10/28 财报：营收和 EPS 大幅超预期，全年指引第三次上调；11/10 Baird 会议上管理层说需求稳健、客户没有明显抵触涨价，扩产才是瓶颈。同期股价比财报后高点低约 15%，按 2027 年 EPS 算的前瞻市盈率由约 27 倍降到约 21 倍；11/11 摩根大通恢复覆盖给中性，公开报道的理由是 AI 相关工业股估值容易受支出放缓影响。新的一致预期（约 $9.84）仍低于我们基准情景的 2027 年 EPS（约 $10.1），不因此单独复核，区间此前已标待复核。",
+   "src": [
+    {
+     "t": "Yahoo Finance · Vertiv raises 2026 outlook after third-quarter revenue jumps 61%",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/vertiv-raises-2026-outlook-third-145400193.html"
+    },
+    {
+     "t": "ad-hoc-news · Vertiv stock draws focus as CFO flags pricing and capacity tests",
+     "u": "https://www.ad-hoc-news.de/boerse/news/corporate-news/vertiv-stock-draws-focus-as-cfo-flags-pricing-and-capacity-tests/70504948"
+    },
+    {
+     "t": "FinChannel · Vertiv stock rallies as JPMorgan sets a cautious target",
+     "u": "https://finchannel.com/vertiv-stock-rallies-as-jpmorgan-sets-a-cautious-240-target/141220/american-business-trends/stock-prices/2026/11/"
+    }
+   ]
+  },
+  {
+   "t": "GOOGL",
+   "on": "2026-11-12",
+   "kind": "est",
+   "dir": "down",
+   "effect": "eps",
+   "review": false,
+   "what": "2026 年 EPS 一致预期 7 天下调约 5%，原因是 SpaceX 持股的账面亏损",
+   "why": "GAAP EPS 包含 SpaceX 持股按市价重估的盈亏：三季度这项让 EPS 少了约 $0.55，SpaceX 股价 11/6 收于 $134.27，比 9 月底约 $151 低约 11%，四季度可能再记一笔亏损。下调的是今年的会计利润，不是经营利润：2027 年 EPS 一致预期 7 天只变了约 −1%，30 天基本持平。这不影响我们区间背后的云利润率和资本开支假设，不复核。",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Alphabet's SpaceX Bet Wiped 55 Cents Off Its Earnings",
+     "u": "https://247wallst.com/investing/2026/10/29/alphabets-spacex-bet-wiped-55-cents-off-its-earnings/"
+    },
+    {
+     "t": "The Coin Republic · SpaceX Stock Closes Up 9% as Alphabet Adds 3.85 Million Shares",
+     "u": "https://www.thecoinrepublic.com/2026/11/08/spacex-stock-closes-up-9-as-alphabet-adds-3-85-million-shares/"
+    },
+    {
+     "t": "Yahoo Finance · SpaceX Stock Is Down More Than 13% in the Past Month",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-down-more-13-191305878.html"
+    }
+   ]
   }
  ]
 }
