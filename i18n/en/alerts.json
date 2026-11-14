@@ -41,6 +41,36 @@
      "t": "Yahoo Finance · SpaceX Stock Is Down More Than 13% in the Past Month"
     }
    ]
+  },
+  {
+   "what": "Around Jensen Huang's resignation, more than ten firms including Baird, Bernstein, Evercore ISI and Truist cut their ratings to neutral; HSBC followed with a Hold on 11/13",
+   "why": "The publicly reported reasons centre on leadership: on November 12 Huang resigned as CEO and director during an outside investigation commissioned by the board; CFO Colette Kress is interim CEO and no successor has been named. Some firms also cite talent retention, China export restrictions and slower growth in AI spending. Earnings estimates barely moved: consensus EPS for the next two fiscal years was roughly flat over 7 days and several firms kept their forecasts, so what fell was the multiple. A CEO exit could affect talent and execution, which may change the fundamentals, so we have put the zone under review.",
+   "src": [
+    {
+     "t": "TIKR · 6 Firms Downgraded NVIDIA as Huang Resigned"
+    },
+    {
+     "t": "TipRanks · Nvidia Stock Hit by 10 Downgrades"
+    },
+    {
+     "t": "Yahoo Finance · Nvidia Slides After HSBC Downgrades Stock to Hold on CEO Uncertainty"
+    }
+   ]
+  },
+  {
+   "what": "Oppenheimer and William Blair both upgraded the stock to Outperform",
+   "why": "Oppenheimer's public reason is clear progress in data centers, where AMD's third-quarter revenue grew about 97% year on year. William Blair argues that Nvidia's leadership vacuum and delays to Intel's server-chip roadmap give AMD's GPUs and CPUs room to win share. Earnings estimates are rising: consensus 2027 EPS rose about 11% in 7 days, mostly post-earnings revisions. These reasons confirm the known business and do not change the assumptions behind our zone, so no review for now.",
+   "src": [
+    {
+     "t": "TIKR · AMD Soars on “Undeniable” Data Center Success per Oppenheimer Upgrade"
+    },
+    {
+     "t": "TIKR · William Blair Just Upgraded AMD as Nvidia Loses Its CEO"
+    },
+    {
+     "t": "Yahoo Finance · Wall Street Wrap: Nvidia Faces Downgrades as Jensen Huang’s Exit Rattles Analysts"
+    }
+   ]
   }
  ]
 }

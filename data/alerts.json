@@ -67,6 +67,54 @@
      "u": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-down-more-13-191305878.html"
     }
    ]
+  },
+  {
+   "t": "NVDA",
+   "on": "2026-11-12",
+   "kind": "rating",
+   "dir": "down",
+   "effect": "multiple",
+   "review": true,
+   "what": "黄仁勋辞职前后，Baird、伯恩斯坦、Evercore ISI、Truist 等十余家机构把评级降到中性，HSBC 11/13 也降到持有",
+   "why": "公开报道的理由集中在管理层：11 月 12 日黄仁勋在董事会外部调查期间辞去 CEO 和董事，CFO Colette Kress 临时接任，接班人未定；部分机构还提到人才保留、对华出口限制和 AI 投资增速放缓。盈利预期基本没动：未来两个财年 EPS 一致预期 7 天变化接近 0，多家机构明确维持盈利预测，跌的是估值倍数。CEO 离任可能影响人才和战略执行，属于可能改变基本面的事，我们把区间改为待复核。",
+   "src": [
+    {
+     "t": "TIKR · 6 Firms Downgraded NVIDIA as Huang Resigned",
+     "u": "https://www.tikr.com/blog/6-firms-downgraded-nvidia-in-one-day-is-the-selloff-overdone"
+    },
+    {
+     "t": "TipRanks · Nvidia Stock Hit by 10 Downgrades",
+     "u": "https://www.tipranks.com/news/article/nvidia-stock-hit-by-10-downgrades-heres-what-wall-street-analysts-have-to-say"
+    },
+    {
+     "t": "Yahoo Finance · Nvidia Slides After HSBC Downgrades Stock to Hold on CEO Uncertainty",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-13-222002466.html"
+    }
+   ]
+  },
+  {
+   "t": "AMD",
+   "on": "2026-11-12",
+   "kind": "rating",
+   "dir": "up",
+   "effect": "eps",
+   "review": false,
+   "what": "Oppenheimer 和 William Blair 先后把评级上调到优于大盘",
+   "why": "Oppenheimer 的公开理由是数据中心业务进展明确，AMD 第三季度数据中心营收同比增长约 97%。William Blair 认为英伟达管理层空缺、英特尔服务器芯片路线图推迟，让 AMD 的 GPU 和 CPU 有机会拿到更多份额。盈利预期在上调：2027 年 EPS 一致预期 7 天上调约 11%，主要是财报后的修正。这些理由是对已知业务的确认，不改变我们区间背后的假设，暂不复核。",
+   "src": [
+    {
+     "t": "TIKR · AMD Soars on “Undeniable” Data Center Success per Oppenheimer Upgrade",
+     "u": "https://www.tikr.com/blog/amd-soars-12-on-undeniable-data-center-success-per-oppenheimer-upgrade"
+    },
+    {
+     "t": "TIKR · William Blair Just Upgraded AMD as Nvidia Loses Its CEO",
+     "u": "https://www.tikr.com/blog/amd-is-up-127-in-a-year-william-blair-just-upgraded-it-as-nvidia-loses-its-ceo"
+    },
+    {
+     "t": "Yahoo Finance · Wall Street Wrap: Nvidia Faces Downgrades as Jensen Huang’s Exit Rattles Analysts",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wrap-nvidia-faces-090645549.html"
+    }
+   ]
   }
  ]
 }
