@@ -115,6 +115,54 @@
      "u": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wrap-nvidia-faces-090645549.html"
     }
    ]
+  },
+  {
+   "t": "SNDK",
+   "on": "2026-11-13",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "FY2028 EPS 一致预期 7 天上调约 9%，股价同期却在下跌",
+   "why": "10 月 29 日财报超预期，下季指引营收 122–126 亿美元、毛利率约 85%，管理层说数据中心客户的需求到 2030 年前都超过供给；分析师在 11 月上旬集中把这些写进模型，上调 9 家、下调 1 家。股价同期下跌，原因是存储价格见顶的担忧和中期选举后市场对美国部分州限制新建数据中心的担心，跌的是倍数。政策目前只是讨论，没有改变已有的客户需求，区间暂不复核；另外 11 月 20 日起 1 拆 8，价格和 EPS 都要除以 8。",
+   "src": [
+    {
+     "t": "Sandisk · Q1 FY2027 earnings release (8-K)",
+     "u": "https://www.sec.gov/Archives/edgar/data/0002023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+    },
+    {
+     "t": "24/7 Wall St. · SanDisk Just Crashed 22% On Midterms",
+     "u": "https://247wallst.com/investing/2026/11/06/sandisk-just-crashed-22-on-midterms-down-43-over-3-months-one-of-the-highest-ranked-sell-side-analysts-just-doubled-down-that-it-will-nearly-quadruple/"
+    },
+    {
+     "t": "Trefis · What Explains The Move In SanDisk Stock?",
+     "u": "https://www.trefis.com/stock/sndk/articles/624091/what-explains-the-move-in-sandisk-stock/2026-11-10"
+    }
+   ]
+  },
+  {
+   "t": "INTC",
+   "on": "2026-11-13",
+   "kind": "est",
+   "dir": "down",
+   "effect": "eps",
+   "review": false,
+   "what": "2027 EPS 一致预期 7 天下调约 18%，30 天下调约 14%",
+   "why": "这是财报指引的滞后消化：10 月 29 日公司给出第四季度 EPS 0.25 美元、营收 150–160 亿美元，低于预期，并说 PC 放缓至少持续到明年上半年、2027 年是投入年；以色列 Kiryat Gat 工厂停工和基板短缺也限制了至强出货。美银降到中性，Northland 等机构下调盈利预测，理由集中在 PC 下行和供给受限。这些信息在我们 11 月 6 日设定区间时已经计入，区间不变。",
+   "src": [
+    {
+     "t": "TokenPost · Analysts Cut Intel Targets After 25-Cent Fourth-Quarter Outlook",
+     "u": "https://www.tokenpost.com/news/business/44821"
+    },
+    {
+     "t": "TIKR · Intel Is Still Up 61% in 2026 After Its October Crash",
+     "u": "https://www.tikr.com/blog/intel-is-still-up-61-in-2026-after-its-october-crash-a-broken-company-or-a-buy"
+    },
+    {
+     "t": "MarketBeat · Intel Earnings Estimates Cut by Northland Securities",
+     "u": "https://www.marketbeat.com/instant-alerts/estimates-intel-stock-earnings-estimates-cut-by-northland-securities-2026-11-04/"
+    }
+   ]
   }
  ]
 }

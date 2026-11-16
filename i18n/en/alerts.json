@@ -71,6 +71,36 @@
      "t": "Yahoo Finance · Wall Street Wrap: Nvidia Faces Downgrades as Jensen Huang’s Exit Rattles Analysts"
     }
    ]
+  },
+  {
+   "what": "Consensus FY2028 EPS rose about 9% in 7 days while the stock fell",
+   "why": "The October 29 report beat expectations, guided next-quarter revenue to $12.2–12.6B at about 85% gross margin, and management said data-center demand exceeds its supply through the end of the decade; analysts built this into their models in early November, with 9 raises and 1 cut. The stock fell over the same period on worries that memory prices are peaking and that some US states may restrict new data centers after the midterms, so the multiple shrank. The policy is still only under discussion and does not change existing customer demand, so no zone review for now; note the 8-for-1 split from November 20, after which prices and EPS divide by 8.",
+   "src": [
+    {
+     "t": "Sandisk · Q1 FY2027 earnings release (8-K)"
+    },
+    {
+     "t": "24/7 Wall St. · SanDisk Just Crashed 22% On Midterms"
+    },
+    {
+     "t": "Trefis · What Explains The Move In SanDisk Stock?"
+    }
+   ]
+  },
+  {
+   "what": "Consensus 2027 EPS fell about 18% in 7 days and about 14% in 30 days",
+   "why": "This is a delayed digestion of the earnings guidance: on October 29 the company guided fourth-quarter EPS of $0.25 and revenue of $15–16B, below expectations, said the PC slowdown will last at least through the first half of next year, and called 2027 an investment year; the Kiryat Gat fab outage in Israel and substrate shortages also cap Xeon shipments. BofA moved to Neutral, and Northland and others lowered earnings forecasts, citing the PC downturn and supply limits. All of this was already in our zone when we set it on November 6, so the zone is unchanged.",
+   "src": [
+    {
+     "t": "TokenPost · Analysts Cut Intel Targets After 25-Cent Fourth-Quarter Outlook"
+    },
+    {
+     "t": "TIKR · Intel Is Still Up 61% in 2026 After Its October Crash"
+    },
+    {
+     "t": "MarketBeat · Intel Earnings Estimates Cut by Northland Securities"
+    }
+   ]
   }
  ]
 }
