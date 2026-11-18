@@ -101,6 +101,36 @@
      "t": "MarketBeat · Intel Earnings Estimates Cut by Northland Securities"
     }
    ]
+  },
+  {
+   "what": "Consensus 2027 EPS rose about 8% in 7 days while the stock fell",
+   "why": "This is a delayed digestion of the November 2 report: revenue grew about 96% and full-year revenue guidance was raised to $8.530–8.534B, and analysts have been writing it into their models, with 20 raises and no cuts in the past 7 days. Our own daily records show only about 2% of the move since November 8, so most revisions came in the first week after earnings. The stock fell over the same period, mainly with the AI-sector pullback, so the multiple came down. Revised consensus of about $2.54 sits between our base and bull scenarios, and the information was already in the report, so the zone is unchanged.",
+   "src": [
+    {
+     "t": "Palantir · Q3 2026 earnings release (8-K)"
+    },
+    {
+     "t": "24/7 Wall St. · Palantir's 96% Revenue Growth Drives Analyst Optimism as Price Targets Rise"
+    },
+    {
+     "t": "Motley Fool · Why Does Palantir Stock Keep Going Down?"
+    }
+   ]
+  },
+  {
+   "what": "Consensus FY2028 EPS rose about 4% in 7 days and about 13% in 30 days",
+   "why": "The raises come from the November 2 report: revenue grew about 137%, next-quarter guidance is $1.575–1.625B, about $350M more than this quarter, and a second major NPO/CPO deal is backed by more than $5B of purchase commitments. There were 15 raises and no cuts in the past 7 days; our own daily records show about 3% of the move since November 8, the rest came in the first week after earnings. The stock rose on November 17 on reports that the U.S. plans to restrict imports of Chinese data center optical modules; that moved the price only, and the policy is not final. The stock still trades mainly on the Marvell exchange value, so the zone is unchanged.",
+   "src": [
+    {
+     "t": "Lumentum · Q1 FY2027 earnings release (8-K)"
+    },
+    {
+     "t": "TIKR · Lumentum Is Up 56% in 2026, but Marvell Now Sets Its Price"
+    },
+    {
+     "t": "Benzinga · Lumentum Stock Climbs on Report of Looming U.S. Curbs on Chinese Data Center Gear"
+    }
+   ]
   }
  ]
 }

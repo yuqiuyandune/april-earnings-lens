@@ -163,6 +163,54 @@
      "u": "https://www.marketbeat.com/instant-alerts/estimates-intel-stock-earnings-estimates-cut-by-northland-securities-2026-11-04/"
     }
    ]
+  },
+  {
+   "t": "PLTR",
+   "on": "2026-11-17",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "2027 年 EPS 一致预期 7 天上调约 8%，股价同期下跌",
+   "why": "这是 11 月 2 日财报的滞后消化：营收增长约 96%，全年营收指引上调到 85.30–85.34 亿美元，分析师陆续把它写进模型，近 7 天上调 20 家、无下调。我们自己的每日记录显示 11 月 8 日以来只多了约 2%，大部分修正发生在财报后第一周。股价同期下跌，主要随 AI 板块回调，跌的是倍数；修正后的一致预期约 2.54 美元，在我们基准和乐观情景之间，信息都是财报里已有的，区间不变。",
+   "src": [
+    {
+     "t": "Palantir：2026 Q3 财报新闻稿（SEC 8-K）",
+     "u": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm"
+    },
+    {
+     "t": "24/7 Wall St. · Palantir's 96% Revenue Growth Drives Analyst Optimism as Price Targets Rise",
+     "u": "https://247wallst.com/investing/2026/11/03/palantirs-96-revenue-growth-drives-analyst-optimism-as-price-targets-rise/"
+    },
+    {
+     "t": "Motley Fool · Why Does Palantir Stock Keep Going Down?",
+     "u": "https://www.fool.com/investing/2026/11/16/why-does-palantir-stock-keep-going-down/"
+    }
+   ]
+  },
+  {
+   "t": "LITE",
+   "on": "2026-11-17",
+   "kind": "est",
+   "dir": "up",
+   "effect": "eps",
+   "review": false,
+   "what": "FY2028 EPS 一致预期 7 天上调约 4%，30 天上调约 13%",
+   "why": "上调来自 11 月 2 日财报：营收增长约 137%，下季指引 15.75–16.25 亿美元，环比再增约 3.5 亿；第二个 NPO/CPO 大单背后有超过 50 亿美元的采购承诺。近 7 天上调 15 家、无下调，我们的每日记录显示 11 月 8 日以来约多了 3%，其余是财报后第一周的修正。11 月 17 日股价上涨，是因为美国拟限制中国数据中心光模块进口的报道，这只影响价格，政策尚未落地；股价仍主要跟着 Marvell 换股价值走，区间不变。",
+   "src": [
+    {
+     "t": "Lumentum：FY27 Q1 财报新闻稿（SEC 8-K）",
+     "u": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026068655/lite_ex991xq1fy27.htm"
+    },
+    {
+     "t": "TIKR · Lumentum Is Up 56% in 2026, but Marvell Now Sets Its Price",
+     "u": "https://www.tikr.com/blog/lumentum-is-up-69-in-2026-but-marvell-now-sets-its-price-take-profits-or-buy-more"
+    },
+    {
+     "t": "Benzinga · Lumentum Stock Climbs on Report of Looming U.S. Curbs on Chinese Data Center Gear",
+     "u": "https://www.benzinga.com/trading-ideas/movers/26/11/63338754/lumentum-stock-climbs-on-report-of-looming-us-curbs-on-chinese-data-center-gear"
+    }
+   ]
   }
  ]
 }
