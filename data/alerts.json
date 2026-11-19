@@ -211,6 +211,90 @@
      "u": "https://www.benzinga.com/trading-ideas/movers/26/11/63338754/lumentum-stock-climbs-on-report-of-looming-us-curbs-on-chinese-data-center-gear"
     }
    ]
+  },
+  {
+   "t": "FN",
+   "on": "2026-11-18",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "FY2028 EPS 一致预期 7 天上调约 10%，股价同期回落",
+   "why": "上调来自 11 月 2 日财报：营收、EPS 和下季指引 16.0–16.5 亿美元都高于预期，近 7 天上调 6 家、无下调。我们的每日记录显示 11 月 8 日以来只多了约 2%，大部分修正在财报后第一周。股价从 11 月 11 日约 369 美元回落到 320 美元，随光模块板块下跌，跌的是倍数；Lumentum 与 Marvell 的交易对订单的影响，电话会上已有人问，不是新信息。修正后约 24.1 美元，接近我们的基准情景，区间不变。",
+   "src": [
+    {
+     "t": "Timothy Sykes · Fabrinet Stock Jumps As Record Quarter Fuels Bullish Guidance",
+     "u": "https://www.timothysykes.com/news/fabrinet-fn-news-2026_11_03/"
+    },
+    {
+     "t": "TradingKey · Fabrinet Stock (FN) Moved Down by 7.54% on Nov 13",
+     "u": "https://www.tradingkey.com/news/market-movers/262305197-market-movers-fn-20261113"
+    }
+   ]
+  },
+  {
+   "t": "AEHR",
+   "on": "2026-11-18",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "FY2028 EPS 一致预期 7 天和 30 天都上调约 22%，股价同期回落",
+   "why": "上调来自 11 月 2 日财报：营收比预期高约 23%，FY27 营收指引上调到 1.5 亿美元，积压订单约 1.01 亿美元。我们的每日记录显示 11 月 9 日以来没有变化，修正都在财报后第一周；Jefferies 和 Lake Street 维持买入但下调目标价，公开理由是半导体设备股倍数下降。股价从 11 月 11 日约 66 美元回落到 49 美元，跌的是倍数；修正后约 1.68 美元，在我们基准和乐观情景之间，区间不变。",
+   "src": [
+    {
+     "t": "Aehr Test Systems：FY27 Q1 财报新闻稿",
+     "u": "https://www.aehr.com/2026/11/aehr-test-systems-reports-record-first-quarter-fiscal-2027-revenue-of-33-0-million-raises-full-year-revenue-outlook-to-150-million-triple-fiscal-2026-revenue/"
+    },
+    {
+     "t": "Stocktwits · AEHR Stock Heads For Biggest Single-Day Gain Since July — Analysts Cut Targets Despite Earnings Beat",
+     "u": "https://stocktwits.com/news-articles/markets/equity/aehr-stock-heads-for-biggest-single-day-gain-since-july-analysts-cut-targets-despite-earnings-beat-raised-guidance/cNGX7dHR9db"
+    }
+   ]
+  },
+  {
+   "t": "ANET",
+   "on": "2026-11-18",
+   "kind": "est",
+   "dir": "up",
+   "effect": "eps",
+   "review": true,
+   "what": "2027 年 EPS 一致预期 7 天上调约 16%，区间待复核",
+   "why": "上调来自 11 月 3 日电话会：管理层给出 2027 年营收约 185 亿美元、增长 38–40%，AI 网络收入约翻倍到约 70 亿美元。近 7 天上调 18 家、无下调，我们的每日记录显示主要上调发生在 11 月 10–11 日；股价同期涨幅和 EPS 上调相近，倍数基本没变。我们的财报解读漏写了这个 2027 年展望，基准情景按两年年增约 28% 推算，低于公司自己的 2027 年目标，所以区间改为待复核。",
+   "src": [
+    {
+     "t": "Arista：2026 Q3 财报新闻稿（SEC 8-K）",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001596532/000159653226000252/ex991q326-earningsrelease.htm"
+    },
+    {
+     "t": "Seeking Alpha · Arista forecasts $18.5B FY 2027 revenue amid 38%-40% growth outlook and $7B AI fabrics target",
+     "u": "https://seekingalpha.com/news/4664443-arista-forecasts-18_5b-fy-2027-revenue-amid-38-percentminus-40-percent-growth-outlook-and-7b"
+    },
+    {
+     "t": "Tech Times · Arista Q3 Earnings Beat Estimates, but CEO Sees No Material Scale-Up Ethernet Revenue Next Year",
+     "u": "https://www.techtimes.com/articles/330161/20261106/arista-q3-earnings-beat-estimates-ceo-sees-no-material-scale-ethernet-revenue-next-year.htm"
+    }
+   ]
+  },
+  {
+   "t": "ALAB",
+   "on": "2026-11-18",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "2027 年 EPS 一致预期 7 天上调约 10%，股价同期下跌",
+   "why": "上调来自 11 月 3 日财报：Q4 营收指引 7.3–7.5 亿美元，中值环比增长约 26%，近 7 天上调 18 家、无下调；我们的每日记录显示 11 月 9 日以来多了约 7%，主要在 11 月 10–11 日。11 月 16 日公司宣布 Hyve 将提供 Orion 机柜组件，预计 2027 年 Q1 上市，和电话会说的时间一致，不改变我们的情景。股价同期随芯片板块下跌，跌的是倍数，区间不变。",
+   "src": [
+    {
+     "t": "Trefis · Why Is Astera Labs Stock Falling Again?",
+     "u": "https://www.trefis.com/stock/alab/articles/625789/why-is-astera-labs-stock-falling-again/2026-11-17"
+    },
+    {
+     "t": "HPCwire · Astera Labs and Hyve Solutions Partner to Bring AI Inference Capacity to Customers Faster",
+     "u": "https://www.hpcwire.com/off-the-wire/astera-labs-and-hyve-solutions-partner-to-bring-ai-inference-capacity-to-customers-faster/"
+    }
+   ]
   }
  ]
 }

@@ -131,6 +131,57 @@
      "t": "Benzinga · Lumentum Stock Climbs on Report of Looming U.S. Curbs on Chinese Data Center Gear"
     }
    ]
+  },
+  {
+   "what": "Consensus FY2028 EPS rose about 10% in 7 days while the stock pulled back",
+   "why": "The raises come from the November 2 report: revenue, EPS and next-quarter guidance of $1.60–1.65B all beat expectations, with 6 raises and no cuts in the past 7 days. Our own daily records show only about 2% of the move since November 8; most came in the first week after earnings. The stock fell from about $369 on November 11 to $320 with optical module peers, so the multiple fell; the effect of the Lumentum–Marvell deal on orders was already raised on the call and is not new. The revised consensus of about $24.1 is close to our base case, so the zone is unchanged.",
+   "src": [
+    {
+     "t": "Timothy Sykes · Fabrinet Stock Jumps As Record Quarter Fuels Bullish Guidance"
+    },
+    {
+     "t": "TradingKey · Fabrinet Stock (FN) Moved Down by 7.54% on Nov 13"
+    }
+   ]
+  },
+  {
+   "what": "Consensus FY2028 EPS rose about 22% over both 7 and 30 days while the stock pulled back",
+   "why": "The raises come from the November 2 report: revenue beat by about 23%, FY27 revenue guidance rose to $150M, and backlog is about $101M. Our own daily records show no change since November 9, so the revisions came in the first week after earnings; Jefferies and Lake Street kept Buy ratings but lowered targets, citing lower multiples for chip equipment stocks. The stock fell from about $66 on November 11 to $49, so the multiple fell; the revised consensus of about $1.68 sits between our base and bull cases, and the zone is unchanged.",
+   "src": [
+    {
+     "t": "Aehr Test Systems · Q1 FY2027 earnings release"
+    },
+    {
+     "t": "Stocktwits · AEHR Stock Heads For Biggest Single-Day Gain Since July — Analysts Cut Targets Despite Earnings Beat"
+    }
+   ]
+  },
+  {
+   "what": "Consensus 2027 EPS rose about 16% in 7 days; zone under review",
+   "why": "The raises come from the November 3 call: management gave a 2027 outlook of about $18.5B in revenue, up 38–40%, with AI networking revenue roughly doubling to about $7B. There were 18 raises and no cuts in the past 7 days, and our daily records show most of the move on November 10–11; the stock rose about as much as EPS, so the multiple barely changed. Our earnings review missed this 2027 outlook, and our base case assumed about 28% a year for two years, below the company's own 2027 target, so the zone is now under review.",
+   "src": [
+    {
+     "t": "Arista · Q3 2026 earnings release (8-K)"
+    },
+    {
+     "t": "Seeking Alpha · Arista forecasts $18.5B FY 2027 revenue amid 38%-40% growth outlook and $7B AI fabrics target"
+    },
+    {
+     "t": "Tech Times · Arista Q3 Earnings Beat Estimates, but CEO Sees No Material Scale-Up Ethernet Revenue Next Year"
+    }
+   ]
+  },
+  {
+   "what": "Consensus 2027 EPS rose about 10% in 7 days while the stock fell",
+   "why": "The raises come from the November 3 report: Q4 revenue guidance is $730–750M, about 26% above Q3 at the midpoint, with 18 raises and no cuts in the past 7 days; our daily records show about 7% of the move since November 9, mostly on November 10–11. On November 16 the company said Hyve will offer Orion rack components, expected in Q1 2027, in line with the timing given on the call, so our scenarios do not change. The stock fell with chip stocks over the same period, so the multiple fell, and the zone is unchanged.",
+   "src": [
+    {
+     "t": "Trefis · Why Is Astera Labs Stock Falling Again?"
+    },
+    {
+     "t": "HPCwire · Astera Labs and Hyve Solutions Partner to Bring AI Inference Capacity to Customers Faster"
+    }
+   ]
   }
  ]
 }

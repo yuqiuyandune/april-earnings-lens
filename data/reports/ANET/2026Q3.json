@@ -283,7 +283,7 @@
   "pricezone": {
    "price": 169.91,
    "on": "2026-11-03",
-   "status": "ok",
+   "status": "review",
    "sub": "2028 EPS × 设定市盈率；现价按 11 月 3 日常规交易收盘前报价（财报前）",
    "scen": [
     {
