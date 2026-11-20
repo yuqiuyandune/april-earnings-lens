@@ -295,6 +295,50 @@
      "u": "https://www.hpcwire.com/off-the-wire/astera-labs-and-hyve-solutions-partner-to-bring-ai-inference-capacity-to-customers-faster/"
     }
    ]
+  },
+  {
+   "t": "SMCI",
+   "on": "2026-11-19",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": true,
+   "what": "FY2028 EPS 一致预期 7 天上调约 22%，股价同期下跌",
+   "why": "上调来自 11 月 3 日财报：FY27 全年营收指引从 $650–720 亿提高到 $720–820 亿，我们的每日记录显示主要上调发生在 11 月 11 日，30 天内上调 12 家、无下调。11 月 12 日有报道称美国司法部在调查与超微产品流向中国有关的个人和实体，公司表示一直配合调查、未被告知是调查对象，股价随后连跌，11 月 9 日以来约 −17%，跌的是倍数。11 月 5 日提交的 10-Q 营收和初步数字一致，但应收账款比 6 月底多约 58%、经营现金流仍为负；一致预期已高于我们的基准情景，区间继续待复核。",
+   "src": [
+    {
+     "t": "Super Micro Computer：10-Q（截至 2026 年 9 月 30 日，SEC）",
+     "u": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000027/smci-20260930.htm"
+    },
+    {
+     "t": "Simply Wall St · Analysts Just Made A Massive Upgrade To Their Super Micro Computer, Inc. (NASDAQ:SMCI) Forecasts",
+     "u": "https://simplywall.st/stocks/us/tech/nasdaq-smci/super-micro-computer/news/analysts-just-made-a-massive-upgrade-to-their-super-micro-co"
+    },
+    {
+     "t": "Spokesman-Review（Bloomberg）· US probes if Alice Huang helped smuggle Super Micro products",
+     "u": "https://www.spokesman.com/stories/2026/nov/12/us-probes-if-alice-huang-helped-smuggle-super-micr/"
+    }
+   ]
+  },
+  {
+   "t": "COHR",
+   "on": "2026-11-19",
+   "kind": "est",
+   "dir": "up",
+   "effect": "eps",
+   "review": false,
+   "what": "FY2028 EPS 一致预期 7 天上调约 13%，倍数基本没变",
+   "why": "上调来自 11 月 4 日财报：下季营收指引 $25.5–27.5 亿，管理层说 2027 年产能基本订满，约 $200 亿的五年长期协议 2028 年初开始贡献收入；Rosenblatt 等券商随后上调了 FY27 和 FY28 预期。我们的每日记录显示主要上调发生在 11 月 10 日，30 天内上调 12 家、无下调。股价 11 月 6 日以来约 +11%，和 EPS 上调幅度相近，前瞻市盈率仍约 14 倍。这些信息已写在我们的财报解读里，基准情景就按公司 FY28 单季 $40 亿的目标设定，区间不变。",
+   "src": [
+    {
+     "t": "Zacks（Yahoo Finance）· Bull of the Day: Coherent (COHR)",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/bull-day-coherent-cohr-092000773.html"
+    },
+    {
+     "t": "Barchart（Yahoo Finance）· Are Wall Street Analysts Bullish on Coherent Stock?",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-bullish-coherent-123715757.html"
+    }
+   ]
   }
  ]
 }
