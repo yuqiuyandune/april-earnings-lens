@@ -339,6 +339,70 @@
      "u": "https://finance.yahoo.com/markets/stocks/articles/wall-street-analysts-bullish-coherent-123715757.html"
     }
    ]
+  },
+  {
+   "t": "NVDA",
+   "on": "2026-11-18",
+   "kind": "rating",
+   "dir": "down",
+   "effect": "multiple",
+   "review": true,
+   "what": "财报次日，Summit Insights 把评级从买入降到持有",
+   "why": "公开报道的理由是黄仁勋离任后的产品路线图不确定性，以及美国商务部 11 月 16 日的出口新规：向印尼、马来西亚、新加坡、泰国和巴西出口先进芯片需要许可证。11 月 17 日的财报营收和下季指引都高于预期，但未来两个财年 EPS 一致预期 7 天几乎没动（变化在 0.5% 以内），跌的仍是倍数。11 月 20 日又有报道称 SEC 在调查公司的会计处理（调查不代表存在违规），股价当天跌约 14%。出口新规和监管调查都可能影响基本面，区间继续待复核。",
+   "src": [
+    {
+     "t": "TIKR · Is Summit Insights Wrong to Give Up on NVIDIA?",
+     "u": "https://www.tikr.com/blog/is-summit-insights-wrong-to-give-up-on-nvidia-wall-street-still-sees-251"
+    },
+    {
+     "t": "Gotrade · Nvidia Falls 4.1% as US Tightens AI Chip Rules (Nov 16)",
+     "u": "https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-november-17-2026/"
+    },
+    {
+     "t": "Motley Fool · Here's Why Nvidia Stock Crashed on Friday",
+     "u": "https://www.fool.com/investing/2026/11/20/here-is-why-nvidia-stock-crashed-on-friday/"
+    }
+   ]
+  },
+  {
+   "t": "BE",
+   "on": "2026-11-19",
+   "kind": "rating",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "BMO 把评级从与大盘持平上调到优于大盘",
+   "why": "BMO 此前主要怀疑公司能否规模化交付。公开报道的上调理由是近期执行情况、多个大型项目落地和股价回落；和管理层沟通后，BMO 对合同保护条款和按里程碑收款更放心。2027 年 EPS 一致预期 30 天上调约 9%，主要来自 10 月底财报后的修正，近 7 天没有变化；股价从 11 月 12 日约 202 美元跌到 11 月 20 日约 142 美元，跌的是倍数。这些理由是对已知业务的确认，不改变区间背后的假设，暂不复核。",
+   "src": [
+    {
+     "t": "TIKR · Bloom Energy Soars 6% as One-Time Skeptic BMO Upgrades",
+     "u": "https://www.tikr.com/blog/bloom-energy-soars-6-as-one-time-skeptic-bmo-upgrades-on-anthropic-ipo-day"
+    },
+    {
+     "t": "Daily Trade Alert · Analyst Upgrades and Downgrades for Thursday, 11/19",
+     "u": "https://dailytradealert.com/2026/11/19/analyst-upgrades-and-downgrades-for-thursday-11-19/"
+    }
+   ]
+  },
+  {
+   "t": "TSLA",
+   "on": "2026-11-20",
+   "kind": "rating",
+   "dir": "up",
+   "effect": "multiple",
+   "review": false,
+   "what": "HSBC 把评级从减持上调到持有",
+   "why": "公开报道的理由是特斯拉和 SpaceX 可能合并：两家公司已各自成立独立董事委员会研究，马斯克 11 月 18 日说两家可能合在一起更好，但还没有正式协议。HSBC 认为合并的业务逻辑并不清楚，但并购话题会主导讨论，股价继续下跌的空间有限；报道没有提到它调整盈利预测。2027 年 EPS 一致预期 30 天下调约 5%，近 7 天没动，这次动的是估值倍数。我们没有给 TSLA 设关注区间，不涉及复核。",
+   "src": [
+    {
+     "t": "Investing.com · HSBC upgrades Tesla on SpaceX merger potential",
+     "u": "https://www.investing.com/news/stock-market-news/hsbc-upgrades-tesla-more-than-doubles-target-on-spacex-merger-potential-5041374"
+    },
+    {
+     "t": "24/7 Wall St. · Tesla Falls 4% Despite HSBC Upgrade",
+     "u": "https://247wallst.com/investing/2026/11/20/tesla-falls-4-despite-hsbc-upgrade-and-359-target-tied-to-spacex-merger-talk-rivian-drops-5-lucid-slides-4/"
+    }
+   ]
   }
  ]
 }

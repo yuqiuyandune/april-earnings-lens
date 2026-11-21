@@ -209,6 +209,45 @@
      "t": "Barchart (Yahoo Finance) · Are Wall Street Analysts Bullish on Coherent Stock?"
     }
    ]
+  },
+  {
+   "what": "The day after results, Summit Insights cut its rating from Buy to Hold",
+   "why": "The publicly reported reasons are roadmap uncertainty after Jensen Huang's exit and the Commerce Department's November 16 rule requiring licences to export advanced chips to Indonesia, Malaysia, Singapore, Thailand and Brazil. Revenue and next-quarter guidance in the November 17 report beat expectations, but consensus EPS for the next two fiscal years barely moved over 7 days (within 0.5%), so what fell was again the multiple. On November 20 reports said the SEC is looking into the company's accounting (an investigation is not evidence of wrongdoing), and the stock fell about 14% that day. The export rule and the regulatory inquiries could both change the fundamentals, so the zone stays under review.",
+   "src": [
+    {
+     "t": "TIKR · Is Summit Insights Wrong to Give Up on NVIDIA?"
+    },
+    {
+     "t": "Gotrade · Nvidia Falls 4.1% as US Tightens AI Chip Rules (Nov 16)"
+    },
+    {
+     "t": "Motley Fool · Here's Why Nvidia Stock Crashed on Friday"
+    }
+   ]
+  },
+  {
+   "what": "BMO raised its rating from Market Perform to Outperform",
+   "why": "BMO's main doubt had been whether the company could deliver at scale. The publicly reported reasons for the upgrade are recent execution, several large projects and a lower share price; after meeting management BMO is more comfortable with contract protections and milestone-based customer payments. Consensus 2027 EPS is up about 9% over 30 days, mostly revisions after the late-October report, and unchanged over 7 days; the stock fell from about $202 on November 12 to about $142 on November 20, so what fell was the multiple. These reasons confirm the known business and do not change the assumptions behind our zone, so no review for now.",
+   "src": [
+    {
+     "t": "TIKR · Bloom Energy Soars 6% as One-Time Skeptic BMO Upgrades"
+    },
+    {
+     "t": "Daily Trade Alert · Analyst Upgrades and Downgrades for Thursday, 11/19"
+    }
+   ]
+  },
+  {
+   "what": "HSBC raised its rating from Reduce to Hold",
+   "why": "The publicly reported reason is a possible Tesla–SpaceX merger: both companies have set up committees of independent directors to study it, and on November 18 Musk said the two would probably be better together, but there is no agreement yet. HSBC sees the business logic as unclear but expects the M&A debate to dominate, limiting further downside; reports do not mention changes to its earnings forecasts. Consensus 2027 EPS is down about 5% over 30 days and flat over 7 days, so this move is about the multiple. We do not set a zone for TSLA, so there is nothing to review.",
+   "src": [
+    {
+     "t": "Investing.com · HSBC upgrades Tesla on SpaceX merger potential"
+    },
+    {
+     "t": "24/7 Wall St. · Tesla Falls 4% Despite HSBC Upgrade"
+    }
+   ]
   }
  ]
 }
