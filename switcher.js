@@ -51,15 +51,15 @@
     "@media (prefers-color-scheme:dark){:root:not([data-theme=light]) #aps{--h-bg:#131c2a;--h-ink:#e8edf4;--h-muted:#9aa6b8;--h-faint:#7a869a;--h-line:#243146;--h-soft:#1a2535;--h-accent:#8ea6ff;--h-accent-ink:#0b111b}}" +
     ":root[data-theme=dark] #aps{--h-bg:#131c2a;--h-ink:#e8edf4;--h-muted:#9aa6b8;--h-faint:#7a869a;--h-line:#243146;--h-soft:#1a2535;--h-accent:#8ea6ff;--h-accent-ink:#0b111b}" +
     "#aps *{box-sizing:border-box}#aps svg{display:block;flex:none;max-width:none}#aps .aps-s svg{width:16px!important;height:16px!important}#aps .aps-lg svg{width:18px!important;height:18px!important}" +
-    "#aps .aps-in{max-width:1200px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));min-height:64px;display:flex;align-items:center;gap:22px}" +
+    "#aps .aps-in{max-width:1200px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));min-height:64px;display:flex;align-items:center;gap:16px}" +
     "#aps .aps-br{display:flex;align-items:center;gap:10px;color:var(--h-ink);text-decoration:none;flex:none;min-width:0}" +
     "#aps .aps-lg{width:30px;height:30px;border-radius:9px;background:#0f1b2d;display:grid;place-items:center;flex:none}" +
     "#aps .aps-br b{font-family:'Bricolage Grotesque',Figtree,system-ui,sans-serif;font-weight:700;font-size:18px;letter-spacing:-.01em;white-space:nowrap}" +
     "#aps .aps-br b i{font-style:normal;color:var(--h-accent)}" +
-    "#aps .aps-nav{display:flex;gap:20px;align-items:center;flex:1;min-width:0}" +
+    "#aps .aps-nav{display:flex;gap:16px;align-items:center;flex:1;min-width:0}" +
     "#aps .aps-nav a{color:var(--h-muted);text-decoration:none;font-size:14.5px;font-weight:500;padding:20px 1px 18px;border-bottom:2px solid transparent;white-space:nowrap}" +
     "#aps .aps-nav a:hover{color:var(--h-ink)}#aps .aps-nav a[aria-current=page]{color:var(--h-ink);font-weight:700;border-bottom-color:var(--h-accent)}" +
-    "#aps .aps-s{position:relative;display:flex;align-items:center;gap:8px;background:var(--h-soft);border:1px solid var(--h-line);border-radius:10px;padding:0 12px;height:38px;width:210px;flex:none;color:var(--h-faint);margin:0}" +
+    "#aps .aps-s{position:relative;display:flex;align-items:center;gap:8px;background:var(--h-soft);border:1px solid var(--h-line);border-radius:10px;padding:0 12px;height:38px;width:170px;flex:none;color:var(--h-faint);margin:0}" +
     "#aps .aps-s:focus-within{border-color:var(--h-accent)}" +
     "#aps .aps-s input{border:0;background:transparent;outline:none;font:inherit;font-size:14px;width:100%;min-width:0;color:var(--h-ink);padding:0;margin:0;box-shadow:none}" +
     "#aps .aps-msg{position:absolute;left:0;top:42px;font-size:12.5px;color:var(--h-muted);white-space:nowrap}" +
@@ -69,7 +69,6 @@
     "#aps .aps-lang button[aria-pressed=true]{background:var(--h-ink);color:var(--h-bg)}" +
     "#aps .aps-sub{border:0;background:var(--h-accent);color:var(--h-accent-ink);font:inherit;font-weight:700;font-size:14px;border-radius:10px;padding:9px 16px;cursor:pointer;flex:none}" +
     "#aps a:focus-visible,#aps button:focus-visible{outline:2px solid var(--h-accent);outline-offset:2px}" +
-    "@media (max-width:1320px){#aps .aps-in{gap:16px}#aps .aps-nav{gap:16px}#aps .aps-s{width:170px}}" +
     "@media (max-width:1180px){" +
     "#aps .aps-in{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'br sub' 's lang' 'nav nav';gap:10px;padding-top:10px;min-height:0}" +
     "#aps .aps-br{grid-area:br}#aps .aps-sub{grid-area:sub;justify-self:end}#aps .aps-s{grid-area:s;width:auto}#aps .aps-lang{grid-area:lang;align-self:center}" +
@@ -207,16 +206,6 @@
     var x = fromTag(document.documentElement.getAttribute("lang"));
     if (x && x !== lang) { lang = x; paint(); }
   }).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
-  /* line the header up with the page's own content column (pages use .wrap) on wide screens; narrow columns (Earnings Lens) keep the standard width */
-  function align() {
-    var w = document.querySelector("body .wrap"), inner = bar.firstChild;
-    if (!w || innerWidth <= 1180 || w.getBoundingClientRect().width < 960) { inner.style.maxWidth = ""; inner.style.paddingLeft = ""; inner.style.paddingRight = ""; return; }
-    var r = w.getBoundingClientRect(), cs = getComputedStyle(w);
-    inner.style.maxWidth = "none";
-    inner.style.paddingLeft = Math.max(16, Math.round(r.left + parseFloat(cs.paddingLeft || 0))) + "px";
-    inner.style.paddingRight = Math.max(16, Math.round(innerWidth - r.right + parseFloat(cs.paddingRight || 0))) + "px";
-  }
-  addEventListener("resize", align);
-  function ready() { checkLang(); align(); var x = fromTag(document.documentElement.getAttribute("lang")); if (x && x !== lang) { lang = x; paint(); } }
+  function ready() { checkLang(); var x = fromTag(document.documentElement.getAttribute("lang")); if (x && x !== lang) { lang = x; paint(); } }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready); else ready();
 })();
