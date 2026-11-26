@@ -1,7 +1,7 @@
 /* April's Stock Atlas — the site header shared by every page except the homepage (which renders the same header itself,
    in april-stock-atlas/scripts/build_home.py; keep the two in step).
    Loaded as a blocking <script> at the start of <body>; inserts the header right after itself so it paints with the page.
-   One white bar: brand · sections (Today, Insiders, Earnings, Calendar, Markets, Supply chains) · ticker search · language · Subscribe.
+   One white bar: brand · sections (Today, Insiders, Options, Earnings, Calendar, Markets, Themes) · ticker search · language · Subscribe.
    Below 1180px wide it becomes three rows: brand + Subscribe, search + language, then the sections as a scrolling tab row.
    Pages keep their own section-level controls (insider tabs and filters, the Earnings Lens sub-navigation and search);
    their own brand row and language buttons are hidden once this header is up, and this header's language buttons press
@@ -11,21 +11,21 @@
 (function () {
   if (document.getElementById("aps")) return;
   var path = location.pathname;
-  var cur = /^\/earnings(\/|$)/.test(path) ? "earn" : /^\/calendar(\/|$)/.test(path) ? "cal"
+  var cur = /^\/options(\/|$)/.test(path) ? "opt" : /^\/earnings(\/|$)/.test(path) ? "earn" : /^\/calendar(\/|$)/.test(path) ? "cal"
     : /^\/(market|articles)(\/|$)/.test(path) ? "mkt" : /^\/(themes|stack|energy|ai)(\/|$)/.test(path) ? "chain"
     : /^\/(insider|en|zh|tw|s|subscribed)(\/|\.|$)/.test(path) ? "ins" : path === "/" ? "home" : "";
-  var NAV = ["home", "ins", "earn", "cal", "mkt", "chain"];
-  var HREF = { home: "/", ins: "/insider/", earn: "/earnings/", cal: "/calendar/", mkt: "/market/", chain: "/themes/" };
+  var NAV = ["home", "ins", "opt", "earn", "cal", "mkt", "chain"];
+  var HREF = { home: "/", ins: "/insider/", opt: "/options/", earn: "/earnings/", cal: "/calendar/", mkt: "/market/", chain: "/themes/" };
   var L = {
-    en: { home: "Today", ins: "Insiders", earn: "Earnings", cal: "Calendar", mkt: "Markets", chain: "Supply chains", sub: "Subscribe",
+    en: { home: "Today", ins: "Insiders", opt: "Options", earn: "Earnings", cal: "Calendar", mkt: "Markets", chain: "Themes", sub: "Subscribe",
       ph: "Search ticker, e.g. NVDA", none: "No page for ", nav: "Sections", lang: "Language",
       st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights and new earnings reviews.",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close" },
-    zh: { home: "今日", ins: "内部人", earn: "财报", cal: "日历", mkt: "市场", chain: "产业链", sub: "订阅",
+    zh: { home: "今日", ins: "内部人", opt: "期权", earn: "财报", cal: "日历", mkt: "市场", chain: "产业链", sub: "订阅",
       ph: "搜索代码，如 NVDA", none: "没有找到 ", nav: "栏目", lang: "语言",
       st: "每周邮件", sd: "每个周末一封，汇总一周的内部人买卖要点和新上线的财报解读。",
       sp: "你的邮箱", sb: "订阅", sf: "免费，随时可以退订。中文在前，英文在后。", sc: "关闭" },
-    tw: { home: "今日", ins: "內部人", earn: "財報", cal: "日曆", mkt: "市場", chain: "產業鏈", sub: "訂閱",
+    tw: { home: "今日", ins: "內部人", opt: "選擇權", earn: "財報", cal: "日曆", mkt: "市場", chain: "產業鏈", sub: "訂閱",
       ph: "搜尋代碼，如 NVDA", none: "沒有找到 ", nav: "欄目", lang: "語言",
       st: "每週郵件", sd: "每個週末一封，彙總一週的內部人買賣要點和新上線的財報解讀。",
       sp: "你的郵箱", sb: "訂閱", sf: "免費，隨時可以退訂。中文在前，英文在後。", sc: "關閉" }
@@ -44,7 +44,12 @@
     return "en";
   }
   var lang = detect();
-  var css =
+  /* the site's own Latin fonts (served by the main site at /fonts/), so the header looks the same on every page */
+  var FONT = [["Figtree", 400, "f1"], ["Figtree", 600, "f2"], ["Figtree", 700, "f3"], ["Bricolage Grotesque", 700, "f4"]].map(function (f) {
+    return "@font-face{font-family:'" + f[0] + "';font-style:normal;font-weight:" + f[1] + ";font-display:swap;src:url(/fonts/" + f[2] + ".woff2) format('woff2');"
+      + "unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}";
+  }).join("");
+  var css = FONT +
     "#aps{--h-bg:#fff;--h-ink:#0e1726;--h-muted:#5d6879;--h-faint:#7d8798;--h-line:#e1e6ed;--h-soft:#f5f7fa;--h-accent:#2c49c9;--h-accent-ink:#fff;" +
     "background:var(--h-bg);border-bottom:1px solid var(--h-line);position:relative;z-index:30;color:var(--h-ink);" +
     "font-family:Figtree,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.5;padding-top:env(safe-area-inset-top,0px)}" +
