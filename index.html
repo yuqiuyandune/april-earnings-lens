@@ -507,7 +507,7 @@ function home(){
     const order=[1,2,3,4,5,0],other=INDEX.filter(c=>!CH.co[c.t]);
     order.forEach(id=>{const Ly=CH.layers.find(x=>x.id===id),cs=INDEX.filter(c=>CH.co[c.t]&&CH.co[c.t][0]===id);if(!Ly||!cs.length)return;
       const segs=CH.segments.filter(s=>s.layer===id).map(s=>[s,cs.filter(c=>CH.co[c.t][1]===s.id).sort((a,b)=>b.latestDate.localeCompare(a.latestDate))]).filter(x=>x[1].length);
-      body+=`<section class="lyr" id="layer-${id}"><div class="lyh"><h2>${esc(chName(Ly))}</h2><a class="sm" href="/#layer-${id}">${L("ch.see")}</a></div><p class="lys">${esc(Ly.sub[LANG]||Ly.sub.zh)}</p><p class="lyst">${layerStats(cs)}</p>
+      body+=`<section class="lyr" id="layer-${id}"><div class="lyh"><h2>${esc(chName(Ly))}</h2><a class="sm" href="/themes/ai/#layer-${id}">${L("ch.see")}</a></div><p class="lys">${esc(Ly.sub[LANG]||Ly.sub.zh)}</p><p class="lyst">${layerStats(cs)}</p>
       ${segs.map(([sg,list])=>`<h3 class="sgh">${esc(chName(sg))}</h3><div class="clist">${list.map(c=>card(c,{seg:false})).join("")}</div>`).join("")}</section>`});
     if(other.length)body+=`<section class="lyr"><h2>${L("ch.other")}</h2><div class="clist">${other.map(c=>card(c)).join("")}</div></section>`;
   }
