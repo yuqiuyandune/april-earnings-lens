@@ -10,6 +10,7 @@
    Subscribe opens a small dialog (Buttondown embed form). */
 (function () {
   if (document.getElementById("aps")) return;
+  var DAILY = false;   /* the daily-brief checkbox needs Buttondown tags (a paid plan); off until that is sorted out */
   var path = location.pathname;
   var cur = /^\/options(\/|$)/.test(path) ? "opt" : /^\/institutions(\/|$)/.test(path) ? "inst" : /^\/earnings(\/|$)/.test(path) ? "earn" : /^\/calendar(\/|$)/.test(path) ? "cal"
     : /^\/(market|articles)(\/|$)/.test(path) ? "mkt" : /^\/(themes|stack|energy|ai)(\/|$)/.test(path) ? "chain"
@@ -19,15 +20,15 @@
   var L = {
     en: { home: "Today", ins: "Insiders", opt: "Options", inst: "Funds", earn: "Earnings", cal: "Calendar", mkt: "Markets", chain: "Themes", sub: "Subscribe",
       ph: "Search ticker, e.g. NVDA", none: "No page for ", nav: "Sections", lang: "Language",
-      st: "Weekly email and daily brief", sd: "One email every weekend with the week's insider trading highlights and new earnings reviews.", sd2: "Also send me the daily brief: the day's recap, signals and what's coming, around 8pm Beijing time on trading days (already subscribed? tick it and submit again)",
+      st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights and new earnings reviews.", sd2: "Also send me the daily brief: the day's recap, signals and what's coming, around 8pm Beijing time on trading days (already subscribed? tick it and submit again)",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close" },
     zh: { home: "今日", ins: "内部人", opt: "期权", inst: "机构", earn: "财报", cal: "日历", mkt: "市场", chain: "产业链", sub: "订阅",
       ph: "搜索代码，如 NVDA", none: "没有找到 ", nav: "栏目", lang: "语言",
-      st: "周报和每日早报", sd: "每个周末一封，汇总一周的内部人买卖要点和新上线的财报解读。", sd2: "也每天收早报：每个交易日北京时间晚上 8 点左右，当天的复盘、信号和接下来的大事（已订阅的读者勾选后再提交一次即可）",
+      st: "每周邮件", sd: "每个周末一封，汇总一周的内部人买卖要点和新上线的财报解读。", sd2: "也每天收早报：每个交易日北京时间晚上 8 点左右，当天的复盘、信号和接下来的大事（已订阅的读者勾选后再提交一次即可）",
       sp: "你的邮箱", sb: "订阅", sf: "免费，随时可以退订。中文在前，英文在后。", sc: "关闭" },
     tw: { home: "今日", ins: "內部人", opt: "選擇權", inst: "機構", earn: "財報", cal: "日曆", mkt: "市場", chain: "產業鏈", sub: "訂閱",
       ph: "搜尋代碼，如 NVDA", none: "沒有找到 ", nav: "欄目", lang: "語言",
-      st: "週報和每日早報", sd: "每個週末一封，彙總一週的內部人買賣要點和新上線的財報解讀。", sd2: "也每天收早報：每個交易日北京時間晚上 8 點左右，當天的復盤、信號和接下來的大事（已訂閱的讀者勾選後再提交一次即可）",
+      st: "每週郵件", sd: "每個週末一封，彙總一週的內部人買賣要點和新上線的財報解讀。", sd2: "也每天收早報：每個交易日北京時間晚上 8 點左右，當天的復盤、信號和接下來的大事（已訂閱的讀者勾選後再提交一次即可）",
       sp: "你的郵箱", sb: "訂閱", sf: "免費，隨時可以退訂。中文在前，英文在後。", sc: "關閉" }
   };
   function fromTag(v) {
@@ -166,7 +167,7 @@
       '<h2 id="aps-mt"></h2><p id="aps-md"></p>' +
       '<form action="https://buttondown.com/api/emails/embed-subscribe/april-insider-stock" method="post" target="_blank" rel="noopener">' +
       '<input type="email" name="email" required autocomplete="email"><input type="hidden" name="embed" value="1"><button type="submit"></button>' +
-      '<label class="dly"><input type="checkbox" name="tag" value="daily"> <span id="aps-md2"></span></label></form>' +
+      (DAILY ? '<label class="dly"><input type="checkbox" name="tag" value="daily"> <span id="aps-md2"></span></label>' : '') + '</form>' +
       '<p class="fine" id="aps-mf"></p></div>';
     document.body.appendChild(modal);
     modal.addEventListener("click", function (e) { if (e.target === modal || e.target.hasAttribute("data-x")) close(); });
@@ -204,7 +205,7 @@
       modal.querySelector("input[type=email]").setAttribute("aria-label", s.sp);
       modal.querySelector("form button").textContent = s.sb;
       modal.querySelector("#aps-mf").textContent = s.sf;
-      modal.querySelector("#aps-md2").textContent = s.sd2;
+      if (DAILY) modal.querySelector("#aps-md2").textContent = s.sd2;
     }
   }
   paint();
