@@ -1,8 +1,8 @@
 /* April's Stock Atlas — the site header shared by every page except the homepage (which renders the same header itself,
    in april-stock-atlas/scripts/build_home.py; keep the two in step).
    Loaded as a blocking <script> at the start of <body>; inserts the header right after itself so it paints with the page.
-   One white bar: brand · sections (Today, Insiders, Options, Earnings, Calendar, Markets, Themes) · ticker search · language · Subscribe.
-   Below 1180px wide it becomes three rows: brand + Subscribe, search + language, then the sections as a scrolling tab row.
+   One white bar: brand · sections (Today, Insiders, Options, Funds, Earnings, Calendar, Markets, Themes) · ticker search · language · Subscribe.
+   Below 1260px wide it becomes three rows: brand + Subscribe, search + language, then the sections as a scrolling tab row.
    Pages keep their own section-level controls (insider tabs and filters, the Earnings Lens sub-navigation and search);
    their own brand row and language buttons are hidden once this header is up, and this header's language buttons press
    the page's own (#lang-xx, or .lang button[data-l]) so each page keeps switching language its own way. Pages with no
@@ -11,21 +11,21 @@
 (function () {
   if (document.getElementById("aps")) return;
   var path = location.pathname;
-  var cur = /^\/options(\/|$)/.test(path) ? "opt" : /^\/earnings(\/|$)/.test(path) ? "earn" : /^\/calendar(\/|$)/.test(path) ? "cal"
+  var cur = /^\/options(\/|$)/.test(path) ? "opt" : /^\/institutions(\/|$)/.test(path) ? "inst" : /^\/earnings(\/|$)/.test(path) ? "earn" : /^\/calendar(\/|$)/.test(path) ? "cal"
     : /^\/(market|articles)(\/|$)/.test(path) ? "mkt" : /^\/(themes|stack|energy|ai)(\/|$)/.test(path) ? "chain"
     : /^\/(insider|en|zh|tw|s|subscribed)(\/|\.|$)/.test(path) ? "ins" : path === "/" ? "home" : "";
-  var NAV = ["home", "ins", "opt", "earn", "cal", "mkt", "chain"];
-  var HREF = { home: "/", ins: "/insider/", opt: "/options/", earn: "/earnings/", cal: "/calendar/", mkt: "/market/", chain: "/themes/" };
+  var NAV = ["home", "ins", "opt", "inst", "earn", "cal", "mkt", "chain"];
+  var HREF = { home: "/", ins: "/insider/", opt: "/options/", inst: "/institutions/", earn: "/earnings/", cal: "/calendar/", mkt: "/market/", chain: "/themes/" };
   var L = {
-    en: { home: "Today", ins: "Insiders", opt: "Options", earn: "Earnings", cal: "Calendar", mkt: "Markets", chain: "Themes", sub: "Subscribe",
+    en: { home: "Today", ins: "Insiders", opt: "Options", inst: "Funds", earn: "Earnings", cal: "Calendar", mkt: "Markets", chain: "Themes", sub: "Subscribe",
       ph: "Search ticker, e.g. NVDA", none: "No page for ", nav: "Sections", lang: "Language",
       st: "Weekly email", sd: "One email every weekend with the week's insider trading highlights and new earnings reviews.",
       sp: "you@example.com", sb: "Subscribe", sf: "Free, unsubscribe anytime. Chinese first, English below.", sc: "Close" },
-    zh: { home: "今日", ins: "内部人", opt: "期权", earn: "财报", cal: "日历", mkt: "市场", chain: "产业链", sub: "订阅",
+    zh: { home: "今日", ins: "内部人", opt: "期权", inst: "机构", earn: "财报", cal: "日历", mkt: "市场", chain: "产业链", sub: "订阅",
       ph: "搜索代码，如 NVDA", none: "没有找到 ", nav: "栏目", lang: "语言",
       st: "每周邮件", sd: "每个周末一封，汇总一周的内部人买卖要点和新上线的财报解读。",
       sp: "你的邮箱", sb: "订阅", sf: "免费，随时可以退订。中文在前，英文在后。", sc: "关闭" },
-    tw: { home: "今日", ins: "內部人", opt: "選擇權", earn: "財報", cal: "日曆", mkt: "市場", chain: "產業鏈", sub: "訂閱",
+    tw: { home: "今日", ins: "內部人", opt: "選擇權", inst: "機構", earn: "財報", cal: "日曆", mkt: "市場", chain: "產業鏈", sub: "訂閱",
       ph: "搜尋代碼，如 NVDA", none: "沒有找到 ", nav: "欄目", lang: "語言",
       st: "每週郵件", sd: "每個週末一封，彙總一週的內部人買賣要點和新上線的財報解讀。",
       sp: "你的郵箱", sb: "訂閱", sf: "免費，隨時可以退訂。中文在前，英文在後。", sc: "關閉" }
@@ -74,7 +74,7 @@
     "#aps .aps-lang button[aria-pressed=true]{background:var(--h-ink);color:var(--h-bg)}" +
     "#aps .aps-sub{border:0;background:var(--h-accent);color:var(--h-accent-ink);font:inherit;font-weight:700;font-size:14px;border-radius:10px;padding:9px 16px;cursor:pointer;flex:none}" +
     "#aps a:focus-visible,#aps button:focus-visible{outline:2px solid var(--h-accent);outline-offset:2px}" +
-    "@media (max-width:1180px){" +
+    "@media (max-width:1260px){" +
     "#aps .aps-in{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'br sub' 's lang' 'nav nav';gap:10px;padding-top:10px;min-height:0}" +
     "#aps .aps-br{grid-area:br}#aps .aps-sub{grid-area:sub;justify-self:end}#aps .aps-s{grid-area:s;width:auto}#aps .aps-lang{grid-area:lang;align-self:center}" +
     "#aps.nolang .aps-in{grid-template-areas:'br sub' 's s' 'nav nav'}" +
