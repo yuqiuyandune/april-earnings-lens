@@ -248,6 +248,75 @@
      "t": "24/7 Wall St. · Tesla Falls 4% Despite HSBC Upgrade"
     }
    ]
+  },
+  {
+   "what": "2026 EPS consensus down about 5% over 30 days; 2027 essentially unchanged",
+   "why": "The cuts came in the weeks after the October 21 report: 40 down and 7 up over 30 days. Q3 included a one-off legal charge of about $9.9B, which pushed GAAP EPS far below expectations; excluding it, EPS was about $7.40, and full-year capex guidance is $135–145B. The 2027 estimate did not move and the stock was roughly flat, so this is about this year's reported profit, not long-run earning power. A one-off charge does not change the 2027 assumptions behind our zone, so no review for now.",
+   "src": [
+    {
+     "t": "24/7 Wall St. via Yahoo Finance · What To Expect Out of Meta By The End of 2026"
+    }
+   ]
+  },
+  {
+   "what": "FY2028 EPS consensus up about 4% over 7 days, while the stock fell about 30% in a month",
+   "why": "The raise is a delayed revision after the November 17 Q3 report: revenue was about $115.8B, above expectations; management lifted its FY2028 growth outlook from about 70% to about 75% and called Q4 the gross-margin low point. After Jensen Huang was restored as CEO on November 23, several firms upgraded the stock. Estimates rose while the stock fell, taking the forward P/E to about 9x, so both earnings and the multiple moved. The zone was already under review because of the leadership change, and the zone will be rewritten with the new quarterly report.",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Broadcom's ~$115B AI Target Against Nvidia's Multiple Reset"
+    },
+    {
+     "t": "Blockchain.News · NVDA analysts rework targets as price tests key support"
+    }
+   ]
+  },
+  {
+   "what": "2027 EPS consensus up about 5% over 7 days and about 9% over 30 days",
+   "why": "Public reports show no new announcement between November 19 and 26; only 3 analysts are in the sample, so one update can move the average about 5%. The likely cause is catching up on earlier news: on November 3 Talen introduced 2027 guidance and raised its buyback to $3.0B (including a $1.5B accelerated repurchase, which lifts per-share earnings), and on November 11 it signed a 750 MW long-term capacity agreement. The stock barely moved. The zone is already under review, and we will revisit it together with December's PJM capacity auction results.",
+   "src": [
+    {
+     "t": "Stock Titan · Talen Energy Reports Third Quarter 2026 Results"
+    },
+    {
+     "t": "Stock Titan · Talen Signs 750 MW Long-Term Capacity Agreement"
+    }
+   ]
+  },
+  {
+   "what": "FY2028 EPS consensus up about 5% over 7 days, after the November 18 investor day",
+   "why": "The company, renamed Modexus Solutions from November 16 with the same ticker, set targets through FY2029 at its investor day: 40–55% annual revenue growth over three years and a 19–21% adjusted EBITDA margin, with data centers growing 60–80% a year at a 22–24% margin, plus a $500M buyback. The raise only recovers part of the post-earnings cut, so the estimate is still about 4% lower over 30 days; the stock changed little. Our zone was waiting for these targets and can now be reviewed.",
+   "src": [
+    {
+     "t": "Stock Titan · Modexus Solutions introduces new long-term financial targets"
+    },
+    {
+     "t": "Investing.com · Modexus Solutions sets 40–55% revenue growth target through 2029"
+    }
+   ]
+  },
+  {
+   "what": "2027 EPS consensus down about 5% over 7 days, while 2026 rose about 4%",
+   "why": "Public reports show no new company announcement between November 19 and 26. On the November 6 call, management said ERCOT prices had trended lower, partly because of Texas's data-center audit and permitting pause, and policy uncertainty in Texas remains after the election. Cutting next year while raising this year looks more like a shift in timing of profit. The stock fell about 17% in a month, so the multiple is also compressing. The company's 2027 guidance is unchanged and policy-driven price pressure is already in our bear case, so no review for now.",
+   "src": [
+    {
+     "t": "Trefis · How Has Vistra Stock's Story Changed?"
+    },
+    {
+     "t": "Motley Fool · 1 Compelling Reason to Buy Vistra Stock Before November Ends"
+    }
+   ]
+  },
+  {
+   "what": "2027 EPS consensus up about 8% over 30 days, while the stock fell about 30%",
+   "why": "The raise reflects the October 22 report: Bloom lifted 2026 revenue guidance to $4.4–4.6B, and 2026 estimates saw 21 upward and no downward revisions over 30 days; on November 5 it also signed a 900 MW agreement with NTT DATA. Estimates have not moved over the past 7 days. The stock fell from about $220 in late October to about $153, so the multiple fell. Earnings expectations are rising, which does not change the assumptions behind our zone, so no review for now.",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Bloom Energy is Down 22% Just This Month"
+    },
+    {
+     "t": "Trefis · Is Bloom Energy Worth $177 After Three Guidance Raises?"
+    }
+   ]
   }
  ]
 }

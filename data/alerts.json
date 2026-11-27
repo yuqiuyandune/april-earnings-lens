@@ -403,6 +403,122 @@
      "u": "https://247wallst.com/investing/2026/11/20/tesla-falls-4-despite-hsbc-upgrade-and-359-target-tied-to-spacex-merger-talk-rivian-drops-5-lucid-slides-4/"
     }
    ]
+  },
+  {
+   "t": "META",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "down",
+   "effect": "eps",
+   "review": false,
+   "what": "2026 年 EPS 一致预期 30 天下调约 5%，2027 年基本没变",
+   "why": "下调集中在 10 月 21 日财报后几周，30 天内 40 次下调、7 次上调。三季度有一笔约 99 亿美元的一次性法律费用，GAAP EPS 因此远低于预期，剔除后约 7.40 美元；全年资本开支指引 1350–1450 亿美元。2027 年预期没动，同期股价也基本持平，这次动的是今年的账面利润，不是长期盈利能力。一次性费用不改变区间背后的 2027 年假设，暂不复核。",
+   "src": [
+    {
+     "t": "24/7 Wall St. via Yahoo Finance · What To Expect Out of Meta By The End of 2026",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/expect-meta-end-2026-announced-154523265.html"
+    }
+   ]
+  },
+  {
+   "t": "NVDA",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": true,
+   "what": "FY2028 EPS 一致预期 7 天上调约 4%，股价一个月跌约三成",
+   "why": "上调是 11 月 17 日三季报后的延迟修正：营收约 1158 亿美元，高于预期；管理层把 FY2028 增长展望从约 70% 提到约 75%，并说四季度是毛利率低点。11 月 23 日黄仁勋恢复 CEO 职务后，多家机构上调评级。预期上调、股价下跌，前瞻市盈率降到约 9 倍，倍数和盈利都在变。区间此前已因管理层变动设为待复核，这份财报还要按新季度重写。",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Broadcom's ~$115B AI Target Against Nvidia's Multiple Reset",
+     "u": "https://247wallst.com/investing/2026/11/26/heading-into-fy27-how-to-trade-broadcoms-115b-ai-target-against-nvidias-multiple-reset"
+    },
+    {
+     "t": "Blockchain.News · NVDA analysts rework targets as price tests key support",
+     "u": "https://blockchain.news/news/20261127-price-prediction-price-nvda-analysts-rework-targets-as-tests-key"
+    }
+   ]
+  },
+  {
+   "t": "TLN",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "up",
+   "effect": "eps",
+   "review": true,
+   "what": "2027 年 EPS 一致预期 7 天上调约 5%，30 天上调约 9%",
+   "why": "公开报道里没有 11 月 19–26 日的新公告；样本只有 3 位分析师，一人更新就能带动约 5%。最可能的原因是消化此前的消息：11 月 3 日给出 2027 年指引并把回购扩大到 30 亿美元（含 15 亿美元加速回购，股数减少抬高每股收益），11 月 11 日签下 750 MW 长期容量合同。股价同期基本没动。区间已在待复核，等 12 月 PJM 容量拍卖结果再一起看。",
+   "src": [
+    {
+     "t": "Stock Titan · Talen Energy Reports Third Quarter 2026 Results",
+     "u": "https://www.stocktitan.net/news/TLN/talen-energy-reports-third-quarter-2026-results-reaffirms-2026-01wj19cbifd0.html"
+    },
+    {
+     "t": "Stock Titan · Talen Signs 750 MW Long-Term Capacity Agreement",
+     "u": "https://www.stocktitan.net/news/TLN/talen-signs-750-mw-long-term-capacity-mwka3lc8vilv.html"
+    }
+   ]
+  },
+  {
+   "t": "MOD",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "up",
+   "effect": "eps",
+   "review": true,
+   "what": "FY2028 EPS 一致预期 7 天上调约 5%，在 11 月 18 日投资者日之后",
+   "why": "公司（11 月 16 日起更名为 Modexus Solutions，代码不变）在投资者日给出到 FY2029 的目标：三年营收年均增长 40–55%，调整后 EBITDA 利润率 19–21%，其中数据中心营收年均增长 60–80%、利润率 22–24%，并宣布 5 亿美元回购。上调只补回了财报后下调的一部分，30 天仍低约 4%；股价同期变化不大。区间等的就是这组目标，现在可以复核。",
+   "src": [
+    {
+     "t": "Stock Titan · Modexus Solutions introduces new long-term financial targets",
+     "u": "https://www.stocktitan.net/news/MOD/modexus-solutions-outlines-next-phase-of-growth-and-introduces-new-wm38l6qsnzlv.html"
+    },
+    {
+     "t": "Investing.com · Modexus Solutions sets 40–55% revenue growth target through 2029",
+     "u": "https://www.investing.com/news/company-news/modexus-solutions-sets-4055-revenue-growth-target-through-2029-93CH-5037069"
+    }
+   ]
+  },
+  {
+   "t": "VST",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "down",
+   "effect": "both",
+   "review": false,
+   "what": "2027 年 EPS 一致预期 7 天下调约 5%，2026 年反而上调约 4%",
+   "why": "公开报道里没有 11 月 19–26 日的公司新公告。管理层在 11 月 6 日电话会上说，受德州数据中心审核和许可暂停影响，ERCOT 电价走低；选举后德州政策不确定性仍在，分析师调低明年、调高今年，更像是把利润往前挪。股价一个月跌约 17%，倍数也在压缩。2027 年公司指引没变，政策压价已在悲观情景里，暂不复核。",
+   "src": [
+    {
+     "t": "Trefis · How Has Vistra Stock's Story Changed?",
+     "u": "https://www.trefis.com/stock/vst/articles/628443/how-has-vistra-stock-s-story-changed/2026-11-24"
+    },
+    {
+     "t": "Motley Fool · 1 Compelling Reason to Buy Vistra Stock Before November Ends",
+     "u": "https://www.fool.com/investing/2026/11/21/1-compelling-reason-to-buy-vistra-stock-before-november-ends/"
+    }
+   ]
+  },
+  {
+   "t": "BE",
+   "on": "2026-11-26",
+   "kind": "est",
+   "dir": "up",
+   "effect": "both",
+   "review": false,
+   "what": "2027 年 EPS 一致预期 30 天上调约 8%，股价同期跌约三成",
+   "why": "上调来自 10 月 22 日财报后的消化：公司把 2026 年营收指引提到 44–46 亿美元，30 天内 2026 年预期 21 次上调、0 次下调；11 月 5 日又和 NTT DATA 签下 900 MW 协议。近 7 天预期没变。股价从 10 月底约 220 美元跌到约 153 美元，跌的是倍数。盈利预期在上调，不改变区间背后的假设，暂不复核。",
+   "src": [
+    {
+     "t": "24/7 Wall St. · Bloom Energy is Down 22% Just This Month",
+     "u": "https://247wallst.com/investing/2026/11/24/bloom-energy-is-down-22-just-this-month-two-wall-street-pros-predict-109-gains-with-2-more-1-dollar-lower/"
+    },
+    {
+     "t": "Trefis · Is Bloom Energy Worth $177 After Three Guidance Raises?",
+     "u": "https://www.trefis.com/stock/be/articles/625601/is-bloom-energy-worth-177-after-three-guidance-raises/2026-11-17"
+    }
+   ]
   }
  ]
 }
