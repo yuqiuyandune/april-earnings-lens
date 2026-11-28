@@ -519,6 +519,46 @@
      "u": "https://www.trefis.com/stock/be/articles/625601/is-bloom-energy-worth-177-after-three-guidance-raises/2026-11-17"
     }
    ]
+  },
+  {
+   "t": "NVDA",
+   "on": "2026-11-23",
+   "kind": "rating",
+   "dir": "up",
+   "effect": "both",
+   "review": true,
+   "what": "黄仁勋复任 CEO 当天，Bernstein、Oppenheimer、StoneX、Melius 把评级上调到买入或优于大盘",
+   "why": "公开报道的理由是黄仁勋回归消除了此前降级的主要原因，即管理层和执行上的不确定性；Bernstein 同时提到估值仍有顾虑。报道没有提到这几家上调盈利预测，FY2028 EPS 一致预期 7 天上调约 4%，来自 11 月 17 日三季报后的修正。股价 11 月 23 日涨约 31%，随后两天回落约 10%，变化主要在倍数。区间此前已设为待复核，等按新季度重写。",
+   "src": [
+    {
+     "t": "Superpower Daily · Analysts upgrade Nvidia after Huang's return",
+     "u": "https://superpowerdaily.com/posts/analysts-upgrade-nvidia-after-huang-s-return-sends-shares-up-as-much-as-37"
+    },
+    {
+     "t": "Stocktwits · Nvidia Gets Three Analyst Upgrades After Jensen Huang's Return",
+     "u": "https://stocktwits.com/news-articles/markets/equity/nvda-jensen-huang-return-stock-upgrades-crwd-li-amba-dkng/cNbxi4aR9ZF"
+    }
+   ]
+  },
+  {
+   "t": "CRWD",
+   "on": "2026-11-24",
+   "kind": "rating",
+   "dir": "up",
+   "effect": "both",
+   "review": true,
+   "what": "Guggenheim 把评级从中性上调到买入，在三季报和收购 Zscaler 公告的次日",
+   "why": "11 月 23 日公司公布三季报，营收约 15.8 亿美元，同比增长 28%，ARR 约 62.6 亿美元；同时宣布以全股票方式收购 Zscaler，交易价值约 439 亿美元，预计 FY2028 下半年完成。Guggenheim 公开的理由是增长和利润前景支撑溢价估值，并说上调不是因为这笔收购。EPS 一致预期近 30 天基本没动，还没反映财报和收购；公告当天股价跌约 9%，动的是倍数。收购会改变股本和业务结构，区间改为待复核。",
+   "src": [
+    {
+     "t": "Investing.com · Guggenheim lifts CrowdStrike to Buy",
+     "u": "https://www.investing.com/news/stock-market-news/guggenheim-lifts-crowdstrike-to-buy-sees-34-upside-5048576"
+    },
+    {
+     "t": "TipRanks · Top Guggenheim Analyst Upgrades CrowdStrike Stock (CRWD) to Buy After Zscaler Mega-Deal",
+     "u": "https://www.tipranks.com/news/article/top-guggenheim-analyst-upgrades-crowdstrike-stock-crwd-to-buy-after-zscaler-mega-deal"
+    }
+   ]
   }
  ]
 }
